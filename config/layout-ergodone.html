@@ -1,0 +1,152 @@
+<div style="height: 430px;width: 54px;padding-left: 100px">
+    <div id="kbd-purchase_link_0" style="display: none;" value="https://item.taobao.com/item.htm?id=534570622972">（淘宝）K.T.E.C.后勤部</div>
+    <div id="kbd-purchase_link_1" style="display: none;" value="https://item.taobao.com/item.htm?id=584050306874">（淘宝）YDKB客制化</div>
+    <div id="kbd-info" style="display: none;">
+        <div class="lang-zh_sc">
+            <p><b>刷机方式：</b><br>
+               同时按住<b style="color:red">主手右上角两个键</b>，插入数据线，键盘进入刷新hex的bootloader模式。这时将hex拖到ydkb-relflash.exe，固件将自动开始刷新。<br>
+               工程版与正式版共用一个固件，按住左手键盘右下方两个键或右手键盘左下方两个键，插入数据线，交换左右手按键。<br>
+               插入USB线后主控上的指示灯闪一下，代表当前固件用于正式版，闪两下，代表用于工程版。</p>
+            <p><b>蓝牙模块：</b><br>
+               如果接了蓝牙模块，刷固件在上面的步骤基础上，先关掉电源开关，完成之后重开电源开关。蓝牙模块的介绍和接线方法看群共享，如果要使用蓝牙，因为需要占用Caps lock和Scroll lock两个指示灯的io，所以还要将这两在ledmap里设置为“接蓝牙模块”。<br>
+               Num Lock, Caps Lock, Scroll Lock这些指示灯，在蓝牙模式下并未同步显示电脑的这三者状态。只是按一下按键就切换显示一次对应指示灯。<br>
+               如果不同步了，可以使用Shift+对应按键，比如Shift+Capslock，这时CapsLock会生效但是对应指示灯的状态不会变。</p>
+        </div>
+        <div class="lang-en" style="display: none">
+            <h5 style="padding-left: 200px"><b>How to flash the firmware to your ergodone</b></h5>
+            <p>Disconnect the keyboard first. Then, while holding <b>the two rightmost keys in the first row</b> on the left-hand keyboard, replug your usb cable. Drag <b>.hex file</b> to ydkb-relflash.exe, then wait a while until all done.</p>
+        </div>
+    </div>   
+    <div class="mycase">
+        <div class="kbdbg-mask marginb2" style="width:429px;height:321px;"></div>
+        <div class="kbdbg-mask marginb2" style="width:260px;height:186px;top:208px;left:260px;transform:rotate(30deg);"></div>
+        <div class="kbdbg-border marginb2" style="width:429px;height:321px;border-radius:6px 6px 0 6px"></div>
+        <div class="kbdbg-mask2 marginb2" style="width:429px;height:321px;border-radius:6px 6px 0 6px"></div>
+        <div class="kbdbg-border marginb2" style="width:260px;height:186px;top:208px;left:260px;transform:rotate(30deg);border-radius:0 6px 6px 0"></div>
+        <div class="kbdbg-mask2 marginb2" style="width:260px;height:186px;top:208px;left:260px;transform:rotate(30deg);border-radius:0 6px 6px 0"></div>
+        <div class="kbdbg-mask col1250 marginb2" style="width:429px;height:321px;"></div>
+        <div class="kbdbg-mask marginb2" style="width:260px;height:186px;top:208px;left:586px;transform:rotate(-30deg);"></div>
+        <div class="kbdbg-border col1250 marginb2" style="width:429px;height:321px;border-radius:6px 6px 6px 0"></div>
+        <div class="kbdbg-mask2 col1250 marginb2" style="width:429px;height:321px;border-radius:6px 6px 6px 0"></div>
+        <div class="kbdbg-border marginb2" style="width:260px;height:186px;top:208px;left:586px;transform:rotate(-30deg);border-radius:6px 0 0 6px"></div>
+        <div class="kbdbg-mask2 marginb2" style="width:260px;height:186px;top:208px;left:586px;transform:rotate(-30deg);border-radius:6px 0 0 6px"></div>
+    </div>
+    <div class="mykeycap2 w150 row50">Esc</div>
+    <div class="mykeycap2 w150 row150">Tab</div>
+    <div class="mykeycap2 w150 row250">Capslock</div>
+    <div class="mykeycap2 w150 row350">Shift</div>
+    <div class="mykeycap2 row450 col50">Ctrl</div>
+    <div class="mykeycap1 row50 col150">1</div>
+    <div class="mykeycap1 row150 col150">Q</div>
+    <div class="mykeycap1 row250 col150">A</div>
+    <div class="mykeycap1 row350 col150">Z</div>
+    <div class="mykeycap2 row450 col150">Win</div>
+    <div class="mykeycap1 row25 col250">2</div>
+    <div class="mykeycap1 row125 col250">W</div>
+    <div class="mykeycap1 row225 col250">S</div>
+    <div class="mykeycap1 row325 col250">X</div>
+    <div class="mykeycap2 row425 col250">Alt</div>
+    <div class="mykeycap1 col350">3</div>
+    <div class="mykeycap1 row100 col350">E</div>
+    <div class="mykeycap1 row200 col350">D</div>
+    <div class="mykeycap1 row300 col350">C</div>
+    <div class="mykeycap2 row400 col350">F1</div>
+    <div class="mykeycap1 row25 col450">4</div>
+    <div class="mykeycap1 row125 col450">R</div>
+    <div class="mykeycap1 homing row225 col450">F</div>
+    <div class="mykeycap1 row325 col450">V</div>
+    <div class="mykeycap2 row425 col450">F2</div>
+    <div class="mykeycap1 row50 col550 bl-key">5</div>
+    <div class="mykeycap1 row150 col550">T</div>
+    <div class="mykeycap1 row250 col550">G</div>
+    <div class="mykeycap1 row350 col550">B</div>
+    <div class="mykeycap1 row50 col650 bl-key">F3</div>
+    <div class="mykeycap2 h150 row150 col650">F4</div>
+    <div class="mykeycap2 h150 row300 col650">F5</div>
+    <div class="mykeycap1 row50 col1250">F8</div>
+    <div class="mykeycap2 h150 row150 col1250">F9</div>
+    <div class="mykeycap2 h150 row300 col1250">F10</div>
+    <div class="mykeycap1 row50 col1350">6</div>
+    <div class="mykeycap1 row150 col1350">Y</div>
+    <div class="mykeycap1 row250 col1350">H</div>
+    <div class="mykeycap1 row350 col1350">N</div>
+    <div class="mykeycap1 row25 col1450">7</div>
+    <div class="mykeycap1 row125 col1450">U</div>
+    <div class="mykeycap1 homing row225 col1450">J</div>
+    <div class="mykeycap1 row325 col1450">M</div>
+    <div class="mykeycap2 row425 col1450">F7</div>
+    <div class="mykeycap1 col1550">8</div>
+    <div class="mykeycap1 row100 col1550">I</div>
+    <div class="mykeycap1 row200 col1550">K</div>
+    <div class="mykeycap1 row300 col1550">,</div>
+    <div class="mykeycap2 row400 col1550">F6</div>
+    <div class="mykeycap1 row25 col1650">9</div>
+    <div class="mykeycap1 row125 col1650">O</div>
+    <div class="mykeycap1 row225 col1650">L</div>
+    <div class="mykeycap1 row325 col1650">.</div>
+    <div class="mykeycap2 row425 col1650">RAlt</div>
+    <div class="mykeycap1 row50 col1750">0</div>
+    <div class="mykeycap1 row150 col1750">P</div>
+    <div class="mykeycap1 row250 col1750">;</div>
+    <div class="mykeycap1 row350 col1750">/</div>
+    <div class="mykeycap2 row450 col1750">RWin</div>    
+    <div class="mykeycap2 w150 row50 col1850">BS</div>
+    <div class="mykeycap2 w150 row150 col1850">[</div>
+    <div class="mykeycap2 w150 row250 col1850">Enter</div>
+    <div class="mykeycap2 w150 row350 col1850">RShift</div>
+    <div class="mykeycap2 row450 col1850">RCtrl</div>
+    <div style="position: relative;top:196px;left:379px;transform:rotate(30deg);">
+        <div id="kblayouts-00" value-name="2u" value-desc="2u 1" style="display: block;">
+            <div class="mykeycap2 h200 row100">Delete</div>
+        </div>
+        <div id="kblayouts-01" value-name="1u+1u" style="display: none;">
+            <div class="mykeycap2 row100">Menu</div>
+            <div class="mykeycap2 row200">Delete</div>
+        </div>
+        <div class="mykeycap2 col100">Home</div>
+        <div id="kblayouts-10" value-name="2u" value-desc="2u 1" style="display: block;">
+            <div class="mykeycap2 h200 row100 col100">Insert</div>
+        </div>
+        <div id="kblayouts-11" value-name="1u+1u" style="display: none;">
+            <div class="mykeycap2 row100 col100">\</div>
+            <div class="mykeycap2 row200 col100">Insert</div>
+        </div>
+        <div class="mykeycap2 col200">End</div>
+        <div class="mykeycap2 row100 col200">PgUp</div>
+        <div class="mykeycap2 row200 col200">PgDn</div>
+    </div>
+    <div style="position: relative;top:277px;left:561px;transform:rotate(-30deg);">
+        <div class="mykeycap2">Left</div>
+        <div class="mykeycap2 row100">Up</div>
+        <div class="mykeycap2 row200">Down</div>
+        <div class="mykeycap2 col100">Right</div>
+        <div id="kblayouts-20" value-name="2u" value-desc="2u 3" style="display: block;">
+            <div class="mykeycap2 h200 row100 col100">PEnter</div>
+        </div>
+        <div id="kblayouts-21" value-name="1u+1u" style="display: none;">
+            <div class="mykeycap2 row100 col100">F11</div>
+            <div class="mykeycap2 row200 col100">PEnter</div>
+        </div>
+        <div id="kblayouts-30" value-name="2u" value-desc="2u 4" style="display: block;">
+            <div class="mykeycap2 h200 row100 col200">Space</div>
+        </div>
+        <div id="kblayouts-31" value-name="1u+1u" style="display: none;">
+            <div class="mykeycap2 row100 col200">F12</div>
+            <div class="mykeycap2 row200 col200">Space</div>
+        </div>
+    </div>
+</div>
+<div id="kbd-macrofn" style="clear: both; display: none">
+    <li class="key-set rowstart" id="code-0xf000" title="ESC键，和Shift一起按时为~" lang="zh_sc">~<br>Esc</li>
+    <li class="key-set" id="code-0xf001" title="4$键，和左alt一起按时为F4" lang="zh_sc">4 $<br>F4</li>
+    <li class="key-set" id="code-0xf003" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!(disable or enable WIN key.)">Win<br>Lock</li>
+    <li class="key-set rowstart" id="code-0xf004" title="BT/USB Switch">BT/<br>USB</li>
+    <li class="key-set" id="code-0xf005" title="Sleep Mode on/off">Sleep O/X</li>
+</div>
+<div id="kb_ledmap" style="display: none">
+    <li id="kb_ledmap-0" value="16" title="Num Lock">NUM LOCK</li>
+    <li id="kb_ledmap-1" value="1" title="RX LED on Pro Micro(Upper one on Ergodone)">RX LED</li>
+    <li id="kb_ledmap-2" class="io_bt" value="17" title="Caps Lock">CAPS LOCK</li>
+    <li id="kb_ledmap-3" value="2" title="TX LED on Pro Micro(Lower one on Ergodone)">TX LED</li>
+    <li id="kb_ledmap-4" class="io_bt" value="18" title="Scroll Lock">SCROLL LK</li>
+</div>

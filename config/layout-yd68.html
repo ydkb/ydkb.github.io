@@ -1,0 +1,155 @@
+<div id="mykbd">
+    <div id="kbd-info" style="display: none;">
+        <div class="lang-zh_sc">
+            <p><b>刷机方式：</b><br>
+               首先重点，这不是gh60，不要用zadig去安装驱动，这个刷固件是免驱的。<br>
+               固件功能正常时，插入数据线同时按住左上角<kbd>ESC</kbd>键，键盘进入刷机模式。这时将hex拖到ydkbs-relflash.exe，固件将自动开始刷新。<br>
+               如果刷错了别的固件，造成固件功能不正常了，先关掉电源开关，再执行上面的操作。<br>
+            <p><b>功能补充说明:</b><br>蓝牙模式下不支持NumLock、CapsLock、ScrollLock指示灯。但是caps灯设为capslock时，可指示大小写，只是不与系统同步（实际就是每次按<kbd>Capslock</kbd>时灯切换亮灭）。在不同步的时候，可用<kbd>Shift</kbd>+<kbd>Capslock</kbd>，来手动让capslock指示灯同步。<br>
+            使用tada68塑料壳的，最上面6颗RGB底灯看不见的，可以在LEDMAP里将“RGB上6颗”设置为禁用，这样它们就不会亮了。</p>
+        </div>
+        <div class="lang-en" style="display: none">
+            <p><b>Reflash Firmware:</b><br>
+               YD68 uses BootHID bootloader. So it's no need to install any driver manually for it.<br>
+               Disconnect usb cable from the keyboard first. Drag <b>.hex file</b> to ydkb-relflash.exe, as it says next you need get your device into bootloader.<br>
+               Now, insert the usb cable to your keyboard and meanwhile keep holding <kbd>Esc</kbd> key. When it begins flashing, <kbd>Esc</kbd> can be released.<br>
+               If the firmware is wrong, turn off the battery switch before doing above.</p>
+            <p><b>More to say:</b><br>
+               1. Under bluetooth mode, Numlock, Capslock and Scroll lock LEDs are not supported. But when CAPS in LEDMAP is set to CAPS LOCK, this led can be an indicator for Capslock. When <kbd>Capslock</kbd> is pressed, it changes this led. If it is not synchronous with system, press <kbd>Shift</kbd>+<kbd>Capslock</kbd> which changes capslock state but doesn't change the led.<br>
+               2. Setting <b>RGB上6颗</b> to <b>Disable</b> can disable them as in tada68's plastic case, they can not be seen.</p>
+        </div>
+    </div>   
+    <div id="mycase" class="mycase"></div>
+    <div class="mykeycap3 bl-key">Esc</div>
+    <div class="mykeycap1 col100">1</div>
+    <div class="mykeycap1 col200">2</div>
+    <div class="mykeycap1 col300">3</div>
+    <div class="mykeycap1 col400">4</div>
+    <div class="mykeycap1 col500">5</div>
+    <div class="mykeycap1 col600">6</div>
+    <div class="mykeycap1 col700">7</div>
+    <div class="mykeycap1 col800">8</div>
+    <div class="mykeycap1 col900">9</div>
+    <div class="mykeycap1 col1000">0</div>
+    <div class="mykeycap1 col1100">-</div>
+    <div class="mykeycap1 col1200">=</div>
+    <div id="kblayouts-00" value-name="2u+1u" value-desc="Backspace" style="display: block;">
+        <div class="mykeycap2 w200 col1300">BS</div>
+        <div class="mykeycap1 col1500">Home</div>
+    </div>
+    <div id="kblayouts-01" value-name="1u+1u+1u" style="display: none;">
+        <div class="mykeycap1 col1300">`</div>
+        <div class="mykeycap2 col1400">BS</div>
+        <div class="mykeycap1 col1500">Home</div>
+    </div>
+    <div id="kblayouts-02" value-name="1u+2u" style="display: none;">
+        <div class="mykeycap1 col1300">`</div>
+        <div class="mykeycap2 w200 col1400">BS</div>
+    </div>
+    <div class="mykeycap2 w150 row100">Tab</div>
+    <div class="mykeycap1 row100 col150">Q</div>
+    <div class="mykeycap1 row100 col250">W</div>
+    <div class="mykeycap1 row100 col350">E</div>
+    <div class="mykeycap1 row100 col450">R</div>
+    <div class="mykeycap1 row100 col550">T</div>
+    <div class="mykeycap1 row100 col650">Y</div>
+    <div class="mykeycap1 row100 col750">U</div>
+    <div class="mykeycap1 row100 col850">I</div>
+    <div class="mykeycap1 row100 col950">O</div>
+    <div class="mykeycap1 row100 col1050">P</div>
+    <div class="mykeycap1 row100 col1150">[</div>
+    <div class="mykeycap1 row100 col1250">]</div>
+    <div class="mykeycap1 row100 col1500">End</div>
+    <div class="mykeycap2 w175 row200">Capslock</div>
+    <div class="mykeycap1 row200 col175">A</div>
+    <div class="mykeycap1 row200 col275">S</div>
+    <div class="mykeycap1 row200 col375">D</div>
+    <div class="mykeycap1 homing row200 col475">F</div>
+    <div class="mykeycap1 row200 col575">G</div>
+    <div class="mykeycap1 row200 col675">H</div>
+    <div class="mykeycap1 homing row200 col775">J</div>
+    <div class="mykeycap1 row200 col875">K</div>
+    <div class="mykeycap1 row200 col975">L</div>
+    <div class="mykeycap1 row200 col1075">;</div>
+    <div class="mykeycap1 row200 col1175">'</div>
+    <div class="mykeycap1 w150 row100 col1350">\</div>
+    <div id="kblayouts-20" value-name="US Enter" value-desc="Enter" style="display: block;">
+        <div class="mykeycap1 w150 row100 col1350">\</div>
+        <div class="mykeycap3 w225 row200 col1275">Enter</div>
+    </div>
+    <div id="kblayouts-21" value-name="ISO Enter" style="display: none;">
+        <div class="mykeycap3 w150 h200 row100 col1350">Enter</div>
+        <div class="mykeycap1 row200 col1275">iso#</div>
+    </div> 
+    <div class="mykeycap1 row200 col1500">PgUp</div>
+
+    <div id="kblayouts-30" value-name="2.25u" value-desc="Left Shift" style="display: block;">
+        <div class="mykeycap2 w225 row300">Shift</div>
+    </div>
+    <div id="kblayouts-31" value-name="1.25u+1u" style="display: none;">
+        <div class="mykeycap2 w125 row300">Shift</div>
+        <div class="mykeycap2 row300 col125">iso\</div>
+    </div>
+    <div class="mykeycap1 row300 col225">Z</div>
+    <div class="mykeycap1 row300 col325">X</div>
+    <div class="mykeycap1 row300 col425">C</div>
+    <div class="mykeycap1 row300 col525">V</div>
+    <div class="mykeycap1 row300 col625">B</div>
+    <div class="mykeycap1 row300 col725">N</div>
+    <div class="mykeycap1 row300 col825">M</div>
+    <div class="mykeycap1 row300 col925">,</div>
+    <div class="mykeycap1 row300 col1025">.</div>
+    <div class="mykeycap1 row300 col1125">/</div>
+    <div class="mykeycap2 w175 row300 col1225">RShift</div>
+    <div class="mykeycap2 row300 col1400">Up</div>
+    <div class="mykeycap1 row300 col1500">PgDn</div>
+    <div id="kblayouts-10" value-name="v2_6.25u" value-desc="Space bar" style="display: block;">
+	    <div class="mykeycap2 w125 row400">Ctrl</div>
+	    <div class="mykeycap2 w125 row400 col125">Win</div>
+	    <div class="mykeycap2 w125 row400 col250">Alt</div>
+        <div class="mykeycap1 w625 space row400 col375">Space</div>
+	    <div class="mykeycap2 row400 col1000">RAlt</div>
+	    <div class="mykeycap2 row400 col1100">RWin</div>
+	    <div class="mykeycap2 row400 col1200">RCtrl</div>		
+    </div>
+    <div id="kblayouts-11" value-name="v1_3u+3u" style="display: none;">
+	    <div class="mykeycap2 w125 row400">Ctrl</div>
+	    <div class="mykeycap2 row400 col125">Win</div>
+	    <div class="mykeycap2 w125 row400 col225">Alt</div>
+        <div class="mykeycap1 w300 space row400 col350">Menu</div>
+        <div class="mykeycap1 w300 space row400 col650">Space</div>
+	    <div class="mykeycap2 w125 row400 col950">RAlt</div>
+	    <div class="mykeycap2 row400 col1075">RWin</div>
+	    <div class="mykeycap2 w125 row400 col1175">RCtrl</div>
+    </div>
+    <div id="kblayouts-12" value-name="v1_6u" style="display: none;">
+	    <div class="mykeycap2 w125 row400">Ctrl</div>
+	    <div class="mykeycap2 row400 col125">Win</div>
+	    <div class="mykeycap2 w125 row400 col225">Alt</div>	
+        <div class="mykeycap1 w600 space row400 col350">Space</div>
+	    <div class="mykeycap2 w125 row400 col950">RAlt</div>
+	    <div class="mykeycap2 row400 col1075">RWin</div>
+	    <div class="mykeycap2 w125 row400 col1175">RCtrl</div>
+    </div>
+    <div class="mykeycap2 row400 col1300">Left</div>
+    <div class="mykeycap2 row400 col1400">Down</div>
+    <div class="mykeycap2 row400 col1500">Right</div>
+</div>
+<div id="kbd-macrofn" style="clear: both; display: none">
+    <li class="key-set rowstart" id="code-0xf00b" title="Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)">BT/<br>USB</li>
+    <li class="key-set" id="code-0xf00c" title="Bluetooth Sleep Mode on/off (Shortcut: LShift+RShift+P)">Sleep O/X</li>
+    <li class="key-set" id="code-0xf000" lang="zh_sc" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
+    <li class="key-set" id="code-0xf001" lang="zh_sc" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
+    <li class="key-set" id="code-0xf002" lang="zh_sc" title="单按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">Reset</li>
+    <li class="key-set" id="code-0xf003" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
+    <li class="key-set" id="code-0xf009" lang="zh_sc" title="发送按键设置到ydkb.io。这是一个测试功能，使用说明见帮助">Send<br>Keymap</li>
+    <div id="backlight_control_keys"></div>
+    <div id="rgb_control_keys"></div>
+</div>
+<div id="kb_ledmap"  style="display: none">
+    <li id="kb_ledmap-0" value="17" title="CAPS灯">CAPS灯</li>
+    <li id="kb_ledmap-1" value="1" class="rgb_color" title="RGB上6颗">RGB上6颗</li>
+    <li id="kb_ledmap-2" value="0" class="rgb_color" title="RGB左2颗">RGB左2颗</li>
+    <li id="kb_ledmap-3" value="1" class="rgb_color" title="RGB右2颗">RGB右2颗</li>
+</div>
+<div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:yd68" style="display: none;"></div>

@@ -1,0 +1,132 @@
+<div id="mykbd">
+    <div id="kbd-info" style="display: none;">
+        <p><b>刷固件方式</b>：把hex拖到reflash.exe的图标上，然后按住ESC插数据线，开始刷后就可以放开ESC了。</p>
+        <p>增加蓝牙模块后，刷机方式在上面基础上，需要先关掉开关，用上面方法刷新，刷新完后重新打开开关。</p>
+        <p>不过，在正常使用支持蓝牙固件的时候，直接同时按左右Shift+B，可以让键盘重启，此时按住ESC不放，也可以进入Bootloader，刷新固件。用这个方法就不需要去动电源开关了。</p>
+        <p>灯带连接：主控下方六个接口，方形接GND，方形另一边接VCC，VCC旁边接灯带DIN（标示为I的），最大支持8灯。</p>
+        <p>蓝牙模块：主控下方六个接口，方形(G)接蓝牙模块G，方形另一边(V)接蓝牙模块V，标示为O的和接蓝牙模块C，标示为S的接蓝牙模块R。</p>
+        <p>额外提醒： 灯带即使没开的时候也会耗电（每颗灯约0.9ma），如果需要蓝牙更长的续航，就不要接灯带，或者给灯带的电源加一个物理开关。</p>
+    </div>   
+    <div id="mycase" class="mycase"></div>
+    <div class="mykeycap3 bl-key">Esc</div>
+    <div class="mykeycap1 col100">1</div>
+    <div class="mykeycap1 col200">2</div>
+    <div class="mykeycap1 col300">3</div>
+    <div class="mykeycap1 col400">4</div>
+    <div class="mykeycap1 col500">5</div>
+    <div class="mykeycap1 col600">6</div>
+    <div class="mykeycap1 col700">7</div>
+    <div class="mykeycap1 col800">8</div>
+    <div class="mykeycap1 col900">9</div>
+    <div class="mykeycap1 col1000">0</div>
+    <div class="mykeycap1 col1100">-</div>
+    <div class="mykeycap1 col1200">=</div>
+    <div id="kblayouts-00" value-name="不分裂" value-desc="退格" style="display: block;">
+        <div class="mykeycap2 w200 col1300">BS</div>
+    </div>
+    <div id="kblayouts-01" value-name="分裂" style="display: none;">
+        <div class="mykeycap1 col1300">`</div>
+        <div class="mykeycap2 col1400">BS</div>
+    </div>
+    <div class="mykeycap2 row100">Tab</div>
+    <div class="mykeycap1 row100 col100">Q</div>
+    <div class="mykeycap1 row100 col200">W</div>
+    <div class="mykeycap1 row100 col300">E</div>
+    <div class="mykeycap1 row100 col400">R</div>
+    <div class="mykeycap1 row100 col500">T</div>
+    <div class="mykeycap1 row100 col600">Y</div>
+    <div class="mykeycap1 row100 col700">U</div>
+    <div class="mykeycap1 row100 col800">I</div>
+    <div class="mykeycap1 row100 col900">O</div>
+    <div class="mykeycap1 row100 col1000">P</div>
+    <div class="mykeycap1 row100 col1100">[</div>
+    <div class="mykeycap1 row100 col1200">]</div>
+    <div class="mykeycap1 row100 col1300">\</div>
+    <div class="mykeycap2 row100 col1400">Delete</div>
+    <div class="mykeycap2 row200">Capslock</div>
+    <div class="mykeycap1 row200 col100">A</div>
+    <div class="mykeycap1 row200 col200">S</div>
+    <div class="mykeycap1 row200 col300">D</div>
+    <div class="mykeycap1 homing row200 col400">F</div>
+    <div class="mykeycap1 row200 col500">G</div>
+    <div class="mykeycap1 row200 col600">H</div>
+    <div class="mykeycap1 homing row200 col700">J</div>
+    <div class="mykeycap1 row200 col800">K</div>
+    <div class="mykeycap1 row200 col900">L</div>
+    <div class="mykeycap1 row200 col1000">;</div>
+    <div class="mykeycap1 row200 col1100">'</div>
+    <div class="mykeycap3 w200 row200 col1200">Enter</div>
+    <div class="mykeycap2 row200 col1400">PgUp</div>
+
+    <div id="kblayouts-10" value-name="分裂" value-desc="左Shift" style="display: block;">
+        <div class="mykeycap2 row300">Shift</div>
+        <div class="mykeycap1 row300 col100">Z</div>
+    </div>
+    <div id="kblayouts-11" value-name="不分裂" style="display: none;">
+        <div class="mykeycap2 w200 row300">Shift</div>
+    </div>
+    <div class="mykeycap1 row300 col200">X</div>
+    <div class="mykeycap1 row300 col300">C</div>
+    <div class="mykeycap1 row300 col400">V</div>
+    <div class="mykeycap1 row300 col500">B</div>
+    <div class="mykeycap1 row300 col600">N</div>
+    <div class="mykeycap1 row300 col700">M</div>
+    <div class="mykeycap1 row300 col800">,</div>
+    <div class="mykeycap1 row300 col900">.</div>
+    <div class="mykeycap1 row300 col1000">/</div>
+    <div id="kblayouts-20" value-name="不分裂" value-desc="右Shift" style="display: block">
+        <div class="mykeycap2 w200 row300 col1100">RShift</div>
+    </div>
+    <div id="kblayouts-21" value-name="分裂" style="display: none">
+        <div class="mykeycap1 row300 col1100">iso\</div>
+        <div class="mykeycap2 row300 col1200">RShift</div>
+    </div>
+    <div class="mykeycap2 row300 col1300">Up</div>
+    <div class="mykeycap2 row300 col1400">PgDn</div>
+
+    <div class="mykeycap2 w125 row400">Ctrl</div>
+    <div class="mykeycap2 w125 row400 col125">Win</div>
+    <div class="mykeycap2 w125 row400 col250">Alt</div>
+    <div id="kblayouts-30" value-name="单空格" value-desc="空格" style="display: block;"> 
+        <div class="mykeycap1 w625 space row400 col375">Space</div>
+        <div class="mykeycap2 row400 col1000">RWin</div>
+        <div class="mykeycap2 row400 col1100">RCtrl</div>
+    </div>
+    <div id="kblayouts-31" value-name="双空格" style="display: none;">
+        <div class="mykeycap1 w225 space row400 col375">Menu</div>
+        <div class="mykeycap1 w225 space row400 col600">Space</div>
+        <div class="mykeycap2 w125 row400 col825">RAlt</div>
+        <div class="mykeycap2 w125 row400 col950">RWin</div>
+        <div class="mykeycap2 w125 row400 col1075">RCtrl</div>
+    </div>
+    <div class="mykeycap2 row400 col1200">Left</div>
+    <div class="mykeycap2 row400 col1300">Down</div>
+    <div class="mykeycap2 row400 col1400">Right</div>
+</div>
+
+<div id="kbd-macrofn" style="clear: both; display: none">
+    <li class="key-set rowstart" id="code-0xf000" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
+    <li class="key-set" id="code-0xf001" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
+    <li class="key-set" id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">JMP<br>BL</li>
+    <li class="key-set" id="code-0xf00b" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
+    <li class="key-set rowstart" id="code-0xd001" title="轴灯模式减">轴灯<br>M-</li>
+    <li class="key-set" id="code-0xd000" title="轴灯模式加">轴灯<br>M+</li>
+    <li class="key-set" id="code-0xd002" title="轴灯开关">轴灯<br>开关</li>
+    <li class="key-set" id="code-0xd003" title="轴灯模式逐个切换">轴灯<br>步进</li>
+    <li class="key-set rowstart" id="code-0xf003" title="RGB底灯开关">RGB<br>开关</li>
+    <li class="key-set" id="code-0xf004" title="RGB模式加，同时按住左Shift时为模式减">RGB<br>模式</li>
+    <li class="key-set" id="code-0xf005" title="RGB色相减">RGB<br>色相-</li>
+    <li class="key-set" id="code-0xf006" title="RGB色相加，同时按住左Shift时为色相减">RGB<br>色相+</li>
+    <li class="key-set" id="code-0xf007" title="RGB饱和度减">RGB<br>饱和-</li>
+    <li class="key-set" id="code-0xf008" title="RGB饱和度加，同时按住左Shift时为饱和度减">RGB<br>饱和+</li>
+    <li class="key-set" id="code-0xf009" title="RGB明度减">RGB<br>明度-</li>
+    <li class="key-set" id="code-0xf00a" title="RGB明度加，同时按住左Shift时为明度减">RGB<br>明度+</li>
+    <li class="key-set rowstart" id="code-0xf00c" title="BT/USB Switch">BT/<br>USB</li>
+    <li class="key-set" id="code-0xf00d" title="Sleep Mode on/off">Sleep O/X</li>
+</div>
+<div id="kb_ledmap"  style="display: none">
+    <li id="kb_ledmap-0" value="17" title="CAPS灯">CAPS灯</li>
+    <li id="kb_ledmap-1" value="1" title="RGB红">RGB红</li>
+    <li id="kb_ledmap-2" value="0" title="RGB绿">RGB绿</li>
+    <li id="kb_ledmap-3" value="1" title="RGB蓝">RGB蓝</li>
+</div>

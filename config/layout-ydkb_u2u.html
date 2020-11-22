@@ -1,0 +1,396 @@
+<div style="height: 280px; width: 54px; padding-left: 188px">
+    <div id="kbd-info" style="display: none;">
+        <p><b>刷机方法：</b><br>
+        1.确认已装dfu驱动或Arduino驱动；2.拖动下载的hex固件到YDKB Tool.exe上；3.让u2u进入刷机模式(按U2U的reset或用键盘LCtrl+Reset)。</p>
+        <p><b>本固件适用于使用U2U的YDKB优联键盘，包括YD40w v1、YD40w v2、YDP40w、SQ42、YDPadw和YDPadw4x4。</b></p>
+        <p>支持蓝牙（需要使用带蓝牙功能的U2U）。优联的鼠标支持移动，左右中前进后退五个按键，以及上下滚轮。</p>
+        <p>可以多个键盘使用一个配置，举例一个用法：YD40w用012层，而YDP40w用345层，这样只需要切换默认层到0或3，就可以用对应键盘的配置。</p>
+        <p>受限存储空间，本固件不支持的功能有：电源、睡眠等按键，启动快捷方式功能，设置默认层，LEDMAP,左右Shift命令按键，内置宏。</p>
+    </div> 
+
+    <div id="kblayouts-00" value-name="标准17键" value-desc="数字键盘" style="display: block; margin-left: 30px">
+        <div class="mycase">
+            <div class="kbdbg-border col1300" style="width:228px;height:282px;"></div>
+            <div class="kbdbg-mask col1300" style="width:228px;height:282px;"></div>
+        </div>
+        <div class="mykeycap2 col1300">Num Lock</div>
+        <div class="mykeycap2 col1400">P/</div>
+        <div class="mykeycap2 col1500">P*</div>
+        <div class="mykeycap2 col1600">P-</div>
+        <div class="mykeycap1 row100 col1300">P7</div>
+        <div class="mykeycap1 row100 col1400">P8</div>
+        <div class="mykeycap1 row100 col1500">P9</div>
+        <div class="mykeycap2 h200 row100 col1600">P+</div>
+        <div class="mykeycap1 row200 col1300">P4</div>
+        <div class="mykeycap1 homing row200 col1400">P5</div>
+        <div class="mykeycap1 row200 col1500">P6</div>
+        <div class="mykeycap1 row300 col1300">P1</div>
+        <div class="mykeycap1 row300 col1400">P2</div>
+        <div class="mykeycap1 row300 col1500">P3</div>
+        <div class="mykeycap2 h200 row300 col1600">PEnter</div>
+        <div class="mykeycap1 w200 row400 col1300">P0</div>
+        <div class="mykeycap1 row400 col1500">P.</div>
+    </div>
+    <div id="kblayouts-01" value-name="4x4" style="display: none; margin-left: 30px">
+        <div class="mycase">
+            <div class="kbdbg-border row50 col1300" style="width:228px;height:228px;"></div>
+            <div class="kbdbg-mask row50 col1300" style="width:228px;height:228px;"></div>
+        </div>
+        <div class="mykeycap1 row50 col1300">P7</div>
+        <div class="mykeycap1 row50 col1400">P8</div>
+        <div class="mykeycap1 row50 col1500">P9</div>
+        <div class="mykeycap2 row50 col1600">P-</div>
+        <div class="mykeycap1 row150 col1300">P4</div>
+        <div class="mykeycap1 homing row150 col1400">P5</div>
+        <div class="mykeycap1 row150 col1500">P6</div>
+        <div class="mykeycap2 row150 col1600">P+</div>
+        <div class="mykeycap1 row250 col1300">P1</div>
+        <div class="mykeycap1 row250 col1400">P2</div>
+        <div class="mykeycap1 row250 col1500">P3</div>
+        <div class="mykeycap2 row250 col1600">P/</div>
+        <div class="mykeycap1 row350 col1300">P0</div>
+        <div class="mykeycap1 row350 col1400">P.</div>
+        <div class="mykeycap2 row350 col1500">PEnter</div>
+        <div class="mykeycap2 row350 col1600">P*</div>
+    </div>
+
+    <div id="kblayouts-02" value-name="None" style="display: none; margin-left: 30px">
+    </div>
+
+    <div id="kblayouts-10" value-name="YD40w v2" value-desc="主键盘" style="display: block;">
+        <div class="mycase">
+            <div class="kbdbg-border row50" style="width:660px;height:228px;"></div>
+            <div class="kbdbg-mask row50" style="width:660px;height:228px;"></div>
+        </div>
+        <div class="mykeycap3 row50">Esc</div>
+        <div class="mykeycap1 row50 col100">Q</div>
+        <div class="mykeycap1 row50 col200">W</div>
+        <div class="mykeycap1 row50 col300">E</div>
+        <div class="mykeycap1 row50 col400">R</div>
+        <div class="mykeycap1 row50 col500">T</div>
+        <div class="mykeycap1 row50 col600">Y</div>
+        <div class="mykeycap1 row50 col700">U</div>
+        <div class="mykeycap1 row50 col800">I</div>
+        <div class="mykeycap1 row50 col900">O</div>
+        <div class="mykeycap1 row50 col1000">P</div>
+        <div class="mykeycap2 row50 col1100">BS</div>
+        <div class="mykeycap2 w125 row150">RCtrl</div>
+        <div class="mykeycap1 row150 col125">A</div>
+        <div class="mykeycap1 row150 col225">S</div>
+        <div class="mykeycap1 row150 col325">D</div>
+        <div class="mykeycap1 homing row150 col425">F</div>
+        <div class="mykeycap1 row150 col525">G</div>
+        <div class="mykeycap1 row150 col625">H</div>
+        <div class="mykeycap1 homing row150 col725">J</div>
+        <div class="mykeycap1 row150 col825">K</div>
+        <div class="mykeycap1 row150 col925">L</div>
+        <div class="mykeycap3 w175 row150 col1025">Enter</div>
+        <div class="mykeycap2 w175 row250">Shift</div>
+        <div class="mykeycap1 row250 col175">Z</div>
+        <div class="mykeycap1 row250 col275">X</div>
+        <div class="mykeycap1 row250 col375">C</div>
+        <div class="mykeycap1 row250 col475">V</div>
+        <div class="mykeycap1 row250 col575">B</div>
+        <div class="mykeycap1 row250 col675">N</div>
+        <div class="mykeycap1 row250 col775">M</div>
+        <div class="mykeycap1 row250 col875">,</div>
+        <div class="mykeycap2 row250 col975">.</div>
+        <div class="mykeycap2 w125 row250 col1075">RShift</div>
+        <div class="mykeycap2 w125 row350">Ctrl</div>
+        <div class="mykeycap2 row350 col125">Win</div>
+        <div class="mykeycap2 w125 row350 col225">Alt</div>
+        <div class="mykeycap1 space w225 row350 col350">RAlt</div>
+        <div class="mykeycap1 space w275 row350 col575">Space</div>
+        <div class="mykeycap2 w125 row350 col850">Left</div>
+        <div class="mykeycap2 row350 col975">Down</div>
+        <div class="mykeycap2 w125 row350 col1075">Right</div>
+    </div>
+     <div id="kblayouts-11" value-name="YDP40w" style="display: none;">
+        <div class="mycase">
+            <div class="kbdbg-border row50" style="width:660px;height:228px;"></div>
+            <div class="kbdbg-mask row50" style="width:660px;height:228px;"></div>
+        </div>
+        <div class="mykeycap3 row50">Esc</div>
+        <div class="mykeycap1 row50 col100">Q</div>
+        <div class="mykeycap1 row50 col200">W</div>
+        <div class="mykeycap1 row50 col300">E</div>
+        <div class="mykeycap1 row50 col400">R</div>
+        <div class="mykeycap1 row50 col500">T</div>
+        <div class="mykeycap1 row50 col600">Y</div>
+        <div class="mykeycap1 row50 col700">U</div>
+        <div class="mykeycap1 row50 col800">I</div>
+        <div class="mykeycap1 row50 col900">O</div>
+        <div class="mykeycap1 row50 col1000">P</div>
+        <div class="mykeycap2 row50 col1100">BS</div>
+        <div class="mykeycap2 row150">RCtrl</div>
+        <div class="mykeycap1 row150 col100">A</div>
+        <div class="mykeycap1 row150 col200">S</div>
+        <div class="mykeycap1 row150 col300">D</div>
+        <div class="mykeycap1 homing row150 col400">F</div>
+        <div class="mykeycap1 row150 col500">G</div>
+        <div class="mykeycap1 row150 col600">H</div>
+        <div class="mykeycap1 homing row150 col700">J</div>
+        <div class="mykeycap1 row150 col800">K</div>
+        <div class="mykeycap1 row150 col900">L</div>
+        <div class="mykeycap1 row150 col1000">;</div>
+        <div class="mykeycap3 row150 col1100">Enter</div>
+        <div class="mykeycap2 row250">Shift</div>
+        <div class="mykeycap1 row250 col100">Z</div>
+        <div class="mykeycap1 row250 col200">X</div>
+        <div class="mykeycap1 row250 col300">C</div>
+        <div class="mykeycap1 row250 col400">V</div>
+        <div class="mykeycap1 row250 col500">B</div>
+        <div class="mykeycap1 row250 col600">N</div>
+        <div class="mykeycap1 row250 col700">M</div>
+        <div class="mykeycap1 row250 col800">,</div>
+        <div class="mykeycap1 row250 col900">.</div>
+        <div class="mykeycap1 row250 col1000">/</div>
+        <div class="mykeycap2 row250 col1100">RShift</div>
+        <div class="mykeycap2 row350">Ctrl</div>
+        <div class="mykeycap2 row350 col100">Win</div>
+        <div class="mykeycap2 row350 col200">Alt</div>
+        <div class="mykeycap2 row350 col300">Tab</div>
+        <div id="kblayouts-20" value-name="双空格" value-desc="YDP40w空格" style="display: block;">
+            <div class="mykeycap1 space w200 row350 col400">RAlt</div>
+            <div class="mykeycap1 space w200 row350 col600">Space</div>
+        </div>
+        <div id="kblayouts-21" value-name="单空格" style="display: none;">
+            <div class="mykeycap2 row350 col400">\</div>
+            <div class="mykeycap1 space w200 row350 col500">RAlt</div>
+            <div class="mykeycap2 row350 col700">Delete</div>
+        </div>
+        <div id="kblayouts-22" value-name="全1u" style="display: none;">
+            <div class="mykeycap2 row350 col400">\</div>
+            <div class="mykeycap1 space row350 col500">RAlt</div>
+            <div class="mykeycap1 space row350 col600">Space</div>
+            <div class="mykeycap2 row350 col700">Delete</div>
+        </div>
+        <div class="mykeycap2 row350 col800">Left</div>
+        <div class="mykeycap2 row350 col900">Down</div>
+        <div class="mykeycap2 row350 col1000">Up</div>
+        <div class="mykeycap2 row350 col1100">Right</div>
+    </div>   
+
+    <div id="kblayouts-12" value-name="SQ42" style="display: none;">
+        <div class="mycase">
+            <div class="kbdbg-border row50" style="width:687px;height:228px;"></div>
+            <div class="kbdbg-mask row50" style="width:687px;height:228px;"></div>
+        </div>
+        <div class="mykeycap3 row50">Esc</div>
+        <div class="mykeycap1 row50 col100">Q</div>
+        <div class="mykeycap1 row50 col200">W</div>
+        <div class="mykeycap1 row50 col300">E</div>
+        <div class="mykeycap1 row50 col400">R</div>
+        <div class="mykeycap1 row50 col500">T</div>
+        <div class="mykeycap1 row50 col600">Y</div>
+        <div class="mykeycap1 row50 col700">U</div>
+        <div class="mykeycap1 row50 col800">I</div>
+        <div class="mykeycap1 row50 col900">O</div>
+        <div class="mykeycap1 row50 col1000">P</div>
+        <div class="mykeycap2 w150 row50 col1100">BS</div>
+        <div class="mykeycap2 w125 row150">RCtrl</div>
+        <div class="mykeycap1 row150 col125">A</div>
+        <div class="mykeycap1 row150 col225">S</div>
+        <div class="mykeycap1 row150 col325">D</div>
+        <div class="mykeycap1 homing row150 col425">F</div>
+        <div class="mykeycap1 row150 col525">G</div>
+        <div class="mykeycap1 row150 col625">H</div>
+        <div class="mykeycap1 homing row150 col725">J</div>
+        <div class="mykeycap1 row150 col825">K</div>
+        <div class="mykeycap1 row150 col925">L</div>
+        <div id="kblayouts-30" value-name="1.25u小回车" value-desc="SQ42回车" style="display: block;">
+            <div class="mykeycap1 row150 col1025">;</div>
+            <div class="mykeycap3 w125 row150 col1125">Enter</div>
+        </div>
+         <div id="kblayouts-31" value-name="2.25u大回车" style="display: none;">
+            <div class="mykeycap3 w225 row150 col1025">Enter</div>
+        </div>
+        <div class="mykeycap2 w150 row250">Shift</div>
+        <div class="mykeycap1 row250 col150">Z</div>
+        <div class="mykeycap1 row250 col250">X</div>
+        <div class="mykeycap1 row250 col350">C</div>
+        <div class="mykeycap1 row250 col450">V</div>
+        <div class="mykeycap1 row250 col550">B</div>
+        <div class="mykeycap1 row250 col650">N</div>
+        <div class="mykeycap1 row250 col750">M</div>
+        <div class="mykeycap1 row250 col850">,</div>
+        <div class="mykeycap1 row250 col950">.</div>
+        <div class="mykeycap2 row250 col1050">Up</div>
+        <div class="mykeycap2 row250 col1150">RShift</div>
+        <div class="mykeycap2 w125 row350">Ctrl</div>
+        <div class="mykeycap2 w125 row350 col125">Win</div>
+        <div class="mykeycap2 w125 row350 col250">Alt</div>
+        <div class="mykeycap1 space w225 row350 col375">RAlt</div>
+        <div class="mykeycap1 space w225 row350 col600">Space</div>
+        <div class="mykeycap2 w125 row350 col825">Delete</div>
+        <div class="mykeycap2 row350 col950">Left</div>
+        <div class="mykeycap2 row350 col1050">Down</div>
+        <div class="mykeycap2 row350 col1150">Right</div>
+    </div>
+    <div id="kblayouts-13" value-name="YD40w v1" style="display: none; margin-left:120px">
+        <div class="mycase">
+            <div class="kbdbg-border row50" style="width:660px;height:228px;"></div>
+            <div class="kbdbg-mask row50" style="width:660px;height:228px;"></div>
+        </div>
+        <div class="mykeycap3 row50">F5</div>
+        <div class="mykeycap1 row50 col100">F11</div>
+        <div class="mykeycap1 row50 col200">F9</div>
+        <div class="mykeycap1 row50 col300">X</div>
+        <div class="mykeycap1 row50 col400">F12</div>
+        <div class="mykeycap1 row50 col500">CapsLock</div>
+        <div class="mykeycap1 row50 col600">Y</div>
+        <div class="mykeycap1 row50 col700">;</div>
+        <div class="mykeycap1 row50 col800">J</div>
+        <div class="mykeycap1 row50 col900">P9</div>
+        <div class="mykeycap1 row50 col1000">NumLock</div>
+        <div class="mykeycap2 row50 col1100">N</div>
+        <div class="mykeycap2 w125 row150">F4</div>
+        <div class="mykeycap1 row150 col125">F10</div>
+        <div class="mykeycap1 row150 col225">P8</div>
+        <div class="mykeycap1 row150 col325">T</div>
+        <div class="mykeycap1 homing row150 col425">[</div>
+        <div class="mykeycap1 row150 col525">Q</div>
+        <div class="mykeycap1 row150 col625">P</div>
+        <div class="mykeycap1 homing row150 col725">L</div>
+        <div class="mykeycap1 row150 col825">,</div>
+        <div class="mykeycap1 row150 col925">P6</div>
+        <div class="mykeycap3 w175 row150 col1025">B</div>
+        <div class="mykeycap2 w175 row250">F6</div>
+        <div class="mykeycap1 row250 col175">Tab</div>
+        <div class="mykeycap1 row250 col275">W</div>
+        <div class="mykeycap1 row250 col375">F2</div>
+        <div class="mykeycap1 row250 col475">F1</div>
+        <div class="mykeycap1 row250 col575">6</div>
+        <div class="mykeycap1 row250 col675">P8</div>
+        <div class="mykeycap1 row250 col775">Z</div>
+        <div class="mykeycap1 row250 col875">BS</div>
+        <div class="mykeycap2 row250 col975">P+</div>
+        <div class="mykeycap2 w125 row250 col1075">Space</div>
+        <div class="mykeycap2 w125 row350">Esc</div>
+        <div class="mykeycap2 row350 col125">8</div>
+        <div class="mykeycap2 w125 row350 col225">4</div>
+        <div class="mykeycap1 space w225 row350 col350">1</div>
+        <div class="mykeycap1 space w275 row350 col575">Enter</div>
+        <div class="mykeycap2 w125 row350 col850">\</div>
+        <div class="mykeycap2 row350 col975">E</div>
+        <div class="mykeycap2 w125 row350 col1075">C</div>
+    </div>
+    <!--div id="kblayouts-13" value-name="YD60UNI" style="display: none; margin-left: -100px">
+        <div class="mycase">
+            <div class="kbdbg-border" style="height: 282px; width: 822px;"></div>
+        </div>
+        <div class="mykeycap3">Esc</div>
+        <div class="mykeycap1 col100">1</div>
+        <div class="mykeycap1 col200">2</div>
+        <div class="mykeycap1 col300">3</div>
+        <div class="mykeycap1 col400">4</div>
+        <div class="mykeycap1 col500">5</div>
+        <div class="mykeycap1 col600">6</div>
+        <div class="mykeycap1 col700">7</div>
+        <div class="mykeycap1 col800">8</div>
+        <div class="mykeycap1 col900">9</div>
+        <div class="mykeycap1 col1000">0</div>
+        <div class="mykeycap1 col1100">-</div>
+        <div class="mykeycap1 col1200">=</div>
+        <div id="kblayouts-40" value-name="2u" value-desc="YD60UNI Backspace" style="display: none;">
+            <div class="mykeycap2 w200 col1300">BS</div>
+        </div>
+        <div id="kblayouts-41" value-name="1u+1u" style="display: block;">
+            <div class="mykeycap2 col1400">`</div>
+            <div class="mykeycap2 col1300">BS</div>
+        </div>
+        <div class="mykeycap2 w150 row100">Tab</div>
+        <div class="mykeycap1 row100 col150">Q</div>
+        <div class="mykeycap1 row100 col250">W</div>
+        <div class="mykeycap1 row100 col350">E</div>
+        <div class="mykeycap1 row100 col450">R</div>
+        <div class="mykeycap1 row100 col550">T</div>
+        <div class="mykeycap1 row100 col650">Y</div>
+        <div class="mykeycap1 row100 col750">U</div>
+        <div class="mykeycap1 row100 col850">I</div>
+        <div class="mykeycap1 row100 col950">O</div>
+        <div class="mykeycap1 row100 col1050">P</div>
+        <div class="mykeycap1 row100 col1150">[</div>
+        <div class="mykeycap1 row100 col1250">]</div>
+        <div class="mykeycap1 w150 row100 col1350">\</div>
+        <div class="mykeycap2 w175 row200">Capslock</div>
+        <div class="mykeycap1 row200 col175">A</div>
+        <div class="mykeycap1 row200 col275">S</div>
+        <div class="mykeycap1 row200 col375">D</div>
+        <div class="mykeycap1 homing row200 col475">F</div>
+        <div class="mykeycap1 row200 col575">G</div>
+        <div class="mykeycap1 row200 col675">H</div>
+        <div class="mykeycap1 homing row200 col775">J</div>
+        <div class="mykeycap1 row200 col875">K</div>
+        <div class="mykeycap1 row200 col975">L</div>
+        <div class="mykeycap1 row200 col1075">;</div>
+        <div class="mykeycap1 row200 col1175">'</div>
+        <div class="mykeycap3 w225 row200 col1275">Enter</div>
+        <div class="mykeycap2 w225 row300">Shift</div>
+        <div class="mykeycap1 row300 col225">Z</div>
+        <div class="mykeycap1 row300 col325">X</div>
+        <div class="mykeycap1 row300 col425">C</div>
+        <div class="mykeycap1 row300 col525">V</div>
+        <div class="mykeycap1 row300 col625">B</div>
+        <div class="mykeycap1 row300 col725">N</div>
+        <div class="mykeycap1 row300 col825">M</div>
+        <div class="mykeycap1 row300 col925">,</div>
+        <div class="mykeycap1 row300 col1025">.</div>
+
+        <div id="kblayouts-50" value-name="1.25u x3" value-desc="YD60UNI RShift" style="display: block">
+            <div class="mykeycap1 w125 row300 col1125">/</div>
+            <div class="mykeycap2 w125 row300 col1250">Up</div>
+            <div class="mykeycap2 w125 row300 col1375">RShift</div>
+        </div>
+        <div id="kblayouts-51" value-name="1.75u+1u" style="display: none">
+            <div class="mykeycap1 row300 col1125">/</div>
+            <div class="mykeycap2 w175 row300 col1225">Up</div>
+            <div class="mykeycap2 row300 col1400">RShift</div>
+        </div>
+        <div id="kblayouts-52" value-name="2.75u" style="display: none">
+            <div class="mykeycap1 row300 col1125">/</div>
+            <div class="mykeycap2 w275 row300 col1225">Up</div>
+        </div>
+        <div class="mykeycap2 w125 row400">Ctrl</div>
+        <div class="mykeycap2 w125 row400 col125">Win</div>
+        <div class="mykeycap2 w125 row400 col250">Alt</div>
+        <div class="mykeycap1 w625 space row400 col375">Space</div>
+        <div class="mykeycap2 w125 row400 col1000">RAlt</div>
+        <div class="mykeycap2 w125 row400 col1125">Left</div>
+        <div class="mykeycap2 w125 row400 col1250">Down</div>
+        <div class="mykeycap2 w125 row400 col1375">Right</div>
+    </div-->
+    
+    <div style="display: block;margin-left:970px;transform:scale(0.8,0.8)">
+        <div class="mycase">
+            <div class="kbdbg-border row50" style="width:120px;height:228px;"></div>
+            <div class="kbdbg-mask row50" style="width:120px;height:228px;"></div>
+        </div>
+        <div class="mykeycap1 row50 col50">F15</div>
+        <div class="mykeycap1 row150">F13</div>
+        <div class="mykeycap1 row150 col100">F14</div>
+        <div class="mykeycap1 row250">F17</div>
+        <div class="mykeycap1 row350">F16</div>
+    </div>
+</div>
+
+<div id="kbd-macrofn" style="clear: both; display: none">
+    <li class="key-set" id="code-0xf003" lang="zh_sc" title="切换蓝牙和USB连接">BT/<br>USB</li>
+    <li class="key-set spc25" id="code-0xf006" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!(disable or enable WIN key.)">Win<br>Lock</li>
+    <li class="key-set" id="code-0xf007" lang="zh_sc" title="发送按键设置到ydkb.io。这是一个测试功能，使用说明见帮助">Send<br>Keymap</li>
+    <li class="key-set" id="code-0xf004" lang="zh_sc" title="Enter键，和右Shift一起按时为”">Space2</li>
+    <li class="key-set" id="code-0xf805" lang="zh_sc" title="单按为方向上，长按为按住RShift并瞬时开启层7">r⇧L7<br>↑</li>
+    <li class="key-set rowstart" id="code-0xf002" lang="zh_sc" title="按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">Reset</li>
+    <li class="key-set spc25" id="code-0xf001" lang="zh_sc" title="ESC键，和左Shift一起按时为~">~(L)<br>Esc</li>
+    <li class="key-set" id="code-0xf000" lang="zh_sc" title="ESC键，和右Shift一起按时为~">~(R)<br>Esc</li>
+    <li class="key-set" id="code-0xf100" lang="zh_sc" title="Enter键，和右Shift一起按时为”">“(R)<br>Enter</li>
+    <li class="key-set" id="code-0xf200" lang="zh_sc" title=">.键，和右Shift一起按时为?">?(R)<br>&gt;.</li>
+    <li class="key-set" id="code-0xf300" lang="zh_sc" title="Up键，但是和右Shift一起按时为?">?(R)<br>↑</li>
+    <li class="key-set" id="code-0xf400" lang="zh_sc" title="L键，但是和右Shift一起按时为:">:(R)<br>L</li>
+    <li class="key-set" id="code-0xf500" lang="zh_sc" title="Backspace键，但是和右Shift一起按时为|">|(R)<br>BS</li>
+</div>
+<div id="kb-preset_keymap"  style="display: none">
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TXYocMQyEL1QP1o8l+SzN3v8aKbmb7RnYTTIEwj7MGDy4kcrWp9JxHDL4g0RI7T33PuCYCCQKCzyKQBRiEEeoh3/gkECHM29BB1SgCjWoQyc0oAkt6IINmDDDFGYwh01YwBJWsIWQWMHdfVA9Kea2jw6f8IAns73gC3NgCqZiGlyylIGrj4GZmIVJPcoIlRDGvOCTWQwvSEQhFnIgBalIQzpyIllrIgu5mFEDJaC0i1KxHDVRgSIPHhfWwBIsxTIsx5pMYgUrsQisiTUykmG5MohkZFPhPvcee8+9194bYVpnNShp2E2buEUmdQja+r81GdtqrdVK1HGZHaXVbzYb1CRwCh1UvFZXzxiwCTxGVmPtHjTXptz3NtuzJ90z63DvVpGeUWJ3LuzE3Ghv0HjEzD52e/S8eDMvZXza/kK+ufhoTNpsNuuntR/y29VG3Q5sq57mza6tqJ8l46ucP6s+RFwPvZdfHzbUz6jTtG3BbR/fKKrxbIEnrL5J03o0KI0W/XBf2w+2LSj7Q7Qvv35uuzxPb31TVM9HvFy4ajFG2XG65i8BvR5xeRQc6meKbX89/+082T0q9mBgos59xTlOd7bfI6RyDVhHbx36vb+Ma9jkGr1/LednRHSVnw1/ovoz3/u/I95E3kTeRF4m8vELi7KmuxoKAAA=" title="YD40w_v2 参考">YD40w_v2 参考</li>
+    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+1TS7LkIAy7kBb4g4GzpN79rzESSX+rZzNvN9VFyiFgy7LsHMdhHq3BqmxuO7ZtSJTVKoyFgWlY4KEZzPeTsPjBYYXy4byZ+7LBDe4M8YR3OGPhQkZGtIkwRoXTpxCJjijuB4JX60rpjO0MZ0qf05EdWVgMzInZ0JvQu6OHiJQt7RkXSklGZB+9gjeZ9PXO0KIj+ZAHfLMcDYOWXAMjMToGqx0YkzUzgIlYNtPbwkzMjllXrkkaC6thURfHYiZPJlhKJAUnFh9JJs1YfpBpI702pAtt37a2HdvObZdsKEpCmaQ2xkpv68QheOgtzLWVcmH5qWJal9ep2tbbKTiBDiJeK9utz7euX0vYyKm0SNdeszBYtd0Xi2TzxEBru+7j8eSzD+K2PX32SJmavSmc8ex/lbqiD/XywottGiLeUF+Tsv4P1xoV+XTTTH1yeMf5u4eEe3x3Ta0gPR6HIx5Yajb6RJ15xymKhozdq1wqPvNZNs6nv5Jfmsjr1rejx+4d4/uzeBxyTQoxTnLjjntNMv+TjwLds+dNnl6vHO4C5ntbfyfgv6L8Tx5fRb6KfBX5KvJrRX7+AHUymEq8CQAA" title="YD40w_v1 参考">YD40w_v1 参考</li>
+</div>
+<div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:ydkb_u2u" style="display: none;"></div>

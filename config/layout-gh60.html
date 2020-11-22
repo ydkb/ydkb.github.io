@@ -1,0 +1,183 @@
+<div id="mykbd">
+    <div id="kbd-info" style="display: none;">
+        <p><b>刷固件方法：</b><br>
+           前期工作和之前的没有太大区别，按reset，没有装dfu驱动就用zadig装上驱动。<br>
+           从网页右上角下载.hex固件和刷机工具，将hex拖到ydkbs-reflash.exe上，按屏幕提示按一下键盘reset即可开始刷固件<p>
+        <p><b>固件说明：</b><br>
+           默认支持是按照XD60来的。四个GPIO，GPIO2接的轴灯背光，GPIO1接的RGB底灯，最大支持10个。其他一些修改版的全灯GH60用的背光和底灯io可能不同，不能使用此固件，原版的GH60_abc因为不是全灯，没什么影响。</p>
+        <p><b>蓝牙模块：</b><br>
+           最新固件已经添加了支持ydkb的蓝牙模块，接法是键盘的GND接模块的G，键盘的VCC接模块的V，键盘的GPIO0接模块的C，键盘的GPIO3接模块的R。<br>
+           另外，灯带即使没开的时候也会耗电（每颗灯约0.9ma），如果需要蓝牙更长的续航，就不要接灯带，或者给灯带的电源加一个物理开关。</p>
+    </div>   
+    <div id="mycase" class="mycase"></div>
+    <div class="mykeycap3">Esc</div>
+    <div class="mykeycap1 col100">1</div>
+    <div class="mykeycap1 col200">2</div>
+    <div class="mykeycap1 col300">3</div>
+    <div class="mykeycap1 col400">4</div>
+    <div class="mykeycap1 col500">5</div>
+    <div class="mykeycap1 col600">6</div>
+    <div class="mykeycap1 col700">7</div>
+    <div class="mykeycap1 col800">8</div>
+    <div class="mykeycap1 col900">9</div>
+    <div class="mykeycap1 col1000">0</div>
+    <div class="mykeycap1 col1100">-</div>
+    <div class="mykeycap1 col1200">=</div>
+    <div id="kblayouts-00" value-name="不分裂" value-desc="退格键" style="display: block;">
+        <div class="mykeycap2 w200 col1300">BS</div>
+    </div>
+    <div id="kblayouts-01" value-name="分裂" style="display: none;">
+        <div class="mykeycap2 col1300">BS</div>
+        <div class="mykeycap2 col1400">`</div>
+    </div>
+    <div class="mykeycap2 w150 row100">Tab</div>
+    <div class="mykeycap1 row100 col150">Q</div>
+    <div class="mykeycap1 row100 col250">W</div>
+    <div class="mykeycap1 row100 col350">E</div>
+    <div class="mykeycap1 row100 col450">R</div>
+    <div class="mykeycap1 row100 col550">T</div>
+    <div class="mykeycap1 row100 col650">Y</div>
+    <div class="mykeycap1 row100 col750">U</div>
+    <div class="mykeycap1 row100 col850">I</div>
+    <div class="mykeycap1 row100 col950">O</div>
+    <div class="mykeycap1 row100 col1050">P</div>
+    <div class="mykeycap1 row100 col1150">[</div>
+    <div class="mykeycap1 row100 col1250">]</div>
+    <div class="mykeycap2 w175 row200">Capslock</div>
+    <div class="mykeycap1 row200 col175">A</div>
+    <div class="mykeycap1 row200 col275">S</div>
+    <div class="mykeycap1 row200 col375">D</div>
+    <div class="mykeycap1 homing row200 col475">F</div>
+    <div class="mykeycap1 row200 col575">G</div>
+    <div class="mykeycap1 row200 col675">H</div>
+    <div class="mykeycap1 homing row200 col775">J</div>
+    <div class="mykeycap1 row200 col875">K</div>
+    <div class="mykeycap1 row200 col975">L</div>
+    <div class="mykeycap1 row200 col1075">;</div>
+    <div class="mykeycap1 row200 col1175">'</div>
+    <div id="kblayouts-10" value-name="普通回车" value-desc="回车" style="display: block;">
+        <div class="mykeycap1 w150 row100 col1350">\</div>
+        <div class="mykeycap3 w225 row200 col1275">Enter</div>
+    </div>
+    <div id="kblayouts-11" value-name="ISO回车" style="display: none;">
+        <div class="mykeycap3 w150 h200 row100 col1350">Enter</div>
+        <div class="mykeycap1 row200 col1275">iso#</div>
+    </div> 
+    <div id="kblayouts-20" value-name="2.25u" value-desc="左Shift" style="display: block;">
+        <div class="mykeycap2 w225 row300">Shift</div>
+    </div>
+    <div id="kblayouts-21" value-name="1.25u+1u" style="display: none;">
+        <div class="mykeycap2 w125 row300">Shift</div>
+        <div class="mykeycap2 row300 col125">iso\</div>
+    </div>
+    <div id="kblayouts-22" value-name="2u" style="display: none;">
+        <div class="mykeycap2 w200 row300">Shift</div>
+    </div>
+    <div id="kblayouts-23" value-name="1u+1u" style="display: none;">
+        <div class="mykeycap2 row300">Shift</div>
+        <div class="mykeycap2 row300 col100">iso\</div>
+    </div>
+    <div id="kblayouts-30" value-name="默认" value-desc="Z行字母" style="display: block;">
+        <div class="mykeycap1 row300 col225">Z</div>
+        <div class="mykeycap1 row300 col325">X</div>
+        <div class="mykeycap1 row300 col425">C</div>
+        <div class="mykeycap1 row300 col525">V</div>
+        <div class="mykeycap1 row300 col625">B</div>
+        <div class="mykeycap1 row300 col725">N</div>
+        <div class="mykeycap1 row300 col825">M</div>
+        <div class="mykeycap1 row300 col925">,</div>
+        <div class="mykeycap1 row300 col1025">.</div>
+    </div>
+    <div id="kblayouts-31" value-name="左移0.25u" style="display: none;">
+        <div class="mykeycap1 row300 col200">Z</div>
+        <div class="mykeycap1 row300 col300">X</div>
+        <div class="mykeycap1 row300 col400">C</div>
+        <div class="mykeycap1 row300 col500">V</div>
+        <div class="mykeycap1 row300 col600">B</div>
+        <div class="mykeycap1 row300 col700">N</div>
+        <div class="mykeycap1 row300 col800">M</div>
+        <div class="mykeycap1 row300 col900">,</div>
+        <div class="mykeycap1 row300 col1000">.</div>
+    </div>
+    <div id="kblayouts-40" value-name="2.75u" value-desc="右Shift" style="display: block">
+        <div class="mykeycap1 row300 col1125">/</div>
+        <div class="mykeycap2 w275 row300 col1225">RShift</div>
+    </div>
+    <div id="kblayouts-41" value-name="1.75u+1u" style="display: none">
+        <div class="mykeycap1 row300 col1125">/</div>
+        <div class="mykeycap2 w175 row300 col1225">RShift</div>
+        <div class="mykeycap2 row300 col1400">Ro</div>
+    </div>
+    <div id="kblayouts-42" value-name="1u+1.75u" style="display: none">
+        <div class="mykeycap1 row300 col1125">/</div>
+        <div class="mykeycap2 row300 col1225">Ro</div>
+        <div class="mykeycap2 w175 row300 col1325">RShift</div>
+    </div>
+    <div id="kblayouts-43" value-name="1.75u+1u+1u" style="display: none">
+        <div class="mykeycap2 w175 row300 col1125">Delete</div>
+        <div class="mykeycap2 row300 col1300">RShift</div>
+        <div class="mykeycap2 row300 col1400">Ro</div>
+    </div>
+    <div id="kblayouts-44" value-name="1u+1u+1u" style="display: none">
+        <div class="mykeycap1 row300 col1100">/</div>
+        <div class="mykeycap2 row300 col1200">Delete</div>
+        <div class="mykeycap2 row300 col1300">RShift</div>
+        <div class="mykeycap2 row300 col1400">Ro</div>
+    </div>
+    <div id="kblayouts-50" value-name="6.25u wk" value-desc="空格行" style="display: block;">
+        <div class="mykeycap2 w125 row400">Ctrl</div>
+        <div class="mykeycap2 w125 row400 col125">Win</div>
+        <div class="mykeycap2 w125 row400 col250">Alt</div>
+        <div class="mykeycap1 w625 space row400 col375">Space</div>
+        <div class="mykeycap2 w125 row400 col1000">RAlt</div>
+        <div class="mykeycap2 w125 row400 col1125">RWin</div>
+        <div class="mykeycap2 w125 row400 col1250">Menu</div>
+        <div class="mykeycap2 w125 row400 col1375">RCtrl</div>
+    </div>
+    <div id="kblayouts-51" value-name="7u wkl" style="display: none;"> 
+        <div class="mykeycap2 w150 row400">Ctrl</div>
+        <div class="mykeycap2 row400 col150">Win</div>
+        <div class="mykeycap2 w150 row400 col250">Alt</div>
+        <div class="mykeycap1 w700 space row400 col400">Space</div>
+        <div class="mykeycap2 w150 row400 col1100">RWin</div>
+        <div class="mykeycap2 row400 col1250">Menu</div>
+        <div class="mykeycap2 w150 row400 col1350">RCtrl</div>
+    </div>
+    <div id="kblayouts-52" value-name="6u空格" style="display: none;">
+        <div class="mykeycap2 w150 row400">Ctrl</div>
+        <div class="mykeycap2 row400 col150">Win</div>
+        <div class="mykeycap2 w150 row400 col250">Alt</div>
+        <div class="mykeycap1 w600 space row400 col400">Space</div>
+        <div class="mykeycap2 w150 row400 col1000">RAlt</div>
+        <div class="mykeycap2 row400 col1150">RWin</div>
+        <div class="mykeycap2 row400 col1250">Menu</div>
+        <div class="mykeycap2 w150 row400 col1350">RCtrl</div>
+    </div>
+    <div id="kblayouts-53" value-name="6.25u+方向" style="display: none;">
+        <div class="mykeycap2 w125 row400">Ctrl</div>
+        <div class="mykeycap2 w125 row400 col125">Win</div>
+        <div class="mykeycap2 w125 row400 col250">Alt</div>
+        <div class="mykeycap1 w625 space row400 col375">Space</div>
+        <div class="mykeycap2 row400 col1000">RAlt</div>
+        <div class="mykeycap2 row400 col1100">RWin</div>
+        <div class="mykeycap2 row400 col1200">Left</div>
+        <div class="mykeycap2 row400 col1300">Menu</div>
+        <div class="mykeycap2 row400 col1400">RCtrl</div>
+    </div>
+</div>
+<div id="kbd-macrofn" style="clear: both; display: none">
+    <li class="key-set rowstart" id="code-0xf00b" title="Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)">BT/<br>USB</li>
+    <li class="key-set" id="code-0xf00c" title="Bluetooth Sleep Mode on/off (Shortcut: LShift+RShift+P)">Sleep O/X</li>
+    <li class="key-set" id="code-0xf000" lang="zh_sc" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
+    <li class="key-set" id="code-0xf001" lang="zh_sc" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
+    <li class="key-set" id="code-0xf002" lang="zh_sc" title="单按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">JMP<br>BL</li>
+    <li class="key-set" id="code-0xf003" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
+    <div id="backlight_control_keys"></div>
+    <div id="rgb_control_keys"></div>
+</div>
+<div id="kb_ledmap"  style="display: none">
+    <li id="kb_ledmap-0" value="17" title="CAPS灯">CAPS灯</li>
+    <li id="kb_ledmap-1" value="1" title="RGB红">RGB红</li>
+    <li id="kb_ledmap-2" value="0" title="RGB绿">RGB绿</li>
+    <li id="kb_ledmap-3" value="1" title="RGB蓝">RGB蓝</li>
+</div>

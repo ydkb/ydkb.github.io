@@ -1,0 +1,88 @@
+<div id="mykbd">
+    <div id="kbd-purchase_link_0" style="display: none;" value="https://item.taobao.com/item.htm?id=557654005275">（淘宝）YDKB客制化</div>
+    <div id="kbd-info" style="display: none;">
+        <p><b>刷机方式:</b><br>
+            先拔掉数据线，按住ESC插线进入Bootloader。这时将hex拖到ydkb-relflash.exe，固件将自动开始刷新<br>
+            增加蓝牙模块后，刷机方式在上面基础上，需要先关掉开关，用上面方法刷新，刷新完后重新打开开关。<br>
+            不过，在正常使用支持蓝牙固件的时候，直接同时按左右Shift+B，可以让键盘重启，此时按住ESC不放，也可以进入Bootloader，刷新固件。用这个方法就不需要去动电源开关了。</p>
+        <p><b>Daisy的蓝牙接法：</b>VCC --> V GND --> G SCK --> R MOSI --> S MISO -->C，前面是板子上都有标的，后面字母是蓝牙模块上标的。要使用蓝牙模块，还需要将LEDMAP里的UART2BT那个设置为“接蓝牙模块”。</p>
+    </div>   
+    <div id="mycase" class="mycase"></div>
+    <div class="mykeycap3 bl-key">Esc</div>
+    <div class="mykeycap1 col100">Q</div>
+    <div class="mykeycap1 col200">W</div>
+    <div class="mykeycap1 col300">E</div>
+    <div class="mykeycap1 col400">R</div>
+    <div class="mykeycap1 col500">T</div>
+    <div class="mykeycap1 col600">Y</div>
+    <div class="mykeycap1 col700">U</div>
+    <div class="mykeycap1 col800">I</div>
+    <div class="mykeycap1 col900">O</div>
+    <div class="mykeycap1 col1000">P</div>
+    <div class="mykeycap2 col1100">BS</div>
+    <div class="mykeycap2 w125 row100">RCtrl</div>
+    <div class="mykeycap1 row100 col125">A</div>
+    <div class="mykeycap1 row100 col225">S</div>
+    <div class="mykeycap1 row100 col325">D</div>
+    <div class="mykeycap1 homing row100 col425">F</div>
+    <div class="mykeycap1 row100 col525">G</div>
+    <div class="mykeycap1 row100 col625">H</div>
+    <div class="mykeycap1 homing row100 col725">J</div>
+    <div class="mykeycap1 row100 col825">K</div>
+    <div class="mykeycap1 row100 col925">L</div>
+    <div class="mykeycap3 w175 row100 col1025">Enter</div>
+    <div class="mykeycap2 w175 row200">Shift</div>
+    <div class="mykeycap1 row200 col175">Z</div>
+    <div class="mykeycap1 row200 col275">X</div>
+    <div class="mykeycap1 row200 col375">C</div>
+    <div class="mykeycap1 row200 col475">V</div>
+    <div class="mykeycap1 row200 col575">B</div>
+    <div class="mykeycap1 row200 col675">N</div>
+    <div class="mykeycap1 row200 col775">M</div>
+    <div class="mykeycap1 row200 col875">,</div>
+    <div id="kblayouts-00" value-name="双空格" value-desc="布局" style="display: block;">
+        <div class="mykeycap2 row200 col975">.</div>
+        <div class="mykeycap2 w125 row200 col1075">RShift</div>
+        <div class="mykeycap2 w125 row300">Ctrl</div>
+        <div class="mykeycap2 row300 col125">Win</div>
+        <div class="mykeycap2 w125 row300 col225">Alt</div>
+        <div class="mykeycap1 space w225 row300 col350">RAlt</div>
+        <div class="mykeycap1 space w275 row300 col575">Space</div>
+        <div class="mykeycap2 w125 row300 col850">Left</div>
+        <div class="mykeycap2 row300 col975">Down</div>
+        <div class="mykeycap2 w125 row300 col1075">Right</div>
+    </div>
+    <div id="kblayouts-01" value-name="单空格" style="display: none;">
+        <div class="mykeycap2 w125 row200 col975">.</div>
+        <div class="mykeycap2 row200 col1100">RShift</div>
+        <div class="mykeycap2 w125 row300">Ctrl</div>
+        <div class="mykeycap2 row300 col125">Win</div>
+        <div class="mykeycap2 row300 col225">Alt</div>
+        <div class="mykeycap1 space w625 row300 col325">Space</div>
+        <div class="mykeycap2 w125 row300 col950">Down</div>
+        <div class="mykeycap2 w125 row300 col1075">Right</div>
+    </div>
+</div>
+
+<div id="kbd-macrofn" style="clear: both; display: none">
+    <li class="key-set rowstart" id="code-0xf002" title="按清除键盘按键状态，和左Ctrl一起按时为重启键盘">Reset</li>
+    <li class="key-set" id="code-0xf003" title="锁win">Win<br>Lock</li>
+    <li class="key-set spc25" id="code-0xf001" title="ESC键，和左Shift一起按时为~">~(L)<br>Esc</li>
+    <li class="key-set" id="code-0xf000" title="ESC键，和右Shift一起按时为~">~(R)<br>Esc</li>
+    <li class="key-set" id="code-0xf100" title="Enter键，和右Shift一起按时为”">“(R)<br>Enter</li>
+    <li class="key-set" id="code-0xf200" title=">.键，和右Shift一起按时为?">?(R)<br>&gt;.</li>
+    <li class="key-set" id="code-0xf300" title="Up键，但是和右Shift一起按时为?">?(R)<br>↑</li>
+    <li class="key-set" id="code-0xf400" title="L键，但是和右Shift一起按时为:">:(R)<br>L</li>
+    <li class="key-set" id="code-0xf500" title="Backspace键，但是和右Shift一起按时为|">|(R)<br>BS</li>
+    <li class="key-set rowstart" id="code-0xf00b" title="BT/USB Switch">BT/<br>USB</li>
+    <li class="key-set" id="code-0xf00c" title="Sleep Mode on/off">Sleep O/X</li>
+    <div id="backlight_control_keys"></div>
+    <div id="rgb_control_keys"></div>
+</div>
+<div id="kb_ledmap"  style="display: none">
+    <li id="kb_ledmap-0" value="17" title="A键左边那个">CAPS灯</li>
+    <li id="kb_ledmap-1" value="1" title="ESC键灯">ESC灯</li>
+    <li id="kb_ledmap-2" class="rgb_color" value="1" title="RGB左四颗">RGB左4</li>
+    <li id="kb_ledmap-3" class="rgb_color" value="1" title="RGB右四颗">RGB右4</li>
+    <li id="kb_ledmap-4" class="io_bt" value="0" title="有无蓝牙">UART2BT</li>
+</div>

@@ -1,0 +1,75 @@
+<div id="mykbd">
+    <div id="kbd-info">
+        <p><b>刷机方式：</b></p>
+        <p>固件功能正常时，插入数据线同时按住左上角按键，键盘进入刷机模式。这时将hex拖到YDKB Tool.exe，固件将自动开始刷新。</p>
+        <p>如果刷错了别的固件，造成固件功能不正常了，先关掉电源开关，再执行上面的操作。</p>
+        <p>如果无法刷，检查在刷机模式下，键盘有被系统正确识别，即在“Windows设置--设备”里，不是未知设备。</p>
+        <p>要使用蓝牙模块，在LEDMAP里，将“蓝牙模块”设置为Bluetooth</p>
+    </div>   
+    <div id="mycase" class="mycase"></div>
+    <div class="mykeycap1 bl-key">Q</div>
+    <div class="mykeycap1 col100">W</div>
+    <div class="mykeycap1 col200">E</div>
+    <div class="mykeycap1 col300">R</div>
+    <div class="mykeycap1 col400">T</div>
+    <div class="mykeycap1 col500">Y</div>
+    <div class="mykeycap1 col600">U</div>
+    <div class="mykeycap1 col700">I</div>
+    <div class="mykeycap1 col800">O</div>
+    <div class="mykeycap1 col900">P</div>
+    <div class="mykeycap1 row100">A</div>
+    <div class="mykeycap1 row100 col100">S</div>
+    <div class="mykeycap1 row100 col200">D</div>
+    <div class="mykeycap1 homing row100 col300">F</div>
+    <div class="mykeycap1 row100 col400">G</div>
+    <div class="mykeycap1 row100 col500">H</div>
+    <div class="mykeycap1 homing row100 col600">J</div>
+    <div class="mykeycap1 row100 col700">K</div>
+    <div class="mykeycap1 row100 col800">L</div>
+    <div class="mykeycap2 row100 col900">Enter</div>
+    <div class="mykeycap1 row200">Z</div>
+    <div class="mykeycap1 row200 col100">X</div>
+    <div class="mykeycap1 row200 col200">C</div>
+    <div class="mykeycap1 row200 col300">V</div>
+    <div id="kblayouts-00" value-name="1u" value-desc="空格" style="display: block;">
+	    <div class="mykeycap1 row200 col400">B</div>
+	    <div class="mykeycap1 row200 col500">Space</div>
+    </div>
+    <div id="kblayouts-01" value-name="2u" style="display: none;">
+        <div class="mykeycap1 w200 row200 col400">Space</div>
+    </div>
+		
+    <div class="mykeycap1 row200 col600">N</div>
+    <div class="mykeycap1 row200 col700">M</div>
+    <div class="mykeycap1 row200 col800">,</div>
+    <div class="mykeycap2 row200 col900">RCtrl</div>
+
+</div>
+
+<div id="kbd-macrofn">
+    <li class="key-set rowstart" id="code-0xf00a" title="RGB底灯开关">RGB<br>开关</li>
+    <li class="key-set" id="code-0xf20a" title="RGB模式加，同时按住左Shift时为模式减">RGB<br>模式</li>
+    <li class="key-set" id="code-0xf30a" title="RGB色相减">RGB<br>色相-</li>
+    <li class="key-set" id="code-0xf40a" title="RGB色相加，同时按住左Shift时为色相减">RGB<br>色相+</li>
+    <li class="key-set" id="code-0xf50a" title="RGB饱和度减">RGB<br>饱和-</li>
+    <li class="key-set" id="code-0xf60a" title="RGB饱和度加，同时按住左Shift时为饱和度减">RGB<br>饱和+</li>
+    <li class="key-set" id="code-0xf70a" title="RGB明度减">RGB<br>明度-</li>
+    <li class="key-set" id="code-0xf80a" title="RGB明度加，同时按住左Shift时为明度减">RGB<br>明度+</li>
+    <li class="key-set rowstart" id="code-0xf002" title="按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">JMP<br>BL</li>
+    <li class="key-set" id="code-0xf003" title="锁win">Win<br>Lock</li>
+    <li class="key-set" id="code-0xf001" title="ESC键，和左Shift一起按时为~">~(L)<br>Esc</li>
+    <li class="key-set" id="code-0xf000" title="ESC键，和右Shift一起按时为~">~(R)<br>Esc</li>
+    <li class="key-set" id="code-0xf100" title="Enter键，和右Shift一起按时为”">“(R)<br>Enter</li>
+    <li class="key-set" id="code-0xf200" title=">.键，和右Shift一起按时为?">?(R)<br>&gt;.</li>
+    <li class="key-set" id="code-0xf300" title="Up键，但是和右Shift一起按时为?">?(R)<br>↑</li>
+    <li class="key-set" id="code-0xf400" title="L键，但是和右Shift一起按时为:">:(R)<br>L</li>
+    <li class="key-set" id="code-0xf500" title="Backspace键，但是和右Shift一起按时为|">|(R)<br>BS</li>
+    <li class="key-set rowstart" id="code-0xf00b" title="Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)">BT/<br>USB</li>
+    <li class="key-set" id="code-0xf00c" title="Sleep Mode on/off (Shortcut: LShift+RShift+P)">Sleep O/X</li>
+    <li class="key-set" id="code-0xf00d" title="Discoverable Mode OFF (Shortcut: LShift+RShift+O)"><i style="font-size:16px" class='fa fa-angle-double-left'></i><i style="font-size:16px" class='fa fa-bluetooth-b '></i><i style="font-size:16px" class='fa fa-angle-double-right'></i><br><i style="font-size:18px" class='fa fa-eye-slash'></i></li>
+    <li class="key-set" id="code-0xf00e" title="Discoverable Mode ON(Shortcut: LShift+RShift+I)"><i style="font-size:16px" class='fa fa-angle-double-left'></i><i style="font-size:16px" class='fa fa-bluetooth-b'></i><i style="font-size:16px" class='fa fa-angle-double-right'></i><br><i style="font-size:18px" class='fa fa-eye'></i></li>
+</div>
+<div id="kb_ledmap">
+    <li id="kb_ledmap-0" class="io_bt" value="20" title="有蓝牙模块的设置为Bluetooth，没有的设置为无">蓝牙模块</li>
+</div>
+<div id="kbd-firmware" value-keymapaddr="0x7400"></div>

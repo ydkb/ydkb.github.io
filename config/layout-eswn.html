@@ -1,0 +1,56 @@
+<div style="width: 120px;height: 120px;padding-left: 00px;margin-left: 550px;margin-top: 30px;margin-bottom: 20px;">
+    <div id="kbd-info" style="display: none;">
+        <p><b>刷机方式：</b></p>
+        <p>按住左上角键(USB接口左边的键）不放，插入数据线，电脑会识别出一个U盘名为ESWN。这时可放开按键了。</p>
+        <p>将下载的固件“eswn.bin"复制或拖入U盘里，直接覆盖原文件。然后右键弹出U盘或者再按一次左上角键退出，刷机完成。</p>
+        <p>不需要安装任何的驱动和刷机软件。 也可以直接上传U盘里的eswn.bin到网站上，读取键盘的当前设置。</p>
+    </div>   
+    <div id="kblayouts-00" value-name="左上方" value-desc="USB接口位置" style="display: block;padding-top: 20px; transform: rotate(-45deg);-o-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);">
+        <div class="mycase">
+            <div class="kbdbg-border" style="width:120px;height:120px;"></div>
+            <div class="kbdbg-mask" style="width:120px;height:120px;"></div>
+            <div class="kbdbg-inner col75 w50" style="margin-top:-12px;height: 10px"></div>
+        </div>
+        <div style="position: relative;"><span style="position: absolute;top:-6px;left:3px;font-size: 46px;color:#f0f0f0">★</span></div>
+        <div class="mykeycap1 rr45">Left</div>
+        <div class="mykeycap2 rr45 col100">Up</div>
+        <div class="mykeycap1 rr45 row100">Down</div>
+        <div class="mykeycap1 rr45 row100 col100">Right</div>
+    </div>
+    <div id="kblayouts-01" value-name="右上方" style="display: none; padding-top: 20px; transform: rotate(-45deg);-o-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);">
+        <div class="mycase">
+            <div class="kbdbg-border" style="width:120px;height:120px;"></div>
+            <div class="kbdbg-mask" style="width:120px;height:120px;"></div>
+            <div class="kbdbg-inner row75 h50" style="margin-left:108px;width: 10px"></div>
+        </div>
+        <div style="position: relative;"><span style="position: absolute;top:-6px;left:3px;font-size: 46px;color:#f0f0f0">★</span></div>
+        <div class="mykeycap1 rr45">Down</div>
+        <div class="mykeycap2 rr45 col100">Left</div>
+        <div class="mykeycap1 rr45 row100">Right</div>
+        <div class="mykeycap1 rr45 row100 col100">Up</div>
+    </div>
+    <div id="kblayouts-02" value-name="正上方" style="display: none;">
+        <div class="mycase">
+            <div class="kbdbg-border" style="width:120px;height:120px;"></div>
+            <div class="kbdbg-mask" style="width:120px;height:120px;"></div>
+            <div class="kbdbg-inner col75 w50" style="margin-top:-12px;height: 10px"></div>
+        </div>
+        <div style="position: relative;"><span style="position: absolute;top:-6px;left:3px;font-size: 46px;color:#f0f0f0">★</span></div>
+        <div class="mykeycap1 ">Left</div>
+        <div class="mykeycap2 col100">Up</div>
+        <div class="mykeycap1 row100">Down</div>
+        <div class="mykeycap1 row100 col100">Right</div>
+    </div>
+</div>
+
+<div id="kbd-macrofn" style="clear: both; display: none">
+    <li class="key-set rowstart" id="code-0xf003" title="RGB底灯开关">RGB<br>开关</li>
+    <li class="key-set" id="code-0xf004" title="RGB模式加，同时按住左Shift时为模式减">RGB<br>模式</li>
+    <li class="key-set" id="code-0xf005" title="RGB色相减">RGB<br>色相-</li>
+    <li class="key-set" id="code-0xf006" title="RGB色相加，同时按住左Shift时为色相减">RGB<br>色相+</li>
+    <li class="key-set" id="code-0xf007" title="RGB饱和度减">RGB<br>饱和-</li>
+    <li class="key-set" id="code-0xf008" title="RGB饱和度加，同时按住左Shift时为饱和度减">RGB<br>饱和+</li>
+    <li class="key-set" id="code-0xf009" title="RGB明度减">RGB<br>明度-</li>
+    <li class="key-set" id="code-0xf00a" title="RGB明度加，同时按住左Shift时为明度减">RGB<br>明度+</li>
+</div>
+<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000" value-format="bin hex"></div>

@@ -1,0 +1,109 @@
+<div id="mykbd">
+    <div id="kbd-info" value-type="boothid_ble" style="display: none;" ></div>
+    <div id="mycase" class="mycase">
+        <div class="kbdbg-inner kbd-led led9" data-tooltip="充电指示灯，不可配置" style="z-index: 3; left: 52px; top:30px; width: 12px; background-color: red"></div>
+    </div>
+    <div class="mykeycap3 bl-key">Esc</div>
+    <div class="mykeycap1 col100">Q</div>
+    <div class="mykeycap1 col200">W</div>
+    <div class="mykeycap1 col300">E</div>
+    <div class="mykeycap1 col400">R</div>
+    <div class="mykeycap1 col500">T</div>
+    <div class="mykeycap1 col600">Y</div>
+    <div class="mykeycap1 col700">U</div>
+    <div class="mykeycap1 col800">I</div>
+    <div class="mykeycap1 col900">O</div>
+    <div class="mykeycap1 col1000">P</div>
+    <div class="mykeycap2 col1100">BS</div>
+    <div class="mykeycap2 row200">Shift</div>
+    <div class="mykeycap1 row200 col200">X</div>
+    <div class="mykeycap1 row200 col300">C</div>
+    <div class="mykeycap1 row200 col400">V</div>
+    <div class="mykeycap1 row200 col500">B</div>
+    <div class="mykeycap1 row200 col600">N</div>
+    <div class="mykeycap1 row200 col700">M</div>
+    <div class="mykeycap1 row200 col800">,</div>
+    <div class="mykeycap1 row200 col900">.</div>
+    <div class="mykeycap2 row200 col1100">RShift</div>
+    <div class="mykeycap2 row300">Ctrl</div>
+    <div class="mykeycap2 row300 col100">Win</div>
+    <div class="mykeycap2 row300 col200">Alt</div>
+    <div class="mykeycap2 row300 col900">Up</div>
+    <div class="mykeycap2 row300 col1000">Down</div>
+    <div class="mykeycap2 row300 col1100">Right</div>
+
+    <div id="kblayouts-00" value-name="直列" value-desc="ASDFG行" style="display: block;">
+        <div class="mykeycap2 led0 suden row100">Tab</div>
+        <div class="mykeycap1 row100 col100">A</div>
+        <div class="mykeycap1 row100 col200">S</div>
+        <div class="mykeycap1 row100 col300">D</div>
+        <div class="mykeycap1 homing row100 col400">F</div>
+        <div class="mykeycap1 row100 col500">G</div>
+        <div class="mykeycap1 row100 col600">H</div>
+        <div class="mykeycap1 homing row100 col700">J</div>
+        <div class="mykeycap1 row100 col800">K</div>
+        <div class="mykeycap1 row100 col900">L</div>
+        <div class="mykeycap1 row100 col1000">;</div>
+        <div class="mykeycap2 row100 col1100">Enter</div>
+        <div class="mykeycap1 row200 col100">Z</div>
+        <div class="mykeycap1 row200 col1000">/</div>
+    </div>
+    <div id="kblayouts-01" value-name="斜列" style="display: none;">
+        <div class="mykeycap2 led0 suden row100 w150">Tab</div>
+        <div class="mykeycap1 row100 col150">A</div>
+        <div class="mykeycap1 row100 col250">S</div>
+        <div class="mykeycap1 row100 col350">D</div>
+        <div class="mykeycap1 homing row100 col450">F</div>
+        <div class="mykeycap1 row100 col550">G</div>
+        <div class="mykeycap1 row100 col650">H</div>
+        <div class="mykeycap1 homing row100 col750">J</div>
+        <div class="mykeycap1 row100 col850">K</div>
+        <div class="mykeycap1 row100 col950">L</div>
+        <div class="mykeycap2 row100 col1050 w150">Enter</div>
+        <div class="mykeycap2 row200 col100">Z</div>
+        <div class="mykeycap2 row200 col1000">/</div>
+    </div>
+
+    <div id="kblayouts-10" value-name="2u空格" value-desc="空格行" style="display: block;">
+        <div class="mykeycap2 row300 col300">Menu</div>
+        <div class="mykeycap1 space row300 col400 w200">RAlt</div>
+        <div class="mykeycap1 space row300 col600 w200">Space</div>
+        <div class="mykeycap2 row300 col800">Left</div>
+    </div>
+    <div id="kblayouts-11" value-name="1.75u空格" style="display: none;">
+        <div class="mykeycap2 row300 col300 w125">Menu</div>
+        <div class="mykeycap1 space row300 col425 w175">RAlt</div>
+        <div class="mykeycap1 space row300 col600 w175">Space</div>
+        <div class="mykeycap2 row300 col775 w125">Left</div>
+    </div>
+</div>
+<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x7400"></div>
+<div id="kbd-macrofn" style="clear: both; display: none">
+    <li id="code-0xc000" title="长按:<kt>Home</kt>，单击:<kt>PgUp</kt>">PgUp<br>Home</li>
+    <li id="code-0xc001" title="长按:<kt>End</kt>，单击:<kt>PgDn</kt>">PgDn<br>End</li>
+    <li id="code-0xf002" title="单按清除键盘按键状态，和<kt>左Ctrl</kt>一起按时为重启键盘，此时若按住左上角键不放则进入刷机模式">Reset</li>
+    <li id="code-0xf003" title="锁win">Win<br>Lock</li>
+    <li id="code-0xf00c" title="发送按键设置到ydkb.io。这是一个测试功能，使用说明见帮助">Send<br>Keymap</li>
+    <li class="rowstart" id="code-0xf001" title="<kt>Esc</kt>键，当<kt>左Shift</kt>按下时再按为<kt>~</kt>">~(L)<br>Esc</li>
+    <li id="code-0xf000" title="<kt>Esc</kt>键，当<kt>右Shift</kt>按下时再按为<kt>~</kt>">~(R)<br>Esc</li>
+    <li id="code-0xf004" title="正常按<kt>空格键</kt>，但是和<kt>Shift</kt>一起按时不会生效，防止某些输入法切换到全角">Space2</li>
+    <li id="code-0xf100" title='<kt>Enter</kt>键，当<kt>右Shift</kt>按下时再按为<kt>"</kt>'>"(R)<br>Enter</li>
+    <li id="code-0xf200" title="<kt>>.</kt>键，和<kt>右Shift</kt>一起按时为<kt>?</kt>">?(R)<br>&gt;.</li>
+    <li id="code-0xf300" title="<kt>Up</kt>键，和<kt>右Shift</kt>一起按时为<kt>?</kt>">?(R)<br>↑</li>
+    <li id="code-0xf400" title="<kt>L</kt>键，和<kt>右Shift</kt>一起按时为<kt>:</kt>">:(R)<br>L</li>
+    <li id="code-0xf500" title="<kt>Backspace</kt>键，和<kt>右Shift</kt>一起按时为<kt>|</kt>">|(R)<br>BS</li>
+    <div id="ble51_control_keys_v2"></div>
+    <div id="backlight_control_keys"></div>
+    <div id="rgb_control_keys"></div>
+</div>
+<div id="kb_ledmap"  style="display: none">
+    <li id="kb_ledmap-0" value="17" title="CAPS灯">CAPS LED</li>
+    <li id="kb_ledmap-1" value="0" class="can_disable" title="YDPM40BLE仅支持设置为未配置或禁用，不能作为指示">BACKLIGHT</li>
+    <li id="kb_ledmap-2" value="0" class="rgb_color can_disable" title="RGB底灯">RGB</li>
+</div>
+<div id="kb-preset_keymap"  style="display: none">
+    <li id="kb-preset_keymap-0" value-keymap="456C4oOW4Kmg6biL5oKGcOOOiNeA5rWM4YaA4LC44LSWzrDbgOCsgOSyhumZlu2SkOOMmeYDKBssOKsvuKfpOe4gOePoOKcocmY7qWi6paB6oWm5aWY15fsuovinaLok7nmkJHkgoXjqJTqoZTphZnolbbhlLjlm6HkvoXkhIzgoLLsvL3MquC0peOfgO22gYDKBS4jeugsYDKB6DiOKJhOq/ieywluSZgOSJjuamouyMoYDKBKLjOyZjuyZieyZhOSjpuSfhuSgquyBiuydiuyViuykquybjuyrieyrjeyrhYDKByrhOGUlYDKBS0keyDiO65gey7guSYneyJhYDKByJiOKRgOSRhYDKBSRheSRieKRjOyRjuyphey3hOSfhOS/iO6YDKBoOSPhYDKBSPhuukoYDKByzgYDKBy7gYDKByngYDKBy3gYDKByfgYDKBygrYDKByBjYDKBydjYDKByVjYDKBykrYDKByzjYDKBycoOqokOK3jYDKByfjYDKBygqYDKBiBiYDKBSoluqrouGAmOeCoYDKBKMiOOjjYDKBiTkuizjO6CiYDKBOgquy4iO2CgYDKBayhOGEoYDKBiRjuKCkuqOpOCkieOcguS7gOmAguOShuShhOOdhuacsemLlOmYnuGUluipou2PmeaSjueQsOmCgeywqYDKBOisuYDKBgkuqGmYDKB6HpYDKBGIkOSgiYDKBOSnYDKBmugYDKBy5iOuBiOi4guicvYDKByHoeuHmeKRtOectYDKBmenO6PiOelhOG5guacveGnjOOTqYDKBi1gueZieqHgOqEtuqSjeObsYDKBe6su2trOeXmYDKBi1neaIgeqljOGNkuurjeS7nYDKBSWseSfrOC8mYDKB21geqDiYDKBKFiOqfhuGtpu6Fityn4oyk6YCm6Kic4oWt5YOV4rWK7K6d67KB6aqY5Y6T7Z2N46ek5Z6w5oeT6aeU6p6q57qQ7Lmn4qYDKBO5YuW4q6h7Kuh4Lq67am055ub47eu7qG247Si456H64KB7qKH7LCu6pmq44Gy76ab6aYDKBA5L217aOK5bmr5ISe7Z6I47yJ5q6i7qWB7aWw7ZOw7oWh6YmN772P55YDKBR74ic65ut5Z2e4ZG367W87ry74bGf4LmJ7Ke75qYDKBv6b6f6LYDKBv7Z216ZYDKB757mf6JYDKBq4oyB6IG96oCb6IaV6aCS04HlgZzhk7jihoDng6nSgemYDKBrYDKB6ahuiEmOWQkdOh7YG24aaF4oat6YSU0JHnoYrhnoXnmaTmsJ3kn4HrkaLhvYfihoznhJzsmpHqoaXhsJjGmOeonuydseWhrYDKBGHhYDKBuarOWhrOKQvsmf4YmE6Kei5JyS7KuILYDKBmAgA==" title="直列">直列</li>
+    <li id="kb-preset_keymap-1" value-keymap="456C4oOW4Kmg6biL5oKGcOOOiNeA5rWM4YaA4LC44LSWzrDbgOCsgOSyhumZlu2SkOOMmeYDKBsseSCrOYDKBhlOe7nMeP6IGO5IiE64eS7JWLzYLssrHrgIvqvp3jhbzhsrPvi4TiioHgqbTipZDqlKLrjJLpsYzlk5/svYfYhOGloOW6gemUhuWKmYDKB6BreaTgYDKBa4jeYDKBgsuGJheiJgOKJqOGZhuSBguSXheqLiYDKBKsouyzhuSHhuSJpuSRgO6ZjYDKByZhOKbgOSbhYDKBSbheSbheKQkuqxoeqhkuq3huy/huyAmeGdheGYDKBiOyDruSzkeyJiuG3guS/jOGPgOSRhYDKBSRheSRheKRjOyRgeypgYDKBy3hOS/hOSAoO6BoOSvhYDKBSvguuUqYDKByziYDKByHiYDKByJqYDKByfjYDKByvhOKAoOSApYDKBSApeSApeKArOyArYDKBKiouGgreyArYDKByApOKugOStguG6ou6wqOaOhuGqsces5LiI4rOC4Luh5qaG6ZiQ5pqQ4Y2k4oqI4bKi4KSk6KST4p6K5Ka46YmV4r6Q6LYDKBk7oSY6KSc47SZ6K6E5L2Q5YW467Cq4rSC6ImG7YeY7pCO55CI6YKB7KCp46Wy6bO30pDoiYPpqqTns5zksovhpKLkgbPukZTkuLHnuLDpoovvp5DtsIzhjLHko4TijrDniLzrs7viiozkrqzjkJvjuYbsiIrjnpLplLfhqq3um6vltqrtrqzurJHmtY7vlJPrtp/ms7bura3guq/ltqftn63vmbLlporilI7jnp3jj6nthrLriKngsbLqk5DirqjjpYnhmKTrhY3ivrXtkbjspqDrmZXkj4Dit6bpu4bog4PriqbsnI7nq4vvm6zoqoTsoJvtlKjojo3ug77qlrHtqa7rnrvmm7bsvaDtmJfgpJrkj5jig5Tll6rhg5HjlJjtpaTul5nuoKHrra3tj6jljr7ho67rt5jspprloKTqkYjsuLDukpfnp7fht5Lkhrvtua/vmY/rp4vugbzuurrqu7rmrp3uh6Psj67rtr/lu4Tiv6/trarvq7nvqKPogJfvr7rntqDhjavohqDnnqXRgeaBiOGchOyEiOeQkYDKBYDKBrgeKhne6ihYDKBWarOuon9Oh5KGe4amZ6oaY5JiQ5JKR7JGh4bKH6Ya/6pic2pHqoaXhioflhqDljJfSse2YDKBmYDKBGghOeHvemcme2rke6RvuG/hOWFtOWkkOSTse22mOmLmOSmjemSnOYDKBisi/pgIA=" title="直列Z右移">直列Z右移</li>
+    <li id="kb-preset_keymap-2" value-keymap="456C4oOW4Kmg6biL5oKGcOOOiNeA5rWM4YaHxqLsg6zGsMuA4YyYDKB7JKV6pWE4LOC5rqN6YCr4rmk4a6ncu6ApYDKBO4gOCzuOaloOqWjuu5huWhmNeV7LqQ6ri25aW55oCW5aGZ4amk4qaU6ZmR6YW27JuI5rer6rad5oW064YDKBP5J2C6bWJ4LWx7Yq85rqn46q87qCK4paE5JYDKBM5oCS5ImM4pGB7Kak7Iyj4pOI7ImG7ImM5omA5L2i5KYDKBC5ICi7LCi7I2C7IWC7KSo4bKk5rqg5bKp7IuL7IuP7oST5KSb6L2P5qmE7ZuE5IiZ7JGL7JCV7LCg5I2A5IWA5KSg5KOA5JuM5JeJ7IGL7IGH7L2v6rCt7I2N7LK54reI7LeG7LeM5reD7KYDKBN7ICn7LCn7I2H7IWH7KSn7KOH7Jyg6rCf7KeH7KYDKBH7ICl6KCs4rWM4Zqs7pCg5qCi4ayxxqznmIjjk4Lgs6LmoobhmJDkmpDhtaHhh5jhkLjnhITokY3ijojkpLjhiJXgvp/fpYDKBaImOilrOW0qeiOhOStkemGuO2wiuOUjOiRgu2LmeaTtueQsOmRjYDKBiTpeGVmO6zjuaOkYDKBmglemipeuynOCykYDKBCkpOSese6WlOi4see4sOmiiYDKBYDKBjkeWxtOaMtYDKBKspu6DpYDKBugheYDKBhu9y/5Y6o45G956WG67WO66So5rK14aiF5pur5baq7YCo7qiR5rWO65ST6pOQ7r626KWt6buf5qal4ZYDKBs4LYDKBq5aSK5JSO4p2V45eo7YKy44mJ4LGi6qOX7Kap46aJ4pik6oWN4rq27ZK47KeA6ZmF5JeA4ren4buB6IOX6q6Y5ZyN7am975qN5KyY7Lme5Jio6Iyt6puj55a76qys55q945aO7qGM4pWp4L2hzpHhnojltYjtnqHmlpPhnKfrvJrulrfkvqDkurjijqruna3iianmhJLhhYPho5PpiZntl5zrnonbpYDKBemvu26tOu0jeu2gYDKBWnleeVmYDKBYDKBbnYDKBustYDKBieuYDKB2VuYDKBmlvYDKBequYDKBmepYDKBy/qYDKBYDKBNuuuKvYDKBqXrOYDKBsgeqYDKBhe6AhYDKBYDKBokOWgneWvvuOBuOG8hOYDKBZsOaQnueooem6kO60hOqHnYDKBqYluidoeuhoO6yhu6GoOaQnOSYoeqRlYDKB65hOyEmOe4ldOR4KGW4b2F7YW45Iya5aOh5aGl4beY54eA55SS7JOa6JGJ4bYDKBF6YaC5JSc4pWR6omn4bin54aS5q2i7KuILYDKBmAgA==" title="斜列">斜列</li>
+</div>
+<div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:ydpm40ble" style="display: none;"></div>
