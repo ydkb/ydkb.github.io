@@ -254,6 +254,8 @@
 		">>> HHKB BLE <<<":" "
 	},
 	"regex": [
+		[ "当<kt>层(.*\\d+.*)</kt>为状态为开启时，亮起此灯", "Light up when <kt>layer $1</kt> is on." ],
+		[ "当默认层为<kt>层(.*\\d+.*)</kt>时，亮起此灯", "Light up when Defalut Layer is <kt>layer $1</kt>." ],
 		[ "瞬时开启（按下开启，松开关闭） 层(.*\\d+.*)", "Turns on layer $1 momentary while holding" ],
 		[ "长按及与其他键组合时，瞬时开启 层(.*\\d+.*)；<br>快速单击时为(.*\\S.*)", "Turns on LAYER $1 momentary while holding; <br>registers KEY[ $2 ] on tap" ],
 		[ "长按及与其他键组合时：(\\S.*) ；<br>快速单击时为 (\\S.*)","Normal KEY[ $2 ] when tapping, <br>$1 when holding"],

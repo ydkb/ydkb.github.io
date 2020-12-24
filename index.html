@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>YD Keymap Builder_做好用的键盘_</title>
+    <title>YD Keymap Builder. Not for Everyone, just for somebody.</title>
     <meta charset="utf-8">
     <link href="favicon.ico" rel="shortcut icon">
     <link href="./common/css/font-awesome.min.css" rel="stylesheet">
@@ -105,48 +105,48 @@
         <h5 style="text-align: center;" lang='zh_sc'>LED指示灯功能设置</h5>
         <div id="ledmap-row0" class="row">
             <div class="col s6">
-                <a id="indicator_dropdown-name_0" class="col mykeycap2" title="LED0" lang="zh_sc">LED0:</a>
+                <a id="indicator_dropdown-name_0" class="col mykeycap2" lang="zh_sc">LED0:</a>
                 <a id="indicator_dropdown-btn_0" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
                 <input id="indicator-color-btn_0" class="col btn jscolor" type="show"  onchange="update_indicator_color(0,''+this.jscolor)" value="ff0000">
             </div>
             <div class="col s6">
-                <a id="indicator_dropdown-name_1" class="col mykeycap2" title="LED1" lang="zh_sc">LED1:</a>
+                <a id="indicator_dropdown-name_1" class="col mykeycap2" lang="zh_sc">LED1:</a>
                 <a id="indicator_dropdown-btn_1" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
                 <input id="indicator-color-btn_1" class="col btn jscolor" type="show"  onchange="update_indicator_color(1,''+this.jscolor)" value="ff0000">
             </div>
         </div>
         <div id="ledmap-row1" class="row">
             <div class="col s6">
-                <a id="indicator_dropdown-name_2" class="col mykeycap2" title="LED2" lang="zh_sc">LED2:</a>
+                <a id="indicator_dropdown-name_2" class="col mykeycap2" lang="zh_sc">LED2:</a>
                 <a id="indicator_dropdown-btn_2" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
                 <input id="indicator-color-btn_2" class="col btn jscolor" type="show"  onchange="update_indicator_color(2,''+this.jscolor)" value="ff0000">
             </div>
             <div class="col s6">
-                <a id="indicator_dropdown-name_3" class="col mykeycap2" title="LED3" lang="zh_sc">LED3:</a>
+                <a id="indicator_dropdown-name_3" class="col mykeycap2" lang="zh_sc">LED3:</a>
                 <a id="indicator_dropdown-btn_3" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
                 <input id="indicator-color-btn_3" class="col btn jscolor" type="show"  onchange="update_indicator_color(3,''+this.jscolor)" value="0000ff">
             </div>
         </div>
         <div id="ledmap-row2" class="row">
             <div class="col s6">
-                <a id="indicator_dropdown-name_4" class="col mykeycap2" title="LED4" lang="zh_sc">LED4:</a>
+                <a id="indicator_dropdown-name_4" class="col mykeycap2" lang="zh_sc">LED4:</a>
                 <a id="indicator_dropdown-btn_4" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
                 <input id="indicator-color-btn_4" class="col btn jscolor" type="show"  onchange="update_indicator_color(4,''+this.jscolor)" value="ff0000">
             </div>
             <div class="col s6">
-                <a id="indicator_dropdown-name_5" class="col mykeycap2" title="LED5" lang="zh_sc">LED5:</a>
+                <a id="indicator_dropdown-name_5" class="col mykeycap2" lang="zh_sc">LED5:</a>
                 <a id="indicator_dropdown-btn_5" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
                 <input id="indicator-color-btn_5" class="col btn jscolor" type="show"  onchange="update_indicator_color(5,''+this.jscolor)" value="00ffff">
             </div>
         </div>
         <div id="ledmap-row3" class="row">
             <div class="col s6">
-                <a id="indicator_dropdown-name_6" class="col mykeycap2" title="LED6" lang="zh_sc">LED6:</a>
+                <a id="indicator_dropdown-name_6" class="col mykeycap2" lang="zh_sc">LED6:</a>
                 <a id="indicator_dropdown-btn_6" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
                 <input id="indicator-color-btn_6" class="col btn jscolor" type="show"  onchange="update_indicator_color(6,''+this.jscolor)" value="ff0000">
             </div>
             <div class="col s6">
-                <a id="indicator_dropdown-name_7" class="col mykeycap2" title="LED7" lang="zh_sc">LED7:</a>
+                <a id="indicator_dropdown-name_7" class="col mykeycap2" lang="zh_sc">LED7:</a>
                 <a id="indicator_dropdown-btn_7" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
                 <input id="indicator-color-btn_7" class="col btn jscolor" type="show"  onchange="update_indicator_color(7,''+this.jscolor)" value="ff00ff">
             </div>
@@ -808,29 +808,29 @@
 
 <!-- ledmap indicator menu -->
 <ul id="indicator_dropdown_menu" class="dropdown-content">
-    <li value="0" title="不设置此指示灯"><a>未设置</a></li>
-    <li value="255" title="未安装或不想使用，可选择此项，更加节能"><a>禁用</a></li>
-    <li value="16" title="Num Lock指示灯"><a>Num Lock</a></li>
-    <li value="17" title="Caps Lock指示灯"><a>Caps Lock</a></li>
-    <li value="18" title="Scroll Lock指示灯"><a>Scroll Lock</a></li>
-    <li value="20" title="部分键盘接蓝牙模块需占用LED灯的IO"><a>接蓝牙模块</a></li>
-    <li value="30" title="部分键盘使用RGB灯需占用LED灯的IO"><a>WS2812 RGB</a></li>
-    <li value="21" title="配合win lock功能使用"><a>Win Lock</a></li>
-    <li value="22" title="指示灯亮时为USB连接，不亮时为蓝牙"><a>工作模式</a></li>
-    <li value="1" title="Layer 1"><a>Layer 1</a></li>
-    <li value="2" title="Layer 2"><a>Layer 2</a></li>
-    <li value="3" title="Layer 3"><a>Layer 3</a></li>
-    <li value="4" title="Layer 4"><a>Layer 4</a></li>
-    <li value="5" title="Layer 5"><a>Layer 5</a></li>
-    <li value="6" title="Layer 6"><a>Layer 6</a></li>
-    <li value="7" title="Layer 7"><a>Layer 7</a></li>
-    <li value="9" title="Default Layer 1"><a>Default Layer 1</a></li>
-    <li value="10" title="Default Layer 2"><a>Default Layer 2</a></li>
-    <li value="11" title="Default Layer 3"><a>Default Layer 3</a></li>
-    <li value="12" title="Default Layer 4"><a>Default Layer 4</a></li>
-    <li value="13" title="Default Layer 5"><a>Default Layer 5</a></li>
-    <li value="14" title="Default Layer 6"><a>Default Layer 6</a></li>
-    <li value="15" title="Default Layer 7"><a>Default Layer 7</a></li>
+    <li value="0" data-tooltip="不设置此指示灯"><a>未设置</a></li>
+    <li value="255" data-tooltip="未安装或不想使用，可选择此项，更加节能"><a>禁用</a></li>
+    <li value="16" data-tooltip="Num Lock指示灯"><a>Num Lock</a></li>
+    <li value="17" data-tooltip="Caps Lock指示灯"><a>Caps Lock</a></li>
+    <li value="18" data-tooltip="Scroll Lock指示灯"><a>Scroll Lock</a></li>
+    <li value="20" data-tooltip="部分键盘接蓝牙模块需占用LED灯的IO"><a>接蓝牙模块</a></li>
+    <li value="30" data-tooltip="部分键盘使用RGB灯需占用LED灯的IO"><a>WS2812 RGB</a></li>
+    <li value="21" data-tooltip="配合win lock功能使用"><a>Win Lock</a></li>
+    <li value="22" data-tooltip="指示灯亮时为USB连接，不亮时为蓝牙"><a>工作模式</a></li>
+    <li value="1"  data-tooltip="当<kt>层1</kt>为状态为开启时，亮起此灯"><a>Layer 1</a></li>
+    <li value="2"  data-tooltip="当<kt>层2</kt>为状态为开启时，亮起此灯"><a>Layer 2</a></li>
+    <li value="3"  data-tooltip="当<kt>层3</kt>为状态为开启时，亮起此灯"><a>Layer 3</a></li>
+    <li value="4"  data-tooltip="当<kt>层4</kt>为状态为开启时，亮起此灯"><a>Layer 4</a></li>
+    <li value="5"  data-tooltip="当<kt>层5</kt>为状态为开启时，亮起此灯"><a>Layer 5</a></li>
+    <li value="6"  data-tooltip="当<kt>层6</kt>为状态为开启时，亮起此灯"><a>Layer 6</a></li>
+    <li value="7"  data-tooltip="当<kt>层7</kt>为状态为开启时，亮起此灯"><a>Layer 7</a></li>
+    <li value="9"  data-tooltip="当默认层为<kt>层1</kt>时，亮起此灯"><a>Default Layer 1</a></li>
+    <li value="10" data-tooltip="当默认层为<kt>层2</kt>时，亮起此灯"><a>Default Layer 2</a></li>
+    <li value="11" data-tooltip="当默认层为<kt>层3</kt>时，亮起此灯"><a>Default Layer 3</a></li>
+    <li value="12" data-tooltip="当默认层为<kt>层4</kt>时，亮起此灯"><a>Default Layer 4</a></li>
+    <li value="13" data-tooltip="当默认层为<kt>层5</kt>时，亮起此灯"><a>Default Layer 5</a></li>
+    <li value="14" data-tooltip="当默认层为<kt>层6</kt>时，亮起此灯"><a>Default Layer 6</a></li>
+    <li value="15" data-tooltip="当默认层为<kt>层7</kt>时，亮起此灯"><a>Default Layer 7</a></li>
 </ul>
 
 </body>
