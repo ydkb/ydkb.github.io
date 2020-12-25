@@ -4,7 +4,7 @@
       <p><b>刷机方式：</b><br>
        按住最左上角按键不放(物理位置，一般设置Esc)，插入数据线，电脑会识别出一个U盘名为<b>"KBD_NAME"</b>，这时可放开Esc了。<br>
        <span style="color:red">Win</span>: 将下载的"KBD_NAME.BIN"复制或拖入U盘，<b style="color:red">直接覆盖原文件（重点，不要先复制进去再改名）</b>。然后右键弹出U盘或再按一次Esc退出，刷机完成。<br>
-       <span style="color:red">Mac</span>: 需要先完全删除"KBD_NAME.BIN"，再复制文件，具体请严格参照帮助说明里的部分: <a href="http://help.ydkb.io/doku.php?id=bootloader:msd-bootloader" target="_blank">点此查看</a>。<br>
+       <span style="color:red">Mac</span>: 需要先完全删除"KBD_NAME.BIN"，再复制文件，具体请严格参照帮助说明里的部分: <a href="help/#/bootloader/msd-bootloader" target="_blank">点此查看</a>。<br>
        不需要安装任何的驱动和刷机软件。也可以直接上传U盘里的"KBD_NAME.BIN"到网站上，读取键盘的当前设置。<br>
        如果刷新未成功造成键盘USB无法识别，只需要先关掉电池开关，然后重新进入刷机模式正确刷入固件。</p>
        <p>进阶方法：同时按左右shift+b，此时键盘会重启，立即按住Esc不放，这样也可以进入刷机的U盘模式，好处就是整个操作过程不用插拔数据线。</p>
@@ -27,7 +27,7 @@
   <template id="boothid_ble">
     <div class="lang-zh_sc">
       <p><b>刷机方式：</b><br>
-        KBD_NAME不同于gh60，不要用zadig去安装驱动，这个刷固件是免驱的。更详细说明见：<a href="http://help.ydkb.io/doku.php?id=bootloader:boothid" target="_blank">点此查看</a>。<br>
+        KBD_NAME不同于gh60，不要用zadig去安装驱动，这个刷固件是免驱的。更详细说明见：<a href="help/#/bootloader/boothid" target="_blank">点此查看</a>。<br>
        固件功能正常时，插入数据线同时按住左上角<kbd>ESC</kbd>键，键盘进入刷机模式。这时将hex拖到YDKB Tool.exe，固件将自动开始刷新。<br>
        如果刷错了别的固件，造成固件功能不正常了，先关掉电源开关，再执行上面的操作。<br>
        如果无法刷，检查在刷机模式下，键盘有被系统正确识别，即在“Windows设置--设备”里，不是未知设备。</p>
