@@ -30,14 +30,14 @@
 <col_h5>win10</col_h5>
 在 设置 - 设备 里，再次提醒是USB键盘名称不是蓝牙名。
 
-![win10](./assets/firmware_01.jpg)
+![win10](/assets/firmware_01.jpg)
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
 <col_h5>Mac</col_h5>
 
 在 关于本机 - 系统报告 - USB，如下图所示
-![mac](./assets/firmware_mac_02.jpg)
+![mac](/assets/firmware_mac_02.jpg)
 
 </div>
 </two_col>
@@ -48,20 +48,20 @@
 
 | YDKB High-end ||||
 | ---- ||||
-| [1800mini](./changelog/1800mini) | [Master98 Pro](./changelog/master98) | [Sairo64](./changelog/sairo64) | [X-8086K](./changelog/x-8086k) | 
+| [1800mini](/changelog/1800mini) | [Master98 Pro](/changelog/master98) | [Sairo64](/changelog/sairo64) | [X-8086K](/changelog/x-8086k) |
 
 |YDKB BLE 系列|||||
 | ---- |||||
-| [BLE40/BLUP](./changelog/ble40_blup) | [CAD66](./changelog/cad66) | [Chicory / Pearly](./changelog/chicory) |[Just Keyboard](./changelog/just) |  [Minira](./changelog/minira) |
-| [Just60/YD60BLE](./changelog/yd60ble) | [YDP50](./changelog/ydp50) | [YDPM40BLE](./changelog/ydpm40ble) |
+| [BLE40/BLUP](/changelog/ble40_blup) | [CAD66](/changelog/cad66) | [Chicory / Pearly](/changelog/chicory) |[Just Keyboard](/changelog/just) |  [Minira](/changelog/minira) |
+| [Just60/YD60BLE](/changelog/yd60ble) | [YDP50](/changelog/ydp50) | [YDPM40BLE](/changelog/ydpm40ble) |
 
 | YDKB Mod ||
 | ---- ||
-| [HHKB BLE](./changelog/hhkb_ble) | [BLE660C / BLE980C](./changelog/ble660c_980c) |
+| [HHKB BLE](/changelog/hhkb_ble) | [BLE660C / BLE980C](/changelog/ble660c_980c) |
 
 | YDKB (其他键盘) ||||
 | ---- ||||
-| [NS60](./changelog/ns60) | [Simpo Keyboard / STM60](./changelog/simpo_stm60) | [YD68](./changelog/yd68) | [YDKB优联](./changelog/ydkb_u2u) |
+| [NS60](/changelog/ns60) | [Simpo Keyboard / STM60](/changelog/simpo_stm60) | [YD68](/changelog/yd68) | [YDKB优联](/changelog/ydkb_u2u) |
 
 
 ## 附：三位日期计法
