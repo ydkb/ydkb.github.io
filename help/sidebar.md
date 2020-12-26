@@ -1,16 +1,4 @@
-<html><div class="hint"> 
-<h_title>提醒：</h_title>
-<br>此文档可能有一些不够严谨
-<br>和统一的地方，还请见谅。
-</div></html>
-
-改按键请访问：[ydkb.io](http://ydkb.io) <br>
-或备用站点1：[ydkb.github.io](https://ydkb.github.io)<br>
-或备用站点2：[ydkb.gitee.io](https://ydkb.gitee.io)
-
-总目录
-
-* [Introduction](README)
+* [起始页(Start)](README)
 * [固件更新](firmware)
 * [默认命令按键](magic-commands)
 * [蓝牙键盘信号优化](use-bluetooth)
