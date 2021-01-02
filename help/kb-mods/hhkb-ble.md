@@ -107,7 +107,7 @@ Mac屏蔽了第三方蓝牙设备的电量显示，可以使用文字输出电�
 
 <html><div class="hint">
 <subtitle>提醒</subtitle>
-<br>上文提过左边USB口下的红灯是充电指示灯。另外，右边USB下方的那个绿灯和LED3相同功能。
+<br>上文提过左边USB口下的红灯是充电指示灯。另外，右边USB下方的那个绿灯等价于LED3。
 </div></html>
 
 正面LEDMAP的默认定义，如果要自己修改，请看[LEDMAP](features/ledmap)。

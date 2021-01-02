@@ -1,6 +1,9 @@
 
 $(function() {
-
+    if (window.location.href.indexOf("http://ydkb.io") != -1) {
+        var old_url = window.location.href;
+        window.location.href=old_url.replace("http","https")
+    }
     $(document).ready(function(){
         add_class_for_table();
         key_kbd_init();
