@@ -5,15 +5,21 @@ $(function() {
         window.location.href=old_url.replace("http","https")
     }
     $(document).ready(function(){
-        add_class_for_table();
-        key_kbd_init();
+        optimizing_content();
     })
     window.onhashchange = function () {
-        add_class_for_table();
-        key_kbd_init();
+        optimizing_content();
     } 
 })
 
+function optimizing_content(){
+    for (var i=0; i<10; i++) {
+        setTimeout(function() {
+            add_class_for_table();
+            key_kbd_init();
+        }, 700*i);
+    }
+}
 
 function add_class_for_table(){
     $('main').find('table').each(function(){

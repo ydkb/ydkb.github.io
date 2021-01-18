@@ -13,7 +13,7 @@
 
 ## 查看当前固件版本
 
-设备**作为USB键盘连接时的名称**大都包含了当前固件的日期，日期的计法说明见本篇最后。
+设备 <ru>作为USB键盘连接时的名称</ru> 大都包含了当前固件的日期，日期的计法说明见本篇最后。
 
 ### 1 将键盘用有线方式连接到电脑
 <html><div class="attention"> 
@@ -28,7 +28,7 @@
 <two_col>
 <div style="float:left;width:48%;">
 <col_h5>win10</col_h5>
-在 设置 - 设备 里，再次提醒是USB键盘名称不是蓝牙名。
+在 <ru>开始菜单 - 设置 - 设备</ru> 里(不是设备管理器)，查看它的USB键盘名称(不是蓝牙连接名称)。
 
 ![win10](/assets/firmware_01.jpg)
 </div>
@@ -36,7 +36,7 @@
 <div style="float:left;width:48%;">
 <col_h5>Mac</col_h5>
 
-在 关于本机 - 系统报告 - USB，如下图所示
+在 <ru>关于本机 - 系统报告 - USB</ru>，如下图所示
 ![mac](/assets/firmware_mac_02.jpg)
 
 </div>
