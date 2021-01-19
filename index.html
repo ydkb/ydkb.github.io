@@ -671,10 +671,25 @@
         <ul id="keycodes4tap_dropdown"></ul>
 
         <a id="key_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
-        <ul id="key_mods_dropdown"></ul>
+        <ul id="key_mods_dropdown">
+            <li class="optgroup-option"><span>
+                <label id="select-lmods"><input type="radio" value="0"  class="with-gap" name="mods"><span>Left</span></label>
+                <label id="select-rmods"><input type="radio" value="0x10" class="with-gap" name="mods"><span>Right</span></label>
+            </span></li>
+            <li class="optgroup-option"><span><label><input type="checkbox" value="1"><span>Ctrl</span></label></span></li>
+            <li class="optgroup-option"><span><label><input type="checkbox" value="2"><span>Shift</span></label></span></li>
+            <li class="optgroup-option"><span><label><input type="checkbox" value="4"><span>Alt</span></label></span></li>
+            <li class="optgroup-option"><span><label><input type="checkbox" value="8"><span>Win</span></label></span></li>
+        </ul>
 
         <a id="layer_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
-        <ul id="layer_mods_dropdown"></ul>
+        <ul id="layer_mods_dropdown">
+            <li class="optgroup"><span>Left Mods</span></li>
+            <li class="optgroup-option"><span><label><input type="checkbox" value="1"><span>Ctrl</span></label></span></li>
+            <li class="optgroup-option"><span><label><input type="checkbox" value="2"><span>Shift</span></label></span></li>
+            <li class="optgroup-option"><span><label><input type="checkbox" value="4"><span>Alt</span></label></span></li>
+            <li class="optgroup-option"><span><label><input type="checkbox" value="8"><span>Win</span></label></span></li>
+        </ul>
 
         <a id="keycodes_dropdown-btn" data-dropkind="按键">选择按键</a>
         <ul id="keycodes_dropdown"></ul>
