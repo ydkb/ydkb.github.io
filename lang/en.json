@@ -197,6 +197,10 @@
 		"显示键帽长度":"Keycap length",
 		"切换显示键帽长度，配键帽的时候更直观方便":"Display all keycaps' length of current layout.",
 
+		"类型":"KIND",
+		"修饰键":"MODS",
+		"按键":"KEY",
+		"层":"LAYER",
 
 		"ESC键，和Shift一起按时为~":"Normally it is ESC. When shift is holded, it sends '~'.",
 		"4$键，和左alt一起按时为F4":"Normally it is 4$. When left alt it holded, it send alt+f4.",
