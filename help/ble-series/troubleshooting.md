@@ -117,14 +117,12 @@
 <html>
 <two_col>
 <div style="float:left;width:48%;">
-<col_list>1 请从官网下载运行安装软件。</col_list>
 <col_h5>使用文字输出电量的方法</col_h5>
 <col_list>1 用<key>LShift+RShift+V</key>打出的电量信息是XX-Y格式的。前面的XX代表电量，后面的Y代表连接状态。</col_list>
 <col_list>2 Y为1的时候，说明键盘本身是已连接状态，可能连接到了其他某个设备。</col_list>
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
-<col_list>2 这个手机助手可以不装</col_list>
 <col_h5>使用连接状态指示灯</col_h5>
 <col_list>1 按下 <kbd>LShift+RShift+S</kbd>，查看连接状态的指示灯。</col_list>
 <col_list>2 如果当前指示是已连接。检查是不是已经连上了你现在的某个设备，或者其他人的某个设备。</col_list>
