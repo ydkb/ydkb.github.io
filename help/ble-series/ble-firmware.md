@@ -47,7 +47,7 @@ Mac / iOS / iPadOS 都是直接在应用商店里搜索“Bluefruit LE Connect�
 <col_h5>手动更新</col_h5>
 <col_list>6 Adafruit的服务器可能有问题。如果列表里一直刷新不出来内容，就手动更新固件，下载地址是：
 
-[github](https://github.com/adafruit/Adafruit_BluefruitLE_Firmware/tree/master/0.8.1/blefriend32) 或 [本地下载](ble-series/blefriend32_0.8.1.zip)
+[github](https://github.com/adafruit/Adafruit_BluefruitLE_Firmware/tree/master/0.8.1/blefriend32) 或 [本地下载](https://ydkb.io/help/ble-series/blefriend32_0.8.1.zip)
 </col_list>
 
 需要的文件是如下两个：
