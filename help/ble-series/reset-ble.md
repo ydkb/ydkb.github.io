@@ -81,6 +81,7 @@
 | --- | --- | 
 | Duang60 | Caps指示灯（Caps轴左边的灯）常亮约5秒 |
 | Pearly | 右下角LED1和LED2常亮约5秒，注：第3个是充电指示灯 |
+| HHKB BLE v2.5(蓝色PCB版) | LED1和LED3常亮约5秒 |
 
 </table_w30x70>
 
