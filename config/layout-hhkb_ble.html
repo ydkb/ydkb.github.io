@@ -106,15 +106,17 @@
     <div class="mykeycap1 row200 col1175">'</div>
 
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li class="key-set" id="code-0xf000" lang="zh_sc" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
-    <li class="key-set" id="code-0xf001" lang="zh_sc" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
-    <li class="key-set" id="code-0xf002" lang="zh_sc" title="单按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">Reset</li>
-    <li class="key-set" id="code-0xf003" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
-    <li class="key-set" id="code-0xf004" lang="zh_sc" title="正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角">Space2</li>
-    <li class="key-set" id="code-0xf005" lang="zh_sc" title="正常按方向上键，但是和右Shift一起按时不会生效，防止按右Shift同时误按方向上"><i class="fa fa-arrow-up"></i>2</li>
-    <li class="key-set" id="code-0xf011" lang="zh_sc" title="切换内置USB电源开关">Inner<br>USB</li>
+    <li id="code-0xfa00" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
+    <li id="code-0xf200" title="<kt>Esc</kt>键，和<kt>LShift</kt>一起按时为<kt>~</kt>">~(L)<br>Esc</li>
+    <li id="code-0xf800" title="<kt>Esc</kt>键，和<kt>RShift</kt>一起按时为<kt>~</kt>">~(R)<br>Esc</li>
+    <li id="code-0xf001" title="<kt>4$</kt>键，和<kt>左Alt</kt>一起按时为<kt>F4</kt>">4 $<br>F4</li>
+    <li id="code-0xf002" title="单按清除键盘按键状态，和<kt>左Ctrl</kt>一起按时为跳到刷机模式">Reset</li>
+    <li id="code-0xf003" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
+    <li id="code-0xf004" title="<kt>空格键</kt>，但是和<kt>shift</kt>一起按时不会生效，防止某些输入法切换到全角">Space2</li>
+    <li id="code-0xf005" title="<kt>Up</kt>键，但是和<kt>右Shift</kt>一起按时不会生效，防止按<kt>右Shift</kt>同时误按<kt>Up</kt>"><i class="fa fa-arrow-up"></i>2</li>
+    <li id="code-0xf011" title="切换内置USB电源开关">Inner<br>USB</li>
     <div id="ble51_control_keys_v2"></div>
-    <li class="key-set start" id="code-0xc000" title="宏1测试，临时保存于0x5F00开始">Macro<br>1</li>
+    <li class="rowstart" id="code-0xc000" title="宏1测试，临时保存于0x5F00开始">Macro<br>1</li>
 </div>
 <div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000" value-format="bin" value-filename="HHKB_BLE"></div>
 <div id="kb_ledmap"  style="display: none">
@@ -125,5 +127,5 @@
 <div id="kb-preset_keymap"  style="display: none">
     <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TXW7cMAyELzQP4j91FiP3v0aH8qZNgbbpU2GggQwuFh4OyY/ydV1iCcmUPrFOXHAEEoXGBv+KQBRiEIfEGy5hErVM2tAFFahCDerQgCa0oA3dsAUTZpjCDOawAEtawRq24SwmcIUb3OEBT3gxwxu+EQshCEUYgm0FIhGFaMRGLqQgFWnMSEey70QWspEbtVCCUpShHEV3cWYXn0ZtJvVCC1rRhnZ0oBPN0Ru9sRe2YCu2YTv2DL8Tu7DJZuCQziIeDieLAFYNA8Y4MU+sE/vEAVY2TAeLDNcBO2Ql6EOsNr9kSzw6buM1TuMzLuNBByVYWlysfp+zxhQnTXktMl0JY95yMNLghIfDDH7GvPEwKd4tRp6H0rtxenC3h/hQ/sEcH4nf2pN2w2+dAQc9q3MRXEe+yPf3nu9zhH8809i5eDPV68L+/nzu90FxGvyV5MCtv/b5HxQ/3beH9/rviOgjOnmKYoisR3TyFMXXV/NF5FMib98AVhITHI4JAAA=" title="HHKB US默认按键">Pro2 默认</li>
 </div>
-<div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA+2TWW4cMQxEL1Qf4k6dZeD7XyNF9djjDVkQJPCH0QNNq0UWqUfydrvJgmRKn7XOuuAIJAqNjTEQiEIM4pB4wk0SY0unDV1QgSrUoA4NaEIL2tANWzChhynMYA4LWMIK1rANX0jJnXCFW1Mvxd3hAefHoqs3XKoKsRCCYCZLWxHMMhCJ4FEj6DpiSEUa/dKRvEYiC9nIjVooQSnKUI5iDDPne6EatenUCy2guotStB0d6EQTBrcbe2ELtmIbtmMPDqa/C5u0BtfwIhleVxaRrBoqXOOsedY6a591EJaN14CSIT2oh7UEdQja5n80CcwiqTpqo0u964toM+vJfT1R5ka9+zPXpz9YAm6zerhOBQbsYJ6oQ/aqyFTMxtynUMRnlDh1Y5TDedg+SOM1Z5Yz6JxBUqlFV9bygt964vCMppMmgZ9d3CvZgjfPZf6zZzr2dGO+dHHNTZspVMv6zOfXqq8syt4dur2ak2tmLtxuvOLdKU8P6xCazvLDqYfd0XvD3E8Z2JhsX/Zgzj18n1axuUzJ+ZDTtVRlq6dr1sdbtDBunBKzA2nHlxrQcQrGSM/58YW/yD8gkx56oVBt2imbRO13Kf65hUtM6x+OjHsI6/PhzIxe/3bt7DFftj4N8Zg8f8ycvpxxNGa/7lMp9xn9LMmxtnf7o2nXfPvgOdn8Ozx/b3EHe7c6ePVLJ/y/LQZJyDeT90y+RiZfxeKbyAciTz8A4CLvwFQKAAA="></div>
+<div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA+2VXW4bMQyELzQP4o9I6iyG73+NDrWb2EmMtkHRYh+KNeSVRQ6pjyR8u91kQCKk9pp7HXBMBBKFhTYQiEIM4pB5x00CbUunBR1QgSrUoA6d0IAmtKALNmBCD1OYwRw2YQFLWMEWfCB8Ut35saJeiLvDJzzgSVcvuGQm5sAUTGYytBSTWU7MwORRYdKVYoJQhNEvHMFrBCIRhVjIgRSkIg3pSMYwc74nspCLTjVQAqq7KEXLURMVKMLgdmENLMFSLMNyrMaxAiuxSKtxNS+S4XVlEMnIpsJ17jX2mnutvTbCtPZqUNKkG3Wzlkkdgrb+bk0CsxlUbbXWpd7xi2gx68593Clzo9759PXpD5aA28hqrl2BBtuYO2qTPSrSFbM29y4U8Rkldt0YZXNutg/SeObMck46xySp0KQra3nAL91xeEbTTpPA926elSzBh+cw/9nTHbu7Md67OPumxRSyZLzy+bXqk0Xap0O3pzk5ZubA7cYrnk6xe1ibUHeWb07V7LbeB+a+y8DGZPuyB6Pv4Wu3ivVlUvYP0V1LVbZ6uEZ+vUUJ485dYnYg7fiSDXrugjHSW3584WfGN8hwRPVAoVq0UzaJ2u9S/L6Fy+zW3xwZdxPWt8OeGT2+7djZY75svAzxmDx/zJy+n3E0ej/OqZRzRl8l2db2ab817Zhvbzw7m7+H588tTrCn1carl074X1s0kv5bukIuV7FoJtfI5CoW/4l8IXL/AcSExoNUCgAA"></div>
 <div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:hhkb_ble" style="display: none;"></div>
