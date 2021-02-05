@@ -1,9 +1,17 @@
 
 $(function() {
-    if (window.location.href.indexOf("http://ydkb.io") != -1) {
-        var old_url = window.location.href;
-        window.location.href=old_url.replace("http","https")
-    }
+    var sub_string = document.location.search.substring(1);
+    var old_url = window.location.href;
+    //Temporarily use
+    if (sub_string == "hhkb") {
+        window.location.href=old_url.replace("?hhkb","#/kb-mods/hhkb-ble")
+    } else if (sub_string == "660c") {
+        window.location.href=old_url.replace("?660c","#/kb-mods/ble660c_980c")
+    } else if (sub_string == "980c") {
+        window.location.href=old_url.replace("?980c","#/kb-mods/ble660c_980c")
+    } else  if (sub_string == "980m") {
+        window.location.href=old_url.replace("?980m","#/kb-mods/ble980m")
+    }  
     $(document).ready(function(){
         optimizing_content();
     })
