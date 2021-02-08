@@ -92,24 +92,25 @@
     <div class="mykeycap2 row400 col1550">Right</div>
 </div>
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li class="key-set" id="code-0xf000" lang="zh_sc" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
-    <li class="key-set" id="code-0xf001" lang="zh_sc" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
-    <li class="key-set" id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时则进入刷机模式">Reset</li>
+    <li id="code-0xfa00" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
+    <li id="code-0xf200" title="<kt>Esc</kt>键，和<kt>LShift</kt>一起按时为<kt>~</kt>">~(L)<br>Esc</li>
+    <li id="code-0xf800" title="<kt>Esc</kt>键，和<kt>RShift</kt>一起按时为<kt>~</kt>">~(R)<br>Esc</li>
+    <li class="key-set" id="code-0xf001" lang="zh_sc" title="<kt>4$</kt>键，和<kt>左Alt</kt>一起按时为<kt>F4</kt>">4 $<br>F4</li>
+    <li class="key-set" id="code-0xf002" lang="zh_sc" title="单按清除键盘按键状态，和<kt>左Ctrl</kt>一起按时为跳到刷机模式">Reset</li>
     <li class="key-set" id="code-0xf003" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
-    <li class="key-set" id="code-0xf004" lang="zh_sc" title="正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角">Space2</li>
-    <li class="key-set" id="code-0xc000" title="Quick tap: PgUp; Long press: Home">PgUp<br>Home</li>
-    <li class="key-set" id="code-0xc001" title="Quick tap: PgDn; Long press: End">PgDn<br>End</li>
+    <li class="key-set" id="code-0xf004" lang="zh_sc" title="<kt>空格键</kt>，但是和<kt>shift</kt>一起按时不会生效，防止某些输入法切换到全角">Space2</li>
+    <li class="key-set spc100" id="code-0xc000" title="宏1测试，临时保存于0x5F00开始">Macro<br>1</li>
     <div id="ble51_control_keys_v2"></div>
     <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
 </div>
 <div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000" value-format="bin"></div>
 <div id="kb_ledmap"  style="display: none">
-    <li id="kb_ledmap-0" value="17" class="conn_mode"  title="CAPS灯">CAPS灯</li>
-    <li id="kb_ledmap-1" value="0" class="can_disable" title="仅在背光关闭时可作为指示灯">BACKLIGHT</li>
+    <li id="kb_ledmap-0" value="17" class="conn_mode"  title="CAPS灯">CAPS LED</li>
+    <li id="kb_ledmap-1" value="0" class="can_disable" title="仅可设为 未设置 或 禁用">BACKLIGHT</li>
     <li id="kb_ledmap-2" value="0" class="rgb_color can_disable" title="RGB底灯">RGB</li>
 </div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2SW65aMQxFJ7Q+4meSsSDmP43aOVBx26uqH/2gEsphIw72tr2c2+3mGrqQTLl0Hh04QTJZbOqnCKKIIY7EnZskHVtJGx2ooIoa6migiU7KWDc2MKkMU8wwxwJLbGIL2/ggxUtdccMdDzzxWUm+8E0MQggljKjOgkiiClSd2GQ7kEpapaST1XuSk1zkZg6mMJVp58nzTOZi7spYgyUsZRnLWcFKVs2+WJs92MJWtrGd3dPvZE92wWk6hWcUn5pORhEYsyGUxtE8Oo+uo01sWkNtLtJgm2yjlSif4mr9XXCLj7Zbe7VT+7RLe5SDi8e8l8lNio6c0xWalBa71lNN7dHRFVNESpx5rbIXLg9GV/uXzQlO39FGtYR+Nx7viq9H2UZVaYgvS+B1BdJLu6pe2zgz8zwuj03I1/Ml6OX8vKLPjNnXpEepZcZ3GX/2+zZi2q9/jmfQYV1LqDvYn39T7/+PaCzjLTp5l4gPkQ+RvyHyHp28S8SHyG9E7j8Ak5D4XqYJAAA=" title="类似FC660M默认">FC660M默认</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2STa7bMAyELzQL8V88S5D7X6NDOSny2oeiiy5SIJBDOzY5pL7R7XZzDd2QTLlinbjgCCQKGw3+FYEoxCAOiTtukphcFjV0QQWqUIM6NKAJLVBYG7ZgwgpTmMEcFrCEFWzDGr6QsVjnCjc4HwKe8GKRb3gjFkIQijAEJwtEItiAfaKRVBCkIo0l6dRDJrKQG9mohRKUouxcea5CbVSzYi9swVZsw3bswE5s7n1jN3qhBa1oQzt6dt+JLjThDB3iWeTD3ckigVUDgTFOzBPrxH3iECsbqMNFBuyQHbQS1CFXmzvhko+O2miN0uiMymhQwcWj7hS5CenIWdNhSCnZTTzd1B4TXTkkwuCoy8oxXB6MrvEvmZOc3jFCNGHercc78vWgbLDLQHwxAa8WyJh2db3cOHvGc7k8nJCv60vSy/p5RJ8VNcdktkIz47uKP+t9m1H268f1TDqsaQLP4Pz+Tb//P2OwrLeY5F0yPkQ+RP6GyHtM8i4ZHyK/Ebn/AC1uVX2mCQAA" title="类似FC660M默认">FC660M默认</li>
 </div>
-<div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:just" style="display: none;"></div>
+<div id="kb-changelog-url" href="just" style="display: none;"></div>
