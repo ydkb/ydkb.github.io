@@ -31,15 +31,24 @@ function optimizing_content(){
 
 function add_class_for_table(){
     $('main').find('table').each(function(){
-        $('thead tr').find('th').each(function(){
+        var table_head = $(this).find('thead tr th');
+        var blank_head_cols = 0;
+        if (table_head) table_head.each(function(){
             //console.log($(this).index());//这个元素在同辈中的索引位置
-            var _col_n = $(this).index();
-            $(this).addClass("col"+_col_n)
+            var col_n = $(this).index();
+            if (col_n > 0 && $(this).text() == "") blank_head_cols++;
+            if (blank_head_cols > 0 && blank_head_cols == table_head.length - 1) {
+                table_head.each(function(){
+                    var col_n = $(this).index();
+                    if (col_n == 0) $(this).attr("colspan",blank_head_cols+1);
+                    else $(this).remove();
+                })
+            }
         })
-        $('tbody tr').find('td').each(function(){
+        $(this).find('tbody tr td').each(function(){
             //console.log($(this).index());//这个元素在同辈中的索引位置
-            var _col_n = $(this).index();
-            $(this).addClass("col"+_col_n)
+            var col_n = $(this).index();
+            $(this).addClass("col"+col_n)
         })
     })
 }  
