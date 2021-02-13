@@ -23,6 +23,7 @@ $(function() {
 function optimizing_content(){
     for (var i=0; i<10; i++) {
         var time_delay = setTimeout(function() {
+            //页面载入完成
             if ($(".progress").css("width") == "0px") {
                 add_class_for_table();
                 key_kbd_init();
@@ -40,6 +41,7 @@ function add_class_for_table(){
         if (table_head) table_head.each(function(){
             //console.log($(this).index());//这个元素在同辈中的索引位置
             var col_n = $(this).index();
+            $(this).addClass("col"+col_n)
             if (col_n > 0 && $(this).text() == "") blank_head_cols++;
             if (blank_head_cols > 0 && blank_head_cols == table_head.length - 1) {
                 table_head.each(function(){
