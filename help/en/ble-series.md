@@ -84,17 +84,6 @@ Then about the power saving mode:
   - Using Lock Mode will directly make the keyboard enter deep power saving mode. The difference from 2 is that by this way, you can press only F and J together to wake it up.
 
 
-
-## Signal optimization
-
-Bluetooth is also a 2.4G wireless. So if you want to make better use of it, pay attention to the following points.
-  - Reduce other 2.4G continuous interference. Use 5GHz wifi for your own network as much as possible.
-  - Reduce blocking and interference between your keyboard and Bluetooth receiver. USB 3.0 devices with high-speed communication between the keyboard and the Bluetooth receiver or next to the Bluetooth receiver will also have a great impact.
-  - If it works well and the signal starts to turn bad, switch the computer's Bluetooth off and on again. which make it reconnect. Sometimes it will improve. (Because the bluetooth may switch to a channel with less interference)
-  - Some Bluetooth wifi integrated modules may require the following items to be set to disabled or similar settings.
-{{:ble_series_01.png?500|}}
-
-
 ## Background Story
 Some of these were written down when I was making 1800mini. They are also the ideas at the beginning of the BLE series. Record them. Those who are interested can take a look.
 

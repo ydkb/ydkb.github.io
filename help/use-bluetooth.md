@@ -33,7 +33,11 @@
 
 有一部分蓝牙模块，可能官方提供的驱动并不好用。可以尝试使用微软Windows自带的驱动，比如我的Surface Pro3的Marvell的网卡就是个例子，可以手动给蓝牙的驱动指定为win10自带的通用蓝牙驱动（下图第一项）。
 
-<img src="./assets/marvellbluetooth.png" width="70%">
+<div style="width:70%">
+
+![](/assets/marvellbluetooth.png)
+</div>
+
 
 蓝牙也是属于2.4G的无线，想要最好的利用它，尽可能的。
   1. 减少其他2.4G的持续干扰，所以尽可能的自己的网络使用5GHz的wifi。
@@ -41,6 +45,9 @@
   3. 如果本来用着挺好然后信号开始变不好的，重新开关一下电脑的蓝牙，让它重连一次或几次，有时会有改善。（因为换到了一个干扰少的频道）
   4. 有的蓝牙wifi一体的模块，可能还需要如下的项目设置为禁用，或者类似的设置。
 
-<img src="./assets/ble_series_01.png" width="50%">
+<div style="width:50%">
+
+![](/assets/ble_series_01.png)
+</div>
 
 <div class="docInfo"><span>2020-12-25 13:25</span></div>
