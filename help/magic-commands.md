@@ -5,7 +5,7 @@
 
 <html><div class="attention"> 
 <a_title>特别注意：</a_title>
-<br>左右Shift+其他键，属于预置功能，在不了解其作用时，切记不要乱按，切记。乱按可能导致配置出错。
+<br><key>LShift+RShift+按键</key>，属于预置功能，在不了解其作用时，切记不要乱按，切记。乱按可能导致配置出错。
 </div></html>
 
 

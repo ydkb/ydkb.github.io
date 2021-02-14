@@ -3,11 +3,10 @@ This is TMK's Magic Commands function (some keyboards do not have this feature e
 
 All references in the text to pressing <key>LShift+RShift+XX</key> or <key>LShift+RShift+LCtrl+XX</key> refer to holding down the left Shift and right Shift(maybe and left Ctrl) first and press XX key once. You can then release the left and right shifts. Only press one command at a time. To press another command, you need to release the left and right Shift keys, and then press the left and right Shift keys again.
 
-<html>
-<font color="red" size="+1">
-LShift+RShift+Other Key is for preset functions. When you don’t know what that command means, don’t press them. Random pressing may cause configuration errors.
-</font>
-</html>
+<html><div class="attention"> 
+<a_title>ATTENTION</a_title>
+<br><key>LShift+RShift+Key</key> is for preset functions. When you don’t know what that command means, don’t press them. Random pressing may cause configuration errors.
+</div></html>
 
 
 ## Default command keys for BLE Series
