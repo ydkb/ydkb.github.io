@@ -33,9 +33,9 @@ When switching, the keyboard indicator will show the connection indication (Refe
 My test results show that switching from iPad to Windows is fast, but switching from Windows to iPad may take several seconds. A Mac or iPhone is similar to the iPad. Switching between Windows is also faster.
 
 Known disadvantages:
-  -It is not possible to know which device is connected from the keyboard, but from the host device.
-  -If you enter the deep power-saving mode and wake the keyboard up again, device A and B are both nearby, it may be connected to A or B randomly, not 100% the last connection before.
-  -In a few cases, the switch may not be successful at one try.
+  1. It is not possible to know which device is connected from the keyboard, but from the host device.
+  2. If you enter the deep power-saving mode and wake the keyboard up again, device A and B are both nearby, it may be connected to A or B randomly, not 100% the last connection before.
+  3. In a few cases, the switch may not be successful at one try.
 
 Besides, in fact, the experience of switching devices is acceptable.
 
