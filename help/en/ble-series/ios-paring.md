@@ -2,8 +2,8 @@
 
 It is very simple, as long as the iPhone or iPad is not particularly old, the hardware should support Bluetooth 4.0.
 
-  -To connect to the keyboard with a device, first make sure the keyboard is unconnected so it can be searched.
-  -Search for the keyboard from Bluetooth management and click Connect. When searching for a keyboard, what is displayed at the beginning may not be the keyboard name but an address, or called "accessories".
+  1. To connect to the keyboard with a device, first make sure the keyboard is unconnected so it can be searched.
+  2. Search for the keyboard from Bluetooth management and click Connect. When searching for a keyboard, what is displayed at the beginning may not be the keyboard name but an address, or called "accessories".
 
 iOS is not particularly friendly to third-party HID devices with Bluetooth 4.0 (BLE4.0). Therefore, when the keyboard cannot be searched, Please follow the steps below.
 
