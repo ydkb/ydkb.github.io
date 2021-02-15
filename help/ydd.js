@@ -2,6 +2,8 @@
 $(function() {
     var sub_string = document.location.search.substring(1);
     var old_url = window.location.href;
+    var display_lang = (old_url.indexOf('#/en/') != -1)? " English":" 中文";
+    
     //Temporarily use
     if (sub_string == "hhkb") {
         window.location.href=old_url.replace("?hhkb","#/kb-mods/hhkb-ble")
@@ -17,7 +19,23 @@ $(function() {
     })
     window.onhashchange = function () {
         optimizing_content();
-    } 
+        old_url = window.location.href;
+    }
+    $('.app-nav').on('click',"li",function () {
+        if ($(this).text() == " 中文" || $(this).text() == " English") {
+        var click_lang = $(this).text();
+            if (click_lang != display_lang) {
+                display_lang = click_lang;
+                if (old_url.indexOf('#/en/') != -1) {
+                    $("#display-lang-en").hide();
+                    window.location.href=old_url.replace("#/en/","#/")
+                } else {
+                    $("#display-lang-cn").hide();
+                    window.location.href=old_url.replace("#/","#/en/")
+                }
+            }
+        }
+    }) 
 })
 
 function optimizing_content(){
@@ -28,6 +46,7 @@ function optimizing_content(){
                 add_class_for_table();
                 key_kbd_init();
                 assets_for_en();
+                lang_icon();
                 clearTimeout(time_delay);
             }
         }, 700*i);
@@ -79,4 +98,12 @@ function assets_for_en(){
             $(this).attr("src", img_url);
         }
     })
+}
+
+function lang_icon(){
+    if (window.location.href.indexOf('#/en/') != -1) {
+        $("#display-lang-en").show();
+    } else {
+        $("#display-lang-cn").show();
+    }
 }
