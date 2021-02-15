@@ -1,4 +1,4 @@
-## Lock Mode (锁定模式)
+# Lock Mode (锁定模式)
 部分键盘开始加入此功能(BLE系列的都已加入)，在灯光和增加功能里，可以找到如下按钮并设置。
 
 <html><button style=" text-align: center; line-height: 19px; width: 46px; height: 42px; font-size:12px">Lock<br>Mode</button></html>
