@@ -1,7 +1,7 @@
 <div id="mykbd">
     <div id="kbd-info" value-type="lufa_msd_ble" style="display: none;" ></div>
     <div id="mycase" class="mycase">
-        <div name="caps" class="kbdbg-inner kbd-led led0" lang="zh_sc"  style="z-index:1; margin-left: 91px; top: 134px; width: 6px;height: 10px; background-color: #cccc00"></div>
+        <div name="caps" class="kbdbg-inner kbd-led led0" lang="zh_sc" style="z-index:1; margin-left: 91px; top: 134px; width: 6px;height: 10px; background-color: #ffff00"></div>
     </div>
     <div class="mykeycap3 bl-key">Esc</div>
     <div class="mykeycap1 col100">1</div>
@@ -16,9 +16,13 @@
     <div class="mykeycap1 col1000">0</div>
     <div class="mykeycap1 col1100">-</div>
     <div class="mykeycap1 col1200">=</div>
-    <div class="mykeycap2 w200 col1300">BS</div>
-    <div class="mykeycap2 col1500">Home</div>
-
+    <div id="kblayouts-00" value-name="1u+1u" style="display: none;">
+        <div class="mykeycap1 col1300">`</div>
+        <div class="mykeycap2 col1400">BS</div>
+    </div>
+    <div id="kblayouts-01" value-name="2u" style="display: none;">
+        <div class="mykeycap2 w200 col1300">BS</div>
+    </div>
     <div class="mykeycap2 w150 row100">Tab</div>
     <div class="mykeycap1 row100 col150">Q</div>
     <div class="mykeycap1 row100 col250">W</div>
@@ -32,9 +36,6 @@
     <div class="mykeycap1 row100 col1050">P</div>
     <div class="mykeycap1 row100 col1150">[</div>
     <div class="mykeycap1 row100 col1250">]</div>
-    <div class="mykeycap1 w150 row100 col1350">\</div>
-    <div class="mykeycap2 row100 col1500">PgUp</div>
-
     <div class="mykeycap2 w175 row200">Capslock</div>
     <div class="mykeycap1 row200 col175">A</div>
     <div class="mykeycap1 row200 col275">S</div>
@@ -47,10 +48,10 @@
     <div class="mykeycap1 row200 col975">L</div>
     <div class="mykeycap1 row200 col1075">;</div>
     <div class="mykeycap1 row200 col1175">'</div>
+    <div class="mykeycap1 w150 row100 col1350">\</div>
     <div class="mykeycap3 w225 row200 col1275">Enter</div>
-    <div class="mykeycap2 row200 col1500">PgDn</div>
-
     <div class="mykeycap2 w225 row300">Shift</div>
+
     <div class="mykeycap1 row300 col225">Z</div>
     <div class="mykeycap1 row300 col325">X</div>
     <div class="mykeycap1 row300 col425">C</div>
@@ -61,20 +62,33 @@
     <div class="mykeycap1 row300 col925">,</div>
     <div class="mykeycap1 row300 col1025">.</div>
     <div class="mykeycap1 row300 col1125">/</div>
-    <div class="mykeycap2 w175 row300 col1225">RShift</div>
-    <div class="mykeycap3 row300 col1400">Up</div>
-    <div class="mykeycap2 row300 col1500">End</div>
 
-    <div class="mykeycap2 w125 row400">Ctrl</div>
-    <div class="mykeycap2 w125 row400 col125">Win</div>
-    <div class="mykeycap2 w125 row400 col250">Alt</div>
-    <div class="mykeycap1 w625 space row400 col375">Space</div>
-    <div class="mykeycap2 w125 row400 col1000">RAlt</div>
-    <div class="mykeycap2 w125 row400 col1125">RCtrl</div>
-    <div class="mykeycap3 row400 col1300">Left</div>
-    <div class="mykeycap3 row400 col1400">Down</div>
-    <div class="mykeycap3 row400 col1500">Right</div>
-</div>
+    <div class="mykeycap2 w175 row300 col1225">RShift</div>
+    <div class="mykeycap2 row300 col1400">Up</div>
+
+    <div id="kblayouts-10" value-name="HHKB(7u)" value-desc="空格行(space row)" style="display: block">
+        <div class="mykeycap2 col150 row400">Win</div>
+        <div class="mykeycap2 w150 row400 col250">Alt</div>
+        <div class="mykeycap2 w150 row400 col1100">RAlt</div>
+        <div class="mykeycap2 row400 col1250">RWin</div>
+    </div>
+    <div id="kblayouts-11" value-name="WKL" style="display: none">
+        <div class="mykeycap2 w150 row400">Ctrl</div>
+        <div class="mykeycap2 w150 row400 col250">Alt</div>
+        <div class="mykeycap2 w150 row400 col1100">RAlt</div>
+        <div class="mykeycap2 w150 row400 col1350">RCtrl</div>
+    </div>
+    <div id="kblayouts-12" value-name="WK" style="display: none">
+        <div class="mykeycap2 w150 row400">Ctrl</div>
+        <div class="mykeycap2 row400 col150">Win</div>
+        <div class="mykeycap2 w150 row400 col250">Alt</div>
+        <div class="mykeycap2 w150 row400 col1100">RAlt</div>
+        <div class="mykeycap2 row400 col1250">RWin</div>
+        <div class="mykeycap2 w150 row400 col1350">RCtrl</div>
+    </div>
+    <div class="mykeycap1 w700 space row400 col400">Space</div>
+
+
 <div id="kbd-macrofn" style="clear: both; display: none">
     <li id="code-0xfa00" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
     <li id="code-0xf200" title="<kt>Esc</kt>键，和<kt>LShift</kt>一起按时为<kt>~</kt>">~(L)<br>Esc</li>
@@ -90,6 +104,8 @@
     <li id="kb_ledmap-0" value="17" title="CAPS LED">CAPS LED</li>
 </div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2SW4ocMQxFN3Q+LMl6eC1N738bkV0FM53HQMjPBBqBygVXV9KxH4+HZ42BREidnCcPJk6QFIv+FUEUMWQi/uQhwdZ20UIHKqiihk7U0UATLXRhA5OuMMUMm5hjgSVW2GIOwkfXTWUasw/ODGZ20SzmwgcuuOKG92SOB5544YtoAyGUsK6I2XZEEEkUschBCqmkkZN0sjdLssjVFTUooZQyalJOBdWrF7VYgyUsZRlrsvbyK1jJajYbTtMZjaeXk9EARm4Gnf3kODlPrpM3sLTNdGORzXWD3WTF26ex2v4228aj2217baf2mTJ7c90u7aFazzZ5iLdETuwWzUJm85TIugawe6RL00jkYrEn2OcD6GP2q+iIYy6/bcf933d/sd+8P+jzmb3sy8o47a57kLvXFVPuO5DXeBH9Eudt7q/H9Qq9u7283j/F174/Kfql/F5yWH/R5a87/f+Kg+RbTPJdFG8ibyJvIm8i/0zk+QOHqJc0oQkAAA==">Defalut</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2UW44cIQxFN3Q+8AMb1tLq/W8jNtWdzGiSifLXkVogCsS1fTmgut1uMgYSIeuMecaBMwmSxaaWIogihjgy79wkaG0FbXSggipqqKMTDTTRhW5sYFIRpphhjk0ssMQWtvEqJkzDqzs+8cCzInzhyhzM2ld8M8vWZFb2qjMXcxODEEIJq5BwoowHkcQiNjlIIZU00slKLz6TrL7IXUFq5d7GY2MZy1mTFaxaLtZmD7awlW1sZzeCHexkF6FGVIxGQaojyrAvQJ9zHdlUamxsaU224UjTbbzNV2blqTjrb0UWpD6vNtjG2nTbcue4rN8rxa1yXe2q95gVHteice1liw6GLtrzwybq5M+Ap/Rq4bNu9aBuvL9g8xH1ub8MZk8v7ksfFYRVV7AP/8N8yacK8lP3x9auzpvr43yr/HuuD4py9HtJ0+zLqrf2Tb1/qvX/Kz49sRf3+ibyJvIaivMreQknr6J4E/lC5P4DGPI1ZocJAAA=" title="HHKB Style">HHKB(7u)</li>
+    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+2US44bMQwFL1QL8SNSOkvD979GSNlOZjDJBNk5gCFbZqPfI6mi4Ou6RASJkHX2PPvAmQTJYlOPrVHEEEfmjUuC1pZpowMVVFFDHZ1ooIkudGMDk3KYYoY5NrHAElvYxgcxR/lcccMrmHjgWSZf+GYOpjC1JbM6m8xgJnMxN1EJhFDCyhFe6YggkljEJgcppJJGOlnZxcud9VnkLpNa9V+N3l8sYzlrsoJVj4u12YMtbGUb29kNYQc72cWoIRWlUZjqkDLsC9JnrCObS+0NLq3ZNh5pvg24CcusPOWz/i1nYdIm22ibbX+75c5x4nGrFFfluq97vUdUeFyLxv1dtuhg6KIdHzZRJ38antL7Cp8114O68f6CzUfUNZ6ie6YiD+5LHxWEVSPYh/9hvuRTBfmp++Pqrs6t6+N8q/x7rg+K6uj3kqbZw6qr9k29f6r1/ys+XbEX7/VN5E3kNRTnr+QlOnkVxZvIFyK3H9pOkT2JCQAA" title="WKL">WKL</li>
+    <li id="kb-preset_keymap-2" value-keymap="H4sIAAAAAAAAA+2UXW7cMAyELzQP4r94lkXuf40O5d0mQdIUfdsCCxmyBM+Q1EfBt9tNRCGZss9cZ15wBBKFjQa3IhiZQRwSb7hJYrQ0NXRBBapQgzo0oAkt6IY2bMGEDlOYwRwWsIQVbMMavpCx6HOFG5yLgCe8aPINb8RCCEJHEqwsEIkoxEY0kgEEqUijI53hkIks5EY2aqEEpShDOYrRxekuPhvVNKmxfhZ6fdiG7diBndjcbuxGL7SgFW1oRw+ETnShyWggkdIiJh5Sln1B+ljrquHCecCVDdvBc9owgIewBOPQZ/Omk5h0yA7aYTtwp+SJMXsCZogbY13jyndfEY8raVzfakQHwySd9WGTPPnD8JBeIz3Y14N68L7DxkfUbA/pnq7InfvWewbBZgv68D/Mt3zKIL91fxxT1bl1c5wflX+P9UHBir6XDM1pFq/aD/n+Kdf/r/h0xZ681heRF5HnUJxfyVNU8iyKF5EvRN5+ATMxh8aJCQAA" title="WK">WK</li>
 </div>
 <div id="kb-changelog-url" href="yd67ble" style="display: none;"></div>
