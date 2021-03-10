@@ -67,6 +67,7 @@
   * [Hello v1](keyboards/hello_v1)
   * [Just68 / Just66 / Just660](keyboards/just)
   * [YD60BLE / Just60](keyboards/yd60ble)
+  * [YD67BLE / D60BLE](keyboards/yd67ble)
   * --- YDKB(其他键盘) ---
   * [ESWN](keyboards/eswn)
   * [STM60](keyboards/stm60)

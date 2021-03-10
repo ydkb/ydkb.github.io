@@ -13,7 +13,9 @@ $(function() {
         window.location.href=old_url.replace("?980c","#/kb-mods/ble660c_980c")
     } else  if (sub_string == "980m") {
         window.location.href=old_url.replace("?980m","#/kb-mods/ble980m")
-    }  
+    } else  if (sub_string == "kbd67") {
+        window.location.href=old_url.replace("?kbd67","#/keyboards/yd67ble")
+    }   
     $(document).ready(function(){
         optimizing_content();
     })
