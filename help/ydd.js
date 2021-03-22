@@ -1,21 +1,25 @@
 
 $(function() {
+    var short_url = [
+        {short:"hhkb",  long:"#/kb-mods/hhkb-ble"},
+        {short:"660c",  long:"#/kb-mods/ble660c_980c"},
+        {short:"980c",  long:"#/kb-mods/ble660c_980c"},
+        {short:"980m",  long:"#/kb-mods/ble980m"},
+        {short:"kbd67", long:"#/keyboards/yd67ble"},
+    ]
     var sub_string = document.location.search.substring(1);
     var old_url = window.location.href;
     var display_lang = (old_url.indexOf('#/en/') != -1)? " English":" 中文";
-    
+    var get_lang = navigator.userLanguage || navigator.language || navigator.bowserLanguage;
+
     //Temporarily use
-    if (sub_string == "hhkb") {
-        window.location.href=old_url.replace("?hhkb","#/kb-mods/hhkb-ble")
-    } else if (sub_string == "660c") {
-        window.location.href=old_url.replace("?660c","#/kb-mods/ble660c_980c")
-    } else if (sub_string == "980c") {
-        window.location.href=old_url.replace("?980c","#/kb-mods/ble660c_980c")
-    } else  if (sub_string == "980m") {
-        window.location.href=old_url.replace("?980m","#/kb-mods/ble980m")
-    } else  if (sub_string == "kbd67") {
-        window.location.href=old_url.replace("?kbd67","#/keyboards/yd67ble")
-    }   
+    for (var i=0; i<short_url.length; i++) {
+        if (sub_string == short_url[i].short) {
+            window.location.href=old_url.replace("?"+sub_string, short_url[i].long.replace("#/","#/"+(get_lang.toLowerCase() == "zh-cn"? "":"en/")));
+            break;
+        }
+    }
+
     $(document).ready(function(){
         optimizing_content();
     })
