@@ -68,3 +68,24 @@ blefriend32_s110_xxac_0_8_1_190410_blefriend32_init.dat
 ## 更新后的说明
 
 这个固件只要更新一次就行了，在更新完成后，可能键盘无法立即使用，需要把键盘重启一下。有的可能还需要重新配对一次。
+
+
+## Android下查看和更新蓝牙固件
+
+强烈建议是使用 iOS / iPadOS / Mac 来更新固件，实在是找不到或借不到相关设备，参考以下说明使用Android也能完成更新蓝牙模块固件。
+
+虽然Android下也有 Bluefruit LE Connect，但有bug，在没连上服务器的时候，它也不显示手动更新的选项，造成无法进一步操作。
+
+所以，在Android下更新蓝牙固件时，使用到的工具是 nRF Connect，可以自行搜索下载，或者到github下载apk文件：https://github.com/NordicSemiconductor/Android-nRF-Connect/releases
+
+固件文件包：https://ydkb.io/help/ble-series/blefriend32_0.8.1_nrftool.zip
+
+下面是使用说明，对应最后的图。
+  1. 安装后 nRF Connect 后，保持键盘是未配对状态，然后在这里找到键盘，点击 **Connect**。
+  2. 在如图的菜单里，点击 **Read characteristics**。然后根据提示，完成配对。
+  3. 在配对之后，就可以在 **Device Information** 里的 **Software Revision String** 里，看到当前的固件版本了。如果是0.7.7就需要升级。
+  4. 点击右上角的 **DFU** 图标，然后选择zip文件，zip文件就是下载的 **blefriend32_0.8.1_nrftool.zip**。
+  5. 等待自动更新完成，这时会正常显示速度和进度。
+  6. 再次检查一下固件版本，是否成功更新到了 0.8.1 。
+
+![](/assets/ble_firmware_android.jpg)
