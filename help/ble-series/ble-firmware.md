@@ -9,7 +9,8 @@ YDKB的BLE系列蓝牙模块使用的是Adafruit Bluefruit LE的固件。
 
 <html><div class="hint">
 <subtitle>建议</subtitle>
-<br>如果当前蓝牙固件是0.7.7的，建议按下文方法更至0.8.1。
+<ul><li>如果当前蓝牙固件是0.7.7的，建议按下文方法更至0.8.1。</li>
+<li>2021年之后新出的，固件默认都是0.8.1，不用自己再升级。</li></ul>
 </div></html>
 
 ## 查看和更新蓝牙固件

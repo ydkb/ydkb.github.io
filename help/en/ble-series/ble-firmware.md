@@ -10,7 +10,8 @@ The latest one is 0.8.1. From the actual feedback of many users, 0.8.1 can impro
 
 <html><div class="hint">
 <subtitle>Suggestion</subtitle>
-<br>If the current Bluetooth firmware is 0.7.7, it is recommended to change to 0.8.1 as described below.
+<ul><li>If the current Bluetooth firmware is 0.7.7, it is recommended to change to 0.8.1 as described below.</li>
+<li>Newly released after 2021, the default firmware is 0.8.1, so you don’t need to upgrade it yourself.</li></ul>
 </div></html>
 
 ## View and update Bluetooth firmware
@@ -70,3 +71,26 @@ When upgrading, select the file manually. Note that the corresponding Hex File i
 ## Updated instructions
 
 This firmware only needs to be updated once. After the update is completed, the keyboard may not be used immediately, and the keyboard needs to be restarted. Some may need to pair again.
+
+
+## View and update Bluetooth firmware under Android
+
+It is strongly recommended to use iOS / iPadOS / Mac to update the firmware. It is really impossible to find or borrow the relevant equipment. Refer to the following instructions to use Android to complete the update of the Bluetooth module firmware.
+
+Although there is Bluefruit LE Connect under Android, there is a bug. When it is not connected to the server, it does not display the option of manual update, causing no further operation.
+
+Therefore, when updating the Bluetooth firmware under Android, the tool used is nRF Connect, you can search and download it yourself, or download the apk file from github: https://github.com/NordicSemiconductor/Android-nRF-Connect/releases
+
+Firmware file package: https://ydkb.io/help/ble-series/blefriend32_0.8.1_nrftool.zip
+
+The following are instructions for use, corresponding to the final picture.
+  1. After installing nRF Connect, keep the keyboard unpaired, then find the keyboard here and click **Connect**.
+  2. In the menu as shown in the figure, click **Read characteristics**. Then follow the prompts to complete the pairing.
+  3. After pairing, you can see the current firmware version in **Software Revision String** in **Device Information**. If it is 0.7.7, it needs to be upgraded.
+  4. Click the **DFU** icon in the upper right corner, and then select the zip file. The zip file is the downloaded **blefriend32_0.8.1_nrftool.zip**.
+  5. Wait for the automatic update to complete, then the speed and progress will be displayed normally.
+  6. Check the firmware version again to see if it has been successfully updated to 0.8.1.
+
+![](/assets/ble_firmware_android.jpg)
+
+
