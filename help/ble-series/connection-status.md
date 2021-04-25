@@ -78,11 +78,12 @@
 | BLE40/BLUP | 未连接时A键左边的键轴灯快闪蓝色，已连接时它较慢闪绿色 |
 | CAD66 | 未连接时正面RGB灯条快闪蓝色，已连接时正面RGB灯条较慢闪绿色 |
 | Chicory| 未连接时Caps灯快闪，已连接时Caps灯较慢闪 |
-| Duang60| 未连接时Caps灯快闪以及RGB四灯闪蓝色，已连接时Caps灯较慢闪以及RGB四灯闪绿色 |
+| Duang60 / Minira v2 | 未连接时Caps灯快闪以及RGB四灯闪蓝色，已连接时Caps灯较慢闪以及RGB四灯闪绿色 |
 | Just Keyboard| 未连接时Caps灯快闪以及RGB灯闪蓝色，已连接时Caps灯较慢闪以及RGB灯闪绿色 |
 | Minira | 未连接时Caps灯（Caps按键左边的灯）快闪，已连接时Caps灯较慢闪 |
 | Pearly| 未连接时LED2快闪，已连接时LED1和LED1较慢闪 |
 | YD60BLE | 未连接时Caps灯（Caps按键左边的灯）快闪，已连接时Caps灯较慢闪 |
+| YD67BLE | 未连接时指示灯（Caps与A之间）快闪，已连接时指示灯较慢闪 |
 | YDP50| 未连接时Caps灯快闪，已连接时Caps灯较慢闪 |
 | YDPM40BLE| 未连接时Caps灯快闪，已连接时Caps灯较慢闪 |
 | HHKB BLE | 未连接时LED3快闪(默认绿灯)，已连接时LED2和LED3较慢闪 |

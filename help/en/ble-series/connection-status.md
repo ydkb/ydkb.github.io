@@ -69,8 +69,9 @@ While using the keyboard, you can also use <key>LShift+RShift+S</key> to manuall
 
 Because of the limited indicator leds, some keyboards that indicate Bluetooth connection status overlap with low-battery indicators. Give priority to low battery, only when the battery is not low, the Bluetooth connection status will be displayed.
 
-
 The BLE series keyboards that have supported this function are shown in the table below:
+
+<table_w30x70>
 
 | Keybaord | Display method |
 | --- | ---- |
@@ -81,12 +82,17 @@ The BLE series keyboards that have supported this function are shown in the tabl
 | BLE40/BLUP | Tab LED flashes blue quickly when not connected, green slowly when connected |
 | CAD66 | Light bar flashes blue quickly when not connected,  green slowly when connected |
 | Chicory| Caps LED flashes quickly when not connected, slowly when connected |
+| Duang60 / Minira v2 | Caps LED with RGB blue flashes quickly when not connected, slowly with RGB green when connected |
 | Just Keyboard| Caps LED flashes quickly when not connected, slowly when connected |
 | Minira | Caps LED flashes quickly when not connected, slowly when connected |
+| Pearly | LED2 flashes quickly when not connected, LED2 and LED3 flash slowly when connected |
 | YD60BLE | Caps LED flashes quickly when not connected, slowly when connected |
+| YD67BLE | The indicator led (between CapsLock and A) flashed quickly when not connected, slowly when connected |
 | YDP50| Caps LED flashes quickly when not connected, slowly when connected |
 | YDPM40BLE| Caps LED flashes quickly when not connected, slowly when connected |
 | HHKB BLE | LED3(default green) flashes quickly when not connected. LED2 and LED3 flash slowly when connected |
 | BLE660C | Insert LED and caps LED flashes quickly when not connected, slowly when connected |
 | BLE980C | Scroll Lock flashes quickly when not connected, slowly when connected |
+
+</table_w30x70>
 

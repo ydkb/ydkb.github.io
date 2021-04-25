@@ -2,10 +2,10 @@
   <template id="lufa_msd_ble">
     <div class="lang-zh_sc">
       <p><b>刷机方式：</b><br>
-       按住最左上角按键不放(物理位置，一般设置Esc)，插入数据线，电脑会识别出一个U盘名为<b>"KBD_NAME"</b>，这时可放开Esc了。<br>
-       <span style="color:red">Win</span>: 将下载的"KBD_NAME.BIN"复制或拖入U盘，<span style="color:red; border-bottom:2px solid #bb1122">直接覆盖原文件</span>。然后右键弹出U盘或再按一次Esc退出(有的刷完是自动退出)，刷机完成。<br>
-       <span style="color:red">Mac</span>: 需要先完全删除"KBD_NAME.BIN"，再复制文件，具体<span style="border-bottom:2px solid #bb1122">请严格参照帮助说明里的步骤</span>: <a href="help/#/bootloader/msd-bootloader" target="_blank">点此查看</a>。<br>
-       不需要安装任何的驱动和刷机软件。也可以直接上传U盘里的"KBD_NAME.BIN"到网站上，读取键盘的当前设置。<br>
+       按住最左上角按键不放(物理位置，一般设置Esc)，插入数据线，电脑会识别出一个U盘名为<b>"DISK_NAME"</b>，这时可放开Esc了。<br>
+       <span style="color:red">Win</span>: 将下载的"BIN_NAME.BIN"复制或拖入U盘，<span style="color:red; border-bottom:2px solid #bb1122">直接覆盖原文件</span>。然后右键弹出U盘或再按一次Esc退出(有的刷完是自动退出)，刷机完成。<br>
+       <span style="color:red">Mac</span>: 需要先完全删除"BIN_NAME.BIN"，再复制文件，具体<span style="border-bottom:2px solid #bb1122">请严格参照帮助说明里的步骤</span>: <a href="help/#/bootloader/msd-bootloader" target="_blank">点此查看</a>。<br>
+       不需要安装任何的驱动和刷机软件。也可以直接上传U盘里的"BIN_NAME.BIN"到网站上，读取键盘的当前设置。<br>
        如果刷新未成功造成键盘USB无法识别，只需要先关掉电池开关，然后重新进入刷机模式正确刷入固件。</p>
        <p>进阶方法：同时按左右shift+b，此时键盘会重启，立即按住Esc不放，这样也可以进入刷机的U盘模式，好处就是整个操作过程不用插拔数据线。</p>
        <p><b>补充说明:</b>Num Lock, Caps Lock, Scroll Lock这些指示灯，在蓝牙模式下并未同步显示电脑的这三者状态。只是按一下按键就切换显示一次对应指示灯。<br>
@@ -13,10 +13,10 @@
    </div>
    <div class="lang-en" style="display: none">
     <p><b>Reflash Firmware:</b><br>
-     Press and hold the top-left key(generally ESC), insert the USB cable. The OS shows a disk drive named <b>"KBD_NAME"</b> and the key can be released now.<br>
-     <span style="color:red">Win</span>: Drag the downloaded "KBD_NAME.BIN" into the disk to <b style = "color: red"> just overwrite the original file(important)</b>. Then eject the disk or press Esc once to exit.<br>
-     <span style="color:red">Mac</span>: You need to completely delete "KBD_NAME.BIN" before copying it into the disk. For details, please refer to the this: <a href="http://help.ydkb.io/doku.php?id=en:bootloader:msd-bootloader" target="_blank">Click here to view</a>。<br>
-     No need to install any drivers or software. You can also directly upload your "KBD_NAME.BIN" to the website to read the current settings of the keyboard. <br>
+     Press and hold the top-left key(generally ESC), insert the USB cable. The OS shows a disk drive named <b>"DISK_NAME"</b> and the key can be released now.<br>
+     <span style="color:red">Win</span>: Drag the downloaded "BIN_NAME.BIN" into the disk to <b style = "color: red"> just overwrite the original file(important)</b>. Then eject the disk or press Esc once to exit.<br>
+     <span style="color:red">Mac</span>: You need to completely delete "BIN_NAME.BIN" before copying it into the disk. For details, please refer to the this: <a href="http://help.ydkb.io/doku.php?id=en:bootloader:msd-bootloader" target="_blank">Click here to view</a>。<br>
+     No need to install any drivers or software. You can also directly upload your "BIN_NAME.BIN" to the website to read the current settings of the keyboard. <br>
      If the keyboard is not recognized by the unsuccessful refresh, turn off the battery switch and re-enter the flash mode to reflash the firmware correctly. </p>
      <p>Tips: Press <b>lshift+rshift+b</b> to restart the keyboard. If immediately pressing and holding the ESC key, Keyboard can enter the flash mode. </p>
      <p><b> Note:</b> The Num, Caps, and Scroll Lock indicators are not synchronous with the OS status in Bluetooth mode. They just toggle on or off when pressed.<br>
@@ -27,7 +27,7 @@
   <template id="boothid_ble">
     <div class="lang-zh_sc">
       <p><b>刷机方式：</b><br>
-        KBD_NAME不同于gh60，不要用zadig去安装驱动，这个刷固件是免驱的。更详细说明见：<a href="help/#/bootloader/boothid" target="_blank">点此查看</a>。<br>
+        BIN_NAME不同于gh60，不要用zadig去安装驱动，这个刷固件是免驱的。更详细说明见：<a href="help/#/bootloader/boothid" target="_blank">点此查看</a>。<br>
        固件功能正常时，插入数据线同时按住左上角<kbd>ESC</kbd>键，键盘进入刷机模式。这时将hex拖到YDKB Tool.exe，固件将自动开始刷新。<br>
        如果刷错了别的固件，造成固件功能不正常了，先关掉电源开关，再执行上面的操作。<br>
        如果无法刷，检查在刷机模式下，键盘有被系统正确识别，即在“Windows设置--设备”里，不是未知设备。</p>
@@ -37,7 +37,7 @@
    </div>
    <div class="lang-en" style="display: none">
     <p><b>Reflash Firmware:</b><br>
-     KBD_NAME uses BootHID bootloader. So it's no need to install any driver manually for it.For details, please refer to the this: <a href="http://help.ydkb.io/doku.php?id=en:bootloader:boothid" target="_blank">Click here to view</a>。<br>
+     BIN_NAME uses BootHID bootloader. So it's no need to install any driver manually for it.For details, please refer to the this: <a href="http://help.ydkb.io/doku.php?id=en:bootloader:boothid" target="_blank">Click here to view</a>。<br>
      Disconnect usb cable from the keyboard first. Drag <b>.hex file</b> to YDKB Tool.exe, as it says next you need get your device into bootloader.<br>
      Now, insert the usb cable to your keyboard and meanwhile keep holding <kbd>Esc</kbd> key. When it begins flashing, <kbd>Esc</kbd> can be released.<br>
      If the firmware is wrong, turn off the battery switch before doing above.</p>
