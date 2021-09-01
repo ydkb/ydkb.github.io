@@ -69,12 +69,14 @@ Linux测试过Ubuntu 19.04是支持电量显示的。
 
 ## Mac电量显示
 
-目前来说，Mac并不支持第三方蓝牙键盘的电量显示，iOS已经更新支持了，期望Mac早日更新吧。Mac可以使用文字输出电量的方式查看。
+目前来说，Mac并不支持第三方蓝牙键盘的电量显示，iOS已经更新支持了。Mac 暂时可以使用文字输出电量的方式查看。
 
-另外，Mac也有第三方软件可以显示BLE系列键盘的电量了，应用名叫AirBuddy（但是不确定是否支持所有的Mac硬件和软件系统），如下图所示，在通知中心里添加小工具后可以显示。
+在最新的 <ru>macOS Monterey 测试版</ru>里，已经支持第三方的蓝牙设备电量显示了。
 
-![](/assets/ble_mac_battery.jpg)
+<div style="width: 400px">
 
+![](/assets/ble_battery_mac02.png)
+</div>
 
 ## Windows 电量显示
 
