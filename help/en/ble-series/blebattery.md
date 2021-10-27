@@ -2,7 +2,7 @@
 
 Win10 supports battery level display from 1809.<br>
 iOS supports battery display at least after 12.3.<br>
-Mac does not currently support it.<br>
+Mac needs macOS 12 Monterey or output battery level in text.<br>
 Linux tested Ubuntu 19.04 supports battery level display.
 
 As long as the keyboard can be used normally in the OS, outputting battery level in text works. 
@@ -68,6 +68,16 @@ At present, the Mac does not support the battery percentage display of third-par
 First add the above key on the keyboard. Then, wherever you can type text, press this key, and it will output the current battery level like typing.
 
 The text output battery level function can also be used for debugging. In addition to the normal battery value, for example, when it outputs 12, it means that the Bluetooth function is turned off, and if it outputs 44 or 45, it means that the battery value has not been obtained correctly.
+
+
+## macOS battery display
+
+In the latest <ru>macOS Monterey</ru>, the battery display of third-party Bluetooth devices has been supported. Versions below macOS 12 Monterey can use outputting battery level in text. 
+
+<div style="width: 400px">
+
+![](/assets/ble_battery_mac02.png)
+</div>
 
 
 ## Win10 battery display
