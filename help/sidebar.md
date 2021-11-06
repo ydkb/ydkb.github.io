@@ -17,7 +17,7 @@
   * [充电与电量显示](ble-series/blebattery)
   * [低电量提醒](ble-series/low-battery)
   * [Lock Mode](ble-series/lock-mode)
-  * [重置蓝牙](ble-series/reset-ble)
+  * [重置蓝牙配置](ble-series/reset-ble)
   * [BLE模块固件升级](ble-series/ble-firmware)
   * [BLE系列排错指南](ble-series/troubleshooting)
 * [按键设置](edit-keymap)
