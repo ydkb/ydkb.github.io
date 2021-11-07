@@ -18,10 +18,9 @@ For the BLE series, if the flashing fails or the firmware is flashed incorrectly
 <ru>The USB name of the device</ru> mostly contains the date of the current firmware, the format of which is shown at the end of this article.
 
 ### 1 Connect the keyboard to the computer by wire.
-<html><div class="attention"> 
-<subtitle>IMPORTANT:</subtitle>
-<br>Only in USB Mode its corresponding USB device name could be displayed.
-</div></html>
+
+!!> IMPORTANT:
+  - Only in USB Mode its corresponding USB device name could be displayed.
 
 ### 2 View the name of the USB device for the wired keyboard
 
@@ -48,22 +47,40 @@ In <ru> About the Machine - System Report - USB</ru>, as shown below
 
 ## Changelog 
 
-| YDKB High-end ||||
-| ---- ||||
-| [1800mini](/changelog/1800mini) | [Master98 Pro](/changelog/master98) | [Sairo64](/changelog/sairo64) | [X-8086K](/changelog/x-8086k) |
+||> YDKB High-end
 
-|YDKB BLE Series|||||
-| ---- |||||
-| [BLE40/BLUP](/changelog/ble40_blup) | [CAD66](/changelog/cad66) | [Chicory / Pearly](/changelog/chicory) |[Just Keyboard](/changelog/just) |  [Minira](/changelog/minira) |
-| [Just60/YD60BLE](/changelog/yd60ble) | [YDP50](/changelog/ydp50) | [YDPM40BLE](/changelog/ydpm40ble) |
+  - [1800mini](/changelog/1800mini)
+  - [Master98 Pro](/changelog/master98)
+  - [Sairo64](/changelog/sairo64)
+  - [X-8086K](/changelog/x-8086k)
 
-| YDKB Mod ||
-| ---- ||
-| [HHKB BLE](/changelog/hhkb_ble) | [BLE660C / BLE980C](/changelog/ble660c_980c) |
 
-| YDKB (Other) ||||
-| ---- ||||
-| [NS60](/changelog/ns60) | [Simpo Keyboard / STM60](/changelog/simpo_stm60) | [YD68](/changelog/yd68) | [YDKB优联](/changelog/ydkb_u2u) |
+||> YDKB BLE Series
+
+  - [BLE40/BLUP](/changelog/ble40_blup)
+  - [CAD66](/changelog/cad66)
+  - [Chicory / Pearly](/changelog/chicory)
+  - [Just Keyboard](/changelog/just)
+  - [Minira](/changelog/minira)
+  - [Just60/YD60BLE](/changelog/yd60ble) 
+  - [YDP50](/changelog/ydp50)
+  - [YDPM40BLE](/changelog/ydpm40ble)
+
+
+||> YDKB Mod
+
+  - [HHKB BLE](/changelog/hhkb_ble)
+  - [BLE660C](/changelog/ble660c_980c)
+  - [BLE980C](/changelog/ble660c_980c)
+
+
+||> YDKB (Other)
+
+  - [NS60](/changelog/ns60) 
+  - [Simpo Keyboard](/changelog/simpo_stm60)
+  - [STM60 A/B/C](/changelog/simpo_stm60)
+  - [YD68](/changelog/yd68)
+  - [YDKB优联](/changelog/ydkb_u2u)
 
 
 ## Attachment: three-digit date display method

@@ -16,10 +16,10 @@
 设备 <ru>作为USB键盘连接时的名称</ru> 大都包含了当前固件的日期，日期的计法说明见本篇最后。
 
 ### 1 将键盘用有线方式连接到电脑
-<html><div class="attention"> 
-<subtitle>重要：</subtitle>
-<br>必须是有线连接下，才能查看其对应的USB设备名
-</div></html>
+
+!!> 重要：
+ - 必须是有线连接下，才能查看其对应的USB设备名
+
 
 ### 2 查看有线键盘的USB设备名称
 不同系统下查看这个名称的方法可能有所区别。
@@ -46,22 +46,40 @@
 
 ## Changelog 固件更新记录
 
-| YDKB High-end ||||
-| ---- ||||
-| [1800mini](/changelog/1800mini) | [Master98 Pro](/changelog/master98) | [Sairo64](/changelog/sairo64) | [X-8086K](/changelog/x-8086k) |
+||> YDKB High-end
 
-|YDKB BLE 系列|||||
-| ---- |||||
-| [BLE40/BLUP](/changelog/ble40_blup) | [CAD66](/changelog/cad66) | [Chicory / Pearly](/changelog/chicory) |[Just Keyboard](/changelog/just) |  [Minira](/changelog/minira) |
-| [Just60/YD60BLE](/changelog/yd60ble) | [YDP50](/changelog/ydp50) | [YDPM40BLE](/changelog/ydpm40ble) |
+  - [1800mini](/changelog/1800mini)
+  - [Master98 Pro](/changelog/master98)
+  - [Sairo64](/changelog/sairo64)
+  - [X-8086K](/changelog/x-8086k)
 
-| YDKB Mod ||
-| ---- ||
-| [HHKB BLE](/changelog/hhkb_ble) | [BLE660C / BLE980C](/changelog/ble660c_980c) |
 
-| YDKB (其他键盘) ||||
-| ---- ||||
-| [NS60](/changelog/ns60) | [Simpo Keyboard / STM60](/changelog/simpo_stm60) | [YD68](/changelog/yd68) | [YDKB优联](/changelog/ydkb_u2u) |
+||> YDKB BLE 系列
+
+  - [BLE40/BLUP](/changelog/ble40_blup)
+  - [CAD66](/changelog/cad66)
+  - [Chicory / Pearly](/changelog/chicory)
+  - [Just Keyboard](/changelog/just)
+  - [Minira](/changelog/minira)
+  - [Just60/YD60BLE](/changelog/yd60ble) 
+  - [YDP50](/changelog/ydp50)
+  - [YDPM40BLE](/changelog/ydpm40ble)
+
+
+||> YDKB Mod
+
+  - [HHKB BLE](/changelog/hhkb_ble)
+  - [BLE660C](/changelog/ble660c_980c)
+  - [BLE980C](/changelog/ble660c_980c)
+
+
+||> YDKB (其他键盘)
+
+  - [NS60](/changelog/ns60) 
+  - [Simpo Keyboard](/changelog/simpo_stm60)
+  - [STM60 A/B/C](/changelog/simpo_stm60)
+  - [YD68](/changelog/yd68)
+  - [YDKB优联](/changelog/ydkb_u2u)
 
 
 ## 附：三位日期计法

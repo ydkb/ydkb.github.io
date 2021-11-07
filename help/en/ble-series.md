@@ -6,25 +6,52 @@ YDKB BLE series began with YD60BLE since January 2018.
 
 BLE series refers to the keyboard supported by YDKB with nrf51 Bluetooth module, the list is as follows.
 
-|  The keyboards of BLE series ||||||
-| ---- ||||||
-|  **High-end**  | 1800mini | Mater98 | X-8086K | Sairo64 | | 
-|  **BLE**       | BLE40 | BLUP | CAD66 | Chicory | Duang60 |
-|          | Just60 | Just66 | Just660 | Just68 | Minira |
-|          | Pearly | YD60BLE | YDP50 | YDPM40BLE  ||
-|  **YDKB Mod**  | BLE660C | BLE980C | BLE980M | HHKB_BLE |
+||> High-end
+  - 1800mini
+  - Mater98
+  - X-8086K
+  - Sairo64
+
+||> BLE
+  - BLE40
+  - BLUP
+  - CAD66
+  - Chicory
+  - Duang60
+  - Duang60 v2
+  - Chicory
+  - Fmini
+  - Just60
+  - Just66
+  - Just660
+  - Just68
+  - Just68v2
+  - Louise
+  - Minira
+  - Minira v2
+  - Pearly
+  - Xikii i104
+  - Xikii i6x
+  - YD60BLE
+  - YD67BLE
+  - YDP50
+  - YDPM40BLE
+
+||>  YDKB Mod
+  - BLE660C
+  - BLE980C
+  - BLE980M
+  - HHKB_BLE
 
 The Bluetooth firmware uses Adafruit. References: <br>
 https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend/introduction
 
 All references in the text to pressing <key>LShift+RShift+XX</key> or <key>LShift+RShift+LCtrl+XX</key> refer to holding down the left Shift and right Shift(maybe and left Ctrl) first and press XX key once. You can then release the left and right shifts. Only press one command at a time. To press another command, you need to release the left and right Shift keys, and then press the left and right Shift keys again.
 
-<div class="attention"> 
-<subtitle>Important advice：</subtitle>
-
+!!> Important advice
   - Even if you don't like or need lights, at least please install the caps indicator led of some keyboards. 
   - the caps indicator will also be used to indicate various states of bluetooth, low battery power, flashing state, and so on.
-</div>
+
 
 
 ## Bluetooth pairing
@@ -79,9 +106,9 @@ Simply talk about my power-saving settings for the BLE series, so that you can u
 The power-saving mode is on by default when using the battery. You can use the LShift+RShift+P to toggle it on or off. This setting is not saved. Once the keyboard is restarted, it will return to the default on state.
 
 Then about the power saving mode:
-  - After the keyboard is idle for 15 seconds without pressing any key, it enters the general power saving mode and all leds are off. At this mode, the matrix is scanned every 30ms. If there is any key pressed, it exits the general power saving mode.
-  - If the keyboard's bluetooth is not connected for 90 seconds, or it is idle for more than 2.5 hours, it will turn off bluetooth and enter the deep power saving mode. Press and hold any key for 3 to 5 seconds to wake it up.
-  - Using Lock Mode will directly make the keyboard enter deep power saving mode. The difference from 2 is that by this way, you can press only F and J together to wake it up.
+  1. After the keyboard is idle for 15 seconds without pressing any key, it enters the general power saving mode and all leds are off. At this mode, the matrix is scanned every 30ms. If there is any key pressed, it exits the general power saving mode.
+  2. If the keyboard's bluetooth is not connected for 90 seconds, or it is idle for more than 2.5 hours, it will turn off bluetooth and enter the deep power saving mode. Press and hold any key for 3 to 5 seconds to wake it up.
+  3. Using Lock Mode will directly make the keyboard enter deep power saving mode. The difference from 2 is that by this way, you can press only F and J together to wake it up.
 
 
 ## Background Story

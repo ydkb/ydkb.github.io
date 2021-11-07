@@ -6,25 +6,51 @@ YDKB BLE系列的键盘与市面上的大部分量产的双模或蓝牙键盘，
 
 BLE系列泛指YDKB支持的，集成nrf51蓝牙模块的键盘，列表如下。
 
-|  BLE系列键盘 ||||||
-| ---- ||||||
-|  **High-end**  | 1800mini | Mater98 | X-8086K | Sairo64 | | 
-|  **BLE**       | BLE40 | BLUP | CAD66 | Chicory | Duang60 |
-|          | Just60 | Just66 | Just660 | Just68 | Minira |
-|          | Pearly | YD60BLE | YDP50 | YDPM40BLE  ||
-|  **YDKB Mod**  | BLE660C | BLE980C | BLE980M | HHKB_BLE |
+||> High-end
+  - 1800mini
+  - Mater98
+  - X-8086K
+  - Sairo64
+
+||> BLE
+  - BLE40
+  - BLUP
+  - CAD66
+  - Chicory
+  - Duang60
+  - Duang60 v2
+  - Chicory
+  - Fmini
+  - Just60
+  - Just66
+  - Just660
+  - Just68
+  - Just68v2
+  - Louise
+  - Minira
+  - Minira v2
+  - Pearly
+  - Xikii i104
+  - Xikii i6x
+  - YD60BLE
+  - YD67BLE
+  - YDP50
+  - YDPM40BLE
+
+||>  YDKB Mod
+  - BLE660C
+  - BLE980C
+  - BLE980M
+  - HHKB_BLE
 
 蓝牙固件使用的是Adafruit的，参考资料：<br>
 https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend/introduction
 
-下文中所有提到按<kbd>LShift+RShift</kbd>+<kbd>某个按键</kbd>或<kbd>LShift+RShift+LCtrl</kbd>+<kbd>某个按键</kbd>，都是指先按住 左Shift和右Shift(可能还有左Ctrl) 不放，再按一下 这个按键，之后就可以松开 左Shift和右Shift(可能还有左Ctrl) 了。这些命令按键不能连接按，每次只能按一个命令，要按另外一个，就需要放开左右Shift，再重新按下左右Shift加其他按键。
+下文中所有提到按 <kbd>LShift+RShift+某个按键</kbd> 或 <kbd>LShift+RShift+LCtrl+某个按键</kbd> ，都是指先按住 左Shift和右Shift(可能还有左Ctrl) 不放，再按一下 这个按键，之后就可以松开 左Shift和右Shift(可能还有左Ctrl) 了。这些命令按键不能连接按，每次只能按一个命令，要按另外一个，就需要放开左右Shift，再重新按下左右Shift加其他按键。
 
-<div class="attention"> 
-<subtitle>重要建议：</subtitle>
-
+!!> 重要建议：
   - 即使键盘不喜欢或不需要灯的，至少请把Caps指示灯装上。
   - 在没有自带灯的键盘上，Caps指示灯还会用于指示蓝牙的各种状态、电池低电量、刷机状态等等。
-</div>
 
 ## 蓝牙配对
 首先保持键盘通电正常，比如插着USB线，或者没插线但电池开关是打开的。同时这里也说明一点，BLE系列的键盘上的实体开关，均为电池供电开关，而非蓝牙开关。
@@ -58,7 +84,7 @@ BLE系列的键盘蓝牙配对与量产的蓝牙键盘有所不同，不需要�
 
 在蓝牙模式下，Num Lock, Caps Lock, Scroll Lock这些指示灯，无法同步显示电脑的这三者状态。只是按一下按键就切换显示一次对应指示灯。在USB模式下是同步显示的。
 
-如果不同步了，可以使用Shift+对应按键，比如Shift+Capslock，这时CapsLock会生效但是对应指示灯的状态不会变。合理利用这一点也可以在蓝牙下反转指示灯使用，比如numlock指示灯在亮的时候是关，灭的时候是开，可以省电。
+如果不同步了，可以使用 Shift+对应按键，比如 Shift+Capslock，这时CapsLock会生效但是对应指示灯的状态不会变。合理利用这一点也可以在蓝牙下反转指示灯使用，比如numlock指示灯在亮的时候是关，灭的时候是开，可以省电。
 
 
 ## 充电注意
