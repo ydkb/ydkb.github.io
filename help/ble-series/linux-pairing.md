@@ -8,7 +8,4 @@ Linux的发行版本太多所以无法一一举例说明。大部分用户测试
 
 Ubuntu使用时，配对后界面如下。
 
-<div style="width: 600px">
-
-![](/assets/ble_battery004.png)
-</div>
+![](/assets/ble_battery004.png?600)

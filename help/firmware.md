@@ -24,25 +24,24 @@
 ### 2 查看有线键盘的USB设备名称
 不同系统下查看这个名称的方法可能有所区别。
 
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_h5>win10</col_h5>
++|+> 1
+
+##### win10
+
 在 <ru>开始菜单 - 设置 - 设备</ru> 里(不是设备管理器)，查看它的USB键盘名称(不是蓝牙连接名称)。
 
 ![win10](/assets/firmware_01.jpg)
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_h5>Mac</col_h5>
+
++|+> 2
+
+##### Mac
 
 在 <ru>关于本机 - 系统报告 - USB</ru>，如下图所示
+
 ![mac](/assets/firmware_mac_02.jpg)
 
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
++|+> 3
+
 
 ## Changelog 固件更新记录
 
