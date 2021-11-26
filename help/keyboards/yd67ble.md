@@ -1,13 +1,9 @@
 # YD67BLE / D60BLE <br>(本节内容还在完善中)
 
-<table_w30x70>
-
-|Author |YANG |
+|Author??30% |YANG |
 |:--- |:--- |
 |MCU|Atmel32u4|
 |BLE Module|MDBT40|
-
-</table_w30x70>
 
 YD67BLE / D60BLE 这两个键盘使用的相似，只是基于同套硬件配置下，做的不同的布局，所以使用上也相差不大。
 

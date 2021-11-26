@@ -1,13 +1,13 @@
 <div id="mykbd">
     <div id="kbd-info" style="display: none;">
         <p><b>刷机方式(Windows)：</b></p>
-        <p>按住左上角<kbd>Esc</kbd>或右上角<kbd>Pause Break</kbd>键不放，插入数据线，电脑会识别出一个U盘名为Xikii104，且键盘LED2指示灯开始闪烁，这时可放开按键了。</p>
-        <p>将下载的固件“XIKII104.BIN"复制或拖入U盘里，直接覆盖原文件，开始刷新。刷新完成后会自动退出。</p>
-        <p>不需要安装任何的驱动和刷机软件。 也可以直接上传刷机模式下的XIKII104.BIN到网站上，读取键盘的当前设置。</p>
+        <p>按住左上角<kbd>Esc</kbd>键不放，插入数据线，电脑会识别出一个U盘名为Xikii_8x，且键盘LED2指示灯开始闪烁，这时可放开按键了。</p>
+        <p>将下载的固件 “XIKII_8X.BIN" 复制或拖入U盘里，直接覆盖原文件，开始刷新。刷新完成后会自动退出。</p>
+        <p>不需要安装任何的驱动和刷机软件。 也可以直接上传刷机模式下的 XIKII_8X.BIN 到网站上，读取键盘的当前设置。</p>
     </div>   
   <div style="zoom: 0.92; margin: 4px 0 0 54px;">  
-    <div id="mycase" class="mycase" style="--left:calc(54px*20 - 6px); --top:28px; --width: 15px;">
-        <div class="kbdbg-mask bevel" style="margin: 0 -40px -54px -40px; height: 44px; width: 1322px; top: 387px; border-radius: 0 0 18px 18px;"></div>
+    <div id="mycase" class="mycase" style="--left:calc(54px*16 - 6px); --top: -28px; --width: 15px;">
+        <div class="kbdbg-mask bevel" style="margin: 0 -40px -54px -40px; height: 44px; width: 1079px; top: 387px; border-radius: 0 0 18px 18px;"></div>
         <div class="kbdbg-inner kbd-led led0" style="width: var(--width); top: var(--top); left: var(--left); background-color: #ff0000"></div>
         <div class="kbdbg-inner kbd-led led2" style="width: var(--width); top: var(--top); left: calc(var(--left) + 54px); background-color: #00ff00"></div>
         <div class="kbdbg-inner kbd-led led4" style="width: var(--width); top: var(--top); left: calc(var(--left) + 54px*2); background-color: #0088ff"></div>
@@ -27,7 +27,7 @@
     <div class="mykeycap1 col1400">F12</div>
     <div class="mykeycap2 col1550">PrtScr</div>
     <div class="mykeycap2 col1650">ScrLk</div>
-    <div class="mykeycap2 col1750 bl-key">Pause</div>
+    <div class="mykeycap2 col1750">Pause</div>
     <div class="mykeycap1 row200">`</div>
     <div class="mykeycap1 row200 col100">1</div>
     <div class="mykeycap1 row200 col200">2</div>
@@ -45,10 +45,7 @@
     <div class="mykeycap2 row200 col1550">Insert</div>
     <div class="mykeycap2 row200 col1650">Home</div>
     <div class="mykeycap2 row200 col1750">PgUp</div>
-    <div class="mykeycap2 row200 col1900">Num Lock</div>
-    <div class="mykeycap2 row200 col2000">P/</div>
-    <div class="mykeycap2 row200 col2100">P*</div>
-    <div class="mykeycap2 row200 col2200">P-</div>
+
     <div class="mykeycap2 w150 row300">Tab</div>
     <div class="mykeycap1 row300 col150">Q</div>
     <div class="mykeycap1 row300 col250">W</div>
@@ -65,10 +62,7 @@
     <div class="mykeycap2 row300 col1550">Delete</div>
     <div class="mykeycap2 row300 col1650">End</div>
     <div class="mykeycap2 row300 col1750">PgDn</div>
-    <div class="mykeycap1 row300 col1900">P7</div>
-    <div class="mykeycap1 row300 col2000">P8</div>
-    <div class="mykeycap1 row300 col2100">P9</div>
-    <div class="mykeycap2 h200 row300 col2200">P+</div>
+
     <div class="mykeycap2 w175 row400">Capslock</div>
     <div class="mykeycap1 row400 col175">A</div>
     <div class="mykeycap1 row400 col275">S</div>
@@ -81,11 +75,15 @@
     <div class="mykeycap1 row400 col975">L</div>
     <div class="mykeycap1 row400 col1075">;</div>
     <div class="mykeycap1 row400 col1175">'</div>
-    <div class="mykeycap1 w150 row300 col1350">\</div>
-    <div class="mykeycap3 w225 row400 col1275">Enter</div>
-    <div class="mykeycap1 row400 col1900">P4</div>
-    <div class="mykeycap1 row400 col2000">P5</div>
-    <div class="mykeycap1 row400 col2100">P6</div>
+
+    <div id="kblayouts-00" value-name="ANSI Enter" value-desc="Enter Key" style="display: block;">
+        <div class="mykeycap1 w150 row300 col1350">\</div>
+        <div class="mykeycap3 w225 row400 col1275">Enter</div>
+    </div>
+    <div id="kblayouts-01" value-name="ISO Enter" style="display: none;">
+        <div class="mykeycap3 w150 h200 row300 col1350">Enter</div>
+        <div class="mykeycap1 row400 col1275">\</div>
+    </div> 
 
     <div class="mykeycap2 w225 row500">Shift</div>
     <div class="mykeycap1 row500 col225">Z</div>
@@ -100,12 +98,8 @@
     <div class="mykeycap1 row500 col1125">/</div>
     <div class="mykeycap2 w275 row500 col1225">RShift</div>
     <div class="mykeycap2 row500 col1650">Up</div>
-    <div class="mykeycap1 row500 col1900">P1</div>
-    <div class="mykeycap1 row500 col2000">P2</div>
-    <div class="mykeycap1 row500 col2100">P3</div>
-    <div class="mykeycap2 h200 row500 col2200">PEnter</div>
 
-    <div id="kblayouts-00" value-name="6.25u WK" value-desc="空格行" style="display: block;">
+    <div id="kblayouts-10" value-name="6.25u WK" value-desc="空格行" style="display: block;">
         <div class="mykeycap2 w125 row600">Ctrl</div>
         <div class="mykeycap2 w125 row600 col125">Win</div>
         <div class="mykeycap2 w125 row600 col250">Alt</div>
@@ -115,7 +109,7 @@
         <div class="mykeycap2 w125 row600 col1250">Menu</div>
         <div class="mykeycap2 w125 row600 col1375">RCtrl</div>
     </div>
-    <div id="kblayouts-01" value-name="7u WKL" style="display: none;">
+    <div id="kblayouts-11" value-name="7u WKL" style="display: none;">
         <div class="mykeycap2 w150 row600">Ctrl</div>
         <div class="mykeycap2 row600 col150">Win</div>
         <div class="mykeycap2 w150 row600 col250">Alt</div>
@@ -124,7 +118,7 @@
         <div class="mykeycap2 row600 col1250">Menu</div>
         <div class="mykeycap2 w150 row600 col1350">RCtrl</div>
     </div>
-    <div id="kblayouts-02" value-name="7u WKL2" style="display: none;">
+    <div id="kblayouts-12" value-name="7u WKL2" style="display: none;">
         <div class="mykeycap2 w150 row600">Ctrl</div>
         <div class="mykeycap2 w150 row600 col250">Alt</div>
         <div class="mykeycap1 w700 space row600 col400">Space</div>
@@ -135,8 +129,6 @@
     <div class="mykeycap2 row600 col1550">Left</div>
     <div class="mykeycap2 row600 col1650">Down</div>
     <div class="mykeycap2 row600 col1750">Right</div>
-    <div class="mykeycap1 w200 row600 col1900">P0</div>
-    <div class="mykeycap1 row600 col2100">P.</div>
   </div>
 </div>
 
@@ -149,7 +141,6 @@
     <li class="key-set" id="code-0xf003" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
     <li class="key-set" id="code-0xf004" lang="zh_sc" title="<kt>空格键</kt>，但是和<kt>shift</kt>一起按时不会生效，防止某些输入法切换到全角">Space2</li>
     <div id="ble51_control_keys_v3"></div>
-    <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
 </div>
 <div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000" value-format="bin"></div>
@@ -159,5 +150,5 @@
     <li id="kb_ledmap-4" value="18" title="SCROLL LOCK">SCROLL LK</li>
 </div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2VS27jQAxEL/QW3fw2z2L4/tcYUrZ3mUEWWQjIQAAt2cXq4jMBPR4PXeyIfa6aV10YTpAcin7cmy1sZRvbnzx2MNpuKmQhGxFEEUMcCSSRgxRtr7s7VFBFDXU00EQPWlgftjHBFDPMscCyO+xghS9844Ir3rEcDzzxgxexiE0Iod0RRnTuIJI4RJGL3KSQShrpZI+V5CGrO87ibI5wlGMc5wSn5z6coha1KaGUMmomr6CSajBDZsJbp9k9W/eINoiVg6BrXDWveq46sHKA70Gyh+lAHarbB4KMpAUyzQNzrK77thmTz+/NtB0ebfW+XKWBTa3rOcR64JDqgUKtA7+Vc3BDsz7t9U3f+7o+K+Tl5B/fMO9/9dP1z+snFLOB13bNDr638odOTP2LZDBKyreNfoNimLjULbLcRfHaE7tFlrsohsk9ktxF8Z/IV0T6Fdkv/DukuYvi+fwDzz+XFnsJAAA=" title="默认参考">默认104参考</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2VS27jQAxEL/QW3fw2z2L4/tcYUrZ3mUEWWQjIQAAt2cXq4jMBPR4PXeyIfa6aV10YTpAcin7cmy1sZRvbnzx2MNpuKmQhGxFEEUMcCSSRgxRtr7s7VFBFDXU00EQPWlgftjHBFDPMscCyO+xghS9844Ir3rEcDzzxgxexiE0Iod0RRnTuIJI4RJGL3KSQShrpZI+V5CGrO87ibI5wlGMc5wSn5z6coha1KaGUMmomr6CSajBDZsJbp9k9W/eINoiVg6BrXDWveq46sHKA70Gyh+lAHarbB4KMpAUyzQNzrK77thmTz+/NtB0ebfW+XKWBTa3rOcR64JDqgUKtA7+Vc3BDsz7t9U3f+7o+K+Tl5B/fMO9/9dP1z+snFLOB13bNDr638odOTP2LZDBKyreNfoNimLjULbLcRfHaE7tFlrsohsk9ktxF8Z/IV0T6Fdkv/DukuYvi+fwDzz+XFnsJAAA=" title="默认参考">默认参考</li>
 </div>
