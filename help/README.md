@@ -27,5 +27,3 @@ TMK Wiki 链接：https://github.com/tmk/tmk_keyboard/wiki
 ??> 没实际作用的小知识
   - 关于YDKB的叫法，YD的解释主要是出自一个漫画《电波教师》。
   - 原文:やりだいのことかやるだけ(只做想做的事情), 分别取や(YA)だ(DA)的首字母组成YD。
-
-<div class="docInfo"><span>2020-12-26 11:06</span></div>
