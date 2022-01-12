@@ -7,7 +7,7 @@ YDKB的BLE系列蓝牙模块使用的是Adafruit Bluefruit LE的固件。
 
 目前最新的是0.8.1，从多位用户实际反馈来看，0.8.1能改善偶尔出现连击的问题，特别是Mac系统。
 
-> ??> 建议
+> [!yddh: 建议]
 > - 如果当前蓝牙固件是0.7.7的，建议按下文方法更至0.8.1。
 > - 2021年之后新出的，固件默认都是0.8.1，不用自己再升级。
 
@@ -15,7 +15,7 @@ YDKB的BLE系列蓝牙模块使用的是Adafruit Bluefruit LE的固件。
 
 更新蓝牙固件需要使用的软件是Bluefruit LE Connect，Mac/iOS/iPadOS可以直接在苹果商店里搜索下载到。
 
-> ??> 建议
+> [!yddh: 建议]
 > - 安卓版的软件必须列表有刷新出来时，才能选择文件手动更新。而这个更新服务器像是土豆做的。
 > - 建议使用Mac或iOS进行更新，临时借用一下他人的也行，只是用于连接键盘更新一次固件。
 
@@ -77,10 +77,10 @@ blefriend32_s110_xxac_0_8_1_190410_blefriend32_init.dat
 固件文件包：https://ydkb.io/help/ble-series/blefriend32_0.8.1_nrftool.zip
 
 下面是使用说明，对应最后的图。
-  1. 安装后 nRF Connect 后，保持键盘是未配对状态，然后在这里找到键盘，点击 **Connect**。
-  2. 在如图的菜单里，点击 **Read characteristics**。然后根据提示，完成配对。
-  3. 在配对之后，就可以在 **Device Information** 里的 **Software Revision String** 里，看到当前的固件版本了。如果是0.7.7就需要升级。
-  4. 点击右上角的 **DFU** 图标，然后选择zip文件，zip文件就是下载的 **blefriend32_0.8.1_nrftool.zip**。
+  1. 安装后 nRF Connect 后，保持键盘是未配对状态，然后在这里找到键盘，点击 `Connect`。
+  2. 在如图的菜单里，点击 `Read characteristics`。然后根据提示，完成配对。
+  3. 在配对之后，就可以在 `Device Information` 里的 `Software Revision String` 里，看到当前的固件版本了。如果是0.7.7就需要升级。
+  4. 点击右上角的 `DFU` 图标，然后选择zip文件，zip文件就是下载的 `blefriend32_0.8.1_nrftool.zip`。
   5. 等待自动更新完成，这时会正常显示速度和进度。
   6. 再次检查一下固件版本，是否成功更新到了 0.8.1 。
 
