@@ -4,9 +4,6 @@
 
 ydkb.io针对Mac用户提供了一些友好的优化。
 
-点击 **Win⇌MAC** 按钮，可以切换键盘字符的显示风格。  
+点击 `Win⇌MAC` 按钮，可以切换键盘字符的显示风格。  
 
-<div style="width: 660px">
-
-![](/assets/mac-support-01.png?660)
-</div>
+![mac support|660](assets/mac-support-01.png)
