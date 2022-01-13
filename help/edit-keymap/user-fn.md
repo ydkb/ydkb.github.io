@@ -4,16 +4,10 @@
 
 如下图，这是YD60BLE的 **灯光和增加功能** 选择界面。然后<kbd>Esc</kbd>键就设置了这里的第一个增强功能，即单按按键是<kbd>Esc</kbd>，与<kbd>Shift</kbd>一起按时输出符号 `~`。
 
-<div style="width: 660px">
-
-![](/assets/user-fn-01.png?660)
-</div>
+![|660](assets/user-fn-01.png)
 
 增强功能里面可选的按键，当鼠标指向的时候，会有对应的功能说明的。
 
-<div style="width: 660px">
-
-![](/assets/user-fn-02.png?660)
-</div>
+![|660](assets/user-fn-02.png)
 
 这里其他的按键，第二排是控制蓝牙的，第三排控制单色背光，第四排控制RGB灯，在后面再讲到如何使用。
