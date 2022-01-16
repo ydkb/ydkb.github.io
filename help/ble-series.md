@@ -6,42 +6,41 @@ YDKB BLE系列的键盘与市面上的大部分量产的双模或蓝牙键盘，
 
 BLE系列泛指YDKB支持的，集成nrf51蓝牙模块的键盘，列表如下。
 
-||> High-end
-  - 1800mini
-  - Mater98
-  - X-8086K
-  - Sairo64
+> [!yddl: High-end]
+> - 1800mini
+> - Mater98
+> - X-8086K
+> - Sairo64
 
-||> BLE
-  - BLE40
-  - BLUP
-  - CAD66
-  - Chicory
-  - Duang60
-  - Duang60 v2
-  - Chicory
-  - Fmini
-  - Just60
-  - Just66
-  - Just660
-  - Just68
-  - Just68v2
-  - Louise
-  - Minira
-  - Minira v2
-  - Pearly
-  - Xikii i104
-  - Xikii i6x
-  - YD60BLE
-  - YD67BLE
-  - YDP50
-  - YDPM40BLE
+> [!yddl: BLE]
+> - BLE40
+> - BLUP
+> - CAD66
+> - Chicory
+> - Duang60
+> - Duang60 v2
+> - Chicory
+> - Fmini
+> - Just60
+> - Just66
+> - Just660
+> - Just68
+> - Just68v2
+> - Louise
+> - Minira
+> - Minira v2
+> - Pearly
+> - Xikii i6x/i8x/i104
+> - YD60BLE
+> - YD67BLE
+> - YDP50
+> - YDPM40BLE
 
-||>  YDKB Mod
-  - BLE660C
-  - BLE980C
-  - BLE980M
-  - HHKB_BLE
+> [!yddl: YDKB Mod]
+> - BLE660C
+> - BLE980C
+> - BLE980M
+> - HHKB_BLE
 
 蓝牙固件使用的是Adafruit的，参考资料：<br>
 https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend/introduction
@@ -49,8 +48,8 @@ https://learn.adafruit.com/introducing-the-adafruit-bluefruit-le-uart-friend/int
 下文中所有提到按 <kbd>LShift+RShift+某个按键</kbd> 或 <kbd>LShift+RShift+LCtrl+某个按键</kbd> ，都是指先按住 左Shift和右Shift(可能还有左Ctrl) 不放，再按一下 这个按键，之后就可以松开 左Shift和右Shift(可能还有左Ctrl) 了。这些命令按键不能连接按，每次只能按一个命令，要按另外一个，就需要放开左右Shift，再重新按下左右Shift加其他按键。
 
 > [!ydda: 重要建议：]
-> - 即使键盘不喜欢或不需要灯的，至少请把Caps指示灯装上。
-> - 在没有自带灯的键盘上，Caps指示灯还会用于指示蓝牙的各种状态、电池低电量、刷机状态等等。
+>  - 即使键盘不喜欢或不需要灯的，至少请把Caps指示灯装上。
+>  - 在没有自带灯的键盘上，Caps指示灯还会用于指示蓝牙的各种状态、电池低电量、刷机状态等等。
 
 ## 蓝牙配对
 首先保持键盘通电正常，比如插着USB线，或者没插线但电池开关是打开的。同时这里也说明一点，BLE系列的键盘上的实体开关，均为电池供电开关，而非蓝牙开关。
@@ -70,12 +69,12 @@ BLE系列的键盘蓝牙配对与量产的蓝牙键盘有所不同，不需要�
   - Windows 7因为系统不支持蓝牙4.0，所以是需要额外驱动的
   - Linux有些系统带的蓝牙4.0驱动也不一定工作完美
 
-如果出现<html><font color="blue">配对或连接异常，包括但不限于无法配对，配对后重新开关电源会连接不上,电脑反复显示已连接已配对等</font></html>，可使用键盘的<html><font color="red">清除已配对（<key>LShift+RShift+R</key> 或 <key>LShift+RShift+LCtrl+R</key> 或自行设置）</font></html>功能，这个操作是清除蓝牙模块内的所有已配对信息，必须执行它之后再在设备上重新配对，而不是仅在设备上删除蓝牙键盘再配对，那样不一定能解决问题。
+如果出现<html><font color="blue">配对或连接异常，包括但不限于无法配对，配对后重新开关电源会连接不上,电脑反复显示已连接已配对等</font></html>，可使用键盘的<html><font color="red">清除已配对（<kbd>LShift+RShift+R</kbd> 或 <kbd>LShift+RShift+LCtrl+R</kbd> 或自行设置）</font></html>功能，这个操作是清除蓝牙模块内的所有已配对信息，必须执行它之后再在设备上重新配对，而不是仅在设备上删除蓝牙键盘再配对，那样不一定能解决问题。
 
 
 ## 多设备切换
 
-蓝牙与USB切换，可以自己设置一个按键，或者使用 <key>LShift+RShift+U</key>。
+蓝牙与USB切换，可以自己设置一个按键，或者使用 <kbd>LShift+RShift+U</kbd>。
 
 受Adafruit的蓝牙固件限制，可以配对了多个蓝牙设备，但是不支持在不同蓝牙设备之间的主动切换。如果配对了A B两个设备，他们蓝牙连接的时候如果两者都打开了，可能就随机连上A或B。借由这个特点也实现了类似的切换效果，具体见： [多设备切换](/ble-series/device-switching)。
 
