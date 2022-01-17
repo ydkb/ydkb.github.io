@@ -3,18 +3,14 @@
 
 本部分说明依然还在不断完善中。
 
-<html><div class="hint">
-<subtitle>提醒</subtitle>
-<ul><li>遇错时，先操作一下重新断电(关闭开关或拔电池)，再通电，是否恢复正常。</li>
-<li>请逐步根据步骤操作，以查找问题。有时蓝牙配对或连接问题，并不一定出在键盘端，也可能是设备（电脑）端系统或驱动原因。</li>
-</div></html>
+> [!yddh: 提醒]
+> - 遇错时，先操作一下重新断电(关闭开关或拔电池)，再通电，是否恢复正常。
+> - 请逐步根据步骤操作，以查找问题。有时蓝牙配对或连接问题，并不一定出在键盘端，也可能是设备（电脑）端系统或驱动原因。
 
-<html><div class="attention">
-<subtitle>特别注意</subtitle>
-<ul><li>排错首先建议在键盘还能运行，比如指示灯或连接USB时至少还能部分工作的。</li>
-<li>在满足上一条的基础上，可以借助键盘指示灯查看当前的工作状态。</li>
-<li>当方便连接USB使用时，更建议使用文字输出电量的数值来进行排错。</li>
-</div></html>
+> [!ydda: 特别注意]
+> - 排错首先建议在键盘还能运行，比如指示灯或连接USB时至少还能部分工作的。
+> - 在满足上一条的基础上，可以借助键盘指示灯查看当前的工作状态。
+> - 当方便连接USB使用时，更建议使用文字输出电量的数值来进行排错。
 
 下文中所有提到按<kbd>LShift+RShift</kbd>+<kbd>某个按键</kbd>或<kbd>LShift+RShift+LCtrl</kbd>+<kbd>某个按键</kbd>，都是指先按住 左Shift和右Shift(可能还有左Ctrl) 不放，再按一下 这个按键，之后就可以松开 左Shift和右Shift(可能还有左Ctrl) 了。这些命令按键不能连接按，每次只能按一个命令，要按另外一个，就需要放开左右Shift，再重新按下左右Shift加其他按键。
 
@@ -26,10 +22,8 @@
   2. 然后在键盘上按一次 <key>LShift+RShift+R</key>，DKAD之后的固件使用<key>LShift+RShift+LCtrl+R</key>。
   3. 设备搜索键盘，重新配对一次。
 
-<html><div class="hint">
-<subtitle>提醒</subtitle>
-<p>请注意平时使用不要误按<kbd>LShift</kbd>+<kbd>RShift</kbd>+<kbd>R</kbd>，误按后会清除配对，造成电脑配对不匹配，就会造成此问题。在DKAD之后的固件改为使用<kbd>LShift</kbd>+<kbd>RShift</kbd>+<kbd>LCtrl</kbd>+<kbd>R</kbd>一部分原因就是为了防止误按。</p>
-</div></html>
+> [!yddh: 提醒]
+> - 请注意平时使用不要误按<kbd>LShift</kbd>+<kbd>RShift</kbd>+<kbd>R</kbd>，误按后会清除配对，造成电脑配对不匹配，就会造成此问题。在DKAD之后的固件改为使用<kbd>LShift</kbd>+<kbd>RShift</kbd>+<kbd>LCtrl</kbd>+<kbd>R</kbd>一部分原因就是为了防止误按。
 
 ## 无法搜索到蓝牙
 
@@ -39,47 +33,37 @@
 
 ### 1 确认当前并没有关闭蓝牙功能（不是指电池开关）。
 
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_h5>使用文字输出电量的方法</col_h5>
-<col_list>1 在能打字的地方，按默认快捷键<key>LShift+RShift+V</key>或自定义的按键，输出电量文字信息。</col_list>
-<col_list>2 如果数字是12，则说明蓝牙功能关闭了。非12则蓝牙功能为开启状态。</col_list>
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_h5>使用连接状态指示灯</col_h5>
-<col_list>1 当重新插入USB线或者是按下 <kbd>LShift+RShift+S</kbd> 时，连接状态的指示灯是亮的。</col_list>
-<col_list>2 如果这些操作，连接状态指示灯都不亮，那么蓝牙功能可能是关闭的（或者灯坏了）。</col_list>
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
+```ad-yddcol0
+##### 使用文字输出电量的方法
+1. 在能打字的地方，按默认快捷键<key>LShift+RShift+V</key>或自定义的按键，输出电量文字信息。
+2. 如果数字是12，则说明蓝牙功能关闭了。非12则蓝牙功能为开启状态。
+```
+
+```ad-yddcol1
+##### 使用连接状态指示灯
+1. 当重新插入USB线或者是按下 <kbd>LShift+RShift+S</kbd> 时，连接状态的指示灯是亮的。
+2. 如果这些操作，连接状态指示灯都不亮，那么蓝牙功能可能是关闭的（或者灯坏了）。
+```
 
 假如从上面得到结果是蓝牙功能为关闭，请使用 <kbd>LShift+RShift+W</kbd> 先开启蓝牙，再重新测试步骤1，确保蓝牙是开启的。此时问题依然没解决，那么再继续往下看。
 
 ### 2 确认当前蓝牙的通信状态和连接状态
 
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_h5>使用文字输出电量的方法</col_h5>
-<col_list>1 用<key>LShift+RShift+V</key>打出的电量信息是XX-Y格式的。前面的XX代表电量，后面的Y代表连接状态。</col_list>
-<col_list>2 如果XX不是44或45，当然也不能是12。那么Y为1的时候，说明键盘本身是已连接状态，可能连接到了其他某个设备。</col_list>
-<col_list>3 如果XX是44或45，则是获取信息失败，这可能是通信不成功或者电量服务出错的原因，这种情况需要重置蓝牙。</col_list>
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_h5>使用连接状态指示灯</col_h5>
-<col_list>1 当重新插入USB线或者是按下 <kbd>LShift+RShift+S</kbd> 时，连接状态的指示灯必须是亮的。</col_list>
-<col_list>2 如果当前指示是已连接。检查是不是已经连上了你现在的某个设备，或者其他人的某个设备。</col_list>
-<col_list>3 如果两者都不是，即闪的频率其实并不固定，每几次可能快一下或慢一下，那说明并未获取到正确的蓝牙连接状态，这时可能需要重置蓝牙。</col_list>
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
+```ad-yddcol0
+##### 使用文字输出电量的方法
+1. 用<key>LShift+RShift+V</key>打出的电量信息是XX-Y格式的。前面的XX代表电量，后面的Y代表连接状态。
+2. 如果XX不是44或45，当然也不能是12。那么Y为1的时候，说明键盘本身是已连接状态，可能连接到了其他某个设备。
+3. 如果XX是44或45，则是获取信息失败，这可能是通信不成功或者电量服务出错的原因，这种情况需要重置蓝牙。
+```
 
-<col_h5>从上面的测试可以得到两个可能：</col_h5>
+```ad-yddcol1
+##### 使用连接状态指示灯
+1. 当重新插入USB线或者是按下 <kbd>LShift+RShift+S</kbd> 时，连接状态的指示灯必须是亮的。
+2. 如果当前指示是已连接。检查是不是已经连上了你现在的某个设备，或者其他人的某个设备。
+3. 如果两者都不是，即闪的频率其实并不固定，每几次可能快一下或慢一下，那说明并未获取到正确的蓝牙连接状态，这时可能需要重置蓝牙。
+```
+
+##### 从上面的测试可以得到两个可能：
   - 如果是需要重置蓝牙，这个请参看 [重置蓝牙](ble-series/reset-ble)
   - 如果是确认当前指示蓝牙未连接且通讯状态正常，那么尝试按一下键盘的 <kbd>LShift+RShift+R</kbd>，DKAD之后的固件使用<key>LShift+RShift+LCtrl+R</key>。再搜索应该能搜到了。
 
@@ -114,22 +98,17 @@
 
 ### 1 确认键盘自身的蓝牙连接状态
 
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_h5>使用文字输出电量的方法</col_h5>
-<col_list>1 用<key>LShift+RShift+V</key>打出的电量信息是XX-Y格式的。前面的XX代表电量，后面的Y代表连接状态。</col_list>
-<col_list>2 Y为1的时候，说明键盘本身是已连接状态，可能连接到了其他某个设备。</col_list>
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_h5>使用连接状态指示灯</col_h5>
-<col_list>1 按下 <kbd>LShift+RShift+S</kbd>，查看连接状态的指示灯。</col_list>
-<col_list>2 如果当前指示是已连接。检查是不是已经连上了你现在的某个设备，或者其他人的某个设备。</col_list>
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
+```ad-yddcol0
+##### 使用文字输出电量的方法
+1. 用<key>LShift+RShift+V</key>打出的电量信息是XX-Y格式的。前面的XX代表电量，后面的Y代表连接状态。
+2. Y为1的时候，说明键盘本身是已连接状态，可能连接到了其他某个设备。
+```
+
+```ad-yddcol1
+##### 使用连接状态指示灯
+1. 按下 <kbd>LShift+RShift+S</kbd>，查看连接状态的指示灯。
+2. 如果当前指示是已连接。检查是不是已经连上了你现在的某个设备，或者其他人的某个设备。
+```
 
 如果确认键盘自身报告的是未连接状态，继续往下看。
 
@@ -159,7 +138,7 @@
 
 这个有一些win10的用户出现过。表现的情况如下，能搜索到蓝牙，但是怎么都无法连接成功。
 
-![](/assets/ble_troubleshooting_40.png)
+![](assets/ble_troubleshooting_40.png)
 
 ### 1 如果是第一次键盘时就遇到了此问题
 
@@ -179,9 +158,9 @@
 
 如果依然不行，就尝试下面的操作，有遇到类似问题的用户用下面方式有解决。
 
-<col_h5>卸载并重新安装蓝牙驱动</col_h5>
-<col_list>1 在设备管理器里，右键点击蓝牙的硬件，选择卸载，同时注意**勾上删除此设备的驱动程序软件**。</col_list>
+##### 卸载并重新安装蓝牙驱动
+1. 在设备管理器里，右键点击蓝牙的硬件，选择卸载，同时注意**勾上删除此设备的驱动程序软件**。
 
-![](/assets/ble_troubleshooting_41.png)
+![](assets/ble_troubleshooting_41.png)
 
-<col_list>2 在设备管理器里点鼠标右键，然后选择 **扫描检测硬件改动**。这里系统会自动重新发现蓝牙并安装驱动，一般自动更新的驱动，使用无问题。</col_list>
+2. 在设备管理器里点鼠标右键，然后选择 **扫描检测硬件改动**。这里系统会自动重新发现蓝牙并安装驱动，一般自动更新的驱动，使用无问题。

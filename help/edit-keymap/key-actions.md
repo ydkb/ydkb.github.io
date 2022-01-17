@@ -2,10 +2,7 @@
 
 主要是对如下功能的一些说明，当鼠标指向时本身也有对应的功能提示。
 
-<div style="width: 460px">
-
-![](/assets/keymap_key_actions.png?460)
-</div>
+![|460](assets/keymap_key_actions.png)
 
 ## 常规按键
 

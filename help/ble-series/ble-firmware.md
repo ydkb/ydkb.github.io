@@ -31,8 +31,7 @@ Mac / iOS / iPadOS 都是直接在应用商店里搜索“Bluefruit LE Connect�
   3. 打开Bluefruit LE Connect的软件，在这里搜索到键盘，点击然后连接上。那些没有名称的蓝牙不用管，反正不是目标设备的。
   4. 选择 Updates，最上方会显示当前的蓝牙固件版本，如果本身就是0.8.1，就可以不用升级了。如果上面是0.7.7，那么下面两种更新方法选一种，建议手动。
 
-+|+> 1
-
+```ad-yddcol0
 ##### 自动更新
 
   5. 当Adafruit的升级服务器正常时，列表里可以刷新出可用固件。一定要选对下面名称这个：<br><ru>Version 0.8.1 BLEFRIEND32</ru><br>
@@ -40,9 +39,9 @@ Mac / iOS / iPadOS 都是直接在应用商店里搜索“Bluefruit LE Connect�
 
 
 ![](assets/ble_firmware_02.jpg)
+```
 
-+|+> 2
-
+```ad-yddcol1
 ##### 手动更新
 
   6. Adafruit的服务器可能有问题。如果列表里一直刷新不出来内容，就手动更新固件，下载地址是：<br>
@@ -57,9 +56,7 @@ blefriend32_s110_xxac_0_8_1_190410_blefriend32_init.dat
 升级的时候手动选择文件，注意对应的Hex File就选比较大的那个hex文件，Init File选体积小的那个dat文件。
 
 ![](assets/ada_51_fw.png)
-
-+|+> 3
-
+```
 
 ## 更新后的说明
 

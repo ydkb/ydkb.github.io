@@ -6,18 +6,11 @@ FN只是按键功能的统称，为了显示方便，在ydkb.io的固件里，�
 
 简单以60来举例说，在Layer 0，选择一个键，然后把它设置为L1。
 
-<div style="width: 700px">
-
-![](/assets/l-layer-01.png?700)
-</div>
-
+![|700](assets/l-layer-01.png)
 
 然后切换到Layer 1，再对Layer 1的按键进行设置，还记得在Layer 0里，蓝色方框两个是L1。
 
-<div style="width: 700px">
-
-![](/assets/l-layer-02.png?700)
-</div>
+![|700](assets/l-layer-02.png)
 
 像如上图设置之后，当键盘位于默认层的时候，蓝色方框中的任意一个L1按住不放的同时，同按键盘上的其他键，键盘输出的就是Layer 1上设置的按键，而不是Layer0上的了。这样就实现了所谓的Fn(这里是L1)+1=F1, Fn+方向右=音量加，等功能。
 

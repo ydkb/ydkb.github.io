@@ -2,21 +2,11 @@
 
 基于lufa msd的，这里的U盘模式是指键盘本身虚拟成为一个U盘，不是说刷新固件时需要一个额外U盘。
 
-ydkb.io支持的如下键盘使用了该刷机模式。
+ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是不需要借助额外软件即可完成固件刷新和读取。
 
-| 支持键盘 ||||||
-| --- |||||| 
-|1800mini|Mater98|Sairo64|X-8086K|
-|Duang60|Just60|Just66|Just660|Just68|Pearly|
-|ESWN|AKB48|Cod67|Filco104c|
-|HHKB BLE|BLE660C|
-|U2U Pro|UDock|
-
-<html><div class="hint"> 
-<subtitle>提醒：</subtitle>
-<ul><li>键盘的U盘模式下显示的两个文件，“键盘名.BIN”和“EEPROM.BIN"，它们只是映射了主控FLASH和EEPROM的内容而“虚拟”出来的文件。</li>
-<li>每次重新进入刷机模式时它们的文件日期显示是固定的，不要用文件日期来判断是不是更新成功。</li></ul>
-</div></html>
+> [!yddh: 提醒：]
+> - 键盘的U盘模式下显示的两个文件，“键盘名.BIN”和“EEPROM.BIN"，它们只是映射了主控FLASH和EEPROM的内容而“虚拟”出来的文件。
+> - 每次重新进入刷机模式时它们的文件日期显示是固定的，不要用文件日期来判断是不是更新成功。
 
 
 ## 刷新出错的处理
@@ -31,58 +21,45 @@ ydkb.io支持的如下键盘使用了该刷机模式。
 
 ## Mac下刷机方法
 
-<html><div class="attention"> 
-<subtitle>重要：</subtitle>
-<br>Mac务必严格按照下面步骤，不然可能刷新不成功。
-</div></html>
+> [!ydda: 重要：]
+> - Mac务必严格按照下面步骤，不然可能刷新不成功。
 
-<col_h5>键盘自身进入刷机的U盘模式方法都是相同的，但Mac下复制文件方法不同。</col_h5>
+##### 键盘自身进入刷机的U盘模式方法都是相同的，但Mac下复制文件方法不同。
 
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_list>1 先在U盘里删除固件里的"键盘名.bin"这个文件。</col_list>
+> +|+> 1
 
-![](/assets/msd-bootloader-mac01.png?)
+1. 先在U盘里删除固件里的"键盘名.bin"这个文件。
 
-<col_list>2 再在废纸篓里也要删除它(对Mac来说这一步非常重要)。</col_list>
+![](assets/msd-bootloader-mac01.png)
 
-![](/assets/msd-bootloader-mac02.png?)
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_list>3 将新下载的bin保持文件名与之前删除的bin文件一样，再复制到U盘里(注意先后)。</col_list>
+2. 再在废纸篓里也要删除它(对Mac来说这一步非常重要)。
 
-![](/assets/msd-bootloader-mac03.png?)
+![](assets/msd-bootloader-mac02.png)
 
-<col_list>4 待文件复制完成后，右键推出U盘或按Esc退出，刷机完成。</col_list>
+> +|+> 2
 
-<col_list>5 这是针对4的补充：部分比较新的bootloader，在文件复制完后，会自动退出。这时Mac下提示未正确退出之类的是正常现象。</col_list>
+3. 将新下载的bin保持文件名与之前删除的bin文件一样，再复制到U盘里(注意先后)。
 
-<html><div class="hint"> 
-<subtitle>提醒：</subtitle>
-<br>如果在废纸篓里删除后，复制文件时还是提示空间不足，那么退出刷机模式然后再重新进刷机模式，再重新操作。
-</div></html>
+![](assets/msd-bootloader-mac03.png)
 
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
+4. 待文件复制完成后，右键推出U盘或按Esc退出，刷机完成。
+
+5. 这是针对4的补充：部分比较新的bootloader，在文件复制完后，会自动退出。这时Mac下提示未正确退出之类的是正常现象。
+
+> [!yddh: 提醒：]
+> - 如果在废纸篓里删除后，复制文件时还是提示空间不足，那么退出刷机模式然后再重新进刷机模式，再重新操作。
+
+> +|+> 3
 
 
 ## Linux下刷机方法
 
-<html><div class="hint"> 
-<subtitle>提醒：</subtitle>
-<br>下面的方法仅测试了Ubuntu 19.04。其他的Linux版本可能会不同。所以，需要刷固件的时候，建议还是去win下刷最稳妥。
-</div></html>
+> [!yddh: 提醒：]
+> - 下面的方法仅测试了Ubuntu 19.04。其他的Linux版本可能会不同。所以，需要刷固件的时候，建议还是去win下刷最稳妥。
 
-这个还比较奇特，我这里以Ubuntu 19.04做的测试。首先不能像mac那样直接操作u盘。用命令行，如下图，要注意文件的大小写也要对应，而且这个命令要连续运行两次，我试过Ubuntu 19.04只运行一次的时候，退出U盘，按键并没有变，运行两次就都成功。如果还有其他的变动我再补充。
+这个还比较奇特，我这里以Ubuntu 19.04做的测试。首先不能像mac那样直接操作u盘。用命令行，如下图，要注意文件的大小写也要对应，而且这个命令要连续运行两次，我试过Ubuntu 19.04只运行一次的时候，退出U盘，按键并没有变，运行两次就都成功。如果还有其他的变动我再补充。<ru>建议Linux使用Win主机或Win虚拟机刷新固件。</ru>
 
-<div style="width: 600px">
-
-![](/assets/msd-bootloader-linux01.png?600)
-</div>
+![|600](assets/msd-bootloader-linux01.png)
 
 
 ## 如果反复进入U盘模式

@@ -9,13 +9,13 @@
 
 部分比较新的键盘，硬件作了一些修改，已经取消了这个蓝牙功能的软件开关。改为靠PCB上面的硬件开关来实现蓝牙开关，那个开关在关闭电池供电的同时，也就关闭蓝牙功能。
 
-||> 支持物理开关关闭蓝牙功能的键盘
-- Duang60 v1/v2
-- Just68v2
-- Louise
-- Minira v2
-- Pearly 
-- Xikii i6x/i8x/i104
+> [!yddl: 支持物理开关关闭蓝牙功能的键盘]
+> - Duang60 v1/v2
+> - Just68v2
+> - Louise
+> - Minira v2
+> - Pearly 
+> - Xikii i6x/i8x/i104
 
 
 ## 蓝牙开关
