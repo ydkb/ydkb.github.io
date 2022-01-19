@@ -1,17 +1,14 @@
 # Sairo64
 
-<table_w30x70>
-
 |Author |YANG |
 |:--- |:--- |
 |MCU|AT90USB1286|
 
-</table_w30x70>
-
 64键 60%双模热插拔RGB PCB
 
 ## 展示图
-
+by YANG
+![|660](assets/sairo64_tric.jpg)
 
 ## 蓝牙配对
 

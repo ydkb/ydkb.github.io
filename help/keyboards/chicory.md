@@ -1,31 +1,27 @@
 # Chicory
 
-<table_w30x70>
-
 |Author |YANG |
 |:--- |:--- |
 |MCU|Atmel32u4|
 
-</table_w30x70>
-
 ## Hardware infomation
 
 |COL|0|1|2|3|4|5|6|7|8|9|10|
-|---||||||||||||
+|---|-|-|-|-|-|-|-|-|-|-|-|
 |PIN|D6|D7|B4|B5|B6|C6|C7|E2|F7|F6|F5|
 
 |ROW|0|1|2|3|
-|---|||||
+|---|-|-|-|-|
 |PIN|F4|F1|F0|E6|
 
 | Caps Lock LED | Backlight | WS2812 Data | WS2812 Power | Bluetooth Power |
-|---|||||
+|---|-|-|-|-|
 | B7 | D0 | D1 | D4 | D5 |
 
 ## 展示图
 
 by Prod
-![](assets/chicory-01.jpg?660)
+![|660](assets/chicory-01.jpg)
 
 ## 固件设置
 
