@@ -8,7 +8,7 @@ Its effect is when you hold down, for example, **火Q**, it is always pressed an
 
 <div style="width: 660px">
 
-![](/assets/rapidfire-01.png?660)
+![](assets/rapidfire-01.png?660)
 </div>
 
 You can press multiple rapidfire keys at the same time, or you can press them with other normal keys. Only the rapidfire key that is pressed is repeatedly triggered. This may be useful for some games. It is recommended to set it to a game layer separately. Normal typing cannot be done with the rapidfire keys.

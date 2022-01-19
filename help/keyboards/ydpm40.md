@@ -14,7 +14,7 @@ YDPM40算是我第一个画的完整的板子，但也因为才入门，所以�
 
 ## 展示图
 by Prod
-![](/assets/ydpm40-01.jpg)
+![](assets/ydpm40-01.jpg)
 
 
 ## YDPM40 PCB文件

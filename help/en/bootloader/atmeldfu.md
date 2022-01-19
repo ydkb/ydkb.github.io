@@ -32,13 +32,13 @@ From the list below, find **ATm32U4DFU** or **LUFA DFU**.
 <div style="float:left;width:48%;">
 <col_h5>ATm32U4DFU</col_h5>
 
-![](/assets/atmel_dfu_01.png?)
+![](assets/atmel_dfu_01.png?)
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
 <col_h5>LUFA DFU</col_h5>
 
-![](/assets/atmel_dfu_lufa_01.png?)
+![](assets/atmel_dfu_lufa_01.png?)
 </div>
 </two_col>
 <div style="clear:both;"></div>
@@ -49,14 +49,14 @@ From the list below, find **ATm32U4DFU** or **LUFA DFU**.
 <br>Don’t choose GH60 or other keyboard name</font></html>, If you choose and install this driver, the keyboard will not work. Then you need to uninstall the driver manually.
 </div></html>
 
-![](/assets/atmel_dfu_02.png?)
+![](assets/atmel_dfu_02.png?)
 
 
 ### 3 Intall driver
 
 After choosing **ATm32U4DFU** or **LUFA DFU**, click "Install Driver" to make its driver be WinUSB.
 
-![](/assets/atmel_dfu_03.png?)
+![](assets/atmel_dfu_03.png?)
 
 As shown above, the Driver is already displayed as WinUSB, indicating that the installation was successful. 
 
@@ -81,13 +81,13 @@ Use the keyboard of Atmel DFU Bootloader, the general firmware format is HEX, dr
 
 <div style="width: 600px">
 
-![](/assets/dfu_reflash_01.png?600)
+![](assets/dfu_reflash_01.png?600)
 </div>
 
 Then it will prompt "the device will automatically recognize and execute the update after entering the flashing mode". At this time, press the flashing button of the keyboard, or press the flashing button in advance to put the keyboard in the flashing mode, and it will automatically start to refresh. As shown in the figure below, DFU is recognized and the firmware is updated.
 
 <div style="width: 600px">
 
-![](/assets/dfu_reflash_02.png?600)
+![](assets/dfu_reflash_02.png?600)
 </div>
 

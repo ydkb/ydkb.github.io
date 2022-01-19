@@ -24,7 +24,7 @@
 
 ## pictures
 by Prod
-![](/assets/chicory-01.jpg?660)
+![](assets/chicory-01.jpg?660)
 
 
 

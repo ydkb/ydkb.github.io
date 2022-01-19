@@ -8,14 +8,15 @@ USB2USB仅能支持部分鼠标，且能转换的仅限于鼠标的移动方向�
 ## 载入自定义布局
 
 有两种方法载入自定义布局：
-  - 点页面上的 **导入自定义布局**，然后选择一个适合ydkb.io使用的布局文件，html格式的。只需要导入一次，不过建议还是保存这个html文件，以后可能还会用到。
-  - 在使用了上面1的方法后，下载了bin文件，那么之后就可以在 **读取KEYMAP** 上传bin文件时，直接从这个bin文件里读取自定义布局。如果要更换布局，就重新执行一次1中的操作导入html文件。
+  - 点页面上的 `导入自定义布局`，然后选择一个适合ydkb.io使用的布局文件，html格式的。只需要导入一次，不过建议还是保存这个html文件，以后可能还会用到。
+  - 在使用了上面1的方法后，下载了bin文件，那么之后就可以在 `读取KEYMAP` 上传bin文件时，直接从这个bin文件里读取自定义布局。如果要更换布局，就重新执行一次1中的操作导入html文件。
 
 
 ## 创建自定义布局
 需要自己编写布局的html文件，一些示例参考。如下是YD40w的：
 
-    <div style="height: 238px; width: 54px; padding: 10px 0 0 220px">
+```html
+	<div style="height: 238px; width: 54px; padding: 10px 0 0 220px">
         <div class="mycase">
             <div class="kbdbg-border" style="width:660px;height:228px;"></div>
             <div class="kbdbg-mask" style="width:660px;height:228px;"></div>
@@ -63,6 +64,7 @@ USB2USB仅能支持部分鼠标，且能转换的仅限于鼠标的移动方向�
         <div class="mykeycap2 row300 col975">Down</div>
         <div class="mykeycap2 w125 row300 col1075">Right</div>
     </div>
+```
 
 就文件内容先胡乱说一些关键地方：
 

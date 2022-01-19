@@ -11,12 +11,12 @@ If the keyboard supports the LEDMAP function, a **[ LEDMAP]** label is displayed
 <two_col>
 <div style="float:left;width:48%;">
 
-![](/assets/ledmap_01.png?)
+![](assets/ledmap_01.png?)
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
 
-![](/assets/ledmap_03.png?)
+![](assets/ledmap_03.png?)
 </div>
 </two_col>
 <div style="clear:both;"></div>
@@ -39,7 +39,7 @@ There are two kinds of indicators.
 
 <div style="width: 600px">
 
-![](/assets/ledmap_02.png?600)
+![](assets/ledmap_02.png?600)
 </div>
 
 Currently supports up to 8 indicators, each indicator can be individually assigned its function, the supported function is in its drop-down list. There will be instructions when the mouse is pointed.

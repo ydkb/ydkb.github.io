@@ -11,5 +11,5 @@ When using Ubuntu, the interface after pairing is as follows.
 
 <div style="width: 600px">
 
-![](/assets/ble_battery004.png)
+![](assets/ble_battery004.png)
 </div>

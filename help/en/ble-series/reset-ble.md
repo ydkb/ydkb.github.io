@@ -54,7 +54,7 @@ If you can't disassemble the keyboard temporarily, you can use the Bluetooth Fun
 
 <div style="width: 600px">
 
-![](/assets/reset-ble-08.jpg?600)
+![](assets/reset-ble-08.jpg?600)
 </div>
 
 
@@ -64,7 +64,7 @@ This requires firmware support. So be sure to update to the latest firmware firs
 
 Use <kbd>Reset</kbd> in **LEDs & Functions**. You need to set it to your keymap at first.
 
-![](/assets/reset-ble-01.jpg)
+![](assets/reset-ble-01.jpg)
 
 Then use <key>LAlt+LWin+Reset</key> or <key>LOpt+LCmd+Reset</key> to perform BLE software reset.
 
@@ -131,7 +131,7 @@ Short the pin Factory Reset and the pin GND as shown below. While keeping them s
 
 Added: some of the keyboard next to the Bluetooth module left two holes, and there is text marked with **BLE Reset**, you can also direct the two short holes. 
 
-![](/assets/reset-ble-07.jpg)
+![](assets/reset-ble-07.jpg)
 
 ### 4 Restart the keyboard again
 
@@ -147,21 +147,21 @@ The reset method has been described above, it is simple enough. The instructions
 
 <div style="width: 600px">
 
-![](/assets/reset-ble-02.png?600)
+![](assets/reset-ble-02.png?600)
 </div>
 
 Then restart the keyboard (unplug the USB cable and plug it in again, or press **LShift+RShift+B**). Bluetooth should be auto configed. And you will see the Bluetooth name changes to the keyboard default name, but there is a UART logo.
 
 <div style="width: 400px">
 
-![](/assets/reset-ble-03.png?400)
+![](assets/reset-ble-03.png?400)
 </div>
 
 After the Bluetooth configuration is complete, the keyboard will restart automatically. The UART logo will disappear, and the keyboard can also be seen in the system's Bluetooth. It only shows the Bluetooth address, not the name.
 
 <div style="width: 600px">
 
-![](/assets/reset-ble-04.png?600)
+![](assets/reset-ble-04.png?600)
 </div>
 
 Windows is even simpler. You can see the changes of bluetooth name by using the default Bluetooth search interface.

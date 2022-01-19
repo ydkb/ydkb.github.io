@@ -35,5 +35,5 @@ By default, the key is transparent if it is not set. And it will search the low 
 
 <div style="width: 660px">
 
-![](/assets/layers-01.png?660)
+![](assets/layers-01.png?660)
 </div>

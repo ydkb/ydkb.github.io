@@ -4,7 +4,7 @@ In the setting tab for **Layer**, there are a few function like below.
 
 <div style="width: 700px">
 
-![](/assets/to-layer-01.png?700)
+![](assets/to-layer-01.png?700)
 </div>
 
 Their role is to open the layer to be jumped and close other layers.

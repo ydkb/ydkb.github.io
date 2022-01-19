@@ -8,14 +8,14 @@ for example. As shown in the pic below, a key is set to T3(Toggle layer 3) in La
 
 <div style="width: 500px">
 
-![](/assets/t-layer-01.png?500)
+![](assets/t-layer-01.png?500)
 </div>
 
 Then Layer 3 is like this.
 
 <div style="width: 500px">
 
-![](/assets/t-layer-02.png?500)
+![](assets/t-layer-02.png?500)
 </div>
 
 Wen pressing T3 on layer0 first time, layer3 is turned on, and the key set on layer3 is effective. There are also two reasons for placing a T3 in Layer 3 for new user.

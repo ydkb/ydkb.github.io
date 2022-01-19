@@ -43,7 +43,7 @@
 
 ## Pictures
 
-![](/assets/blup-01.jpg?660)
+![](assets/blup-01.jpg?660)
 
 ## Bluetooth pairing
 

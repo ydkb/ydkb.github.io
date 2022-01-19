@@ -2,7 +2,7 @@
 
 <div style="width: 400px">
 
-![](/assets/niz-dongle.jpg)
+![](assets/niz-dongle.jpg)
 </div>
 
 After testing, the keyboards of the YDKB BLE series can be paired with the Niz dongle.

@@ -17,7 +17,7 @@ Source code for BootHID commandline: [https://github.com/yangdigi/BootHID/tree/m
 
 如果运行时提示“无法启动，并行配置不正确”，如下图，在bat界面的提示也与这个类似。
 
-![](/assets/vc2005sp1_error.jpg?)
+![](assets/vc2005sp1_error.jpg)
 
 
 请安装VC运行库，需要的是vcredist_x86, 官方下载地址如下
@@ -32,7 +32,7 @@ Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Up
 
 <div style="width: 500px">
 
-![](/assets/hidbootflash.jpg?500)
+![](assets/hidbootflash.jpg?500)
 </div>
 
 步骤如下：
@@ -60,7 +60,7 @@ Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Up
 
 <div style="width: 600px">
 
-![](/assets/mac_boothid.jpg?600)
+![](assets/mac_boothid.jpg?600)
 </div>
 
 
@@ -72,16 +72,16 @@ Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Up
 
 <div style="width: 600px">
 
-![](/assets/boothid_driver_01.png?600)
+![](assets/boothid_driver_01.png?600)
 
-![](/assets/boothid_driver_02.png?600)
+![](assets/boothid_driver_02.png?600)
 </div>
 
 上面两个图都是驱动正常的，如果这里显示的不是HidUSB，比如可能是：
 
 <div style="width: 600px">
 
-![](/assets/boothid_driver_04.png?600)
+![](assets/boothid_driver_04.png?600)
 </div>
 
 这个驱动是错的，就必须要卸载了。
@@ -90,14 +90,14 @@ Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Up
 
 <div style="width: 400px">
 
-![](/assets/boothid_driver_05.png?400)
+![](assets/boothid_driver_05.png?400)
 </div>
 
 同时卸载时选中删除设备驱动
 
 <div style="width: 400px">
 
-![](/assets/boothid_driver_06.png?400)
+![](assets/boothid_driver_06.png?400)
 </div>
 
 卸载后再去zadig里面查看一下，驱动是否恢复为HidUsb了，如果不是，设备管理器里面刷新一下，继续卸载（比如winusb或libusb驱动安装过多次的情况，就需要多次卸载了，直到卸载干净）。

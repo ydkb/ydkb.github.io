@@ -6,7 +6,7 @@ The main function setting for BLE series can be found in **LEDs & Functions**. I
 
 <div style="width: 400px">
 
-![](/assets/use-ble-01.png?400)
+![](assets/use-ble-01.png?400)
 </div>
 
 
@@ -40,7 +40,7 @@ In the Bluetooth settings on the last page, input the name you want, and then cl
 
 <div style="width: 400px">
 
-![](/assets/use-ble-02.png?400)
+![](assets/use-ble-02.png?400)
 </div>
 
 There will also be a dialog, which will prompt you to delete the keyboard that has been paired on your computer, then search again and reconnect your keyboard. It should show the modified name.

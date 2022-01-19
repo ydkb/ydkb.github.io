@@ -25,7 +25,7 @@
 ## 展示图
 
 by Prod
-![](/assets/chicory-01.jpg?660)
+![](assets/chicory-01.jpg?660)
 
 ## 固件设置
 

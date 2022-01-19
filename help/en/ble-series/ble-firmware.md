@@ -41,7 +41,7 @@ For Mac / iOS / iPadOS, search for "Bluefruit LE Connect" directly in the app st
 <col_list>5 When Adafruit's upgrade server is normal, the available firmware can be refreshed in the list. Be sure to choose the right one <color red>Version 0.8.1 BLEFRIEND32</color>. <html><br></html>The progress bar at the beginning of the upgrade is to download the firmware from the server. If the download is unsuccessful, you still choose to update manually.
 </col_list>
 
-![](/assets/ble_firmware_02.jpg)
+![](assets/ble_firmware_02.jpg)
 </div>
 
 <div style="float:left;width:3%;">&nbsp;</div>
@@ -61,7 +61,7 @@ blefriend32_s110_xxac_0_8_1_190410_blefriend32_init.dat
 
 When upgrading, select the file manually. Note that the corresponding Hex File is the larger hex file, and the Init File is the smaller dat file.
 
-![](/assets/ada_51_fw.png)
+![](assets/ada_51_fw.png)
 </div>
 </two_col>
 <div style="clear:both;"></div>
@@ -91,6 +91,6 @@ The following are instructions for use, corresponding to the final picture.
   5. Wait for the automatic update to complete, then the speed and progress will be displayed normally.
   6. Check the firmware version again to see if it has been successfully updated to 0.8.1.
 
-![](/assets/ble_firmware_android.jpg)
+![](assets/ble_firmware_android.jpg)
 
 

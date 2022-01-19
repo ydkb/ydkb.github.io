@@ -7,4 +7,4 @@
 
 注1：这里指的F和J是指默认设置里的F和J的位置，每个键盘都是固定的，目前不能变更。
 
-补充说明：HHKB BLE，BLE660C，BLE980C这三个静电容的双模改装主控，从Lock Mode唤醒键盘，需要<ru>长按</ru> <key>F+J</key>，3到6秒。
+补充说明：HHKB BLE，BLE660C，BLE980C这三个静电容的双模改装主控，从Lock Mode唤醒键盘，需要<u>长按</u> <key>F+J</key>，3到6秒。

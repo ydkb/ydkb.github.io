@@ -15,7 +15,7 @@ For the BLE series, if the flashing fails or the firmware is flashed incorrectly
 
 ## Get the current firmware version
 
-<ru>The USB name of the device</ru> mostly contains the date of the current firmware, the format of which is shown at the end of this article.
+<u>The USB name of the device</u> mostly contains the date of the current firmware, the format of which is shown at the end of this article.
 
 ### 1 Connect the keyboard to the computer by wire.
 
@@ -29,16 +29,16 @@ The way to view this name may differ on different systems.
 <two_col>
 <div style="float:left;width:48%;">
 <col_h5>win10</col_h5>
-In the <ru>Start Menu - Settings - Devices</ru> (not the Device Manager), look at its USB keyboard's name (not Bluetooth device's name).
+In the <u>Start Menu - Settings - Devices</u> (not the Device Manager), look at its USB keyboard's name (not Bluetooth device's name).
 
-![win10](/assets/firmware_01.jpg)
+![win10](assets/firmware_01.jpg)
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
 <col_h5>Mac</col_h5>
 
-In <ru> About the Machine - System Report - USB</ru>, as shown below
-![mac](/assets/firmware_mac_02.jpg)
+In <u> About the Machine - System Report - USB</u>, as shown below
+![mac](assets/firmware_mac_02.jpg)
 
 </div>
 </two_col>

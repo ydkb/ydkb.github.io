@@ -6,7 +6,7 @@ When setting these keys, you can also press directly from a keyboard that can be
 
 <div style="width: 700px">
 
-![](/assets/normal-key-01.png?700)
+![](assets/normal-key-01.png?700)
 </div>
 
 There are also several special ones in it.

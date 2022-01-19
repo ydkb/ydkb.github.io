@@ -8,7 +8,7 @@ In **LEDs and Functions**, you can see the buttons in the picture below, and you
 
 <div style="width: 180px">
 
-![](/assets/tricky-esc-v1.jpg?180)
+![](assets/tricky-esc-v1.jpg?180)
 </div>
 
 Its main effect is:
@@ -36,13 +36,13 @@ In **LEDs and Functions**, you can see the following three choices about Esc and
 
 <div style="width: 180px">
 
-![](/assets/tricky-esc-v2.jpg?180)
+![](assets/tricky-esc-v2.jpg?180)
 </div>
 Two of them include L or R, that is, they are only valid for <key>LShift+~ Esc</key> or <key>RShift+~ Esc</key> to output <key>~</key>, the other <key>Shift+Esc</key> still maintains the original function.
 
 At the same time, there is an easter egg. If you press and hold <key>LAlt</key> when you click this <key>~ Esc</key> to set, then the actually set button will add an extra function, which is a function prompt as follows.
 
-![](/assets/tricky-esc-v2_f4.jpg?180)
+![](assets/tricky-esc-v2_f4.jpg?180)
 
 <key>Alt+esc</key> is rarely used under win. Its function is to switch between the foreground windows, and most people use <key>Alt+Tab</key> to switch windows.
 

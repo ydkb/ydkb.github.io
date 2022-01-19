@@ -26,7 +26,7 @@
 
 PCB Pic for debug.
 
-![](/assets/yd60ble_pcb_check.png)
+![](assets/yd60ble_pcb_check.png)
 
 
 

@@ -32,7 +32,7 @@ You can set a key to turn Bluetooth on and off, as shown in the pic below. Or ju
 
 <div style="width: 550px">
 
-![](/assets/conection_01.png?550)
+![](assets/conection_01.png?550)
 </div>
 
 In order to prevent accidentally pressing this shortcut command to turn off the Bluetooth function, the following are the latest changes, which will be adopted in the firmware after April 18, 2020:

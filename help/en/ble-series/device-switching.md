@@ -21,7 +21,7 @@ Set the function below to a key. And press it to switch between the connected ho
 
 <div style="width: 180px">
 
-![](/assets/device_switching_01.jpg?180)
+![](assets/device_switching_01.jpg?180)
 </div>
 
 Limited by Adafruit's firmware, it does not support active switching. So the real action of this function is to disconnect the current device and try to connect another. If it is connected to another device, it indicates that the connection is successful. If not, it keeps trying to connect another until timeout. When timeout, it will connect back to the previous device.

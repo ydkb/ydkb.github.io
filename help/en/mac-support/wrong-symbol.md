@@ -13,7 +13,7 @@ Reset the keyboard language. First in **"Settings-Keyboard"**, select **"Change 
 
 <div style="width: 600px">
 
-![](/assets/wrong-symbol-01.jpg?600)
+![](assets/wrong-symbol-01.jpg?600)
 </div>
 
 Then there will be key prompts. The default method of Mac is to determine your keyboard language according to the keys next to Left Shift and Right Shift. However, as a customized keyboard, the keys set by each are relatively free and not so standard, so the Mac default may not be able to correctly recognize the keyboard language.
@@ -22,5 +22,5 @@ In fact, don't care about it, just press a few keys randomly and press a few mor
 
 <div style="width: 600px">
 
-![](/assets/wrong-symbol-02.jpg?600)
+![](assets/wrong-symbol-02.jpg?600)
 </div>

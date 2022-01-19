@@ -6,14 +6,14 @@ As shown below, this is the YD60BLE **LEDs & Functions** setting page. The <html
 
 <div style="width: 660px">
 
-![](/assets/user-fn-01.png?660)
+![](assets/user-fn-01.png?660)
 </div>
 
 When the mouse is pointed, there will be a corresponding function description.
 
 <div style="width: 660px">
 
-![](/assets/user-fn-02.png?660)
+![](assets/user-fn-02.png?660)
 </div>
 
 The other functions here. The second row controls Bluetooth. The third row controls monochrome backlight. And The fourth row controls RGB lights. They will be introduced later.

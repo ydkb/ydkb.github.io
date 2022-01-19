@@ -9,5 +9,5 @@ Click the **Win⇌MAC** button to switch the display style of keyboard character
 
 <div style="width: 660px">
 
-![](/assets/mac-support-01.png?660)
+![](assets/mac-support-01.png?660)
 </div>

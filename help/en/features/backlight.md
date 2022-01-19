@@ -27,7 +27,7 @@ No matter what kind of the monochrome backlight it is, the control method is the
 
 From **LEDs & Functions**, select the following function to control the backlight. The function of each button will be explained when the mouse is pointed.
 
-![](/assets/backlight-01.png?)
+![](assets/backlight-01.png?)
 
 A total of four backlight control keys, from left to right
   1. Backlight switch

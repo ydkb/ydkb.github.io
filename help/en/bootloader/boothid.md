@@ -23,7 +23,7 @@ The interface for opening the software is as follows:
 
 <div style="width: 500px">
 
-![](/assets/hidbootflash.jpg?500)
+![](assets/hidbootflash.jpg?500)
 </div>
 
 Proceed as follows:
@@ -51,7 +51,7 @@ As the picture below, the reflash is complete with the end address of 0x7c00. Th
 
 <div style="width: 600px">
 
-![](/assets/mac_boothid.jpg?600)
+![](assets/mac_boothid.jpg?600)
 </div>
 
 
@@ -63,16 +63,16 @@ Here to talk about possible problems if you can't reflash. The latest reflash to
 
 <div style="width: 600px">
 
-![](/assets/boothid_driver_01.png?600)
+![](assets/boothid_driver_01.png?600)
 
-![](/assets/boothid_driver_02.png?600)
+![](assets/boothid_driver_02.png?600)
 </div>
 
 The two pictures above are all driven normally. If the display here is not HidUSB, for example, it may be:
 
 <div style="width: 600px">
 
-![](/assets/boothid_driver_04.png?600)
+![](assets/boothid_driver_04.png?600)
 </div>
 
 This driver is wrong and must be uninstalled.
@@ -81,14 +81,14 @@ This driver is wrong and must be uninstalled.
 
 <div style="width: 400px">
 
-![](/assets/boothid_driver_05.png?400)
+![](assets/boothid_driver_05.png?400)
 </div>
 
 Also remove the device driver when uninstalling
 
 <div style="width: 400px">
 
-![](/assets/boothid_driver_06.png?400)
+![](assets/boothid_driver_06.png?400)
 </div>
 
 After uninstalling, go to zadig and check if the driver is restored to HidUsb. If not, refresh the device manager and continue uninstalling (for example, if the winusb or libusb driver is installed multiple times, it will need to be uninstalled multiple times).

@@ -46,7 +46,7 @@ The switch can be easily dialed by using the cover directly, close to the USB po
 
 <div style="width: 600px">
 
-![](/assets/hhkb_ble_sw.jpg?600)
+![](assets/hhkb_ble_sw.jpg?600)
 </div>
 
 If you want to turn off Bluetooth, refer to [Bluetooth switch & connection status](/en/ble-series/connection-status)
@@ -85,7 +85,7 @@ In win10 1809 or later, the battery percentage display is supported. It is not a
 
 <div style="width: 450px">
 
-![](/assets/hhkb-ble-charge.png?450)
+![](assets/hhkb-ble-charge.png?450)
 </div>  
 
 When fully charged, the charging indicator will go off or the brightness will be extremely low.
@@ -181,7 +181,7 @@ Karabiner-Elements regards the same keyboard Bluetooth mode and wired mode as di
 
 Refer to the instructions provided by the user. To use Karabiner-Elements in Bluetooth mode, please use the latest version of the software, as shown in the figure below, and check **[ HHKB BLE(Adafruit Industries)]**.
 
-![](/assets/hhkb_karabiner-elements.jpg)
+![](assets/hhkb_karabiner-elements.jpg)
 
 
 ## Exception Handling

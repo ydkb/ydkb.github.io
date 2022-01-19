@@ -2,7 +2,7 @@
 * [固件更新](firmware)
 * [默认命令按键](magic-commands)
 * [蓝牙键盘信号优化](use-bluetooth)
-* [BLE 系列说明(总览)](ble-series)
+* [BLE 系列说明(总览)](ble-series.md)
   * 蓝牙配对
     * [Win7 配对](ble-series/win7)
     * [Win10 配对](ble-series/win10-pairing)
@@ -44,7 +44,7 @@
   * [火力模式按键](features/rapidfire)
   * [启动快捷方式](features/shortcut)
   * [全键无冲与游戏支持](features/nkro_game)
-* [BT2.1 Series](bt21-series)
+* [BT2.1 Series](bt21-series.md)
   * [UART2BT](bt21-series/uart2bt)
   * [配对 (Pairing)](bt21-series/bt21-pairing)
   * [多设备切换](bt21-series/multi-switch2)

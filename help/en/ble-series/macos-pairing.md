@@ -16,8 +16,8 @@ The first is that under normal circumstances, it is very simple, as long as the 
 
 <div style="width: 600px">
 
-![](/assets/mac-pairing-001.png)
-![](/assets/mac-pairing-002.png)
+![](assets/mac-pairing-001.png)
+![](assets/mac-pairing-002.png)
 </div>
 
 ## If keyboard cannot be found:
@@ -36,7 +36,7 @@ If that doesn't work, then try the supplementary method below to connect using A
 Enter the App Store, search for "Bluefruit LE", find the following application, and install it.
 <div style="width: 600px">
 
-![](/assets/mac_pairing_01.png)
+![](assets/mac_pairing_01.png)
 </div>
 
 Then open this application, in this application, you can search the keyboard. Click and connect. Then you can use it normally.
@@ -46,7 +46,7 @@ Then open this application, in this application, you can search the keyboard. Cl
 In Bluetooth preferences, you can also see that the keyboard is connected. When connected with Adafruit software, the icon displayed may be a Bluetooth instead of a keyboard. So try not to use this method.
 <div style="width: 600px">
 
-![](/assets/mac_pairing_03.png)
+![](assets/mac_pairing_03.png)
 </div>
 
 ## If you encounter other problems

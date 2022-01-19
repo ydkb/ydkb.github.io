@@ -6,11 +6,11 @@ Here is an example of Staryu. A total of 4 layers are set. The upper right key, 
 
 <div style="width: 500px">
 
-![](/assets/default-layer-set-01.png?500)
+![](assets/default-layer-set-01.png?500)
 
-![](/assets/default-layer-set-02.png?500)
+![](assets/default-layer-set-02.png?500)
 
-![](/assets/default-layer-set-03.png?500)
+![](assets/default-layer-set-03.png?500)
 
-![](/assets/default-layer-set-04.png?500)
+![](assets/default-layer-set-04.png?500)
 </div>

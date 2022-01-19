@@ -17,7 +17,7 @@ Mac supports custom shortcut keys. For Apple keyboards, Fn+F4 is the launch pad.
 
 <div style="width: 600px">
 
-![](/assets/apple-fn-01.jpg?600)
+![](assets/apple-fn-01.jpg?600)
 </div>
 
 Then press **OPT+CMD+L** on the keyboard to display the starter. Of course, it can also be set to a similar Fn+F4 method. The method is to set F4 in the firmware corresponding to the layer of Fn (layer switching, which layer switching depends on your own) in the firmware, and set F4 there as a [modifier key ( Combination key)](edit-keymap/mods-key), the corresponding key is **OPT+CMD+L**.
@@ -28,5 +28,5 @@ The above is just an example of the launch pad. In fact, the shortcut keys of th
 
 <div style="width: 600px">
 
-![](/assets/apple-fn-02.jpg?600)
+![](assets/apple-fn-02.jpg?600)
 </div>

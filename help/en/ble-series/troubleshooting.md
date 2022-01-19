@@ -162,7 +162,7 @@ Then try [Reset Bluetooth](ble-series/reset-ble). Compared with clearing the pai
 
 Some win10 users have appeared before. The performance is as follows, Bluetooth can be searched, but no connection can be successful.
 
-![](/assets/ble_troubleshooting_40.png)
+![](assets/ble_troubleshooting_40.png)
 
 ### 1 If this is the first time you have encountered this problem
 
@@ -185,6 +185,6 @@ If it still doesn't work, try the following operations, and users who have encou
 <col_h5>Uninstall and reinstall the Bluetooth driver</col_h5>
 <col_list>1 In the device manager, right-click on the Bluetooth hardware, select uninstall, and pay attention to the **delete the device driver software**. </col_list>
 
-![](/assets/ble_troubleshooting_41.png)
+![](assets/ble_troubleshooting_41.png)
 
 <col_list>2 Click the right mouse button in the device manager and select **Scan for hardware changes**. Here the system will automatically rediscover Bluetooth and install the driver. Generally, the automatically updated driver can be used without problems. </col_list>

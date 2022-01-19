@@ -34,7 +34,7 @@ Mac / iOS / iPadOS 都是直接在应用商店里搜索“Bluefruit LE Connect�
 ```ad-yddcol0
 ##### 自动更新
 
-  5. 当Adafruit的升级服务器正常时，列表里可以刷新出可用固件。一定要选对下面名称这个：<br><ru>Version 0.8.1 BLEFRIEND32</ru><br>
+  5. 当Adafruit的升级服务器正常时，列表里可以刷新出可用固件。一定要选对下面名称这个：<br><u>Version 0.8.1 BLEFRIEND32</u><br>
   升级一开始的进度条是从服务器下载固件，如果一直下载不成功就还是选择手动更新。
 
 

@@ -66,12 +66,12 @@ The following shows the setting method.
 
 <div style="width: 500px">
 
-![](/assets/layer-tap-key-01.png?500)
+![](assets/layer-tap-key-01.png?500)
 </div>
 
 Another **Layer Tap Key** setting method is to select the Layer X with (S).
 
 <div style="width: 500px">
 
-![](/assets/layer-tap-key-02.png?500)
+![](assets/layer-tap-key-02.png?500)
 </div>

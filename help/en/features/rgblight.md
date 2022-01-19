@@ -20,7 +20,7 @@ At present, the way to control RGB light is uniform.
 
 From **LEDs & Functions**, select the following functions to control RGB light. The function of each button will be explained when the mouse is pointed.
 
-![](/assets/rgblight-01.png?)
+![](assets/rgblight-01.png?)
 
 A total of 8 RGB control functions can be set, from left to right:
   1. RGB Toggle on/off
@@ -38,7 +38,7 @@ For the way of RGB color grading.
 
 <div style="width: 400px">
 
-![](/assets/rgblight-02.jpg?400)
+![](assets/rgblight-02.jpg?400)
 </div>
 
 Only some modes support the adjustment of all these three items. In most of the dynamic modes, these three adjustments are invalid.

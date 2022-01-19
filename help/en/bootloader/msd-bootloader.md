@@ -51,17 +51,17 @@ The methods for different keyboards are basically the same. Generally, three ste
 <div style="float:left;width:48%;">
 <col_list>1 First delete the "keyboard_name.bin" file in the USB disk drive.</col_list>
 
-![](/assets/msd-bootloader-mac01.png?)
+![](assets/msd-bootloader-mac01.png?)
 
 <col_list>2 Delete it in the trash again (this step is very important for Mac).</col_list>
 
-![](/assets/msd-bootloader-mac02.png?)
+![](assets/msd-bootloader-mac02.png?)
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
 <col_list>3 Keep the newly downloaded bin with the same file name as the previously deleted bin file, and then copy it to the disk drive.</col_list>
 
-![](/assets/msd-bootloader-mac03.png?)
+![](assets/msd-bootloader-mac03.png?)
 
 <col_list>4 After the file copying is completed, right-click to eject the USB disk drive or press Esc to exit.</col_list>
 
@@ -89,7 +89,7 @@ I've tried that if I only ran the command once in Ubuntu 19.04, no success. If t
 
 <div style="width: 600px">
 
-![](/assets/msd-bootloader-linux01.png?600)
+![](assets/msd-bootloader-linux01.png?600)
 </div>
 
 

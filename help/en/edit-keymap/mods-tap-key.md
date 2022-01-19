@@ -20,7 +20,7 @@ Here is an example. In the settings below, this is a regular 60% Poker layout. T
 
 <div style="width: 660px">
 
-![](/assets/mods-tap-key-01.png?500)
+![](assets/mods-tap-key-01.png?500)
 </div>
 
 If it is for gaming, you can set it in layer 1 to be arrow up, and then open layer 1 or set the default layer to 1 when you need playing game.

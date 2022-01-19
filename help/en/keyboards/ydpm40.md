@@ -11,7 +11,7 @@
 
 ## Pictures
 by Prod
-![](/assets/ydpm40-01.jpg)
+![](assets/ydpm40-01.jpg)
 
 
 ## YDPM40 PCB Files

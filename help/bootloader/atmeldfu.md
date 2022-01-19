@@ -31,13 +31,13 @@
 <div style="float:left;width:48%;">
 <col_h5>ATm32U4DFU</col_h5>
 
-![](/assets/atmel_dfu_01.png?)
+![](assets/atmel_dfu_01.png)
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
 <col_h5>LUFA DFU</col_h5>
 
-![](/assets/atmel_dfu_lufa_01.png?)
+![](assets/atmel_dfu_lufa_01.png?)
 </div>
 </two_col>
 <div style="clear:both;"></div>
@@ -48,13 +48,13 @@
 <br>不要去选 GH60 或者其他的键盘名，如果选择了还了此驱动，该键盘就不能用了，需要卸载驱动或者换个 USB 接口插。
 </div></html>
 
-![](/assets/atmel_dfu_02.png?)
+![](assets/atmel_dfu_02.png?)
 
 
 ### 3 安装驱动
 正确的选择 **ATm32U4DFU** 或是 **LUFA DFU** 后，驱动选择 **WinUSB** 点击 Install Driver，安装成功会有提示。
 
-![](/assets/atmel_dfu_03.png?)
+![](assets/atmel_dfu_03.png)
 
 像上图这样，Driver 处显示为 WinUSB 了，表示安装成功。
 
@@ -80,14 +80,14 @@
 
 <div style="width: 600px">
 
-![](/assets/dfu_reflash_01.png?600)
+![](assets/dfu_reflash_01.png?600)
 </div>
 
 然后会提示“设备进入刷机模式后自动识别并执行更新”，这时按键盘的刷机按钮，或者说提前按刷机按钮让键盘处于了刷机模式，都会自动开始刷新。如下图，识别到DFU并且刷新固件。
 
 <div style="width: 600px">
 
-![](/assets/dfu_reflash_02.png?600)
+![](assets/dfu_reflash_02.png?600)
 </div>
 
 

@@ -12,7 +12,7 @@ Indeed, you don’t generally need to pay attention to the remaining battery. Ju
 <html><div class="hint">
 <subtitle>The YDKB BLE series supports battery display. HINT:</subtitle>
 
-  - <ru>The percentage of battery is estimated based on the voltage, not precise data.</ru>
+  - <u>The percentage of battery is estimated based on the voltage, not precise data.</u>
   - Most keyboards only display the battery level when in use, and will not update in real time when charging.
   - The value is updated after entering the power-saving mode with lights off. Not in real time.
   - The value is approximate, not precise, and for reference only. Every 10% is a level, not 1%.
@@ -63,7 +63,7 @@ This function is suitable for all systems.
 
 At present, the Mac does not support the battery percentage display of third-party Bluetooth keyboards. IOS has been updated to support it. Hope that Mac will also update someday.
 
-![](/assets/ble_battery04.png?600)
+![](assets/ble_battery04.png?600)
 
 First add the above key on the keyboard. Then, wherever you can type text, press this key, and it will output the current battery level like typing.
 
@@ -72,11 +72,11 @@ The text output battery level function can also be used for debugging. In additi
 
 ## macOS battery display
 
-In the latest <ru>macOS Monterey</ru>, the battery display of third-party Bluetooth devices has been supported. Versions below macOS 12 Monterey can use outputting battery level in text. 
+In the latest <u>macOS Monterey</u>, the battery display of third-party Bluetooth devices has been supported. Versions below macOS 12 Monterey can use outputting battery level in text. 
 
 <div style="width: 400px">
 
-![](/assets/ble_battery_mac02.png)
+![](assets/ble_battery_mac02.png)
 </div>
 
 
@@ -88,14 +88,14 @@ After Win10 1809, it supports the battery display of Bluetooth devices (a few). 
 <div style="float:left;width:48%;">
 <col_h5>Windows 10 built-in Bluetooth battery display.</col_h5>
 
-![](/assets/ble_battery01.png)
+![](assets/ble_battery01.png)
 
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
 <col_h5>The third-party software </col_h5>
 
-![](/assets/ble_battery02.png)
+![](assets/ble_battery02.png)
 </div>
 </two_col>
 <div style="clear:both;"></div>
@@ -108,7 +108,7 @@ iOS in the widget, after adding the power, this group button will display the ba
 
 <div style="width: 600px">
 
-![](/assets/ble_battery03.png?600)
+![](assets/ble_battery03.png?600)
 </div>
 
 
@@ -117,5 +117,5 @@ After pairing the keyboard, in the setting --Power, you can see the battery info
 
 <div style="width: 700px">
 
-![](/assets/ble_battery004.png?600)
+![](assets/ble_battery004.png?600)
 </div>

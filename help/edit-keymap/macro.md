@@ -11,10 +11,7 @@ http://dev.ydkb.io 的固件，在Just60、YD60BLE、BLE660C、BLE980C、HHKB BL
 
 它对应的宏保存在了固件BIN文件的0x5f00地址处，以00结尾
 
-<div style="width: 600px">
-
-![](/assets/macro-01.png?600)
-</div>
+![|600](assets/macro-01.png)
 
 比如上面这一段 0B 17 17 13 B3 38 38 1C 07 0E 05 37 0C 12 00, 这个宏的作用就是打出http://ydkb.io。
 
@@ -40,10 +37,7 @@ https://github.com/tmk/tmk_keyboard/wiki/Keycode
 
 emoji的代码可以在https://unicode.org/emoji/charts/full-emoji-list.html 查找。
 
-<div style="width: 200px">
-
-![](/assets/macro-02.png?200)
-</div>
+![|200](assets/macro-02.png)
 
 比如上图这个，那么要输出它，就是80 43 F6 00，如果要两个，就80 43 F6 80 43 F6 00这样。
 

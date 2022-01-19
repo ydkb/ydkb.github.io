@@ -2,10 +2,7 @@
 
 在常规层切换按键里，还有几个这样的，跳转到层。
 
-<div style="width: 700px">
-
-![](/assets/to-layer-01.png?700)
-</div>
+![|700](assets/to-layer-01.png)
 
 它们的作用是：打开要跳转的层，关闭其他层。
 

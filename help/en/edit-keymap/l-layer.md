@@ -8,14 +8,14 @@ Take 60% as an example. In Layer 0, select a key and set it to L1.
 
 <div style="width: 700px">
 
-![](/assets/l-layer-01.png?700)
+![](assets/l-layer-01.png?700)
 </div>
 
 Then switch to Layer 1 and set the keymap for Layer 1. Remember that in Layer 0, the two blue boxed keys are L1.
 
 <div style="width: 700px">
 
-![](/assets/l-layer-02.png?700)
+![](assets/l-layer-02.png?700)
 </div>
 
 After setting as shown above, when the keyboard is in the default layer and either one of the blue boxed keys is pressed and held, if you press another key, the keyboard outputs that key set on Layer 1. Just like Fn(here is L1)+1 = F1.

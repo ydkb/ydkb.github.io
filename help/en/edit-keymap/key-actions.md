@@ -4,7 +4,7 @@ It mainly explains the following functions. When the mouse is pointed, there are
 
 <div style="width: 460px">
 
-![](/assets/keymap_key_actions.png?460)
+![](assets/keymap_key_actions.png?460)
 </div>
 
 ## Single Key

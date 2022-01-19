@@ -90,7 +90,7 @@ Then add that, with the exception of some audio games, most games do not have su
 
 **The REALFORCE keyboard used by professional player Doinb is used to play CS:GO**, reference link: https://post.smzdm.com/p/a992049p/
 
-![](/assets/doinb_realforce.jpg)
+![](assets/doinb_realforce.jpg)
 
 Realforce is not a game-optimized keyboard, and even said that its performance is not as good as many ordinary keyboards. For example, Realforce with big forehead, its matrix scanning frequency is 60Hz, the latest I don't have detailed parameters, but if you take HHKB Classic as a reference, then the matrix scanning speed is about 500Hz.
 

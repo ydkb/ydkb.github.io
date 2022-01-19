@@ -22,19 +22,19 @@ If that doesn't work, then try the supplementary method below to connect using A
 
 Enter the App Store, search for "Bluefruit LE", find the following application, and install it.
 
-![](/assets/ios_pairing_01.jpg)
+![](assets/ios_pairing_01.jpg)
 
 Then open this app. In this app, you can search the keyboard.
 
-![](/assets/ios_pairing_02.jpg)
+![](assets/ios_pairing_02.jpg)
 
 Click Connect behind the keyboard and you will be prompted for a pairing request.
 
-![](/assets/ios_pairing_03.jpg)
+![](assets/ios_pairing_03.jpg)
 
 Click on pairing to finish. From the Bluetooth settings in the system, you can also see that the Bluetooth keyboard is connected.
 
-![](/assets/ios_pairing_04.jpg)
+![](assets/ios_pairing_04.jpg)
 
 
 ## If you encounter other problems

@@ -13,7 +13,7 @@ Unplug the USB cable and re-enter the flash mode to ensure it is recognized. And
 
 <div style="width: 400px">
 
-![](/assets/stm32_hidbl01.png?400)
+![](assets/stm32_hidbl01.png?400)
 </div>
 
 
@@ -23,7 +23,7 @@ If the firmware does not work, refer to the instructions in BootHID, check the d
 
 <div style="width: 600px">
 
-![](/assets/stm32_hid_bl_01.png?600)
+![](assets/stm32_hid_bl_01.png?600)
 </div>
 
 
@@ -33,6 +33,6 @@ As shown in the figure below, after the normal refresh is completed, it will dis
 
 <div style="width: 600px">
 
-![](/assets/stm32_hidbl03.png?600)
+![](assets/stm32_hidbl03.png?600)
 </div>
 

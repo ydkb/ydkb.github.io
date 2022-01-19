@@ -12,7 +12,7 @@
 
 <div style="width: 400px">
 
-![](/assets/stm32_hidbl01.png?400)
+![](assets/stm32_hidbl01.png?400)
 </div>
 
 
@@ -22,7 +22,7 @@
 
 <div style="width: 600px">
 
-![](/assets/stm32_hid_bl_01.png?600)
+![](assets/stm32_hid_bl_01.png?600)
 </div>
 
 ## 能正常刷完固件，但是重新插上USB后，无法识别到键盘
@@ -31,6 +31,6 @@
 
 <div style="width: 600px">
 
-![](/assets/stm32_hidbl03.png?600)
+![](assets/stm32_hidbl03.png?600)
 </div>
 

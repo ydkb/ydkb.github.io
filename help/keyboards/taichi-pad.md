@@ -23,4 +23,4 @@
 ## 展示图
 by 小西西
 
-![by 小西西](/assets/taichi-01.jpg)
+![by 小西西](assets/taichi-01.jpg)

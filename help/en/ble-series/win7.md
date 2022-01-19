@@ -32,13 +32,13 @@ Plug in the Bluetooth adapter during installation or after installation is compl
 <div style="float:left;width:48%;">
 <col_list>1 Please download it from the official website and run the installation.</col_list>
 
-![](/assets/qy01.jpg)
+![](assets/qy01.jpg)
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
 <div style="float:left;width:48%;">
 <col_list>2 The mobile assistant does not need to be installed</col_list>
 
-![](/assets/qy02.jpg)
+![](assets/qy02.jpg)
 </div>
 </two_col>
 <div style="clear:both;"></div>
@@ -54,7 +54,7 @@ After the installation is complete, a restart is required.
 <col_list>1 See the Bluetooth icon from the tray menu. The Bluetooth 4.0 low energy management is to be activated (Bluesoleil  must be the paid version to have this option).
 </col_list>
 
-![](/assets/qy07.jpg)
+![](assets/qy07.jpg)
 <div class="attention">
 <subtitle>注意</subtitle>
 <ul><li>It must be started from here to manage low-power devices.</li>
@@ -67,7 +67,7 @@ After the installation is complete, a restart is required.
 
 <col_list>2 In Other -> HID, add the keyboard and connect.</col_list>
 
-![](/assets/qy08.jpg)
+![](assets/qy08.jpg)
 
 <col_list>3 After connecting, it should work normally. If it still doesn't, look down.</col_list>
 </div>
@@ -84,15 +84,15 @@ It may not be available after being connected. Then please specify the driver fo
 <div style="float:left;width:48%;">
 <col_list>1 Looking at the device manager, there may be a question mark.</col_list>
 
-![](/assets/qy09.jpg)
+![](assets/qy09.jpg)
 
 <col_list>2 Even if it is not a question mark, if the bluetooth keyboard dose not work, right-click it and select Update Driver.</col_list>
 
-![](/assets/qy10.jpg)
+![](assets/qy10.jpg)
 
 <col_list>3 Select "Browser computer for driver software" and then "Select from a list of device drivers for your computer."</col_list>
 
-![](/assets/qy11.jpg)
+![](assets/qy11.jpg)
 
 </div>
 <div style="float:left;width:3%;">&nbsp;</div>
@@ -100,16 +100,16 @@ It may not be available after being connected. Then please specify the driver fo
 
 <col_list>4 Then uncheck the box below and select the red box item in the list</col_list>
 
-![](/assets/qy12.jpg)
+![](assets/qy12.jpg)
 
 <col_list>5 You may be prompted as follows, just ignore it.</col_list>
 
-![](/assets/qy13.jpg)
+![](assets/qy13.jpg)
 
 <col_list>6 Click Yes, and then a new driver will be installed. After installation, it will remind you that you need to restart. In fact, it is ready to use. Of course, it is better to restart it.
 </col_list>
 
-![](/assets/qy14.jpg)
+![](assets/qy14.jpg)
 </div>
 </two_col>
 <div style="clear:both;"></div>

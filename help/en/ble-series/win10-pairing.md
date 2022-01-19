@@ -18,21 +18,21 @@ Some win10 users have installed the driver provided by the bluetooth manufacture
 
 <div style="width:500px">  
 
-![](/assets/win10_pairing_01.jpg)
+![](assets/win10_pairing_01.jpg)
 </div>
 
 In this case, you need to uninstall the third-part Bluetooth driver, in order to restore the driver to Win10's native driver. The Bluetooth search and connection interface that comes with Win10 is a Modern UI style. In this interface, you can directly connect by clicking the device without entering a PIN code.
 
 <div style="width:500px">
 
-![](/assets/win10_pairing_02.png)
+![](assets/win10_pairing_02.png)
 </div>
 
 To add more, there may be some misunderstandings for people who use the Bluetooth keyboard for the first time. Win10 only connected when it is displays the keyboard as **connected** when it is really connected. **Paired** only  means that this computer has paired this device and even when the keyboard is not connected, it still shows that it is paired.
 
 <div style="width:500px">
 
-![](/assets/win10_pairing_03.jpg)
+![](assets/win10_pairing_03.jpg)
 </div>
 
 ## If you encounter other problems

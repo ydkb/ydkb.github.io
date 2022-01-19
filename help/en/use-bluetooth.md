@@ -34,7 +34,7 @@ During using, sometimes Bluetooth has problems, which may not necessarily be the
 
 For some Bluetooth modules, the official drivers may not work well. You can try to use the driver that comes with Microsoft Windows. For example, the Marvell network card of my Surface Pro3 is an example. You can manually specify the Bluetooth driver as the universal Bluetooth driver that comes with win10 (the first item in the figure below).
 
-![](/assets/marvellbluetooth.png?70%)
+![](assets/marvellbluetooth.png?70%)
 
 
 ## Signal optimization
@@ -45,5 +45,5 @@ Bluetooth is also a 2.4G wireless. So if you want to make better use of it, pay 
   3. If it works well and the signal starts to turn bad, switch the computer's Bluetooth off and on again. which make it reconnect. Sometimes it will improve. (Because the bluetooth may switch to a channel with less interference)
   4. Some Bluetooth wifi integrated modules may require the following items to be set to disabled or similar settings.
 
-![](/assets/ble_series_01.png?50%)
+![](assets/ble_series_01.png?50%)
 
