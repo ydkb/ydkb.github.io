@@ -105,54 +105,8 @@
     <!--    ledmap      -->
     <div id="keyboard-ledmap" class="keyboard-ledmap row" style="padding: 0px 200px 20px; display: none">
         <h5 style="text-align: center;" lang='zh_sc'>LED指示灯功能设置</h5>
-        <div id="ledmap-row0" class="row">
-            <div class="col s6">
-                <a id="indicator_dropdown-name_0" class="col mykeycap2" lang="zh_sc">LED0:</a>
-                <a id="indicator_dropdown-btn_0" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
-                <input id="indicator-color-btn_0" class="col btn jscolor" type="show"  onchange="update_indicator_color(0,''+this.jscolor)" value="ff0000">
-            </div>
-            <div class="col s6">
-                <a id="indicator_dropdown-name_1" class="col mykeycap2" lang="zh_sc">LED1:</a>
-                <a id="indicator_dropdown-btn_1" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
-                <input id="indicator-color-btn_1" class="col btn jscolor" type="show"  onchange="update_indicator_color(1,''+this.jscolor)" value="ff0000">
-            </div>
-        </div>
-        <div id="ledmap-row1" class="row">
-            <div class="col s6">
-                <a id="indicator_dropdown-name_2" class="col mykeycap2" lang="zh_sc">LED2:</a>
-                <a id="indicator_dropdown-btn_2" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
-                <input id="indicator-color-btn_2" class="col btn jscolor" type="show"  onchange="update_indicator_color(2,''+this.jscolor)" value="ff0000">
-            </div>
-            <div class="col s6">
-                <a id="indicator_dropdown-name_3" class="col mykeycap2" lang="zh_sc">LED3:</a>
-                <a id="indicator_dropdown-btn_3" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
-                <input id="indicator-color-btn_3" class="col btn jscolor" type="show"  onchange="update_indicator_color(3,''+this.jscolor)" value="0000ff">
-            </div>
-        </div>
-        <div id="ledmap-row2" class="row">
-            <div class="col s6">
-                <a id="indicator_dropdown-name_4" class="col mykeycap2" lang="zh_sc">LED4:</a>
-                <a id="indicator_dropdown-btn_4" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
-                <input id="indicator-color-btn_4" class="col btn jscolor" type="show"  onchange="update_indicator_color(4,''+this.jscolor)" value="ff0000">
-            </div>
-            <div class="col s6">
-                <a id="indicator_dropdown-name_5" class="col mykeycap2" lang="zh_sc">LED5:</a>
-                <a id="indicator_dropdown-btn_5" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
-                <input id="indicator-color-btn_5" class="col btn jscolor" type="show"  onchange="update_indicator_color(5,''+this.jscolor)" value="00ffff">
-            </div>
-        </div>
-        <div id="ledmap-row3" class="row">
-            <div class="col s6">
-                <a id="indicator_dropdown-name_6" class="col mykeycap2" lang="zh_sc">LED6:</a>
-                <a id="indicator_dropdown-btn_6" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
-                <input id="indicator-color-btn_6" class="col btn jscolor" type="show"  onchange="update_indicator_color(6,''+this.jscolor)" value="ff0000">
-            </div>
-            <div class="col s6">
-                <a id="indicator_dropdown-name_7" class="col mykeycap2" lang="zh_sc">LED7:</a>
-                <a id="indicator_dropdown-btn_7" class='col dropdown-trigger btn select uicolor' data-target='indicator_dropdown_menu'>选择功能</a>
-                <input id="indicator-color-btn_7" class="col btn jscolor" type="show"  onchange="update_indicator_color(7,''+this.jscolor)" value="ff00ff">
-            </div>
-        </div>
+        <div id="ledmap-setting"></div>
+ 
         <div id="c-output" class="row" style="display: none;">
             <button id="output-c" class="btn waves-effect uicolor"  style="position: absolute; top:130px; left: 990px">Output C</button>
             <textarea id="keymap-c" class="materialize-textarea" readonly></textarea>
@@ -180,62 +134,11 @@
         <div class="card-content">
             <div id="keycap_color-user">
                 <span class="card-title" lang="zh_sc">自定义键帽颜色</span><br>
-                <div class="row">
-                    <div class="col s3">
-                        <a class="col mykeycap1 key-flat" title="Keycaps1" lang="zh_sc">Main</a>
-                    </div>
-                    <div class="col s4">
-                        <a lang="zh_sc">文字颜色</a>
-                        <input class="col btn jscolor" type="show"  onchange="update_keycap_color_single(0,''+this.jscolor)" value="ffffff">
-                    </div>
-                    <div class="col s4">
-                        <a lang="zh_sc">键帽颜色</a>
-                        <input class="col btn jscolor" type="show"  onchange="update_keycap_color_single(1,''+this.jscolor)" value="ffffff">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s3">
-                        <a class="col mykeycap2 key-flat" title="Keycaps2" lang="zh_sc">Mods</a>
-                    </div>
-                    <div class="col s4">
-                        <a lang="zh_sc">文字颜色</a>
-                        <input class="col btn jscolor" type="show"  onchange="update_keycap_color_single(2,''+this.jscolor)" value="ffffff">
-                    </div>
-                    <div class="col s4">
-                        <a lang="zh_sc">键帽颜色</a>
-                        <input class="col btn jscolor" type="show"  onchange="update_keycap_color_single(3,''+this.jscolor)" value="ffffff">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s3">
-                        <a class="col mykeycap3 key-flat" title="Keycaps3" lang="zh_sc">Esc</a>
-                    </div>
-                    <div class="col s4">
-                        <a lang="zh_sc">文字颜色</a>
-                        <input class="col btn jscolor" type="show"  onchange="update_keycap_color_single(4,''+this.jscolor)" value="ffffff">
-                    </div>
-                    <div class="col s4">
-                        <a lang="zh_sc">键帽颜色</a>
-                        <input class="col btn jscolor" type="show"  onchange="update_keycap_color_single(5,''+this.jscolor)" value="ffffff">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s3">
-                        <a class="col mycase key-flat" style="padding: 6px" title="Keycaps3" lang="zh_sc"><span class="plate" style="width: calc(100% - 6px);height: calc(100% - 6px);"></span></a>
-                    </div>
-                    <div class="col s4">
-                        <a lang="zh_sc" class="tooltipped" data-tooltip="建设中，切换键帽样式可以恢复到默认颜色">外壳颜色(dev)</a>
-                        <input class="col btn jscolor" type="show"  onchange="update_case_color(''+this.jscolor)" value="ffffff">
-                    </div>
-                    <div class="col s4">
-                        <a lang="zh_sc" class="tooltipped" data-tooltip="建设中，刷新页面可以恢复到默认颜色">定位板(dev)</a>
-                        <input class="col btn jscolor" type="show"  onchange="update_plate_color_user(''+this.jscolor)" value="ffffff">
-                    </div>
-                </div>
+                <div id="keycap_color-user-setting"></div>
             </div>
             <div class="row">
                 <a style="line-height: 36px" lang="zh_sc">导入 & 导出 (注意格式正确，暂只支持键帽颜色)</a> <a id="import-user-keycap-colors" class="btn waves-effect uicolor" style="position: absolute; left: 380px" title="导入" lang="zh_sc">导入</a>
-                <textarea id="user-keycap-colors" class="materialize-textarea  not_drag" style="font-size: 15px"></textarea>
+                <textarea id="user-keycap-colors" class="materialize-textarea not_drag" style="font-size: 15px"></textarea>
             </div>
             <div class="card-action">
                 <a id="keycap_color-userset-off" href="#" lang="zh_sc">完成</a>
@@ -678,19 +581,11 @@
                 <label id="select-lmods"><input type="radio" value="0"  class="with-gap" name="mods"><span>Left</span></label>
                 <label id="select-rmods"><input type="radio" value="0x10" class="with-gap" name="mods"><span>Right</span></label>
             </span></li>
-            <li class="optgroup-option"><span><label><input type="checkbox" value="1"><span>Ctrl</span></label></span></li>
-            <li class="optgroup-option"><span><label><input type="checkbox" value="2"><span>Shift</span></label></span></li>
-            <li class="optgroup-option"><span><label><input type="checkbox" value="4"><span>Alt</span></label></span></li>
-            <li class="optgroup-option"><span><label><input type="checkbox" value="8"><span>Win</span></label></span></li>
         </ul>
 
         <a id="layer_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
         <ul id="layer_mods_dropdown">
             <li class="optgroup"><span>Left Mods</span></li>
-            <li class="optgroup-option"><span><label><input type="checkbox" value="1"><span>Ctrl</span></label></span></li>
-            <li class="optgroup-option"><span><label><input type="checkbox" value="2"><span>Shift</span></label></span></li>
-            <li class="optgroup-option"><span><label><input type="checkbox" value="4"><span>Alt</span></label></span></li>
-            <li class="optgroup-option"><span><label><input type="checkbox" value="8"><span>Win</span></label></span></li>
         </ul>
 
         <a id="keycodes_dropdown-btn" data-dropkind="按键">选择按键</a>
