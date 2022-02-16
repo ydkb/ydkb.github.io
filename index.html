@@ -28,7 +28,7 @@
 <header>
 <nav class="uicolor">
     <div class="nav-wrapper page-wd">
-        <div class="brand-logo left"><i class='fa fa-keyboard-o'></i> YD Keymap Builder for <span id="logo_name">YDKBs</span></div>
+        <div data-target="nav-side2" class="brand-logo left sidenav-trigger full hide-on-wide-only" style="cursor:pointer;"><i class='fa fa-keyboard-o'></i> YD Keymap Builder for <span id="logo_name">YDKBs</span></div>
         <ul id="nav-mobile" class="right">
             <li><a id="shop-url" class="button tooltipped" href="//ydkb.taobao.com" target="_blank" lang="zh_sc" style="width: 100px" data-tooltip="未建设，目前跳转到taobao店铺"><i class="material-icons mr5">shopping_cart</i>Shop</a></li>
             <li><a id="help-url" class="button" href="help/" target="_blank" lang="zh_sc"><i class="material-icons mr5">help_outline</i>帮助文档</a></li>
@@ -38,9 +38,7 @@
         <div id="logo_desc" style="padding: 23px 70px; color: #ddd">YDKBs.desc</div>
     </div>
 </nav>
-<div class="container page-wd">
-    <a href="#" data-target="nav-side2" class="sidenav-trigger full hide-on-wide-only" style="position: absolute;margin-left:0px;top:0px; width: 560px;height:64px;"></a>
-</div>
+
 </header>
 <main onselectstart="return false">
 <div id="keyboard-pane" class="keyboard-pane bg1 z-depth-1 hoverable">
@@ -57,7 +55,6 @@
             <span id="keymap-load-dropdown-btn" class="dropdown-trigger btn select waves-effect tooltipped uicolor" data-target='keymap-load-dropdown' data-tooltip="上传固件文件读取其按键配置,<br>或者从预设中选择" lang="zh_sc"><i class="material-icons fl">file_upload</i>读取Keymap</span>
             <ul id="keymap-load-dropdown" class="dropdown-content">
                 <li value="file"><a href="#!" lang="zh_sc"><i class="material-icons mr5">file_upload</i>上传文件读取</a><input id="firmwareFile" class="tooltipped" type="file" accept=".hex,.bin,.uf2" style="height:40px;width:149px;margin-left:0px; margin-top: -40px;opacity: 0;position: absolute;z-index: 12; " data-position="right" data-tooltip="上传.hex .bin .uf2格式固件，再读取keymap，可以载入你先前在该固件中的按键配置。" lang="zh_sc" /> </li>
-                <!--li id="keymap-load" class="tooltipped" data-position="right" data-tooltip="如果有上传固件，则重新读取上传文件的按键配置。未上传则读取网页固件的默认按键配置。" lang="zh_sc"><a lang="zh_sc"><i class="material-icons mr5">cloud_download</i>读取当前默认</a></li-->
                 <li class="divider"></li>
                 <li id="preset-keymap-group" class="disabled optgroup uicolor-text"><span lang="zh_sc">-- 预设配列 --</span></li>
                 <ul><li id="layouts-set-on2"><a lang="zh_sc"><i class="material-icons mr5">settings</i>自定义</a></li></ul>
@@ -153,11 +150,10 @@
     <div id="keycode_tabs" style="height: 336px">
         <div class="row z-depth-1 uicolor" style="margin-bottom: 10px; height: 42px">
             <div id="keyfunction-display" class="uicolor hidef">功能提示</div>
-            <div class="col">
+            <a id="latest_firmware_changelog" class="col tooltipped" data-tooltip="查看此键盘固件更新记录" lang="zh_sc">
                 <div style="color:#cccccc">Latest firmware: <span id="latest_firmware_date_short" style="color:#fff"></span></div>
                 <div id="latest_firmware_date" target="_blank" style="color:white"></div>
-                <a id="latest_firmware_changelog" class="tooltipped" href="#" style="position: absolute;margin-left:0px;margin-top:-44px; width: 150px;height:42px;" data-tooltip="查看此键盘固件更新记录" lang="zh_sc"></a>
-            </div>
+            </a>
             <div class="col">
                 <ul id="key-set-tabs" class="tabs" style="background-color:inherit;">
                     <li class="tab"><a href="#tabs-main" lang="zh_sc">主要按键</a></li>
