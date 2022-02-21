@@ -33,17 +33,19 @@
 
 如Shift键的单独按一次，在某些输入法里面可能是切换中英文开关等，就会影响使用。这时如果一定要使用此特性，就建议关闭输入法的Shift切换中英文功能，改用其他组合键切换。
 
-但像Ctrl在大部分系统或软件里，单独按是没什么作用的。所以我上面举的例子，如果配合[修饰键 & 瞬时开启层](edit-keymap/layer-mods.md) 来实现 <kbd>Ctrl+H J K L</kbd> 为方向键。
+但像Ctrl在大部分系统或软件里，单独按是没什么作用的。所以我上面举的例子，如果配合[修饰键 & 瞬时开启层](edit-keymap/layer-mods.md) 来实现 <kbd>Ctrl+H J K L</kbd>  或  <kbd>Ctrl+N P B F</kbd> 为方向键。
 
 下面就是实际这个方式的设置：
-1. 将LAYER 0的 <kbd>Ctrl</kbd> 设置为 <kbd>LM7 Ctrl</kbd>。
-2. 将LAYER 7 的 <kbd>H J K L</kbd> 设置为 <kbd>LCtrl++H</kbd> 等。
+1. 将LAYER 0的 <kbd>Ctrl</kbd> 设置为 <kbd>LM7 Ctrl</kbd>，设置方法见: [修饰键 & 瞬时开启层](edit-keymap/layer-mods.md) 。
+2. 将LAYER 7 的 <kbd>H J K L</kbd> 或 <kbd>N P B F</kbd> 设置为对应的 <kbd>LCtrl ++ 方向</kbd> 。
 
 ![|700](assets/mods-key-plus-01.jpg)
 
 ![|700](assets/mods-key-plus-02.jpg)
 
-要注意，这样就无法触发<kbd>LCtrl+H</kbd>等了，但是，它只抵消<kbd>LCtrl</kbd>，所以可以通过再按下 <kbd>RCtrl</kbd>，来触发<kbd>RCtrl+H</kbd>等。或者自行再设置另外的层切换键去触发。
+![|700](assets/mods-key-plus-03.jpg)
+
+要注意，这样就无法触发<kbd>LCtrl+H</kbd>等了，但它只抵消<kbd>LCtrl</kbd>，所以可通过再按下 <kbd>RCtrl</kbd>，来触发<kbd>RCtrl+H</kbd>等。或者自行再设置另外的层切换键去触发。
 
 举例只是抛砖引玉，具体如果安排和使用此特性，还要看各位自行发散。
 
