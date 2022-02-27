@@ -56,6 +56,7 @@
 > - [Just Keyboard](/changelog/just)
 > - [Minira](/changelog/minira)
 > - [Just60/YD60BLE](/changelog/yd60ble) 
+> - [YD67BLE](/changelog/yd67ble) 
 > - [YDP50](/changelog/ydp50)
 > - [YDPM40BLE](/changelog/ydpm40ble)
 
