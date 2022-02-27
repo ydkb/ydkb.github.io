@@ -54,6 +54,7 @@
 > - [CAD66](/changelog/cad66)
 > - [Chicory / Pearly](/changelog/chicory)
 > - [Just Keyboard](/changelog/just)
+> - [Louise](/changelog/louise)
 > - [Minira](/changelog/minira)
 > - [Just60/YD60BLE](/changelog/yd60ble) 
 > - [YD67BLE](/changelog/yd67ble) 
