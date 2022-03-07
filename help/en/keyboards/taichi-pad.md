@@ -2,7 +2,7 @@
 
 <table_w30x70>
 
-|Author |  |
+|Author |YANG |
 |:--- |:--- |
 |Case |Xikii|
 |MCU|Atmega32u4|
