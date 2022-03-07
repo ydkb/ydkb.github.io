@@ -2,7 +2,7 @@
 
 <table_w30x70>
 
-|Author |YANG |
+|Author |  |
 |:--- |:--- |
 |Case |Xikii|
 |MCU|Atmega32u4|
@@ -21,6 +21,6 @@
 | B4 |
 
 ## Pictures
-by Ğ¡Î÷Î÷
+by å°è¥¿è¥¿
 
-![by Ğ¡Î÷Î÷](assets/taichi-01.jpg)
+![by å°è¥¿è¥¿](assets/taichi-01.jpg)
