@@ -1,0 +1,14 @@
+{
+	"token": {
+		"ble51_command_u_title":"蓝牙与USB切换(对应快捷键：<kt>LShift</kt>+<kt>RShift</kt>+<kt>U</kt>)",
+		"ble51_command_o_title":"蓝牙设置为不可发现(快捷键:<kt>LShift</kt>+<kt>RShift</kt>+<kt>O</kt>)",
+		"ble51_command_i_title":"蓝牙设置为可发现(快捷键:<kt>LShift</kt>+<kt>RShift</kt>+<kt>I</kt>)",
+		"ble51_command_r_title":"清除键盘端的配对信息(为防误按，DKAD后的固件需同时按住<kt>LCtrl</kt>。其他设备也需要删除此键盘再重新配对，才能正常使用。)",
+		"ble51_command_v_title":"用文字输出电量(快捷键:<kt>LShift</kt>+<kt>RShift</kt>+<kt>V</kt>)",
+		"ble51_command_w_title":"开启键蓝牙功能(快捷键:<kt>LShift</kt>+<kt>RShift</kt>+<kt>W</kt>)，按住<kt>LCtrl</kt>时再按为关闭蓝牙功能)",
+		"ble51_lock_mode_title":"锁定模式。按下后立即关闭蓝牙并且键盘节能，只有同时按下<kt>F</kt>和<kt>J</kt>或者重插USB才能唤醒。适合不关开关直接放包里。",
+		"ble51_device_next_title":"切换连接蓝牙设备，最好只配对两个设备，具体说明见帮助文档"
+	},
+	"regex": [
+	]
+}
