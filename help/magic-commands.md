@@ -4,7 +4,7 @@
 下文中所有提到按 <kbd>LShift+RShift+某个按键</kbd> 或 <kbd>左右Shift+某个按键</kbd> 的地方，都是指先按住 左Shift和右Shift 不放，再按一下 这个按键，之后就可以松开 左Shift和右Shift 了。这些命令按键不能连续按，每次只能按一个命令，要按另外一个，就需要放开左右Shift，再重新按下左右Shift加其他按键。
 
 > [!ydda: 特别注意：]
-> - <key>LShift+RShift+按键</key>，属于预置功能，在不了解其作用时，切记不要乱按，切记。乱按可能导致配置出错。
+> - <kbd>LShift+RShift+按键</kbd>，属于预置功能，在不了解其作用时，切记不要乱按，切记。乱按可能导致配置出错。
 
 
 ## BLE系列默认命令按键
@@ -40,7 +40,7 @@
 | <kbd>LShift+RShift+N</kbd> | USB模式下切换全键无冲/6键无冲<sup>1</sup> |
 | <kbd>LShift+RShift+Pause</kbd> | 重启键盘或进入刷机模式<sup>2</sup> |
 
-<sup>1</sup> 这里的6键无冲，指除去 左右Ctrl、Shift、Alt、Win 这8个修饰键外，同时按下任意6个都不会有冲突。<br>
+<sup>1</sup> 这里的6键无冲，指除去 左右Ctrl、Shift、Alt、Win 这8个修饰键外，同时按下任意6个都不会有冲突。关于6KRO和NKRO的更多说明，可查看 [全键无冲与游戏支持](features/nkro_game.md)<br>
 <sup>2</sup> 进入刷机模式仅针对Bootloader是默认Atmel DFU的键盘
 
 其他还有一些不重要的以及debug用的，暂时就不列出了。
