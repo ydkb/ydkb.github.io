@@ -267,7 +267,7 @@
 									"<p>5. In <b> Download </b> dropmenu, through <b> 'Get shared-url' </b>, you can get a long link or short link to save or share your current keymap settings. </p>"] 
 	},
 	"regex": [
-		[ "当<kt>层(.*\\d+.*)</kt>为状态为开启时，亮起此灯", "Light up when <kt>layer $1</kt> is on." ],
+		[ "当<kt>层(.*\\d+.*)</kt>的状态为开启时，亮起此灯", "Light up when <kt>layer $1</kt> is on." ],
 		[ "当默认层为<kt>层(.*\\d+.*)</kt>时，亮起此灯", "Light up when Defalut Layer is <kt>layer $1</kt>." ],
 		[ "瞬时开启（按下开启，松开关闭） 层(.*\\d+.*)", "Turns on layer $1 momentary while holding" ],
 		[ "长按及与其他键组合时，瞬时开启 层(.*\\d+.*)；<br>快速单击时为(.*\\S.*)", "Turns on LAYER $1 momentary while holding; <br>registers KEY[ $2 ] on tap" ],
