@@ -1,5 +1,7 @@
 {
 	"token": {
+		"nav_shop #tooltip":"Not built, currently open taobao shop.",
+
 		"黑白双色PCB，8颗RGB底灯组成太极八卦图，16个按键，独立灯控的RGB轴灯实现千万种颜色":"Black / white PCB, 8 RGB bottom lights forming bagua diagram, 16 keys with RGB lights, showing thousands of colors",
 		"1800mini 双模RGB热插拔键盘 by YANG":"1800mini USB/BLE dual-mode RGB keyboard by YANG",
 		"Master98 Pro 双模RGB热插拔键盘 by YANG & Xikii":"Master98 Pro USB/BLE dual-mode RGB keyboard by Xikii & YANG",
@@ -203,6 +205,10 @@
 		"按键":"KEY",
 		"层":"LAYER",
 
+		"backlight_toggle #title":"Backlight toggle",
+		"backlight_mode_step #title":"Backlight mode step",
+		"backlight_mode- #title":"Backlight mode-",
+		"backlight_mode+ #title":"Backlight mode+",
 		"ble51_command_u #title":"Switch between Bluetooth and USB (Shortcut: <kt>LShift</kt>+<kt>RShift</kt>+<kt>U</kt>)",
 		"ble51_command_o #title":"Discoverable Mode OFF(Shortcut: <kt>LShift</kt>+<kt>RShift</kt>+<kt>O</kt>)",
 		"ble51_command_i #title":"Discoverable Mode ON (Shortcut: <kt>LShift</kt>+<kt>RShift</kt>+<kt>I</kt>)",
@@ -211,6 +217,14 @@
 		"ble51_command_w #title":"Turn on Bluetooth function(Short keys: <kt>LShift</kt>+<kt>RShift</kt>+<kt>W</kt>), with <kt>LCtrl</kt> to turn off.",
 		"ble51_lock_mode #title":"Make the keyboard enter the deep power-saving mode and can be only waked up by pressing <kt>F</kt> and <kt>J</kt>.",
 		"ble51_device_next #title":"Switch between Bluetooth devices. It is recommended to pair only two devices. For details, see ydkb.io/help.",
+		"rgb_toggle #title":"RGB toggle",
+		"rgb_mode+ #title":"RGB Mode+. While pressing <kt>LShift</kt>, RGB Mode-.",
+		"rgb_hue- #title":"RGB Hue-",
+		"rgb_hue+ #title":"RGB Hue+",
+		"rgb_sat- #title":"RGB Saturation-",
+		"rgb_sat+ #title":"RGB Saturation+",
+		"rgb_lum- #title":"RGB Brightness-",
+		"rgb_lum+ #title":"RGB Brightness+",
 
 		"ESC键，和Shift一起按时为~":"Normally it is ESC. When shift is holded, it sends '~'.",
 		"4$键，和左alt一起按时为F4":"Normally it is 4$. When left alt it holded, it send alt+f4.",
@@ -219,19 +233,6 @@
 		"按一下，启用或禁用锁WIN键功能，游戏防误按有用!":"Enable or disable the WIN key lock function. Very useful for gaming!",
 		"正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角":"Normally it is space. Pressing with Shift it does nothing. This is for some Chinese iput method.",
 		"正常按方向上键，但是和右Shift一起按时不会生效，防止按右Shift同时误按方向上":"Normally it is arrow up. Pressing with RShift it does nothing. Prevent accidentally pressing RShift+UP together.",
-
-		"轴灯开关":"Backlight toggle",
-		"轴灯模式逐个切换":"Backlight mode step",
-		"轴灯模式减":"Backlight mode-",
-		"轴灯模式加":"Backlight mode+",
-		"RGB灯开关":"RGB toggle",
-		"RGB模式加，同时按住<kt>左Shift</kt>时为模式减":"RGB Mode+. While pressing <kt>LShift</kt>, RGB Mode-.",
-		"RGB色相减":"RGB Hue-",
-		"RGB色相加":"RGB Hue+",
-		"RGB饱和度减":"RGB Saturation-",
-		"RGB饱和度加":"RGB Saturation+",
-		"RGB明度减":"RGB Brightness-",
-		"RGB明度加":"RGB Brightness+",
 
 		"充电指示灯，不可配置":"Charging Indicator, not configurable.",
 		"未设置":"Unconfigured",
@@ -257,7 +258,13 @@
 		"<<< HHKB BLE >>>":" ",
 		"Pro2 默认":"Pro2 default",
 		"切换内置USB电源开关":"Toggle the power of inner USB port",
-		">>> HHKB BLE <<<":" "
+		">>> HHKB BLE <<<":" ",
+		"tabs_readme_content #html":["<h5 class='center-text'><b> Instructions for this keymap editor</b></h5>",
+									"<p>1. <b>Select your keyboard</b> from upper(not top) left corner. If the keyboard supports multiple layouts, click the Circle icon on the left to select your layout. </p>",
+									"<p>2. After the selection, through <b>READ KEYMAP</b>, you can choose <b>Upload file</b> to upload your previous downloaded firmware to read its keymap.</p>",
+									"<p>3. To set a key, click the key you want to modify, and then <b>Press a key on your hardware keyboard</b>, or select from the virtual keyboard below. For special keys such as FN key, LED lights, multimedia mouse button, and so on, please choose them from the virtual keyboard. </p>",
+									"<p>4. When finish your keymap setting, in the upper right corner <b>download</b> dropmenu, click <b>DL .xxx FILE</b>(xxx is the format of the firmware) to download the new firmware. In 'GUIDE AND INFO' tab, there shows how to reflash the current keyboard.  </p>",
+									"<p>5. In <b> Download </b> dropmenu, through <b> 'Get shared-url' </b>, you can get a long link or short link to save or share your current keymap settings. </p>"] 
 	},
 	"regex": [
 		[ "当<kt>层(.*\\d+.*)</kt>为状态为开启时，亮起此灯", "Light up when <kt>layer $1</kt> is on." ],

@@ -1,5 +1,11 @@
 {
 	"token": {
+		"nav_shop #tooltip":"未建设，目前跳转到taobao店铺",
+
+		"backlight_toggle #title":"轴灯开关",
+		"backlight_mode_step #title":"轴灯模式逐个切换",
+		"backlight_mode- #title":"轴灯模式减",
+		"backlight_mode+ #title":"轴灯模式加",
 		"ble51_command_u #title":"蓝牙与USB切换(对应快捷键：<kt>LShift</kt>+<kt>RShift</kt>+<kt>U</kt>)",
 		"ble51_command_o #title":"蓝牙设置为不可发现(快捷键:<kt>LShift</kt>+<kt>RShift</kt>+<kt>O</kt>)",
 		"ble51_command_i #title":"蓝牙设置为可发现(快捷键:<kt>LShift</kt>+<kt>RShift</kt>+<kt>I</kt>)",
@@ -7,7 +13,22 @@
 		"ble51_command_v #title":"用文字输出电量(快捷键:<kt>LShift</kt>+<kt>RShift</kt>+<kt>V</kt>)",
 		"ble51_command_w #title":"开启键蓝牙功能(快捷键:<kt>LShift</kt>+<kt>RShift</kt>+<kt>W</kt>)，按住<kt>LCtrl</kt>时再按为关闭蓝牙功能)",
 		"ble51_lock_mode #title":"锁定模式。按下后立即关闭蓝牙并且键盘节能，只有同时按下<kt>F</kt>和<kt>J</kt>或者重插USB才能唤醒。适合不关开关直接放包里。",
-		"ble51_device_next #title":"切换连接蓝牙设备，最好只配对两个设备，具体说明见帮助文档"
+		"ble51_device_next #title":"切换连接蓝牙设备，最好只配对两个设备，具体说明见帮助文档",
+		"rgb_toggle #title":"RGB灯开关",
+		"rgb_mode+ #title":"RGB模式加，同时按住<kt>左Shift</kt>时为模式减",
+		"rgb_hue- #title":"RGB色相减",
+		"rgb_hue+ #title":"RGB色相加",
+		"rgb_sat- #title":"RGB饱和度减",
+		"rgb_sat+ #title":"RGB饱和度加",
+		"rgb_lum- #title":"RGB明度减",
+		"rgb_lum+ #title":"RGB明度加",
+		
+		"tabs_readme_content #html":["<h5 class='center-text'><b>编辑器使用说明</b></h5>",
+									"<p>1.先从左上角(非顶栏)键盘名称处，<b>选择你的键盘</b>。如果键盘支持多配列的，再点击左边的圆形图标选择你的配列。</p>",
+									"<p>2.选择后，可以读取KEYMAP来读取按键设置，可以选择<b>“上传文件读取”</b>，上传好自己先前改好的固件，上传后自动读取该固件的按键设置。所以，下载的固件记得保存好，下次再改时能直接读取它的按键设置。</p>",
+									"<p>3.设置按键，先点击要修改的按键，然后<b>直接按键盘上的键</b>即可，也可以从下面键盘选。特殊按键，如Fn键、led灯、多媒体鼠标键等需从下方选择。</p>",
+									"<p>4.设置好按键后，在右上角<b>“下载和分享”</b>菜单里，点击<b>“下载.xxx固件”</b>(xxx是固件文件格式)，将固件下载回本地。各键盘的刷机方式看对应的刷机说明。</p>",
+									"<p>5.<b>“下载和分享”</b>菜单里，通过<b>“获取分享链接”</b>，可以得到一个长链接或短链接，此链接可保存或分享你当前的按键设置。</p>"]
 	},
 	"regex": [
 	]

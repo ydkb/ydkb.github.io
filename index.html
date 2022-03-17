@@ -30,7 +30,7 @@
     <div class="nav-wrapper page-wd">
         <div data-target="nav-side2" class="brand-logo left sidenav-trigger full hide-on-wide-only" style="cursor:pointer;"><i class='fa fa-keyboard-o'></i> YD Keymap Builder for <span id="logo_name">YDKBs</span></div>
         <ul id="nav-mobile" class="right">
-            <li><a id="shop-url" class="button tooltipped" href="//ydkb.taobao.com" target="_blank" lang="zh_sc" style="width: 100px" data-tooltip="未建设，目前跳转到taobao店铺"><i class="material-icons mr5">shopping_cart</i>Shop</a></li>
+            <li><a id="shop-url" class="button tooltipped" href="//ydkb.taobao.com" target="_blank" style="width: 100px" lang-id="nav_shop" data-tooltip="shop is not ready."><i class="material-icons mr5">shopping_cart</i>Shop</a></li>
             <li><a id="help-url" class="button" href="help/" target="_blank" lang="zh_sc"><i class="material-icons mr5">help_outline</i>帮助文档</a></li>
             <li><a id="download-share-dropdown-btn" class="dropdown-trigger" data-target="download-share" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载/分享</a></li>
             <li><a class="dropdown-trigger" data-target="lang-theme"><i class="material-icons mr5">language</i>Language</a></li>
@@ -536,22 +536,7 @@
 
         <!-- readme -->
         <div id="tabs-readme" class="jsdef ml-70 wd-1140">
-            <div class="keyboard-set lang-zh_sc" id="tabs-readme-zh_sc" style="padding: 1px 30px 1px;display: block">
-                <h5 class="jsdef ml-400"><b>编辑器使用说明</b></h5>
-                <p>1.先从左上角(非顶栏)键盘名称处，<b>选择你的键盘</b>。如果键盘支持多配列的，再点击左边的圆形图标选择你的配列。</p>
-                <p>2.选择后，可以读取KEYMAP来读取按键设置，可以选择<b>“上传文件读取”</b>，上传好自己先前改好的固件，上传后自动读取该固件的按键设置。所以，下载的固件记得保存好，下次再改时能直接读取它的按键设置。</p>
-                <p>3.设置按键，先点击要修改的按键，然后<b>直接按键盘上的键</b>即可，也可以从下面键盘选。特殊按键，如Fn键、led灯、多媒体鼠标键等需从下方选择。</p>
-                <p>4.设置好按键后，在右上角<b>“下载和分享”</b>菜单里，点击<b>下载.xxx固件”</b>(xxx是固件文件格式)，将固件下载回本地。各键盘的刷机方式看对应的刷机说明。</p>
-                <p>5.<b>“下载和分享”</b>菜单里，通过<b>“获取分享链接”</b>，可以得到一个长链接或短链接，此链接可保存或分享你当前的按键设置。</p>
-            </div>
-            <div class="keyboard-set lang-en" style="padding: 1px 50px 1px;display:none;">
-                <h5 class="jsdef ml-300"><b> Instructions for this keymap editor</b></h5>
-                <p>1. <b>Select your keyboard</b> from upper(not top) left corner. If the keyboard supports multiple layouts, click the Circle icon on the left to select your layout. </p>
-                <p>2. After the selection, through <b>READ KEYMAP</b>, you can choose <b>Upload file</b> to upload your previous downloaded firmware to read its keymap.</p>
-                <p>3. To set a key, click the key you want to modify, and then <b>Press a key on your hardware keyboard</b>, or select from the virtual keyboard below. For special keys such as FN key, LED lights, multimedia mouse button, and so on, please choose them from the virtual keyboard. </p>
-                <p>4. When finish your keymap setting, in the upper right corner <b>download</b> dropmenu, click <b>DL .xxx FILE</b>(xxx is the format of the firmware) to download the new firmware. In "GUIDE AND INFO" tab, there shows how to reflash the current keyboard.  </p>
-                <p>5. In <b> Download </b> dropmenu, through <b> "Get shared-url" </b>, you can get a long link or short link to save or share your current keymap settings. </p> 
-            </div>
+            <div class="keyboard-set" lang-id="tabs_readme_content" style="padding: 1px 30px 1px;"></div>
         </div>
 
         <!-- kbdinfo -->
