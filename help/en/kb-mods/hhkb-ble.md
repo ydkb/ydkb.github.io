@@ -1,7 +1,5 @@
 # HHKB BLE Mod
 
-<table_w30x70>
-
 |PCB | YANG |
 |:--- |:--- |
 |Firmware | YANG |
@@ -10,9 +8,7 @@
 |Test | YANG / 兰某人 |
 |Seller | YANG / KBDFans |
 
-</table_w30x70>
-
-For sale：https://item.taobao.com/item.htm?id=590221409485  
+For sale: https://item.taobao.com/item.htm?id=590221409485
 
 For installation, please refer to the product introduction on Taobao above.
   
@@ -36,40 +32,30 @@ If you have any problem, use this instruction to do troubleshooting: [BLE troubl
 
 There is a physical switch behind the dip switch cover. This is the only switch on the controller. 
 
-<html><div class="attention"> 
-<subtitle>ATTENTION:</subtitle>
-<ul><li>This switch's function is to turn on/off the battery power supply, not Bluetooth.</li>
-<li>Thus when this switch is turned off, if you plug in the USB cable, Bluetooth can still work as in this case USB is the power source.</li></ul>
-</div></html>
+> [!ydda: ATTENTION:]
+> - This switch's function is to turn on/off the battery power supply, not Bluetooth.
+> - Thus when this switch is turned off, if you plug in the USB cable, Bluetooth can still work as in this case USB is the power source.
 
 The switch can be easily dialed by using the cover directly, close to the USB port (left in the figure below) is open, and away from the USB port (right in the figure below) is closed. When the keyboard is working abnormally, it is also necessary to turn off the switch and then turn it on again to restart the keyboard.
 
-<div style="width: 600px">
+![|600](assets/hhkb_ble_sw.jpg)
 
-![](assets/hhkb_ble_sw.jpg?600)
-</div>
 
 If you want to turn off Bluetooth, refer to [Bluetooth switch & connection status](/en/ble-series/connection-status)
 
-<html><div class="hint">
-<subtitle>HINT</subtitle>
-<ul><li>this software switch is designed to turn off **Bluetooth FUNCTION** completely for people who only or temporarily only use USB. It is recommended to turn off the physical power switch While this switch is off.</li>
-<li>It is not designed for turning off Bluetooth daily to save energy as HHKB BLE consumes much more power when standby by using this function than Lock Mode.</li></ul>
-</div></html>
+> [!yddh: HINT] 
+> - this software switch is designed to turn off **Bluetooth FUNCTION** completely for people who only or temporarily only use USB. It is recommended to turn off the physical power switch While this switch is off.
+> - It is not designed for turning off Bluetooth daily to save energy as HHKB BLE consumes much more power when standby by using this function than Lock Mode.
 
 
 ## Battery Charging
 
 The charging port and data port are both the small USB port on HHKB, not two large USB female ports.
 
-<html><div class="attention">
-<subtitle>It is recommended to use the PC's USB port or 5v charger to charge.</subtitle>
-<br>Improper charging(like more than 6v) may broke the charging IC. Using a high-power charger will not increase the charging speed as the default charging current is limited to about 450mA. 
-</div></html>
+> [!ydda: It is recommended to use the PC's USB port or 5v charger to charge.]
+> - improper charging(like more than 6v) may broke the charging IC. Using a high-power charger will not increase the charging speed as the default charging current is limited to about 450mA. 
 
 The charging indicator is a red led below the left USB HUB port(if hardware version is more than v2.5, it is a blue led). You can see it from the back. It has three states:
-
-<table_w30x70>
 
 | Charging LED status | Meaning |
 | ---- | ---- |
@@ -77,16 +63,11 @@ The charging indicator is a red led below the left USB HUB port(if hardware vers
 | High brightness | charging |
 | Off or extremely low brightness | the battery is fully charged |
 
-</table_w30x70>
-
 Generally it is no need to pay too much attention to this indicator light. You can know how long it takes to charge after one charge.
 
 In win10 1809 or later, the battery percentage display is supported. It is not accurate and is for reference only (especially the error displayed during charging will be greater). Every 10% is a level and the highest is 90%. In addition, the percentage is displayed as x1% during charging which is 1% more than when not charging as the following pic shows.
 
-<div style="width: 450px">
-
-![](assets/hhkb-ble-charge.png?450)
-</div>  
+![|450](assets/hhkb-ble-charge.png)
 
 When fully charged, the charging indicator will go off or the brightness will be extremely low.
 
@@ -99,27 +80,21 @@ Open the website https://ydkb.io, select the keyboard **HHKB BLE**, and then the
 
 In addition to pressing the upper left key (usually ESC) to insert the cable to enter the flashing mode, you can also use the <kbd>Reset</kbd> in **LEDs and Functions**, in order to prevent accidental pressing, you need to hold down the < kbd>LCtrl</kbd>, and then press this <kbd>Reset</kbd>, you can jump directly to the flashing mode without unplugging and replugging.
 
-<html><div class="attention">
-<subtitle>ATTENTION</subtitle>
-<ul><li>In addition to the choice of <b>HHKB BLE</b> for the keyboard, you can also use <b>HHKB BLE S</b>. </li>
-<li>This firmware with S has a faster response speed, and it is temporarily unable to guarantee compatibility with all HHKBs. Most of them should be fine. </li>
-<li>If your keyboard has no compatibility issues, it is strongly recommended to choose the firmware of <b>HHKB BLE S</b>. </li><ul>
-</div></html>
+> [!ydda: ATTENTION]
+> - In addition to the choice of <b>HHKB BLE</b> for the keyboard, you can also use <b>HHKB BLE S</b>. 
+> - This firmware with S has a faster response speed, and it is temporarily unable to guarantee compatibility with all HHKBs. Most of them should be fine. 
+> - If your keyboard has no compatibility issues, it is strongly recommended to choose the firmware of <b>HHKB BLE S</b>. 
 
 
 ## Indicators and Power Saving
 
 Common functions for indicators can be defined by [LEDMAP](en/features/ledmap) . The indicator lights only when the keyboard is working, not power saving. It is recommended not to set any indicators to a function that may keep it constantly on as that may increase the power consumption and significantly reduce the battery life.
 
-<html><div class="hint">
-<subtitle>HINT</subtitle>
-<br>As mentioned above, the red light under the USB port on the left is the charging indicator. In addition, the green light below the USB on the right is equivalent to LED3.
-</div></html>
+> [!yddh: HINT]
+> - As mentioned above, the red light under the USB port on the left is the charging indicator. In addition, the green light below the USB on the right is equivalent to LED3.
 
 Default LEDMAP Setting is LED1 for CapsLock，LED2 for Layer1(fn)，LED3 for Layer2.
 The default LEDMAP settings is as below. If you want to modify it yourself, please see [LEDMAP](en/features/ledmap).
-
-<table_w30x70>
 
 | Indicator | Default setting |
 |:--- |:--- |
@@ -127,20 +102,13 @@ The default LEDMAP settings is as below. If you want to modify it yourself, plea
 | LED2(default yellow or white) | Layer1(It will light up when you press Fn/L1.) |
 | LED3(default green) | Layer2 | 
 
-</table_w30x70>
-
-<div class="attention">
-<subtitle>ATTENTION when in bluetooth mode</subtitle>
-
-  - In bluetooth mode，The Num, Caps, and Scroll Lock indicators are not synchronous with the OS status in Bluetooth mode. 
-  - In bluetooth mode, They just toggle on or off when pressed. They are synchronous in USB mode.
-  - If one indicator is out of sync, you can use Shift + KEY, such as Shift + Capslock. In this way CapsLock will take effect but its indicator won't change.
-  - Reasonable use of this in bluetooth mode to reverse the indicator light, such as turning off the numlock light when numlock is on and light on when it is off, which can save power.
-</div>
+> [!ydda: ATTENTION when in bluetooth mode]
+> - In bluetooth mode，The Num, Caps, and Scroll Lock indicators are not synchronous with the OS status in Bluetooth mode. 
+>  - In bluetooth mode, They just toggle on or off when pressed. They are synchronous in USB mode.
+>  - If one indicator is out of sync, you can use Shift + KEY, such as Shift + Capslock. In this way CapsLock will take effect but its indicator won't change.
+>  - Reasonable use of this in bluetooth mode to reverse the indicator light, such as turning off the numlock light when numlock is on and light on when it is off, which can save power.
 
 Besides LEDMAP setting, they have some other special functions.
-
-<table_w30x70>
 
 | State or operation | LED indication method |
 |:--- |:--- |
@@ -153,9 +121,6 @@ Besides LEDMAP setting, they have some other special functions.
 | Wake from Level 2 Energy Saving or Lock Mode | Three lights light up at the same time, and then start to indicate Bluetooth connection status |
 | Low battery reminder | When using the keyboard, the three lights flash at the same time; when saving energy, do not flash. It can still be used for two or three days. |
 | Very low battery reminder | When using the keyboard, the three lights flash rapidly at the same time; no flash when saving energy. At this time, it is recommended to charge as soon as possible. |
-
-</table_w30x70>
-
 
 Then about the power saving mode:
   1. After the keyboard is idle for 3 seconds without pressing any key, it enters the general power saving mode. At this mode, the matrix is scanned every 30ms. If there is any key pressed, it exits the general power saving mode.
