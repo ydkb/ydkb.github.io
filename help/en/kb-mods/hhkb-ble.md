@@ -8,6 +8,12 @@
 |Test | YANG / 兰某人 |
 |Seller | YANG / KBDFans |
 
+```yddcode
+0046 006F 0072 0020 0073 0061 006C 0065 003A 0020 0068 0074 0074 0070 0073 003A 002F 002F 0069 0074 0065 006D 002E 0074 0061 006F 0062 0061 006F 002E 0063 006F 006D 002F 0069 0074 0065 006D 002E 0068 0074 006D 003F 0069 0064 003D 0035 0039 0030 0032 0032 0031 0034 0030 0039 0034 0038 0035 000A 000A
+```
+
+For installation, please refer to the link above.
+
 If you knew about Hasu's HHKB Mod, it is easy to understand this one. Simple to say, it is an  power-saving optimized version. The power saving of hardware comes from two ways. One is that the Bluetooth uses a ble module, and the other is that the working voltage needs only 3.3v no 5v. The power saving of software comes from the power saving strategy formulated according to the characteristics of the hardware. Taken together, the battery life may be 6 to 10 times improve from Hasu version. But the biggest hero is still him (the entire HHKB keyboard part of the scanning works), I just stand on the achievements of predecessors and improve the product.
 
 Most information, please refer to the BLE Series Part. Here we mainly talk about some special features of HHKB BLE Mod.
