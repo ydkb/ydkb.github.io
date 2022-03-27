@@ -1,0 +1,59 @@
+application/applefile
+application/atom+xml		atom
+application/http
+application/mathml+xml		mathml
+application/msword		doc
+application/octet-stream	bin dms lha lzh exe class so dll dmg
+application/ogg			ogg
+application/pdf			pdf
+application/pgp-encrypted
+application/pgp-keys
+application/pgp-signature
+application/postscript		ai eps ps
+application/rdf+xml		rdf
+application/rtf
+application/sgml
+application/smil		smi smil
+application/srgs		gram
+application/srgs+xml		grxml
+application/vnd.rn-realmedia	rm
+application/xhtml+xml		xhtml
+application/xml			xml
+application/xml-dtd		dtd
+application/zip			zip
+audio/basic			au snd
+audio/midi			mid midi kar
+audio/mpeg			mpga mp1 mp2 mp3
+audio/mpeg4-generic		mp4
+audio/x-aiff			aif aiff aifc
+audio/x-mpegurl			m3u
+audio/x-pn-realaudio		ram ra
+audio/x-pn-realaudio-plugin
+audio/x-wav			wav
+image/bmp			bmp
+image/gif			gif
+image/jpeg			jpeg jpg jpe
+image/png			png
+image/svg+xml			svg
+image/tiff			tiff tif
+image/vnd.wap.wbmp		wbmp
+image/x-icon			ico
+message/http
+message/news
+text/calendar			ics ifb
+text/css			css
+text/directory
+text/html			html htm
+text/plain			asc csv txt
+text/sgml
+text/uri-list			uri uris
+text/richtext			rtx
+text/rtf			rtf
+text/sgml			sgml sgm
+text/xml			xml
+text/vnd.wap.wml		wml
+video/mpeg			mpeg mpg mpe
+video/quicktime			qt mov
+video/vnd.mpegurl		mxu m4u
+video/x-msvideo			avi
+video/x-sgi-movie		movie
