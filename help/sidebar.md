@@ -38,7 +38,7 @@
   * [按键宏](edit-keymap/macro)
 * [特色功能](features)
   * [Esc 与 \`~](features/tricky-esc)
-  * [LEDMAP](features/ledmap)
+  * [指示灯(LEDMAP)](features/ledmap)
   * [单色背光](features/backlight)
   * [RGB 灯光](features/rgblight)
   * [火力模式按键](features/rapidfire)
