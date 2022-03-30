@@ -4,7 +4,7 @@
 
 		">>> Keyboard List <<<":" ",
 		"kbdlist-fav #title":"Add to or remove from favorite",
-		"kbdlist-yd1800mini #tooltip":"1800mini USB/BLE dual-mode RGB keyboard by YANG & Xikii",
+		"kbdlist-1800mini #tooltip":"1800mini USB/BLE dual-mode RGB keyboard by YANG & Xikii",
 		"kbdlist-master98 #tooltip":"Master98 Pro USB/BLE dual-mode RGB keyboard by Xikii & YANG",
 		"kbdlist-sairo64 #tooltip":"Sairo64 USB/BLE dual-mode RGB keyboard PCB by YANG",
 		"kbdlist-taichi #tooltip":"Black / white PCB, 8 RGB bottom lights forming bagua diagram, 16 keys with RGB lights, showing thousands of colors",
