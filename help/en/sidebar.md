@@ -1,5 +1,6 @@
 * [Introduction](en/README)
-* [Firmware update](en/firmware)
+* [YDKB Firmware update](en/firmware)
+* [VIA Firmware update](en/firmware-via)
 * [Default Command Keys](en/magic-commands)
 * [Bluetooth Signal Optimization](en/use-bluetooth)
 * [BLE Series (overview)](en/ble-series)
