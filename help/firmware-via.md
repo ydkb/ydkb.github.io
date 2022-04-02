@@ -38,7 +38,7 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 
 | 键盘 | 下载地址 | 补充说明 |
 | ---- | ---- | --- |
-| Everest | 待更新 | |
+| Everest | [VIA固件和JSON文件](via-firmware/everest_via.zip) | |
 | Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip) | |
 | YD67BLE | 待更新 | |
 
