@@ -1,5 +1,6 @@
 {
 	"token": {
+		"lang-name": "en",
 		"nav_shop #tooltip":"Not built, currently open taobao shop.",
 
 		">>> Keyboard List <<<":" ",
@@ -9,6 +10,19 @@
 		"kbdlist-sairo64 #tooltip":"Sairo64 USB/BLE dual-mode RGB keyboard PCB by YANG",
 		"kbdlist-taichi #tooltip":"Black / white PCB, 8 RGB bottom lights forming bagua diagram, 16 keys with RGB lights, showing thousands of colors",
 		"kbdlist-x8086k #tooltip":"X-8086K(80% size with 86 keys) USB/BLE Dual-mode RGB keyboard",
+
+		">>> Key function <<<":" ",
+		"encoder_round cw":"Clockwise: ",
+		"encoder_round ccw":"Anticlockwise: ",
+		"encoder_round sw":"Button: ",
+		"encoder_square upward":"Upward: ",
+		"encoder_square dnward":"Downward: ",
+		"encoder_square sw":"Button: ",
+
+		">>> Editor <<<":" ",
+		"select_key_first":"Please select the key you want to modify at first!",
+		"download file wrong":"Error downloading file, please retry after refreshing the page with Shift+F5",
+		"not a layout file":"Not a layout file",
 
 		"ESWN四键RGB小键盘":"ESWN 4 Keys RGB keyboard",
 		"Y(有)X(线)Pad，全灯RGB":"YXPad wired RGB tenkey keyboard",
@@ -255,9 +269,6 @@
 		"联系":"Contacts",
 		"QQ群：24764798（本群为YDKB系列产品交流及售后群，其他产品仅限固件bug反馈或疑难问题，常规使用及售后请找卖家）":"QQ Group: 24764798 (for YDKB Products only)",
 		"链接":"Links",
-
-		"不是布局文件":"Not a layout file",
-		"下载文件有错，Ctrl+F5刷新页面后重试":"Error downloading file, please retry after refreshing the page with Ctrl+F5",
 
 		"<<< HHKB BLE >>>":" ",
 		"Pro2 默认":"Pro2 default",

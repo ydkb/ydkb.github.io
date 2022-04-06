@@ -1,5 +1,6 @@
 {
 	"token": {
+		"lang-name": "zh_cn",
 		"nav_shop #tooltip":"未建设，目前跳转到taobao店铺",
 
 		">>> Keyboard List <<<":" ",
@@ -9,6 +10,19 @@
 		"kbdlist-sairo64 #tooltip":"Sairo64(赛罗64) 60%双模RGB热插拔PCB by YANG",
 		"kbdlist-taichi #tooltip":"黑白双色PCB，8颗RGB底灯组成太极八卦图，16个按键，独立灯控的RGB轴灯实现千万种颜色",
 		"kbdlist-x8086k #tooltip":"X-8086K(80%尺寸86键) 双模RGB热插拔键盘",
+
+		">>> Key function <<<":" ",
+		"encoder_round cw":"顺时针旋: ",
+		"encoder_round ccw":"逆时针旋: ",
+		"encoder_round sw":"按下旋钮: ",
+		"encoder_square upward":"向上滚动: ",
+		"encoder_square dnward":"向下滚动: ",
+		"encoder_square sw":"按下滚轮: ",
+
+		">>> Editor <<<":" ",
+		"select_key_first":"请先在上方选择要修改的按键!",
+		"download file wrong":"下载文件有错，Shift+F5刷新页面后重试",
+		"not a layout file":"上传文件格式错误，不是布局文件",
 
 		">>> LED / BLE / MacroFn <<<":" ",
 		"backlight_toggle #title":"轴灯开关",
