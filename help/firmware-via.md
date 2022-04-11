@@ -38,8 +38,8 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 
 | 键盘 | 下载地址 | 补充说明 |
 | ---- | ---- | --- |
-| Everest | [VIA固件和JSON文件](via-firmware/everest_via.zip) | |
-| Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip) | |
+| Everest | [VIA固件和JSON文件](via-firmware/everest_via.zip ':ignore') | |
+| Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip ':ignore') | |
 | YD67BLE | 待更新 | |
 
 
@@ -51,3 +51,16 @@ RGB的控制与qmk有所区别，本页的固件，RGB的控制说明参考 [rgb
 在VIA中设置时，使用的是CUSTOM中的几个按键来控制
 
 ![|700](assets/via-ydkb-rgb.jpg)
+
+蓝牙的几个功能设置按键，也在CUSTOM里。除了自己设定按键，下面四个蓝牙要用到的主要功能，都有对应的<kbd>LShift+RShift+xx</kbd>快捷键 。
+![|700](assets/via-ydkb-ble51.jpg)
+
+VIA的固件相对于YDKB的固件，蓝牙功能有部分改动。
+
+1. 因为无LEDMAP功能，所以蓝牙模式下，大小写指示灯不工作。但它仍然可以指示蓝牙连接状态及低电量等。
+2. 不支持使用YDKB Tool修改蓝牙名称。但是可以使用YDKB的固件先修改好，再刷到VIA的固件。
+3. 不支持蓝牙设备之间的切换，支持蓝牙与USB之间的切换。可以设置切换按键，或者使用<kbd>LShift+RShift+U</kbd>
+4. 不支持<kbd>LShift+RShift+W</kbd>和<kbd>LCtrl+LShift+RShift+W</kbd>来进行开启或关闭蓝牙功能。
+5. 支持Lock Mode，并且增加了Lock Mode的快捷键 <kbd>LShift+RShift+L</kbd>。
+
+如果在使用蓝牙过程中遇到连接等问题，依然可以根据 [BLE系列排错指南](ble-series/troubleshooting.md) 来解决。

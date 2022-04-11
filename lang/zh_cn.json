@@ -10,6 +10,13 @@
 		"kbdlist-sairo64 #tooltip":"Sairo64(赛罗64) 60%双模RGB热插拔PCB by YANG",
 		"kbdlist-taichi #tooltip":"黑白双色PCB，8颗RGB底灯组成太极八卦图，16个按键，独立灯控的RGB轴灯实现千万种颜色",
 		"kbdlist-x8086k #tooltip":"X-8086K(80%尺寸86键) 双模RGB热插拔键盘",
+		"kbdlist-ble40 #tooltip":"USB/BLE双模40% RGB无线键盘 by YANG",
+		"kbdlist-blup #tooltip":"USB/BLE双模40% RGB无线键盘 by YANG",
+		"kbdlist-cad66 #tooltip":"CAD66 USB/BLE双模PCB，此固件不适合CA66原配单模PCB",
+		"kbdlist-chicory #tooltip":"Chicory 40%双模键盘",
+		"kbdlist-eswn #tooltip":"ESWN四键RGB小键盘",
+		"kbdlist-yxpad #tooltip":"Y(有)X(线)Pad，全灯RGB",
+		"kbdlist-thx30 #thx30":"THX30 30% RGB小键盘，支持BLE模块，非卖品",
 
 		">>> Key function <<<":" ",
 		"encoder_round cw":"顺时针旋: ",
