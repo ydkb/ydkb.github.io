@@ -38,7 +38,7 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 
 | 键盘 | 下载地址 | 补充说明 |
 | ---- | ---- | --- |
-| Everest | [VIA固件和JSON文件](via-firmware/everest_via.zip ':ignore') | |
+| Kunlun | [VIA固件和JSON文件](via-firmware/kunlun_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip ':ignore') | |
 | YD67BLE | 待更新 | |
 
@@ -55,7 +55,7 @@ RGB的控制与qmk有所区别，本页的固件，RGB的控制说明参考 [rgb
 蓝牙的几个功能设置按键，也在CUSTOM里。除了自己设定按键，下面四个蓝牙要用到的主要功能，都有对应的<kbd>LShift+RShift+xx</kbd>快捷键 。
 ![|700](assets/via-ydkb-ble51.jpg)
 
-VIA的固件相对于YDKB的固件，蓝牙功能有部分改动。
+目前，VIA的固件相对于YDKB的固件，蓝牙功能有以下区别（未来可能还有变动）。
 
 1. 因为无LEDMAP功能，所以蓝牙模式下，大小写指示灯不工作。但它仍然可以指示蓝牙连接状态及低电量等。
 2. 不支持使用YDKB Tool修改蓝牙名称。但是可以使用YDKB的固件先修改好，再刷到VIA的固件。
