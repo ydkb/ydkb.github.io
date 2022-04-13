@@ -34,24 +34,31 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 
 ## 当前支持键盘的固件和json文件下载
 
-测试运营期，目前还未提交合并到via官方支持。所以更新下表固件后，连接VIA时，请使用 `File - Import Keymap`， 手动导入json文件。
+测试运营期，目前还未提交合并到via官方支持，过段时间再提交。使用方法如下：
+
+### 1 下载下表的支持VIA的固件并更刷新到键盘
+
+更新下表固件后，更新方法与ydkb.io一致。大部分使用 [Mass Storage Device Bootloader（U 盘模式)](bootloader/msd-bootloader.md)。
 
 | 键盘 | 下载地址 | 补充说明 |
 | ---- | ---- | --- |
 | Kunlun | [VIA固件和JSON文件](via-firmware/kunlun_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip ':ignore') | |
-| YD67BLE | 待更新 | |
+| YD67BLE | [VIA固件和JSON文件[VIA_DM4D]](via-firmware/yd67ble_via.zip ':ignore') | |
 
+### 2 连接VIA并导入JSON文件
+USB连接时，可以从USB设备名称确认是否已经成功刷新支持VIA的固件。
+
+VIA的安装这里略过，下载和使用可以参看官方网站： https://www.caniusevia.com/
+
+打开 VIA 时，请使用 `File - Import Keymap`， 导入在第1步下载的zip里面的JSON文件（文件名为 `键盘名_json_via`的那个。
+
+之后就可以使用VIA设置按键了。
 
 
 ## 额外说明
 
-RGB的控制与qmk有所区别，本页的固件，RGB的控制说明参考 [rgblight](features/rgblight.md)。  
-
-在VIA中设置时，使用的是CUSTOM中的几个按键来控制
-
-![|700](assets/via-ydkb-rgb.jpg)
-
+### 1 蓝牙功能按键
 蓝牙的几个功能设置按键，也在CUSTOM里。除了自己设定按键，下面四个蓝牙要用到的主要功能，都有对应的<kbd>LShift+RShift+xx</kbd>快捷键 。
 ![|700](assets/via-ydkb-ble51.jpg)
 
@@ -64,3 +71,11 @@ RGB的控制与qmk有所区别，本页的固件，RGB的控制说明参考 [rgb
 5. 支持Lock Mode，并且增加了Lock Mode的快捷键 <kbd>LShift+RShift+L</kbd>。
 
 如果在使用蓝牙过程中遇到连接等问题，依然可以根据 [BLE系列排错指南](ble-series/troubleshooting.md) 来解决。
+
+### 2 RGB控制按键
+RGB的控制与qmk有所区别，本页的固件，RGB的控制说明参考 [rgblight](features/rgblight.md)。  
+
+在VIA中设置时，使用的是CUSTOM中的几个按键来控制
+
+![|700](assets/via-ydkb-rgb.jpg)
+
