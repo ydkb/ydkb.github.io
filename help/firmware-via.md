@@ -36,15 +36,16 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 
 测试运营期，目前还未提交合并到via官方支持，过段时间再提交。使用方法如下：
 
-### 1 下载下表的支持VIA的固件并更刷新到键盘
+### 1 下载下表的支持VIA的固件并刷新到键盘
 
 更新下表固件后，更新方法与ydkb.io一致。大部分使用 [Mass Storage Device Bootloader（U 盘模式)](bootloader/msd-bootloader.md)。
 
 | 键盘 | 下载地址 | 补充说明 |
 | ---- | ---- | --- |
+| Duang60 v2 | [VIA固件和JSON文件 (2022-04-13_DM4D)](via-firmware/duang60v2_via.zip ':ignore') | |
 | Kunlun | [VIA固件和JSON文件](via-firmware/kunlun_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip ':ignore') | |
-| YD67BLE | [VIA固件和JSON文件[VIA_DM4D]](via-firmware/yd67ble_via.zip ':ignore') | |
+| YD67BLE | [VIA固件和JSON文件 (2022-04-13_DM4D)](via-firmware/yd67ble_via.zip ':ignore') | |
 
 ### 2 连接VIA并导入JSON文件
 USB连接时，可以从USB设备名称确认是否已经成功刷新支持VIA的固件。
