@@ -42,6 +42,8 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 
 | 键盘 | 下载地址 | 补充说明 |
 | ---- | ---- | --- |
+| BLE660C/BLE980C | [VIA固件和JSON文件 (待更新)](via-firmware/ble660c_980c_via.zip ':ignore') | LAYOUTS里选择660c或980c |
+| HHKB BLE | [VIA固件和JSON文件 (待更新)](via-firmware/hhkb_ble_via.zip ':ignore') | LAYOUTS里选择Pro2(US)或Pro JP|
 | Duang60 v2 | [VIA固件和JSON文件 (2022-04-13_DM4D)](via-firmware/duang60v2_via.zip ':ignore') | |
 | Kunlun | [VIA固件和JSON文件](via-firmware/kunlun_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip ':ignore') | |
