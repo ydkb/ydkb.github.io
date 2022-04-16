@@ -11,18 +11,15 @@ USB and Bluetooth can be connected to different computers. The keyboard is alway
 
 
 ## Switching between Bluetooth devices
-<html>
+
 <font color="red" size="+1">!! Be sure to familiarize yourself with the instructions below before using this feature !!</font>
-</html>
+
 
 Except for Fmini (alf x3), the BLE series supports this function.
 
 Set the function below to a key. And press it to switch between the connected host devices.
 
-<div style="width: 180px">
-
-![](assets/device_switching_01.jpg?180)
-</div>
+![|180](assets/device_switching_01.jpg)
 
 Limited by Adafruit's firmware, it does not support active switching. So the real action of this function is to disconnect the current device and try to connect another. If it is connected to another device, it indicates that the connection is successful. If not, it keeps trying to connect another until timeout. When timeout, it will connect back to the previous device.
 
@@ -42,6 +39,10 @@ Besides, in fact, the experience of switching devices is acceptable.
 
 ## Some Advices
 
-If the devices to be switched are in a local area network, you can also consider using a KVM software, such as: https://github.com/debauchee/barrier
+If the devices to be switched are in a local area network, you can also consider using a KVM software, such as: 
+
+```yddcode
+0068 0074 0074 0070 0073 003A 002F 002F 0067 0069 0074 0068 0075 0062 002E 0063 006F 006D 002F 0064 0065 0062 0061 0075 0063 0068 0065 0065 002F 0062 0061 0072 0072 0069 0065 0072 0020 
+```
 
 Both the mouse and the keyboard can be switched at the same time, and the pasteboard can be shared. As long as the network is not slow(recommend both connected to 5G wifi or wired), the experience is excellent.
