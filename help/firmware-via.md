@@ -45,6 +45,7 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 | HHKB BLE | [VIA固件和JSON文件 (2022-04-16_DM4G)](via-firmware/hhkb_ble_via.zip ':ignore') | LAYOUTS里选择US/JP布局|
 | Duang60 v2 | [VIA固件和JSON文件 (2022-04-13_DM4D)](via-firmware/duang60v2_via.zip ':ignore') | |
 | Kunlun | [VIA固件和JSON文件](via-firmware/kunlun_via.zip ':ignore') | |
+| Louise | [VIA固件和JSON文件](via-firmware/louise_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip ':ignore') | |
 | YD67BLE | [VIA固件和JSON文件 (2022-04-16_DM4G)](via-firmware/yd67ble_via.zip ':ignore') | |
 
