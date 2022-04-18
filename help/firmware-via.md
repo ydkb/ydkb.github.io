@@ -41,13 +41,13 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 
 | 键盘 | 下载地址 | 补充说明 |
 | ---- | ---- | --- |
-| BLE660C/BLE980C | [VIA固件和JSON文件 (2022-04-16_DM4G)](via-firmware/ble660c_980c_via.zip ':ignore') | LAYOUTS里选择660c或980c |
-| HHKB BLE | [VIA固件和JSON文件 (2022-04-16_DM4G)](via-firmware/hhkb_ble_via.zip ':ignore') | LAYOUTS里选择US/JP布局|
-| Duang60 v2 | [VIA固件和JSON文件 (2022-04-13_DM4D)](via-firmware/duang60v2_via.zip ':ignore') | |
-| Kunlun | [VIA固件和JSON文件](via-firmware/kunlun_via.zip ':ignore') | |
-| Louise | [VIA固件和JSON文件](via-firmware/louise_via.zip ':ignore') | |
-| Mountain | [VIA固件和JSON文件](via-firmware/mountain_via.zip ':ignore') | |
-| YD67BLE | [VIA固件和JSON文件 (2022-04-16_DM4G)](via-firmware/yd67ble_via.zip ':ignore') | |
+| BLE660C/BLE980C | [VIA固件和JSON文件 (2022-04-16_DM4G)](via-firmware/ydkb_ble660c_980c_via.zip ':ignore') | LAYOUTS里选择660c或980c |
+| HHKB BLE | [VIA固件和JSON文件 (2022-04-16_DM4G)](via-firmware/ydkb_hhkb_ble_via.zip ':ignore') | LAYOUTS里选择US/JP布局|
+| Duang60 v2 | [VIA固件和JSON文件 (2022-04-13_DM4D)](via-firmware/ydkb_duang60v2_via.zip ':ignore') | |
+| Kunlun | [VIA固件和JSON文件](via-firmware/ydkb_kunlun_via.zip ':ignore') | |
+| Louise | [VIA固件和JSON文件(2022-04-17_DM4H)](via-firmware/ydkb_louise_via.zip ':ignore') | |
+| Mountain | [VIA固件和JSON文件](via-firmware/ydkb_mountain_via.zip ':ignore') | |
+| YD67BLE | [VIA固件和JSON文件 (2022-04-16_DM4G)](via-firmware/ydkb_yd67ble_via.zip ':ignore') | |
 
 ### 2 连接VIA并导入JSON文件
 USB连接时，可以从USB设备名称确认是否已经成功刷新支持VIA的固件。
