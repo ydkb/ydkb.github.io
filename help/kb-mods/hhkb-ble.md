@@ -73,9 +73,15 @@ macOS 12已经支持第三方蓝牙设备的电量显示，也使用文字输出
 
 ## 固件设置和更新
 
-打开网址https://ydkb.io ，选择好键盘 `HHKB BLE`，然后页面上就有刷的方式[Mass Storage Device Bootloader（U盘模式）](bootloader/msd-bootloader)。按键编辑器的说明参看本文档的其他部分。
+```yddcode
+8BBF 95EE 0020 0068 0074 0074 0070 0073 003A 002F 002F 0079 0064 006B 0062 002E 0069 006F 002C 
+```
 
-除了按住左上角键（一般是ESC）插线可以进入刷机模式，还可以使用 `灯光和增强功能` 里的 <kbd>Reset</kbd>，为了防止误按，需要先按住 <kbd>LCtrl</kbd>, 再按这个 <kbd>Reset</kbd>，可以直接跳到刷机模式，不用拔线再重插。
+先选择键盘 `HHKB BLE`，然后页面上就有刷新固件的方式，即[Mass Storage Device Bootloader（U盘模式）](bootloader/msd-bootloader)。如果修改按键及各种按键功能，可参看本文档的其他部分。
+
+除了按住左上角键（一般是ESC）插线可以进入刷机模式，以下两个方法也可以。
+- <kbd>LCtrl+LShift+RShift+B</kbd>，要求2022年3月后的固件。
+- <kbd>LCtrl+Reset</kbd>，要求有设置 <kbd>Reset</kbd>。
 
 > [!ydda: 注意]
 > - 键盘除了 **HHKB BLE** 可以选择外，也可以使用 **HHKB BLE S**。
