@@ -18,8 +18,6 @@
 
 BLE部分参照本help文档前面的说明，这里主要再说一些HHKB BLE Mod特殊的地方。 
 
-注：本部分内容针对的是ydkb.io的最新版本固件。
-
 固件的更新记录可见：[HHKB BLE固件更新记录](changelog/hhkb_ble)
 
 ## 蓝牙配对
