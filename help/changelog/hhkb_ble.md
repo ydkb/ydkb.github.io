@@ -4,6 +4,8 @@
 > [!ydda: 注意]
 > - 不再区分HHKB BLE和HHKB BLE S，合并到一起，仅提供HHKB BLE一个选项，这已经是提高响应速度后的固件了。
 
+##### 2022-05-29 (DM5T) 
+- 「+」二合一按键功能，增加 LT (P)。具体说明见: [按键 | 瞬时开启层](/edit-keymap/layer-tap-key.md)
 
 ##### 2022-05-12 (DM5C) 
 - 『 』 从这个固件开始，合并HHKB BLE和HHKB BLE S。
