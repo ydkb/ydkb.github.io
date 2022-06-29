@@ -47,10 +47,10 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 | ---- | ---- | --- |
 | BLE660C/BLE980C | [VIA固件和JSON文件 (2022-04-28_DM4S)](via-firmware/ydkb_ble660c_980c_via.zip ':ignore') | LAYOUTS里选择660c或980c |
 | HHKB BLE | [VIA固件和JSON文件 (2022-04-28_DM4S)](via-firmware/ydkb_hhkb_ble_via.zip ':ignore') | LAYOUTS里选择US/JP布局|
-| Duang60 v1 | [VIA固件和JSON文件 (2022-05-25_DM5P)](via-firmware/ydkb_duang60v1_via.zip ':ignore') | |
-| Duang60 v2 | [VIA固件和JSON文件 (2022-04-20_DM4K)](via-firmware/ydkb_duang60v2_via.zip ':ignore') | |
+| Duang60 v1 | [VIA固件和JSON文件 (2022-06-29_DM6T)](via-firmware/ydkb_duang60v1_via.zip ':ignore') | |
+| Duang60 v2 | [VIA固件和JSON文件 (2022-06-29_DM6T)](via-firmware/ydkb_duang60v2_via.zip ':ignore') | |
 | Kunlun | [VIA固件和JSON文件(2022-03-30_DM3U)](via-firmware/ydkb_kunlun_via.zip ':ignore') | |
-| Louise | [VIA固件和JSON文件(2022-04-20_DM4K)](via-firmware/ydkb_louise_via.zip ':ignore') | |
+| Louise | [VIA固件和JSON文件(2022-06-29_DM6T)](via-firmware/ydkb_louise_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件(2022-03-29_DM3T)](via-firmware/ydkb_mountain_via.zip ':ignore') | |
 | YD67BLE | [VIA固件和JSON文件 (2022-04-20_DM4K)](via-firmware/ydkb_yd67ble_via.zip ':ignore') | |
 
