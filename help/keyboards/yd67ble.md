@@ -1,4 +1,4 @@
-# YD67BLE(本节内容还在完善中)
+# YD67BLE
 
 |Author??30% |YANG |
 |:--- |:--- |
@@ -39,6 +39,8 @@ YD67BLE 的充电电流约为800ma，所以实际充满时间可以根据你使�
 打开网址 https://ydkb.io ，选择好键盘 **YD67BLE**，然后页面上就有刷的方式[Mass Storage Device Bootloader（U盘模式）](bootloader/msd-bootloader)。按键编辑器的说明参看本文档的其他部分。
 
 除了按住左上角键（一般是ESC）插线可以进入刷机模式，还可以使用 **灯光和增强功能** 里的 <kbd>Reset</kbd>，为了防止误按，需要先按住<kbd>LCtrl</kbd>, 再按这个<kbd>Reset</kbd>，可以直接跳到刷机模式，不用拔线再重插。
+
+在更新到 2022-02-27 (DM2R) 之后的固件，还可以使用<kbd>LShift+RShift+LCtrl+B</kbd>直接进入刷机模式。
 
 如果Esc按键本身也有问题了，还有特殊的短接的方式进入刷机模式。插上 USB 线，短接下图里红框中的两个点。
 
