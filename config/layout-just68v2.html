@@ -70,9 +70,9 @@
     <div class="mykeycap2 w125 row400 col125">Win</div>
     <div class="mykeycap2 w125 row400 col250">Alt</div>
     <div class="mykeycap1 w625 space row400 col375">Space</div>
-    <div class="mykeycap2 row400 col1000">RAlt</div>
-    <div class="mykeycap2 row400 col1100">RCtrl</div>
-    <div style="display: block;">
+    <div id="kblayouts-00" value-name="滚轮" value-desc="Block" style="display: block;">
+        <div class="mykeycap2 row400 col1000">RAlt</div>
+        <div class="mykeycap2 row400 col1100">RCtrl</div>
         <div style="position: relative; left: calc(54px*12); top: calc(54px*4);">
             <div class="plate encoder square u1">
                 <div class="mykeycap3 square upward">F14</div>
@@ -81,18 +81,27 @@
             </div>
         </div>
     </div>
+    <div id="kblayouts-01" value-name="68键无滚轮" value-desc="Block" style="display: none;">
+        <div class="mykeycap2 row400 col1000">RAlt</div>
+        <div class="mykeycap2 row400 col1100">RCtrl</div>
+        <div class="mykeycap2 row400 col1200">RWin</div>
+    </div>
+    <div id="kblayouts-02" value-name="67键" value-desc="Block" style="display: none;">
+        <div class="mykeycap2 w125 row400 col1000">RAlt</div>
+        <div class="mykeycap2 w125 row400 col1125">RCtrl</div>
+    </div>
     <div class="mykeycap3 row400 col1300">Left</div>
     <div class="mykeycap3 row400 col1400">Down</div>
     <div class="mykeycap3 row400 col1500">Right</div>
 </div>
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li id="code-0xfa00" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
-    <li id="code-0xf200" title="<kt>Esc</kt>键，和<kt>LShift</kt>一起按时为<kt>~</kt>">~(L)<br>Esc</li>
-    <li id="code-0xf800" title="<kt>Esc</kt>键，和<kt>RShift</kt>一起按时为<kt>~</kt>">~(R)<br>Esc</li>
-    <li id="code-0xf001" title="<kt>4$</kt>键，和<kt>左Alt</kt>一起按时执行<kt>Alt+F4</kt>">4 $<br>F4</li>
-    <li id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时则进入刷机模式">Reset</li>
-    <li id="code-0xf003" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
-    <li id="code-0xf004" title="正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角">Space2</li>
+    <li kc="0xfa00" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
+    <li kc="0xf200" title="<kt>Esc</kt>键，和<kt>LShift</kt>一起按时为<kt>~</kt>">~(L)<br>Esc</li>
+    <li kc="0xf800" title="<kt>Esc</kt>键，和<kt>RShift</kt>一起按时为<kt>~</kt>">~(R)<br>Esc</li>
+    <li kc="0xf001" title="<kt>4$</kt>键，和<kt>左Alt</kt>一起按时执行<kt>Alt+F4</kt>">4 $<br>F4</li>
+    <li kc="0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时则进入刷机模式">Reset</li>
+    <li kc="0xf003" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
+    <li kc="0xf004" title="正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角">Space2</li>
     <div id="ble51_control_keys_v3"></div>
     <div id="rgb_control_keys"></div>
 </div>
@@ -101,7 +110,8 @@
     <li id="kb_ledmap-0" value="17" title="CAPS LED">CAPS LED</li>
 </div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2SXYocMQyEL1QP1r90lmHvf42Uugd2B5YkkJeFDAa13Uhl6Ss/Ho+oPgeSKX3FuuKBI5AoNAY8ikAUYhCHxAcekthcFg30QAWqUIM6NKAJLWhDB3ZgwgpTmMEcFrCEFaxhAz/IOKxzhRucm4AnvFjkDR/EQQhCEYZgZ4FIRCEaMUgKCFKRxop0yiETWchGDuqgBKUoQzkqUJysUI0aVvRBC1rRhnZ0oBPN0Rs9mIMRjGIM45gdfhJTGLJZOKRziIfDybEXlHpqSTDe+77iAitbpotFluuCXbIS1CFW2y9ViEeX6CJdJeq4OCfXVbHbuPNBmYcEk+RaewlpiJOoZPXdgl2RaNRJIXX4P805BQHJTWb72f2Fa9N9ZYh/92QskyvpE89rtnLPfA23G+vApx/46oasfZVXi7cz8rzvXi5PV+R1vSR9uzLyfpPBmxhp22+y/6z3JYNv5vuUi3n9tc7/kHEh+RGd/JSMN5E3kTeRN5F/JvLxCwjndVqrCQAA">Defalut</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2SS4pcMQxFN3QG1t9eS9H730ak9wq6C5pkkAw6UBhUesXVlXXkx+MhC8mUfcW64sIJkmJzGIEgihjiSHzwkGS0XXTQhQqqqKGOBppooRs92MKkK0wxwxwLLLHCNnbwRcbqOlfc8E4CT7y6yDd+iEUIoYQRfbMgkihiE4dsAyGVtK5IbzsyySI3eahFCaWUUU4F1ZMVtanTFXuxha1sYzs72Mnu0Tf7cBZHOMoxjnNm+JOc4jSbgdN0VuPp4WTZC0pdNSQ63vm+4gArG6aDRYbrgB2yEu3TWG1+26Xx6BAdpOPUPi7ek+u42L249dE2j86vMx0ahXjjlKx997crNhf1RpB6+v807xFqCi8sc5nJL1Yj97Fp9pM3YDk5ln7i2eZq2d/9FO5VDP7PZfB1FTK7q7yueK9Fnv3u4/JcibyeF9G3JyPvBxndqWPv7DfqP/t9UfSD+V4ywOf5/7NO/7/iQvIjbvJTFG8ibyJvIm8if03k4xc8KNq4pQkAAA==">Defalut</li>
+    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+2STW4kMQhGL/QW5sdgn6XU97/GgKulpKVEWcwsMlILiaZa8GEeXNclikTIOj6PHziTIFls6lOETjPEkfngkqBzq2ijAxVUUUMdnWigiS50YwOTqjDFDHNsYoEltrCND2KOqnPFDa9g4oFnFfnCN3MwhalMY9bLJjOYyVzMTZSAEEpYVYSXHBFEEovY5CCFVNJIJydZkyW5yF0Va7CEpSxjOWuyglWjL9ZmD7awlW1sZ/fwO9jJLjYNp+iMwlPDybAXlDqySZS/43V8A0trpo1FmmuDbbIyS6ewWv+WSuHRJtpIW6l0XLwm11ZpjV7Wo2Suio91h0Ih7r3WXHd/O764qBeC0F3/h3mNkF14sPRjOj6sOt1bpth3XIBlR0v6ns82p2V91yncq2j8H8vg8yqkd5dxnnivRZ79bnN5rkRe7SXpS2vS5yD7bJ/0v7ef9T5l1MF8ndLA+/z/Waf/P+Mg+RUv+S0ZbyJvIm8ibyJ/TeTxB6Ue7qSlCQAA">67带门牙</li>
 </div>
 <div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA+2UXW7jMAyELzQP4q+oswS5/zV2qLhJUxjtLrYPQVEooWWbHIkfKV8uF8mVA5Ipte3cdsARSEwUFngrAlGIQRwSVzAO7cugBR1QgSrUoA4NaEIntKALNmDCCFOYwRwWsIRNWMEWfCA9qO78WVEvxd3hAU/4ZKhXv4yBEAQnhuD+AsH3FsnbQjCOSoJUpDEoHckcEjmRhVyYA1MwFdMwHTMwW6CoNwtzMagGSlCKMpSjApUoYijUwhpYgqVYhuVYDWIl1sQipwZFUoOomKgMe8KqYzYV2tu8tm1405pvI5Jm3JCbsgR1iNj6ShWi0qbbeFuJcxcPqrWKHoW7UubSoY+RkzmQi2uTUGfqqYvP0pz7Prx6+XsMK0DafV3EKenrrsh5dsH0oN6kH9zxnrp0pZpJ6rQtu8twW8rXoeiCk/G0ndORkbdGDK5GW+sz76/13nmwP85dGm40bjZf/6U7qNtVd1tNbLZvNT1THt2o8634sl13J365U3KM+eTkzxnXvyNkY26EfeKPZv0mhGejQdkpxaahB43bnW0bH1E+rdEe/jhGen9quwT9WdoHTY5j9x05vJLHPuovsZNX8fgl8kvkb4j48Ir/VvpJHtfrH/TfXS8NCgAA"></div>
 <div id="kb-changelog-url" href="just68v2" style="display: none;"></div>
