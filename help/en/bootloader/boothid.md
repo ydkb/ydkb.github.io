@@ -35,24 +35,29 @@ Proceed as follows:
 
 ## How to reflash firmware under Mac
 
-Use the above source code to compile the bootloadHID. Then,
+Under Mac can directly use brew to install bootloadHID, reference: https://formulae.brew.sh/formula/bootloadhid 
 
-    1  chmod 755 bootloadHID
-    2  brew install libusb-compat
-    3  ./bootloadHID
+```Terminal
+brew install bootloadhid
+```
 
-If there is no error description here, it is right. 
+This default version supports firmware below 30KB. Use the following command to flash.
 
-When you want to reflash the firmware, use
+```Terminal
+bootloadHID -r hexFilePath
+```
 
-    ./bootloadHID -r hex_path
+The result is as follows:
 
-As the picture below, the reflash is complete with the end address of 0x7c00. The error that appears at the end can be ignored.
+![|600](assets/mac_boothid_01.jpg)
 
-<div style="width: 600px">
+The firmware used by some keyboards now occupies 31KB of space, and the version installed by brew can not be reflashed directly. The following error message will appear.
 
-![](assets/mac_boothid.jpg?600)
-</div>
+![|600](assets/mac_boothid_02.jpg)
+
+In this case, download it from https://github.com/yangdigi/BootHID, and after compiling, use the newly compiled bootloadHID to reflash the firmware, as shown in the figure below.
+
+![|600](assets/mac_boothid_03.jpg)
 
 
 ## If you can not normally reflash firmware under windows

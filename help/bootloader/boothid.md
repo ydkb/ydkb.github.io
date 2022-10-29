@@ -30,38 +30,39 @@ Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Up
 
 打开软件的界面如下：
 
-<div style="width: 500px">
-
-![](assets/hidbootflash.jpg?500)
-</div>
+![|500](assets/hidbootflash.jpg)
 
 步骤如下：
   1. 先按键盘左上角按键不放插入数据线，让键盘进入刷机模式。
   2. 点击 Find Device，会提示检测到设备。
-  3. 点击 Open .hex File，选择要刷的固件。
   4. 勾上 Reboot AVR，然后点击Flash Device，等待刷新完成即可。
 
 
 ## Mac下刷固件的方法
 
-使用上面的源码编译好bootloadHID，或者从群共享里下载“mac下刷固件方式\(暂行\).zip”解压得到bootloadHID，然后，
+在Mac下可以直接使用brew安装bootloadHID，参考 https://formulae.brew.sh/formula/bootloadhid ，
 
-    1  chmod 755 bootloadHID
-    2  brew install libusb-compat
-    3  ./bootloadHID
+```Terminal
+brew install bootloadhid
+```
 
-如果这里没有出错说明可行了，也提示了使用方法
+这个默认版本的，支持不超过30KB的固件。刷新的时候使用如下命令。
 
-要刷固件的时候，使用
+```Terminal
+bootloadHID -r hex路径
+```
 
-    ./bootloadHID -r hex路径
+实际效果如下：
 
-实际效果参考图片。完成是0x7c00就行了，最后出现那个Error可以不用理会。
+![|600](assets/mac_boothid_01.jpg)
 
-<div style="width: 600px">
+某些键盘现在使用的固件占用的是31KB的空间，直接使用brew安装的版本，无法刷新。会出现如下的错误提示。
 
-![](assets/mac_boothid.jpg?600)
-</div>
+![|600](assets/mac_boothid_02.jpg)
+
+这种情况，从 https://github.com/yangdigi/BootHID 下载，编译后，用新编译的bootloadHID来刷新固件即可成功，如下图所示。
+
+![|600](assets/mac_boothid_03.jpg)
 
 
 ## Win下无法正常刷固件时
@@ -70,35 +71,23 @@ Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Up
 
 1.使用zadig (下载地址：http://zadig.akeo.ie )，选择好option里面的list all，然后让键盘进入刷机模式。查看如下USB ID为16C0 05DF的设置，对应的Driver是不是HidUsb。这个设置可能显示的是名字HIDBoot，也可能只是USB输入设备。总之看对应的USB ID是下图这个才行。
 
-<div style="width: 600px">
+![|600](assets/boothid_driver_01.png)
 
-![](assets/boothid_driver_01.png?600)
-
-![](assets/boothid_driver_02.png?600)
-</div>
+![|600](assets/boothid_driver_02.png)
 
 上面两个图都是驱动正常的，如果这里显示的不是HidUSB，比如可能是：
 
-<div style="width: 600px">
-
-![](assets/boothid_driver_04.png?600)
-</div>
+![|600](assets/boothid_driver_04.png)
 
 这个驱动是错的，就必须要卸载了。
 
 2.设备管理器里找到设备，非hid的，一般就显示在通用串行总线或者libusb设备等地方。找到，右键点击，选择卸载设备。
 
-<div style="width: 400px">
-
-![](assets/boothid_driver_05.png?400)
-</div>
+![|400](assets/boothid_driver_05.png)
 
 同时卸载时选中删除设备驱动
 
-<div style="width: 400px">
-
-![](assets/boothid_driver_06.png?400)
-</div>
+![|400](assets/boothid_driver_06.png)
 
 卸载后再去zadig里面查看一下，驱动是否恢复为HidUsb了，如果不是，设备管理器里面刷新一下，继续卸载（比如winusb或libusb驱动安装过多次的情况，就需要多次卸载了，直到卸载干净）。
 
