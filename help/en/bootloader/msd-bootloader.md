@@ -39,10 +39,10 @@ The methods for different keyboards are basically the same. Generally, three ste
 
 ## Reflash firmware in Mac
 
-<html><div class="attention"> 
-<subtitle>VERY IMPORTANT</subtitle>
-<br>Be sure to strictly follow the steps below under Mac, otherwise the reflash may not succeed.
-</div></html>
+> [!ydda: IMPORTANT:]
+> - Be sure to strictly follow the steps below under Mac, otherwise the reflash may not succeed.
+> - This aspect is temporarily not suitable for macOS 13 Ventura, temporarily switch to the following command line method.
+> - macOS 13 may currently have some compatibility issues with various MassStorage Bootloaders. https://github.com/ARMmbed/DAPLink/issues/982
 
 <col_h5>The method of entering the flash mode is the same as above, but the method of copying file to disk is different.</col_h5>
 
@@ -77,21 +77,48 @@ The methods for different keyboards are basically the same. Generally, three ste
 <div style="clear:both;"></div>
 </html>
 
+##### macOS 13 Ventura can use the following methods
+
+For example, the downloaded file is HHKB_BLE.BIN, which is placed in the Downloads directory.
+
+After connecting to the display flash disk, first execute the following command in the terminal, where HHKB_BLE is the name of the flash disk.
+
+```macOS
+diskutil umount /Volumes/HHKB_BLE
+```
+
+The result obtained after execution is `Volume HHKB_BLE on disk4 unmounted`, remember that this is `disk4`, and then execute the following command, note that the disk4 in this article corresponds to the result obtained by the previous command.
+
+```macOS
+sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
+```
+
+After waiting for the command to complete, the reflash is successful. The newer Bootloader will automatically exit the flashing mode, and some need to exit manually. The whole operation process is shown in the figure below.
+
+![|600](assets/msd-bootloader-mac13-01.jpg)
+
 
 
 ## Reflash firmware in Linux
 
-The following method only tested in Ubuntu 19.04. Other Linux versions may be different. Therefore, when you need to reflash, it is recommended to go to windows. That is the easiest way to reflash firmware.
+> [!yddh: HINT:]
+> - The following aspects are provided by netizen tb600211 686294 and I've tested it under Ubuntu 20.04.
+> - Not guaranteed to be available on all Linux distributions. If not, when you need to flash the firmware, use windows to flash it.
 
-This is quite strange. I tested it with Ubuntu 19.04. First of all, you can not directly operate the USB disk like mac. Use the command line as shown in the following figure. Pay attention to the case of the file name. And this command must be run twice. 
+1. The keyboard enters the flash mode, and the firmware is downloaded.
+2. Use the following command to write the firmware, pay attention to the of=/dev/sdb, your system may be different, in my example it is the second disk of my computer, so it is sdb. <br>
+```linux
+sudo dd if=./HHKB_BLE.BIN of=/dev/sdb seek=4
+````
+3. One more command is to be added.
+```linux
+sync
+````
 
-I've tried that if I only ran the command once in Ubuntu 19.04, no success. If there are other changes I will add more information about this.
 
-<div style="width: 600px">
+The content displayed during execution is as shown in the figure below.
 
-![](assets/msd-bootloader-linux01.png?600)
-</div>
-
+![|600](assets/msd-bootloader-linux01.png)
 
 ## If the keyboard repeatedly enters the flash mode
 

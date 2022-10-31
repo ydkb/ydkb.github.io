@@ -23,6 +23,8 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 
 > [!ydda: 重要：]
 > - Mac务必严格按照下面步骤，不然可能刷新不成功。
+> - 此方面暂时不适合 macOS 13 Ventura，暂时换用后面的命令行方式。
+> - macOS 13可能目前与各种MassStorage Bootloader有点兼容问题。
 
 ##### 键盘自身进入刷机的U盘模式方法都是相同的，但Mac下复制文件方法不同。
 
@@ -50,6 +52,26 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 > - 如果在废纸篓里删除后，复制文件时还是提示空间不足，那么退出刷机模式然后再重新进刷机模式，再重新操作。
 
 > +|+> 3
+
+##### macOS 13 Ventura 可使用如下方式
+
+这里举例，下载的文件是 HHKB_BLE.BIN，放在了 Downloads 目录里。
+
+macOS上提示的连接到设备的信息这里就不多讲，连上显示U盘后，先在终端里执行如下命令，其中HHKB_BLE是U盘的名称。
+
+```macOS
+diskutil umount /Volumes/HHKB_BLE
+```
+
+执行后得到的结果是 `Volume HHKB_BLE on disk4 unmounted`，记住这里是`disk4`，然后接下来执行如下命令，注意这条里的disk4与上一条命令的得到的结果对应。
+
+```macOS
+sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
+```
+
+等待命令完成后就刷新成功。比较新的Bootloader会自动退出刷机模式，有的则需要手动退出。整个操作过程如下图。
+
+![|600](assets/msd-bootloader-mac13-01.jpg)
 
 
 ## Linux下刷机方法
