@@ -23,8 +23,8 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 
 > [!ydda: 重要：]
 > - Mac务必严格按照下面步骤，不然可能刷新不成功。
-> - 此方面暂时不适合 macOS 13 Ventura，暂时换用后面的命令行方式。
-> - macOS 13可能目前与各种MassStorage Bootloader有点兼容问题。https://github.com/ARMmbed/DAPLink/issues/982
+> - 直接从Finder操作的方法可能不适合 macOS 13 Ventura，暂时换用后面的命令行方式。
+> - 原因可能是macOS 13目前与各种MassStorage Bootloader有点兼容问题。https://github.com/ARMmbed/DAPLink/issues/982
 
 ##### 键盘自身进入刷机的U盘模式方法都是相同的，但Mac下复制文件方法不同。
 
