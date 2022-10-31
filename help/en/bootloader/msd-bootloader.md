@@ -120,6 +120,11 @@ The content displayed during execution is as shown in the figure below.
 
 ![|600](assets/msd-bootloader-linux01.png)
 
+The `/dev/sdb` above can be viewed with the `lsblk` command.
+
+![|600](assets/msd-bootloader-linux02.jpg)
+
+
 ## If the keyboard repeatedly enters the flash mode
 
 If this problem occurs, it is probably because the downloaded bin file is incorrect. You can open a bin file with a txt file editor and see if the content is empty. Or use a hexadecimal viewer to see if the front of the file is all FFFF.

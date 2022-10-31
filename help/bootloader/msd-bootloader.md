@@ -81,7 +81,7 @@ sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
 > - 不保证所有Linux版本下均可用。如不行，在需要刷固件的时候，用win刷新。
 
 1. 键盘进入刷机模式，同时下载好固件
-2. 使用下面命令写入固件，注意其中的 of=/dev/sdb，可能你的系统会有所不同，在我的示例里它是我电脑的第二个磁盘，所以是sdb。<br>
+2. 使用下面命令写入固件，注意其中的 `of=/dev/sdb`，可能你的系统会有所不同，在我的示例里它是我电脑的第二个磁盘，所以是sdb。<br>
 ```linux
 sudo dd if=./HHKB_BLE.BIN of=/dev/sdb seek=4
 ```
@@ -94,6 +94,9 @@ sync
 
 ![|600](assets/msd-bootloader-linux01.png)
 
+上面的 `/dev/sdb`，可以使用 `lsblk` 命令查看。
+
+![|600](assets/msd-bootloader-linux02.jpg)
 
 ## 如果反复进入U盘模式
 
