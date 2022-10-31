@@ -129,7 +129,7 @@ If this keyboard is paired on the computer, delete it. Delete it to be able to s
 
 Short the pin Factory Reset and the pin GND as shown below. While keeping them shorted, plug in the USB cable. After a few seconds, the Bluetooth name should revert to Adafruit Bluefruit LE from the Bluetooth searching interface. At this time, you don’t need to keep the shorting. Unplug the USB cable and plug it in again. The name will change back to the default Bluetooth keyboard name. Reset is complete.
 
-Added: some of the keyboard next to the Bluetooth module left two holes, and there is text marked with **BLE Reset**, you can also direct the two short holes. 
+Added: some of the keyboard next to the Bluetooth module left two holes, and there is text marked with  <b><u>BLE Reset</u></b>, you can also direct the two short holes. Note not <b><u>Reset</u></b>.
 
 ![](assets/reset-ble-07.jpg)
 

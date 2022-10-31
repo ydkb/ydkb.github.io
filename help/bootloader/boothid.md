@@ -35,7 +35,7 @@ Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Up
 步骤如下：
   1. 先按键盘左上角按键不放插入数据线，让键盘进入刷机模式。
   2. 点击 Find Device，会提示检测到设备。
-  4. 勾上 Reboot AVR，然后点击Flash Device，等待刷新完成即可。
+  3. 勾上 Reboot AVR，然后点击Flash Device，等待刷新完成即可。
 
 
 ## Mac下刷固件的方法
