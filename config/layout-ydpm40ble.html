@@ -77,11 +77,11 @@
         <div class="mykeycap2 row300 col775 w125">Left</div>
     </div>
 </div>
-<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x7400"></div>
+
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li id="code-0xfa01" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
+    <li id="code-0xf301" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
     <li id="code-0xf201" title="<kt>Esc</kt>键，和<kt>LShift</kt>一起按时为<kt>~</kt>">~(L)<br>Esc</li>
-    <li id="code-0xf801" title="<kt>Esc</kt>键，和<kt>RShift</kt>一起按时为<kt>~</kt>">~(R)<br>Esc</li>
+    <li id="code-0xf101" title="<kt>Esc</kt>键，和<kt>RShift</kt>一起按时为<kt>~</kt>">~(R)<br>Esc</li>
     <li id="code-0xf002" title="单按清除键盘按键状态，和<kt>左Ctrl</kt>一起按时为重启键盘，此时若按住左上角键不放则进入刷机模式">Reset</li>
     <li id="code-0xf003" title="锁win">Win<br>Lock</li>
     <li id="code-0xf00c" title="发送按键设置到ydkb.io。这是一个测试功能，使用说明见帮助">Send<br>Keymap</li>
@@ -95,14 +95,17 @@
     <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
 </div>
+
+<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000"></div>
+
 <div id="kb_ledmap"  style="display: none">
     <li id="kb_ledmap-0" value="17" title="CAPS灯">CAPS LED</li>
     <li id="kb_ledmap-1" value="0" class="can_disable" title="YDPM40BLE仅支持设置为未配置或禁用，不能作为指示">BACKLIGHT</li>
     <li id="kb_ledmap-2" value="0" class="rgb_color can_disable" title="RGB底灯">RGB</li>
 </div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TXW4cMQyDL8QHS7b+zrLI/a9RcnaLNGmCpEXzUCAwoN2ZoWj5s3S73WwtWOXxK5riPjgIJAqNgVHA9xRs2IHFE26WFMIaNvAFN7jDN/zAA57wgjd8sBe2MWM79gatd2AndmE39iAtJ5GxmJdeNDsWFjgsgjFxitmncQaxEIZwxEawxEAkohCNoNOiGT2Qmxl5aIqkdSEbOaiFMpSjNuqgAsUjFqpRwwxnqW1oxo0+6EAnmhAaPZiFMYxjNuZghIGVT2FISZhU+nAv40FtEcYq8WCMK+YV64p9RcGrLb5CZGIsyKJMBEZItvUrT2rlJi85yYcu5t3OfZ2nd4KmzY1+jxXbSU6R9YFXwJdZLai6AVEVYyaF5Pcb0Y1tPR1dFJNDV6gXcbdVqXhjreeNnzW8wTfF79s8r0yru4r/+orrffXHfp9QiJ86+1rsj7Sj0WD3GZtO0dVipp67jvcrvwf0UUup6DMiVvF4yHerUEvXizpea9T9r0j+k/P+vUJkzktuL7/7tPjNNZFnhETTU48BamHjUHG0NGnnbsleSz+lp5+8OGrXl/yg4Ok3K+bQdr0Wf+rcGmoN/9fy/Z3c1+zz/yi+iXwT+Sbyx0SefgABm9OdzgkAAA==" title="直列">直列</li>
-    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+2TXW4bMQyELzQPIiXx5yxG7n+Nzuw6MZLaTRo0DwUMGVxLokbkJ/JyudgYsIzlhzXZubDgG55IFBpGF+7QZcIWbL/gYokNK1jDB9zgDp/whYDzx+Xi2sYcmMYD0zEnqD25FpiJWZiNsOhA7EHf8KTYsm0bi1HQBlby9Cqsxh7Yhu3YDCSweZm1pgymsCk2uEIZxOSh4D5FqZ6IQjRyIA3pyIlcyI0MJPMsZPOEM9oyFO1ELdRGBYoYCtXogTa0oyd6oQWCwXeiyUmgFH3zLmOuNshjJJHI7sPGYfOwdVjxyynComSiLMziTApGTjb1lSZ9pSYtKUmHKuZVznud2TtZU+ZCvevY0/c54wvwE1liqgcQVCHmgX04cuF8FD3a1JGlt9IO1w6NfcoqVNwZ43bxzYePeNf5scxtRFieXvxXhx2PvT/X+4KH+LG8zynrg3XDHNpYdLKu+jIV3JHbDeAb8VY9KeLVwpX7OomHIZw1/KcwVf0fMP6TZL/vEbbYo++gvd/3ZqWxQY92XC0kap28dk8JGzuKfaU2W6ckazV8pWavvNhnx058EnDX3YjZsZUfnb+Utzpanf+zfH8n9zP3/D8eTyJPIk8if03k5RfJ+VuyzwkAAA==" title="直列Z右移">直列Z右移</li>
-    <li id="kb-preset_keymap-2" value-keymap="H4sIAAAAAAAAA+2TXW7cMAyELzQPIiXx5yyL3P8anZHTLpImTRo0DwUWNmhLokbkJ/J2u5kZLGP5sed/Liz4hicShYYNyIsuE7Zg+wk3S2xYwRo+4AZ3+IQvBJwvp4tzG3NgGjdMx5yg9uRcYCZmYTbCogOxB33Dk2LLtm0sRkEbWMndq7Aae2AbtmMzkMDmYdYaMpjCptjgDGUQk5uC6xSleiIK0ciBNKQjJ3IhNzKQzLOQzR3OaMtQtBO1UBsVKGIoVKMH2tCOnuiFFggG34kmJ4FS9M2zjLnaII+RRCK7j41j89g6VvxyirAomSgLsziTgpGTTX2lSV+pSUtK0qGKeZXzXGf2TtaUuVHv+dnT9zXiDfATWWKqCxBUIeaGfRw5cV2KLm1qy9JdaYVzR2NfsgoVbzzjfvDdh5f4pvP7MvcnwvLy4l8dO973/ljvEx7ix/K+hqwP1g1zaGPRybrqy1RwJ7c7wF/EW/WkiFcLV+7nQbwbwlXDfwpT1f8K4z9J9useYYs9+gLay3VvVhob9LTjaiFR6+Rz95SwsaPYV2qzdUmyVsNXavSTF/vsrMQHAXe9GTE7tvK186fyVker87+X7+/kvuec/8fjQeRB5EHkr4k8/QBSkvY5zwkAAA==" title="斜列">斜列</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TXW4bMQyELzQPS0r8O4uR+1+jM2sXblK7TYvmoYAhgPbujkbUR/JyudhxwCq3n9EU18ZGIFFoDIwCvqdgwTYs3nCxpBDWsIEfcIM7fME3POAJL3jDB+vAMu5YjrVA6xVYiVVYjTVIy0nkcn5NL5ptCwtsJsGY2MXdu7EHcSAM4YiFYIqBSEQhGkGng2b0oBl35EbyDrQuZCMHdaAM5aiF2qhA8YqFatRwhzPVNjTjQm90oBNNCI0ezIExjGMWZmOEgZlPYUhJmJT68CzjVewgjKPEgzHOmGesM/YZBa+W+AqRibEgizIRGCHZ0q88qZWbvOQkH7qYdzvPdd7eCZo2F/rdViwnOUXmB5aAL7NaUFUBURVjbgrJrxVRxZaetgrFzaES6gV57nB9O9PFg3XcD79rWMWH4uc295VpdVXxX5/xeK7+vd8nFGKo7j4XeyRtazzYgcbGU3S1manvzuv9yPAGftRWSnpPyCVuD/k0C7V1vcvjo0YT8IHkP7nv3ytEZr/n9v67T4vfnFO5R0g0QXUbohY2DhbHS9O2r5bst/RdevrOCyfFXyc7/VDCoe36KP7UnTXUGv6vZfszta855/9RvIi8iLyI/DGRt2/tmQDzzgkAAA==" title="直列">直列</li>
+    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+2TXW4bMQyELzQPIiXx5yxG7n+Nzuw6MZLaTRo0DwUMGVxLokbUR/JyudgYsIzlhzXZubDgG55IFBpGF+7QZcIWbL/gYokNK1jDB9zgDp/whYDzx+Xi2sYcmMYD0zEnqD25FpiJWZiNsOhATOdueFJs2baNxShoAyt5ehVWYw9sw3ZsBhLYvMxaUwZT2BQbXKEM9XgouL8RVE9EIRo5kIZ05EQu5EYGku8sZPOEM9oyFO1ELdRGBYoYCtXogTa0oyd6oQWCwXeiyUmgFH3zLuNrbJDHSCKR3YeNw+Zh67Dil1OERclEWZjFmRSMnGzqK036Sk1aUpIOVcyrnPc6X+9kTZkL9a5jT9/njBngJ7LEVAkQVCHmgX04cuFMipI2dWQpV9rhGsGuzRwrHA2Fiztj3C6/+TCRd50fy9xGhOXpxX912PHY+3O9L3iIIUv8nLJGWDvn/xBEFtvxphu8N9qtWlKkq4Up93USD68+6/dP4anyP+D7J4/8vkfYYn++g/V+35tVxuY8WnG1kKht8to5JWzsJvaUWmydkqzT8JWavfJijx078UnAXXcjZrdWfnT+0rvVzer6n+X7O7mfuef/8XgSeRJ5EvlrIi+/AKx50KDLCQAA" title="直列Z右移">直列Z右移</li>
+    <li id="kb-preset_keymap-2" value-keymap="H4sIAAAAAAAAA+2TXW4bMQyELzQPIiXx5yxG7n+Nzuw6MZLaTRo0DwUMGfRKokbUR/JyuZgZLGP5YY/vubDgG55IFBo2IC+6TNiC7RdcLLFhBWv4gBvc4RO+EHD+uFxc25gD03hgOuYEtSfXAjMxC7MRFh2I6dwNT4ot27axGAVtYCVPr8Jq7IFt2I7NQAKbl1lrymAKm2KDK5ShHg8F9zeC6okoRCMH0pCOnMiF3MhA8p2FbJ5wRluGop2ohdqoQBFDoRo90IZ29EQvtEAw+E40OQmUom/eZXyNDfIYSSSy+7Bx2DxsHVb8coqwKJkoC7M4k4KRk039S5O+UpOWlKRDFfMq573O1ztZU+ZCvevY0/c5Ywb4F1liqgQIqhDzwD4cuXAmRUmbOrKUK+1wjWDXZo4VjobCxZ0xbpfffJjIu86PZW4jwvL04lcddjz2/lzvCx5iyBI/p6wR1s75HYLIYjvedIP3RrtVS4p0tTDlvk7i4dVn/f4pPFX+B3z/5JHf9whb7M93sN7ve7PK2JxHK64WErVNXjunhI3dxJ5Si61TknUavlKzV17ssWMnPgm4627E7NbKj85fere6WV3/s3x/J/cz9/w/Hk8iTyJPIn9N5OUXT4htzssJAAA=" title="斜列">斜列</li>
 </div>
 <div id="kb-changelog-url" href="ydpm40ble" style="display: none;"></div>
