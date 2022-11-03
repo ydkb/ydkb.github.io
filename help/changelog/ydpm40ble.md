@@ -7,6 +7,7 @@
 - 『+』修饰键组合键的一点点增强，方便实现类似<kbd>Ctrl+H J K L</kbd>或<kbd>Ctrl+N B P F</kbd>为方向键的操作，具体见说明 [修饰键组合键](edit-keymap/mods-key.md)
 - 「^」 提高 [Esc 与 \`\~](/features/tricky-esc) 功能在单独按触发 Esc 时的响应速度。
 - 「#」修复问题：最新macOS下，键盘进入节能时电量未正确刷新，导致系统无显示。
+- 「+」在1.2版的PCB（黑色，不支持alps轴的版本），不用手动短接硬件即可重置蓝牙。
 - 「+」减小固件，在macOS下使用brew安装的bootloadhid可以直接更新固件。
 
 ##### 2021-03-02 (DL32)
