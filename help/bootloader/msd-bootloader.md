@@ -23,7 +23,7 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 
 > [!ydda: 重要：]
 > - Mac务必严格按照下面步骤，不然可能刷新不成功。
-> - 直接从Finder操作的方法可能不适合 macOS 13 Ventura，暂时换用后面的命令行方式。
+> - 从Finder操作的方法可能不适合 macOS 13 Ventura (错误代码100093)，暂时可用命令行方式。
 > - 原因可能是macOS 13目前与各种MassStorage Bootloader有点兼容问题。https://github.com/ARMmbed/DAPLink/issues/982
 
 ##### 键盘自身进入刷机的U盘模式方法都是相同的，但Mac下复制文件方法不同。
@@ -53,7 +53,7 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 
 > +|+> 3
 
-##### macOS 13 Ventura 可使用如下方式
+##### macOS 13 Ventura 可使用如下命令行方式
 
 这里举例，下载的文件是 HHKB_BLE.BIN，放在了 Downloads 目录里。
 

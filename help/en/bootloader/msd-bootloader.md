@@ -41,7 +41,7 @@ The methods for different keyboards are basically the same. Generally, three ste
 
 > [!ydda: IMPORTANT:]
 > - Be sure to strictly follow the steps below under Mac, otherwise the reflash may not succeed.
-> - The method of operating directly from the Finder may not be suitable for macOS 13 Ventura, temporarily switch to the following command line method.
+> - The method of operating directly from the Finder may not be suitable for macOS 13 Ventura(error code 100093), temporarily switch to the following command line method.
 > - The reason may be that macOS 13 currently has some compatibility issues with various MassStorage Bootloaders. https://github.com/ARMmbed/DAPLink/issues/982
 
 <col_h5>The method of entering the flash mode is the same as above, but the method of copying file to disk is different.</col_h5>
