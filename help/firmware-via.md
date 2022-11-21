@@ -57,7 +57,9 @@ VIA的固件功能随QMK，所以本帮助文档里面的大部分内容将无�
 ### 2 连接VIA并导入JSON文件
 USB连接时，可以从USB设备名称确认是否已经成功刷新支持VIA的固件。
 
-VIA的安装这里略过，下载和使用可以参看官方网站： https://www.caniusevia.com/
+VIA的本地软件下载见: https://github.com/the-via/releases/releases
+
+它的使用可以参看官方网站： https://www.caniusevia.com/
 
 打开 VIA 时，请使用 `File - Import Keymap`， 导入在第1步下载的zip里面的JSON文件（文件名为 `键盘名_json_via`的那个。
 
