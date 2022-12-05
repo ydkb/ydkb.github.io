@@ -77,7 +77,7 @@ The methods for different keyboards are basically the same. Generally, three ste
 <div style="clear:both;"></div>
 </html>
 
-##### macOS 13 Ventura can use the following methods
+##### macOS 13 Ventura can use the following methods(Also works on macOS 12)
 
 For example, the downloaded file is HHKB_BLE.BIN, which is placed in the Downloads directory.
 
@@ -91,6 +91,11 @@ The result obtained after execution is `Volume HHKB_BLE on disk4 unmounted`, rem
 
 ```macOS
 sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
+```
+The `./HHKB_BLE.BIN` above is the relative path used because I run the command in the Download directory. You can also use the absolute path as follows, instead of typing it manually, after the command reaches `if=`, directly drag the BIN file to the terminal command window, and it will automatically obtain the absolute path of the BIN file.
+
+```macOS
+sudo dd if=/Users/yang/Dowloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
 ```
 
 After waiting for the command to complete, the reflash is successful. The newer Bootloader will automatically exit the flashing mode, and some need to exit manually. The whole operation process is shown in the figure below.
@@ -106,10 +111,10 @@ After waiting for the command to complete, the reflash is successful. The newer 
 > - Not guaranteed to be available on all Linux distributions. If not, when you need to flash the firmware, use windows to flash it.
 
 1. The keyboard enters the flash mode, and the firmware is downloaded.
-2. Use the following command to write the firmware, pay attention to the of=/dev/sdb, your system may be different, in my example it is the second disk of my computer, so it is sdb. <br>
+2. Use the following command to write the firmware, pay attention to the of=/dev/sdb, your system may be different, in my example it is the second disk of my computer, so it is sdb. `./HHKB_BLE.BIN` is a relative path, you can also use the absolute path of the BIN file.<br>
 ```linux
 sudo dd if=./HHKB_BLE.BIN of=/dev/sdb seek=4
-````
+```
 3. One more command is to be added.
 ```linux
 sync

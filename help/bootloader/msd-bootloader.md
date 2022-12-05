@@ -53,7 +53,7 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 
 > +|+> 3
 
-##### macOS 13 Ventura 可使用如下命令行方式
+##### macOS 13 Ventura 可使用如下命令行方式(也适用于macOS 12)
 
 这里举例，下载的文件是 HHKB_BLE.BIN，放在了 Downloads 目录里。
 
@@ -69,6 +69,12 @@ diskutil umount /Volumes/HHKB_BLE
 sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
 ```
 
+上面的`./HHKB_BLE.BIN`是 因为我在Download目录里运行的命令，所以使用的相对路径。也可以如下使用绝对路径，不用完全手打，在命令打到`if=`后，直接把BIN文件拖到终端命令窗口，它会自动获取该BIN文件的绝对路径。
+
+```macOS
+sudo dd if=/Users/yang/Dowloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
+```
+
 等待命令完成后就刷新成功。比较新的Bootloader会自动退出刷机模式，有的则需要手动退出。整个操作过程如下图。
 
 ![|600](assets/msd-bootloader-mac13-01.jpg)
@@ -81,7 +87,7 @@ sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
 > - 不保证所有Linux版本下均可用。如不行，在需要刷固件的时候，用win刷新。
 
 1. 键盘进入刷机模式，同时下载好固件
-2. 使用下面命令写入固件，注意其中的 `of=/dev/sdb`，可能你的系统会有所不同，在我的示例里它是我电脑的第二个磁盘，所以是sdb。<br>
+2. 使用下面命令写入固件，注意其中的 `of=/dev/sdb`，可能你的系统会有所不同，在我的示例里它是我电脑的第二个磁盘，所以是sdb。`./HHKB_BLE.BIN`是相对路径，你也可以使用BIN文件的绝对路径。<br>
 ```linux
 sudo dd if=./HHKB_BLE.BIN of=/dev/sdb seek=4
 ```
