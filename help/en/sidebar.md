@@ -6,7 +6,7 @@
 * [BLE Series (overview)](en/ble-series)
   * Device Pairing
     * [Win7 Pairing](en/ble-series/win7)
-    * [Win10 Pairing](en/ble-series/win10-pairing)
+    * [Windows Pairing](ble-series/windows-pairing)
     * [macOS Pairing](en/ble-series/macos-pairing)
     * [Linux Pairing](en/ble-series/linux-pairing)
     * [iOS Pairing](en/ble-series/ios-paring)

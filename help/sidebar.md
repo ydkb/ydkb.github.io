@@ -6,7 +6,7 @@
 * [BLE 系列说明(总览)](ble-series.md)
   * 蓝牙配对
     * [Win7 配对](ble-series/win7)
-    * [Win10 配对](ble-series/win10-pairing)
+    * [Windows 配对](ble-series/windows-pairing)
     * [macOS 配对](ble-series/macos-pairing)
     * [Linux 配对](ble-series/linux-pairing)
     * [iOS/iPadOS 配对](ble-series/ios-paring)
