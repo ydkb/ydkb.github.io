@@ -61,9 +61,13 @@ VIA的本地软件下载见: https://github.com/the-via/releases/releases
 
 它的使用可以参看官方网站： https://www.caniusevia.com/
 
-打开 VIA 时，请使用 `File - Import Keymap`， 导入在第1步下载的zip里面的JSON文件（文件名为 `键盘名_json_via`的那个。
+如果是使用VIA 1.3.1版本，打开 VIA 时，请使用 `File - Import Keymap`， 导入在第1步下载的zip里面的JSON文件（文件名为 `键盘名_json_via`的那个。
 
 之后就可以使用VIA设置按键了。
+
+如果是高于VIA 2.0.4版本，或者是在线版[https://usevia.app/](https://usevia.app/)，请先在 `SETTINGS` 里打开 `Show Design Tab`，然后在 `DESIGN` 里关闭 `Use V3 definitions(via/next)`，这时再用 `Load` 载入json文件，或者把json文件直接拖到窗口的上传区域里。
+
+![|700](assets/via-ydkb-v2.jpg)
 
 
 ## 额外说明
