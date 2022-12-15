@@ -65,10 +65,11 @@ VIA的本地软件下载见: https://github.com/the-via/releases/releases
 
 之后就可以使用VIA设置按键了。
 
-如果是高于VIA 2.0.4版本，或者是在线版[https://usevia.app/](https://usevia.app/)，请先在 `SETTINGS` 里打开 `Show Design Tab`，然后在 `DESIGN` 里关闭 `Use V3 definitions(via/next)`，这时再用 `Load` 载入json文件，或者把json文件直接拖到窗口的上传区域里。
+如果是高于VIA 2.0.4版本，或者是在线版[https://usevia.app/](https://usevia.app/)，请先在 `SETTINGS` 里打开 `Show Design Tab`，然后在 `DESIGN` 里，根据页面上的显示，选择关闭 `Use V3 definitions(via/next)`或者是开启`Use V2 definitios(deprecated)`，以确保它支持V2的json文件。这时再用 `Load` 载入json文件，或者把json文件直接拖到窗口的上传区域里。
 
 ![|700](assets/via-ydkb-v2.jpg)
-
+<br>
+![|700](assets/via-ydkb-v2e.png)
 
 ## 额外说明
 
