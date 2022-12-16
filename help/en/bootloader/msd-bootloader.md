@@ -4,21 +4,11 @@ It is based on lufa msd bottloader.
 
 Note: The USB disk drive mode here refers to the keyboard itself becoming a disk drive, not means that you need an additional USB disk to reflash the keyboard's firmware.
 
-The following keyboards supported by ydkb.io use this flash mode.
+Many keyboards supported by ydkb.io use this method. The advantage of this method is that firmware refresh and reading can be completed without additional software.
 
-| the keyboards with lufa msd bootloader ||||||
-| --- |||||| 
-|1800mini|Mater98|Sairo64|X-8086K|
-|Duang60|Just60|Just66|Just660|Just68|Pearly|
-|ESWN|AKB48|Cod67|Filco104c|
-|HHKB BLE|BLE660C|
-|U2U Pro|UDock|
-
-<html><div class="hint"> 
-<subtitle>HINT:</subtitle>
-<ul><li>There are two files, "keyboard_name.BIN" and "EEPROM.BIN", in the disk drive of flash mode. They are "virtual" files that are mapped to the contents of the FLASH and EEPROM of the keyboard controller. </li>
-<li>Each time when re-entering the flash mode, their date is the same. Do not use the file date to determine whether the reflash is successful.</li></ul>
-</div></html>
+> [!yddh: HINT:]
+> - There are two files, "keyboard_name.BIN" and "EEPROM.BIN", in the disk drive of flash mode. They are "virtual" files that are mapped to the contents of the FLASH and EEPROM of the keyboard controller.
+> - Each time when re-entering the flash mode, their date is the same. Do not use the file date to determine whether the reflash is successful.
 
 
 ## Handling of reflash errors
@@ -40,44 +30,15 @@ The methods for different keyboards are basically the same. Generally, three ste
 ## Reflash firmware in Mac
 
 > [!ydda: IMPORTANT:]
-> - Be sure to strictly follow the steps below under Mac, otherwise the reflash may not succeed.
 > - The method of operating directly from the Finder may not be suitable for macOS 13 Ventura(error code 100093), temporarily switch to the following command line method.
 > - The reason may be that macOS 13 currently has some compatibility issues with various MassStorage Bootloaders. https://github.com/ARMmbed/DAPLink/issues/982
-
-<col_h5>The method of entering the flash mode is the same as above, but the method of copying file to disk is different.</col_h5>
-
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_list>1 First delete the "keyboard_name.bin" file in the USB disk drive.</col_list>
-
-![](assets/msd-bootloader-mac01.png?)
-
-<col_list>2 Delete it in the trash again (this step is very important for Mac).</col_list>
-
-![](assets/msd-bootloader-mac02.png?)
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_list>3 Keep the newly downloaded bin with the same file name as the previously deleted bin file, and then copy it to the disk drive.</col_list>
-
-![](assets/msd-bootloader-mac03.png?)
-
-<col_list>4 After the file copying is completed, right-click to eject the USB disk drive or press Esc to exit.</col_list>
-
-<col_list>5 Some of the newer bootloaders will automatically exit after the file is copied. At this time, it is normal for the Mac to prompt that it has not exited correctly.</col_list>
-
-<html><div class="hint"> 
-<subtitle>HINT</subtitle>
-<br>If after the deletion in the Trash there is still insufficient space, exit the flash mode and re-enter the flash mode, and then operate from step 1 again.
-</div></html>
-
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
+> - 2022.12.16 After updating macOS 13.1, although the operation in Finder no longer reports an error, but the file is not completely written, please still use the command line to refresh the firmware.
 
 ##### macOS 13 Ventura can use the following methods(Also works on macOS 12)
+
+> [!yddh: Reminder:]
+> - As of 2022.12.16, macOS 13.1 supports command-line way to correctly reflash the firmware.
+> - If there is a new system update, this part of description will be updated.
 
 For example, the downloaded file is HHKB_BLE.BIN, which is placed in the Downloads directory.
 
@@ -102,6 +63,35 @@ After waiting for the command to complete, the reflash is successful. The newer 
 
 ![|600](assets/msd-bootloader-mac13-01.jpg)
 
+##### macOS 12 Flash firmware using Finder actions
+
+> [!ydda: Important:]
+> - The following method via Finder is only available for macOS 12. For macOS 13, use the command line 
+
+The method of entering the flash mode is the same as above, but the method of copying file to disk is different.
+
+```ad-yddcol0
+1. First delete the "keyboard_name.bin" file in the USB disk drive.
+
+![](assets/msd-bootloader-mac01.png)
+
+2. Delete it in the trash again (this step is very important for Mac).
+
+![](assets/msd-bootloader-mac02.png)
+```
+
+```ad-yddcol1
+3. Keep the newly downloaded bin with the same file name as the previously deleted bin file, and then copy it to the disk drive.
+
+![](assets/msd-bootloader-mac03.png)
+
+4. After the file copying is completed, right-click to eject the USB disk drive or press Esc to exit.
+
+5. Some of the newer bootloaders will automatically exit after the file is copied. At this time, it is normal for the Mac to prompt that it has not exited correctly.
+
+> [!yddh: HINT：]
+> - If after the deletion in the Trash there is still insufficient space, exit the flash mode and re-enter the flash mode, and then operate from step 1 again.
+```
 
 
 ## Reflash firmware in Linux
