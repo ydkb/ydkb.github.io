@@ -1,12 +1,14 @@
 * [Introduction](en/README)
 * [YDKB Firmware update](en/firmware)
-* [VIA Firmware update](en/firmware-via)
+* [Other(VIA/Vial) Firmware update](en/other-firmware)
+  * [VIA Firmware update](en/other-firmware/via.md)
+  * [Vial VIA Firmware update](en/other-firmware/vial.md) 
 * [Default Command Keys](en/magic-commands)
 * [Bluetooth Signal Optimization](en/use-bluetooth)
 * [BLE Series (overview)](en/ble-series)
   * Device Pairing
     * [Win7 Pairing](en/ble-series/win7)
-    * [Windows Pairing](ble-series/windows-pairing)
+    * [Windows Pairing](en/ble-series/windows-pairing)
     * [macOS Pairing](en/ble-series/macos-pairing)
     * [Linux Pairing](en/ble-series/linux-pairing)
     * [iOS Pairing](en/ble-series/ios-paring)
@@ -65,8 +67,9 @@
   * --- YDKB(BLE Series) ---
   * [BLUP / BLE40](en/keyboards/blup)
   * [Chicory](en/keyboards/chicory)
-  * [Just Keyboards](en/keyboards/just)
+  * [Just68 / Just66 / Just660](en/keyboards/just)
   * [YD60BLE / Just60](en/keyboards/yd60ble)
+  * [YD67BLE](en/keyboards/yd67ble)
   * --- YDKB(Other) ---
   * [ESWN](en/keyboards/eswn)
   * [STM60](en/keyboards/stm60)
