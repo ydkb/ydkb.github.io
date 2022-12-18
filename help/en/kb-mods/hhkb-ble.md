@@ -1,16 +1,16 @@
 # HHKB BLE Mod
 
-|PCB | YANG |
+|PCB??30% | YANG |
 |:--- |:--- |
 |Firmware | YANG |
+|Hardware | YANG |
 |Keymap Editor | YANG |
 |Solder | YANG / 兰某人 |
 |Test | YANG / 兰某人 |
 |Seller | YANG / KBDFans |
 
-```yddcode
-0046 006F 0072 0020 0073 0061 006C 0065 003A 0020 0068 0074 0074 0070 0073 003A 002F 002F 0069 0074 0065 006D 002E 0074 0061 006F 0062 0061 006F 002E 0063 006F 006D 002F 0069 0074 0065 006D 002E 0068 0074 006D 003F 0069 0064 003D 0035 0039 0030 0032 0032 0031 0034 0030 0039 0034 0038 0035 
-```
+In stock: https://item.taobao.com/item.htm?id=590221409485
+
 
 For installation, please refer to the link above.
 
