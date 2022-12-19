@@ -25,6 +25,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 
 | 键盘 | 下载地址 | 补充说明 |
 | ---- | ---- | --- |
+| Duang60 v2 | [Vial固件(2022-12-19_DMCJ)](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | |
 | Kunlun | [Vial固件(2022-12-15_DMCF)](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore') | |
 | Mountain | [Vial固件(2022-11-15_DMBF)](other-firmware/vial/ydkb_mountain_vial.zip ':ignore') | |
 | YD67BLE | [Vial固件 (2022-12-15_DMCF)](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | |
