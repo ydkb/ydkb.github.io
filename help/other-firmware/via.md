@@ -27,7 +27,7 @@ VIA的固件功能，所以本帮助文档里面的大部分内容将无效。VI
 | BLE660C/BLE980C | [VIA固件和JSON文件 (2022-04-28_DM4S)](other-firmware/via/ydkb_ble660c_980c_via.zip ':ignore') | LAYOUTS里选择660c或980c |
 | HHKB BLE | [VIA固件和JSON文件 (2022-04-28_DM4S)](other-firmware/via/ydkb_hhkb_ble_via.zip ':ignore') | LAYOUTS里选择US/JP布局|
 | Duang60 v1 | [VIA固件和JSON文件 (2022-06-29_DM6T)](other-firmware/via/ydkb_duang60v1_via.zip ':ignore') | |
-| Duang60 v2 | [VIA固件和JSON文件 (2022-12-08_DMC8)](other-firmware/via/ydkb_duang60v2_via.zip ':ignore') | |
+| Duang60 v2 | [VIA固件和JSON文件 (2022-12-19_DMCJ)](other-firmware/via/ydkb_duang60v2_via.zip ':ignore') | |
 | Kunlun | [VIA固件和JSON文件(2022-11-09_DMB9)](other-firmware/via/ydkb_kunlun_via.zip ':ignore') | |
 | Louise | [VIA固件和JSON文件(2022-06-29_DM6T)](other-firmware/via/ydkb_louise_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件(2022-03-29_DM3T)](other-firmware/via/ydkb_mountain_via.zip ':ignore') | |
