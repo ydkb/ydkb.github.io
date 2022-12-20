@@ -29,7 +29,7 @@ VIA的固件功能，所以本帮助文档里面的大部分内容将无效。VI
 | Duang60 v1 | [VIA固件和JSON文件 (2022-06-29_DM6T)](other-firmware/via/ydkb_duang60v1_via.zip ':ignore') | |
 | Duang60 v2 | [VIA固件和JSON文件 (2022-12-19_DMCJ)](other-firmware/via/ydkb_duang60v2_via.zip ':ignore') | |
 | Kunlun | [VIA固件和JSON文件(2022-11-09_DMB9)](other-firmware/via/ydkb_kunlun_via.zip ':ignore') | |
-| Louise | [VIA固件和JSON文件(2022-06-29_DM6T)](other-firmware/via/ydkb_louise_via.zip ':ignore') | |
+| Louise | [VIA固件和JSON文件(2022-12-16_DMCG)](other-firmware/via/ydkb_louise_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件(2022-03-29_DM3T)](other-firmware/via/ydkb_mountain_via.zip ':ignore') | |
 | YD67BLE | [VIA固件和JSON文件 (2022-12-08_DMC8)](other-firmware/via/ydkb_yd67ble_via.zip ':ignore') | |
 
