@@ -33,6 +33,8 @@ VIA的固件功能，所以本帮助文档里面的大部分内容将无效。VI
 | Mountain | [VIA固件和JSON文件(2022-03-29_DM3T)](other-firmware/via/ydkb_mountain_via.zip ':ignore') | |
 | YD67BLE | [VIA固件和JSON文件 (2022-12-08_DMC8)](other-firmware/via/ydkb_yd67ble_via.zip ':ignore') | |
 
+40%类的键盘，更推荐尝试ydkb.io的固件。我用40较多，ydkb的固件针对40的使用有更多的小优化。
+
 ### 2 连接VIA并导入JSON文件
 USB连接时，可以从USB设备名称确认是否已经成功刷新支持VIA的固件。
 
