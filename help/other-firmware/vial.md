@@ -27,10 +27,10 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | ---- | ---- | --- |
 | BLE660C/BLE980C | [Vial固件(2022-12-21_DMCL)](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore') | LAYOUTS里选择660c或980c |
 | HHKB BLE | [Vial固件(2022-12-21_DMCL)](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') | LAYOUTS里选择US/JP布局 |
-| Duang60 v1 | [Vial固件(2022-12-20_DMCK)](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | 无内置keymap，注意压缩包内说明 |
+| Duang60 v1 | [Vial固件(2022-12-22_DMCM)](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | |
 | Duang60 v2 | [Vial固件(2022-12-19_DMCJ)](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | |
 | Kunlun | [Vial固件(2022-12-15_DMCF)](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore') | |
-| Louise | [Vial固件(2022-12-16_DMCG)](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | |
+| Louise | [Vial固件(2022-12-22_DMCM)](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | |
 | Mountain | [Vial固件(2022-11-15_DMBF)](other-firmware/vial/ydkb_mountain_vial.zip ':ignore') | |
 | YD67BLE (KBD67 lite) | [Vial固件 (2022-12-15_DMCF)](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | |
 
