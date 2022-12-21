@@ -32,7 +32,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | Kunlun | [Vial固件(2022-12-15_DMCF)](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore') | |
 | Louise | [Vial固件(2022-12-16_DMCG)](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | |
 | Mountain | [Vial固件(2022-11-15_DMBF)](other-firmware/vial/ydkb_mountain_vial.zip ':ignore') | |
-| YD67BLE | [Vial固件 (2022-12-15_DMCF)](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | |
+| YD67BLE (KBD67 lite) | [Vial固件 (2022-12-15_DMCF)](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | |
 
 40%类的键盘，更推荐尝试ydkb.io的固件。我用40较多，ydkb的固件针对40的使用有更多的小优化。
 
