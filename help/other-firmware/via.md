@@ -31,6 +31,7 @@ VIA的固件功能，所以本帮助文档里面的大部分内容将无效。VI
 | Kunlun | [VIA固件和JSON文件(2022-11-09_DMB9)](other-firmware/via/ydkb_kunlun_via.zip ':ignore') | |
 | Louise | [VIA固件和JSON文件(2022-12-22_DMCM)](other-firmware/via/ydkb_louise_via.zip ':ignore') | |
 | Mountain | [VIA固件和JSON文件(2022-03-29_DM3T)](other-firmware/via/ydkb_mountain_via.zip ':ignore') | |
+| Xikii Sasuke No.01 | [VIA固件和JSON文件(2022-12-22_DMCM)](other-firmware/via/ydkb_xikii_sasuke01_via.zip ':ignore') | |
 | YD67BLE (KBD67 lite) | [VIA固件和JSON文件 (2022-12-08_DMC8)](other-firmware/via/ydkb_yd67ble_via.zip ':ignore') | |
 
 40%类的键盘，更推荐尝试ydkb.io的固件。我用40较多，ydkb的固件针对40的使用有更多的小优化。
