@@ -25,6 +25,13 @@ Limited by Adafruit's firmware, it does not support active switching. So the rea
 
 So when using, it is recommended that keyboard only pairs two devices in the same place. In this situation, it is connected to either device A or B when switching, just like switching between device A and B.
 
+The specific pairing steps are
+
+1. Preparations: First delete the paired keyboard on all devices. Then press <kbd>Lshift+RShift+LCtrl+R</kbd> once on the keyboard to clear the pairing information saved on the keyboard.
+2. At this time, the keyboard is not connected. Make sure that your setup A and device B can search for the keyboard.
+3. Device A is connected to the keyboard first, and after it can be used normally, turn off the Bluetooth of device A. At this time, the keyboard Bluetooth is not connected, and then use device B to connect the keyboard.
+4. In this way, YDKB's BLE series keyboard is paired with device A and device B at the same time. You can use the switch device function when the Bluetooth of A and B are turned on at the same time.
+
 When switching, the keyboard indicator will show the connection indication (Refer to [[ble-series: connection-status | Bluetooth Function switch & connection status]]). 
 
 My test results show that switching from iPad to Windows is fast, but switching from Windows to iPad may take several seconds. A Mac or iPhone is similar to the iPad. Switching between Windows is also faster.
