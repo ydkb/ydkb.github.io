@@ -1,0 +1,40 @@
+{
+  "name": "YDKB Just68v2",
+  "vendorId": "0x9D5B",
+  "productId": "0x2168",
+  "firmwareVersion": 0,
+  "lighting": "none",
+  "keycodes": ["via/keycodes"],
+  "menus": ["via/keymap", "via/layouts", "via/macros", "via/save_load"],
+  "matrix": {"rows": 5, "cols": 16},
+  "customKeycodes": [
+    {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},
+    {"name": "RESET", "title": "Enter FLASH Mode when pressed with LCtrl.", "shortName": "RESET"},
+    {"name": "BAT LEVEL", "title": "Outputs battery level in text (Shortcut: LShift+RShift+V)", "shortName": "BAT%"},
+    {"name": "LOCK MODE", "title": "Make the keyboard enter lock mode and can be only waked up by pressing F and J.", "shortName": "Lk.M"}, 
+    {"name": "RGB Toogle", "title": "RGB Toogle", "shortName": "R.TG"},
+    {"name": "RGB Mode-", "title": "RGB Mode-", "shortName": "R.M-"},
+    {"name": "RGB Mode+", "title": "RGB Mode+", "shortName": "R.M+"},
+    {"name": "RGB HUE-", "title": "RGB HUE-", "shortName": "HUE-"},
+    {"name": "RGB HUE+", "title": "RGB HUE+", "shortName": "HUE+"},
+    {"name": "RGB SAT-", "title": "RGB SAT-", "shortName": "SAT-"},
+    {"name": "RGB SAT+", "title": "RGB SAT+", "shortName": "SAT+"},
+    {"name": "RGB LUM-", "title": "RGB LUM-", "shortName": "LUM-"},
+    {"name": "RGB LUM+", "title": "RGB LUM+", "shortName": "LUM+"}
+  ], 
+  "layouts": {
+    "labels":[["Layout", "68", "67"]], 
+    "keymap": [
+    [{"c":"#777777"},"0,0",{"c":"#cccccc"},"0,2","0,1","0,3","0,4","0,5","0,6","0,7","0,8","0,9","0,10","0,11","0,12",{"c":"#aaaaaa","w":2},"0,13",{"c":"#cccccc"},"0,14"],
+    [{"c":"#aaaaaa","w":1.5},"1,0",{"c":"#cccccc"},"1,1","1,2","1,3","1,4","1,5","1,6","1,7","1,8","1,9","1,10","1,11","1,12",{"c":"#aaaaaa","w":1.5},"1,13",{"c":"#cccccc"},"1,14"],
+    [{"c":"#aaaaaa","w":1.75},"2,0",{"c":"#cccccc"},"2,1","2,2","2,3","2,4","2,5","2,6","2,8","2,9","2,10","2,11","2,12",{"c":"#777777","w":2.25},"2,13",{"c":"#cccccc"},"2,14"],
+    [{"c":"#aaaaaa","w":2.25},"3,0",{"c":"#cccccc"},"3,1","3,2","3,3","3,4","3,12","3,11","3,8","3,9","3,10","3,13",{"c":"#aaaaaa","w":1.75},"3,14",{"c":"#777777"},"3,15",{"c":"#cccccc"},"2,15"],
+    [{"y":-0.5,"x":16.5,"h":0.75},"1,15\n\n\n0,0"],
+    [{"y":-0.5,"c":"#aaaaaa","w":1.25},"3,5",{"w":1.25},"3,6",{"w":1.25},"3,7",{"c":"#777777","w":6.25},"4,8",{"c":"#aaaaaa"},"4,10\n\n\n0,0","4,11\n\n\n0,0","4,12\n\n\n0,0",{"c":"#777777"},"4,13","4,14","4,15"],
+    [{"y":-0.75,"x":16.5,"c":"#cccccc","h":0.75},"0,15\n\n\n0,0"],
+    [{"x":16.5,"h":0.75,"d":true},"1,15\n\n\n0,1"],
+    [{"y":-0.5,"x":10,"c":"#aaaaaa","w":1.25},"4,10\n\n\n0,1",{"w":1.25},"4,11\n\n\n0,1"],
+    [{"y":-0.75,"x":16.5,"c":"#cccccc","h":0.75,"d":true},"0,15\n\n\n0,1"]
+    ]
+  }
+}
