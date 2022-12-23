@@ -90,6 +90,8 @@ RGB的控制与qmk有所区别，本页的固件，RGB的控制说明参考 [rgb
 
 在 Vial / VIA 中设置时，使用的是 User / CUSTOM 中的几个按键来控制。
 
+其中控制 Mode(模式) / HUE(色相) / SAT(饱和度) / LUM(亮度) 的按键，不用加和减都设置。可以按住<kbd>Shift</kbd> + 相应的RGB控制键，进行反向操作。比如 <kbd>Shift</kbd>+<kbd>HUE++</kbd>作用就是 <kbd>HUE-</kbd>。
+
 ![|700](assets/vial-ydkb-rgb.jpg)
 ![|700](assets/via-ydkb-rgb.jpg)
 
