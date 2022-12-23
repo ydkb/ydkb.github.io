@@ -1,0 +1,38 @@
+{
+  "name": "YDKB Pearly v1",
+  "vendorId": "0x9D5B",
+  "productId": "0x2040",
+  "firmwareVersion": 0,
+  "lighting": "qmk_backlight",
+  "keycodes": ["via/keycodes"],
+  "menus": ["via/keymap", "via/layouts", "via/macros", "via/save_load"],
+  "matrix": {"rows": 4, "cols": 12},
+  "customKeycodes": [
+    {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},
+    {"name": "RESET", "title": "Enter FLASH Mode when pressed with LCtrl.", "shortName": "RESET"},
+    {"name": "BAT LEVEL", "title": "Outputs battery level in text (Shortcut: LShift+RShift+V)", "shortName": "BAT%"},
+    {"name": "LOCK Mode", "title": "Make the keyboard enter lock mode and can be only waked up by pressing F and J.", "shortName": "Lk.M"}, 
+    {"name": "RGB Toogle", "title": "RGB Toogle", "shortName": "R.TG"},
+    {"name": "RGB Mode-", "title": "RGB Mode-", "shortName": "R.M-"},
+    {"name": "RGB Mode+", "title": "RGB Mode+", "shortName": "R.M+"},
+    {"name": "RGB HUE-", "title": "RGB HUE-", "shortName": "HUE-"},
+    {"name": "RGB HUE+", "title": "RGB HUE+", "shortName": "HUE+"},
+    {"name": "RGB SAT-", "title": "RGB SAT-", "shortName": "SAT-"},
+    {"name": "RGB SAT+", "title": "RGB SAT+", "shortName": "SAT+"},
+    {"name": "RGB LUM-", "title": "RGB LUM-", "shortName": "LUM-"},
+    {"name": "RGB LUM+", "title": "RGB LUM+", "shortName": "LUM+"}
+  ], 
+  "layouts": {
+    "labels":["2u Backspace", "Row ASDFG", "2.25u RShift", "Left of Space", "Split Space", "Right of Space"], 
+    "keymap": [
+	{"name": "Pearly v1"},
+	[{"h":1.25},"3,0",{"h":1.25},"3,4",{"x":10,"h":1.25},"3,6",{"h":1.25},"3,11"],
+	[{"y":0.25,"x":0.5},"0,0","0,1","0,2","0,3","0,4","0,5","0,6","0,7","0,8","0,9","3,7","0,10\n\n\n0,0","0,11\n\n\n0,0",{"x":0.25,"w":2},"0,11\n\n\n0,1"],
+	[{"x":0.5,"w":1.25},"1,0\n\n\n1,0","1,1\n\n\n1,0","1,2\n\n\n1,0","1,3\n\n\n1,0","1,4\n\n\n1,0","1,5\n\n\n1,0","1,6\n\n\n1,0","1,7\n\n\n1,0","1,8\n\n\n1,0","1,9\n\n\n1,0","1,10\n\n\n1,0",{"w":1.75},"1,11\n\n\n1,0"],
+	[{"x":0.5,"w":1.75},"2,0","2,1","2,2","2,3","2,4","2,5","2,6","2,7","2,8","2,9","2,10\n\n\n2,0",{"w":1.25},"2,11\n\n\n2,0",{"x":0.25,"w":2.25},"2,11\n\n\n2,1"],
+	[{"x":1.625},"3,1\n\n\n3,0",{"w":1.25},"3,2\n\n\n3,0",{"x":0.005,"w":6.25},"3,5\n\n\n4,0",{"x":-0.005,"w":1.25},"3,9\n\n\n5,0","3,10\n\n\n5,0"],
+	[{"x":1.625,"w":1.25},"3,1\n\n\n3,1",{"x":0.005},"3,2\n\n\n3,1",{"x":-0.005,"w":2.25},"3,3\n\n\n4,1",{"w":2.75},"3,5\n\n\n4,1",{"w":1.25},"3,8\n\n\n4,1","3,9\n\n\n5,1",{"x":0.005,"w":1.25},"3,10\n\n\n5,1"],
+	[{"y":0.25,"x":0.5,"w":1.5},"1,0\n\n\n1,1","1,1\n\n\n1,1","1,2\n\n\n1,1","1,3\n\n\n1,1","1,4\n\n\n1,1","1,5\n\n\n1,1","1,6\n\n\n1,1","1,7\n\n\n1,1","1,8\n\n\n1,1","1,9\n\n\n1,1","1,10\n\n\n1,1",{"w":1.5},"1,11\n\n\n1,1"]
+    ]
+  }
+}
