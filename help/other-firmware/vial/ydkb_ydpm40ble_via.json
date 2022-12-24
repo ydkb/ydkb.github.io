@@ -1,0 +1,36 @@
+{
+  "name": "YDKB YDPM40BLE",
+  "vendorId": "0x9D5B",
+  "productId": "0x1848",
+  "firmwareVersion": 0,
+  "lighting": "qmk_backlight",
+  "keycodes": ["via/keycodes"],
+  "menus": ["via/keymap", "via/layouts", "via/macros", "via/save_load"],
+  "matrix": {"rows": 8, "cols": 6},
+  "customKeycodes": [
+    {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},
+    {"name": "RESET", "title": "Enter FLASH Mode when pressed with LCtrl.", "shortName": "RESET"},
+    {"name": "BAT LEVEL", "title": "Outputs battery level in text (Shortcut: LShift+RShift+V)", "shortName": "BAT%"},
+    {"name": "LOCK Mode", "title": "Make the keyboard enter lock mode and can be only waked up by pressing F and J.", "shortName": "Lk.M"}, 
+    {"name": "RGB Toogle", "title": "RGB Toogle", "shortName": "R.TG"},
+    {"name": "RGB Mode-", "title": "RGB Mode-", "shortName": "R.M-"},
+    {"name": "RGB Mode+", "title": "RGB Mode+", "shortName": "R.M+"},
+    {"name": "RGB HUE-", "title": "RGB HUE-", "shortName": "HUE-"},
+    {"name": "RGB HUE+", "title": "RGB HUE+", "shortName": "HUE+"},
+    {"name": "RGB SAT-", "title": "RGB SAT-", "shortName": "SAT-"},
+    {"name": "RGB SAT+", "title": "RGB SAT+", "shortName": "SAT+"},
+    {"name": "RGB LUM-", "title": "RGB LUM-", "shortName": "LUM-"},
+    {"name": "RGB LUM+", "title": "RGB LUM+", "shortName": "LUM+"}
+  ], 
+  "layouts": {
+    "labels":["Row ASDFG", "1.75u Space"], 
+    "keymap": [
+	["0,5","3,5","5,5","7,5","6,5","4,5","2,0","1,0","0,0","3,0","5,0","7,0"],
+	["1,5\n\n\n0,0","2,5\n\n\n0,0","1,3\n\n\n0,0","2,3\n\n\n0,0","4,3\n\n\n0,0","6,3\n\n\n0,0","1,2\n\n\n0,0","2,2\n\n\n0,0","4,2\n\n\n0,0","6,2\n\n\n0,0","4,0\n\n\n0,0","6,0\n\n\n0,0"],
+	["1,4","2,4","0,3","3,3","5,3","7,3","0,2","3,2","5,2","7,2","4,1","6,1"],
+	["0,4","3,4","5,4","7,4\n\n\n1,0",{"w":2},"6,4\n\n\n1,0",{"w":2},"1,1\n\n\n1,0","0,1\n\n\n1,0","3,1","5,1","7,1"],
+	[{"y":0.25,"w":1.5},"1,5\n\n\n0,1","2,5\n\n\n0,1","1,3\n\n\n0,1","2,3\n\n\n0,1","4,3\n\n\n0,1","6,3\n\n\n0,1","1,2\n\n\n0,1","2,2\n\n\n0,1","4,2\n\n\n0,1","6,2\n\n\n0,1",{"w":1.5},"6,0\n\n\n0,1"],
+	[{"x":3,"w":1.25},"7,4\n\n\n1,1",{"w":1.75},"6,4\n\n\n1,1",{"w":1.75},"1,1\n\n\n1,1",{"w":1.25},"0,1\n\n\n1,1"]
+    ]
+  }
+}
