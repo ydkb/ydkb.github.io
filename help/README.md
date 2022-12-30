@@ -5,10 +5,9 @@
 > - 目前对Firefox和Safari的最新版本支持也尚可。
 > - 本文档中可能有一些不够严谨和不够统一的地方，还请见谅。
 
-本文档是针对 https://ydkb.io 的使用说明。 也可访问以下地址，国内访问ydkb.io速度慢的，可使用gitee那个。
+本文档是针对 https://ydkb.io 的使用说明。 
 
-(全球) https://ydkb.github.io ,  [在github上访问此项目](https://github.com/ydkb/ydkb.github.io)<br>
-(国内) [https://ydkb.gitee.io](https://ydkb.gitee.io "国内访问速度更好")  ， [在gitee上访问此项目](https://gitee.com/ydkb/ydkb)
+备用地址1:  https://ydkb.github.io 
 
 目前主要提供给中文用户使用，英文缺失的说明页面，可以使用在线翻译。
 

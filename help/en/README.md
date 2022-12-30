@@ -9,8 +9,6 @@ Currently some documentations for English are missing. You can use online transl
 This document is for the use of https://ydkb.io. You can also visit the following address:
 
 (Global) https://ydkb.github.io,  [View this on GitHub](https://github.com/ydkb/ydkb.github.io)<br>
-(China) https://ydkb.gitee.io, [View this on Gitee](https://gitee.com/ydkb/ydkb)
-
 
 The firmware used by YDKB is based on TMK, so most of the instructions can be found in addition to this help document, as well as the relevant instructions for TMK. 
 
