@@ -78,13 +78,13 @@
     <div class="mykeycap2 w125 row400 col1375">RCtrl</div>
 
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li id="code-0xfa00" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
-    <li id="code-0xf200" title="<kt>Esc</kt>键，和<kt>LShift</kt>一起按时为<kt>~</kt>">~(L)<br>Esc</li>
-    <li id="code-0xf800" title="<kt>Esc</kt>键，和<kt>RShift</kt>一起按时为<kt>~</kt>">~(R)<br>Esc</li>
-    <li class="key-set" id="code-0xf001" lang="zh_sc" title="<kt>4$</kt>键，和<kt>左Alt</kt>一起按时为<kt>F4</kt>">4 $<br>F4</li>
-    <li class="key-set" id="code-0xf002" lang="zh_sc" title="单按清除键盘按键状态，和左Ctrl一起按时为重启键盘">Reset</li>
-    <li class="key-set" id="code-0xf003" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
-    <li class="key-set" id="code-0xf004" lang="zh_sc" title="正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角">Space2</li>
+    <li kc="0xf300" lang-id="fn_tricky_esc">~<br>Esc</li>
+    <li kc="0xf200" lang-id="fn_tricky_esc_l">~(L)<br>Esc</li>
+    <li kc="0xf100" lang-id="fn_tricky_esc_r">~(R)<br>Esc</li>
+    <li kc="0xf001" lang-id="fn_alt_f4">4 $<br>F4</li>
+    <li kc="0xf002" lang-id="fn_reset_flash">Reset</li>
+    <li kc="0xf003" lang-id="fn_win_lock">Win<br>Lock</li>
+    <li kc="0xf004" lang-id="fn_space2">Space2</li>
     <li class="key-set" id="code-0xf005" lang="zh_sc" title="Up键，但是和右Shift一起按时为?">?(R)<br>↑</li>
     <li class="key-set rowstart" id="code-0xf009" lang="zh_sc" title="发送按键设置到ydkb.io。这是一个测试功能，使用说明见帮助">Send<br>Keymap</li>
     <li class="key-set" id="code-0xf010" title="锁定模式。按下后立即关闭蓝牙并且键盘节能，只有同时按下F和J或者重插USB才能唤醒。适合不关开关直接放包里。">Lock<br>Mode</li>
@@ -93,13 +93,14 @@
     <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
 </div>
-<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x7400"></div>
+<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000"></div>
 <div id="kb_ledmap"  style="display: none">
     <li id="kb_ledmap-0" value="17" title="CAPS灯">CAPS LED</li>
-    <li id="kb_ledmap-2" value="0" class="rgb_color" title="RGB底灯">RGB</li>
+    <li id="kb_ledmap-1" value="0" class="can_disable" title="NS60仅支持设置为未配置或禁用，不能作为指示">BACKLIGHT</li>
+    <li id="kb_ledmap-2" value="0" class="rgb_color can_disable" title="RGB底灯，灯效关闭时可作为指示用。">RGB</li>
 </div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TWY4bMQxEL1Qf4iIuZ2nM/a+RotpGZoKsf0ZgNEzI6lKRfFRf16UrHJLheqJMNIdjI5AoNGRBuE+BQSjeH7gkKIQUpKELKlCFGtShGxrQhBa0YQsmPGEKM9DaNixgCStYwxfC11pgBW5w5t7wgCcPecEbe2ELtmIbNitjaeJU7cQu7EbQQxCKMB5iQ0FJIBJRiEYupCAVaUhHPg0ykYVsHqqFmiarFGUoR21UoMigUI1eaEEr2tCOHgod6EQT0lCiA0mxSVkEsXJYMO4T48Q8sU4ccGnDdvDI8B3AQ1g2fRIuzhaFnISgdPzGbbz0+Vbpw8LZA00u2Xwp55kUQ0zJcOJJp/YoKdQJIrTZIufNFu5Tp5SzIrO7B6La95qIpUlZwnuP6WN/HZx29if9GcoM4vtY8HkoMoPMu9DHgCYv53MSEwD8rDjfZzs/lvfLJ0Lm5tzXeP7V79Rf/ahef1DxBv08aT1SzxiUKuU1nd9fpv7vFYfLXOcXqOVVFOeTfYlKXkXxJvIm8ibyz0Q+vgGRtVpJygkAAA==" title="参考1">参考1</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TWY4bMQxEL1Qf4iIuZ2nM/a+RotpGZoKsf0ZgNEzI6lKRfFRf16UrHJLheqJMNIdjI5AoNGRBuE+BQSjeH7gkKIQUpKELKlCFGtShGxrQhBa0YQsmPGEKM9DaNixgCStYwxfClG9ZgRucuTc84MlDXvDGXtiCrdiGzcpYmjhVO7ELuxH0EITSiYfYUFASiEQUopELKUhFGtKRT4NMZCGbh2qhpskqRRnKURsVKDIoVKMXWtCKNrSjh0IHOtGENJToQFJsUhZBrBwWjPvEODFPrBMHXNqwHTwyfAfwEJZNn4SLs0UhJyEoHb9xGy99vlX6sHD2QJNLNl/KeSbFEFMynHjSqT1KCnWCCG22yHmzhfvUKeWsyOzugaj2vSZiaVKW8N5j+thfB6ed/Tj6uAczw/g+GnwejMww8y72MaTJzRmd5IQAPyvO+NnSjyX+8omQuT33VZ5/9Tv1Vz+q1x9UvEU/T1qP1DMKpUp5Vef3l6n/e8XhMlf6BWp5FcX5bF+ikldRvIm8ibyJ/DORj2+hQazvzgkAAA==" title="参考1">参考1</li>
 </div>
-<div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA+2SS44bMQxEL1QLkeL3LMbc/xopqm2MA+S/yHhhNMxuS1Sx+Kjb7aYrDJJheqJM3AaDI5AoNGRBuM6EDWGyf+AmwURIQRq6oAJV6IYa1KEBTWhBG3thC09sxd6g9HbswE7swm7YQphTnQ5sw1jbYQFLHrKCNXzBBa7wDaczWhObLHFxeMEbQRlBKGLzHHsKZgUiEYVo5EIKUpEbaciHRiaykM1DtVDTZ5WiNspQjgoUMRSq0QstaEVvtKEHRAc60eQ0oKhAWOxTFlmsHByMfmKcmCfWicMu9+AdQjKIh/FAZmNCRibm5ExUQlY6eqM2WvrYVerQOHugyE2cm3KeKTHQlBgnnnK675ZCjSBCmy1y5P1sSe7GJupYe1K0Iednj2MPaUKXsPapcV9fh+4+6+PmzGjm8jklPM9IZrR5+b7mJU9VBXa9PCDPz3c5P3wiZO7RdannX/0q+/d6Txm8SNfH4Pj80qvovfi6ip7JKE8oL+/85NHt3L+ZAvOy4idWeL/zYTz9D/x6/lNLX5txGH06f3G3/4/Jazh5lYw3kTeRN5G/JvLxDVWEacvsCQAA"></div>
+<div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA+2SXY7bMAyELzQPIin+6CxG7n+NDuUE8QK73aIPrR8WRmhHGpHDjzqOQ0dMSMbUHaWjTUw4AonCggwI1ykwCMX+wCFBIaQgCzqgAlWoQSfUoQFNaEEXbMCEJ0xhBqY2hwUsYQVbmAOhyRx0MA2TtR0zMJOHZvWyD7jA+WFwOqM1ma0SF4cXfCGYRpgJYTzHnoKqQCSiEAs5kIJUpCEn8pUjE1nIxUM1UN1nlaIMNVGOChQxFGphDSzBUizDmlgNYgVWYpFTg2IGwmKfMshiZONg9B1jx9yxdmx2aY23CUkjbsYNmY0JGU2ZTs5EJWSlna+zdS597Srz0Dh7YJJDnJuyny7R0JQYO+5yak9LoZMgQhdb5MjX1ZI8jXXUtnbJOJuc7z2OPWQRusRc3jWe62PTtb0eWx/nnHo270nhOifp8ebp/ZyZXCoL5vnygFyfD5pPnwjpu3Re7P5Xv1N/n++i4GU6P7rF95eeRZ/Fx1l0T0d5QnmB+yevbvsO9iSoy4ovrPCO58t4+rd+OWzPv+rp/yo2pLfzm7v9d0zu4eQuih8iP0T+hMi4hZO7KB6PX3mD3UjxCQAA"></div>
 <div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:ns60" style="display: none;"></div>
