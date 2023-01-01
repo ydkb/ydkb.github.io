@@ -13,13 +13,10 @@ For example, G80-3000 does not support any 6 keys without punch; while G80-3494 
 
 Let me add another bit of knowledge. The so-called 6KRO means that in addition to the 8 left and right modifier keys Ctrl, Shift, Alt, and Win, there are 6 other keys that can be pressed simultaneously. These 8 modifier keys can be pressed together with the other 6 keys at the same time. There is no problem. That is to say, if you have to be more serious, in any 6-key non-rush mode, you can press 8+6 at most 14 keys at the same time.
 
-<html><div class="hint">
-<subtitle>HINT</subtitle>
-
-  - Most keyboards supported by YDKB are 6KRO by default, so compatibility is better.
-  - Under USB connection, it can support NKRO. Toggle with <kbd>LShift+RShift+N</kbd>.
-  - It is always 6KRO in Bluetooth mode.
-</div></html>
+> [!yddh: HINT]
+> - Most keyboards supported by YDKB, firmware from 2023, default is NKRO.
+> - Under USB connection, toggle NKRO and 6KRO with <kbd>LShift+RShift+N</kbd>.
+> - It is always 6KRO in Bluetooth mode.
 
 ## Button response speed and game support
 
