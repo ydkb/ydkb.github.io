@@ -47,40 +47,9 @@ In <u> About the Machine - System Report - USB</u>, as shown below
 
 ## Changelog 
 
-||> YDKB High-end
+For keyboard firmware update records, you can select the corresponding keyboard on ydkb.io, click `Latest firmware` and jump to the corresponding link.
 
-  - [1800mini](/changelog/1800mini)
-  - [Master98 Pro](/changelog/master98)
-  - [Sairo64](/changelog/sairo64)
-  - [X-8086K](/changelog/x-8086k)
-
-
-||> YDKB BLE Series
-
-  - [BLE40/BLUP](/changelog/ble40_blup)
-  - [CAD66](/changelog/cad66)
-  - [Chicory / Pearly](/changelog/chicory)
-  - [Just Keyboard](/changelog/just)
-  - [Minira](/changelog/minira)
-  - [Just60/YD60BLE](/changelog/yd60ble) 
-  - [YDP50](/changelog/ydp50)
-  - [YDPM40BLE](/changelog/ydpm40ble)
-
-
-||> YDKB Mod
-
-  - [HHKB BLE](/changelog/hhkb_ble)
-  - [BLE660C](/changelog/ble660c_980c)
-  - [BLE980C](/changelog/ble660c_980c)
-
-
-||> YDKB (Other)
-
-  - [NS60](/changelog/ns60) 
-  - [Simpo Keyboard](/changelog/simpo_stm60)
-  - [STM60 A/B/C](/changelog/simpo_stm60)
-  - [YD68](/changelog/yd68)
-  - [YDKB优联](/changelog/ydkb_u2u)
+![|400](assets/ydkb-latest-firmware.png)
 
 
 ## Attachment: three-digit date display method

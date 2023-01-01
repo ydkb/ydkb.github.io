@@ -43,35 +43,9 @@
 
 ## Changelog 固件更新记录
 
-> [!yddl: YDKB High-end]
-> - [1800mini](/changelog/1800mini)
-> - [Master98 Pro](/changelog/master98)
-> - [Sairo64](/changelog/sairo64)
-> - [X-8086K](/changelog/x-8086k)
+键盘固件的更新记录可以在 ydkb.io 选择了对应的键盘后，点击 `Latest firmware` 后跳转到对应链接。
 
-> [!yddl: YDKB BLE 系列]
-> - [BLE40/BLUP](/changelog/ble40_blup)
-> - [CAD66](/changelog/cad66)
-> - [Chicory / Pearly](/changelog/chicory)
-> - [Just Keyboard](/changelog/just)
-> - [Louise](/changelog/louise)
-> - [Minira](/changelog/minira)
-> - [Just60/YD60BLE](/changelog/yd60ble) 
-> - [YD67BLE](/changelog/yd67ble) 
-> - [YDP50](/changelog/ydp50)
-> - [YDPM40BLE](/changelog/ydpm40ble)
-
-> [!yddl: YDKB Mod]
-> - [HHKB BLE](/changelog/hhkb_ble)
-> - [BLE660C](/changelog/ble660c_980c)
-> - [BLE980C](/changelog/ble660c_980c)
-
-> [!yddl: YDKB (其他键盘)]
-> - [NS60](/changelog/ns60) 
-> - [Simpo Keyboard](/changelog/simpo_stm60)
-> - [STM60 A/B/C](/changelog/simpo_stm60)
-> - [YD68](/changelog/yd68)
-> - [YDKB优联](/changelog/ydkb_u2u)
+![|400](assets/ydkb-latest-firmware.png)
 
 
 ## 附：三位日期计法
