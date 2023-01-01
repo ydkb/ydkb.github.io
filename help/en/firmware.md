@@ -49,7 +49,7 @@ In <u> About the Machine - System Report - USB</u>, as shown below
 
 For keyboard firmware update records, you can select the corresponding keyboard on ydkb.io, click `Latest firmware` and jump to the corresponding link.
 
-![|400](assets/ydkb-latest-firmware.png)
+![|400](assets/ydkb-latest-firmware.jpg)
 
 
 ## Attachment: three-digit date display method

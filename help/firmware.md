@@ -45,7 +45,7 @@
 
 键盘固件的更新记录可以在 ydkb.io 选择了对应的键盘后，点击 `Latest firmware` 后跳转到对应链接。
 
-![|400](assets/ydkb-latest-firmware.png)
+![|400](assets/ydkb-latest-firmware.jpg)
 
 
 ## 附：三位日期计法
