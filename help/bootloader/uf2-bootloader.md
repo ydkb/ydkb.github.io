@@ -1,6 +1,6 @@
 # UF2 Bootloader（U盘模式）
 
-更多的介绍请看：https://github.com/mmoskal/uf2-stm32f103
+更多的介绍请看：https://github.com/yangdigi/uf2-stm32f103
 
 这里总结一下用户可感知的UF2 Bootloader的主要优点：
 
@@ -8,11 +8,13 @@
   2. 可以识别固件，只有针对当前键盘的固件才会被刷入。
   3. 可以直接从U盘里读出当前的固件，用于上传keymap等操作。
 
-| 支持键盘 |||
-| ---- |||
-| Simpo40 | Simpo68| STM60||||
+> [!yddl: 使用UF2 Bootloader的键盘]
+> - HW75 
+> - Simpo40
+> - Simpo68
+> - STM60
 
-注：2019.3.8前售出的STM60使用的是STM32 HID Bootloader
+注：2019.3.8前售出的STM60使用的是STM32 HID Bootloader，可参照说明[stm60](keyboards/stm60.md)更新到UF2 Bootloader。
 
 ## 刷机方法
 

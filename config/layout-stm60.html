@@ -1,25 +1,8 @@
 <div id="mykbd">
     <div id="kbd-info" style="display: none;">
-        <div class="lang-zh_sc">
-            <p><b>刷机方式：</b><br>
-               首先重点，这不是gh60，不要用zadig去安装驱动，这个刷固件是免驱的。<br>
-               <span style="color:red">19.3.8前购买的</span>，拔掉数据线，按住左上角<kbd>Esc</kbd>键同时插入数据线，进入刷机模式，此时可放开<kbd>Esc</kbd>。再将hex拖到ydkbs-relflash.exe，固件将自动刷新。<br>
-               固件刷完后，再按一下<kbd>Esc</kbd>或重新插USB线，退出刷机模式。<br>
-               还有疑问参看<a href="http://help.ydkb.io/doku.php?id=bootloader:stm32-hid-bootloader" target="_blank">http://help.ydkb.io</a>内的更详细说明。</p>
-            <p><span style="color:red">19.3.8后购买的</span>，按<kbd>Esc</kbd>插线电脑显示一个名为STM60的U盘，网站上下载选择下载UF2格式的，然后不用管文件名，直接拖到U盘里就行。它会自动刷新完后退出U盘</p>
-            <p><b>补充说明:</b><br>
-               背光设置和RGB灯带设置已经保存，因为更换了keymap的保存地址，之前的hex上传后无法读取正常keymap的，重新设置一下再下载。
-        </div>
-        <div class="lang-en" style="display: none">
-            <p><b>Reflash Firmware:</b><br>
-               STM60 uses STM32 HID bootloader. So it's no need to install any driver manually for it.<br>
-               Disconnect usb cable from the keyboard first. Drag <b>.hex file</b> to ydkb-relflash.exe, as it says next you need get your device into bootloader.<br>
-               Now, keep holding <kbd>Esc</kbd> key and insert the usb cable to your keyboard . When it begins flashing, <kbd>Esc</kbd> can be released.<br>
-               When reflash finished, press esc to exit bootloader.<br>
-               visit <a href="http://help.ydkb.io/doku.php?id=bootloader:stm32-hid-bootloader" target="_blank">http://help.ydkb.io</a> for more details.</p>
-            <p><b>More to say:</b><br>
-               Backlight mode can't be saved yet.<p>
-        </div>
+        <p><b>刷机方式：</b><p>
+        <p>如果不是UF2 Bootloader，请参考 <a href="help/#/keyboards/stm60" target="_blank">STM60说明页面</a> ，先更新到UF2 Bootloader。后续不再提供支持STM32F HID Bootloader的固件。</p>
+        <p>按住<kbd>esc</kbd>不放(如上图所示的物理位置按键)，再插USB线。电脑显示一个名为<u>STM60</u>的U盘。右上角 下载.UF2固件，直接拖到U盘里就行（复制粘贴或右键发送到都可以）。它会自动刷新完后退出U盘。整个过程无需其他软件，支持macOS。</p>
     </div>
     <div id="mycase" class="mycase"></div>
     <div id="kblayouts-80" value-name="Normal" value-desc="Main PCB Version" style="display: block;">
@@ -315,9 +298,9 @@
     <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
 </div>
-<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0xF000" value-format="hex uf2"></div>
+<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0xF000" value-format="uf2"></div>
 <div id="kb_ledmap"  style="display: none">
     <li id="kb_ledmap-0" value="17" title="CAPS灯">CAPS LED</li>
     <li id="kb_ledmap-1" value="0" title="仅在背光关闭时可作为指示灯">BACKLIGHT</li>
 </div>
-<div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:simpo_stm60" style="display: none;"></div>
+<div id="kb-changelog-url" href="simpo_stm60" style="display: none;"></div>

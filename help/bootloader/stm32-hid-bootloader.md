@@ -1,36 +1,12 @@
 # STM32 HID Bootloader
 
-目前来说，STM60系列使用的是这个Bootloader，免驱（使用的是系统自带的HIDUSB驱动）。
+YDKB的STM60早期有部分使用的是这个Bootloader，免驱（使用的是系统自带的HIDUSB驱动）。
 
-基本就是按照键盘对应的说明，按指定按键的同时插入USB线，就进入刷固件模式了。
+这个 BL 对 USB线和一些USB接口有点兼容问题，会挑。所以不再使用了，也不建议使用。
 
-刷的过程中可能会遇到一些问题。比如：
+STM60后续改为了 [UF2 Bootloader](bootloader/uf2-bootloader.md)。
 
-## 进入刷机模式后，显示无法识别的设备。
-
-拔掉USB线，重新进入刷机模式，确保有被正常识别。且识别后在设备里显示的名称为如下图：
-
-<div style="width: 400px">
-
-![](assets/stm32_hidbl01.png?400)
-</div>
+这里提供 STM60 更新到最新 UF2 BL的方法，具体见： [STM60说明页面](keyboards/stm60.md) 。
 
 
-## 能识别到设备，但是不会开始刷固件
-
-如果刷固件不正常，参照BootHID里面的说明，检查驱动，要检查了下面这个设备的驱动，先让设备进入刷固件模式才能找得到它。
-
-<div style="width: 600px">
-
-![](assets/stm32_hid_bl_01.png?600)
-</div>
-
-## 能正常刷完固件，但是重新插上USB后，无法识别到键盘
-
-如 如下图，正常刷新完成后显示OK，此时重新插USB如果无法识别到键盘，就再重新刷一次固件，可能是固件刷入并不完整或者固件本身有问题。
-
-<div style="width: 600px">
-
-![](assets/stm32_hidbl03.png?600)
-</div>
 
