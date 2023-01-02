@@ -1,9 +1,8 @@
 <div id="mykbd">
     <div id="kbd-purchase_link_0" style="display: none;" value="https://item.taobao.com/item.htm?id=604214202432">（淘宝）YDKB客制化</div>
     <div id="kbd-info" style="display: none;">
-        <p><b>刷机方式：</b><br>
-            <p>按<kbd>Esc</kbd>插线电脑显示一个名为SimpoKBD的U盘，网站上下载选择下载UF2格式的，然后不用管文件名，直接拖到U盘里就行。它会自动刷新完后退出U盘</p>
-        </p>
+        <p><b>刷机方式：</b></p>
+        <p>按住<kbd>esc</kbd>不放(如上图所示的物理位置按键)，再插USB线。电脑显示一个名为<u>SimpoKBD</u>的U盘。右上角 下载.UF2固件，直接拖到U盘里就行（复制粘贴或右键发送到都可以）。它会自动刷新完后退出U盘。整个过程无需其他软件，支持macOS。</p>
     </div>
     <div id="mycase" class="mycase"></div>
 
@@ -74,19 +73,18 @@
 </div>
 
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li class="key-set" id="code-0xf000" lang="zh_sc" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
-    <li class="key-set" id="code-0xf001" lang="zh_sc" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
-    <li class="key-set" id="code-0xf006" title="ESC键，和右Shift一起按时为~">~(R)<br>Esc</li>
-    <li class="key-set" id="code-0xf106" title="Enter键，和右Shift一起按时为”">“(R)<br>Enter</li>
+    <li kc="0xf300" lang-id="fn_tricky_esc">~<br>Esc</li>
+    <li kc="0xf200" lang-id="fn_tricky_esc_l">~(L)<br>Esc</li>
+    <li kc="0xf100" lang-id="fn_tricky_esc_r">~(R)<br>Esc</li>
+    <li kc="0xf001" lang-id="fn_alt_f4">4 $<br>F4</li>
+    <li kc="0xf002" lang-id="fn_reset_flash">Reset</li>
+    <li kc="0xf003" lang-id="fn_win_lock">Win<br>Lock</li>
+    <li kc="0xf004" lang-id="fn_space2">Space2</li>
+    <li class="rowstart key-set" id="code-0xf106" title="Enter键，和右Shift一起按时为”">“(R)<br>Enter</li>
     <li class="key-set" id="code-0xf206" title=">.键，和右Shift一起按时为?">?(R)<br>&gt;.</li>
     <li class="key-set" id="code-0xf306" title="Up键，但是和右Shift一起按时为?">?(R)<br>↑</li>
     <li class="key-set" id="code-0xf406" title="L键，但是和右Shift一起按时为:">:(R)<br>L</li>
     <li class="key-set" id="code-0xf506" title="Backspace键，但是和右Shift一起按时为|">|(R)<br>BS</li>
-    <li class="key-set rowstart" id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时则进入刷机模式">Reset</li>
-    <li class="key-set" id="code-0xf003" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
-    <li class="key-set" id="code-0xf004" lang="zh_sc" title="正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角">Space2</li>
-    <li class="key-set" id="code-0xc000" title="Quick tap: PgUp; Long press: Home">PgUp<br>Home</li>
-    <li class="key-set" id="code-0xc001" title="Quick tap: PgDn; Long press: End">PgDn<br>End</li>
     <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
 </div>
@@ -97,8 +95,8 @@
     <li id="kb_ledmap-2" value="0" class="rgb_color" title="RGB底灯">RGB</li>
 </div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2STW7dMAyELzQLkRT/zmK8+1+jQ/klaIGkXSSLFHiQTdnQcEh90nVdshYkQurEPHFhwxFIFBr8FYEoxCAb4g9cEhgtkxq6oAJVqEE31KEBTWhB79VgRh2RwRwWsIQVrLEXQjZjsahhb2zHDmxlzi7O8AWXEbrB2ZjPQ60XvBFjgFCEMSM2gp0HIhGFaORGClKRhnQk98TvQjZKmDEzW2SnZaiNclSgKCtUoxda0Io29EbP5jvQiSabgcO+ZTthGPEsIlg5FBj9xDgxT6wTB0raUJ0GZMgO2mErTp/xmpl0SUjHbbzGiT7PalrcRw33etDlot2HY9xmTKX5PdRloPs6c5MdT+Sp9gkLNnrjAg+MSA2/g5U5iVt/M77N881kf9jJs4FPx/vtq1t57uFf9P/y+0OR9olk0LGu8krN+z3V/n/FwfIjOvkpiheRF5EXkReRLxN5/AIriZvWdQkAAA==" title="双空格1">双空格1</li>
-    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+2SSW7lMAxEL1QLkRSnsxj//tfoopxuJECGRbJIAx+yKRsqFqknXdclSyARUifmiQsbjkCi0OCvUKMQg2yIP3BJYLRMauiCClShBt1QhwY0oQW9V4MZdUQGc1jAElawxl4I2YzFooYt2xPbsQNbmbaLM3zBZbRucPbm81DuBW/EeCAUYcyIjWDzgUhEIRq5kYJUpCEdyW3xu5CNEmbMzC7ZbBlqoxwVKMoK1eiFFrSiDb3Rs/8OdKKJZ/iwdXIx4llEsHIoMPqJcWKeWCcOlLShOtVlyA7aYStOH4K1mUmXhHTcxmuc6HMjEi1uooZ7Pehy0e7dMW4zptL8Huoy0H2duQmOJ/Ki9gkLNnrjAg+MPA2vqcocw62/Ad/m+ddkv9vJSwMfjn+3r27luYef6L/ye6NI+0Ay6FhXeZ/m/Zlq/7/iYPkVnfwWxZPIk8iTyJPIt4k8/gC2jGggdQkAAA==" title="双空格2">双空格2</li>
-    <li id="kb-preset_keymap-2" value-keymap="H4sIAAAAAAAAA+2SSW7lMAxEL1QLcabOYvz7X6OLcrqRABkWySINfMimbKhYpJ50XZeIQjKlT6wTFxyBRKGxwV8RjMwgDokHLkmMlkkbuqACVahBHRrQhBa0ofdqMqOPyGABS1jBGrbhCynO2CxqcIcHPOHKHG/OiIWQEYYh2FjMQ200YiPHAKlIY0Y6kp0nspCN3ChHCUpRhgoU98TvRm20MGNmtshO29CODnSiKWv0xl7Ygq3Yhu3Ys/md2IVNNgNnTdNiZLO4/1WDgDFOzBPrxD5xiJQN0ql+6A/XAStBH1K1mYmWeHTcxmuc6OPiQYU2N9EDvR90uWj37hi3GVNpfg9yGeKxzrwJjsfxoo4JCzZ64wJPizwNr6nKHMOtvwHf5vXXxN/t5KWBD8e/q9e38lzCT/Rf+b1RlH0gGXSsq7xP8/5Mtf9fcbD8ik5+i+JJ5EnkSeRJ5NtEHn8A2ifJpHIJAAA=" title="单空格">单空格</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2STW7dMAyELzQLkRT/zmK8+1+jQ/klaIGkXSSLFHiQTVnwcEh90nVdshYkQurEPHFhwxFIFBpcikAUYpAN8QcuCYyWSQ1dUIEq1KAb6tCAJrSg999gRh2RwRwWsIQVrLEXwtQUxaKGvbEdO7CVObs4wxdcRugGZ2M+D7Ve8EbQQBBKG2bERrDzQCSiEI3cSEEq0pCO5J74XchGCTNmZovstAy1UY4KFGWFavRCC1rRht7o2XwHOtFkM3DYt2wnDCOeRQQrhwKjnxgn5ol14kBJG6rTgAzZQTtsxekzXjOTLgnpuI3XONHnWU2L+6jhXg+6XLT7cIzbjKk0y0OdwOiyztxkxxN5qn3Cgo2ep8I9GZEafgcrcxK3/mZ8m+ebyf6wk2cDn47321e38tzDv+j/5feHIu0TyaBjXeWVmvd7qv3/ioPlR3TyUxQvIi8iLyIvIl8m8vgFbwRot3UJAAA=" title="双空格1">双空格1</li>
+    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+2SSW7lMAxEL1QLkRSnsxj//tfoopxuJECGRbJIAx+yKQsuFqknXdclSyARUifmiQsbjkCi0OBSqFGIQTbEH7gkMFomNXRBBapQg26oQwOa0ILef4MZdUQGc1jAElawxl4IU1MUixq2bE9sxw5sZdouzvAFl9G6wdmbz0O5F7wR9BCE0okZsRFsPhCJKEQjN1KQijSkI7ktfheyUcKMmdklmy1DbZSjAkVZoRq90IJWtKE3evbfgU408Qwftk4uRjyLCFYOBUY/MU7ME+vEgZI2VKe6DNlBO2zF6UOwNjPpkpCO23iNE31uRKLFTdRwrwddLtq9O8ZtxlSa5aFOWnRZZ26C44m8qH3Cgo2ep8I9GXkaXlOVOYZbfwO+zfOvyX63k5cGPhz/bl/dynMPP9F/5fdGkfaBZNCxrvI+zfsz1f5/xcHyKzr5LYonkSeRJ5EnkW8TefwB8gGbQXUJAAA=" title="双空格2">双空格2</li>
+    <li id="kb-preset_keymap-2" value-keymap="H4sIAAAAAAAAA+2SS27kMAxEL1QL8U+dxej7X2OKcmaQAPkskkUGaKhN2ehikXzSdV0iCsmUPrFOXHAEEoXGBj9FMDKDOCQeuCQxWiZt6IIKVKEGdWhAE1rQht7/JjP6iAwWsIQVrGEbvpCmpmgWNbjDA55wZY43d8RCyAjDEGws5kdtNGIjaSBIpQ0z0pHsPJGFbORGOUpQijJUoDgT3xu10cKM2dkiO21DOzrQiaas0Rt7YQu2Yhu2Y8/wO7ELm2wGzpqmxchmcf5Vg4AxTswT68Q+cYiUDdKpfugP1wErQR9StdmJlnh03MZrnOjj4kGFNofogd4Puly0e3eN26ypNJ8HOWnRZZ19ExyP40UdExZs9DwSzmTkaXhNVeYYbv0N+Davvyb+bicvDXy4/l29vpXnEn6i/8rvjaLsA8mgY13lfZrnZ6r9/4qD5Vd08lsUTyJPIk8iTyLfJvL4AzodSRlyCQAA" title="单空格">单空格</li>
 </div>
-<div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:simpo_stm60" style="display: none;"></div>
+<div id="kb-changelog-url" href="simpo_stm60" style="display: none;"></div>
