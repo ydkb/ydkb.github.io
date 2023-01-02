@@ -11,14 +11,25 @@ Source code for BootHID commandline: [https://github.com/yangdigi/BootHID/tree/m
 
 ## Win下刷固件的方法
 
-固件功能正常的时候，一般是按住键盘左上角按键不放，同时插入USB数据线，键盘进入刷机模式。这时将固件的hex文件拖到YDKB Tool.exe上，固件将自动开始刷新。刷新完成后键盘会重启。
+##### 使用 YDKB Tool.exe 自动识别并刷新固件
 
-也可以手动使用刷机工具里的bin目录内的HIDBootFlash.exe，然后进行刷新。
+ YDKB Tool 可以自动识别bootloader的版本，然后开始烧录固件。操作步骤如下：
+
+1. 固件功能正常的时候，一般是按住键盘左上角按键不放，同时插入USB数据线，键盘进入刷机模式。
+2. 这时将固件的hex文件拖到 `YDKB Tool.exe` 上，固件将自动开始刷新。刷新完成后键盘一般会重启。
+
+如果刷错固件，重复上面两步操作刷入正常固件（双模键盘先关闭电池开关或者拔掉电池）。
+
+![|500](assets/boothid_win_01.png)
+
+如上图所示（如果和上图不同，重新下载网站上的最新刷机工具），刷新成功了，下面的部分可以不用看。
+
+##### 使用 HIDBootFlash 手动刷新固件
+如果上面的方式不成功，也可以手动使用刷机工具里的bin目录内的HIDBootFlash.exe，然后进行刷新。
 
 如果运行时提示“无法启动，并行配置不正确”，如下图，在bat界面的提示也与这个类似。
 
 ![](assets/vc2005sp1_error.jpg)
-
 
 请安装VC运行库，需要的是vcredist_x86, 官方下载地址如下
 
@@ -56,7 +67,7 @@ bootloadHID -r hex路径
 
 ![|600](assets/mac_boothid_01.jpg)
 
-某些键盘现在使用的固件占用的是31KB的空间，直接使用brew安装的版本，无法刷新。会出现如下的错误提示。
+某些键盘现在使用的固件占用的是31KB的空间（极少数，2023年后的新固件，都会降低到30K内），直接使用brew安装的版本，无法刷新。会出现如下的错误提示。
 
 ![|600](assets/mac_boothid_02.jpg)
 

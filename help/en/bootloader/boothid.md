@@ -9,9 +9,26 @@ Source code for BootHID commandline: [https://github.com/yangdigi/BootHID/tree/m
 
 ## How to reflash firmware under Windows
 
-When the firmware works well, generally press and hold the top-left button on the keyboard and meanwhile insert the USB data cable. Then, drag the hex file of the firmware to **YDKB Tool.exe**, and the firmware will automatically start to refresh. The keyboard will restart when the reflash is complete.
+##### Use YDKB Tool.exe to automatically identify and flash firmware
 
-You can also manually use HIDBootFlash.exe in the bin directory of the flashing tool. It needs VS2005SP1.
+DKB Tool can automatically identify the version of the bootloader, and then start to burn the firmware. The operation steps are as follows:
+
+1. When the firmware works well, generally press and hold the top-left button on the keyboard and meanwhile insert the USB data cable. 
+2. Then, drag the hex file of the firmware to `YDKB Tool.exe`, and the firmware will automatically start to refresh. The keyboard will restart when the reflash is complete.
+
+If the wrong firmware is flashed, repeat the above two steps to flash the normal firmware (the dual-mode keyboard should first turn off the battery switch or unplug the battery).
+
+![|500](assets/boothid_win_01.png)
+
+As shown in the above picture (if it is different from the above picture, re-download the latest flashing tool on the website), the refresh is successful, and the following part can be ignored.
+
+##### Use HIDBootFlash to manually flash the firmware
+
+If the above method is not successful, you can also manually use HIDBootFlash.exe in the bin directory of the flashing tool. 
+
+It may need VS2005SP1(vcredist_x86) if you can not run it.
+
+![](assets/vc2005sp1_error.jpg)
 
 <html>
 Visual Studio 2005 (VC++ 8.0) SP1<br>
@@ -21,10 +38,7 @@ Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Up
 
 The interface for opening the software is as follows:
 
-<div style="width: 500px">
-
-![](assets/hidbootflash.jpg?500)
-</div>
+![|500](assets/hidbootflash.jpg)
 
 Proceed as follows:
   1. Press and hold the key on the top-left corner of the keyboard and insert the USB data cable first to make the keyboard enter the flash mode.
@@ -51,7 +65,7 @@ The result is as follows:
 
 ![|600](assets/mac_boothid_01.jpg)
 
-The firmware used by some keyboards now occupies 31KB of space, and the version installed by brew can not be reflashed directly. The following error message will appear.
+The firmware used by some keyboards now occupies 31KB of space(Very few, the new firmware after 2023 will be reduced to within 30K), and the version installed by brew can not be reflashed directly. The following error message will appear.
 
 ![|600](assets/mac_boothid_02.jpg)
 
@@ -66,34 +80,22 @@ Here to talk about possible problems if you can't reflash. The latest reflash to
 
 1.Use zadig (download url: http://zadig.akeo.ie), select "list all" in the option, and then let the keyboard enter the flash mode. Check if the USB ID is 16C0 05DF, and the driver is HidUsb. This setting may display the name HIDBoot or just a USB input device. In short, the USB ID is the one below.
 
-<div style="width: 600px">
+![|600](assets/boothid_driver_01.png)
 
-![](assets/boothid_driver_01.png?600)
-
-![](assets/boothid_driver_02.png?600)
-</div>
+![|600](assets/boothid_driver_02.png)
 
 The two pictures above are all driven normally. If the display here is not HidUSB, for example, it may be:
 
-<div style="width: 600px">
-
-![](assets/boothid_driver_04.png?600)
-</div>
+![|600](assets/boothid_driver_04.png)
 
 This driver is wrong and must be uninstalled.
 
 2. Find the device in the device manager, non-hid, generally displayed on the universal serial bus or libusb device. Find, right click and select Uninstall Device.
 
-<div style="width: 400px">
-
-![](assets/boothid_driver_05.png?400)
-</div>
+![|400](assets/boothid_driver_05.png)
 
 Also remove the device driver when uninstalling
 
-<div style="width: 400px">
-
-![](assets/boothid_driver_06.png?400)
-</div>
+![|400](assets/boothid_driver_06.png)
 
 After uninstalling, go to zadig and check if the driver is restored to HidUsb. If not, refresh the device manager and continue uninstalling (for example, if the winusb or libusb driver is installed multiple times, it will need to be uninstalled multiple times).
