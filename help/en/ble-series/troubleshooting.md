@@ -2,20 +2,23 @@
 
 This section is designed to help users find and resolve issues. This section is under construction.
 
-<html><div class="hint">
-<subtitle>HINT</subtitle>
-<ul><li>In case of an error, first try to turn off the switch or pull out the battery, and then power on to see if it returns to normal.</li>
-<li>Please follow the steps below to find the problem. Sometimes Bluetooth pairing or connection problems are not caused by the keyboard, but the OS or OS driver.</li>
-</div></html>
-<br>
-<html><div class="attention">
-<subtitle>ATTENTION!!</subtitle>
-<ul><li>First of all, it is recommended that the keyboard is still working, such as indicator lights or at least partially working when connected to USB.</li>
-<li>On the basis of meeting the previous one, you can check the current working status with the help of the keyboard indicator. </li>
-<li>When it is convenient to connect to USB, it is recommended to use the text output battery value for troubleshooting. </li>
-</div></html>
+> [!yddh: HINT]
+> - In case of an error, first try to turn off the switch or pull out the battery, and then power on to see if it returns to normal.
+> - Please follow the steps below to find the problem. Sometimes Bluetooth pairing or connection problems are not caused by the keyboard, but the OS or OS driver.
 
+> [!ydda: ATTENTION!!]
+> - First of all, it is recommended that the keyboard is still working, such as indicator lights or at least partially working when connected to USB.
+> - On the basis of meeting the previous one, you can check the current working status with the help of the keyboard indicator.
+> - When it is convenient to connect to USB, it is recommended to use the text output battery value for troubleshooting.
 All references in the text to pressing <key>LShift+RShift+XX</key> or <key>LShift+RShift+LCtrl+XX</key> refer to holding down the left Shift and right Shift(maybe and left Ctrl) first and press XX key once. You can then release the left and right shifts. Only press one command at a time. To press another command, you need to release the left and right Shift keys, and then press the left and right Shift keys again.
+
+
+## Quick troubleshooting and reassurance
+
+1. First, make sure that the keyboard can type out characters when the cable is connected. In this case, there is an 80% probability that the keyboard is fine.
+2. When you can type with cable, the text output by <kbd>LShift+RShift+V</kbd> is normal, that is, it is not 12 or 44 or 45. there is an 90% probability that the keyboard is fine. Clearing the pairing information on the keyboard and pairing again usually solves the problem.
+3. If the problem has not been solved, then use [Reset Bluetooth](reset-ble.md) and it is successful, that is, the Bluetooth name can be restored to the default Adafruit Bluefruit LE, and then re-initialized to the keyboard name. Then there is an 99% probability that the keyboard Bluetooth hardware and software is fine. If the problem persists after successfully resetting the Bluetooth, turn the direction of troubleshooting to the computer (such as system bugs or driver problems).
+
 
 
 ## Bluetooth repeatedly connected/paired
