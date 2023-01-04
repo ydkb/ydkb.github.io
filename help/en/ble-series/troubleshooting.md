@@ -113,6 +113,12 @@ When the text output battery level is normal, first assume that the problem is o
 
 If the above operation still does not work, there may be a computer driver or system bug, you can try to pair the keyboard to other devices, such as mobile phones or other computers, for comparison.
 
+### 5 A special case:  it occurs after waking up from deep power-saving mode(including Lock Mode)
+
+This case is that after waking up fromdeep power-saving mode(including Lock Mode), thongh the computer shows it is connected, the keyboard can't typing anything. At this time, if you use <kbd>LShift+RShift+B</kbd> to restart the keyboard, it will most likely be usable.
+
+This problem can be quickly reproduced through Lock Mode. This situation is caused by a hardware problem. Specifically, it may be a problem with the C1 or C2 capacitor next to the MCU (32u4), and those two are 1uF capacitors. Capable, if there is obvious damage to the appearance or the measured value is wrong, replace it. If you can see a weak weld, resolder it. If you can't do it, ask the seller for help.
+
 
 ## Bluetooth cannot connect automatically
 
