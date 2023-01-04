@@ -15,7 +15,7 @@
         <div class="kbdbg-inner" style="height:2px; width: 924px; margin-left: -17px; top: 15px; background-color:rgba(255,255,255,0.4)"></div>
         <div class="kbdbg-inner" style="height:2px; width: 924px; margin-left: -17px; top: 30px; background-color:rgba(255,255,255,0.4)"></div>
         <div class="kbdbg-inner" style="height:2px; width: 924px; margin-left: -17px; top: 45px; background-color:rgba(255,255,255,0.4)"></div>
-        <div class="kbdbg-inner kbd-led led0" style="height:54px; left: 892px; top: 300px; background-color: #ff0000"></div>
+        <div class="kbdbg-inner kbd-led led3" style="height:54px; left: 892px; top: 300px; background-color: #ff0000"></div>
     </div>
     <div class="mykeycap3">Esc</div>
     <div class="mykeycap1 col200">F1</div>
@@ -30,7 +30,7 @@
     <div class="mykeycap1 col1200">F10</div>
     <div class="mykeycap1 col1300">F11</div>
     <div class="mykeycap1 col1400">F12</div>
-    <div class="mykeycap2 col1550">Delete</div>
+    <div class="mykeycap2 led1 suden col1550">Delete</div>
 
     <div class="mykeycap1 row125">`</div>
     <div class="mykeycap1 row125 col100">1</div>
@@ -63,7 +63,7 @@
     <div class="mykeycap1 row225 col1250">]</div>
     <div class="mykeycap2 row225 col1550">PgUp</div>
 
-    <div class="mykeycap2 w175 row325">Capslock</div>
+    <div class="mykeycap2 led0 suden w175 row325">Capslock</div>
     <div class="mykeycap1 row325 col175">A</div>
     <div class="mykeycap1 row325 col275">S</div>
     <div class="mykeycap1 row325 col375">D</div>
@@ -124,10 +124,12 @@
 </div>
 <div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0xF000" value-format="bin uf2"></div>
 <div id="kb_ledmap" style="display: none">
-    <li id="kb_ledmap-0" class="rgb_color" value="17" title="右下角灯，指示灯开启时显示此颜色">右下角指示</li>
+    <li id="kb_ledmap-0" class="rgb_color" value="17" title="右下角灯，指示灯开启时显示此颜色">Caps轴灯</li>
+    <li id="kb_ledmap-1" class="rgb_color" value="17" title="右上角轴灯，指示灯开启时显示此颜色">右上角轴灯</li>
+    <li id="kb_ledmap-3" class="rgb_color" value="17" title="右下角指示条，指示灯开启时显示此颜色">右下角指示</li>
 </div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2UXYobQQyEL1QPrX/1WYzvf42UenYxBOw8ZZlAGNOGsVRV/Un48XiIJWRDIyCV5nAEEoXGhiyIQBRiEIfEEw9hfUH6dC2oQBVqUKcINKEFbeiGLZiwwxQp7gKqW4CGVrCGbfhCmrLA+TE47QOe8GKfN3wjFkIQijAEwwUiEYVoxEZSQJB0MHakI5k+kYVs5EYtlKAUZShHBYqXK1SjNjt6oQWtaEM7OtCJ5u0bvbEXtmArtmE79tx/J3ZhE8/wIaBFQkY+iwp049ssikgm8emqgcFzaJUN0GEiA3WoDlYheyIRm2+CJRgdnMNzgA7RURkNKrh41JMiDzqfZ/SJQDd9x0XPGztnfPm+ktRX18lBcM7LfKv4Kysny7ER//D1un65dAhYdh4Xeym9eQ6HP1YhvarfVr1SfqtGXtsYebHuc9Zb/c/unytmfW08uRPjXTXVMwFPAs5QTn79Fet/seKs5odJ3CrsDyJp7sj5o7193B+Ecoskd6m4iMyO/N+T36ncIcldKp7PXz+FvMO7CQAA" title="参考1">参考1</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2UXYrdMAyFN3QerH95LeHufxs9SmYaaLnTp9IUhgQHHPkc6bPs4zjEEhnaCwtSaQ5HIFFobAgnBaIQgzgkXjgkGQhpyIYuqEAValCHBjShBW3ohi2YcIUpUtwFVLcAHa1gDdvwhTRlgPM1OO0DnvDiOm/4RiyEIBRhCCYXiEQUohEbSQFB0sG4Ip3FIFlSIRu5UQslKEUZylGBYnGFatTmChbegla0oR0d6ESz+kZv7IUt2Ipt2I499e/ELmziGT4EtEjIyGdRgW6czaKIZBKfrhoYHIdW2QAdJjJQh+pglaACmdp8CZZgdHAOzwE6REdlNKjg4lEvihxkTx7UPB0IQTedx0fPGTvH+HC+c6HX9UwmROcsRz5U/M6We8uNi9FP9br+XDpELDtPF7uV3jwniT9GIb2q30bdWX6qRl79GHnR7nOst/pfu38dMQ1s48muGO+qiZ49CGNz/DxCf8H6f4wYMG48f99gfgfDRl3nwf3XyTwl4rrKnpDJUyLuy/27T36l8oRMnhLxev0A774QaMQJAAA=" title="参考1">参考1</li>
 </div>
-<div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA82VS5LbMAxEL9QL4U+cxeX7XyMNys5MEiWpymKikk2TYrMJPIHy4/EQS2ToOqCQTDngCCQKCw0ORSCcMohD4omHJKQgC9JQLhOoQg3q0IAmtKAL2rADJlxhCjOYwwLczgq2YA0/kFr0cIXbop87POAJL67zNTNxIAShL20wvkBQYpGGWIhG0kkoQBrXpTMlJBMr5EI2SvZHUYby3eGu4lH7TnMRCSzBUizDcqzASixiWFiNPtCCVrShHT0gOtGFJqcB9fYTpioHPQ76EmnR5gSrRw0XtgOubNgOHhm+A3gIS9BhXOaXjIlJh+ygHbbszz7Tm5k6d33S5sEHQTLzlfM690Z6FSmoM/PU5r00Z9gv1UTw7pOik/f8dk5BeH+4eY/bBj6QP5DjM3AqDN6n24b/4w6clV+vHySfrow1ECPzPeZGg7N2JQ7WadfV2r95XyrqMjxKhrAb0zlPy0CqHF4sUYKowsZL/oQQV3RZcizVmhLYz2hqABVTmbs2fx8qcU5l/UM6/1cxzEL7NZ7K11fe58h2G+/TcOE987lb/zg5+n2Ob5YZv8/Wqa/L6EZtP423p8XpzxVnNHcg92fFVJ29+LL2j8+H/qYhf53ifBXeIZK7KC7/HG4c7xe+nFo9bxHNXRTP5zfTmQiDFQoAAA=="></div>
+<div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA82VXZLbIBCEL9QPmn84i8v3v0Z6wF57N0pSlYddlWwMoukZPg3y7XYTS2ToOKCQTDngCCQKAxMcikA4ZRCHxB03SUhBBmRCuUygCjWoQwOa0IIO6IQdMOEKU5jBHBZgOCvYgE34gdSihyvcBv3c4QFPeHGdj56JAyEIfWiD+QWCEos0xEBMJJ2EAqRxXTq3hOTGCjmQEyXroyhD+eowqnjUujO5iASGYCiGYThGYCQGMQyMiXlgCqZiGqZjNoiZmIVJTg3q6Sfcqhz0OOhLpEWbDVaPai5sG1xZs2080nwbcBOWoEO79C8ZE5M22UbbbNnvON3rmdpR77S58UGQTH9lXzs20qtIQZ07T528l+ZM+6HqDJ59UnTy7t+ZXRA+X24+220Bb8gv5HgHToXB53Zb8D9H4Kz8fn2SvF0ZoyFG5nPMQI2zViU21m7H2dp/eZ8q6jQ9SppwGB//Pi0NqbJ5sUQJogoLL/kTQpzRZcmxVKtLYD2jrgFUdGWu2vxzqsTZlfUf2/lZRTNzYwm8mHX562Pze2SrjeeROAnQ87lafx0f/Zjj66XHzwO29XWaYqvty3h5Wmx/rtjZXAHf3xVdevaAzANwvJ/8i6b8fYr9PrxCJldRnP5DXDjf76MSUz0vkc1VFPf7LwGDvh4aCgAA"></div>
 <div id="kb-changelog-url" href="hw75" style="display: none;"></div>
