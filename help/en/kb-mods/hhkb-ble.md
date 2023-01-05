@@ -34,7 +34,7 @@ If you have any problem, use this instruction to do troubleshooting: [BLE troubl
 
 There is a physical switch behind the dip switch cover. This is the only switch on the controller. 
 
-> [!ydda: ATTENTION:]
+> [!ydda] ATTENTION:
 > - This switch's function is to turn on/off the battery power supply, not Bluetooth.
 > - Thus when this switch is turned off, if you plug in the USB cable, Bluetooth can still work as in this case USB is the power source.
 
@@ -45,7 +45,7 @@ The switch can be easily dialed by using the cover directly, close to the USB po
 
 If you want to turn off Bluetooth, refer to [Bluetooth switch & connection status](/en/ble-series/connection-status)
 
-> [!yddh: HINT] 
+> [!yddh] HINT 
 > - this software switch is designed to turn off **Bluetooth FUNCTION** completely for people who only or temporarily only use USB. It is recommended to turn off the physical power switch While this switch is off.
 > - It is not designed for turning off Bluetooth daily to save energy as HHKB BLE consumes much more power when standby by using this function than Lock Mode.
 
@@ -54,7 +54,7 @@ If you want to turn off Bluetooth, refer to [Bluetooth switch & connection statu
 
 The charging port and data port are both the small USB port on HHKB, not two large USB female ports.
 
-> [!ydda: It is recommended to use the PC's USB port or 5v charger to charge.]
+> [!ydda] It is recommended to use the PC's USB port or 5v charger to charge.
 > - improper charging(like more than 6v) may broke the charging IC. Using a high-power charger will not increase the charging speed as the default charging current is limited to about 450mA. 
 
 The charging indicator is a red led below the left USB HUB port(if hardware version is more than v2.5, it is a blue led). You can see it from the back. It has three states:
@@ -82,7 +82,7 @@ Open the website https://ydkb.io, select the keyboard **HHKB BLE**, and then the
 
 In addition to pressing the upper left key (usually ESC) to insert the cable to enter the flashing mode, you can also use the <kbd>Reset</kbd> in **LEDs and Functions**, in order to prevent accidental pressing, you need to hold down the < kbd>LCtrl</kbd>, and then press this <kbd>Reset</kbd>, you can jump directly to the flashing mode without unplugging and replugging.
 
-> [!ydda: ATTENTION]
+> [!ydda] ATTENTION
 > - In addition to the choice of <b>HHKB BLE</b> for the keyboard, you can also use <b>HHKB BLE S</b>. 
 > - This firmware with S has a faster response speed, and it is temporarily unable to guarantee compatibility with all HHKBs. Most of them should be fine. 
 > - If your keyboard has no compatibility issues, it is strongly recommended to choose the firmware of <b>HHKB BLE S</b>. 
@@ -92,7 +92,7 @@ In addition to pressing the upper left key (usually ESC) to insert the cable to 
 
 Common functions for indicators can be defined by [LEDMAP](en/features/ledmap) . The indicator lights only when the keyboard is working, not power saving. It is recommended not to set any indicators to a function that may keep it constantly on as that may increase the power consumption and significantly reduce the battery life.
 
-> [!yddh: HINT]
+> [!yddh] HINT
 > - As mentioned above, the red light under the USB port on the left is the charging indicator. In addition, the green light below the USB on the right is equivalent to LED3.
 
 Default LEDMAP Setting is LED1 for CapsLock，LED2 for Layer1(fn)，LED3 for Layer2.
@@ -104,7 +104,7 @@ The default LEDMAP settings is as below. If you want to modify it yourself, plea
 | LED2(default yellow or white) | Layer1(It will light up when you press Fn/L1.) |
 | LED3(default green) | Layer2 | 
 
-> [!ydda: ATTENTION when in bluetooth mode]
+> [!ydda] ATTENTION when in bluetooth mode
 > - In bluetooth mode，The Num, Caps, and Scroll Lock indicators are not synchronous with the OS status in Bluetooth mode. 
 >  - In bluetooth mode, They just toggle on or off when pressed. They are synchronous in USB mode.
 >  - If one indicator is out of sync, you can use Shift + KEY, such as Shift + Capslock. In this way CapsLock will take effect but its indicator won't change.

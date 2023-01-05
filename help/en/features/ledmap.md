@@ -23,7 +23,7 @@ There are two kinds of indicators.
 | RGB | in addition to setting the indicator function, you can also specify the color. |
 | Undefinable indicator | This part, such as the charging indicator, also has some specific purposes. It does not support modification in the LEDMAP. It also has a specific indication function. |
 
-> [!yddh: HINT]
+> [!yddh] HINT
 > - The LEDMAP of some keyboards supports setting RGB bottom light and backlight, but they can only take effect as LEDMAP indicator functions when the RGB lighting effect and backlight are turned off.
 
 
@@ -49,7 +49,7 @@ Currently supports up to 8 indicators, each indicator can be individually assign
 
 ## Indicator in bluetooth mode
 
-> [!ydda: ATTENTION when in bluetooth mode]
+> [!ydda] ATTENTION when in bluetooth mode
 > - In bluetooth mode，The Num, Caps, and Scroll Lock indicators are not synchronous with the OS status in Bluetooth mode. 
 > - In bluetooth mode, They just toggle on or off when pressed. They are synchronous in USB mode.
 > - If one indicator is out of sync, you can use Shift + KEY, such as Shift + Capslock. In this way CapsLock will take effect but its indicator won't change.

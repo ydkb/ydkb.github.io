@@ -8,7 +8,7 @@
   2. 可以识别固件，只有针对当前键盘的固件才会被刷入。
   3. 可以直接从U盘里读出当前的固件，用于上传keymap等操作。
 
-> [!yddl: 使用UF2 Bootloader的键盘]
+> [!yddl] 使用UF2 Bootloader的键盘
 > - HW75 
 > - Simpo40
 > - Simpo68

@@ -1,7 +1,7 @@
 # Welcome to use YDKB 
 Currently some documentations for English are missing. You can use online translation service.
 
-> [!yddh: HINT]
+> [!yddh] HINT
 > - It is recommended to use Chrome or Edge browser for best compatibility.
 > - The latest versions of Firefox and Safari are currently supported as well.
 > - This document may have some lack of rigor and uniformity, please forgive me.
@@ -18,7 +18,7 @@ But on the basis of TMK made a certain simplification and modification. The purp
 
 On the left is the directory. If it is a mobile browser, expand the sidebar at the top and start browsing.
 
-> [!ydda: ATTENTION]
+> [!ydda] ATTENTION
 > - The website of ydkb.io is only used to generate firmware with your keymap.
 > - It can not read or write any information from or to the keyboard.
 
@@ -27,6 +27,6 @@ Here, too, are some basic rules from the beginning of my own vision:
   2. Only under the condition of human intervention can keyboard information be read or written. This includes updating firmware, reading keymap, etc.
   3. No need to run any driver software for daily use.
 
-> [!yddh: Useless knowledge]
+> [!yddh] Useless knowledge
 > - About YDKB's name, YD is mainly from a comic named "Ultimate Otaku Teacher".
 > - **やりだいのことかやるだけ(do only what you want to do), take the first letter of や(YA)だ(DA).**

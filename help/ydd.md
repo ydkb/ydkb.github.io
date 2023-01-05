@@ -16,7 +16,7 @@
 另外还有一种兼容 admotions 的写法。
 
 ```markdown
-> [!yddh: 提醒标题]
+> [!yddh] 提醒标题
 > - 第一条内容
 > - 第二条内容
 ```
@@ -53,7 +53,7 @@
 另外还有一种兼容 admotions 的写法。
 
 ```markdown
-> [!ydda: 注意标题]
+> [!ydda] 注意标题
 > - 第一条内容
 > - 第二条内容
 ```
@@ -149,7 +149,7 @@
 或者
 
 ```markdown
-> [!yddl: High-end]
+> [!yddl] High-end
 > - 1800mini
 > - Mater98
 > - X-8086K
@@ -158,7 +158,7 @@
 
 效果如下：
 
-> [!yddl: Lufa Mass Storage]
+> [!yddl] Lufa Mass Storage
 > - 1800mini
 > - Master98
 > - Sairo64

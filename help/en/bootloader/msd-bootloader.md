@@ -6,7 +6,7 @@ Note: The USB disk drive mode here refers to the keyboard itself becoming a disk
 
 Many keyboards supported by ydkb.io use this method. The advantage of this method is that firmware refresh and reading can be completed without additional software.
 
-> [!yddh: HINT:]
+> [!yddh] HINT:
 > - There are two files, "keyboard_name.BIN" and "EEPROM.BIN", in the disk drive of flash mode. They are "virtual" files that are mapped to the contents of the FLASH and EEPROM of the keyboard controller.
 > - Each time when re-entering the flash mode, their date is the same. Do not use the file date to determine whether the reflash is successful.
 
@@ -29,14 +29,14 @@ The methods for different keyboards are basically the same. Generally, three ste
 
 ## Reflash firmware in Mac
 
-> [!ydda: IMPORTANT:]
+> [!ydda] IMPORTANT:
 > - The method of operating directly from the Finder may not be suitable for macOS 13 Ventura(error code 100093), temporarily switch to the following command line method.
 > - The reason may be that macOS 13 currently has some compatibility issues with various MassStorage Bootloaders. https://github.com/ARMmbed/DAPLink/issues/982
 > - 2022.12.16 After updating macOS 13.1, although the operation in Finder no longer reports an error, but the file is not completely written, please still use the command line to refresh the firmware.
 
 ##### macOS 13 Ventura can use the following methods(Also works on macOS 12)
 
-> [!yddh: Reminder:]
+> [!yddh] Reminder:
 > - As of 2022.12.16, macOS 13.1 supports command-line way to correctly reflash the firmware.
 > - If there is a new system update, this part of description will be updated.
 
@@ -65,7 +65,7 @@ After waiting for the command to complete, the reflash is successful. The newer 
 
 ##### macOS 12 Flash firmware using Finder actions
 
-> [!ydda: Important:]
+> [!ydda] Important:
 > - The following method via Finder is only available for macOS 12. For macOS 13, use the command line 
 
 The method of entering the flash mode is the same as above, but the method of copying file to disk is different.
@@ -89,14 +89,14 @@ The method of entering the flash mode is the same as above, but the method of co
 
 5. Some of the newer bootloaders will automatically exit after the file is copied. At this time, it is normal for the Mac to prompt that it has not exited correctly.
 
-> [!yddh: HINT：]
+> [!yddh] HINT：
 > - If after the deletion in the Trash there is still insufficient space, exit the flash mode and re-enter the flash mode, and then operate from step 1 again.
 ```
 
 
 ## Reflash firmware in Linux
 
-> [!yddh: HINT:]
+> [!yddh] HINT:
 > - The following aspects are provided by netizen tb600211 686294 and I've tested it under Ubuntu 20.04.
 > - Not guaranteed to be available on all Linux distributions. If not, when you need to flash the firmware, use windows to flash it.
 

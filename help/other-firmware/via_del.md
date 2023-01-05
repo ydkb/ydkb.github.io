@@ -16,7 +16,7 @@ VIA的固件功能，所以本帮助文档里面的大部分内容将无效。VI
 
 更新下表固件后，更新方法与ydkb.io一致。大部分使用 [Mass Storage Device Bootloader（U 盘模式)](bootloader/msd-bootloader.md)。
 
-> [!ydda: 注意]
+> [!ydda] 注意
 > - 更新固件可能导致之前的按键配置被重置为默认。
 > - 建议固件更新前，先用 <u>SAVE+LOAD</u> 里的 <u>Save Current Layout</u>，保存当前按键设置到本地。更新完之后还可以再导入。
 

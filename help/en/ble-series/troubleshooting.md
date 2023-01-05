@@ -2,11 +2,11 @@
 
 This section is designed to help users find and resolve issues. This section is under construction.
 
-> [!yddh: HINT]
+> [!yddh] HINT
 > - In case of an error, first try to turn off the switch or pull out the battery, and then power on to see if it returns to normal.
 > - Please follow the steps below to find the problem. Sometimes Bluetooth pairing or connection problems are not caused by the keyboard, but the OS or OS driver.
 
-> [!ydda: ATTENTION!!]
+> [!ydda] ATTENTION!!
 > - First of all, it is recommended that the keyboard is still working, such as indicator lights or at least partially working when connected to USB.
 > - On the basis of meeting the previous one, you can check the current working status with the help of the keyboard indicator.
 > - When it is convenient to connect to USB, it is recommended to use the text output battery value for troubleshooting.

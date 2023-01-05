@@ -4,7 +4,7 @@
 
 目前YDKBs-Reflash支持的Bootloader主要包括
 
-> [!yddl: ATMEL DFU]
+> [!yddl] ATMEL DFU
 > - YD40w 
 > - YDKB优联 
 > - Staryu 
@@ -13,7 +13,7 @@
 > - Leechee 
 > - GH60_ACB 
 
-> [!yddl: Lufa Mass Storage]
+> [!yddl] Lufa Mass Storage
 > - 1800mini
 > - Master98
 > - Sairo64
@@ -40,7 +40,7 @@
 > - HHKB BLE
 > - Filco104
 
-> [!yddl: BootHID]
+> [!yddl] BootHID
 > - Taichi Pad
 > - BLE40
 > - BLUP
@@ -58,10 +58,10 @@
 > - Fmini
 > - CA66
 
-> [!yddl: STM32 HID Bootloader]
+> [!yddl] STM32 HID Bootloader
 > - STM60 A/B/C
 
-> [!yddl: STM32 UF2 Bootloader]
+> [!yddl] STM32 UF2 Bootloader
 > - STM60 A/B/C
 > - Simpo40
 > - Simpo66
@@ -70,10 +70,10 @@
 
 
 
-> [!yddl: LUFA HID(K.T.E.C.)]
+> [!yddl] LUFA HID(K.T.E.C.)
 > - CW40 
 > - Daisy
 > - Ergodone
 
-> [!yddl: Arduino]
+> [!yddl] Arduino
 > - Some U2U
