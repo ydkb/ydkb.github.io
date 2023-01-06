@@ -41,7 +41,7 @@ macOS上提示的连接到设备的信息这里就不多讲，连上显示U盘�
 diskutil umount /Volumes/HHKB_BLE
 ```
 
-执行后得到的结果是 `Volume HHKB_BLE on disk4 unmounted`，记住这里是`disk4`，然后接下来执行如下命令，注意这条里的disk4与上一条命令的得到的结果对应。
+执行后得到的结果是 `Volume HHKB_BLE on disk4 unmounted`，记住这里是`disk4`，然后接下来执行如下命令，注意这条里的disk4与上一条命令的得到的结果对应。不要改动`seek=4`。
 
 ```macOS
 sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4

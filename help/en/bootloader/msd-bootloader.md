@@ -48,7 +48,7 @@ After connecting to the display flash disk, first execute the following command 
 diskutil umount /Volumes/HHKB_BLE
 ```
 
-The result obtained after execution is `Volume HHKB_BLE on disk4 unmounted`, remember that this is `disk4`, and then execute the following command, note that the disk4 in this article corresponds to the result obtained by the previous command.
+The result obtained after execution is `Volume HHKB_BLE on disk4 unmounted`, remember that this is `disk4`, and then execute the following command, note that the disk4 in this article corresponds to the result obtained by the previous command. Don't change `seek=4`.
 
 ```macOS
 sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
