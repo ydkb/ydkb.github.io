@@ -24,708 +24,784 @@
     <script src="./common/text-autospace.min.js"></script>
     <script src="editor.min.js"></script>
 </head>
+
 <body>
-<header>
-<nav class="uicolor">
-    <div class="nav-wrapper page-wd">
-        <div data-target="nav-side2" class="brand-logo left sidenav-trigger full hide-on-wide-only" style="cursor:pointer;"><i class='fa fa-keyboard-o'></i> YD Keymap Builder for <span id="logo_name">YDKBs</span></div>
-        <ul id="nav-mobile" class="right">
-            <li><a id="shop-url" class="button tooltipped" href="//ydkb.taobao.com" target="_blank" style="width: 100px" lang-id="nav_shop" data-tooltip="shop is not ready."><i class="material-icons mr5">shopping_cart</i>Shop</a></li>
-            <li><a id="help-url" class="button" href="help/" target="_blank" lang="zh_sc"><i class="material-icons mr5">help_outline</i>帮助文档</a></li>
-            <li><a id="download-share-dropdown-btn" class="dropdown-trigger" data-target="download-share" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载/分享</a></li>
-            <li><a class="dropdown-trigger" data-target="lang-theme"><i class="material-icons mr5">language</i>Language</a></li>
-        </ul>
-        <div id="logo_desc" style="padding: 23px 70px; color: #ddd">YDKBs.desc</div>
-    </div>
-</nav>
-
-</header>
-<main onselectstart="return false">
-<button id="fly-button">fb</button>
-<div id="keyboard-pane" class="keyboard-pane bg1 z-depth-1 hoverable">
-    <div class="row uicolor">
-        <div class="col" style="width: 340px">
-            <div id="layouts-set-div" style="display: none;">
-                <a id="layouts-set-on" class="btn-floating btn-large waves-effect scale-transition scale-out tooltipped uicolor" style="margin-top: 100px; margin-left: -10px; position: absolute;z-index: 5;" data-tooltip="选择配列" lang="zh_sc"><i class='fa fa-gears'></i></a>
-            </div>
-            <div class="fl">
-            <span id="firmware-dropdown-btn" class='mykeycap2 sidenav-trigger btn select tooltipped jsdef wd-150 tip_large' data-target="nav-side" data-tooltip="选择要设置的键盘" lang="zh_sc">选择键盘</span>
-            
-            </div>
-            <div id="keymap-load-div" class="fl jsdef ml-10" style="display: block">
-            <span id="keymap-load-dropdown-btn" class="dropdown-trigger btn select waves-effect tooltipped uicolor" data-target='keymap-load-dropdown' data-tooltip="上传固件文件读取其按键配置,<br>或者从预设中选择" lang="zh_sc"><i class="material-icons fl">file_upload</i>读取Keymap</span>
-            <ul id="keymap-load-dropdown" class="dropdown-content">
-                <li value="file"><a href="#!" lang="zh_sc"><i class="material-icons mr5">file_upload</i>上传文件读取</a><input id="firmwareFile" class="tooltipped" type="file" accept=".hex,.bin,.uf2" style="height:40px;width:149px;margin-left:0px; margin-top: -40px;opacity: 0;position: absolute;z-index: 12; " data-position="right" data-tooltip="上传.hex .bin .uf2格式固件，再读取keymap，可以载入你先前在该固件中的按键配置。" lang="zh_sc" /> </li>
-                <li class="divider"></li>
-                <li id="preset-keymap-group" class="disabled optgroup uicolor-text"><span lang="zh_sc">-- 预设配列 --</span></li>
-                <ul><li id="layouts-set-on2"><a lang="zh_sc"><i class="material-icons mr5">settings</i>自定义</a></li></ul>
-                <ul id="preset-keymap-list">
+    <header>
+        <nav class="uicolor">
+            <div class="nav-wrapper page-wd">
+                <div data-target="nav-side2" class="brand-logo left sidenav-trigger full hide-on-wide-only"
+                    style="cursor:pointer;"><i class='fa fa-keyboard-o'></i> YD Keymap Builder for <span
+                        id="logo_name">YDKBs</span></div>
+                <ul id="nav-mobile" class="right">
+                    <li><a id="shop-url" class="button tooltipped" href="//ydkb.taobao.com" target="_blank"
+                            style="width: 100px" lang-id="nav_shop" data-tooltip="shop is not ready."><i
+                                class="material-icons mr5">shopping_cart</i>Shop</a></li>
+                    <li><a id="help-url" class="button" href="help/" target="_blank" lang="zh_sc"><i
+                                class="material-icons mr5">help_outline</i>帮助文档</a></li>
+                    <li><a id="download-share-dropdown-btn" class="dropdown-trigger" data-target="download-share"
+                            lang="zh_sc"><i class="material-icons mr5">file_download</i>下载/分享</a></li>
+                    <li><a class="dropdown-trigger" data-target="lang-theme"><i
+                                class="material-icons mr5">language</i>Language</a></li>
                 </ul>
-            </ul>
+                <div id="logo_desc" style="padding: 23px 70px; color: #ddd">YDKBs.desc</div>
             </div>
-        </div>
-        <div class="col s7_bak jsdef pl-0">
-            <ul id="layer_set" class="tabs" style="background-color: inherit;">
-                <li class="tab"><a class="layer compact" id="layer-0" href="#layer_0">Layer 0</a></li>
-                <li class="tab"><a class="layer compact" id="layer-1">Layer 1</a></li>
-                <li class="tab"><a class="layer compact" id="layer-2">Layer 2</a></li>
-                <li class="tab"><a class="layer compact" id="layer-3">Layer 3</a></li>
-                <li class="tab"><a class="layer compact" id="layer-4">Layer 4</a></li>
-                <li class="tab"><a class="layer compact" id="layer-5">Layer 5</a></li>
-                <li class="tab"><a class="layer compact" id="layer-6">Layer 6</a></li>
-                <li class="tab"><a class="layer compact" id="layer-7">Layer 7</a></li>
-                <li class="tab"><a class="compact" id="ledmap-tab"  href="#ledmap_tab" title="LED指示灯功能设置" lang="zh_sc">LEDMAP</a></li></ul>
-        </div>
-        <div class="col right">
-            <a id='display-layout-info' class="mykeycap2 btn waves-effect jsdef wd-148" lang="zh_sc">显示当前配列信息</a>
-        </div>
-    </div>
+        </nav>
 
-    <div class="fixed-action-btn tips">
-        <a class="btn-floating waves-effect tooltipped red tip_redt scale-transition scale-out" data-tooltip="设置按键信息提示方式(常规按键无提示)" lang="zh_sc"> <i class="material-icons">lightbulb_outline</i></a>
-        <ul>
-            <li><a class="btn-floating blue tooltipped tip_bluet" lang="zh_sc" data-tooltip="中间栏提示，适合老司机"><i class="material-icons">wb_iridescent</i></a></li>
-            <li><a class="btn-floating green tooltipped tip_greent" lang="zh_sc" data-tooltip="按键跟随提示(默认)，适合大部分人"><i class="material-icons">wb_incandescent</i></a></li>
-        </ul>
-    </div>
-    <div id="layouts-set-border" class="row" style="margin: 300px 0 0 200px; max-width: 800px;">
-        <div class="card">
-            <div class="card-content">
-                <div id="layouts-set"></div>
-                <div class="card-action">
-                    <a id="layouts-set-off" href="#" lang="zh_sc">完成</a>
+    </header>
+    <main onselectstart="return false">
+        <button id="fly-button">fb</button>
+        <div id="keyboard-pane" class="keyboard-pane bg1 z-depth-1 hoverable">
+            <div class="row uicolor">
+                <div class="col" style="width: 340px">
+                    <div id="layouts-set-div" style="display: none;">
+                        <a id="layouts-set-on"
+                            class="btn-floating btn-large waves-effect scale-transition scale-out tooltipped uicolor"
+                            style="margin-top: 100px; margin-left: -10px; position: absolute;z-index: 5;"
+                            data-tooltip="选择配列" lang="zh_sc"><i class='fa fa-gears'></i></a>
+                    </div>
+                    <div class="fl">
+                        <span id="firmware-dropdown-btn"
+                            class='mykeycap2 sidenav-trigger btn select tooltipped jsdef wd-150 tip_large'
+                            data-target="nav-side" data-tooltip="选择要设置的键盘" lang="zh_sc">选择键盘</span>
+
+                    </div>
+                    <div id="keymap-load-div" class="fl jsdef ml-10" style="display: block">
+                        <span id="keymap-load-dropdown-btn"
+                            class="dropdown-trigger btn select waves-effect tooltipped uicolor"
+                            data-target='keymap-load-dropdown' data-tooltip="上传固件文件读取其按键配置,<br>或者从预设中选择" lang="zh_sc"><i
+                                class="material-icons fl">file_upload</i>读取Keymap</span>
+                        <ul id="keymap-load-dropdown" class="dropdown-content">
+                            <li value="file"><a href="#!" lang="zh_sc"><i
+                                        class="material-icons mr5">file_upload</i>上传文件读取</a><input id="firmwareFile"
+                                    class="tooltipped" type="file" accept=".hex,.bin,.uf2"
+                                    style="height:40px;width:149px;margin-left:0px; margin-top: -40px;opacity: 0;position: absolute;z-index: 12; "
+                                    data-position="right"
+                                    data-tooltip="上传.hex .bin .uf2格式固件，再读取keymap，可以载入你先前在该固件中的按键配置。" lang="zh_sc" />
+                            </li>
+                            <li class="divider"></li>
+                            <li id="preset-keymap-group" class="disabled optgroup uicolor-text"><span lang="zh_sc">--
+                                    预设配列 --</span></li>
+                            <ul>
+                                <li id="layouts-set-on2"><a lang="zh_sc"><i
+                                            class="material-icons mr5">settings</i>自定义</a></li>
+                            </ul>
+                            <ul id="preset-keymap-list">
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s7_bak jsdef pl-0">
+                    <ul id="layer_set" class="tabs" style="background-color: inherit;">
+                        <li class="tab"><a class="layer compact" id="layer-0" href="#layer_0">Layer 0</a></li>
+                        <li class="tab"><a class="layer compact" id="layer-1">Layer 1</a></li>
+                        <li class="tab"><a class="layer compact" id="layer-2">Layer 2</a></li>
+                        <li class="tab"><a class="layer compact" id="layer-3">Layer 3</a></li>
+                        <li class="tab"><a class="layer compact" id="layer-4">Layer 4</a></li>
+                        <li class="tab"><a class="layer compact" id="layer-5">Layer 5</a></li>
+                        <li class="tab"><a class="layer compact" id="layer-6">Layer 6</a></li>
+                        <li class="tab"><a class="layer compact" id="layer-7">Layer 7</a></li>
+                        <li class="tab"><a class="compact" id="ledmap-tab" href="#ledmap_tab" title="LED指示灯功能设置"
+                                lang="zh_sc">LEDMAP</a></li>
+                    </ul>
+                </div>
+                <div class="col right">
+                    <a id='display-layout-info' class="mykeycap2 btn waves-effect jsdef wd-148"
+                        lang="zh_sc">显示当前配列信息</a>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!--    ledmap      -->
-    <div id="keyboard-ledmap" class="keyboard-ledmap row" style="padding: 0px 200px 20px; display: none">
-        <h5 class="center-text" lang='zh_sc'>LED指示灯功能设置</h5>
-        <div id="ledmap-setting"></div>
- 
-        <div id="c-output" class="row" style="display: none;">
-            <button id="output-c" class="btn waves-effect uicolor"  style="position: absolute; top:130px; left: 990px">Output C</button>
-            <textarea id="keymap-c" class="materialize-textarea" readonly></textarea>
-        </div>
-    </div>
-    <!--    loading    -->
-    <div class="page-wd" style="position: absolute;">
-        <div id="loading" class="loader-wobble page-wd" style="z-index: 99; display: none">Loading</div>
-    </div>
-    <!--    Keyboard keys    -->
-    <div id="keyboard-outline" class="keyboard-outline"></div>
-    <!--    layout info   -->
-    <div id="layout-info-pane" class="row" style="display: none">
-        <div class="col s2"></div>
-        <div class="col s8">
-            <span lang="zh_sc">当前配列总按键数:&nbsp;</span><span id="this_layout_keys">0</span><span lang="zh_sc">，&nbsp;&nbsp;&nbsp;&nbsp;各按键的长度如上图所示，长度在2u以上的，还有标注需要的卫星轴(或平衡杆)尺寸。</span><br>
-            <span style="font-size: 15px" lang="zh_sc">注：是否支持平衡杆或钢板卫星轴，由定位板决定，不由PCB决定，只要定位板支持就能用。&nbsp;是否支持PCB卫星轴由PCB决定，常说的螺丝卫星轴也属PCB卫星轴，且如有同时使用定位板还需要定位板开孔也支持。</span>
-        </div>
-    </div>
-</div>
-
-<!-- Customize keycap color -->
-<div id="keycap_color-userset-border" class="row" style="width: 500px; top:300px; left: 400px">
-    <div class="card">
-        <div class="card-content">
-            <div id="keycap_color-user">
-                <span class="card-title" lang="zh_sc">自定义键帽颜色</span><br>
-                <div id="keycap_color-user-setting"></div>
-            </div>
-            <div class="row">
-                <a style="line-height: 36px" lang="zh_sc">导入 & 导出 (注意格式正确，暂只支持键帽颜色)</a> <a id="import-user-keycap-colors" class="btn waves-effect uicolor" style="position: absolute; left: 380px" title="导入" lang="zh_sc">导入</a>
-                <textarea id="user-keycap-colors" class="materialize-textarea not_drag" style="font-size: 15px"></textarea>
-            </div>
-            <div class="card-action">
-                <a id="keycap_color-userset-off" href="#" lang="zh_sc">完成</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-
-<div id="setting-pane" class="page-wd bg1 z-depth-1 hoverable"  style="margin-top: 10px; margin-bottom:20px;  display: none">
-    <div id="keycode_tabs" style="height: 336px">
-        <div class="row uicolor" style="margin-bottom: 10px; height: 42px">
-            <div id="keyfunction-display" class="uicolor hidef">功能提示</div>
-            <a id="latest_firmware_changelog" class="col tooltipped" data-tooltip="查看此键盘固件更新记录" lang="zh_sc">
-                <div style="color:#cccccc">Latest firmware: <span id="latest_firmware_date_short" style="color:#fff"></span></div>
-                <div id="latest_firmware_date" target="_blank" style="color:white"></div>
-            </a>
-            <div class="col">
-                <ul id="key-set-tabs" class="tabs" style="background-color:inherit;">
-                    <li class="tab"><a href="#tabs-main" lang="zh_sc">主要按键</a></li>
-                    <li class="tab"><a href="#tabs-mediamouse" lang="zh_sc">多媒体和鼠标键</a></li>
-                    <li class="tab"><a href="#tabs-layer" lang="zh_sc">常规层切换按键</a></li>
-                    <li class="tab"><a href="#tabs-other" lang="zh_sc">灯光及增强功能</a></li>
-                    <li class="tab"><a href="#tabs-readme" lang="zh_sc">使用说明</a></li>
-                    <li class="tab"><a id="kbdinfo_tab" href="#tabs-kbdinfo" ><span id="kbdinfo_tab_name">YDKB</span><span lang="zh_sc">刷机说明</span></a></li>
-                    <li class="tab tooltipped" data-tooltip="更换键帽的样式和颜色，仅供配色参考。<br>按住<kt>左Shift</kt>时，再<kt>鼠标右击</kt>按键，<br>可以只变更此按键颜色。"><a href="#tabs-keycap" lang="zh_sc"><i class="material-icons fl" style="line-height:40px;">palette</i>键帽颜色</a></li></ul>
-            </div>
-        </div>
-        <!-- keycap test -->
-        <div id="tabs-keycap" class="row jsdef ml-30 wd-1220">
-            <div class="col" id="mykeycap_change" style="width: 54px">
-                <li style="text-align: center;">样式</li>
-                <li><a class="btn waves-effect uicolor" value="dsa">D S A</a></li>
-                <li><a class="btn waves-effect uicolor" value="gmk">G M K</a></li>
-                <li><a class="btn waves-effect uicolor" style="height: 90px;" value="flat">F L A T</a></li>
-            </div> 
-
-            <div class="col" id="keycap-color-list" style="width: 1166px">
-                <div id="keycap_color-userset-on" class="keycap-color-block" >
-                    <li class="key-color key-main">key</li>
-                    <li class="key-color key-enter">enter</li>
-                    <li class="key-color key-mod">自定义颜色</li>
-                </div>
-            </div>
-        </div>
-        <!-- Main -->
-        <div id="tabs-main" class="row">
-            <div class="keyboard-set col jsdef ml-70 wd-1142">
+            <div class="fixed-action-btn tips">
+                <a class="btn-floating waves-effect tooltipped red tip_redt scale-transition scale-out"
+                    data-tooltip="设置按键信息提示方式(常规按键无提示)" lang="zh_sc"> <i class="material-icons">lightbulb_outline</i></a>
                 <ul>
-                    <li L R kc="41">Esc</li>
-                    <li L kc="1" lang="zh_sc">TRNS</li>
-                    <li L kc="58">F1</li>
-                    <li L kc="59">F2</li>
-                    <li L kc="60">F3</li>
-                    <li L kc="61">F4</li>
-                    <li L kc="62">F5</li>
-                    <li L kc="63">F6</li>
-                    <li L kc="64">F7</li>
-                    <li L kc="65">F8</li>
-                    <li L kc="66">F9</li>
-                    <li L kc="67">F10</li>
-                    <li L kc="68">F11</li>
-                    <li L kc="69">F12</li>
-                    <li L S kc="0" key="no" lang="zh_sc"></li>
-                    <li L W class="spc25" kc="70">PrtScr</li>
-                    <li L M class="spc25" kc="70">F13</li>
-                    <li L W kc="71">SclLk</li>
-                    <li L M kc="71">F14</li>
-                    <li L W kc="72">Pause</li>
-                    <li L M kc="72">F15</li>
-                    <li L W S class="spc25" kc="0x4192" key="calc"></li>
-                    <li L M class="spc25" kc="102">Power</li>
-                    <li L S kc="0x40E2" key="mute"></li>
-                    <li L S kc="0x40EA" key="vold"></li>
-                    <li L S kc="0x40E9" key="volu"></li> 
-                    <div class="key-set_shift_off" style="display: block;">
-                        <li R kc="53">~<br>`</li>
-                        <li kc="30">!<br>1</li>
-                        <li kc="31">@<br>2</li>
-                        <li kc="32">#<br>3</li>
-                        <li kc="33">$<br>4</li>
-                        <li kc="34">%<br>5</li>
-                        <li kc="35">^<br>6</li>
-                        <li kc="36">&<br>7</li>
-                        <li kc="37">*<br>8</li>
-                        <li kc="38">(<br>9</li>
-                        <li kc="39">)<br>0</li>
-                        <li kc="45">_<br>-</li>
-                        <li kc="46">+<br>=</li>
-                    </div>
-                    <div class="key-set_shift_on" style="display: none">
-                        <li R kc="0x0235">~<br>`</li>
-                        <li kc="0x021E">1<br>!</li>
-                        <li kc="0x021F">2<br>@</li>
-                        <li kc="0x0220">3<br>#</li>
-                        <li kc="0x0221">4<br>$</li>
-                        <li kc="0x0222">5<br>%</li>
-                        <li kc="0x0223">6<br>^</li>
-                        <li kc="0x0224">7<br>&</li>
-                        <li kc="0x0225">8<br>*</li>
-                        <li kc="0x0226">9<br>(</li>
-                        <li kc="0x0227">0<br>)</li>
-                        <li kc="0x022D">-<br>_</li>
-                        <li kc="0x022E">=<br>+</li>
-                    </div>
-                    <li T W class="w200"  kc="42">Backspace</li>
-                    <li T M class="w200"  kc="42">Delete</li>
-                    <li T W class="spc25" kc="73">Ins</li>
-                    <li T M class="spc25" kc="73">help</li>
-                    <li T kc="74">Home</li>
-                    <li T kc="75">PgUp</li>
-                    <li W class="spc25" kc="83">Num Lock</li>
-                    <li T M class="spc25" kc="83">Clear</li>
-                    <li T kc="84">/</li>
-                    <li T kc="85" style="padding-top: 4px">*</li>
-                    <li T kc="86">-</li>
-                    <li T R class="w150" kc="43">Tab</li>
-                    <li A kc="20">Q</li>
-                    <li A kc="26">W</li>
-                    <li A kc="8">E</li>
-                    <li A kc="21">R</li>
-                    <li A kc="23">T</li>
-                    <li A kc="28">Y</li>
-                    <li A kc="24">U</li>
-                    <li A kc="12">I</li>
-                    <li A kc="18">O</li>
-                    <li A kc="19">P</li>
-                    <div class="key-set_shift_off" style="display: block;">
-                        <li kc="47">{<br>[</li>
-                        <li kc="48">}<br>]</li>
-                        <li class="w150" kc="49">|<br>\</li>
-                    </div>
-                    <div class="key-set_shift_on" style="display: none;">
-                        <li kc="0x022F">[<br>{</li>
-                        <li kc="0x0230">]<br>}</li>
-                        <li class="w150" kc="0x0231">\<br>|</li>
-                    </div>
-                    <li T class="spc25" kc="76">Del</li>
-                    <li T kc="77">End</li>
-                    <li T kc="78">PgDn</li>
-                    <li W class="spc25" kc="95">7<br>Home</li>
-                    <li T M class="spc25" kc="95">7</li>
-                    <li W kc="96">8<br>&#8593;</li>
-                    <li T M kc="96">8</li>
-                    <li W kc="97">9<br>PgUp</li>
-                    <li T M kc="97">9</li>
-                    <li class="h200" kc="87">+</li>
-
-                    <li T R class="w175" kc="57">CapsLock</li>
-                    <li A kc="4">A</li>
-                    <li A kc="22">S</li>
-                    <li A kc="7">D</li>
-                    <li A kc="9">F</li>
-                    <li A kc="10">G</li>
-                    <li A kc="11">H</li>
-                    <li A kc="13">J</li>
-                    <li A kc="14">K</li>
-                    <li A kc="15">L</li>
-                    <div class="key-set_shift_off" style="display: block;">
-                        <li kc="51">:<br>;</li>
-                        <li kc="52" style="padding-top: 5px">"<br>'</li>
-                    </div>
-                    <div class="key-set_shift_on" style="display: none;">
-                        <li kc="0x0233">;<br>:</li>
-                        <li kc="0x0234" style="padding-top: 5px">'<br>"</li>
-                    </div>
-                    <li T W class="w225" kc="40">Enter</li>
-                    <li T M class="w225" kc="40">Return</li>
-
-                    <div class="key-set_shift_off" style="display: block;">
-                        <li L class="spc25" kc="100">ISO|\</li>
-                        <li L kc="50">ISO~#</li>
-                    </div>
-                    <div class="key-set_shift_on" style="display: none;">
-                        <li L class="spc25" kc="0x0264">ISO|</li>
-                        <li L kc="0x0232">ISO~</li>
-                    </div>
-                    <li L kc="101">Menu</li>
-
-                    <li W class="spc25" kc="92">4<br>&#8592;</li>
-                    <li T M class="spc25" kc="92">4</li>
-                    <li W kc="93">5<br>&#12288;</li>
-                    <li T M kc="93">5</li>
-                    <li W kc="94">6<br>&#8594;</li>
-                    <li T M kc="94">6</li>
-
-                    <div class="rowstart">
-                        <div style="float: left;position:fiexd;bottom:0px;">
-                            <i id="lock_shift" class="fa fa-unlock" lang="zh_sc" title="锁定Shift以方便快速选择符号"></i>
+                    <li><a class="btn-floating blue tooltipped tip_bluet" lang="zh_sc" data-tooltip="中间栏提示，适合老司机"><i
+                                class="material-icons">wb_iridescent</i></a></li>
+                    <li><a class="btn-floating green tooltipped tip_greent" lang="zh_sc"
+                            data-tooltip="按键跟随提示(默认)，适合大部分人"><i class="material-icons">wb_incandescent</i></a></li>
+                </ul>
+            </div>
+            <div id="layouts-set-border" class="row" style="margin: 300px 0 0 200px; max-width: 800px;">
+                <div class="card">
+                    <div class="card-content">
+                        <div id="layouts-set"></div>
+                        <div class="card-action">
+                            <a id="layouts-set-off" href="#" lang="zh_sc">完成</a>
                         </div>
-                        <li T class="w225" kc="225">Shift</li>
                     </div>
-                    <li A kc="29">Z</li>
-                    <li A kc="27">X</li>
-                    <li A kc="6">C</li>
-                    <li A kc="25">V</li>
-                    <li A kc="5">B</li>
-                    <li A kc="17">N</li>
-                    <li A kc="16">M</li>
-                    <div class="key-set_shift_off" style="display: block;">
-                        <li kc="54">&lt;<br>,</li>
-                        <li kc="55">><br>.</li>
-                        <li kc="56">?<br>/</li>
-                    </div>
-                    <div class="key-set_shift_on" style="display: none;">
-                        <li kc="0x0236">,<br>&lt;</li>
-                        <li kc="0x0237">.<br>></li>
-                        <li kc="0x0238">/<br>?</li>
-                    </div>
-                    <li T class="w275" kc="229">rShift</li>
-                    <li T class="spc125" kc="82">&#8593;</li>
-                    <li W class="spc125" kc="89">1<br>End</li>
-                    <li T M class="spc125" kc="89">1</li>
-                    <li W kc="90">2<br>&#8595;</li>
-                    <li T M kc="90">2</li>
-                    <li W kc="91">3<br>PgDn</li>
-                    <li T M kc="91">3</li>
-                    <li W class="h200" kc="88">P&#8617;</li>
-                    <li T M class="h200" kc="88">Enter</li>
+                </div>
+            </div>
 
-                    <li T R class="w125" kc="224">Ctrl</li>
-                    <li T W class="w125" kc="227">Win</li>
-                    <li T M class="w125" kc="226">Option</li>
-                    <li T W class="w125" kc="226">Alt</li>
-                    <li T M class="w125" kc="227">Cmd⌘</li>
-                    <li T class="w625" kc="44">Space</li>
-                    <li T W class="w125" kc="230">rAlt</li>
-                    <li T M class="w125" kc="231">rCmd⌘</li>
-                    <li T W class="w125" kc="231">rWin</li>
-                    <li T M class="w125" kc="230">rOption</li>
-                    <li T class="w125" kc="0xa1f1">Fn / L1</li>
-                    <li T class="w125" kc="228">rCtrl</li>
-                    <li T class="spc25" kc="80">&#8592;</li>
-                    <li T kc="81">&#8595;</li>
-                    <li T kc="79">&#8594;</li>  
-                    <li W class="spc25" kc="98">0<br>Ins</li>
-                    <li T M class="spc25" kc="98">0</li>
-                    <li W kc="0xB0">00<br>&#12288;</li>
-                    <li T M kc="0xB0">00</li>
-                    <li W kc="99">.<br>Del</li>
-                    <li T M kc="99">.</li>
+            <!--    ledmap      -->
+            <div id="keyboard-ledmap" class="keyboard-ledmap row" style="padding: 0px 200px 20px; display: none">
+                <h5 class="center-text" lang='zh_sc'>LED指示灯功能设置</h5>
+                <div id="ledmap-setting"></div>
+
+                <div id="c-output" class="row" style="display: none;">
+                    <button id="output-c" class="btn waves-effect uicolor"
+                        style="position: absolute; top:130px; left: 990px">Output C</button>
+                    <textarea id="keymap-c" class="materialize-textarea" readonly></textarea>
+                </div>
+            </div>
+            <!--    loading    -->
+            <div class="page-wd" style="position: absolute;">
+                <div id="loading" class="loader-wobble page-wd" style="z-index: 99; display: none">Loading</div>
+            </div>
+            <!--    Keyboard keys    -->
+            <div id="keyboard-outline" class="keyboard-outline"></div>
+            <!--    layout info   -->
+            <div id="layout-info-pane" class="row" style="display: none">
+                <div class="col s2"></div>
+                <div class="col s8">
+                    <span lang="zh_sc">当前配列总按键数:&nbsp;</span><span id="this_layout_keys">0</span><span
+                        lang="zh_sc">，&nbsp;&nbsp;&nbsp;&nbsp;各按键的长度如上图所示，长度在2u以上的，还有标注需要的卫星轴(或平衡杆)尺寸。</span><br>
+                    <span style="font-size: 15px"
+                        lang="zh_sc">注：是否支持平衡杆或钢板卫星轴，由定位板决定，不由PCB决定，只要定位板支持就能用。&nbsp;是否支持PCB卫星轴由PCB决定，常说的螺丝卫星轴也属PCB卫星轴，且如有同时使用定位板还需要定位板开孔也支持。</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customize keycap color -->
+        <div id="keycap_color-userset-border" class="row" style="width: 500px; top:300px; left: 400px">
+            <div class="card">
+                <div class="card-content">
+                    <div id="keycap_color-user">
+                        <span class="card-title" lang="zh_sc">自定义键帽颜色</span><br>
+                        <div id="keycap_color-user-setting"></div>
+                    </div>
+                    <div class="row">
+                        <a style="line-height: 36px" lang="zh_sc">导入 & 导出 (注意格式正确，暂只支持键帽颜色)</a> <a
+                            id="import-user-keycap-colors" class="btn waves-effect uicolor"
+                            style="position: absolute; left: 380px" title="导入" lang="zh_sc">导入</a>
+                        <textarea id="user-keycap-colors" class="materialize-textarea not_drag"
+                            style="font-size: 15px"></textarea>
+                    </div>
+                    <div class="card-action">
+                        <a id="keycap_color-userset-off" href="#" lang="zh_sc">完成</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div id="setting-pane" class="page-wd bg1 z-depth-1 hoverable"
+            style="margin-top: 10px; margin-bottom:20px;  display: none">
+            <div id="keycode_tabs" style="height: 336px">
+                <div class="row uicolor" style="margin-bottom: 10px; height: 42px">
+                    <div id="keyfunction-display" class="uicolor hidef">功能提示</div>
+                    <a id="latest_firmware_changelog" class="col tooltipped" data-tooltip="查看此键盘固件更新记录" lang="zh_sc">
+                        <div style="color:#cccccc">Latest firmware: <span id="latest_firmware_date_short"
+                                style="color:#fff"></span></div>
+                        <div id="latest_firmware_date" target="_blank" style="color:white"></div>
+                    </a>
+                    <div class="col">
+                        <ul id="key-set-tabs" class="tabs" style="background-color:inherit;">
+                            <li class="tab"><a href="#tabs-main" lang="zh_sc">主要按键</a></li>
+                            <li class="tab"><a href="#tabs-mediamouse" lang="zh_sc">多媒体和鼠标键</a></li>
+                            <li class="tab"><a href="#tabs-layer" lang="zh_sc">常规层切换按键</a></li>
+                            <li class="tab"><a href="#tabs-other" lang="zh_sc">灯光及增强功能</a></li>
+                            <li class="tab"><a href="#tabs-readme" lang="zh_sc">使用说明</a></li>
+                            <li class="tab"><a id="kbdinfo_tab" class="tooltipped"
+                                    data-tooltip="使用 ydkb.io，请注意此部分说明<br>需要修改按键后，下载文件。然后<br><kt>按刷机说明将固件烧录到键盘里</kt>"
+                                    href="#tabs-kbdinfo"><span id="kbdinfo_tab_name">YDKB</span><span
+                                        lang="zh_sc">刷机说明</span></a></li>
+                            <li class="tab tooltipped"
+                                data-tooltip="更换键帽的样式和颜色，仅供配色参考。<br>按住<kt>左Shift</kt>时，再<kt>鼠标右击</kt>按键，<br>可以只变更此按键颜色。">
+                                <a href="#tabs-keycap" lang="zh_sc"><i class="material-icons fl"
+                                        style="line-height:40px;">palette</i>键帽颜色</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- keycap test -->
+                <div id="tabs-keycap" class="row jsdef ml-30 wd-1220">
+                    <div class="col" id="mykeycap_change" style="width: 54px">
+                        <li style="text-align: center;">样式</li>
+                        <li><a class="btn waves-effect uicolor" value="dsa">D S A</a></li>
+                        <li><a class="btn waves-effect uicolor" value="gmk">G M K</a></li>
+                        <li><a class="btn waves-effect uicolor" style="height: 90px;" value="flat">F L A T</a></li>
+                    </div>
+
+                    <div class="col" id="keycap-color-list" style="width: 1166px">
+                        <div id="keycap_color-userset-on" class="keycap-color-block">
+                            <li class="key-color key-main">key</li>
+                            <li class="key-color key-enter">enter</li>
+                            <li class="key-color key-mod">自定义颜色</li>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main -->
+                <div id="tabs-main" class="row">
+                    <div class="keyboard-set col jsdef ml-70 wd-1142">
+                        <ul>
+                            <li L R kc="41">Esc</li>
+                            <li L kc="1" lang="zh_sc">TRNS</li>
+                            <li L kc="58">F1</li>
+                            <li L kc="59">F2</li>
+                            <li L kc="60">F3</li>
+                            <li L kc="61">F4</li>
+                            <li L kc="62">F5</li>
+                            <li L kc="63">F6</li>
+                            <li L kc="64">F7</li>
+                            <li L kc="65">F8</li>
+                            <li L kc="66">F9</li>
+                            <li L kc="67">F10</li>
+                            <li L kc="68">F11</li>
+                            <li L kc="69">F12</li>
+                            <li L S kc="0" key="no" lang="zh_sc"></li>
+                            <li L W class="spc25" kc="70">PrtScr</li>
+                            <li L M class="spc25" kc="70">F13</li>
+                            <li L W kc="71">SclLk</li>
+                            <li L M kc="71">F14</li>
+                            <li L W kc="72">Pause</li>
+                            <li L M kc="72">F15</li>
+                            <li L W S class="spc25" kc="0x4192" key="calc"></li>
+                            <li L M class="spc25" kc="102">Power</li>
+                            <li L S kc="0x40E2" key="mute"></li>
+                            <li L S kc="0x40EA" key="vold"></li>
+                            <li L S kc="0x40E9" key="volu"></li>
+                            <div class="key-set_shift_off" style="display: block;">
+                                <li R kc="53">~<br>`</li>
+                                <li kc="30">!<br>1</li>
+                                <li kc="31">@<br>2</li>
+                                <li kc="32">#<br>3</li>
+                                <li kc="33">$<br>4</li>
+                                <li kc="34">%<br>5</li>
+                                <li kc="35">^<br>6</li>
+                                <li kc="36">&<br>7</li>
+                                <li kc="37">*<br>8</li>
+                                <li kc="38">(<br>9</li>
+                                <li kc="39">)<br>0</li>
+                                <li kc="45">_<br>-</li>
+                                <li kc="46">+<br>=</li>
+                            </div>
+                            <div class="key-set_shift_on" style="display: none">
+                                <li R kc="0x0235">~<br>`</li>
+                                <li kc="0x021E">1<br>!</li>
+                                <li kc="0x021F">2<br>@</li>
+                                <li kc="0x0220">3<br>#</li>
+                                <li kc="0x0221">4<br>$</li>
+                                <li kc="0x0222">5<br>%</li>
+                                <li kc="0x0223">6<br>^</li>
+                                <li kc="0x0224">7<br>&</li>
+                                <li kc="0x0225">8<br>*</li>
+                                <li kc="0x0226">9<br>(</li>
+                                <li kc="0x0227">0<br>)</li>
+                                <li kc="0x022D">-<br>_</li>
+                                <li kc="0x022E">=<br>+</li>
+                            </div>
+                            <li T W class="w200" kc="42">Backspace</li>
+                            <li T M class="w200" kc="42">Delete</li>
+                            <li T W class="spc25" kc="73">Ins</li>
+                            <li T M class="spc25" kc="73">help</li>
+                            <li T kc="74">Home</li>
+                            <li T kc="75">PgUp</li>
+                            <li W class="spc25" kc="83">Num Lock</li>
+                            <li T M class="spc25" kc="83">Clear</li>
+                            <li T kc="84">/</li>
+                            <li T kc="85" style="padding-top: 4px">*</li>
+                            <li T kc="86">-</li>
+                            <li T R class="w150" kc="43">Tab</li>
+                            <li A kc="20">Q</li>
+                            <li A kc="26">W</li>
+                            <li A kc="8">E</li>
+                            <li A kc="21">R</li>
+                            <li A kc="23">T</li>
+                            <li A kc="28">Y</li>
+                            <li A kc="24">U</li>
+                            <li A kc="12">I</li>
+                            <li A kc="18">O</li>
+                            <li A kc="19">P</li>
+                            <div class="key-set_shift_off" style="display: block;">
+                                <li kc="47">{<br>[</li>
+                                <li kc="48">}<br>]</li>
+                                <li class="w150" kc="49">|<br>\</li>
+                            </div>
+                            <div class="key-set_shift_on" style="display: none;">
+                                <li kc="0x022F">[<br>{</li>
+                                <li kc="0x0230">]<br>}</li>
+                                <li class="w150" kc="0x0231">\<br>|</li>
+                            </div>
+                            <li T class="spc25" kc="76">Del</li>
+                            <li T kc="77">End</li>
+                            <li T kc="78">PgDn</li>
+                            <li W class="spc25" kc="95">7<br>Home</li>
+                            <li T M class="spc25" kc="95">7</li>
+                            <li W kc="96">8<br>&#8593;</li>
+                            <li T M kc="96">8</li>
+                            <li W kc="97">9<br>PgUp</li>
+                            <li T M kc="97">9</li>
+                            <li class="h200" kc="87">+</li>
+
+                            <li T R class="w175" kc="57">CapsLock</li>
+                            <li A kc="4">A</li>
+                            <li A kc="22">S</li>
+                            <li A kc="7">D</li>
+                            <li A kc="9">F</li>
+                            <li A kc="10">G</li>
+                            <li A kc="11">H</li>
+                            <li A kc="13">J</li>
+                            <li A kc="14">K</li>
+                            <li A kc="15">L</li>
+                            <div class="key-set_shift_off" style="display: block;">
+                                <li kc="51">:<br>;</li>
+                                <li kc="52" style="padding-top: 5px">"<br>'</li>
+                            </div>
+                            <div class="key-set_shift_on" style="display: none;">
+                                <li kc="0x0233">;<br>:</li>
+                                <li kc="0x0234" style="padding-top: 5px">'<br>"</li>
+                            </div>
+                            <li T W class="w225" kc="40">Enter</li>
+                            <li T M class="w225" kc="40">Return</li>
+
+                            <div class="key-set_shift_off" style="display: block;">
+                                <li L class="spc25" kc="100">ISO|\</li>
+                                <li L kc="50">ISO~#</li>
+                            </div>
+                            <div class="key-set_shift_on" style="display: none;">
+                                <li L class="spc25" kc="0x0264">ISO|</li>
+                                <li L kc="0x0232">ISO~</li>
+                            </div>
+                            <li L kc="101">Menu</li>
+
+                            <li W class="spc25" kc="92">4<br>&#8592;</li>
+                            <li T M class="spc25" kc="92">4</li>
+                            <li W kc="93">5<br>&#12288;</li>
+                            <li T M kc="93">5</li>
+                            <li W kc="94">6<br>&#8594;</li>
+                            <li T M kc="94">6</li>
+
+                            <div class="rowstart">
+                                <div style="float: left;position:fiexd;bottom:0px;">
+                                    <i id="lock_shift" class="fa fa-unlock" lang="zh_sc" title="锁定Shift以方便快速选择符号"></i>
+                                </div>
+                                <li T class="w225" kc="225">Shift</li>
+                            </div>
+                            <li A kc="29">Z</li>
+                            <li A kc="27">X</li>
+                            <li A kc="6">C</li>
+                            <li A kc="25">V</li>
+                            <li A kc="5">B</li>
+                            <li A kc="17">N</li>
+                            <li A kc="16">M</li>
+                            <div class="key-set_shift_off" style="display: block;">
+                                <li kc="54">&lt;<br>,</li>
+                                <li kc="55">><br>.</li>
+                                <li kc="56">?<br>/</li>
+                            </div>
+                            <div class="key-set_shift_on" style="display: none;">
+                                <li kc="0x0236">,<br>&lt;</li>
+                                <li kc="0x0237">.<br>></li>
+                                <li kc="0x0238">/<br>?</li>
+                            </div>
+                            <li T class="w275" kc="229">rShift</li>
+                            <li T class="spc125" kc="82">&#8593;</li>
+                            <li W class="spc125" kc="89">1<br>End</li>
+                            <li T M class="spc125" kc="89">1</li>
+                            <li W kc="90">2<br>&#8595;</li>
+                            <li T M kc="90">2</li>
+                            <li W kc="91">3<br>PgDn</li>
+                            <li T M kc="91">3</li>
+                            <li W class="h200" kc="88">P&#8617;</li>
+                            <li T M class="h200" kc="88">Enter</li>
+
+                            <li T R class="w125" kc="224">Ctrl</li>
+                            <li T W class="w125" kc="227">Win</li>
+                            <li T M class="w125" kc="226">Option</li>
+                            <li T W class="w125" kc="226">Alt</li>
+                            <li T M class="w125" kc="227">Cmd⌘</li>
+                            <li T class="w625" kc="44">Space</li>
+                            <li T W class="w125" kc="230">rAlt</li>
+                            <li T M class="w125" kc="231">rCmd⌘</li>
+                            <li T W class="w125" kc="231">rWin</li>
+                            <li T M class="w125" kc="230">rOption</li>
+                            <li T class="w125" kc="0xa1f1">Fn / L1</li>
+                            <li T class="w125" kc="228">rCtrl</li>
+                            <li T class="spc25" kc="80">&#8592;</li>
+                            <li T kc="81">&#8595;</li>
+                            <li T kc="79">&#8594;</li>
+                            <li W class="spc25" kc="98">0<br>Ins</li>
+                            <li T M class="spc25" kc="98">0</li>
+                            <li W kc="0xB0">00<br>&#12288;</li>
+                            <li T M kc="0xB0">00</li>
+                            <li W kc="99">.<br>Del</li>
+                            <li T M kc="99">.</li>
+                        </ul>
+                    </div>
+                    <div class="jsdef ht-10"></div>
+                </div>
+                <!-- Mouse Keys -->
+                <div id="tabs-mediamouse" class="row jsdef ml-45">
+                    <div class="keyboard-set icon col">
+                        <div class="keys-category">屏幕亮度 &amp; 多媒体键</div>
+                        <li S R kc="0x4070" key="sbdn"></li>
+                        <li S kc="0x406F" key="sbup"></li>
+                        <li S kc="0x40E2" key="mute"></li>
+                        <li S kc="0x40EA" key="vold"></li>
+                        <li S kc="0x40E9" key="volu"></li>
+                        <li S kc="0x418A" key="mail"></li>
+                        <li S kc="0x4194" key="mypc"></li>
+                        <li S R kc="0x4192" key="calc"></li>
+                        <li S kc="0x40B8" key="hide_kb"></li>
+                        <li S kc="0x4183" key="player"></li>
+                        <li S kc="0x40B7" key="stop"></li>
+                        <li S kc="0x40CD" key="play"></li>
+                        <li S kc="0x40B6" key="prev"></li>
+                        <li S kc="0x40B5" key="next"></li>
+                        <div class="keys-category">网络 &amp; 系统</div>
+                        <li T R kc="0x4221" key="w_serh"></li>
+                        <li kc="0x4223" key="w_home"></li>
+                        <li kc="0x4224" key="w_back"></li>
+                        <li kc="0x4225" key="w_ford"></li>
+                        <li kc="0x4226" key="w_stop"></li>
+                        <li kc="0x4227" key="w_refh"></li>
+                        <li kc="0x422A" key="w_favs"></li>
+                        <li T R kc="0x4481" key="pwr"></li>
+                        <li kc="0x4482" key="slp"></li>
+                        <!--li kc="0x4483" key="wake"></li-->
+                        <li class="spc100" kc="0x0166" key="pmeu"></li>
+                        <li kc="0x0366" key="dpof"></li>
+                        <li kc="0x0C66" key="slp"></li>
+                    </div>
+                    <div class="keyboard-set col icon jsdef ml-20">
+                        <div class="keys-category">鼠标按键</div>
+                        <li R kc="0x50F0" key="m_up"></li>
+                        <li kc="0x50F1" key="m_dn"></li>
+                        <li kc="0x50F2" key="m_lt"></li>
+                        <li kc="0x50F3" key="m_rt"></li>
+                        <li R kc="0x50F4" key="m_lb"></li>
+                        <li kc="0x50F6" key="m_mb"></li>
+                        <li kc="0x50F5" key="m_rb"></li>
+                        <li kc="0x50F7" key="m_back"></li>
+                        <li kc="0x50F8" key="m_fwd"></li>
+                        <li R kc="0x50F9" key="m_wu"></li>
+                        <li kc="0x50FA" key="m_wd"></li>
+                        <li kc="0x50FB" key="m_wl"></li>
+                        <li kc="0x50FC" key="m_wr"></li>
+                        <li R kc="0x50FD" key="m_sl"></li>
+                        <li kc="0x50FE" key="m_sm"></li>
+                        <li kc="0x50FF" key="m_sf"></li>
+                    </div>
+                    <div class="keyboard-set col jsdef ml-20">
+                        <div class="keys-category">火力模式按键(仅部分键盘支持此功能)</div>
+                        <li R kc="0x501E">!<br>1</li>
+                        <li kc="0x501F">@<br>2</li>
+                        <li kc="0x5020">#<br>3</li>
+                        <li kc="0x5021">$<br>4</li>
+                        <li kc="0x5022">%<br>5</li>
+                        <li kc="0x5023">^<br>6</li>
+                        <li kc="0x5024">&<br>7</li>
+                        <li kc="0x5025">*<br>8</li>
+                        <li kc="0x5026">(<br>9</li>
+                        <li kc="0x5027">)<br>0</li>
+                        <li T R kc="0x5014">Q</li>
+                        <li kc="0x501a">W</li>
+                        <li kc="0x5008">E</li>
+                        <li kc="0x5015">R</li>
+                        <li kc="0x5017">T</li>
+                        <li kc="0x501c">Y</li>
+                        <li kc="0x5018">U</li>
+                        <li kc="0x500c">I</li>
+                        <li kc="0x5012">O</li>
+                        <li kc="0x5013">P</li>
+                        <li T R kc="0x5004">A</li>
+                        <li kc="0x5016">S</li>
+                        <li kc="0x5007">D</li>
+                        <li kc="0x5009">F</li>
+                        <li kc="0x500a">G</li>
+                        <li kc="0x500b">H</li>
+                        <li kc="0x500d">J</li>
+                        <li kc="0x500e">K</li>
+                        <li kc="0x500f">L</li>
+                        <li T R kc="0x501d">Z</li>
+                        <li kc="0x501b">X</li>
+                        <li kc="0x5006">C</li>
+                        <li kc="0x5019">V</li>
+                        <li kc="0x5005">B</li>
+                        <li kc="0x5011">N</li>
+                        <li kc="0x5010">M</li>
+                        <li class="spc100" kc="0x5000">鼠标 左键</li>
+                        <li kc="0x503E">F5</li>
+                    </div>
+                </div>
+                <!-- Layer -->
+                <div id="tabs-layer" class="row jsdef ml-70">
+                    <div class="keyboard-set col">
+                        <div class="keys-category">瞬时开启层(按下时开启，松开时关闭)</div>
+                        <li T R kc="0xa1f1">L1</li>
+                        <li kc="0xa2f1">L2</li>
+                        <li kc="0xa3f1">L3</li>
+                        <li kc="0xa4f1">L4</li>
+                        <li kc="0xa5f1">L5</li>
+                        <li kc="0xa6f1">L6</li>
+                        <li kc="0xa7f1">L7</li>
+                        <div class="keys-category">跳转到层(按下时直接跳转到某层)</div>
+                        <li T R kc="0x8d01">T->0</li>
+                        <li kc="0x8d02">T->1</li>
+                        <li kc="0x8d04">T->2</li>
+                        <li kc="0x8d08">T->3</li>
+                        <li kc="0x8d21">T->4</li>
+                        <li kc="0x8d22">T->5</li>
+                        <li kc="0x8d24">T->6</li>
+                        <li kc="0x8d28">T->7</li>
+                    </div>
+                    <div class="keyboard-set col jsdef ml-20">
+                        <div class="keys-category">层开关(切换层开启或关闭)</div>
+                        <li T R kc="0x8a02">T1</li>
+                        <li kc="0x8a04">T2</li>
+                        <li kc="0x8a08">T3</li>
+                        <li kc="0x8a21">T4</li>
+                        <li kc="0x8a22">T5</li>
+                        <li kc="0x8a24">T6</li>
+                        <li kc="0x8a28">T7</li>
+                        <div class="keys-category">瞬时开启层 | 层开关(连续点击两次时开关层)</div>
+                        <li T R kc="0xa1f0">LT1</li>
+                        <li kc="0xa2f0">LT2</li>
+                        <li kc="0xa3f0">LT3</li>
+                        <li kc="0xa4f0">LT4</li>
+                        <li kc="0xa5f0">LT5</li>
+                        <li kc="0xa6f0">LT6</li>
+                        <li kc="0xa7f0">LT7</li>
+                    </div>
+                    <div id="advanced-mode-layer" class="keyboard-set col jsdef ml-20" style="display: none">
+                        <div class="keys-category" lang="zh_sc">其他</div>
+                        <div class="rowstart" style="margin-top: 10px">
+                            <a class="btn waves-effect uicolor jsdef wd-140" id="keymap-layer-copy">复制当前层设置</a>
+                            <a class="btn waves-effect uicolor jsdef ml-20 wd-140" id="keymap-layer-paste">粘贴层<span
+                                    id="copied-layer_1">0</span>到当前层</a>
+                        </div>
+                        <div class="rowstart" style="margin-top: 10px">
+                            <a class="btn waves-effect uicolor jsdef wd-140" id="keymap-layer-clear">清空当前层设置</a>
+                            <a class="btn waves-effect uicolor jsdef ml-20 wd-140" id="keymap-layer-exchange">层<span
+                                    id="copied-layer_2">0</span>与当前层交换</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- other keys -->
+                <div id="tabs-other" class="jsdef ml-70">
+                    <div class="keyboard-set">
+                        <div class="keys-category" lang="zh_sc">灯光控制及增强功能</div>
+                        <div id="macrofn" style="clear: both"></div>
+                    </div>
+                </div>
+
+                <!-- readme -->
+                <div id="tabs-readme" class="jsdef ml-70 wd-1140">
+                    <div class="keyboard-set" lang-id="tabs_readme_content" style="padding: 1px 30px 1px;"></div>
+                </div>
+
+                <!-- kbdinfo -->
+                <div id="tabs-kbdinfo" class="jsdef ml-70 wd-1140">
+                    <div class="keyboard-set" id="kbdinfo_detail" style="padding: 10px 30px 10px"></div>
+                </div>
+            </div>
+
+            <div id="fn-set" class="row">
+                <a class="col btn-flat disabled jsdef ml-60" title="FN Setting">选择按键功能</a>
+
+                <a id="kind_dropdown-btn" data-dropkind="类型">选择按键功能</a>
+                <ul id="kind_dropdown"></ul>
+
+                <a id="keycodes4tap_dropdown-btn" data-dropkind="按键">选择按键</a>
+                <ul id="keycodes4tap_dropdown"></ul>
+
+                <a id="key_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
+                <ul id="key_mods_dropdown">
+                    <li class="optgroup-option"><span>
+                            <label id="select-lmods"><input type="radio" value="0" class="with-gap"
+                                    name="mods"><span>Left</span></label>
+                            <label id="select-rmods"><input type="radio" value="0x10" class="with-gap"
+                                    name="mods"><span>Right</span></label>
+                        </span></li>
                 </ul>
-            </div>
-            <div class="jsdef ht-10"></div>
-        </div>
-        <!-- Mouse Keys -->
-        <div id="tabs-mediamouse" class="row jsdef ml-45">
-            <div class="keyboard-set icon col">
-                <div class="keys-category">屏幕亮度 &amp; 多媒体键</div>
-                <li S R kc="0x4070" key="sbdn"></li>
-                <li S kc="0x406F" key="sbup"></li>    
-                <li S kc="0x40E2" key="mute"></li>
-                <li S kc="0x40EA" key="vold"></li>
-                <li S kc="0x40E9" key="volu"></li> 
-                <li S kc="0x418A" key="mail"></li>
-                <li S kc="0x4194" key="mypc"></li>
-                <li S R kc="0x4192" key="calc"></li>
-                <li S kc="0x40B8" key="hide_kb"></li>
-                <li S kc="0x4183" key="player"></li>
-                <li S kc="0x40B7" key="stop"></li>
-                <li S kc="0x40CD" key="play"></li>
-                <li S kc="0x40B6" key="prev"></li>
-                <li S kc="0x40B5" key="next"></li>
-                <div class="keys-category">网络 &amp; 系统</div>
-                <li T R kc="0x4221" key="w_serh"></li>
-                <li kc="0x4223" key="w_home"></li>
-                <li kc="0x4224" key="w_back"></li>
-                <li kc="0x4225" key="w_ford"></li>
-                <li kc="0x4226" key="w_stop"></li>
-                <li kc="0x4227" key="w_refh"></li>
-                <li kc="0x422A" key="w_favs"></li>
-                <li T R kc="0x4481" key="pwr"></li>
-                <li kc="0x4482" key="slp"></li>
-                <!--li kc="0x4483" key="wake"></li-->
-                <li class="spc100"  kc="0x0166" key="pmeu"></li>
-                <li kc="0x0366" key="dpof"></li>
-                <li kc="0x0C66" key="slp"></li>
-            </div>
-            <div class="keyboard-set col icon jsdef ml-20">
-                <div class="keys-category">鼠标按键</div>
-                <li R kc="0x50F0" key="m_up"></li>
-                <li kc="0x50F1" key="m_dn"></li>
-                <li kc="0x50F2" key="m_lt"></li>
-                <li kc="0x50F3" key="m_rt"></li>
-                <li R kc="0x50F4" key="m_lb"></li>
-                <li kc="0x50F6" key="m_mb"></li>
-                <li kc="0x50F5" key="m_rb"></li>
-                <li kc="0x50F7" key="m_back"></li>
-                <li kc="0x50F8" key="m_fwd"></li>
-                <li R kc="0x50F9" key="m_wu"></li>
-                <li kc="0x50FA" key="m_wd"></li>
-                <li kc="0x50FB" key="m_wl"></li>
-                <li kc="0x50FC" key="m_wr"></li>
-                <li R kc="0x50FD" key="m_sl"></li>
-                <li kc="0x50FE" key="m_sm"></li>
-                <li kc="0x50FF" key="m_sf"></li>        
-            </div>
-            <div class="keyboard-set col jsdef ml-20">
-                <div class="keys-category">火力模式按键(仅部分键盘支持此功能)</div>
-                <li R kc="0x501E">!<br>1</li>
-                <li kc="0x501F">@<br>2</li>
-                <li kc="0x5020">#<br>3</li>
-                <li kc="0x5021">$<br>4</li>
-                <li kc="0x5022">%<br>5</li>
-                <li kc="0x5023">^<br>6</li>
-                <li kc="0x5024">&<br>7</li>
-                <li kc="0x5025">*<br>8</li>
-                <li kc="0x5026">(<br>9</li>
-                <li kc="0x5027">)<br>0</li>
-                <li T R kc="0x5014">Q</li>
-                <li kc="0x501a">W</li>
-                <li kc="0x5008">E</li>
-                <li kc="0x5015">R</li>
-                <li kc="0x5017">T</li>
-                <li kc="0x501c">Y</li>
-                <li kc="0x5018">U</li>
-                <li kc="0x500c">I</li>
-                <li kc="0x5012">O</li>
-                <li kc="0x5013">P</li>
-                <li T R kc="0x5004">A</li>
-                <li kc="0x5016">S</li>
-                <li kc="0x5007">D</li>
-                <li kc="0x5009">F</li>
-                <li kc="0x500a">G</li>
-                <li kc="0x500b">H</li>
-                <li kc="0x500d">J</li>
-                <li kc="0x500e">K</li>
-                <li kc="0x500f">L</li>
-                <li T R kc="0x501d">Z</li>
-                <li kc="0x501b">X</li>
-                <li kc="0x5006">C</li>
-                <li kc="0x5019">V</li>
-                <li kc="0x5005">B</li>
-                <li kc="0x5011">N</li>
-                <li kc="0x5010">M</li>
-                <li class="spc100" kc="0x5000">鼠标 左键</li>
-                <li kc="0x503E">F5</li>
-            </div>
-        </div>
-        <!-- Layer -->
-        <div id="tabs-layer" class="row jsdef ml-70">
-            <div class="keyboard-set col">
-                <div class="keys-category">瞬时开启层(按下时开启，松开时关闭)</div>
-                <li T R kc="0xa1f1">L1</li>
-                <li kc="0xa2f1">L2</li>
-                <li kc="0xa3f1">L3</li>
-                <li kc="0xa4f1">L4</li>
-                <li kc="0xa5f1">L5</li>
-                <li kc="0xa6f1">L6</li>
-                <li kc="0xa7f1">L7</li>
-                <div class="keys-category">跳转到层(按下时直接跳转到某层)</div>
-                <li T R kc="0x8d01">T->0</li>
-                <li kc="0x8d02">T->1</li>
-                <li kc="0x8d04">T->2</li>
-                <li kc="0x8d08">T->3</li>
-                <li kc="0x8d21">T->4</li>
-                <li kc="0x8d22">T->5</li>
-                <li kc="0x8d24">T->6</li>
-                <li kc="0x8d28">T->7</li>
-            </div>
-            <div class="keyboard-set col jsdef ml-20">
-                <div class="keys-category">层开关(切换层开启或关闭)</div>
-                <li T R kc="0x8a02">T1</li>
-                <li kc="0x8a04">T2</li>
-                <li kc="0x8a08">T3</li>
-                <li kc="0x8a21">T4</li>
-                <li kc="0x8a22">T5</li>
-                <li kc="0x8a24">T6</li>
-                <li kc="0x8a28">T7</li>
-                <div class="keys-category">瞬时开启层 | 层开关(连续点击两次时开关层)</div>
-                <li T R kc="0xa1f0">LT1</li>
-                <li kc="0xa2f0">LT2</li>
-                <li kc="0xa3f0">LT3</li>
-                <li kc="0xa4f0">LT4</li>
-                <li kc="0xa5f0">LT5</li>
-                <li kc="0xa6f0">LT6</li>
-                <li kc="0xa7f0">LT7</li>
-            </div>
-            <div id="advanced-mode-layer" class="keyboard-set col jsdef ml-20" style="display: none">
-                <div class="keys-category" lang="zh_sc">其他</div>
-                <div class="rowstart" style="margin-top: 10px">
-                    <a class="btn waves-effect uicolor jsdef wd-140" id="keymap-layer-copy">复制当前层设置</a>
-                    <a class="btn waves-effect uicolor jsdef ml-20 wd-140" id="keymap-layer-paste">粘贴层<span id="copied-layer_1">0</span>到当前层</a>
-                </div>
-                <div class="rowstart" style="margin-top: 10px">
-                    <a class="btn waves-effect uicolor jsdef wd-140" id="keymap-layer-clear">清空当前层设置</a>
-                    <a class="btn waves-effect uicolor jsdef ml-20 wd-140" id="keymap-layer-exchange">层<span id="copied-layer_2">0</span>与当前层交换</a>
-                </div>
-            </div>
-        </div>
 
-        <!-- other keys -->
-        <div id="tabs-other" class="jsdef ml-70">
-            <div class="keyboard-set">
-                <div class="keys-category" lang="zh_sc">灯光控制及增强功能</div>
-                <div id="macrofn" style="clear: both"></div>
-            </div>
-        </div>
-
-        <!-- readme -->
-        <div id="tabs-readme" class="jsdef ml-70 wd-1140">
-            <div class="keyboard-set" lang-id="tabs_readme_content" style="padding: 1px 30px 1px;"></div>
-        </div>
-
-        <!-- kbdinfo -->
-        <div id="tabs-kbdinfo" class="jsdef ml-70 wd-1140">
-            <div class="keyboard-set" id="kbdinfo_detail" style="padding: 10px 30px 10px"></div>
-        </div>
-    </div>
-
-    <div id="fn-set" class="row"> 
-        <a class="col btn-flat disabled jsdef ml-60" title="FN Setting">选择按键功能</a>
-        
-        <a id="kind_dropdown-btn" data-dropkind="类型">选择按键功能</a>
-        <ul id="kind_dropdown"></ul>
-
-        <a id="keycodes4tap_dropdown-btn" data-dropkind="按键">选择按键</a>
-        <ul id="keycodes4tap_dropdown"></ul>
-
-        <a id="key_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
-        <ul id="key_mods_dropdown">
-            <li class="optgroup-option"><span>
-                <label id="select-lmods"><input type="radio" value="0"  class="with-gap" name="mods"><span>Left</span></label>
-                <label id="select-rmods"><input type="radio" value="0x10" class="with-gap" name="mods"><span>Right</span></label>
-            </span></li>
-        </ul>
-
-        <a id="layer_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
-        <ul id="layer_mods_dropdown">
-            <li class="optgroup"><span>Left Mods</span></li>
-        </ul>
-
-        <a id="keycodes_dropdown-btn" data-dropkind="按键">选择按键</a>
-        <ul id="keycodes_dropdown"></ul>
-
-        <a id="layer_dropdown-btn" data-dropkind="层">选择层</a>
-        <ul id="layer_dropdown"></ul>
-
-        <a id="layer_tap_dropdown-btn" data-dropkind="层">选择层</a>
-        <ul id="layer_tap_dropdown"></ul>
-
-        <a id="layer_on_dropdown-btn" data-dropkind="层">选择层</a>
-        <ul id="layer_on_dropdown"></ul>
-
-        <a id="launch_shortcut_dropdown-btn">选择快捷方式</a>
-        <ul id="launch_shortcut_dropdown"></ul>
-
-        <button class="col action-apply btn waves-effect tooltipped uicolor" id="action-apply"  data-tooltip="设置左边选择的按键功能到当前所选按键" lang="zh_sc">←设置到按键</button>
-
-        <a id="mykeycap_system_change" class="col btn waves-effect tooltipped uicolor" data-tooltip="按键显示为Win或Mac风格" lang="zh_sc">
-            <button id="system_win" class="col btn disabled">Win</button>
-            <button id="system_mac" class="col btn disabled">Mac</button>
-        </a>
-
-    </div>
-</div>
-
-<div id="share-dialog" class="modal" augmented-ui="tl-clip tr-clip-x r-clip-y br-clip bl-clip-x b-clip-x exe" style="--aug-r: 12px">
-    <div class="modal-content" title="Share your keymap with url">
-        <h4 style="margin-left: 50px" lang="zh_sc">分享链接</h4>
-        <div id="share-url-display" >
-            <textarea id="share-url" class="materialize-textarea" readonly></textarea>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat fl" style="margin-left: 30px" augmented-ui="br-clip exe" title="Close">关闭</a>
-        <a id="shorten-url" class="modal-action waves-effect waves-green btn-flat" augmented-ui="br-clip exe" title="获取短网址，更方便分享。(Get short-url)">获取短网址</a>
-        <a id="keymap-share" class="modal-action waves-effect waves-green btn-flat" augmented-ui="br-clip exe" title="Get full-url">获取完整链接</a>
-    </div>
-</div>
-
-</main>
-<footer class="page-footer uicolor">
-    <div class="fixed-action-btn toolbar">
-        <a class="btn-floating btn-large red tooltipped scale-transition scale-out" data-position="left" data-tooltip="该键盘购买链接及介绍，店家提供完善售后。"><i class="material-icons" style="font-size:30px">shopping_cart</i></a>
-        <ul id="purchase-link"></ul>
-    </div>
-    <div class="container ">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text"  lang="zh_sc">联系</h5>
-                <p class="grey-text text-lighten-4"  lang="zh_sc">QQ群：767441859（本群为YDKB系列产品交流及售后群，其他产品仅限固件bug反馈或疑难问题，常规使用及售后请找卖家）<br>
-                E-mail: drk#live.com<br>
-                Discord: <a class="grey-text text-lighten-3" href="//discord.gg/uyPaFS4v5s" target="_blank">https://discord.gg/uyPaFS4v5s</a></p>
-            </div>
-            <div class="col l5 offset-l1 s12">
-                <h5 class="white-text" lang="zh_sc">链接</h5>
-                <ul>
-                    <li><span class="grey-text text-lighten-3">可通过 <a class="grey-text text-lighten-3" href="//ydkb.io" target="_blank">ydkb.io / <a class="grey-text text-lighten-3" href="//ydkb.github.io" target="_blank">ydkb.github.io</a> 访问本站</span></li>
-                    <li><a class="grey-text text-lighten-3" href="//test.ydkb.io" target="_blank">YDKB Keyboard Tester</a></li>
-                    <li><a class="grey-text text-lighten-3" href="//yang.tkg.io" target="_blank">TMK Keymap Generator</a></li>
+                <a id="layer_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
+                <ul id="layer_mods_dropdown">
+                    <li class="optgroup"><span>Left Mods</span></li>
                 </ul>
+
+                <a id="keycodes_dropdown-btn" data-dropkind="按键">选择按键</a>
+                <ul id="keycodes_dropdown"></ul>
+
+                <a id="layer_dropdown-btn" data-dropkind="层">选择层</a>
+                <ul id="layer_dropdown"></ul>
+
+                <a id="layer_tap_dropdown-btn" data-dropkind="层">选择层</a>
+                <ul id="layer_tap_dropdown"></ul>
+
+                <a id="layer_on_dropdown-btn" data-dropkind="层">选择层</a>
+                <ul id="layer_on_dropdown"></ul>
+
+                <a id="launch_shortcut_dropdown-btn">选择快捷方式</a>
+                <ul id="launch_shortcut_dropdown"></ul>
+
+                <button class="col action-apply btn waves-effect tooltipped uicolor" id="action-apply"
+                    data-tooltip="设置左边选择的按键功能到当前所选按键" lang="zh_sc">←设置到按键</button>
+
+                <a id="mykeycap_system_change" class="col btn waves-effect tooltipped uicolor"
+                    data-tooltip="按键显示为Win或Mac风格" lang="zh_sc">
+                    <button id="system_win" class="col btn disabled">Win</button>
+                    <button id="system_mac" class="col btn disabled">Mac</button>
+                </a>
+
             </div>
         </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            Copyright © 2016 - <span id="tyear">2016</span> YANG. Some rights reserved.
+
+        <div id="share-dialog" class="modal" augmented-ui="tl-clip tr-clip-x r-clip-y br-clip bl-clip-x b-clip-x exe"
+            style="--aug-r: 12px">
+            <div class="modal-content" title="Share your keymap with url">
+                <h4 style="margin-left: 50px" lang="zh_sc">分享链接</h4>
+                <div id="share-url-display">
+                    <textarea id="share-url" class="materialize-textarea" readonly></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat fl"
+                    style="margin-left: 30px" augmented-ui="br-clip exe" title="Close">关闭</a>
+                <a id="shorten-url" class="modal-action waves-effect waves-green btn-flat" augmented-ui="br-clip exe"
+                    title="获取短网址，更方便分享。(Get short-url)">获取短网址</a>
+                <a id="keymap-share" class="modal-action waves-effect waves-green btn-flat" augmented-ui="br-clip exe"
+                    title="Get full-url">获取完整链接</a>
+            </div>
         </div>
-    </div>
-</footer>
 
-<!-- sidebar for kbds, keycaps color etc -->
-<ul id="nav-side" class="sidenav sidenav-dark" >
-  <div class="pushpin" style="position: sticky; top: 0px;">
-    <li class="logo z-depth-1 uicolor" style="" href="#" title="Sidebar" lang="zh_sc">选择键盘</li>
-    <li class="no-padding jsdef ht-50" style="position: relative;">
-        <i class="material-icons small" style="line-height: 50px; position: absolute; padding-left: 10px; top:2px">search</i><input type="text" id="kbd-name-filter" class="textarea tooltipped" data-position="right" data-tooltip="根据名称及描述关键字进行筛选" lang="zh_sc"></input> 
-    </li>
-  </div>
-
-    <li class="no-padding">
-        <ul id="firmware-dropdown" class="collapsible collapsible-accordion">
-            <li class="disabled optgroup uicolor-text"><span>Favorite</span></li>
-            <div id="fav-kbd-list"></div>
-        </ul>   
-    </li>
-</ul>
-
-<ul id="nav-side2" class="sidenav">
-    <li class="logo z-depth-1 uicolor" style="" href="#" title="Sidebar" lang="zh_sc">侧边栏</li>
-    <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-            <li><a class="collapsible-header waves-effect waves-teal" title="Case style" lang="zh_sc">外壳样式 ▼</a>
-                <div id="mycase-style" class="collapsible-body">
-                    <ul class="mycase"></ul>
+    </main>
+    <footer class="page-footer uicolor">
+        <div class="fixed-action-btn toolbar">
+            <a class="btn-floating btn-large red tooltipped scale-transition scale-out" data-position="left"
+                data-tooltip="该键盘购买链接及介绍，店家提供完善售后。"><i class="material-icons"
+                    style="font-size:30px">shopping_cart</i></a>
+            <ul id="purchase-link"></ul>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text" lang="zh_sc">联系</h5>
+                    <p class="grey-text text-lighten-4" lang="zh_sc">
+                        QQ群：767441859（本群为YDKB系列产品交流及售后群，其他产品仅限固件bug反馈或疑难问题，常规使用及售后请找卖家）<br>
+                        E-mail: drk#live.com<br>
+                        Discord: <a class="grey-text text-lighten-3" href="//discord.gg/uyPaFS4v5s"
+                            target="_blank">https://discord.gg/uyPaFS4v5s</a></p>
                 </div>
-            </li>
-            <li>
-                <div class="switch">
-                    <a class="collapsible-header" lang="zh_sc">外壳单独颜色<label><input id="casejscolor-toggle" type="checkbox"><span class="lever"></span></label></a>
+                <div class="col l5 offset-l1 s12">
+                    <h5 class="white-text" lang="zh_sc">链接</h5>
+                    <ul>
+                        <li><span class="grey-text text-lighten-3">可通过 <a class="grey-text text-lighten-3"
+                                    href="//ydkb.io" target="_blank">ydkb.io / <a class="grey-text text-lighten-3"
+                                        href="//ydkb.github.io" target="_blank">ydkb.github.io</a> 访问本站</span></li>
+                        <li><a class="grey-text text-lighten-3" href="//test.ydkb.io" target="_blank">YDKB Keyboard
+                                Tester</a></li>
+                        <li><a class="grey-text text-lighten-3" href="//yang.tkg.io" target="_blank">TMK Keymap
+                                Generator</a></li>
+                    </ul>
                 </div>
-                <input id="casejscolor-btn" class="jscolor jsdef wd-100 ht-30 ml-30" type="hidden"  onchange="update_case_color('#'+this.jscolor,'save')" value="99cc00">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2016 - <span id="tyear">2016</span> YANG. Some rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- sidebar for kbds, keycaps color etc -->
+    <ul id="nav-side" class="sidenav sidenav-dark">
+        <div class="pushpin" style="position: sticky; top: 0px;">
+            <li class="logo z-depth-1 uicolor" style="" href="#" title="Sidebar" lang="zh_sc">选择键盘</li>
+            <li class="no-padding jsdef ht-50" style="position: relative;">
+                <i class="material-icons small"
+                    style="line-height: 50px; position: absolute; padding-left: 10px; top:2px">search</i><input
+                    type="text" id="kbd-name-filter" class="textarea tooltipped" data-position="right"
+                    data-tooltip="根据名称及描述关键字进行筛选" lang="zh_sc"></input>
             </li>
-            <li>
-              <div class="switch">
-                <div class="collapsible-header waves-effect waves-teal" lang="zh_sc">高级模式(测试)<label><input id="advanced-mode-toggle" type="checkbox"><span class="lever"></span></label></div>
-              </div>
-            </li>
-        </ul>
-    </li>
-</ul>
+        </div>
+
+        <li class="no-padding">
+            <ul id="firmware-dropdown" class="collapsible collapsible-accordion">
+                <li class="disabled optgroup uicolor-text"><span>Favorite</span></li>
+                <div id="fav-kbd-list"></div>
+            </ul>
+        </li>
+    </ul>
+
+    <ul id="nav-side2" class="sidenav">
+        <li class="logo z-depth-1 uicolor" style="" href="#" title="Sidebar" lang="zh_sc">侧边栏</li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li><a class="collapsible-header waves-effect waves-teal" title="Case style" lang="zh_sc">外壳样式 ▼</a>
+                    <div id="mycase-style" class="collapsible-body">
+                        <ul class="mycase"></ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="switch">
+                        <a class="collapsible-header" lang="zh_sc">外壳单独颜色<label><input id="casejscolor-toggle"
+                                    type="checkbox"><span class="lever"></span></label></a>
+                    </div>
+                    <input id="casejscolor-btn" class="jscolor jsdef wd-100 ht-30 ml-30" type="hidden"
+                        onchange="update_case_color('#'+this.jscolor,'save')" value="99cc00">
+                </li>
+                <li>
+                    <div class="switch">
+                        <div class="collapsible-header waves-effect waves-teal" lang="zh_sc">高级模式(测试)<label><input
+                                    id="advanced-mode-toggle" type="checkbox"><span class="lever"></span></label></div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
 
-<!-- sidebar end -->
+    <!-- sidebar end -->
 
-<ul id="download-share" class="dropdown-content">
-    <li><a id="share-dialog-btn" class="modal-trigger" href="#share-dialog" lang="zh_sc"><i class="material-icons mr5">share</i>获取分享链接</a></li>
-    <li class="divider"></li>
-    <li><a id="tool-download" onclick="window.open('./YDKBs-reflash.zip')" title="点击下载YDKBs的刷固件工具" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载刷机工具</a></li>
-    <li><a id="hex-download" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载.hex固件</a></li>
-    <li><a id="bin-download" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载.bin固件</a></li>
-    <li><a id="uf2-download" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载.uf2固件</a></li>
-    <li class="divider"></li>
-    <li><a id="show-tabs-kbdinfo" title="当前键盘刷机试的说明，及固件功能的说明" lang="zh_sc"><i class="material-icons mr5">help</i>当前键盘刷机<br><i class="material-icons mr5">help</i>以及固件说明</a></li>
-</ul>
-<ul id="lang-theme" class="dropdown-content">
-  <li><a onclick="LangChange('zh_cn');">简体中文</a></li>
-  <li><a onclick="LangChange('en');">English</a></li>
-  <li class="divider"></li>
-  <div id="ui-theme"></div>
-</ul>
+    <ul id="download-share" class="dropdown-content">
+        <li><a id="share-dialog-btn" class="modal-trigger" href="#share-dialog" lang="zh_sc"><i
+                    class="material-icons mr5">share</i>获取分享链接</a></li>
+        <li class="divider"></li>
+        <li><a id="tool-download" onclick="window.open('./YDKBs-reflash.zip')" title="点击下载YDKBs的刷固件工具" lang="zh_sc"><i
+                    class="material-icons mr5">file_download</i>下载刷机工具</a></li>
+        <li><a id="hex-download" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载.hex固件</a></li>
+        <li><a id="bin-download" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载.bin固件</a></li>
+        <li><a id="uf2-download" lang="zh_sc"><i class="material-icons mr5">file_download</i>下载.uf2固件</a></li>
+        <li class="divider"></li>
+        <li><a id="show-tabs-kbdinfo" title="当前键盘刷机试的说明，及固件功能的说明" lang="zh_sc"><i
+                    class="material-icons mr5">help</i>当前键盘刷机<br><i class="material-icons mr5">help</i>以及固件说明</a></li>
+    </ul>
+    <ul id="lang-theme" class="dropdown-content">
+        <li><a onclick="LangChange('zh_cn');">简体中文</a></li>
+        <li><a onclick="LangChange('en');">English</a></li>
+        <li class="divider"></li>
+        <div id="ui-theme"></div>
+    </ul>
 
-<!-- ledmap indicator menu -->
-<ul id="indicator_dropdown_menu" class="dropdown-content">
-    <li value="0" data-tooltip="不设置此指示灯"><a>未设置</a></li>
-    <li value="255" data-tooltip="未安装或不想使用，可选择此项，更加节能"><a>禁用</a></li>
-    <li value="16" data-tooltip="Num Lock指示灯"><a>Num Lock</a></li>
-    <li value="17" data-tooltip="Caps Lock指示灯"><a>Caps Lock</a></li>
-    <li value="18" data-tooltip="Scroll Lock指示灯"><a>Scroll Lock</a></li>
-    <li value="20" data-tooltip="部分键盘接蓝牙模块需占用LED灯的IO"><a>接蓝牙模块</a></li>
-    <li value="30" data-tooltip="部分键盘使用RGB灯需占用LED灯的IO"><a>WS2812 RGB</a></li>
-    <li value="21" data-tooltip="配合win lock功能使用"><a>Win Lock</a></li>
-    <li value="22" data-tooltip="指示灯亮时为USB连接，不亮时为蓝牙"><a>工作模式</a></li>
-    <li value="1"  data-tooltip="当<kt>层1</kt>的状态为开启时，亮起此灯"><a>Layer 1</a></li>
-    <li value="2"  data-tooltip="当<kt>层2</kt>的状态为开启时，亮起此灯"><a>Layer 2</a></li>
-    <li value="3"  data-tooltip="当<kt>层3</kt>的状态为开启时，亮起此灯"><a>Layer 3</a></li>
-    <li value="4"  data-tooltip="当<kt>层4</kt>的状态为开启时，亮起此灯"><a>Layer 4</a></li>
-    <li value="5"  data-tooltip="当<kt>层5</kt>的状态为开启时，亮起此灯"><a>Layer 5</a></li>
-    <li value="6"  data-tooltip="当<kt>层6</kt>的状态为开启时，亮起此灯"><a>Layer 6</a></li>
-    <li value="7"  data-tooltip="当<kt>层7</kt>的状态为开启时，亮起此灯"><a>Layer 7</a></li>
-    <li value="9"  data-tooltip="当默认层为<kt>层1</kt>时，亮起此灯"><a>Default Layer 1</a></li>
-    <li value="10" data-tooltip="当默认层为<kt>层2</kt>时，亮起此灯"><a>Default Layer 2</a></li>
-    <li value="11" data-tooltip="当默认层为<kt>层3</kt>时，亮起此灯"><a>Default Layer 3</a></li>
-    <li value="12" data-tooltip="当默认层为<kt>层4</kt>时，亮起此灯"><a>Default Layer 4</a></li>
-    <li value="13" data-tooltip="当默认层为<kt>层5</kt>时，亮起此灯"><a>Default Layer 5</a></li>
-    <li value="14" data-tooltip="当默认层为<kt>层6</kt>时，亮起此灯"><a>Default Layer 6</a></li>
-    <li value="15" data-tooltip="当默认层为<kt>层7</kt>时，亮起此灯"><a>Default Layer 7</a></li>
-</ul>
+    <!-- ledmap indicator menu -->
+    <ul id="indicator_dropdown_menu" class="dropdown-content">
+        <li value="0" data-tooltip="不设置此指示灯"><a>未设置</a></li>
+        <li value="255" data-tooltip="未安装或不想使用，可选择此项，更加节能"><a>禁用</a></li>
+        <li value="16" data-tooltip="Num Lock指示灯"><a>Num Lock</a></li>
+        <li value="17" data-tooltip="Caps Lock指示灯"><a>Caps Lock</a></li>
+        <li value="18" data-tooltip="Scroll Lock指示灯"><a>Scroll Lock</a></li>
+        <li value="20" data-tooltip="部分键盘接蓝牙模块需占用LED灯的IO"><a>接蓝牙模块</a></li>
+        <li value="30" data-tooltip="部分键盘使用RGB灯需占用LED灯的IO"><a>WS2812 RGB</a></li>
+        <li value="21" data-tooltip="配合win lock功能使用"><a>Win Lock</a></li>
+        <li value="22" data-tooltip="指示灯亮时为USB连接，不亮时为蓝牙"><a>工作模式</a></li>
+        <li value="1" data-tooltip="当<kt>层1</kt>的状态为开启时，亮起此灯"><a>Layer 1</a></li>
+        <li value="2" data-tooltip="当<kt>层2</kt>的状态为开启时，亮起此灯"><a>Layer 2</a></li>
+        <li value="3" data-tooltip="当<kt>层3</kt>的状态为开启时，亮起此灯"><a>Layer 3</a></li>
+        <li value="4" data-tooltip="当<kt>层4</kt>的状态为开启时，亮起此灯"><a>Layer 4</a></li>
+        <li value="5" data-tooltip="当<kt>层5</kt>的状态为开启时，亮起此灯"><a>Layer 5</a></li>
+        <li value="6" data-tooltip="当<kt>层6</kt>的状态为开启时，亮起此灯"><a>Layer 6</a></li>
+        <li value="7" data-tooltip="当<kt>层7</kt>的状态为开启时，亮起此灯"><a>Layer 7</a></li>
+        <li value="9" data-tooltip="当默认层为<kt>层1</kt>时，亮起此灯"><a>Default Layer 1</a></li>
+        <li value="10" data-tooltip="当默认层为<kt>层2</kt>时，亮起此灯"><a>Default Layer 2</a></li>
+        <li value="11" data-tooltip="当默认层为<kt>层3</kt>时，亮起此灯"><a>Default Layer 3</a></li>
+        <li value="12" data-tooltip="当默认层为<kt>层4</kt>时，亮起此灯"><a>Default Layer 4</a></li>
+        <li value="13" data-tooltip="当默认层为<kt>层5</kt>时，亮起此灯"><a>Default Layer 5</a></li>
+        <li value="14" data-tooltip="当默认层为<kt>层6</kt>时，亮起此灯"><a>Default Layer 6</a></li>
+        <li value="15" data-tooltip="当默认层为<kt>层7</kt>时，亮起此灯"><a>Default Layer 7</a></li>
+    </ul>
 
 </body>
+
 </html>
