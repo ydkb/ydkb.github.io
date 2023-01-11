@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="col s7_bak jsdef pl-0">
-                    <ul id="layer_set" class="tabs" style="background-color: inherit;">
+                    <ul id="layer_set" class="tabs" style="background-color: inherit;display: flex;">
                         <li class="tab"><a class="layer compact" id="layer-0" href="#layer_0">Layer 0</a></li>
                         <li class="tab"><a class="layer compact" id="layer-1">Layer 1</a></li>
                         <li class="tab"><a class="layer compact" id="layer-2">Layer 2</a></li>
@@ -101,7 +101,8 @@
                         <li class="tab"><a class="layer compact" id="layer-6">Layer 6</a></li>
                         <li class="tab"><a class="layer compact" id="layer-7">Layer 7</a></li>
                         <li class="tab"><a class="compact" id="ledmap-tab" href="#ledmap_tab" title="LED指示灯功能设置"
-                                lang="zh_sc">LEDMAP</a></li></ul>
+                                lang="zh_sc">LEDMAP</a></li>
+                        </ul>
                 </div>
                 <div class="col right">
                     <a id='display-layout-info' class="mykeycap2 btn waves-effect jsdef wd-148"
@@ -233,7 +234,7 @@
                     <div class="keyboard-set col jsdef ml-70 wd-1142">
                         <ul>
                             <li L R kc="41">Esc</li>
-                            <li L kc="1" lang="zh_sc">TRNS</li>
+                            <li L kc="1" lang="zh_sc" class="bluek">清除</li>
                             <li L kc="58">F1</li>
                             <li L kc="59">F2</li>
                             <li L kc="60">F3</li>
@@ -246,7 +247,7 @@
                             <li L kc="67">F10</li>
                             <li L kc="68">F11</li>
                             <li L kc="69">F12</li>
-                            <li L S kc="0" key="no" lang="zh_sc"></li>
+                            <li L S kc="0" key="no" lang="zh_sc" class="redk"></li>
                             <li L W class="spc25" kc="70">PrtScr</li>
                             <li L M class="spc25" kc="70">F13</li>
                             <li L W kc="71">SclLk</li>
@@ -595,54 +596,56 @@
                 </div>
             </div>
 
-            <div id="fn-set" class="row">
-                <a class="col btn-flat disabled jsdef ml-60" title="FN Setting">选择按键功能</a>
+            <div class="row">
+                <div id="fn-set" class="col">
+                    <a class="col btn-flat disabled" title="FN Setting">选择按键功能</a>
 
-                <a id="kind_dropdown-btn" data-dropkind="类型">选择按键功能</a>
-                <ul id="kind_dropdown"></ul>
+                    <a id="kind_dropdown-btn" data-dropkind="类型">选择按键功能</a>
+                    <ul id="kind_dropdown"></ul>
 
-                <a id="keycodes4tap_dropdown-btn" data-dropkind="按键">选择按键</a>
-                <ul id="keycodes4tap_dropdown"></ul>
+                    <a id="keycodes4tap_dropdown-btn" data-dropkind="按键">选择按键</a>
+                    <ul id="keycodes4tap_dropdown"></ul>
 
-                <a id="key_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
-                <ul id="key_mods_dropdown">
-                    <li class="optgroup-option"><span>
-                            <label id="select-lmods"><input type="radio" value="0" class="with-gap"
-                                    name="mods"><span>Left</span></label>
-                            <label id="select-rmods"><input type="radio" value="0x10" class="with-gap"
-                                    name="mods"><span>Right</span></label>
-                        </span></li>
-                </ul>
+                    <a id="key_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
+                    <ul id="key_mods_dropdown">
+                        <li class="optgroup-option"><span>
+                                <label id="select-lmods"><input type="radio" value="0" class="with-gap"
+                                        name="mods"><span>Left</span></label>
+                                <label id="select-rmods"><input type="radio" value="0x10" class="with-gap"
+                                        name="mods"><span>Right</span></label>
+                            </span></li>
+                    </ul>
 
-                <a id="layer_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
-                <ul id="layer_mods_dropdown">
-                    <li class="optgroup"><span>Left Mods</span></li>
-                </ul>
+                    <a id="layer_mods_dropdown-btn" data-dropkind="修饰键">选择修饰键</a>
+                    <ul id="layer_mods_dropdown">
+                        <li class="optgroup"><span>Left Mods</span></li>
+                    </ul>
 
-                <a id="keycodes_dropdown-btn" data-dropkind="按键">选择按键</a>
-                <ul id="keycodes_dropdown"></ul>
+                    <a id="keycodes_dropdown-btn" data-dropkind="按键">选择按键</a>
+                    <ul id="keycodes_dropdown"></ul>
 
-                <a id="layer_dropdown-btn" data-dropkind="层">选择层</a>
-                <ul id="layer_dropdown"></ul>
+                    <a id="layer_dropdown-btn" data-dropkind="层">选择层</a>
+                    <ul id="layer_dropdown"></ul>
 
-                <a id="layer_tap_dropdown-btn" data-dropkind="层">选择层</a>
-                <ul id="layer_tap_dropdown"></ul>
+                    <a id="layer_tap_dropdown-btn" data-dropkind="层">选择层</a>
+                    <ul id="layer_tap_dropdown"></ul>
 
-                <a id="layer_on_dropdown-btn" data-dropkind="层">选择层</a>
-                <ul id="layer_on_dropdown"></ul>
+                    <a id="layer_on_dropdown-btn" data-dropkind="层">选择层</a>
+                    <ul id="layer_on_dropdown"></ul>
 
-                <a id="launch_shortcut_dropdown-btn">选择快捷方式</a>
-                <ul id="launch_shortcut_dropdown"></ul>
+                    <a id="launch_shortcut_dropdown-btn">选择快捷方式</a>
+                    <ul id="launch_shortcut_dropdown"></ul>
 
-                <button class="col action-apply btn waves-effect tooltipped uicolor" id="action-apply"
-                    data-tooltip="设置左边选择的按键功能到当前所选按键" lang="zh_sc">←设置到按键</button>
-
-                <a id="mykeycap_system_change" class="col btn waves-effect tooltipped uicolor"
-                    data-tooltip="按键显示为Win或Mac风格" lang="zh_sc">
-                    <button id="system_win" class="col btn disabled">Win</button>
-                    <button id="system_mac" class="col btn disabled">Mac</button>
-                </a>
-
+                    <button class="col action-apply btn waves-effect tooltipped uicolor" id="action-apply"
+                        data-tooltip="设置左边选择的按键功能到当前所选按键" lang="zh_sc">←设置到按键</button>
+                </div>
+                <div id="system-style" class="col">
+                    <a id="mykeycap_system_change" class="col btn waves-effect tooltipped uicolor"
+                        data-tooltip="手动切换按键值显示为 Win 或 Mac 风格" lang="zh_sc">
+                        <button id="system_win" class="col btn disabled">Win</button>
+                        <button id="system_mac" class="col btn disabled">Mac</button>
+                    </a>
+                </div>
             </div>
         </div>
 
