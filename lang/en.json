@@ -118,12 +118,9 @@
 		"使用说明":"Guide for Editor",
 		"刷机说明":" Flash Guide",
 		"屏幕亮度 & 多媒体键":"Screen Brightness & Media keys",
-		"清除按键，按键透明，也可用<kt>鼠标中键</kt>点击按键设置":"Set the key to be TRANS. You can use <kt>Mouse Middle Key</kt> to quickly set it.",
-		"禁用按键，其在该层无效，也可用<kt>shift</kt>+<kt>鼠标中键</kt>点击设置":"Set the key to be NO(disabled in this layer). You can use <kt>shift</kt>+<kt>Mouse Middle Key</kt> to quickly set it.",
-
+		"当前层禁用此按键。也可用<kt>shift</kt>+<kt>鼠标中键</kt>点击设置":"Set the key to be NO(disabled in this layer). You can use <kt>shift</kt>+<kt>Mouse Middle Key</kt> to quickly set it.",
+        "当前层此按键穿透到更低层。可用<kt>鼠标中键</kt>点击按键设置":"Set the key to be TRANS. You can use <kt>Mouse Middle Key</kt> to quickly set it.",
 		"锁定Shift以方便快速选择符号":"lock shift to quickly set shift+key for some symbol",
-
-		"清除":"TRNS",
 
 		"降低屏幕亮度，需要设备本身支持此功能，系统要求win8以上/Mac/iOS/iPadOS":"Decrease screen brightness of the device supports this. OS requirements: win8 above /Mac/iOS/iPadO",
 		"增大屏幕亮度，需要设备本身支持此功能，系统要求win8以上/Mac/iOS/iPadOS":"Increase screen brightness of the device supports this. OS requirements: win8 above /Mac/iOS/iPadO",
