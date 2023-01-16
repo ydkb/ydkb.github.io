@@ -26,14 +26,12 @@ In actual use, the operation similar to Fn+1=F1 is realized by switching the sta
 
 Layers are prioritized, with layer 7 having the highest priority and layer 0 having the lowest priority. When a key is pressed, the key is searched from the high priority to low. If the layer is on and there is a key at the corresponding position, the keyboard outputs this.
 
-For example, the operation of Fn+1=F1: Layer 0 is generally the default layer, which is enabled by default. In this example, the actual Fn corresponds to L1, which means momentarily opening layer 1. Then, its actual operation logic is:
-  1. When Fn(L1) is pressed and held,  momentarily open layer 1. The states of the 8 layers is that layer 0 and layer 1 are on, and the others are off.
-  2. When pressing "1" again, from layer 8 to layer 0, find that layer 1 is on, and this key of layer 1 is F1. So output F1.
-  3. When Fn(L1) is released, close layer 1. At this time, only the default layer of layer 0 is on. Pressing 1 at this time will only output 1.
+## new layer toggle logic
 
-By default, the key is transparent if it is not set. And it will search the low priority layer. If you don't want it to be checked, just want that key to be invalid, you can set the button to **disable in that layer.** As shown below, the key in the blue box is set **disable**. You can also use the red box key if you want to reset it back to transparent.
+In the firmware starting from 2023.01.16, according to some actual feedback from users in recent years, the following changes have been made.
+- Added priority layer function. The layer that is turned on instantly is also temporarily set as the priority layer. If there is a setting button on this layer, it will respond to it first, and then search from high to low according to the status of all layers.
+- The logic of the layers has been changed to separate the momentary switching layer from other layer toggle. Logical operations are now more intuitive.
 
-<div style="width: 660px">
-
-![](assets/layers-01.png?660)
-</div>
+It will not destroy the previous logic, but with the new logic, it meets more people's expectations for layer switching. For example:
+1. When using the momentary open L1, it is more expected to trigger the layer 1 button. Under the new logic, when the upper layer is turned on, the buttons of the lower layer can also be triggered.
+2. For example, L1+T1 can be used to turn on or off layer 1, and layer 1 will not be turned off because L1 is released at the end.
