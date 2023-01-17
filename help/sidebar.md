@@ -28,7 +28,7 @@
   * [层概念(核心思想)](edit-keymap/layers)
   * [常规按键](edit-keymap/normal-key)
   * [修饰键(组合键)](edit-keymap/mods-key)
-  * [瞬时切换层](edit-keymap/l-layer)
+  * [瞬时开启层](edit-keymap/l-layer)
   * [层开关](edit-keymap/t-layer)
   * [跳转到层](edit-keymap/to-layer)
   * [瞬时开启层 | 层开关](edit-keymap/lt-layer)
