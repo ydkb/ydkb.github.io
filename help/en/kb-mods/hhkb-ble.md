@@ -25,7 +25,7 @@ The firmware changelog can be found at: [HHKB BLE firmware changelog ](changelog
 
 ## Bluetooth Pairing
 
-In short, there is no need to enable pairing mode. When Bluetooth is unconnected and discoverable, you can pair it. Mainly refer to this section: [BLE Series](/en/ble-series)
+In short, there is no need to enable pairing mode. When Bluetooth is unconnected and discoverable, you can pair it. Mainly refer to this section: [BLE Series](/en/ble-series/)
 
 If you have any problem, use this instruction to do troubleshooting: [BLE troubleshooting](/en/ble-series/troubleshooting)
 

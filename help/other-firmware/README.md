@@ -36,7 +36,7 @@
 
 在 <u>开始菜单 - 设置 - 设备</u> 里(不是设备管理器)，查看它的USB键盘名称(不是蓝牙连接名称)。
 
-![win10](assets/firmware_01.jpg)
+![win10](assets/firmware_for_via_01.jpg)
 ```
 
 ```ad-yddcol1
@@ -44,7 +44,7 @@
 
 在 <u>关于本机 - 系统报告 - USB</u>，如下图所示
 
-![mac](assets/firmware_mac_02.jpg)
+![mac](../assets/firmware_mac_02.jpg)
 ```
 
 
