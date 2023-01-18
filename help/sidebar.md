@@ -3,7 +3,6 @@
 * [YDKB 固件更新](firmware)
 * [其他固件更新和说明](other-firmware/)
   * [VIA / Vial 固件](other-firmware/vial.md) 
-* [默认命令按键](magic-commands)
 * [蓝牙键盘信号优化](use-bluetooth)
 * [BLE 系列说明(总览)](ble-series/)
   * 蓝牙配对

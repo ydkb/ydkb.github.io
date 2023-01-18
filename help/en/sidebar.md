@@ -3,7 +3,6 @@
 * [YDKB Firmware update](en/firmware)
 * [Other(Firmware update](en/other-firmware/)
   * [VIA / Vial Firmware](en/other-firmware/vial.md) 
-* [Default Command Keys](en/magic-commands)
 * [Bluetooth Signal Optimization](en/use-bluetooth)
 * [BLE Series (overview)](en/ble-series/)
   * Device Pairing
