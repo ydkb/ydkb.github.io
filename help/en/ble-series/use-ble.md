@@ -1,13 +1,34 @@
 # BLE Settings and Use
 
+## Bluetooth pairing connection
+
+The keyboard has normal power supply (USB power supply or battery), and the keyboard Bluetooth is not connected, then you can search for Bluetooth and connect.
+
+> [!yddh] For those who use YDKB BLE series for the first time, there are a few reminders
+> - Windows 7 Microsoft's Bluetooth driver does not support BLE devices, so an additional driver needs to be installed.
+> - When Windows 10/11 is used for the first time, it needs to be paired once, then deleted and paired again, and then the reconnection will be available.
+> - macOS If you cannot see the keyboard when pairing, you can press the keyboard's <kbd>LShift+RShift+LCtrl+R</kbd> once.
+
+For separate pairing instructions for each system, see the link below
+- [Windows 7 pairing](en/ble-series/pairing-win7.md)
+- [Windows 10/11 pairing](en/pairing-windows.md)
+- [macOS pairing](en/ble-series/pairing-macos.md)
+- [Linux pairing](en/ble-series/pairing-linux.md)
+- [iOS / iPadOS pairing](en/ble-series/pairing-ios.md)
+- [Android pairing](en/ble-series/pairing-android.md)
+- [Niz dongle pairing](en/ble-series/pairing-niz-dongle.md)
+
+In the future use, if you encounter connection problems, you can troubleshoot the problem according to [BLE Series Troubleshooting Guide](ble-series/troubleshooting.md).
+
+
+## Bluetooth function keys
+
 Earlier, we talked about pairing. Here talk about some settings of BLE series. 
 
 The main function setting for BLE series can be found in **LEDs & Functions**. It shows the function description when the mouse is pointing one. Set your wanted functions to your keymap. Some functions have default shortcut keys, which can be used without setting. (see: __[[en:magic-commands|Default command keys]]__)
 
-<div style="width: 400px">
 
-![](assets/use-ble-01.png?400)
-</div>
+![|400](assets/use-ble-01.png)
 
 
 From left to right, there are some that may not be listed here, and they will be explained separately.

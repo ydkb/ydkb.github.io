@@ -1,5 +1,28 @@
-# 蓝牙的设置与使用
 
+# 蓝牙的配对与使用
+
+
+## 蓝牙配对连接
+
+键盘有正常供电(USB电源或电池)，且键盘蓝牙未连接，这时就可以搜索到蓝牙并连接。
+
+> [!yddh] 对于初次使用YDKB BLE系列的来说，有几项提醒
+> - Windows 7 微软的蓝牙驱动是不支持BLE设备的，所以需要安装额外驱动。
+> - Windows 10/11 在初次使用时，需配对一次然后删除再重新配对，之后重连接才会可用。
+> - macOS 在配对时如果看不到键盘，可以按一次键盘的 <kbd>LShift+RShift+LCtrl+R</kbd>。
+
+各系统单独配对说明，见如下链接
+- [Windows 7 配对](ble-series/pairing-win7.md)
+- [Windows 10/11 配对](pairing-windows.md)
+- [macOS 配对](ble-series/pairing-macos.md)
+- [Linux 配对](ble-series/pairing-linux.md)
+- [iOS / iPadOS 配对](ble-series/pairing-ios.md)
+- [Android 配对](ble-series/pairing-android.md)
+- [Niz 接收器 配对](ble-series/pairing-niz-dongle.md)
+
+在以后的使用过程中，如果遇到连接问题，可以根据 [BLE 系列排错指南](ble-series/troubleshooting.md) 排查问题。
+
+## 蓝牙功能键设置
 前面已经讲了配对，再说说对于蓝牙功能的一些使用，主要的蓝牙功能设置按键，在 **灯光及增强功能** 里。如下图这一行，鼠标指向时会有功能说明。把要需要的按键设置到键盘上就行，有的功能本身有默认快捷键，不设置也可以使用。
 
 ![|400](assets/use-ble-01.png)
@@ -9,7 +32,7 @@
   2. 设置蓝牙可发现
   3. 设置蓝牙不可发现
   4. 清除键盘端所有已配对设备
-  5. Lock Mode(锁定模式)  （部分键盘还未更新此功能）
+  5. Lock Mode(锁定模式) 
 
 
 ## 蓝牙/USB切换

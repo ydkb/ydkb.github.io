@@ -99,5 +99,5 @@
 
 
 ## 其他方法
-Win7也可以使用Niz的接收器（移步 [Niz蓝牙4.0键盘接收器](/ble-series/niz-dongle-paring) 查看）。
+Win7也可以使用Niz的接收器（移步 [Niz蓝牙4.0键盘接收器](ble-series/pairing-niz-dongle.md) 查看）。
 

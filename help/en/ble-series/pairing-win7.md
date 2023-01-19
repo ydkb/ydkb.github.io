@@ -121,5 +121,5 @@ After entering the system and the bluesoleil driver boots, the keyboard will be 
 
 
 ## Other Solution
-Alternatively, Win7 can also use Niz's dongle (see [Niz dongle](/ble-series/niz-dongle-paring) ).
+Alternatively, Win7 can also use Niz's dongle (see [Niz dongle](ble-series/pairing-niz-dongle.md) ).
 

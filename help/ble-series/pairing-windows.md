@@ -6,7 +6,7 @@
 > - 上一条的补充，在重置蓝牙后的首次连接，也可能出现。一样删除再重新配对。
 > - 如果电脑上重新换了一个蓝牙接收器，也可能需要配对后删除再重新配对一次。
 
-本文针对Windows 10 (Windows 11类似)，如果是Win7，请看[ Win7 配对 BLE 设备](ble-series/win7.md)。 
+本文针对Windows 10 (Windows 11类似)，如果是Win7，请看[ Win7 配对 BLE 设备](ble-series/pairing-win7.md)。 
 
 
 ## 正常配对步骤
