@@ -5,9 +5,9 @@
 The keyboard has normal power supply (USB power supply or battery), and the keyboard Bluetooth is not connected, then you can search for Bluetooth and connect.
 
 > [!yddh] For those who use YDKB BLE series for the first time, there are a few reminders
-> - Windows 7 Microsoft's Bluetooth driver does not support BLE devices, so an additional driver needs to be installed.
+> - Windows 7's ms driver does not support BLE, so an additional driver needs to be installed.
 > - When Windows 10/11 is used for the first time, it needs to be paired once, then deleted and paired again, and then the reconnection will be available.
-> - macOS If you cannot see the keyboard when pairing, you can press the keyboard's <kbd>LShift+RShift+LCtrl+R</kbd> once.
+> - macOS If you cannot see the keyboard when pairing, try to press <kbd>LShift+RShift+LCtrl+R</kbd> once.
 
 For separate pairing instructions for each system, see the link below
 - [Windows 7 pairing](en/ble-series/pairing-win7.md)
@@ -18,36 +18,23 @@ For separate pairing instructions for each system, see the link below
 - [Android pairing](en/ble-series/pairing-android.md)
 - [Niz dongle pairing](en/ble-series/pairing-niz-dongle.md)
 
-In the future use, if you encounter connection problems, you can troubleshoot the problem according to [BLE Series Troubleshooting Guide](ble-series/troubleshooting.md).
+In the future use, if you encounter connection problems, you can visit [BLE Troubleshooting](ble-series/troubleshooting.md).
 
 
 ## Bluetooth function keys
 
-Earlier, we talked about pairing. Here talk about some settings of BLE series. 
-
-The main function setting for BLE series can be found in **LEDs & Functions**. It shows the function description when the mouse is pointing one. Set your wanted functions to your keymap. Some functions have default shortcut keys, which can be used without setting. (see: __[[en:magic-commands|Default command keys]]__)
-
+The Bluetooth function setting keys are in `LEDs & Functions`.
 
 ![|400](assets/use-ble-01.png)
 
-
-From left to right, there are some that may not be listed here, and they will be explained separately.
-   1. Bluetooth/USB switch
-   2. Set up Bluetooth to be discoverable
-   3. Set Bluetooth undiscoverable
-   4. Clear all paired devices on the keyboard
-   5. Lock Mode
-
-
-## Switch between Bluetooth and USB 
-
-Short keys **LShift+RShift+U**
-
-USB and Bluetooth can be connected to different computers. The keyboard is always in Bluetooth mode when the USB cable is not plugged in. When the keyboard is plugged into USB, it will automatically switch to USB mode. When the keyboard is plugged with a USB cable, you can switch between Bluetooth and USB, you can set a key yourself, or use **LShift+RShift+U**.
-
-In addition, switching between multiple paired Bluetooth devices is not supported.
-
-If multiple Bluetooth devices are paired, to switch from A to B, assuming A is currently connected, you need to turn off A's Bluetooth and turn on B's Bluetooth. This is limited by the module's own firmware that does not support active switching.
+In addition to the ones in the above picture, there are also those added with the later firmware update. There are a total of the following:
+  1. Bluetooth/USB switch
+  2. Set up Bluetooth to be discoverable
+  3. Set Bluetooth undiscoverable
+  4. Clear all paired devices on the keyboard
+  5. Lock Mode
+  6. Bluetooth function switch
+  7. Switch to another bluetooth device
 
 
 ## Bluetooth name modification
@@ -59,56 +46,36 @@ The name of YDKB BLE series can be modified by yourself. Use YDKB Control (for t
 
 In the Bluetooth settings on the last page, input the name you want, and then click the **Change BLE Name** button. Don't disdain this interface being ugly. It is for temporarily use. Something that can work is better than nothing.
 
-<div style="width: 400px">
-
-![](assets/use-ble-02.png?400)
-</div>
+![|400](assets/use-ble-02.png)
 
 There will also be a dialog, which will prompt you to delete the keyboard that has been paired on your computer, then search again and reconnect your keyboard. It should show the modified name.
 
-If the pair is on a Mac, just restart the keyboard, the name on the Mac will be updated automatically when you reconnect.
+It modifies the name saved in the keyboard. Therefore, although the modification tool only supports Windows, it is valid for all systems after modification.
 
 
 ## Set bluetooth to be Discoverable
 
-Short keys **LShift+RShift+I** 
-
-This setting will be saved after restart. The default is discoverable. Only when bluetooth is discoverable, it can be searched by other devices and paired when it is not connected to any device.
+Under normal circumstances, there is no need to change this, just keep the default.
 
 
-## Set bluetooth to be Not Discoverable
+```ad-yddcol0
+##### Set discoverable
+The shortcut key set to be discoverable is<br> <kbd>LShift+RShift+I</kbd>
 
-Short keys **LShift+RShift+O**
+The default is discoverable. Only when Bluetooth is discoverable, it can be searched and paired by other devices when it is not connected to any device.
+```
 
-This setting will be saved after restart. After setting, the device will not be displayed when other devices search for bluetooth in the unconnected device. If you want to pair it, remember to change back to be discoverable.
+```ad-yddcol1
+##### Set not discoverable
+The shortcut key set to be non-discoverable is<br> <kbd>LShift+RShift+O</kbd>
 
+After setting, in the unconnected device, this device will not be displayed when other devices search for Bluetooth. If you want to pair again, remember to change it back to discoverable.
+```
+## Delete bonding information
 
-## Delete bonding information (Note: this is NOT Reest BLE.)
+> [!ydda] CAUTION
+> - Deleting bonding information is not Reset BLE which is another operation, please do not confuse it.
 
-Short keys **LShift+RShift+R**. If it is the firmware after KAD, you also need to hold **LCtrl** at the same time
+Short keys <kbd>LShift+RShift+LCtrl+R</kbd> 
 
-This is mentioned at the end of each system pairing. The main purpose is to solve the problem when Bluetooth pairing or connection is abnormal (such as repeated pairing and connection).
-
-The use method is:
-  -First delete the paired keyboard on the host device.
-  -Then press **LShift+RShift+R** once on your keyboard.
-  -Search the keyboard and re-pair it.
-
-## Lock Mode
-
-After pressing this key, the keyboard immediately turns off Bluetooth and enters the deep power-saving mode. by only pressing **F** and **J** at the same time, or re-plugging the USB cable, or turning the power on and off again can wake the keyboard up. It is desinged for putting in the bag without turning off the switch.
-
-
-## Power-saving mode On/Off
-
-Short keys **LShift+RShift+P**
-
-This is not a commonly used feature, and some people even misunderstand it, so there is no choice in **LEDs & Functions**.
-
-By default, the keyboard will enter the power-saving state after being idle for a period of time (15s), and the lights will be turned off at the same time. Press any key again to wake up. This will not affect normal use. Then after a relatively long period of time (after hours), Bluetooth will be turned off directly. At this time, it will take a few seconds to wake up again.
-
-But if you want to turn this off and don't let the keyboard enter power-saving mode.  You can use **LShiftnd+RShift+P** to turn it off, press it again to turn it on. Turning off the power saving mode will greatly shorten the battery life. In addition, when the energy-saving mode is turned off, if the USB is not connected and Bluetooth is not connected for more than 60 seconds (the keyboard is not used in this state), the energy-saving mode will still be forcibly turned on.
-
-To check if the power-saving mode is turned off, the keyboard's light is always on. 
-
-This setting is not saved after restart. Every time you re-plug the USB or switch the power or restart the keyboard, the energy saving mode will return to the default on state. 
+The main purpose is to use it when Bluetooth pairing or connection is abnormal. There will be instructions where you need to use it, such as `macOS pairing` and `BLE Troubleshooting`.
