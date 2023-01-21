@@ -9,7 +9,6 @@
   * [BLE On/Off & Connection Status](en/ble-series/connection-status)
   * [Multi Device Switching](en/ble-series/device-switching)
   * [Charge & Battery Information](en/ble-series/blebattery)
-  * [Low Battery Alert](en/ble-series/low-battery)
   * [Lock Mode](en/ble-series/lock-mode)
   * [Reset BLE](en/ble-series/reset-ble)
   * [BLE Module Firmware](en/ble-series/ble-firmware)
