@@ -8,7 +8,8 @@
   * [Taichi Pad](keyboards/taichi-pad)
   * [Sairo64](keyboards/sairo64)
   * [X-8086K](keyboards/x-8086k)
-
+  * [瀚文75 (HW75)](keyboards/hw75)
+  
  --- YDKB (BLE 系列) ---
   * [BLUP / BLE40](keyboards/blup)
   * [Chicory](keyboards/chicory)
@@ -23,3 +24,10 @@
   * [YD68](keyboards/yd68)
   * [YDPM40](keyboards/ydpm40)
 
+
+另外还有一些键盘改装Mod的单独，本身它们有的也有快速的网址访问到。
+
+  * [HHKB BLE ( hhkb.ydkb.io )](keyboards/hhkb-ble)
+  * [BLE660C/BLE980C ( 660c.ydkb.io | 980c.ydkb.io )](keyboards/ble660c_980c)
+  * [BLE980M ( 980m.ydkb.io )](keyboards/ble980m)
+  * [USB2USB](keyboards/usb2usb)

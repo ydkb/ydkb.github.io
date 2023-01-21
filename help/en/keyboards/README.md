@@ -8,7 +8,8 @@ Here are some specific instructions for some keyboards supported by YDKB.
   * [Taichi Pad](en/keyboards/taichi-pad)
   * [Sairo64](en/keyboards/sairo64)
   * [X-8086K](en/keyboards/x-8086k)
-
+  * [瀚文75 (HW75)](en/keyboards/hw75)
+  
 --- YDKB(BLE Series) ---
   * [BLUP / BLE40](en/keyboards/blup)
   * [Chicory](en/keyboards/chicory)
@@ -22,3 +23,10 @@ Here are some specific instructions for some keyboards supported by YDKB.
   * [YD68](en/keyboards/yd68)
   * [YDPM40](en/keyboards/ydpm40)
 
+
+In addition, there are some keyboard modification mods alone, and some of them also have quick URL access.
+
+  * [HHKB BLE ( hhkb.ydkb.io )](keyboards/hhkb-ble)
+  * [BLE660C/BLE980C ( 660c.ydkb.io | 980c.ydkb.io )](keyboards/ble660c_980c)
+  * [BLE980M ( 980m.ydkb.io )](keyboards/ble980m)
+  * [USB2USB](keyboards/usb2usb)
