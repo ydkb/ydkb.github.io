@@ -13,6 +13,7 @@ If the keyboard supports the LEDMAP function, a **[ LEDMAP]** label is displayed
 
 ```ad-yddcol1
 ![](assets/ledmap_03.png)
+```
 
 There are two kinds of indicators.
 
