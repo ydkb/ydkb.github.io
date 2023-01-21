@@ -11,7 +11,7 @@ The keyboard has normal power supply (USB power supply or battery), and the keyb
 
 For separate pairing instructions for each system, see the link below
 - [Windows 7 pairing](en/ble-series/pairing-win7.md)
-- [Windows 10/11 pairing](en/pairing-windows.md)
+- [Windows 10/11 pairing](en/ble-series/pairing-windows.md)
 - [macOS pairing](en/ble-series/pairing-macos.md)
 - [Linux pairing](en/ble-series/pairing-linux.md)
 - [iOS / iPadOS pairing](en/ble-series/pairing-ios.md)
