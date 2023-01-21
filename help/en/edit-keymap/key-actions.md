@@ -90,8 +90,8 @@ YDKB
       The regular keyboard keys.
       keys only on keyboards of some countries
     Combo Keys(Mods Keys)
-      Mods and key like Win+Shift+S
-      Only several Mod like Hyper(Ctrl+Shift+Cmd+Opt)
+      Mods with key like Win+Shift+S
+      Mods without key like Hyper(Ctrl+Shift+Cmd+Opt)
     Multimedia and system keys
       System volume control
       Music playback control
