@@ -1,4 +1,4 @@
-# Mass Storage Device Bootloader (like disk drive)
+# Lufa Mass Storage Device Bootloader
 
 It is based on lufa msd bottloader. 
 

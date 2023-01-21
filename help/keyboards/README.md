@@ -1,16 +1,25 @@
-# ydkb支持的键盘
+# 部分键盘的针对性说明
 
-ydkb支持的键盘及针对性的说明。汇总一下。
+这里是对 YDKB 支持的部分键盘的一些针对性的说明。
 
-一是目前的在售PCB，仅列出ydkb.taobao.com有售的
+ --- High-end ---
+  * [1800mini](keyboards/1800mini)
+  * [Master98](keyboards/master98)
+  * [Taichi Pad](keyboards/taichi-pad)
+  * [Sairo64](keyboards/sairo64)
+  * [X-8086K](keyboards/x-8086k)
 
-数字小键盘：Taichi Pad、YXPad
+ --- YDKB (BLE 系列) ---
+  * [BLUP / BLE40](keyboards/blup)
+  * [Chicory](keyboards/chicory)
+  * [Hello v1](keyboards/hello_v1)
+  * [Just68 / Just66 / Just660](keyboards/just)
+  * [YD60BLE / Just60](keyboards/yd60ble)
+  * [YD67BLE](keyboards/yd67ble)
 
-40%键盘：AKB48、BLE40、BLUP、Daisy、YDPM40BLE
-
-50%键盘：YDP50
-
-60%键盘：Minira、NS60、STM60、YD60BLE
-
-全尺寸：Chili\(G80-3000\)、Leechee\(G80-1800\)
+--- YDKB (其他键盘) ---
+  * [ESWN](keyboards/eswn)
+  * [STM60](keyboards/stm60)
+  * [YD68](keyboards/yd68)
+  * [YDPM40](keyboards/ydpm40)
 
