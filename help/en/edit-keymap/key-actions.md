@@ -120,6 +120,6 @@ YDKB
       Additional User Functions
       Bluetooth control, etc.
     Fire keys
-    Built-in preset macros (custom macros are not yet supported)
+    Built-in preset macros (custom macro not yet)
       Launch shortcut(windows)
 ```

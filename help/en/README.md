@@ -6,17 +6,7 @@ Currently some documentations for English are missing. You can use online transl
 > - The latest versions of Firefox and Safari are currently supported as well.
 > - This document may have some lack of rigor and uniformity, please forgive me.
 
-This document is for the use of https://ydkb.io. You can also visit the following address:
-
-(Global) https://ydkb.github.io,  [View this on GitHub](https://github.com/ydkb/ydkb.github.io)<br>
-
-The firmware used by YDKB is based on TMK, so most of the instructions can be found in addition to this help document, as well as the relevant instructions for TMK. 
-
-TMK Wiki: https://github.com/tmk/tmk_keyboard/wiki
-
-But on the basis of TMK made a certain simplification and modification. The purpose is to make it easier for you to use the firmware, do not need any programming foundation.
-
-On the left is the directory. If it is a mobile browser, expand the sidebar at the top and start browsing.
+This document is for the use of https://ydkb.io. You can also visit: https://ydkb.github.io.
 
 > [!ydda] ATTENTION
 > - The website of ydkb.io is only used to generate firmware with your keymap.
@@ -27,6 +17,51 @@ Here, too, are some basic rules from the beginning of my own vision:
   2. Only under the condition of human intervention can keyboard information be read or written. This includes updating firmware, reading keymap, etc.
   3. No need to run any driver software for daily use.
 
+The firmware of YDKB has been simplified and modified on the basis of TMK. The purpose is to make it easier to use, do not need any programming foundation. The functions it currently supports are roughly as follows:
+
+```mindmap
+YDKB
+  Key Functions
+    Normal Key
+      The regular keyboard keys.
+      keys only on keyboards of some countries
+    Combo Keys(Mods Keys)
+      Mods with key like Win+Shift+S
+      Mods without key like Hyper(Ctrl+Shift+Cmd+Opt)
+    Multimedia and system keys
+      System volume control
+      Music playback control
+      Calculator, brightness, etc.
+    Mouse emulation keys
+      Mouse Move
+      Mouse Wheel
+      Mouse Button, etc.
+  Layer Switch
+    Layer Momentary,Priority layer(With key pressed)
+      Layer Momentary
+      Layer Tap Toggle
+      Layer Tap Key
+      Layer Mods
+    Layer Toggle(Savable state)
+      Layer Toggle
+      Layer Tap Toggle
+      To Layer
+    Default Layer(always-on layer)
+      Layer 0 is always on
+      Default Layer Set
+  Special Functions
+    LEDs and Functions
+      Monochrome backlight control
+      RGB light control
+      Additional User Functions
+      Bluetooth control, etc.
+    Fire keys
+    Built-in preset macros (custom macro not yet)
+      Launch shortcut(windows)
+```
+
+
 > [!yddh] Useless knowledge
 > - About YDKB's name, YD is mainly from a comic named "Ultimate Otaku Teacher".
 > - **やりだいのことかやるだけ(do only what you want to do), take the first letter of や(YA)だ(DA).**
+
