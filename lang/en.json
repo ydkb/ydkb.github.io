@@ -180,7 +180,7 @@
 		"瞬时开启层(按下时开启，松开时关闭)":"Layer Switch(Momentary)",
 		"层开关(切换层开启或关闭)":"Layer Toggle",
 		"跳转到层(按下时直接跳转到某层)":"Go to a layer.",
-		"瞬时开启层 | 层开关(连续点击两次时开关层)":"Layer Switch(momentary) and Toggle by two taps",
+		"瞬时开启层 | 层开关(连续点击三次时开关层)":"Layer Switch(momentary) and Toggle by three taps",
 		"灯光控制及增强功能":"LEDs & Build-in functions",
 		"其他按键":"Other keyes",
 		"常规按键":"SINGLE KEY",
