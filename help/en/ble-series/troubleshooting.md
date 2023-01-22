@@ -7,87 +7,49 @@ This section is designed to help users find and resolve issues. This section is 
 > - Please follow the steps below to find the problem. Sometimes Bluetooth pairing or connection problems are not caused by the keyboard, but the OS or OS driver.
 
 > [!ydda] ATTENTION!!
-> - First of all, it is recommended that the keyboard is still working, such as indicator lights or at least partially working when connected to USB.
-> - On the basis of meeting the previous one, you can check the current working status with the help of the keyboard indicator.
-> - When it is convenient to connect to USB, it is recommended to use the text output battery value for troubleshooting.
-All references in the text to pressing <key>LShift+RShift+XX</key> or <key>LShift+RShift+LCtrl+XX</key> refer to holding down the left Shift and right Shift(maybe and left Ctrl) first and press XX key once. You can then release the left and right shifts. Only press one command at a time. To press another command, you need to release the left and right Shift keys, and then press the left and right Shift keys again.
+> - Before troubleshooting, first confirm that the keyboard can still be recognized and typed by the computer when it is plugged into the USB cable.
+> - If not, it may be a firmware error or a problem with the USB interface or cable, first refer to the wired keyboard troubleshooting guide (not yet completed).
+
+<kbd>LShift+RShift+LCtrl+R</kbd> mentioned below, after pressing, there will be a connection indicator prompt. If there is no indication after pressing, it may be that the keyboard firmware is too old, or the key is not pressed correctly.
 
 
 ## Quick troubleshooting and reassurance
 
 1. First, make sure that the keyboard can type out characters when the cable is connected. In this case, there is an 80% probability that the keyboard is fine.
 2. When you can type with cable, the text output by <kbd>LShift+RShift+V</kbd> is normal, that is, it is not 12 or 44 or 45. there is an 90% probability that the keyboard is fine. Clearing the pairing information on the keyboard and pairing again usually solves the problem.
-3. If the problem has not been solved, then use [Reset Bluetooth](reset-ble.md) and it is successful, that is, the Bluetooth name can be restored to the default Adafruit Bluefruit LE, and then re-initialized to the keyboard name. Then there is an 99% probability that the keyboard Bluetooth hardware and software is fine. If the problem persists after successfully resetting the Bluetooth, turn the direction of troubleshooting to the computer (such as system bugs or driver problems).
-
+3. If the problem has not been solved, then use [Reset BLE](en/ble-series/reset-ble.md) and it is successful, that is, the Bluetooth name can be restored to the default Adafruit Bluefruit LE, and then re-initialized to the keyboard name. Then there is an 99% probability that the keyboard Bluetooth hardware and software is fine. If the problem persists after successfully resetting the Bluetooth, turn the direction of troubleshooting to the computer (such as system bugs or driver problems).
 
 
 ## Bluetooth repeatedly connected/paired
 
 If this is the case, pair it again. But before re-pairing, clear the pairing information in the keyboard as follows:
-   1. First delete the paired Bluetooth from the host OS's paired devices list.
-   2. Then press <key>LShift+RShift+R</key> once on the keyboard, the firmware after DKAD uses <key>LShift+RShift+LCtrl+R</key>.
-   3. The host OS searches for the keyboard and re-pairs it.
+1. First delete the paired Bluetooth from the host OS's paired devices list.
+2. Press <kbd>LShift+RShift+LCtrl+R</kbd> on the keyboard to clear the pairing information saved on the keyboard.
+3. The host OS searches for the keyboard and re-pairs it.
 
-<html><div class="hint">
-<subtitle>Reminder</subtitle>
-
-  - Please be careful not to press <kbd>LShift+RShift+R</kbd> by mistake in normal use, the pairing will be cleared by mistake, causing the computer to mismatch. 
-  - And to avoid this, the firmware after DKAD changed to use <kbd>LShift+RShift+LCtrl+R</kbd>.
-</div></html>
+> [!yddh] Reminder
+> - Please be careful not to press this shortcut key by mistake in normal use which will destroy the pairing information between the keyboard and the computernot. 
+> - Firmware after DKAD (2020-10-13) changed to use <kbd>LShift+RShift+LCtrl+R</kbd> Part of the reason is to prevent accidental presses.
 
 ## Could not find Bluetooth
 
-When using the indicator light to confirm the status, please refer to [Bluetooth Function switch & connection status](/en/ble-series/connection-status).
+### 1 Confirm the Bluetooth function (not the power switch) is on
+Connect the keyboard using USB.
+1. In the place where you can type, press <key>LShift+RShift+V</key> or a custom key to output text information about battery level.
+2. If the result is 12-0 or 120-0, the Bluetooth function is off. If it is not 12 or 120, the Bluetooth function is on.
 
-For the following content, when you can use the USB connection, it is recommended to select the text output power under the USB connection for troubleshooting.
+If the result from the above is that the Bluetooth function is off.
+1. If it is 12-0, please use <kbd>LShift+RShift+W</kbd> to turn on the Bluetooth function.
+2. If it is 120-0, please turn on the physical switch of the keyboard, and then unplug and plug the USB cable again.
 
-### 1 Make sure the Bluetooth Function(not the power switch) is not turned off. 
-
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_h5>Use text output battery level</col_h5>
-<col_list>1 In the place where you can type, press <key>LShift+RShift+V</key> or a custom key to output text information about battery level.</col_list>
-<col_list>2 If the result is 12, the Bluetooth function is turned off. If it is not 12, the Bluetooth function is turned on.</col_list>
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_h5>Use the connection status indicator</col_h5>
-<col_list>1 When the USB cable is reinserted or <kbd>LShift+RShift+S</kbd> is pressed, the indicator of the connection status is on.</col_list>
-<col_list>2 If these operations do not light up the connection status indicator, then the Bluetooth function may be off (or the led is broken).</col_list>
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
-
-If the result from the above is that the Bluetooth function is off, please use <kbd>LShift+RShift+W</kbd> to turn on the Bluetooth first, and then re-test step 1 to make sure that the Bluetooth is turned on. At this time the problem is still not solved, then continue.
+After turning on the Bluetooth function, you may be able to search or connect to the keyboard normally. If the problem is still not resolved, then continue.
 
 ### 2 Confirm the Bluetooth communication and connection status
 
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_h5>Use text output battery level</col_h5>
-<col_list>1 The battery result typed with <key>LShift+RShift+V</key> is in XX-Y format. The XX means level, and the Y represents connection status. </col_list>
-<col_list>2 If XX is not 44 or 45, of course it cannot be 12. Then when Y is 1, it means that the keyboard itself is connected. So it may be connected to some other device. </col_list>
-<col_list>3 If XX is 44 or 45, it means failure to obtain information. This may be the reason for unsuccessful communication or battery service error. In this case, Bluetooth needs to be reset. </col_list>
-</div>
-
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_h5>Use the connection status indicator</col_h5>
-<col_list>1 When reinserting the USB cable or pressing <kbd>LShift+RShift+S</kbd>, the indicator of the connection status must be on. </col_list>
-<col_list>2 If the current indication is connected. Check if it is connected to a device of yours or a device of another person. </col_list>
-<col_list>3 If both are not, the flash frequency is actually very random. It may be faster or slower every few times, which means that the correct Bluetooth connection status has not been obtained. At this time, you may need to reset the Bluetooth. </col_list>
-</div>
-
-</two_col>
-<div style="clear:both;"></div>
-</html>
-
-<col_h5>Two possibilities can be obtained from the above:</col_h5>
-  - If you need to reset Bluetooth, please refer to [Reset Bluetooth](ble-series/reset-ble)
-  - If it is to confirm that the Bluetooth is not connected and the communication status is normal, then try to press <kbd>LShift+RShift+R</kbd>, the firmware after DKAD uses <key>LShift+RShift+LCtrl+R</key >. You should be able to search again.
+Connect the keyboard using USB.
+1. The battery result typed with <kbd>LShift+RShift+V</kbd> is in XX-Y format. The XX means level, and the Y represents connection status.
+2. If XX is not 44 or 45, of course it cannot be 12. Then when Y is 1, it means that the keyboard itself is connected. So it may be connected to some other device. When Y is 0, try pressing <kbd>LShift+RShift+LCtrl+R</kbd>.
+3. If XX is 44 or 45, it means failure to obtain information. This may be the reason for unsuccessful communication or battery service error. In this case, You may need to do  [Reset BLE](en/ble-series/reset-ble.md)
 
 
 ## Bluetooth can be connected but does not work
@@ -100,14 +62,17 @@ Turn off the battery switch, disconnect the Bluetooth, and then turn on the swit
 
 ### 2 Confirm that the Bluetooth communication status is normal
 
-Use the text output battery level function, the result is not 44 or 45. If yes, you need to reset the Bluetooth, see here [Reset Bluetooth](ble-series/reset-ble)
+Use the text output battery level function, the result is not 44 or 45. If yes, you need to reset the Bluetooth, see here [Reset BLE](en/ble-series/reset-ble.md)
 
 ### 3 Try to clear the paired information and re-pair
 
 When the text output battery level is normal, first assume that the problem is on the keyboard side, then try to clear the keyboard side pairing information and then pair again as follows:
-   1. First delete the paired Bluetooth from the host OS's paired devices list.
-   2. Then press <key>LShift+RShift+R</key> once on the keyboard, the firmware after DKAD uses <key>LShift+RShift+LCtrl+R</key>.
-   3. The host OS searches for the keyboard and re-pairs it.
+1. First delete the paired Bluetooth from the host OS's paired devices list.
+2. Press <kbd>LShift+RShift+LCtrl+R</kbd> on the keyboard to clear the pairing information saved on the keyboard.
+3. The host OS searches for the keyboard and re-pairs it.
+
+> [!yddh] reminder
+> - This part of the operation focuses on the second step of "clearing the pairing information saved in the keyboard". If you don’t do step 2, it can be used after deleting and re-pairing, but the next connection may only show that it is connected but cannot be used.
 
 ### 4 Comparison of keyboard connected to other devices
 
@@ -120,35 +85,24 @@ This problem is specifically described as: After the computer restarts or the ke
 
 ### 1 Confirm the Bluetooth connection status of the keyboard itself
 
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_h5>Use text output battery level</col_h5>
-<col_list>1 The battery level typed with <key>LShift+RShift+V</key> is in XX-Y format. The XX means level, and the Y represents connection status. </col_list>
-<col_list>2 When Y is 1, it means that the keyboard itself is connected and may be connected to some other device. </col_list>
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_h5>Use the connection status indicator</col_h5>
-<col_list>1 Press <kbd>LShift+RShift+S</kbd> to check the connection status indicator. </col_list>
-<col_list>2 If the current indication is connected. Check if it is connected to a device of yours or a device of another person. </col_list>
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
+使用USB连接键盘。
+1. The battery level typed with <key>LShift+RShift+V</key> is in XX-Y format. The XX means level, and the Y represents connection status. </col_list>
 
 If you confirm that the keyboard itself reports that it is not connected, continue to look down.
 
 ### 2 Try to clear the information and pair again
 If this is the case, pair it again. But before re-pairing, clear the pairing information in the keyboard as follows:
-   1. First delete the paired Bluetooth from the host OS's paired devices list.
-   2. Then press <key>LShift+RShift+R</key> once on the keyboard, the firmware after DKAD uses <key>LShift+RShift+LCtrl+R</key>.
-   3. The host OS searches for the keyboard and re-pairs it.
+1. First delete the paired Bluetooth from the host OS's paired devices list.
+2. Press <kbd>LShift+RShift+LCtrl+R</kbd> on the keyboard to clear the pairing information saved on the keyboard.
+3. The host OS searches for the keyboard and re-pairs it.
+
+> [!yddh] reminder
+> - This part of the operation focuses on the second step of "clearing the pairing information saved in the keyboard". If you don’t do step 2, it can be used after deleting and re-pairing, but the next connection may not be automatically connected.
 
 After the above re-pairing, the keyboard can be used in the Bluetooth state.
 
 ### 3 Reconfirm whether the automatic connection is normal
-Try to turn off and on the computer’s Bluetooth, or turn off and on the keyboard’s battery switch. In short, let the Bluetooth disconnect and see if it automatically reconnects. And the keyboard is used normally.
+Try to turn off and on the computer’s Bluetooth. Then see if it automatically reconnects and the keyboard is used normally.
 
 ### 4 Comparison of keyboard connected to other devices
 
@@ -158,7 +112,7 @@ If the above still does not work, there may be a computer driver or system bug, 
 
 After testing above, if the keyboard was connected to all devices, and then disconnected and could not be automatically reconnected.
 
-Then try [Reset Bluetooth](ble-series/reset-ble). Compared with clearing the pairing information, the entire Bluetooth configuration will be reinitialized. Bluetooth can be reset correctly and can be re-initialized, generally it can be considered that everything is normal for Bluetooth hardware.
+Then try  [Reset BLE](en/ble-series/reset-ble.md). Compared with clearing the pairing information, the entire Bluetooth configuration will be reinitialized. Bluetooth can be reset correctly and can be re-initialized, generally it can be considered that everything is normal for Bluetooth hardware.
 
 
 ## Bluetooth can be found but unable to connect
@@ -185,9 +139,10 @@ If you can’t,  try restarting the computer, as the saying that restarting can 
 
 If it still doesn't work, try the following operations, and users who have encountered similar problems solved the problem by the following operation.
 
-<col_h5>Uninstall and reinstall the Bluetooth driver</col_h5>
-<col_list>1 In the device manager, right-click on the Bluetooth hardware, select uninstall, and pay attention to the **delete the device driver software**. </col_list>
+##### Uninstall and reinstall the Bluetooth driver
+
+1. In the device manager, right-click on the Bluetooth hardware, select uninstall, and pay attention to the `delete the device driver software`.
 
 ![](assets/ble_troubleshooting_41.png)
 
-<col_list>2 Click the right mouse button in the device manager and select **Scan for hardware changes**. Here the system will automatically rediscover Bluetooth and install the driver. Generally, the automatically updated driver can be used without problems. </col_list>
+2. Click the right mouse button in the device manager and select  `Scan for hardware changes`. Here the system will automatically rediscover Bluetooth and install the driver. Generally, the automatically updated driver can be used without problems. 
