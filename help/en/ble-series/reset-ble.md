@@ -1,123 +1,79 @@
 # Reset BLE
 
-For some pairing problems, you can press **LShift+RShift+R** to solve.(again, this shortcut key is not Reset BLE).
+This operation is to reset the configuration of Bluetooth to the default, and then initialize it by the keyboard firmware. Bluetooth can be properly reset and re-initialized, and it can generally be assumed that the Bluetooth hardware is fine.
 
-But in some cases that method it does not work. Thus, consider using **Reset BLE**. Try software reset first. If still no effect, try hardware reset.
-
-<html><div class="hint">
-<subtitle>HINT</subtitle>
-
-  - After the reset is successful, the name is re-initialized. It is recommended to restart the keyboard and then pair and connect.
-  - Sometimes the pairing works for the first time after resetting, but the keyboard restarts to show that it is connected but cannot be used. Please pair again.
-</div></html>
-
-
-## When BLE Reset is needed
+## When Reset BLE is needed
 
 When you follow the steps to [BLE Troubleshooting](en/ble-series/troubleshooting) , you can know when you need to reset.
 
-Here is a brief talk about the more typical errors and judgments that need to be reset.
+Brief summary: When the text output battery level is 44 or 45, you need to do Reset BLE. Or when connection exceptions cannot be resolved by other methods.
 
-<table_w30x70>
-
-| Event | Reason |
-| --- | --- |
-| The keys are not working properly when connected to USB only. | Bluetooth also works when using only USB. The communication between the MCU and the Bluetooth module is always maintained (need to check the power, connection status, etc.). <br>The MCU does not get a timely reply from the Bluetooth module, it will have a wait of up to 100ms, and the button pressed within this 100ms will not respond. |
-| The result of outputting battery level in text is 44 or 45 | 44 or 45 means that the correct return value was not obtained. <br>This shows that part of the Bluetooth configuration is abnormal, or the communication between the MCU and the Bluetooth module is unsuccessful. |
-</table_w30x70>
-
-<div class="hint">
-<subtitle>Suggestion</subtitle>
-
-  - There are not many cases of Bluetooth configuration errors. Once errors occur, you can recall what the latest operation was.
-  - If there is a way to stably reproduce the error situation, please contact me. Then there is a way to improve it in the firmware.
-</div>
+> [!yddh] Suggestion
+> - There are not many cases of Bluetooth configuration errors. Once errors occur, you can recall what the latest operation was.
+> - If there is a way to stably reproduce the error situation, please contact me. Then there is a way to improve it in the firmware.
 
 
+## key command reset method
 
-## Software reset and hardware reset
-
-Try software reset fist. If the keyboard controller can still configure the Bluetooth module, software reset will work.
-
-The hardware reset generally requires disassembling the keyboard and shorting the module. When the software reset does not work, try hardware reset. The hardware reset is a function of the Bluetooth module itself. As long as it can power on normally, it should work.
-
-If you can't disassemble the keyboard temporarily, you can use the Bluetooth Function switch in [Bluetooth Function switch & connection status](ble-series/connection-status)  to turn off the Bluetooth function. So you can use it without problem in USB mode. **However, please remember to turn on the Bluetooth function when you reset Bluetooth later.**
-
-<html><div class="attention">
-<subtitle>ATTENTION</subtitle>
-
-  - Whether software reset or hardware reset, the sign of <b><u>Successful reset </u></b> is that the name of the Bluetooth reverts to the default <b><u>Adafruit Bluefruit LE</u></b>.
-  - And After the keyboard restarts, if this name is correctly configured to the keyboard's default name, there should be no problem with the Bluetooth hardware.
-  - If you restart the keyboard too soon, you may not see the name to restore the default, but the keyboard function returns to normal also can indicate a successful reset.
-</div></html>
-<html>
-
-<div style="width: 600px">
-
-![](assets/reset-ble-08.jpg?600)
-</div>
-
-
-## How to do Software Reset
-
-This requires firmware support. So be sure to update to the latest firmware first.
-
-Use <kbd>Reset</kbd> in **LEDs & Functions**. You need to set it to your keymap at first.
+Please update the firmware first, it is better after 2023. Use <kbd>Reset</kbd> in the enhanced function, if it is not set, you need to set it to the keyboard first.
 
 ![](assets/reset-ble-01.jpg)
 
-Then use <key>LAlt+LWin+Reset</key> or <key>LOpt+LCmd+Reset</key> to perform BLE software reset.
+Then confirm that the current power output is not 12-0 or 120-0, that is, confirm that the Bluetooth function is not turned off.
 
-<html><div class="hint">
-<subtitle>HINT</subtitle>
-<ul><li>The modifier keys that need to be pressed must all be on the left. The one on the right will not trigger a reset.</li>
-<li>Generally, <kbd>Reset</kbd> will not be set in Layer 0, so the actual operation may press more than 3 physical buttons.</li><ul>
-</div></html>
+Then use the key <kbd>LAlt+LWin+Reset</kbd> or <kbd>LOpt+LCmd+Reset</kbd> to reset Bluetooth. The keyboard will restart.
 
+1. If the bluetooth name is first changed back to Adafruit Bluefruit LE, then it is automatically initialized to the keyboard name. The keyboard performed a hardware reset with this command. 
+2. If the bluetooth name changes back to Adafruit Bluefruit LE and then stays the same, a software reset was performed. Restart the keyboard with <kbd>LShift+RShift+B</kbd> and it will reinitialize to the keyboard name. 
+3. Finally, use <kbd>LShift+RShift+V</kbd> to see <u>the output battery value  text is not 44 or 45 which means the reset is successful. </u>
 
-## Some special instructions
+> [!yddh] reminder
+> - The modifier keys to be pressed must all be left. 
+> - Generally <kbd>Reset</kbd> will not be set to Layer 0, so you may press more than 3 physical keys.
 
-The newer keyboard has some hardware modifications, so its software reset actually performs a hardware reset.
+If the keyboard supports hardware reset (not in the unsupported list), but this method fails to reset successfully, it may be a hardware problem.
 
-Therefore, in the case of normal firmware, there is no need to manually short-circuit the Bluetooth module. And when the keyboard is performing the reset operation, there is a corresponding light as an indicator.
+If hardware reset is not supported, you can also use the following `circuit short reset method` to try.
 
+> [!yddl] Keyboards that do not support hardware reset by default (mostly released before 2020)
+> - 1800mini
+> - Master98 Pro
+> - Sairo64
+> - X-8086K
+> - BLE40
+> - BLUP
+> - CAD66
+> - Chicory
+> - Fmini
+> - Just60
+> - Just68
+> - Just66 v1.2/1.4
+> - Just660
+> - Just68 v1
+> - Minira v1
+> - YD60BLE
+> - YDP50
+> - YDPM40BLE 1.0
+> - HHKB_BLEv2.3/4
+> - BLE660C v1/2.0
+> - BLE980C v2.0
+> - BLE980M
 
-<table_w30x70>
+> [!yddl] Some of above, support hardware reset on newer hardware versions
+> - Just66 v1.6
+> - HHKB BLE v2.5
+> - BLE660C v2.2
+> - BLE980C v2.2
 
-| Supported keyboard | Indicator for reset |
-| --- | --- | 
-| Duang60 | Caps LED keeps on for about 5s |
-| Pearly | LED1 and LED2 keep on for about 5s |
-| HHKB BLE v2.5<br>(BLUE PCB and CHarging led) | LED1 and LED3 keep on for about 5s |
-| BLE660C/BLE980C v2.2<br>(BLUE PCB and CHarging led) | All indicators keep on for about 5s |
+## Line short reset method
 
-</table_w30x70>
-
-There are also a small number of keyboards with more than one switch, and the Bluetooth hardware reset can be short-circuited directly by the switch itself.
-
-<table_w30x70>
-
-| Keyboard | Method of resetting Bluetooth with switch |
-| --- | --- | 
-| Just660 | The DIP switch on the back, 3 and 4 are turned on at the same time, which is equivalent to the short circuit of hardware reset. |
-| BLE980M | The DIP switch on the back, 3 and 4 are turned on at the same time, which is equivalent to the short circuit of hardware reset. |
-
-</table_w30x70>
-
-
-## How to do Hardware Reset
-
-<html><div class="hint">
-<subtitle>HINT</subtitle>
-<ul><li>As long as the Bluetooth module can be powered, the hardware reset should work.
-</li>
-<li>If the reset is still not successful, one is to confirm that the Bluetooth function is not turned off; the other is to replace the shorting tool, some of the short-circuited wires may have insulating paint on the surface and are not conductive, or they are too thick to touch the near pin.</li><ul>
-</div></html>
-
+> [!yddh] HINT
+> - As long as the Bluetooth module can be powered, this method would at least restore its name to default..
+> - If the reset is still not successful, one is to confirm that the Bluetooth function is not turned off; the other is to replace the shorting tool. Some wires have insulating varnish on the surface, which is not conductive, or they touch the adjacent feet too much.
 
 This requires disassembling the keyboard and shorting the pins on the Bluetooth module with a wire. 
 
-### 1 Turn off the battery switch on the keyboard. Then, 
+### 1 Turn off the battery switch on the keyboard 
 
 The battery is no longer used during the whole process, it is better to be able to unplug the battery (this is not a necessary operation). This is to ensure that only the USB is powered when the keyboard is plugged in, and there is no power when the USB is unplugged.
 
@@ -129,39 +85,40 @@ If this keyboard is paired on the computer, delete it. Delete it to be able to s
 
 Short the pin Factory Reset and the pin GND as shown below. While keeping them shorted, plug in the USB cable. After a few seconds, the Bluetooth name should revert to Adafruit Bluefruit LE from the Bluetooth searching interface. At this time, you don’t need to keep the shorting. Unplug the USB cable and plug it in again. The name will change back to the default Bluetooth keyboard name. Reset is complete.
 
+![](assets/reset-ble-07.jpg)
+
 Added: some of the keyboard next to the Bluetooth module left two holes, and there is text marked with  <b><u>BLE Reset</u></b>, you can also direct the two short holes. Note not <b><u>Reset</u></b>.
 
-![](assets/reset-ble-07.jpg)
+There are also a small number of keyboards with more than one switch, and the short circuit of the Bluetooth hardware reset can also be realized directly by the switch itself.
+
+| Keyboard  | Method of resetting Bluetooth with switch |
+| --- | --- |
+| Just660 | The DIP switch on the back, 3 and 4 are turned on at the same time, which is equivalent to the short circuit of hardware reset. |
+| BLE980M | The DIP switch on the back, 3 and 4 are turned on at the same time, which is equivalent to the short circuit of hardware reset. |
 
 ### 4 Restart the keyboard again
 
-After successful reset in step 2 above, it is recommended to unplug the cable and plug it in again, and then connect to Bluetooth.
-  
+After successful reset, it is recommended to unplug the cable and plug it in again, and then connect to Bluetooth.
 
 
-## Observe the reset process
+## Hardware reset patch for older models
 
-The reset method has been described above, it is simple enough. The instructions below are just to show the reset process in more detail.
+Even if the keyboard does not support key command hardware reset by default, it can be supported by adding a patch. Add a 10K resistor between the two pins of the Bluetooth module. The size of the resistor on the picture is 1206.
 
-<html><font color="red">Before resetting, delete the paired keyboard from the host device and it is recommended to plug in the USB cable</font></html>(To prevent the keyboard entering power-saving mode). You also need a device that can search for Bluetooth normally and respond quickly, such as using Adafruit Bluefruit LE Connect software for Mac. After performing the reset operation, you can see that the name of Bluetooth has changed.
+```ad-yddcol0
+##### The earliest YD60BLE
 
-<div style="width: 600px">
+![](assets/reset-ble-patch-01.jpg)
+```
 
-![](assets/reset-ble-02.png?600)
-</div>
+```ad-yddcol1
+##### HHKB BLE v2.4
 
-Then restart the keyboard (unplug the USB cable and plug it in again, or press **LShift+RShift+B**). Bluetooth should be auto configed. And you will see the Bluetooth name changes to the keyboard default name, but there is a UART logo.
+![](assets/reset-ble-patch-02.jpg)
+```
 
-<div style="width: 400px">
+> [!ydda] Note
+> - This patch is not a non-essential operation, and it will not affect the use without it.
+> - Soldering this resistor is a more delicate job, much more difficult than soldering the shaft. It is not worth the loss if you solder the legs on the side of the module without soldering.
+> - When the old model is repaired, you can ask the store to add this for you.
 
-![](assets/reset-ble-03.png?400)
-</div>
-
-After the Bluetooth configuration is complete, the keyboard will restart automatically. The UART logo will disappear, and the keyboard can also be seen in the system's Bluetooth. It only shows the Bluetooth address, not the name.
-
-<div style="width: 600px">
-
-![](assets/reset-ble-04.png?600)
-</div>
-
-Windows is even simpler. You can see the changes of bluetooth name by using the default Bluetooth search interface.

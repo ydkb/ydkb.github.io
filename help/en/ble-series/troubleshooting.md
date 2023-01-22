@@ -19,7 +19,6 @@ This section is designed to help users find and resolve issues. This section is 
 2. When you can type with cable, the text output by <kbd>LShift+RShift+V</kbd> is normal, that is, it is not 12 or 44 or 45. there is an 90% probability that the keyboard is fine. Clearing the pairing information on the keyboard and pairing again usually solves the problem.
 3. If the problem has not been solved, then use [Reset BLE](en/ble-series/reset-ble.md) and it is successful, that is, the Bluetooth name can be restored to the default Adafruit Bluefruit LE, and then re-initialized to the keyboard name. Then there is an 99% probability that the keyboard Bluetooth hardware and software is fine. If the problem persists after successfully resetting the Bluetooth, turn the direction of troubleshooting to the computer (such as system bugs or driver problems).
 
-
 ## Bluetooth repeatedly connected/paired
 
 If this is the case, pair it again. But before re-pairing, clear the pairing information in the keyboard as follows:
@@ -34,6 +33,7 @@ If this is the case, pair it again. But before re-pairing, clear the pairing inf
 ## Could not find Bluetooth
 
 ### 1 Confirm the Bluetooth function (not the power switch) is on
+
 Connect the keyboard using USB.
 1. In the place where you can type, press <key>LShift+RShift+V</key> or a custom key to output text information about battery level.
 2. If the result is 12-0 or 120-0, the Bluetooth function is off. If it is not 12 or 120, the Bluetooth function is on.
@@ -42,7 +42,9 @@ If the result from the above is that the Bluetooth function is off.
 1. If it is 12-0, please use <kbd>LShift+RShift+W</kbd> to turn on the Bluetooth function.
 2. If it is 120-0, please turn on the physical switch of the keyboard, and then unplug and plug the USB cable again.
 
-After turning on the Bluetooth function, you may be able to search or connect to the keyboard normally. If the problem is still not resolved, then continue.
+After turning on the Bluetooth function, you may be able to search or connect to the keyboard normally. 
+
+If the problem is still not resolved, then continue.
 
 ### 2 Confirm the Bluetooth communication and connection status
 
@@ -55,6 +57,10 @@ Connect the keyboard using USB.
 ## Bluetooth can be connected but does not work
 
 This problem is specifically described as: Bluetooth can automatically connect, and the status on the computer has always been connected, but the buttons cannot be used.
+
+If it is a Windows system, please refer to [windows pairing](en/ble-series/pairing-windows.md). In some cases such as the first pairing, you need to delete it once after pairing, and then re-pair to connect and use normally.
+
+Other systems and other situations encounter this problem, continue to read.
 
 ### 1 Confirm that the keyboard firmware is normal
 
@@ -86,11 +92,13 @@ This problem is specifically described as: After the computer restarts or the ke
 ### 1 Confirm the Bluetooth connection status of the keyboard itself
 
 使用USB连接键盘。
-1. The battery level typed with <key>LShift+RShift+V</key> is in XX-Y format. The XX means level, and the Y represents connection status. </col_list>
+1. The battery level typed with <key>LShift+RShift+V</key> is in XX-Y format. The XX means level, and the Y represents connection status.
+2. When Y is 1, it means that the keyboard itself is connected, and it may be connected to some other device.
 
 If you confirm that the keyboard itself reports that it is not connected, continue to look down.
 
 ### 2 Try to clear the information and pair again
+
 If this is the case, pair it again. But before re-pairing, clear the pairing information in the keyboard as follows:
 1. First delete the paired Bluetooth from the host OS's paired devices list.
 2. Press <kbd>LShift+RShift+LCtrl+R</kbd> on the keyboard to clear the pairing information saved on the keyboard.
@@ -146,3 +154,4 @@ If it still doesn't work, try the following operations, and users who have encou
 ![](assets/ble_troubleshooting_41.png)
 
 2. Click the right mouse button in the device manager and select  `Scan for hardware changes`. Here the system will automatically rediscover Bluetooth and install the driver. Generally, the automatically updated driver can be used without problems. 
+
