@@ -7,12 +7,9 @@
 
 这个DFU的驱动在同台电脑同系统下，只需要安装一次，下次刷固件可以直接从步骤2开始。如果在这台电脑上已经用于刷新过此Bootloader的键盘，那么已有驱动，不用再重新安装。
 
-
 ### 1 下载Zadig
 
-使用此Bootloader刷固件是必须安装驱动的，使用zadig，这里为了防止安装错设备，可以使用修改版的Zadig for Atmel DFU，下载址址：[https://pan.baidu.com/s/1sltOsrV](https://pan.baidu.com/s/1sltOsrV) 密码: ek5h
-
-当然也可以使用官方版本。搜索“zadig”就能找到官网下载。
+使用此Bootloader刷固件是必须安装驱动的，使用zadig，官网地址是: https://zadig.akeo.ie/ ，下载待用。
 
 ### 2 键盘进入DFU模式
 
@@ -34,13 +31,14 @@
 ![](assets/atmel_dfu_lufa_01.png)
 ```
 
-> [!ydda] 再次提醒注意，特别是使用原版Zadig：
+> [!ydda] 再次提醒注意
 > - 不要去选 GH60 或者其他的键盘名，如果选择了还了此驱动，该键盘就不能用了，需要卸载驱动或者换个 USB 接口插。
 
 ![|600](assets/atmel_dfu_02.png)
 
 
 ### 3 安装驱动
+
 正确的选择 `ATm32U4DFU` 或是 `LUFA DFU` 后，驱动选择 `WinUSB` 点击 Install Driver，安装成功会有提示。
 
 ![](assets/atmel_dfu_03.png)
@@ -67,6 +65,5 @@
 然后会提示“设备进入刷机模式后自动识别并执行更新”，这时按键盘的刷机按钮，或者说提前按刷机按钮让键盘处于了刷机模式，都会自动开始刷新。如下图，识别到DFU并且刷新固件。
 
 ![|600](assets/dfu_reflash_02.png)
-
 
 
