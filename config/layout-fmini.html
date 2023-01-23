@@ -6,6 +6,7 @@
         <p>如果无法刷，检查在刷机模式下，键盘有被系统正确识别，即在“Windows设置--设备”里，不是未知设备。</p>
         <p><b>补充说明:</b>Num Lock, Caps Lock, Scroll Lock这些指示灯，在蓝牙模式下并未同步显示电脑的这三者状态。只是按一下按键就切换显示一次对应指示灯。<br>
         如果不同步了，可以使用Shift+对应按键，比如Shift+Capslock，这时CapsLock会生效但是对应指示灯的状态不会变。</p>
+        <p><b>特别说明:</b>我自己都没有这个键盘，所以，为了方便维护这个固件，避免矩阵轴灯部分出错，<span style="border-bottom: 2.0px solid #bb1122;">2023年更新的固件将不再支持轴灯背光。</span></p>
     </div>    
     <div id="mycase" class="mycase"></div>
     <div class="mykeycap2 bl-key">F1</div>
@@ -92,18 +93,21 @@
     <div class="mykeycap2 row400 col1750">Right</div>
 </div>
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li class="key-set rowstart" id="code-0xf000" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
-    <li class="key-set" id="code-0xf001" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
-    <li class="key-set" id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">Reset</li>
-    <li class="key-set" id="code-0xf003" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
+    <li kc="0xf300" lang-id="fn_tricky_esc">~<br>Esc</li>
+    <li kc="0xf200" lang-id="fn_tricky_esc_l">~(L)<br>Esc</li>
+    <li kc="0xf100" lang-id="fn_tricky_esc_r">~(R)<br>Esc</li>
+    <li kc="0xf001" lang-id="fn_alt_f4">4 $<br>F4</li>
+    <li kc="0xf002" lang-id="fn_reset_flash">Reset</li>
+    <li kc="0xf003" lang-id="fn_win_lock">Win<br>Lock</li>
+    <li kc="0xf004" lang-id="fn_space2">Space2</li>
     <div id="ble51_control_keys"></div>
-    <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
 </div>
-<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x7400"></div>
+<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000"></div>
 <div id="kb_ledmap"  style="display: none">
     <li id="kb_ledmap-0" value="17" title="Caps Lock under keycap">Caps Lock1</li>
     <li id="kb_ledmap-2" value="16" title="Num Lock LED">Num Lock</li>
     <li id="kb_ledmap-4" value="17" title="Caps Lock LED">Caps Lock2</li>
     <li id="kb_ledmap-6" value="18" title="Scroll Lock LED">Scroll Lock</li>
 </div>
+<div id="kb-changelog-url" href="fmini" style="display: none;"></div>
