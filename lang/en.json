@@ -174,6 +174,8 @@
 		"火力模式按键(仅部分键盘支持此功能)":"Fire keys(Only a few of keyboards support this Function.)",
 		"火力模式 鼠标左键":"fire key for mouse left button ",
 
+		"查看 RGB 控制说明":"RGB Control Help",
+		"查看 单色灯 控制说明":"Backlit Control Help",
 
 		"Keypad 00, 极少数键盘未支持此功能":"Keypad 00 (Very few keyboards do not support this.)",
 
