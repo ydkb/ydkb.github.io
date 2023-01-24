@@ -118,19 +118,19 @@
     <div class="mykeycap2 row425 col1525">Right</div>
 </div>
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li class="key-set rowstart" id="code-0xf000" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
-    <li class="key-set" id="code-0xf001" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
-    <li class="key-set" id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">Reset</li>
-    <li class="key-set" id="code-0xf003" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
-    <li class="key-set" id="code-0xf004" title="正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角">Space2</li>
-    <li class="key-set" id="code-0xc000" title="长按Home，快速单击PgUp">PgUp<br>Home</li>
-    <li class="key-set" id="code-0xc001" title="长按End，快速单击PgDn">PgDn<br>End</li>
-    <li class="key-set" id="code-0xf00c" title="发送按键设置到ydkb.io。这是一个测试功能，使用说明见帮助">Send<br>Keymap</li>
+    <li kc="0xf300" lang-id="fn_tricky_esc">~<br>Esc</li>
+    <li kc="0xf200" lang-id="fn_tricky_esc_l">~(L)<br>Esc</li>
+    <li kc="0xf100" lang-id="fn_tricky_esc_r">~(R)<br>Esc</li>
+    <li kc="0xf001" lang-id="fn_alt_f4">4 $<br>F4</li>
+    <li kc="0xf002" lang-id="fn_reset_flash">Reset</li>
+    <li kc="0xf003" lang-id="fn_win_lock">Win<br>Lock</li>
+    <li kc="0xf004" lang-id="fn_space2">Space2</li>
+    <li kc="0xf00c" title="发送按键设置到ydkb.io。这是一个测试功能，使用说明见帮助">Send<br>Keymap</li>
     <div id="ble51_control_keys_v2"></div>
     <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
 </div>
-<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x7400"></div>
+<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x7000"></div>
 <div id="kb_ledmap"  style="display: none">
     <li id="kb_ledmap-0" value="17" class="conn_mode" title="CAPS灯">CAPS灯</li>
     <li id="kb_ledmap-2" value="1" class="rgb_color conn_mode" title="RGB1">RGB1</li>
@@ -143,5 +143,5 @@
 <div id="kb-preset_keymap"  style="display: none">
     <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2SW2qcMQxGN3QerLu9liH730YlNzQZSAiUvhQGgfxfpM/SkR6Ph+3Qg2TKvr6uXzhBUmz670IEUcQQR+KNhyQT20kHXaigihrqaKCJFrppbVuYdIYpZphjgSVW2MYO3pcJrrjhjgeeeHWGb/wQixBCCSO6rCCSKGITh1ykkEpaZ6STXXeSRW7yUIsSSimjnAqq2ypqU6cz9mILW9nGdnawk919b/bhLI5wlGMc50znJznFaTBDpos3W42he5PV/a8aBO3j+ry+rt/XD6+yQTpUZLAO1wEr0TpN1eYczY4dtdEapX528e5dR6U1tMm2yEMaj7xbmDa48V0f6Tos1Lv51NPNpXkXP5GXx9TwJzdbfd3zNFJJPzFK95vc98736Dlf+kP8gz+f6U8dg3oUr/Kdhjzd1mP/PQl5tqegL20W9S7hrOr78n5vP+t9iug9+Trkcm70vYDrH931/0cMlPVi8mLyYvJXTOTF5MXkJyZvvwDAz9csqAkAAA==" title="参考1">参考1</li>
 </div>
-<div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA+2VWW7DMAxELzQf4irxLEbvf40OFSML2qJAUbT5CATQVkyOqUfSOY7DKmxBMuVi57YDjkBiYqHArQhEIQZxSLzhkET7MqigAypQhRrUoQFN6IQuaMEGTBhhCjOYwwKWsAm+2Ao+kOK0rnCDOzzgCZ8M8gUvxEAIQhGGYGaB4HOL5HYhCtkaSEUag9KRzD6RE7mQhTkwBVMxDdMxA5OHm3CpfloMWgNLsBTLsBwrsBKLABZWoQZKUIoylKMaQSVqokioETF/s0EePKQMghizWdDGtrnt3HZt2+CmNdvGI823ATdhCeoQr/W1Nenbaq3VSrx38aBaq1BDiZgihxCSnCtMia8t80O6Ng51nj+1eLg0Z/LtuZF0DtdYVoTQ+1qkKukVrbR/k71nvIeeBWjotxLgvgCdR9Nuxa28CyIPb3PpYswFeVwPTp+u7tjdjd2zZxd/vb7Xu/Ngq3zusjkTPduwcfBsV2r6hZZ0k15uuuY/zum5PXqMbePpz8GJpztdz3NfdnabChv3wd27dy+5TdCeFL3x070f5yzJOVnPA+J3PBrkuHJ89mz/jklk+AvLByyXkdPh/57Ns3icVFb/m9arWa5Y3t4B9UfG6/gJAAA="></div>
-<div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:cad66" style="display: none;"></div>
+<div id="yang_keymap" style="display: none" value-keymap="H4sIAAAAAAAAA+2VW27rMAxENzQf4lPiWozufxsdykYeaIsCRXFvPgoBTGSTI+qQTI7jsApbkEw57dx2wBFITCwUuBWBKMQgDok3HJJoXwYVdEAFqlCDOjSgCZ3QBS3YgAkjTGEGc1jAEjbBg63gA6mTGq5wgzs84AmfDPIFL8RACEIRhmBmgeB7i+R2IQpJDaEM0hiUjmT2iZzIhSzMgSmYimmYjhmYvNyES/XbYtAaWIKlWIblWIGVWASwsAo1UIJSlKEc1QgqURNFQo2I+ZsN8uAlZRDEmM2CNrbNbee2a9sGN63ZNh5pvg24CUtQh3itP1uTVxQnBm211qK28wn1WocqSsiUOYSY5FphSoBtmSHStYGok0Bq8XppzvTbc0PpLG6x53n9WeQq6RWttJ/J3jPeQ68SNPZ7EfBYgs6jebfiVt4lkafTXLocc0Ge15PTp6t7dvdjd+3Vx1+v7/UePNgsn7tszkTPRmwcvNuNmn6hJd2m55eu+o9zem0Pltht4+kfhAtP97pe9z53dp8LG4/B3bsPh9xnaM+K3vnp3o9rmuSardcB8TseDXLcOL56tv+OSWT4H5YPWM6R0+H/PZtX8bgGaPX/af01yw3L2ztb9O/h+gkAAA=="></div>
+<div id="kb-changelog-url" href="cad66" style="display: none;"></div>
