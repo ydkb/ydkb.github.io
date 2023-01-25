@@ -23,8 +23,8 @@ Then confirm that the current power output is not 12-0 or 120-0, that is, confir
 
 Then use the key <kbd>LAlt+LWin+Reset</kbd> or <kbd>LOpt+LCmd+Reset</kbd> to reset Bluetooth. The keyboard will restart.
 
-1. If the bluetooth name is first changed back to Adafruit Bluefruit LE, then it is automatically initialized to the keyboard name. The keyboard performed a hardware reset with this command. 
-2. If the bluetooth name changes back to Adafruit Bluefruit LE and then stays the same, a software reset was performed. Restart the keyboard with <kbd>LShift+RShift+B</kbd> and it will reinitialize to the keyboard name. 
+1. The bluetooth name is first changed back to Adafruit Bluefruit LE. If it does not restart automatically at this time, manually restart the keyboard with <kbd>LShift+RShift+B</kbd>.
+2. Then it will be initialized to the keyboard name again, and after this process is completed, the reset is successful.
 3. Finally, use <kbd>LShift+RShift+V</kbd> to see <u>the output battery value  text is not 44 or 45 which means the reset is successful. </u>
 
 > [!yddh] reminder
