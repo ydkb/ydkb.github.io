@@ -7,7 +7,7 @@
         <p>将下载的固件“filco104.bin"（大小写无所谓）复制或拖入U盘里，直接覆盖原文件。然后右键弹出U盘或者再按一次减号键退出，刷机完成。</p>
         <p>不需要安装任何的驱动和刷机软件。 也可以直接上传U盘里的filco104.bin到网站上，读取键盘的当前设置。</p>
     </div>   
-  <div style="zoom: 95%">
+  <div style="zoom: 0.95; -moz-transform:scale(0.95);">
     <div class="mycase">
         <div class="kbdbg-border marginb2" style="height: 376px; width: 1239px;"></div>
     </div>
@@ -142,17 +142,14 @@
 </div>
 
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li class="key-set" id="code-0xf00b" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
-    <li class="key-set" id="code-0xf00c" title="全键无冲切换开关，默认是6键无冲!">无冲<br>切换</li>
-    <li class="key-set" id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">JMP<br>BL</li>
-    <li class="key-set rowstart" id="code-0xf003" title="RGB底灯开关">RGB<br>开关</li>
-    <li class="key-set" id="code-0xf004" title="RGB模式加，同时按住左Shift时为模式减">RGB<br>模式</li>
-    <li class="key-set" id="code-0xf005" title="RGB色相减">RGB<br>色相-</li>
-    <li class="key-set" id="code-0xf006" title="RGB色相加，同时按住左Shift时为色相减">RGB<br>色相+</li>
-    <li class="key-set" id="code-0xf007" title="RGB饱和度减">RGB<br>饱和-</li>
-    <li class="key-set" id="code-0xf008" title="RGB饱和度加，同时按住左Shift时为饱和度减">RGB<br>饱和+</li>
-    <li class="key-set" id="code-0xf009" title="RGB明度减">RGB<br>明度-</li>
-    <li class="key-set" id="code-0xf00a" title="RGB明度加，同时按住左Shift时为明度减">RGB<br>明度+</li>
+    <li kc="0xf300" lang-id="fn_tricky_esc">~<br>Esc</li>
+    <li kc="0xf200" lang-id="fn_tricky_esc_l">~(L)<br>Esc</li>
+    <li kc="0xf100" lang-id="fn_tricky_esc_r">~(R)<br>Esc</li>
+    <li kc="0xf001" lang-id="fn_alt_f4">4 $<br>F4</li>
+    <li kc="0xf002" lang-id="fn_reset_flash">Reset</li>
+    <li kc="0xf003" lang-id="fn_win_lock">Win<br>Lock</li>
+    <li kc="0xf004" lang-id="fn_space2">Space2</li>
+    <div id="rgb_control_keys"></div>
 </div>
 <div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000" value-format="bin"></div>
 <div id="kb_ledmap"  style="display: none">
@@ -162,4 +159,7 @@
     <li id="kb_ledmap-3" value="0" title="RGB绿">RGB绿</li>
     <li id="kb_ledmap-4" value="18" title="SCROLL LOCK">SCROLL LK</li>
     <li id="kb_ledmap-5" value="0" title="RGB蓝">RGB蓝</li>
+</div>
+<div id="kb-preset_keymap"  style="display: none">
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TWW7dMAxFN3Q+xFlai5H9b6Ok8YJO6V9auEAggLCteynymLquyxaSKfuOdceFEyTF5tCvIogihjgSb1ySjLZNB12ooIoa6migiRa60UOnN2mHKWaYY4ElVtjGDt6HCa644Y4Hnni1wzd+iEUIoYQRXVYQSRSxiUMuUkglrR3pZNedZJGbPNSihFLKKKeC6raK2tRpx15sYSvb2M4OdrK7780+nMURjnKM45zp/CSnOA1myEzx3tVI99YetQaxahB0zDvWHfcdB1YNcBkkMkwH6lCVGAg6khbomAfmpLqfO80ked9vpp3h6lS/rFTvRlNPN5LmXehrZw58PeuKNeA8xp9yGuD79/yumR//g+sP6zMUM3n3VM3svabxk07sH/+RpJt3uxFq6d9v8D9SDJPoMXtCLU9RDBO3+v22PbPcfwflGZU8RfFF5CMiX7fmJyJv3wD7lOk2dAkAAA==" title="Default 1">Default 1</li>
 </div>
