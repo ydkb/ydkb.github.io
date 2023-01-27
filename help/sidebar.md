@@ -42,4 +42,5 @@
 * [Mac Support](mac-support/)
   * [Apple/Mac Fn](mac-support/apple-fn)
   * [按键符号不对应](mac-support/wrong-symbol)
+  * [Mac 睡眠后立即唤醒](mac-support/mac-sleep)
   * [Mac 与 Win 键盘区别](mac-support/mac-win)

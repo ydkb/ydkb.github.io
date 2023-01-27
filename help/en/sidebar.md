@@ -42,5 +42,6 @@
 * [Mac Support](en/mac-support/)
   * [Apple/Mac Fn](en/mac-support/apple-fn)
   * [Wrong Symbol](en/mac-support/wrong-symbol)
+  * [Wrong Wake up after sleep](en/mac-support/mac-sleep)
   * [Mac and Win](en/mac-support/mac-win)
 
