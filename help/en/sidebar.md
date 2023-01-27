@@ -9,7 +9,7 @@
   * [BLE On/Off & Connection Status](en/ble-series/connection-status)
   * [Multi Device Switching](en/ble-series/device-switching)
   * [Charge & Battery Information](en/ble-series/blebattery)
-  * [Lock Mode](en/ble-series/lock-mode)
+  * [Power Save & Lock Mode](en/ble-series/power-save)
   * [Reset BLE](en/ble-series/reset-ble)
   * [BLE Module Firmware](en/ble-series/ble-firmware)
   * [BLE Troubleshooting](en/ble-series/troubleshooting)

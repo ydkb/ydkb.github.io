@@ -9,7 +9,7 @@
   * [蓝牙开关和连接状态](ble-series/connection-status)
   * [多设备切换](ble-series/device-switching)
   * [充电与电量提醒](ble-series/blebattery)
-  * [Lock Mode](ble-series/lock-mode)
+  * [节能与 Lock Mode](ble-series/power-save)
   * [重置蓝牙配置](ble-series/reset-ble)
   * [BLE 模块固件升级](ble-series/ble-firmware)
   * [BLE 系列排错指南](ble-series/troubleshooting)
