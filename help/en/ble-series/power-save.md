@@ -9,6 +9,8 @@ For daily use, let the keyboard automatically manage power saving. Its working m
 
 The power consumption of the deep power saving mode is very low. For daily use you don't need to turn the power switch off, just leave the keybaord to let itselt enter power saving mode. If you want take it away in a bag, it is recommended to make it enter Lock Mode to prevent unexpectedly wake up.
 
+For some keyboards like HHKB BLE / BLE660C / BLE980C, pressing and holding for a few seconds is needed to wake up the keyboard.
+
 
 ## Manually Toggle
 
