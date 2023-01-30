@@ -5,7 +5,6 @@
         <p><b>本固件适用于使用U2U的YDKB优联键盘，包括YD40w v1、YD40w v2、YDP40w、SQ42、YDPadw和YDPadw4x4。</b></p>
         <p>支持蓝牙（需要使用带蓝牙功能的U2U）。优联的鼠标支持移动，左右中前进后退五个按键，以及上下滚轮。</p>
         <p>可以多个键盘使用一个配置，举例一个用法：YD40w用012层，而YDP40w用345层，这样只需要切换默认层到0或3，就可以用对应键盘的配置。</p>
-        <p>受限存储空间，本固件不支持的功能有：电源、睡眠等按键，启动快捷方式功能，设置默认层，LEDMAP,左右Shift命令按键，内置宏。</p>
     </div> 
 
     <div id="kblayouts-00" value-name="标准17键" value-desc="数字键盘" style="display: block; margin-left: 30px">
@@ -379,9 +378,8 @@
     <li class="key-set spc25" id="code-0xf006" lang="zh_sc" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!(disable or enable WIN key.)">Win<br>Lock</li>
     <li class="key-set" id="code-0xf007" lang="zh_sc" title="发送按键设置到ydkb.io。这是一个测试功能，使用说明见帮助">Send<br>Keymap</li>
     <li class="key-set" id="code-0xf004" lang="zh_sc" title="Enter键，和右Shift一起按时为”">Space2</li>
-    <li class="key-set rowstart" id="code-0xf002" lang="zh_sc" title="按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">Reset</li>
-    <li class="key-set spc25" id="code-0xf001" lang="zh_sc" title="ESC键，和左Shift一起按时为~">~(L)<br>Esc</li>
-    <li kc="0xf301" lang-id="fn_tricky_esc">~<br>Esc</li>
+    <li class="key-set rowstart" kc="0xf002" lang-id="fn_reset_flash">Reset</li>
+    <li class="key-set spc25" kc="0xf301" lang-id="fn_tricky_esc">~<br>Esc</li>
     <li kc="0xf201" lang-id="fn_tricky_esc_l">~(L)<br>Esc</li>
     <li kc="0xf101" lang-id="fn_tricky_esc_r">~(R)<br>Esc</li>
     <li class="key-set" id="code-0xf100" lang="zh_sc" title="Enter键，和右Shift一起按时为”">“(R)<br>Enter</li>
@@ -390,8 +388,11 @@
     <li class="key-set" id="code-0xf400" lang="zh_sc" title="L键，但是和右Shift一起按时为:">:(R)<br>L</li>
     <li class="key-set" id="code-0xf500" lang="zh_sc" title="Backspace键，但是和右Shift一起按时为|">|(R)<br>BS</li>
 </div>
+<div id="kb_ledmap" style="display: none">
+    <li id="kb_ledmap-0" value="17" title="LED">LED</li>
+</div>
 <div id="kb-preset_keymap"  style="display: none">
-    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TW25bMQxENzQf4kMktRYj+99Gh7xGHANJ26BAkQ9bgGzJ5Eg8HN1uN1n8QCKkZs6ZFxwbgUThgEsRiEIM4gj18DfcJNDhzDvQBRWoQg3q0A0NaEILemALJswwhRnMYRsWsIQV7CAkTiBM+W9oUsz5Q9wdvuEBT2Z7wQ/2whZsxTa4ZCkDTy8DO7ELm3qLm1SiJPOCV2YxPCARhTjIhRSkIg3pyI1krYks5GFGLZSA0i5KxXLURgWKPLg8OAtHcBTHcBxnM4kVnMQhsCbWyEiGBckikpVNhfOeOWbOmWvmRpjWWQ1KGnbTJm6RTR2Ctv5uTca2Wmu1EnXcdjBaq+9stqhJ4BS6UfE+unoqgE3gMrIaa/eguTblPrfZXj3pnlmHe7eK9IwS0zmeNJgb7QM0PmL2Ne3R6+BhXsr4tNkh3zyEi02b7Wb9NOYivx1t1HFgW/Uyb3ZtRf0sWZ/l/Fn1Q8T9oo/h942B+h4V49K24NjHB0U1nhF4wupDmtajQWm06Iv7GT/YWFBmI9qXn1+3XZ6Xt74oqt9HfLtw1WKMsuN0zV8C+n6Ey24ng4/6mWLbX69vu1b2eCr2wcBEnXPE9Zwe2f54Qir3B9bRo0O/9866Pza5P71/LednRHSV7w1/ovoz7/u/I15EXkReRL5N5O0Xsx1n6BoKAAA=" title="YD40w_v2 参考">YD40w_v2 参考</li>
-    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+1TS5LsMAi7kBYGbGyfJTX3v8aTSPozXT2bmd2rLqeIY4MQghzHYR6twTJtlZ1lGzrScifmxsQybPDQDOb1dFh84bBE+nTerLpscIM7Q7zDB5yxcCGjR7SFMEaF0ycRHQOR3E8ErzY6gxg4+GI+X8vRB3piM6ovrIbRBD0cI8QibWtPkFA+0iH1GBnI8OCZD4YmHUmGJOBFcTZMWhINzI45MFnqxFwsmAFMxJqZ3jZWxxpYeeVapLGxGzZFcWxm8s4EW4kk38LmI70kGGsnDWuk0qZEoR1ls+wsu8pu2VCUVDLpbIyV2DaIQ/DQW5i7lHJh+SlhtyGvU7US26k2gQ4iXqu3W5NvLb+WsNGX0qK79hqEyartvlgkOycGWuVax/PJpw7itj19ap5MnS4KZzybn6mu6EO9vPCiTEPEC+r3pKz/zbVGRT7DNFDvHF5xfvaQcI/voZEVpMfjcMYDS83GWMgz7zxF0ZCxe9m3iud4P8lmvYR+Ir81kdetl6NH9Y7x41k8DrkmhRgnuXnHvSaZ/8lbge7Z+02ekd853AXsr239m4C/RfmfPD6KfBT5KPJR5M+KfP0DxTENs7kJAAA=" title="YD40w_v1 参考">YD40w_v1 参考</li>
+    <li id="kb-preset_keymap-0" value-keymap="H4sIAAAAAAAAA+2TW25bMQxENzQf4kMktRYj+99Gh7y3dQKkj6BAkI9YgGzJ5Eg8HD0eD1n8QCKkZs6ZFxwbgUThgEsRiEIM4gj18Bc8JNDhzDvQBRWoQg3q0A0NaEILemALJswwhRnMYRsWsIQV7CAkTiBM+W9oUsz5Q9wdvuEBT2Z7wQ/2whZsxTa4ZCkDTy8DO7ELm3qLm1SiJPOCV2YxPCARhTjIhRSkIg3pyI1krYks5GFGLZSA0i5KxXLURgWKPLg8OAtHcBTHcBxnM4kVnMQhsCbWyEiGBckikpVNhfOeOWbOmWvmRpjWWQ1KGnbTJm6RTR2Ctv5uTca2Wmu1EnXcdjBaq+9stqhJ4BR6UPEeXT0VwCZwGVmNtXvQXJtyn9tsr550z6zDvVtFekaJ6RxPGsyN9gkarzH7mvbodfAwL2V82uyQbx7CxabNdrN+M+Yifxxt1HFgW/Uyb3ZtRf0sWe/l/F31VcR90efwe2Ogtu2vsBibtgfHPz4sqvmMwhuuPqjpPTqUTou+uZ8xhI0HZTaijfn+fdvmeZnrN1X1A4kPV65ajFG2nLb5R0Ifj3DZbWXwVd8Yfx5P/+v1bdfKnm/FXjmYqHOOuN7TM9ufb0jlfmEdPTo0fO+s+7XJ/fb+t5yvEdFV/mr4G6pf876fHfFN5JvIN5EPE3n5AddC8LcbCgAA" title="YD40w_v2 参考">YD40w_v2 参考</li>
+    <li id="kb-preset_keymap-1" value-keymap="H4sIAAAAAAAAA+1TW47kMAi8UH0YsLF9lmjuf42tIunHtHo00u7fquWIODYURUGO4zCP1mCZtsrOsg0dabkTc2NiGTZ4aAbzejosvnBYIn06b1ZdNrjBnSHe4QPOWLiQ0SPaQhijwumTiI6BSO4nglcbnUEMHHwxn6/l6AM9sRnVF1bDaIIejhFikba1J0goH+mQeowMZHjwzAdDk44kQxLwojgbJi2JBmbHHJgsdWIuFswAJmLNTG8bq2MNrLxyLdLY2A2bojg2M3lngq1Ekm9h85FeEoy1k4Y1UmlTotCOsll2ll1lt2woSiqZdDbGSmwbxCF46C3MXUq5sPyUsNuQ16laie1Um0AHEa/V263Jt5ZfS9joS2nRXXsNwmTVdl8skp0TA61yreP55FMHcduePjVPpk4XhTOezc9UV/ShXl54UaYh4gX1e1LW/+ZaoyKfYRqodw6vOD97SDh7lDY0s8L0eHjNeICp2xgLeSaeZ6imjO3LvlU95/tJN+ul9BP7rZG8br0cPap5jB/P6nHKNSrEOMnNO+41yvxR3ip0z95v+oz8zuGuYH/t618p+IvP7yj/k8dHkY8iH0U+ivyzIl9/AMfMKci6CQAA" title="YD40w_v1 参考">YD40w_v1 参考</li>
 </div>
 <div id="kb-changelog-url" href="http://help.ydkb.io/doku.php?id=changelog:ydkb_u2u" style="display: none;"></div>
