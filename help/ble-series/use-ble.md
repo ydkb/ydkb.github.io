@@ -13,7 +13,7 @@
 
 各系统单独配对说明，见如下链接
 - [Windows 7 配对](ble-series/pairing-win7.md)
-- [Windows 10/11 配对](pairing-windows.md)
+- [Windows 10/11 配对](ble-series/pairing-windows.md)
 - [macOS 配对](ble-series/pairing-macos.md)
 - [Linux 配对](ble-series/pairing-linux.md)
 - [iOS / iPadOS 配对](ble-series/pairing-ios.md)
