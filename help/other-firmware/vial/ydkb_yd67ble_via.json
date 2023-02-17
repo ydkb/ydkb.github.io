@@ -2,10 +2,7 @@
   "name": "YDKB_KBDFans YD67BLE",
   "vendorId": "0x9D5B",
   "productId": "0x2167",
-  "firmwareVersion": 0,
   "lighting": "none",
-  "keycodes": ["via/keycodes"],
-  "menus": ["via/keymap", "via/macros", "via/save_load"],
   "matrix": {"rows": 5, "cols": 16},
   "customKeycodes": [
     {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},

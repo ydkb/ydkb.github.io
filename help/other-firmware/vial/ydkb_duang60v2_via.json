@@ -2,10 +2,7 @@
   "name": "YDKB Duang60 v2",
   "vendorId": "0x9D5B",
   "productId": "0x2162",
-  "firmwareVersion": 0,
   "lighting": "none",
-  "keycodes": ["via/keycodes"],
-  "menus": ["via/keymap", "via/layouts", "via/macros", "via/save_load"],
   "matrix": {"rows": 9, "cols": 8},
   "customKeycodes": [
     {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},

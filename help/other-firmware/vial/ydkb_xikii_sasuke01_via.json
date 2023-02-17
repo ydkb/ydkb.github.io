@@ -2,10 +2,7 @@
   "name": "YDKB_Xikii Sasuke No.01",
   "vendorId": "0x9D5B",
   "productId": "0x2110",
-  "firmwareVersion": 0,
   "lighting": "none",
-  "keycodes": ["via/keycodes"],
-  "menus": ["via/keymap","via/macros", "via/save_load"],
   "matrix": {"rows": 5, "cols": 8},
   "layouts": {
     "keymap": [

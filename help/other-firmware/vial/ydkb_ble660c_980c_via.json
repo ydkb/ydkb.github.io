@@ -2,10 +2,7 @@
   "name": "YDKB BLE660C/BLE980C",
   "vendorId": "0x9D5B",
   "productId": "0x19C1",
-  "firmwareVersion": 0,
   "lighting": "none",
-  "keycodes": ["via/keycodes"],
-  "menus": ["via/keymap", "via/macros", "via/save_load"],
   "matrix": {"rows": 7, "cols": 16},
   "customKeycodes": [
     {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},

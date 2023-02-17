@@ -2,10 +2,7 @@
   "name": "YDKB_KBDFans Kunlun",
   "vendorId": "0x9D5B",
   "productId": "0x2263",
-  "firmwareVersion": 0,
   "lighting": "none",
-  "keycodes": ["via/keycodes"],
-  "menus": ["via/keymap", "via/layouts", "via/macros", "via/save_load"],
   "matrix": {"rows": 5, "cols": 16},
   "customKeycodes": [
     {"name": "RGB Toogle", "title": "RGB Toogle", "shortName": "R.TG"},

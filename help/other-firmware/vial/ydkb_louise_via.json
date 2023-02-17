@@ -2,10 +2,7 @@
   "name": "YDKB Louise",
   "vendorId": "0x9D5B",
   "productId": "0x2141",
-  "firmwareVersion": 0,
   "lighting": "qmk_backlight",
-  "keycodes": ["via/keycodes"],
-  "menus": ["via/keymap", "via/layouts", "via/macros", "via/save_load"],
   "matrix": {"rows": 4, "cols": 16},
   "customKeycodes": [
     {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},
