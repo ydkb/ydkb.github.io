@@ -36,6 +36,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | ---- | ---- | ---- | ---- |
 | BLE660C/BLE980C | [2023-01-23_DN1N](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore') | LAYOUTS里选择660c或980c |
 | HHKB BLE | [2023-01-23_DN1N](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') |  [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | LAYOUTS里选择US/JP布局 |
+| Chicory | [2023-03-19_DN3J](other-firmware/vial/ydkb_chicory_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_chicory_via.json ':ignore') | 测试版固件，轴灯背光只支持开或关|
 | Duang60 v1 | [2023-01-23_DN1N](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
 | Duang60 v2 | [2023-02-23_DN2N](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore') | |
 | Just68 v2 | [2023-01-23_DN1N](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore') | |
@@ -67,11 +68,17 @@ VIA的本地软件下载见: https://github.com/the-via/releases/releases
 
 它的使用可以参看官方网站： https://www.caniusevia.com/
 
-使用高于VIA 2.0.4版本，或者是在线版[https://usevia.app/](https://usevia.app/)，请先在 `SETTINGS` 里打开 `Show Design Tab`，然后在 `DESIGN` 里，根据页面上的显示，选择关闭 `Use V3 definitions(via/next)`或者是开启`Use V2 definitios(deprecated)`，以确保它支持V2的json文件。这时再用 `Load` 载入json文件，或者把json文件直接拖到窗口的上传区域里，才能正常识别并载入。
+使用高于VIA 2.0.4版本，或者是在线版[https://usevia.app/](https://usevia.app/)，请先在 `SETTINGS` 里打开 `Show Design Tab`，并且设置 `Render Mode` 为 `3D`
+![|700](assets/via-ydkb-21.jpg)
 
-![|700](assets/via-ydkb-v2.jpg)
-<br>
-![|700](assets/via-ydkb-v2e.png)
+然后在 `DESIGN` 里，根据页面上的显示，选择`Use V2 definitios(deprecated)`，以确保它支持V2的json文件。这时再用 `Load` 载入json文件才能正常识别并载入。
+
+![|700](assets/via-ydkb-22.jpg)
+
+最后是连接键盘，Render Mode为3D的时候，才有显示下图这个图标，点击后才会连上键盘。
+
+![|700](assets/via-ydkb-23.jpg)
+
 
 ## 额外说明
 
