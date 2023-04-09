@@ -21,6 +21,8 @@ Please update the firmware first, it is better after 2023. Use <kbd>Reset</kbd> 
 
 Then confirm that the current power output is not 12-0 or 120-0, that is, confirm that the Bluetooth function is not turned off.
 
+If this keyboard is paired on the computer, delete it. Delete it to be able to search for this keyboard later, and then observe the Bluetooth name.
+
 Then use the key <kbd>LAlt+LWin+Reset</kbd> or <kbd>LOpt+LCmd+Reset</kbd> to reset Bluetooth. The keyboard will restart.
 
 1. The bluetooth name is first changed back to Adafruit Bluefruit LE. If it does not restart automatically at this time, manually restart the keyboard with <kbd>LShift+RShift+B</kbd>.

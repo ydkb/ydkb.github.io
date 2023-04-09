@@ -21,6 +21,8 @@
 
 再确认一下当前电量输出不是12-0或120-0，即确认蓝牙功能没有关闭。
 
+电脑上有配对着这个键盘，就将其删除。删除是为了之后能够搜索得到此键盘，然后观察蓝牙名称。
+
 然后使用按键<kbd>LAlt+LWin+Reset</kbd> 或者 <kbd>LOpt+LCmd+Reset</kbd> ，执行重置蓝牙。 这时键盘会重启。
 
 1. 蓝牙名先变回 Adafruit Bluefruit LE，若这时没自动重启，用 <kbd>LShift+RShift+B</kbd>手动重启键盘。
