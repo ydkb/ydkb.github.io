@@ -13,13 +13,14 @@ Indeed, you don’t generally need to pay attention to the remaining battery. Ju
 > [!ydda]  It is recommended to use the PC's USB port or 5v charger to charge.
 > - Using a high-power charger will not increase the charging speed as the default charging current is limited to about 450mA. 
 > - Improper charging(like more than 6v) may broke the charging IC.
+> - Please use a charger not higher than 5V for charging. Some U ports on HUBs with power supplies or other chargers may be higher than 5V.
 
 During the charging process, especially in the full-speed charging state (that is, the charging IC is not fully charged or trickle charging state), the charging IC will generate more heat. This is a normal phenomenon.
 
 > [!yddh] Charging knowledge:
 > - The charging IC has simple intelligent management, when fully charged, it will automatically stop charging.
 > - After stopping charging, if you continue to plug in the cable, the battery will not be used.
-> - With the cable in, it will recharge only when the battery voltage is low to a certain value.
+> - If you use it plugged in for a long time, it is recommended to unplug the battery or at least turn the battery switch to off.
 
 Some keyboards have an independent charging indicator, which is not controlled by the keyboard software. Its indication function is as follows:
 
