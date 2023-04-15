@@ -56,6 +56,8 @@ The charging port and data port are both the small USB port on HHKB, not two lar
 
 > [!ydda] It is recommended to use the PC's USB port or 5v charger to charge.
 > - improper charging(like more than 6v) may broke the charging IC. Using a high-power charger will not increase the charging speed as the default charging current is limited to about 450mA. 
+> - Please use a charger not higher than 5V for charging. Some U ports on HUBs with power supplies or other chargers may be higher than 5V.
+> - If you use it plugged in for a long time, it is recommended to unplug the battery or at least turn the battery switch to off.
 
 The charging indicator is a red led below the left USB HUB port(if hardware version is more than v2.5, it is a blue led). You can see it from the back. It has three states:
 
