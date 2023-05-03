@@ -18,7 +18,9 @@ You can use the shortcut key <kbd>LShift+RShift+P</kbd> to manually switch the g
 
 Every time the keyboard restarts or resumes from the deep power saving mode, the general power saving mode is turned on by default.
 
-In order to prevent the battery from draining, the deep power saving will not be turned off here. That is, after 90 seconds of no connection or 2.5 hours of idleness, it will still enter the deep power saving mode.
+There is a change that the firmware after 2023.5.3 only restores from the deep power saving (including Lock Mode), and still maintains the current setting state.
+
+In order to prevent the battery from draining, the deep power saving will not be turned off here. That is, after 90 seconds of no connection, it will still enter the deep power saving mode.
 
 
 ## Lock Mode
