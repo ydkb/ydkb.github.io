@@ -9,8 +9,6 @@ YDKB BLE系列的所有键盘，都支持有线与蓝牙同时使用。当有线
 ## 蓝牙设备之间的切换
 <font color="red" size="+1">！！务必熟知下面说明，再使用此功能！！</font>
 
-BLE系列除Fmini(alf x3)外均已支持此功能。
-
 设置一个如下的按键，按一下它就切换蓝牙所连接的设备。
 
 ![|180](assets/device_switching_01.jpg)

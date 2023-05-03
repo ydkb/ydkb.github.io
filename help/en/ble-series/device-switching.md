@@ -14,9 +14,6 @@ USB and Bluetooth can be connected to different computers. The keyboard is alway
 
 <font color="red" size="+1">!! Be sure to familiarize yourself with the instructions below before using this feature !!</font>
 
-
-Except for Fmini (alf x3), the BLE series supports this function.
-
 Set the function below to a key. And press it to switch between the connected host devices.
 
 ![|180](assets/device_switching_01.jpg)
