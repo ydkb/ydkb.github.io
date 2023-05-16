@@ -18,3 +18,5 @@ There is also a ``Fn/L1``, which is convenient for some new users. In fact this 
 ## Note
 
 Most of the normal keys are supported in USB mode, but BLE series do not support JIS keys and F13 to F24 keys in wireless mode.
+
+Added in May 2023, after updating the Bluetooth firmware to 0.8.2, it can support F13 to F24 and JIS buttons.

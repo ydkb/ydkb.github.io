@@ -14,6 +14,16 @@ The latest one is 0.8.1. From the actual feedback of many users, 0.8.1 can impro
 <li>Newly released after 2021, the default firmware is 0.8.1, so you don’t need to upgrade it yourself.</li></ul>
 </div></html>
 
+## Supplement May 2023
+
+Here is a 0.8.2 firmware modified by ydkb. The difference between it and Adafruit's 0.8.1 is that the Bluetooth mode supports keys with a key value after 0x65, such as JIS keys, and F13 to F24.
+
+The update method is the same as the update 0.8.1 written below. The firmware file for 0.8.2 is as follows:
+
+Use Bluefruit LE Connect, download: https://ydkb.io/help/ble-series/blefriend32_ydkb_0.8.2.zip
+
+Use nRF Connect, download: https://ydkb.io/help/ble-series/blefriend32_ydkb_0.8.2_nrftool.zip
+
 ## View and update Bluetooth firmware
 
 The software required to update the Bluetooth firmware is Bluefruit LE Connect, which can be downloaded directly from the Apple Store for Mac/iOS/iPadOS.
@@ -23,7 +33,6 @@ The software required to update the Bluetooth firmware is Bluefruit LE Connect, 
 <ul><li>The Android version of the software must be refreshed before the file can be manually updated. And this update server is like potatoes.</li>
 <li>It is recommended to use Mac or iOS to update, temporarily borrow someone else's, it is only used to connect the keyboard to update the firmware.</li></ul>
 </div></html>
-
 
 ### 1 Download and install Bluefruit LE Connect
 For Mac / iOS / iPadOS, search for "Bluefruit LE Connect" directly in the app store, then download and install it. Currently, the interfaces of the three versions downloaded and installed in the store are the same, so the following is only for iOS.

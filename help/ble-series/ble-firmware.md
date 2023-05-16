@@ -11,6 +11,17 @@ YDKB的BLE系列蓝牙模块使用的是Adafruit Bluefruit LE的固件。
 > - 如果当前蓝牙固件是0.7.7的，建议按下文方法更至0.8.1。
 > - 2021年之后新出的，固件默认都是0.8.1，不用自己再升级。
 
+## 2023年5月补充
+
+这里提供一个由ydkb魔改的0.8.2固件，它与Adafruit的0.8.1的区别是蓝牙模式支持键值为0x65后的按键，比如JIS配列的按键，以及F13到F24。 
+
+更新的方法与下文写的更新0.8.1是一样的。0.8.2的固件文件如下:
+
+使用 Bluefruit LE Connect ，下载: https://ydkb.io/help/ble-series/blefriend32_ydkb_0.8.2.zip
+
+使用 nRF Connect，下载: https://ydkb.io/help/ble-series/blefriend32_ydkb_0.8.2_nrftool.zip
+
+
 ## 查看和更新蓝牙固件
 
 更新蓝牙固件需要使用的软件是Bluefruit LE Connect，Mac/iOS/iPadOS可以直接在苹果商店里搜索下载到。
