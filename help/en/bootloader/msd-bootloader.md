@@ -32,7 +32,7 @@ The methods for different keyboards are basically the same. Generally, three ste
 > [!ydda] IMPORTANT:
 > - The method of operating directly from the Finder may not be suitable for macOS 13 Ventura(error code 100093), temporarily switch to the following command line method.
 > - The reason may be that macOS 13 currently has some compatibility issues with various MassStorage Bootloaders. https://github.com/ARMmbed/DAPLink/issues/982
-> - 2022.12.16 After updating macOS 13.1, although the operation in Finder no longer reports an error, but the file is not completely written, please still use the command line to refresh the firmware.
+> - After updating macOS 13.3.1, you can use Finder to operate files to flash the firmware.
 
 ##### macOS 13 Ventura can use the following methods(Also works on macOS 12)
 
@@ -63,10 +63,11 @@ After waiting for the command to complete, the reflash is successful. The newer 
 
 ![|600](assets/msd-bootloader-mac13-01.jpg)
 
-##### macOS 12 Flash firmware using Finder actions
+##### macOS 12 / 13 Flash firmware using Finder actions
 
 > [!ydda] Important:
 > - The following method via Finder is only available for macOS 12. For macOS 13, use the command line 
+> - After updating macOS 13.3.1, you can use Finder to operate files to flash the firmware.
 
 The method of entering the flash mode is the same as above, but the method of copying file to disk is different.
 

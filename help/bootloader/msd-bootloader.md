@@ -24,7 +24,7 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 > [!ydda] 重要：
 > - 从Finder操作的方法可能不适合 macOS 13 Ventura (错误代码100093)，暂时可用命令行方式。
 > - 原因可能是macOS 13目前与各种MassStorage Bootloader有点兼容问题。https://github.com/ARMmbed/DAPLink/issues/982
-> - 2022.12.16更新macOS 13.1后，虽然Finder里操作不再报错，但写入文件不完全，依然请使用命令行方式刷新固件。
+> - 在更新macOS 13.3.1之后，可以使用Finder操作文件的方法刷新固件了。
 
 
 ##### macOS 13 Ventura 可使用如下命令行方式(也适用于macOS 12)
@@ -58,10 +58,11 @@ sudo dd if=/Users/yang/Dowloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
 ![|600](assets/msd-bootloader-mac13-01.jpg)
 
 
-##### macOS 12 使用 Finder 操作刷新固件
+##### macOS 12 / 13 使用 Finder 操作刷新固件
 
 > [!ydda] 重要：
 > - 以下通过Finder操作的方法仅适用于macOS 12。如果是macOS 13，请使用命令行方式。
+> - 在更新macOS 13.3.1之后，可以使用Finder操作文件的方法刷新固件了。
 
 键盘自身进入刷机的U盘模式方法都是相同的，但Mac下复制文件方法不同。Mac务必严格按照下面步骤，不然可能刷新不成功。
 
