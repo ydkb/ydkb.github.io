@@ -23,7 +23,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 
 > [!ydda] 注意
 > - 更新固件可能导致之前的按键配置被重置为默认。建议在更新固件前先保存备份一下按键设置到本地。
-> - 如果是`Vial`，用 <u>File -> Save current layout</u> 保存当前按键设置到本地。更新后可以用 <u>File -> Load saved layout</u> 来导入先前保存的设置。
+> - 如果是`Vial`，用 <u>File -> Save current layout</u> 保存当前按键设置到本地。更新后可以用 <u>File -> Load saved layout</u> 来导入先前保存的设置。注: Web版vial.rocks暂不支持保存和导入。
 > - 如果是`VIA`，用 <u>SAVE+LOAD</u> 里的 <u>Save Current Layout</u>，保存当前按键设置到本地。更新后可以用此处的<u>Load saved layout</u> 再导入。
 
 <br>
@@ -32,7 +32,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 
 下载JSON文件请右键点击对应的JSON链接，选择 另存为。
 
-| 键盘 | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
+| 键盘??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
 | ---- | ---- | ---- | ---- |
 | BLE660C/BLE980C | [2023-05-03_DN53](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore') | LAYOUTS里选择660c或980c |
 | HHKB BLE | [2023-05-03_DN53](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') |  [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | LAYOUTS里选择US/JP布局 |
@@ -40,15 +40,20 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | Duang60 v1 | [2023-01-23_DN1N](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
 | Duang60 v2 | [2023-02-23_DN2N](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore') | |
 | Just68 v2 | [2023-01-23_DN1N](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore') | |
-| Kunlun | [2023-02-22_DN2M](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore') | |
 | Louise | [2023-01-23_DN1N](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore') | |
 | Minira v2 | [2023-01-23_DN1N](other-firmware/vial/ydkb_minira_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_minira_v2_via.json ':ignore') | |
-| Mountain | [2023-02-22_DN2M](other-firmware/vial/ydkb_mountain_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore') | |
 | Pearly v1 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v1_via.json ':ignore') | |
 | Pearly v2 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v2_via.json ':ignore') | |
 | Xikii Sasuke No.01 | [2022-12-22_DMCM](other-firmware/vial/ydkb_xikii_sasuke01_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_sasuke01_via.json ':ignore') | |
-| YD67BLE (KBD67 lite) | [2023-06-11_DN6B](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore') | |
 | YDPM40BLE | [2022-12-24_DMCO](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore') | |
+
+| KBDFans 键盘??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
+| ---- | ---- | ---- | ---- |
+| Kunlun | [2023-02-22_DN2M](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore') | |
+| Mountain | [2023-02-22_DN2M](other-firmware/vial/ydkb_mountain_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore') | |
+| Taco(75%) | [2023-06-11_DN6B](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore') | |
+| YD67BLE (KBD67 lite) | [2023-06-11_DN6B](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore') | |
+
 
 40%类的键盘，更推荐尝试ydkb.io的固件。我用40较多，ydkb的固件针对40的使用有更多的小优化。
 
@@ -68,14 +73,15 @@ VIA的本地软件下载见: https://github.com/the-via/releases/releases
 
 它的使用可以参看官方网站： https://www.caniusevia.com/
 
-使用高于VIA 2.0.4版本，或者是在线版[https://usevia.app/](https://usevia.app/)，请先在 `SETTINGS` 里打开 `Show Design Tab`，并且设置 `Render Mode` 为 `3D`
+使用高于VIA 2.0.4版本，或者是在线版[https://usevia.app/](https://usevia.app/)，请先在 `SETTINGS` 里打开 `Show Design Tab`，后面还有可能需要将 `Render Mode` 设为 `3D`。
+
 ![|700](assets/via-ydkb-21.jpg)
 
 然后在 `DESIGN` 里，根据页面上的显示，选择`Use V2 definitios(deprecated)`，以确保它支持V2的json文件。这时再用 `Load` 载入json文件才能正常识别并载入。
 
 ![|700](assets/via-ydkb-22.jpg)
 
-最后是连接键盘，Render Mode为3D的时候，才有显示下图这个图标，点击后才会连上键盘。
+最后是连接键盘，如果 `Render Mode` 为 `2D` 时显示有问题，就切换到 `3D`。点击下图这个图标再选择键盘连接。
 
 ![|700](assets/via-ydkb-23.jpg)
 
@@ -100,7 +106,7 @@ VIA的本地软件下载见: https://github.com/the-via/releases/releases
 如果在使用蓝牙过程中遇到连接等问题，依然可以根据 [BLE系列排错指南](ble-series/troubleshooting.md) 来解决。
 
 ### 2 RGB控制按键
-RGB的控制与qmk有所区别，本页的固件，RGB的控制说明参考 [rgblight](features/rgblight.md)。  
+RGB的控制与qmk有所区别，本页的部分固件，RGB的控制说明参考 [rgblight](features/rgblight.md)。  
 
 在 Vial / VIA 中设置时，使用的是 User / CUSTOM 中的几个按键来控制。
 
@@ -108,6 +114,8 @@ RGB的控制与qmk有所区别，本页的固件，RGB的控制说明参考 [rgb
 
 ![|700](assets/vial-ydkb-rgb.jpg)
 ![|700](assets/via-ydkb-rgb.jpg)
+
+如果支持 RGB 但是在 User / CUSTOM 中没有以上按键的。那么可使用 VIA / Vial 的对应按键控制。
 
 ### 3 单色轴灯背光
 使用 VIA / Vial 的背光控制按键即可。但是，不少键盘因为编译的固件尺寸偏大，未支持背光的呼吸模式，仅支持亮度调整。
