@@ -47,7 +47,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | Pearly v1 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v1_via.json ':ignore') | |
 | Pearly v2 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v2_via.json ':ignore') | |
 | Xikii Sasuke No.01 | [2022-12-22_DMCM](other-firmware/vial/ydkb_xikii_sasuke01_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_sasuke01_via.json ':ignore') | |
-| YD67BLE (KBD67 lite) | [2023-01-23_DN1N](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore') | |
+| YD67BLE (KBD67 lite) | [2023-06-11_DN6B](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore') | |
 | YDPM40BLE | [2022-12-24_DMCO](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore') | |
 
 40%类的键盘，更推荐尝试ydkb.io的固件。我用40较多，ydkb的固件针对40的使用有更多的小优化。

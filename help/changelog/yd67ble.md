@@ -5,6 +5,9 @@
 
 关于YD67BLE的更多说明，可参看：[yd67ble](keyboards/yd67ble.md)
 
+##### 2023-06-11 (DN6B)
+- 「^」降低Lock Mode下的耗电。先前的固件Lock Mode比起非Lock Mode的二级节能时耗电高出一倍多。
+
 ##### 2023-05-03 (DN53)
 - 「^」从二级节能(包括Lock Mode)恢复时，依然保持当前的一级节能开关状态。
 
