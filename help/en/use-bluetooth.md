@@ -17,9 +17,9 @@ Some desktop computers have or can install wifi Bluetooth combo modules. Even if
 
 The Bluetooth receiver or antenna, for a keyboard with a metal shell, should be located on the side where the signal is not blocked as much as possible. For example, there are many keyboards with all-metal shells that rely on the positioning board to output Bluetooth signals, so the Bluetooth receiver or antenna is above the keyboard plane, the effect will be slightly better.
 
-??> If with USB Bluetooth receiver, several problems should be avoided.
-  - Try not to plug it into the USB3.0 interface, especially the rear one. If possible, extend it with a 2.0 extension cord.
-  - Next to the Bluetooth receiver, there should not be other USB wireless network cards or USB3.0 devices to reduce signal interference.
+> [!yddh] If with USB Bluetooth receiver, several problems should be avoided.
+> - Although the USB Bluetooth receiver does not use USB3.0, some USB3.0 physical interfaces are well shielded, and plugging them in will affect the wireless signal. At this time, you can change the interface, or use a 2.0 extension cable to reinsert. This article is also applicable to some small 2.4G receivers.
+> - Next to the Bluetooth receiver, there should not be other USB wireless network cards or USB3.0 devices to reduce signal interference.
 
 Finally, there is a common suggestion that between the Bluetooth antenna (or receiver) and the Bluetooth keyboard, try not to have strong interference devices, such as other wireless devices or large data transmission lines or high current lines.
 

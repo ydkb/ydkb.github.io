@@ -25,25 +25,21 @@ For the BLE series, if the flashing fails or the firmware is flashed incorrectly
 ### 2 View the name of the USB device for the wired keyboard
 
 The way to view this name may differ on different systems.
-<html>
-<two_col>
-<div style="float:left;width:48%;">
-<col_h5>win10</col_h5>
-In the <u>Start Menu - Settings - Devices</u> (not the Device Manager), look at its USB keyboard's name (not Bluetooth device's name).
+
+```ad-yddcol0
+##### Windows
+
+In <u>Start Menu - Settings - Devices</u> (not Device Manager), check its USB keyboard name (not the Bluetooth connection name).
 
 ![win10](assets/firmware_01.jpg)
-</div>
-<div style="float:left;width:3%;">&nbsp;</div>
-<div style="float:left;width:48%;">
-<col_h5>Mac</col_h5>
+```
 
-In <u> About the Machine - System Report - USB</u>, as shown below
+```ad-yddcol1
+##### Mac
+In <u>About this machine - System reports - USB</u>, as shown below
+
 ![mac](assets/firmware_mac_02.jpg)
-
-</div>
-</two_col>
-<div style="clear:both;"></div>
-</html>
+```
 
 ## Changelog 
 
