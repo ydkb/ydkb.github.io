@@ -49,9 +49,12 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 
 | KBDFans 键盘??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
 | ---- | ---- | ---- | ---- |
+| Boop65 | [2023-08-06_DN86](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore') | |
+| KBD8x Mk3 | [2023-07-20_DN7K](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_via.json ':ignore') | |
 | Kunlun | [2023-07-15_DN7F](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore') | |
 | Mountain | [2023-07-15_DN7F](other-firmware/vial/ydkb_mountain_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore') | |
 | Taco(75%) | [2023-07-20_DN7K](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore') | |
+| Taco Pad | [2023-08-06_DN86](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore') | |
 | YD67BLE (KBD67 lite) | [2023-07-15_DN7F](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore') | |
 
 
