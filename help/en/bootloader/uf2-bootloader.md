@@ -1,6 +1,6 @@
 # UF2 Bootloader (like disk drive)
 
-For more details：https://github.com/mmoskal/uf2-stm32f103
+For more details：https://github.com/yangdigi/uf2-stm32f103
 
 Here are the main advantages of UF2 Bootloader:
 
@@ -8,10 +8,14 @@ Here are the main advantages of UF2 Bootloader:
   2. The firmware can be Identified by the keyboard. Only the firmware for the current keyboard will be reflashed.
   3. You can read your keymap from the current firmware from the USB disk of the bootloader.
 
-
-| The keyboards with UF2 bootloader |||
-| ---- |||
-| Simpo40 | Simpo68| STM60||||
+> [!yddl] The keyboards with UF2 bootloader 
+> - HW75 
+> - KBDFans Taco
+> - KBDFans TacoPad
+> - KBDFans KBD8x MkIII 
+> - Simpo40
+> - Simpo68
+> - STM60
 
 Note: STM60 sold before 2019.3.8 used STM32 HID Bootloader.
 

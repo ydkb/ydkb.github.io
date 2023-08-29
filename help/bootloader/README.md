@@ -7,5 +7,5 @@
 - [AtmelDFU](bootloader/atmeldfu)
 - [BootHID](bootloader/boothid)
 - [STM32 HID Bootloader](bootloader/stm32-hid-bootloader)
-- [Lufa Mass Storage (模拟U盘)](bootloader/msd-bootloader)
-- [UF2 bootloader (模拟U盘)](bootloader/uf2-bootloader)
+- [Lufa Mass Storage (模拟磁盘)](bootloader/msd-bootloader)
+- [UF2 bootloader (模拟磁盘)](bootloader/uf2-bootloader)
