@@ -1,10 +1,5 @@
 <div id="mykbd">
-    <div id="kbd-info" style="display: none;">
-        <p><b>刷机方式(Windows)：</b></p>
-        <p>按住左上角<kbd>Esc</kbd>键不放，插入数据线，电脑会识别出一个U盘名为Xikii_8x，且键盘LED2指示灯开始闪烁，这时可放开按键了。</p>
-        <p>将下载的固件 “XIKII_8X.BIN" 复制或拖入U盘里，直接覆盖原文件，开始刷新。刷新完成后会自动退出。</p>
-        <p>不需要安装任何的驱动和刷机软件。 也可以直接上传刷机模式下的 XIKII_8X.BIN 到网站上，读取键盘的当前设置。</p>
-    </div>   
+    <div id="kbd-info" value-type="lufa_msd_ble" style="display: none;" ></div>
   <div style="zoom: 0.92; -moz-transform:scale(0.92); margin: 4px 0 0 54px;">  
     <div id="mycase" class="mycase" style="--left:calc(54px*16 - 6px); --top: -28px; --width: 15px;">
         <div class="kbdbg-mask bevel" style="margin: 0 -40px -54px -40px; height: 44px; width: 1079px; top: 387px; border-radius: 0 0 18px 18px;"></div>
@@ -143,7 +138,7 @@
     <div id="ble51_control_keys_v3"></div>
     <div id="rgb_control_keys"></div>
 </div>
-<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000" value-format="bin"></div>
+<div id="kbd-firmware" style="clear: both; display: none" value-keymapaddr="0x6000" value-format="bin" value-filename="XIKII_8X" value-diskname="Xikii_8x"></div>
 <div id="kb_ledmap"  style="display: none">
     <li id="kb_ledmap-0" value="16" class="conn_mode" title="NUML LOCK">NUML LOCK</li>
     <li id="kb_ledmap-2" value="17" class="conn_mode" title="CAPS LOCK">CAPS LOCK</li>
