@@ -1,7 +1,7 @@
 {
   "name": "YDKB_Xikii i6x",
   "vendorId": "0x9D5B",
-  "productId": "0x21A0",
+  "productId": "0x2166",
   "lighting": "none",
   "matrix": {"rows": 10, "cols": 8},
   "customKeycodes": [
