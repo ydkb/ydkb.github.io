@@ -72,16 +72,17 @@ https://www.intel.cn/content/www/cn/zh/support/articles/000005489/wireless.html
 
 USB的蓝牙接收器只要芯片相同，天线设计不要太烂，一般区别不大。
 
-### 3 Realtek RTL8761B 蓝牙5.0芯片的USB接收器
+### 3 RTL8761B 蓝牙5.0芯片的USB接收器
 
 我使用的是绿联的一款，型号是CM390。在Win10和Win11上均能自动安装好驱动。这一款早期使用时有些小bug，但在此时(2022年12月09日)，使用一切正常，没有遇到问题。
 
-> [!ydda] 特别注意
-> - 暂时不要购买5.3的蓝牙接收器，使用矩芯的ATS2851芯片，比如绿联CM591。
-> - 可以参看链接: https://www.reddit.com/r/pchelp/comments/xdlmg4/ugreen_bluetooth_53_cm591_chip_ats2851/ 
-> - 目前此芯片虽然蓝牙版本新，但是驱动不完善。可能会有断开蓝牙后，无法自动连接的问题。
+### 4 ATS2851的蓝牙5.0芯片USB接收器
 
-### 4 补充: Windows下只能使用一个蓝牙硬件
+我使用的毕亚兹的一款型号为 Biaze D 的接收器，产品标注芯片为ATS2851。在此时(2023年09月06日)，我在Windows 11 22H2下，使用一切正常。
+
+其他我所知的比如绿联CM591也是此款芯片，但之前有用户反馈过出现断开后无法连接的情况。可以参看链接 : https://www.reddit.com/r/pchelp/comments/xdlmg4/ugreen_bluetooth_53_cm591_chip_ats2851/ 。万一你使用同款蓝牙5.3芯片遇到问题且无法卸载重装驱动解决，可先更换一个别的蓝牙接收器。
+
+### 5 补充: Windows下只能使用一个蓝牙硬件
 
 补充说明，在Windows下是不支持同时使用多个蓝牙硬件的，Windows自带的蓝牙管理只能使用一个。
 
