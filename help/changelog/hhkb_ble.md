@@ -4,6 +4,9 @@
 > [!ydda] 注意
 > - 不再区分HHKB BLE和HHKB BLE S，合并到一起，仅提供HHKB BLE一个选项，这已经是提高响应速度后的固件了。
 
+##### 2023-09-27 (DN9R)
+- 「+」增加支持 [按键(k) | 修饰键](app://obsidian.md/edit-keymap/mods-tap-key.md)，其作用就是按键优先，工作在非Interrupt模式下，具体见稍后文档补充说明。
+ 
 ##### 2023-05-03 (DN53)
 - 「^」从二级节能(包括Lock Mode)恢复时，依然保持当前的一级节能开关状态。
 
