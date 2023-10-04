@@ -6,7 +6,7 @@
 		<p>装好驱动后，把hex拖到YDKB Tool的图标上，然后按键盘的刷机键(PCB正面NumLock键的上方的两个按键之间)，开始刷机。</p>
         <p>蓝牙模块：连接蓝牙需要牺牲一个LED灯。 并且需要将LED1设置为Bluetooth。具体使用方法参考网页说明。</p>
     </div>   
-  <div style="zoom: 0.86; -moz-transform:scale(0.86); margin: -16px 0 0 100px;">  
+  <div style="transform:scale(0.86); margin: -16px 0 0 100px;">  
     <div id="mycase" class="mycase" style="--left:calc(54px*14.25 - 6px); --top:42px;">
         <div class="kbdbg-mask bevel" style="margin: 0 -40px -54px -40px; height: 33px; width: 1133px; top: 400px; border-radius: 0 0 18px 18px;"></div>
         <div class="kbdbg-inner" style="height: 60px; width: 76px; top: 0px; left: calc(var(--left) - 9px); background-color: rgba(128,128,128, 0.2)"></div>
@@ -232,25 +232,18 @@
     <div class="mykeycap1 row600 col1750">P.</div>
   </div>
 </div>
+
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li class="key-set rowstart" id="code-0xf00b" title="Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)">BT/<br>USB</li>
-    <li class="key-set" id="code-0xf00c" title="Sleep Mode on/off (Shortcut: LShift+RShift+P)">Sleep O/X</li>
-    <li class="key-set" id="code-0xf000" title="ESC键，和Shift一起按时为~">~<br>Esc</li>
-    <li class="key-set" id="code-0xf001" title="4$键，和左alt一起按时为F4">4 $<br>F4</li>
-    <li class="key-set" id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时为跳到刷机模式">JMP<br>BL</li>
-    <li class="key-set" id="code-0xf003" title="按一下，启用或禁用锁WIN键功能，游戏防误按有用!">Win<br>Lock</li>
-    <li class="key-set rowstart" id="code-0xd001" title="轴灯模式减"><i style="font-size:18px" class="fa fa-angle-double-down"></i><br>LED</li>
-    <li class="key-set" id="code-0xd000" title="轴灯模式加"><i style="font-size:18px" class="fa fa-angle-double-up"></i><br>LED</li>
-    <li class="key-set" id="code-0xd002" title="轴灯开关"><i style="font-size:18px" class="fa  fa-toggle-on"></i><br>LED</li>
-    <li class="key-set" id="code-0xd003" title="轴灯模式逐个切换"><i style="font-size:18px" class="fa fa-angle-double-right"></i><br>LED</li>
-    <li class="key-set rowstart" id="code-0xf00a" title="RGB底灯开关">RGB<br>开关</li>
-    <li class="key-set" id="code-0xf20a" title="RGB模式加，同时按住左Shift时为模式减">RGB<br>模式</li>
-    <li class="key-set" id="code-0xf30a" title="RGB色相减">RGB<br>色相-</li>
-    <li class="key-set" id="code-0xf40a" title="RGB色相加，同时按住左Shift时为色相减">RGB<br>色相+</li>
-    <li class="key-set" id="code-0xf50a" title="RGB饱和度减">RGB<br>饱和-</li>
-    <li class="key-set" id="code-0xf60a" title="RGB饱和度加，同时按住左Shift时为饱和度减">RGB<br>饱和+</li>
-    <li class="key-set" id="code-0xf70a" title="RGB明度减">RGB<br>明度-</li>
-    <li class="key-set" id="code-0xf80a" title="RGB明度加，同时按住左Shift时为明度减">RGB<br>明度+</li>
+    <li kc="0xf00b" title="Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)">BT/<br>USB</li>
+    <li kc="0xf00c" title="Sleep Mode on/off (Shortcut: LShift+RShift+P)">Sleep O/X</li>
+    <li kc="0xf300" lang-id="fn_tricky_esc">~<br>Esc</li>
+    <li kc="0xf200" lang-id="fn_tricky_esc_l">~(L)<br>Esc</li>
+    <li kc="0xf100" lang-id="fn_tricky_esc_r">~(R)<br>Esc</li>
+    <li kc="0xf001" lang-id="fn_alt_f4">4 $<br>F4</li>
+    <li kc="0xf002" lang-id="fn_reset_flash">Reset</li>
+    <li kc="0xf003" lang-id="fn_win_lock">Win<br>Lock</li>
+    <div id="backlight_control_keys"></div>
+    <div id="rgb_control_keys"></div>
 </div>
 <div id="kb_ledmap" style="display: none">
     <li id="kb_ledmap-0" class="io_bt" value="16" title="Num Lock LED">Num Lock</li>
