@@ -21,13 +21,7 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 
 ## Mac下刷机方法
 
-> [!ydda] 重要：
-> - 从Finder操作的方法可能不适合 macOS 13 Ventura (错误代码100093)，暂时可用命令行方式。
-> - 原因可能是macOS 13目前与各种MassStorage Bootloader有点兼容问题。https://github.com/ARMmbed/DAPLink/issues/982
-> - 在更新macOS 13.3.1之后，可以使用Finder操作文件的方法刷新固件了。
-
-
-##### macOS 13 Ventura 可使用如下命令行方式(也适用于macOS 12)
+macOS，请按照下面步骤，使用命令行方式刷新固件。
 
 > [!yddh] 提醒：
 > - 截止2022.12.16，macOS 13.1 支持命令行方式测试能正确刷新固件。
@@ -56,38 +50,6 @@ sudo dd if=/Users/yang/Dowloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
 等待命令完成后就刷新成功。比较新的Bootloader会自动退出刷机模式，有的则需要手动退出。整个操作过程如下图。
 
 ![|600](assets/msd-bootloader-mac13-01.jpg)
-
-
-##### macOS 12 / 13 使用 Finder 操作刷新固件
-
-> [!ydda] 重要：
-> - 以下通过Finder操作的方法仅适用于macOS 12。如果是macOS 13，请使用命令行方式。
-> - 在更新macOS 13.3.1之后，可以使用Finder操作文件的方法刷新固件了。
-
-键盘自身进入刷机的磁盘模式方法都是相同的，但Mac下复制文件方法不同。Mac务必严格按照下面步骤，不然可能刷新不成功。
-
-```ad-yddcol0
-1. 先在磁盘里删除固件里的"键盘名.bin"这个文件。
-
-![](assets/msd-bootloader-mac01.png)
-
-2. 再在废纸篓里也要删除它(对Mac来说这一步非常重要)。
-
-![](assets/msd-bootloader-mac02.png)
-```
-
-```ad-yddcol1
-3. 将新下载的bin保持文件名与之前删除的bin文件一样，再复制到磁盘里(注意先后)。
-
-![](assets/msd-bootloader-mac03.png)
-
-4. 待文件复制完成后，右键推出磁盘或按Esc退出，刷机完成。
-
-5. 这是针对4的补充：部分比较新的bootloader，在文件复制完后，会自动退出。这时Mac下提示未正确退出之类的是正常现象。
-
-> [!yddh] 提醒：
-> - 如果在废纸篓里删除后，复制文件时还是提示空间不足，那么退出刷机模式然后再重新进刷机模式，再重新操作。
-```
 
 
 ## Linux下刷机方法

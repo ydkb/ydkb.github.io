@@ -29,12 +29,7 @@ The methods for different keyboards are basically the same. Generally, three ste
 
 ## Reflash firmware in Mac
 
-> [!ydda] IMPORTANT:
-> - The method of operating directly from the Finder may not be suitable for macOS 13 Ventura(error code 100093), temporarily switch to the following command line method.
-> - The reason may be that macOS 13 currently has some compatibility issues with various MassStorage Bootloaders. https://github.com/ARMmbed/DAPLink/issues/982
-> - After updating macOS 13.3.1, you can use Finder to operate files to flash the firmware.
-
-##### macOS 13 Ventura can use the following methods(Also works on macOS 12)
+For macOS, please follow the steps below to flash the firmware using the command line.
 
 > [!yddh] Reminder:
 > - As of 2022.12.16, macOS 13.1 supports command-line way to correctly reflash the firmware.
@@ -62,37 +57,6 @@ sudo dd if=/Users/yang/Dowloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
 After waiting for the command to complete, the reflash is successful. The newer Bootloader will automatically exit the flashing mode, and some need to exit manually. The whole operation process is shown in the figure below.
 
 ![|600](assets/msd-bootloader-mac13-01.jpg)
-
-##### macOS 12 / 13 Flash firmware using Finder actions
-
-> [!ydda] Important:
-> - The following method via Finder is only available for macOS 12. For macOS 13, use the command line 
-> - After updating macOS 13.3.1, you can use Finder to operate files to flash the firmware.
-
-The method of entering the flash mode is the same as above, but the method of copying file to disk is different.
-
-```ad-yddcol0
-1. First delete the "keyboard_name.bin" file in the USB disk drive.
-
-![](assets/msd-bootloader-mac01.png)
-
-2. Delete it in the trash again (this step is very important for Mac).
-
-![](assets/msd-bootloader-mac02.png)
-```
-
-```ad-yddcol1
-3. Keep the newly downloaded bin with the same file name as the previously deleted bin file, and then copy it to the disk drive.
-
-![](assets/msd-bootloader-mac03.png)
-
-4. After the file copying is completed, right-click to eject the USB disk drive or press Esc to exit.
-
-5. Some of the newer bootloaders will automatically exit after the file is copied. At this time, it is normal for the Mac to prompt that it has not exited correctly.
-
-> [!yddh] HINT：
-> - If after the deletion in the Trash there is still insufficient space, exit the flash mode and re-enter the flash mode, and then operate from step 1 again.
-```
 
 
 ## Reflash firmware in Linux
