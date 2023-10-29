@@ -1,9 +1,9 @@
 {
-  "name": "KBDFans KBD8x Mk3",
+  "name": "KBDFans KBD8x MkIII",
   "vendorId": "0x9D5B",
   "productId": "0x2303",
   "lighting": "qmk_rgblight",
-  "matrix": {"rows": 12, "cols": 8},
+  "matrix": {"rows": 14, "cols": 8},
   "layouts": {
     "labels":["Split Backspace", "ISO Enter", "Split LShift", "Split RShift", ["Space Row", "6.25u", "7u"]], 
     "keymap": [
