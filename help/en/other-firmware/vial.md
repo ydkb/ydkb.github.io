@@ -32,11 +32,15 @@ In order to control the size of the firmware, the functions of some keyboards ma
 
 To download the JSON file, right-click the corresponding JSON link and select Save As.
 
+| Eevee series??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
+| ---- | ---- | ---- | ---- |
+| Eevee!32U4 EE60 | [2023-10-30_DNAU](other-firmware/vial/ydkb_eevee_32u4_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_32u4_ee60_via.json ':ignore') |  |
+
 | Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
 | ---- | ---- | ---- | ---- |
 | BLE660C/BLE980C | [2023-05-03_DN53](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore') | in LAYOUTS to choose 660c or 980c |
 | HHKB BLE | [2023-05-03_DN53](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | Select US / JP in LAYOUTS |
-| Chicory | [2023-04-16_DN4G](other-firmware/vial/ydkb_chicory_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_chicory_via.json ':ignore') | Beta firmware,backlight only supports on or off |
+| Chicory | [2023-04-16_DN4G](other-firmware/vial/ydkb_chicory_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_chicory_via.json ':ignore') | Beta! backlight only supports on or off |
 | Duang60 v1 | [2023-01-23_DN1N](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
 | Duang60 v2 | [2023-08-25_DN8P](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore') | |
 | Just68 v2 | [2023-01-23_DN1N](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore') | |
