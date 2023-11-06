@@ -34,7 +34,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 
 | Eevee系列??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
 | ---- | ---- | ---- | ---- |
-| Eevee!32U4 EE60 | [2023-11-02_DNB2](other-firmware/vial/ydkb_eevee_32u4_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_32u4_ee60_via.json ':ignore') |  |
+| Eevee EE60 | [2023-11-02_DNB2](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |  |
 
 | 键盘??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
 | ---- | ---- | ---- | ---- |

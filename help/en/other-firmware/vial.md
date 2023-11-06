@@ -34,7 +34,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 
 | Eevee series??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
 | ---- | ---- | ---- | ---- |
-| Eevee!32U4 EE60 | [2023-11-02_DNB2](other-firmware/vial/ydkb_eevee_32u4_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_32u4_ee60_via.json ':ignore') |  |
+| Eevee EE60 | [2023-11-02_DNB2](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |  |
 
 | Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
 | ---- | ---- | ---- | ---- |
