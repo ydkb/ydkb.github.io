@@ -44,7 +44,7 @@ sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
 上面的`./HHKB_BLE.BIN`是 因为我在Download目录里运行的命令，所以使用的相对路径。也可以如下使用绝对路径，不用完全手打，在命令打到`if=`后，直接把BIN文件拖到终端命令窗口，它会自动获取该BIN文件的绝对路径。
 
 ```macOS
-sudo dd if=/Users/yang/Dowloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
+sudo dd if=/Users/yang/Downloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
 ```
 
 等待命令完成后就刷新成功。比较新的Bootloader会自动退出刷机模式，有的则需要手动退出。整个操作过程如下图。

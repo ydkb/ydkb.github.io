@@ -51,7 +51,7 @@ sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
 The `./HHKB_BLE.BIN` above is the relative path used because I run the command in the Download directory. You can also use the absolute path as follows, instead of typing it manually, after the command reaches `if=`, directly drag the BIN file to the terminal command window, and it will automatically obtain the absolute path of the BIN file.
 
 ```macOS
-sudo dd if=/Users/yang/Dowloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
+sudo dd if=/Users/yang/Downloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
 ```
 
 After waiting for the command to complete, the reflash is successful. The newer Bootloader will automatically exit the flashing mode, and some need to exit manually. The whole operation process is shown in the figure below.
