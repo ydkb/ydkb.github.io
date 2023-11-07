@@ -9,8 +9,9 @@ Currently some documentations for English are missing. You can use online transl
 This document is for the use of https://ydkb.io. You can also visit: https://ydkb.github.io.
 
 > [!ydda] ATTENTION
-> - The website of ydkb.io is only used to generate firmware with your keymap.
-> - It can not read or write any information from or to the keyboard.
+> - The website of ydkb.io is only used to generate firmware with your keymap. It can not read or write any information from or to the keyboard.
+> - The reason is that <u>the firmware of YDKB does not plan to add any additional interfaces except keyboard functions, so online key modification is not supported</u>.
+> - If you need to change the keys online, [via | vial firmware](en/other-firmware/vial.md) is also provided here (some keyboards provide this firmware).
 
 Here, too, are some basic rules from the beginning of my own vision:
   1. Try not to download software to complete the firmware update. (This needs the MSD Bootloader)
