@@ -6,7 +6,6 @@
         <p>2. 本页面右上角下载 .UF2固件，直接拖到(复制到) <span style="border-bottom: 2.0px solid #bb1122;">Unicore-F1</span>
             U盘里。会自动完成刷新并退出刷机模式。</p>
 
-
         <p>小技巧：可以直接按下 <kbd>LShift</kbd>+<kbd>RShift</kbd>+<kbd>LCtrl</kbd>+<kbd>B</kbd> 进入刷机模式。</p>
     </div>
     <div id="mycase" class="mycase"></div>
@@ -38,9 +37,9 @@
     <div class="mykeycap1 row125 col1000">uc_k95</div>
     <div class="mykeycap1 row125 col1100">uc_k94</div>
     <div class="mykeycap1 row125 col1200">uc_k93</div>
-    <div class="mykeycap2 w200 row125 col1300" id="kblayouts-00" value-name="2u" value-desc="Backspace" style="display: block;">uc_k92</div>
+    <div class="mykeycap2 w200 row125 col1300" id="kblayouts-00" value-name="2u" value-desc="Backspace">uc_k92</div>
 
-    <div class="mykeycap1 row125 col1300" id="kblayouts-01" value-name="1u+1u" style="display: none;">uc_k92</div>
+    <div class="mykeycap1 row125 col1300" id="kblayouts-01" value-name="1u+1u">uc_k92</div>
     <div class="mykeycap2 row125 col1400" layout="01">uc_k91</div>
 
     <div class="mykeycap2 row125 col1500">uc_k90</div>
@@ -74,20 +73,16 @@
     <div class="mykeycap1 row325 col1075">uc_k72</div>
     <div class="mykeycap1 row325 col1175">uc_k71</div>
 
-    <div class="mykeycap3 w225 row325 col1275" id="kblayouts-10" value-name="US Enter" value-desc="Enter key" style="display: block;">uc_k76</div>
-    <div id="kblayouts-11" value-name="ISO Enter" style="display: none;">
-        <div class="mykeycap3 w150 h200 row225 col1350">uc_k80</div>
-        <div class="mykeycap1 row325 col1275">uc_k76</div>
-    </div> 
+    <div class="mykeycap3 w225 row325 col1275" id="kblayouts-10" value-name="US Enter" value-desc="Enter key">uc_k76</div>
+
+    <div class="mykeycap3 w150 h200 row225 col1350" id="kblayouts-11" value-name="ISO Enter">uc_k80</div>
+    <div class="mykeycap1 row325 col1275" layout="11">uc_k76</div>
+
     <div class="mykeycap2 row325 col1500">uc_k70</div>
 
-    <div id="kblayouts-20" value-name="2.25u" value-desc="Left Shift" style="display: block;">
-        <div class="mykeycap2 w225 row425">uc_k30</div>
-    </div>
-    <div id="kblayouts-21" value-name="1.25u+1u" style="display: none;">
-        <div class="mykeycap2 w125 row425">uc_k30</div>
-        <div class="mykeycap1 row425 col125">uc_k37</div>
-    </div>
+    <div class="mykeycap2 w225 row425" id="kblayouts-20" value-name="2.25u" value-desc="Left Shift">uc_k30</div>
+    <div class="mykeycap2 w125 row425" id="kblayouts-21" value-name="1.25u+1u">uc_k30</div>
+    <div class="mykeycap1 row425 col125" layout="21">uc_k37</div>
 
     <div class="mykeycap1 row425 col225">uc_k41</div>
     <div class="mykeycap1 row425 col325">uc_k42</div>
@@ -103,21 +98,19 @@
     <div class="mykeycap2 row425 col1400">uc_k66</div>
     <div class="mykeycap2 row425 col1500">uc_k67</div>
 
-    <div id="kblayouts-30" value-name="6.25u" value-desc="Space" style="display: block">
-        <div class="mykeycap2 w125 row525">uc_k40</div>
-        <div class="mykeycap2 w125 row525 col125">uc_k47</div>
-        <div class="mykeycap2 w125 row525 col250">uc_k46</div>
-        <div class="mykeycap1 w625 space row525 col375">uc_k50</div>
-        <div class="mykeycap2 w125 row525 col1000">uc_k56</div>
-        <div class="mykeycap2 w125 row525 col1125">uc_k57</div>
-    </div>
-    <div id="kblayouts-31" value-name="7u" style="display: none">
-        <div class="mykeycap2 w150 row525">uc_k40</div>
-        <div class="mykeycap2 row525 col150">uc_k47</div>
-        <div class="mykeycap2 w150 row525 col250">uc_k46</div>
-        <div class="mykeycap1 w700 space row525 col400">uc_k50</div>
-        <div class="mykeycap2 w150 row525 col1100">uc_k57</div>
-    </div>
+    <div class="mykeycap2 w125 row525" id="kblayouts-30" value-name="6.25u" value-desc="Space">uc_k40</div>
+    <div class="mykeycap2 w125 row525 col125" layout="30">uc_k47</div>
+    <div class="mykeycap2 w125 row525 col250" layout="30">uc_k46</div>
+    <div class="mykeycap1 w625 space row525 col375" layout="30">uc_k50</div>
+    <div class="mykeycap2 w125 row525 col1000" layout="30">uc_k56</div>
+    <div class="mykeycap2 w125 row525 col1125" layout="30">uc_k57</div>
+
+    <div class="mykeycap2 w150 row525" id="kblayouts-31" value-name="7u">uc_k40</div>
+    <div class="mykeycap2 row525 col150" layout="31">uc_k47</div>
+    <div class="mykeycap2 w150 row525 col250" layout="31">uc_k46</div>
+    <div class="mykeycap1 w700 space row525 col400" layout="31">uc_k50</div>
+    <div class="mykeycap2 w150 row525 col1100" layout="31">uc_k57</div>
+
     <div class="mykeycap2 row525 col1300">uc_k62</div>
     <div class="mykeycap2 row525 col1400">uc_k61</div>
     <div class="mykeycap2 row525 col1500">uc_k60</div>
