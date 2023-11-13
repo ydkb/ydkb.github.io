@@ -1,4 +1,4 @@
-<div style="height: 290px;width: 54px;padding-left: 240px">
+<div id="mykbd" style="height: 290px;width: 54px;padding-left: 240px">
     <div id="kbd-purchase_link_0" style="display: none;" value="https://item.taobao.com/item.htm?id=637792605175">（淘宝）YDKB客制化</div>
     <div id="kbd-info" value-type="lufa_msd_ble" style="display: none;" ></div>
     <div class="mycase">
@@ -9,8 +9,6 @@
         <div class="kbdbg-mask2 marginb2" style="width:340px;height:230px;top: 46px;left: 40px;transform: rotate(8deg);border-radius:0px;"></div>
         <div class="kbdbg-border marginb2" style="width:340px;height:230px;top: 46px;left: 405px;transform: rotate(-8deg);border-radius:0px;"></div>
         <div class="kbdbg-mask2 marginb2" style="width:340px;height:230px;top: 46px;left: 405px;transform: rotate(-8deg);border-radius:0px;"></div>
-        <div class="kbdbg-border marginb2" style="width:340px;height:230px;top: 46px;left: 405px;transform: rotate(-8deg);border-radius:0px;"></div>
-        <div class="kbdbg-mask2 marginb2" style="width:340px;height:230px;top: 46px;left: 405px;transform: rotate(-8deg);border-radius:0px;"></div>
         <div class="kbdbg-border marginb2" style="width: 75px;height:230px;top: 69px;left: 355px;border-radius:12px;"></div>
         <div class="kbdbg-mask2 marginb2" style="width: 75px;height:230px;top: 69px;left: 355px;border-radius:12px;"></div>
 
@@ -18,18 +16,23 @@
         <div class="kbdbg-inner kbd-led led2" lang="zh_sc" style="left: 794px;top: 42px; background-color: #cccc00"></div>
         <div class="kbdbg-inner kbd-led led4" lang="zh_sc" style="left: 794px;top: 60px; background-color: #00cc00"></div>
     </div>
+    <style type="text/css">
+        .left-8deg { position: relative;left:20px; top:1px; transform:rotate(8deg);}
+        .right-8deg { position: relative;top:51px;left:calc(54px * 6.75);transform:rotate(-8deg);}
+    </style>
+
     <div style="position: relative; top: 15px; left:7px;">
         <div class="mykeycap3 bl-key">Esc</div>
         <div class="mykeycap1 col100">Q</div>
     </div>
-    <div style="position: relative;left:20px; top:1px; transform:rotate(8deg);">
+    <div class="left-8deg">
         <div class="plate" style="width: 27px; height: 54px; left:93px;"></div>
         <div class="mykeycap1 col200">W</div>
         <div class="mykeycap1 col300">E</div>
         <div class="mykeycap1 col400">R</div>
         <div class="mykeycap1 col500">T</div>
     </div>
-    <div style="position: relative;top:51px;left:calc(54px * 6.75);transform:rotate(-8deg);">
+    <div class="right-8deg">
         <div class="plate" style="width: 27px; height: 54px; left:calc(54px * 4.25);"></div>
         <div class="mykeycap1 col50">Y</div>
         <div class="mykeycap1 col150">U</div>
@@ -46,14 +49,14 @@
         <div class="mykeycap2 w125 row100">Capslock</div>
         <div class="mykeycap1 col125 row100">A</div>
     </div>
-    <div style="position: relative;left:20px; top:1px; transform:rotate(8deg);">
+    <div class="left-8deg">
         <div class="plate" style="width: 27px; height: 54px; top: 54px; left:108px"></div>
         <div class="mykeycap1 col225 row100">S</div>
         <div class="mykeycap1 col325 row100">D</div>
         <div class="mykeycap1 col425 row100 homing">F</div>
         <div class="mykeycap1 col525 row100">G</div>
     </div>
-    <div style="position: relative;top:51px;left:calc(54px * 6.75);transform:rotate(-8deg);">
+    <div class="right-8deg">
         <div class="plate" style="width: 54px; height: 54px; top: 54px; left:calc(54px * 4.25)"></div>
         <div class="mykeycap1 col75  row100">H</div>
         <div class="mykeycap1 col175 row100 homing">J</div>
@@ -69,7 +72,7 @@
         <div class="mykeycap2 w175 row200">Shift</div>
         <div class="mykeycap1 col175 row200">Z</div>
     </div>
-    <div style="position: relative;left:20px; top:1px; transform:rotate(8deg);">
+    <div class="left-8deg">
         <div class="plate" style="width: 27px; height: 54px; top: 108px; left:135px"></div>
         <div class="mykeycap1 col275 row200">X</div>
         <div class="mykeycap1 col375 row200">C</div>
@@ -77,7 +80,7 @@
         <div class="mykeycap1 col575 row200">B</div>
     </div>
 
-    <div style="position: relative;top:51px;left:calc(54px * 6.75);transform:rotate(-8deg);">
+    <div class="right-8deg">
         <div class="plate" style="width: 27px; height: 54px; top: 108px; left:calc(54px * 4)"></div>
         <div class="mykeycap1 col25  row200">/</div>
         <div class="mykeycap1 col125 row200">N</div>
@@ -94,12 +97,12 @@
         <div class="mykeycap2 w125 row300">Ctrl</div>
         <div class="mykeycap2 w125 col125 row300">Win</div>
     </div>  
-    <div style="position: relative;left:20px; top:1px; transform:rotate(8deg);">
+    <div class="left-8deg">
         <div class="mykeycap2 w125 col350 row300">Alt</div>
         <div class="mykeycap2 w200 col475 row300 space">Menu</div>
     </div>
 
-    <div style="position: relative;top:51px;left:calc(54px * 6.75);transform:rotate(-8deg);">
+    <div class="right-8deg">
         <div class="mykeycap2 w225 col25  row300 space">Space</div>
         <div class="mykeycap2 w125 col250 row300">RAlt</div>
     </div>
@@ -120,17 +123,17 @@
 
 </div>
 <div id="kbd-macrofn" style="clear: both; display: none">
-    <li id="code-0xf301" title="<kt>Esc</kt>键，和<kt>LShift</kt>或<kt>RShift</kt>一起按时为<kt>~</kt>">~<br>Esc</li>
-    <li id="code-0xf201" title="<kt>Esc</kt>键，和<kt>LShift</kt>一起按时为<kt>~</kt>">~(L)<br>Esc</li>
-    <li id="code-0xf101" title="<kt>Esc</kt>键，和<kt>RShift</kt>一起按时为<kt>~</kt>">~(R)<br>Esc</li>
-    <li id="code-0xf002" title="单按清除键盘按键状态，和左Ctrl一起按时为重启键盘，此时若按住左上角键不放则进入刷机模式">Reset</li>
-    <li id="code-0xf003" title="锁win">Win<br>Lock</li>
-    <li id="code-0xf004" title="正常按空格键，但是和shift一起按时不会生效，防止某些输入法切换到全角">Space2</li>
-    <li id="code-0xf100" title="Enter键，和右Shift一起按时为”">“(R)<br>Enter</li>
-    <li id="code-0xf200" title=">.键，和右Shift一起按时为?">?(R)<br>&gt;.</li>
-    <li id="code-0xf300" title="Up键，但是和右Shift一起按时为?">?(R)<br>↑</li>
-    <li id="code-0xf400" title="L键，但是和右Shift一起按时为:">:(R)<br>L</li>
-    <li id="code-0xf500" title="Backspace键，但是和右Shift一起按时为|">|(R)<br>BS</li>
+    <li kc="0xf301" lang-id="fn_tricky_esc">~<br>Esc</li>
+    <li kc="0xf201" lang-id="fn_tricky_esc_l">~(L)<br>Esc</li>
+    <li kc="0xf101" lang-id="fn_tricky_esc_r">~(R)<br>Esc</li>
+    <li kc="0xf002" lang-id="fn_reset_flash">Reset</li>
+    <li kc="0xf003" lang-id="fn_win_lock">Win<br>Lock</li>
+    <li kc="0xf004" lang-id="fn_space2">Space2</li>
+    <li kc="0xf100" title="Enter键，和右Shift一起按时为”">“(R)<br>Enter</li>
+    <li kc="0xf200" title=">.键，和右Shift一起按时为?">?(R)<br>&gt;.</li>
+    <li kc="0xf300" title="Up键，但是和右Shift一起按时为?">?(R)<br>↑</li>
+    <li kc="0xf400" title="L键，但是和右Shift一起按时为:">:(R)<br>L</li>
+    <li kc="0xf500" title="Backspace键，但是和右Shift一起按时为|">|(R)<br>BS</li>
     <div id="ble51_control_keys_v3"></div>
     <div id="backlight_control_keys"></div>
     <div id="rgb_control_keys"></div>
