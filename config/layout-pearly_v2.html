@@ -5,114 +5,36 @@
         <div name="caps" class="kbdbg-inner kbd-led led0" lang="zh_sc"  style="z-index:1; margin-left: -3px; top: 107px; background-color: #ffff00"></div>
     </div>
     <div id="kblayouts-00" value-name="13列" value-desc="整体布局" >
-        <div class="mykeycap3 bl-key">Esc</div>
-        <div class="mykeycap1 col100">Q</div>
-        <div class="mykeycap1 col200">W</div>
-        <div class="mykeycap1 col300">E</div>
-        <div class="mykeycap1 col400">R</div>
-        <div class="mykeycap1 col500">T</div>
-        <div class="mykeycap1 col600">Y</div>
-        <div class="mykeycap1 col700">U</div>
-        <div class="mykeycap1 col800">I</div>
-        <div class="mykeycap1 col900">O</div>
-        <div class="mykeycap1 col1000">P</div>
-        <div class="mykeycap1 col1100">`</div>
-        <div class="mykeycap2 col1200">BS</div>
-
-        <div class="mykeycap2 w125 row100">Tab</div>
-        <div class="mykeycap1 row100 col125">A</div>
-        <div class="mykeycap1 row100 col225">S</div>
-        <div class="mykeycap1 row100 col325">D</div>
-        <div class="mykeycap1 homing row100 col425">F</div>
-        <div class="mykeycap1 row100 col525">G</div>
-        <div class="mykeycap1 row100 col625">H</div>
-        <div class="mykeycap1 homing row100 col725">J</div>
-        <div class="mykeycap1 row100 col825">K</div>
-        <div class="mykeycap1 row100 col925">L</div>
-        <div class="mykeycap1 row100 col1025">;</div>
-        <div class="mykeycap3 w175 row100 col1125">Enter</div>
-
-        <div class="mykeycap2 w175 row200">Shift</div>
-        <div class="mykeycap1 row200 col175">Z</div>
-        <div class="mykeycap1 row200 col275">X</div>
-        <div class="mykeycap1 row200 col375">C</div>
-        <div class="mykeycap1 row200 col475">V</div>
-        <div class="mykeycap1 row200 col575">B</div>
-        <div class="mykeycap1 row200 col675">N</div>
-        <div class="mykeycap1 row200 col775">M</div>
-        <div class="mykeycap1 row200 col875">,</div>
-        <div class="mykeycap1 row200 col975">.</div>
-        <div class="mykeycap1 row200 col1075">/</div>
-        <div class="mykeycap2 w125 row200 col1175">RShift</div>
+        <ks>Esc [mc3 bl-key], Q, W, E, R, T, Y, U, I, O, P, `, BS [mc2]</ks>
+        <div Y=1> <ks>Tab [mc2 w125], A, S, D, F [homing], G, H, J [homing], K, L, ;, Enter [mc3 w175]</ks> </div>
+        <div Y=2> <ks>Shift [mc2 w175], Z, X, C, V, B, N, M, COMMA, ., /, RShift [mc2 w125]</ks> </div>
     </div>
     <div id="kblayouts-01" value-name="12列">
-        <div class="mykeycap3 w150 bl-key">Esc</div>
-        <div class="mykeycap1 col150">Q</div>
-        <div class="mykeycap1 col250">W</div>
-        <div class="mykeycap1 col350">E</div>
-        <div class="mykeycap1 col450">R</div>
-        <div class="mykeycap1 col550">T</div>
-        <div class="mykeycap1 col650">Y</div>
-        <div class="mykeycap1 col750">U</div>
-        <div class="mykeycap1 col850">I</div>
-        <div class="mykeycap1 col950">O</div>
-        <div class="mykeycap1 col1050">`</div>
-        <div class="mykeycap2 w150 col1150" layout="10">BS</div>
-        <div class="mykeycap3 w150 h200 col1150" layout="11">Enter</div>
+        <ks>Esc [mc3 w150 bl-key], Q, W, E, R, T, Y, U, I, O, `</ks>
+        <ks X=11.5 layout="10">BS [mc2 w150]</ks>
+        <ks X=11.5 layout="11">Enter [mc3 w150 h200]</ks>
 
-        <div class="mykeycap2 w175 row100">Tab</div>
-        <div class="mykeycap1 row100 col175">A</div>
-        <div class="mykeycap1 row100 col275">S</div>
-        <div class="mykeycap1 row100 col375">D</div>
-        <div class="mykeycap1 homing row100 col475">F</div>
-        <div class="mykeycap1 row100 col575">G</div>
-        <div class="mykeycap1 row100 col675">H</div>
-        <div class="mykeycap1 homing row100 col775">J</div>
-        <div class="mykeycap1 row100 col875">K</div>
-        <div class="mykeycap1 row100 col975">L</div>
-
-        <div id="kblayouts-10" value-name="ANSI Enter" value-desc="Enter (for 12列)"">
-            <div class="mykeycap3 w225 row100 col1075">Enter</div>
-        </div>
-        <div id="kblayouts-11" value-name="ISO Enter">
-            <div class="mykeycap1 row100 col1075">;</div>
+        <div Y=1>
+            <ks>Tab [mc2 w175], A, S, D, F [homing], G, H, J [homing], K, L</ks>
+            <div X=10.75>
+                <div id="kblayouts-10" value-name="ANSI Enter" value-desc="Enter (for 12列)"> <ks>Enter [mc3 w225]</ks> </div>
+                <div id="kblayouts-11" value-name="ISO Enter"> <ks>;</ks> </div>
+            </div>
         </div>
 
-        <div id="kblayouts-20" value-name="2.25u" value-desc="Left Shift (for 12列)">
-            <div class="mykeycap2 w225 row200">Shift</div>
+        <div Y=2>
+            <div id="kblayouts-20" value-name="2.25u" value-desc="Left Shift (for 12列)"> <ks>Shift [mc2 w225]</ks> </div>
+            <div id="kblayouts-21" value-name="1.25u+1u"> <ks>Shift [mc2 w125], F13</ks> </div>
+            <ks X=2.25>Z, X, C, V, B, N, M, COMMA, ., RShift [mc2 w175]</ks>
         </div>
-        <div id="kblayouts-21" value-name="1.25u+1u">
-            <div class="mykeycap2 w125 row200">Shift</div>
-            <div class="mykeycap1 row200 col125">F13</div>
-        </div>
-
-        <div class="mykeycap1 row200 col225">Z</div>
-        <div class="mykeycap1 row200 col325">X</div>
-        <div class="mykeycap1 row200 col425">C</div>
-        <div class="mykeycap1 row200 col525">V</div>
-        <div class="mykeycap1 row200 col625">B</div>
-        <div class="mykeycap1 row200 col725">N</div>
-        <div class="mykeycap1 row200 col825">M</div>
-        <div class="mykeycap1 row200 col925">,</div>
-        <div class="mykeycap1 row200 col1025">.</div>
-        <div class="mykeycap2 w175 row200 col1125">RShift</div>
     </div>
-    <div style="padding-left: 6.75px">
-        <div class="mykeycap2 row300 col100">Ctrl</div>
-        <div class="mykeycap2 w125 row300 col200">Alt</div>
-
-        <div id="kblayouts-30" value-name="单空格" value-desc="空格行">
-            <div class="mykeycap1 space w625 row300 col325">Space</div>
+    <div X=1.125 Y=3>
+        <ks>Ctrl [mc2], Alt [mc2 w125]</ks>
+        <div X=2.25>
+            <div id="kblayouts-30" value-name="单空格" value-desc="空格行"> <ks>Space [space w625]</ks> </div>
+            <div id="kblayouts-31" value-name="双空格"> <ks>Menu [mc2 w125], F14 [space w175], Space [space w200], RAlt [mc2 w125]</ks> </div>
         </div>
-        <div id="kblayouts-31" value-name="双空格">
-            <div class="mykeycap2 w125 row300 col325">Menu</div>
-            <div class="mykeycap1 space w175 row300 col450">F14</div>
-            <div class="mykeycap1 space w200 row300 col625">Space</div>
-            <div class="mykeycap2 w125 row300 col825">RAlt</div>
-        </div>
-
-        <div class="mykeycap2 w125 row300 col950">Rwin</div>
-        <div class="mykeycap2 row300 col1075">RCtrl</div>
+        <ks X=8.5 class="">Rwin [mc2 w125], RCtrl [mc2]</ks>
     </div>
 </div>
 
