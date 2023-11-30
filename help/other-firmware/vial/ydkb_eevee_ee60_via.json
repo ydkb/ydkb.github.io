@@ -1,6 +1,6 @@
 {
-  "name": "YDKB Eevee EE60",
-  "vendorId": "0x9D5B",
+  "name": "YDKB Eevee #EE60",
+  "vendorId": "0x5944",
   "productId": "0x23C6",
   "lighting": "none",
   "matrix": {"rows": 5, "cols": 14},
