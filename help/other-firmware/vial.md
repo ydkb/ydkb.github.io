@@ -35,7 +35,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | Eevee系列??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
 | ---- | ---- | ---- | ---- |
 | Eevee \#EE60 | [2023-12-28_DNCS](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |  |
-| Eevee \#HFKB | [2023-12-28_DNCS](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |  |
+| Eevee \#HFKB | [2024-01-31_DO1V](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |  |
 | Eevee \#40A | [2023-12-28_DNCS](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore') |  |
 | Eevee \#40B | [2023-12-28_DNCS](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore') |  |
 
