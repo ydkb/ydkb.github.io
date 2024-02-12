@@ -28,8 +28,6 @@ The firmware update method in the table below is consistent with ydkb.io. Most u
 
 <br>
 
-In order to control the size of the firmware, the functions of some keyboards may be slightly reduced. Some have Tap Dance disabled, and some also have Combos disabled.
-
 To download the JSON file, right-click the corresponding JSON link and select Save As.
 
 | Eevee series??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
@@ -47,7 +45,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Duang60 v1 | [2023-01-23_DN1N](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
 | Duang60 v2 | [2023-08-25_DN8P](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore') | |
 | Just68 v2 | [2023-01-23_DN1N](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore') | |
-| Louise | [2023-01-23_DN1N](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore') | |
+| Louise | [2024-02-12_DO2C](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore') | |
 | Minira v2 | [2023-01-23_DN1N](other-firmware/vial/ydkb_minira_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_minira_v2_via.json ':ignore') | |
 | Pearly v1 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v1_via.json ':ignore') | |
 | Pearly v2 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v2_via.json ':ignore') | |
@@ -68,10 +66,6 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Tofu-fa | [2024-01-09_DO19](other-firmware/vial/ydkb_kbdfans_tofufa_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_tofufa_via.json ':ignore') | |
 | YD67BLE (KBD67 lite) | [2023-07-15_DN7F](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore') | |
 
-
-For 40% keyboards, it is recommended to try the firmware of ydkb.io. I use 40 more, and the ydkb firmware has more small optimizations for the use of 40.
-
-For the update content, please refer to the update record of ydkb firmware. In addition to the difference in core functions (based on the difference between tmk and qmk), such as the update of the matrix buttons of the Bluetooth and the keyboard itself, the version date is the same, and the update content is basically the same.
 
 ### 2 Connect Vial
 

@@ -28,8 +28,6 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 
 <br>
 
-为了控制固件尺寸，部分键盘的功能可能略有精简。有的禁用了 Tap Dance，有的还禁用了Combos。
-
 下载JSON文件请右键点击对应的JSON链接，选择 另存为。
 
 | Eevee系列??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
@@ -47,7 +45,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | Duang60 v1 | [2023-01-23_DN1N](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
 | Duang60 v2 | [2023-08-25_DN8P](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore') | |
 | Just68 v2 | [2023-01-23_DN1N](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore') | |
-| Louise | [2023-01-23_DN1N](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore') | |
+| Louise | [2024-02-12_DO2C](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore') | |
 | Minira v2 | [2023-01-23_DN1N](other-firmware/vial/ydkb_minira_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_minira_v2_via.json ':ignore') | |
 | Pearly v1 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v1_via.json ':ignore') | |
 | Pearly v2 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v2_via.json ':ignore') | |
@@ -68,10 +66,6 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | Tofu-fa | [2024-01-09_DO19](other-firmware/vial/ydkb_kbdfans_tofufa_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_tofufa_via.json ':ignore') | |
 | YD67BLE (KBD67 lite) | [2023-07-15_DN7F](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore') | |
 
-
-40%类的键盘，更推荐尝试ydkb.io的固件。我用40较多，ydkb的固件针对40的使用有更多的小优化。
-
-更新的内容可以参看ydkb固件的更新记录。除了核心功能(基于tmk与qmk的不同)等有所区别，像蓝牙与键盘本身矩阵按键的更新，版本日期一样的，更新内容基本相同。
 
 ### 2 连接Vial
 
