@@ -17,6 +17,9 @@ Brief summary: When the text output battery level is 44 or 45, you need to do Re
 
 Please update the firmware first, it is better after 2023. Use <kbd>Reset</kbd> in the enhanced function, if it is not set, you need to set it to the keyboard first.
 
+> [!ydda] Attetion
+> - If you use VIA or Vial firmware, the key you need to set here is <kbd>BLERST</kbd> in `USER`.
+
 ![](assets/reset-ble-01.jpg)
 
 Then confirm that the current power output is not 12-0 or 120-0, that is, confirm that the Bluetooth function is not turned off.
