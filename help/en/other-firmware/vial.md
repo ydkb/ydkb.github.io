@@ -40,7 +40,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
 | ---- | ---- | ---- | ---- |
 | BLE660C/BLE980C | [2024-02-12_DO1C](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore') | in LAYOUTS to choose 660c or 980c |
-| HHKB BLE | [2024-02-08_DO28](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | Select US / JP in LAYOUTS |
+| HHKB BLE | [2024-02-13_DO2D](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | Select US / JP in LAYOUTS |
 | Chicory | [2024-02-06_DO26](other-firmware/vial/ydkb_chicory_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_chicory_via.json ':ignore') | backlight only supports on or off |
 | Duang60 v1 | [2023-01-23_DN1N](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
 | Duang60 v2 | [2023-08-25_DN8P](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore') | |
