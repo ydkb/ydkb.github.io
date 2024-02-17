@@ -42,9 +42,9 @@ Currently supports up to 8 indicators, each indicator can be individually assign
 | Win Lock | Used with corresponding functions, lights up when the Win key is locked |
 | Layer 1...7 | When the setting layer is open, the indicator lights up |
 | Default Layer 1...7  | When the current default layer is the set value, the indicator lights up |
-| 工作模式(部分键盘有) | USB connection when the indicator light is on, Bluetooth when it is off |
-| 接蓝牙模块(部分键盘有) | Part of the keyboard connected to the Bluetooth module needs to occupy the IO of the LED light, and this needs to be set|
-| WS2812 RGB(部分键盘有) | Some keyboards use RGB lights to occupy the IO of the LED lights, and this needs to be set |
+| Working mode (some) | USB connection when the indicator light is on, Bluetooth when it is off |
+| Use UART2BT(some) | Part of the keyboard connected to the Bluetooth module needs to occupy the IO of the LED light, and this needs to be set|
+| WS2812 RGB(some) | Some keyboards use RGB lights to occupy the IO of the LED lights, and this needs to be set |
 
 
 
@@ -53,6 +53,6 @@ Currently supports up to 8 indicators, each indicator can be individually assign
 > [!ydda] ATTENTION when in bluetooth mode
 > - In bluetooth mode，The Num, Caps, and Scroll Lock indicators are not synchronous with the OS status in Bluetooth mode. 
 > - In bluetooth mode, They just toggle on or off when pressed. They are synchronous in USB mode.
-> - If one indicator is out of sync, you can use Shift + KEY, such as Shift + Capslock. In this way CapsLock will take effect but its indicator won't change.
+> - If one indicator is out of sync, you can use Shift + KEY, such as Shift + Capslock. In this way CapsLock will take effect but its indicator won't change (because the first key is not CapsLock).
 > - Reasonable use of this in bluetooth mode to reverse the indicator light, such as turning off the numlock light when numlock is on and light on when it is off, which can save power.
 
