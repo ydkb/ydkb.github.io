@@ -40,7 +40,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | 键盘??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
 | ---- | ---- | ---- | ---- |
 | BLE660C/BLE980C | [2024-02-16_DO2G](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore') | LAYOUTS里选择660c或980c |
-| HHKB BLE | [2024-02-16_DO2G](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') |  [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | LAYOUTS里选择US/JP布局 |
+| HHKB BLE | [2024-02-24_DO2O](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') |  [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | LAYOUTS里选择US/JP布局 |
 | Chicory | [2024-02-06_DO26](other-firmware/vial/ydkb_chicory_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_chicory_via.json ':ignore') | |
 | Duang60 v1 | [2024-02-16_DO2G](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
 | Duang60 v2 | [2024-02-16_DO2G](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore') | |
