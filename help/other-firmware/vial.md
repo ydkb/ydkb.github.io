@@ -47,7 +47,7 @@ Vial的固件功能，所以本帮助文档里面的大部分内容将无效。V
 | Just68 v2 | [2024-02-24_DO2O](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore') | |
 | Louise | [2024-02-24_DO2O](other-firmware/vial/ydkb_louise_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore') | |
 | Minira v2 | [2024-02-24_DO2O](other-firmware/vial/ydkb_minira_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_minira_v2_via.json ':ignore') | |
-| Pearly v1 | [2022-12-23_DMCN](other-firmware/vial/ydkb_pearly_v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v1_via.json ':ignore') | |
+| Pearly v1 | [2024-02-24_DO2O](other-firmware/vial/ydkb_pearly_v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v1_via.json ':ignore') | |
 | Pearly v2 | [2024-02-24_DO2O](other-firmware/vial/ydkb_pearly_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_pearly_v2_via.json ':ignore') | |
 | Xikii i6x | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i6x_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_i6x_via.json ':ignore') | |
 | Xikii i8x | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i8x_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_i8x_via.json ':ignore') | |
