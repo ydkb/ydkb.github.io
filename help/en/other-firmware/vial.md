@@ -56,16 +56,16 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | YDPM40BLE | [2024-02-24_DO2O](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore') | |
 
 | KBDFans Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
-| ---- | ---- | ---- | ---- |
-| Boop65 | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore') | |
-| KBD8x Mk3 | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_via.json ':ignore') | |
-| Kunlun | [2023-07-15_DN7F](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore') | |
-| Mountain | [2023-07-15_DN7F](other-firmware/vial/ydkb_mountain_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore') | |
-| PAVLOV | [2024-03-10_DO3A](other-firmware/vial/ydkb_jolteon_pavlov_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_jolteon_pavlov_via.json ':ignore') | |
-| Taco(75%) | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore') | |
-| Taco Pad | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore') | |
-| Tofu-fa | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_tofufa_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_tofufa_via.json ':ignore') | |
-| YD67BLE (KBD67 lite) | [2023-07-15_DN7F](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore') | |
+| -------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---- |
+| Boop65               | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')   |      |
+| KBD8x Mk3            | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_via.json ':ignore') |      |
+| Kunlun               | [2023-07-15_DN7F](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore')           |      |
+| Mountain             | [2023-07-15_DN7F](other-firmware/vial/ydkb_mountain_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore')         |      |
+| PAVLOV               | [2024-03-11_DO3B](other-firmware/vial/ydkb_jolteon_pavlov_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_jolteon_pavlov_via.json ':ignore')   |      |
+| Taco(75%)            | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore')   |      |
+| Taco Pad             | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore')  |      |
+| Tofu-fa              | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_tofufa_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_tofufa_via.json ':ignore')   |      |
+| YD67BLE (KBD67 lite) | [2023-07-15_DN7F](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')          |      |
 
 
 ### 2 Connect Vial
