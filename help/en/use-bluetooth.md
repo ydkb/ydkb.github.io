@@ -32,9 +32,9 @@ Bluetooth is not a wireless device like a dedicated 2.4G receiver. In addition t
 
 During using, sometimes Bluetooth has problems, which may not necessarily be the cause of the keyboard. It may be that the drive of the system is exhausted. You can try to turn off the Bluetooth in the system OS and then turn it on again. After the keyboard is reconnected, try again.
 
-For some Bluetooth modules, the official drivers may not work well. You can try to use the driver that comes with Microsoft Windows. For example, the Marvell network card of my Surface Pro3 is an example. You can manually specify the Bluetooth driver as the universal Bluetooth driver that comes with win10 (the first item in the figure below).
+For some Bluetooth modules, the official drivers may not work well. You can try to use the driver that comes with Microsoft Windows. For example, the Marvell network card of my Surface Pro3 is an example. You can manually specify the Bluetooth driver as the universal Bluetooth driver that comes with win10 (the first item in the figure below). Most Intel wireless network cards come with Bluetooth and directly use Intel's latest Bluetooth driver.
 
-![](assets/marvellbluetooth.png?70%)
+![|500](assets/marvellbluetooth.png)
 
 
 ## Signal optimization
@@ -44,6 +44,8 @@ Bluetooth is also a 2.4G wireless. So if you want to make better use of it, pay 
   2. Reduce blocking and interference between your keyboard and Bluetooth receiver. USB 3.0 devices with high-speed communication between the keyboard and the Bluetooth receiver or next to the Bluetooth receiver will also have a great impact.
   3. If it works well and the signal starts to turn bad, switch the computer's Bluetooth off and on again. which make it reconnect. Sometimes it will improve. (Because the bluetooth may switch to a channel with less interference)
   4. Some Bluetooth wifi integrated modules may require the following items to be set to disabled or similar settings.
+  5. Under some systems or hardware, occasional disconnection or slow response may occur during use. Try not to check "Allow the computer to turn off this device to save power".
 
-![](assets/ble_series_01.png?50%)
+![|400](assets/ble_series_01.png)
 
+![|660](assets/use_bluetooth_03.jpg)
