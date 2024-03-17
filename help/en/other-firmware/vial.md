@@ -120,6 +120,9 @@ The control of RGB is different from that of qmk. Please refer to [rgblight](en/
 
 When setting in Vial / VIA, use a few buttons in User / CUSTOM to control.
 
+> [!ydda] If there is no button as shown below in User / CUSTOM
+> - Some keyboards do not have RGB control keys in User / CUSTOM, but use VIA / Vial's own key controls.
+
 Among them, the keys to control Mode (mode) / HUE (hue) / SAT (saturation) / LUM (brightness) do not need to be set for both addition and subtraction. You can press and hold <kbd>Shift</kbd> + the corresponding RGB control key to perform the reverse operation. For example, the function of <kbd>Shift</kbd>+<kbd>HUE++</kbd> is <kbd>HUE-</kbd>.
 
 ![|700](assets/vial-ydkb-rgb.jpg)
