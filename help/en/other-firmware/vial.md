@@ -7,7 +7,8 @@ At the same time, this firmware also supports VIA, please refer to the instructi
 
 In order to easily distinguish the firmware version, when the USB is plugged in, the name of the USB device, the firmware that supports VIA / Vial is followed by (VIAL_Dxxx), xxx is the firmware date; and the YDKB is (USB_Dxxx).
 
-Vial's firmware functions, so most of the content in this help document will be invalid. Vial supports many functions, and I am not familiar with all of them. For specific usage, please refer to the relevant help of Vial.
+For the firmware functions of Vial, please refer to the relevant documents of Vial and qmk. Some detailed functions are different from the firmware of ydkb.io.
+. Vial supports many functions, and I am not familiar with all of them. For specific usage, please refer to the relevant help of Vial.
 
 If you encounter a bug, you can contact me in the YDKB QQ group ② "767441859", and I will try to solve it.
 
