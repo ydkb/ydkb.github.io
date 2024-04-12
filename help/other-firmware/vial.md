@@ -58,7 +58,8 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 | KBDFans 键盘??25%      | VIA / Vial 固件下载                                                                 | VIA JSON                                                             | 补充说明 |
 | -------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---- |
 | Boop65               | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')   |      |
-| Eden v2              | [2024-03-13_DO3D](other-firmware/vial/ydkb_kbdfans_eden_v2_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_eden_v2_via.json ':ignore')   |      |
+| Dusk67               | [2024-03-13_DO3D](other-firmware/vial/ydkb_kbdfans_dusk67_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_dusk67_via.json ':ignore')   |      |
+| Eden v2              | [2024-03-13_DO3D](other-firmware/vial/ydkb_kbdfans_eden_v2_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_kbdfans_eden_v2_via.json ':ignore')  |      |
 | KBD8x Mk3            | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_via.json ':ignore') |      |
 | Kunlun               | [2023-07-15_DN7F](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore')           |      |
 | Mountain             | [2023-07-15_DN7F](other-firmware/vial/ydkb_mountain_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore')         |      |
