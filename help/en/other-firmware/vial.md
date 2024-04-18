@@ -58,7 +58,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 
 | KBDFans Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
 | -------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---- |
-| Boop65               | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')   |      |
+| Boop65               | [2024-03-13_DO3D](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')   |      |
 | Dusk67               | [2024-03-13_DO3D](other-firmware/vial/ydkb_kbdfans_dusk67_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_kbdfans_dusk67_via.json ':ignore')   |      |
 | Eden v2              | [2024-03-13_DO3D](other-firmware/vial/ydkb_kbdfans_eden_v2_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_kbdfans_eden_v2_via.json ':ignore')  |      |
 | KBD8x Mk3            | [2024-02-15_DO2F](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_via.json ':ignore') |      |
