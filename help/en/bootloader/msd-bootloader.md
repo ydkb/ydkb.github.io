@@ -37,7 +37,7 @@ For macOS, please follow the steps below to flash the firmware using the command
 
 For example, the downloaded file is HHKB_BLE.BIN, which is placed in the Downloads directory.
 
-After connecting to the display flash disk, first execute the following command in the terminal, where HHKB_BLE is the name of the flash disk.
+After connecting to the display flash disk, first execute the following command in the terminal, where HHKB_BLE is the name of the flash disk. Some disk names may have spaces after them. After entering the name, you can try pressing Tab to autocomplete to get the complete name.
 
 ```macOS
 diskutil umount /Volumes/HHKB_BLE
