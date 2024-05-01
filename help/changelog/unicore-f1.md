@@ -3,7 +3,11 @@
 
 此处仅为更新日志记录，方便参考。下载固件请至ydkb.io，选择对应的键盘。
 
-本更新记录适用于 Boop65 / KBD8xMkIII / Taco75 / Taco Pad。
+本更新记录适用于 Boop65 / Dusk67 / KBD8xMkIII / Taco75 / Taco Pad / Tofu-fa。
+
+##### 2024-05-01 (DO51)
+- 「#」改进按键兼容(修复: 某些USB输入电压稍高的情况可能造成右上角按键有时无法正常工作)。
+- 「#」改进Tap Key。不会在按下第二个Tap Key时弹起上一个。
 
 ##### 2023-12-24 (DNCO)
 - 「+」[修饰键组合键](app://obsidian.md/edit-keymap/mods-key.md) 或 [修饰键 | 按键](app://obsidian.md/edit-keymap/mods-tap-key.md)，其中的按键，可以设置为 音量键 或 鼠标键。即可将单个按键设置为例如: Ctrl + 滚轮上，Shift + 音量加。
