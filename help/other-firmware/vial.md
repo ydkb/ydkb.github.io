@@ -107,12 +107,18 @@ VIA的本地软件下载见: https://github.com/the-via/releases/releases
 ![|700](assets/vial-ydkb-ble51.jpg)
 ![|700](assets/via-ydkb-ble51.jpg)
 
+| 按键             | 功能              | 默认快捷键                      |
+| -------------- | --------------- | -------------------------- |
+| BT/USB         | 切换USB或蓝牙连接      | <kbd>LShift+RShift+U</kbd> |
+| BLERST / RESET | 蓝牙重置时会用到        | <kbd>LShift+RShift+B</kbd> |
+| BAT%           | 文字输出剩余电量        | <kbd>LShift+RShift+V</kbd> |
+| LkMode         | 进入Lock Mode锁定节能 | <kbd>LShift+RShift+L</kbd> |
+
 目前，本页固件的蓝牙功能与ydkb.io的固件有以下区别（未来可能还有变动）。
 
 1. 因为无LEDMAP功能，所以蓝牙模式下，大小写指示灯不工作。但它仍然可以指示蓝牙连接状态及低电量等。
 2. 不支持使用YDKB Tool修改蓝牙名称。但是可以使用YDKB的固件先修改好，再刷新Vial的固件。
-3. 不支持蓝牙设备之间的切换，支持蓝牙与USB之间的切换。可以设置切换按键，或者使用<kbd>LShift+RShift+U</kbd>
-4. 支持Lock Mode，并且增加了Lock Mode的快捷键 <kbd>LShift+RShift+L</kbd>。
+3. 不支持蓝牙设备之间的切换，支持蓝牙与USB之间的切换。
 
 如果在使用蓝牙过程中遇到连接等问题，依然可以根据 [BLE系列排错指南](ble-series/troubleshooting.md) 来解决。
 

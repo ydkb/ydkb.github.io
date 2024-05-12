@@ -108,12 +108,18 @@ In addition to setting the buttons yourself, the following four main Bluetooth f
 ![|700](assets/vial-ydkb-ble51.jpg)
 ![|700](assets/via-ydkb-ble51.jpg)
 
+| Key | Function | The default shortcut comand keys |
+| -------------- | --------------- | -------------------------- |
+| BT/USB | Switch USB or Bluetooth connection | <kbd>LShift+RShift+U</kbd> |
+| BLERST/RESET | is used to reset the Bluetooth | <kbd>LShift+RShift+B</kbd> |
+| BAT% | Text output remaining battery | <kbd>LShift+RShift+V</kbd> |
+| LkMode | enters the Lock Mode. | <kbd>LShift+RShift+L</kbd> |
+
 At present, the Bluetooth function of the firmware on this page has the following differences from the firmware of ydkb.io (there may be changes in the future).
 
 1. Because there is no LEDMAP function, the upper and lower case indicators do not work in Bluetooth mode. But it can still indicate Bluetooth connection status, low battery, etc.
 2. It is not supported to use YDKB Tool to modify the Bluetooth name. But you can use the YDKB firmware to modify it first, and then refresh the Vial firmware.
-3. Does not support switching between Bluetooth devices, but supports switching between Bluetooth and USB. You can set the switch button, or use <kbd>LShift+RShift+U</kbd>
-4. Support Lock Mode, and add the shortcut key of Lock Mode <kbd>LShift+RShift+L</kbd>.
+3. Does not support switching between Bluetooth devices, but supports switching between Bluetooth and USB.
 
 If you encounter problems such as connection when using Bluetooth, you can still solve it according to [BLE Series Troubleshooting Guide](en/ble-series/troubleshooting.md).
 
