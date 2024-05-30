@@ -3,6 +3,7 @@
 This section is designed to help users find and resolve issues. This section is under construction.
 
 > [!yddh] HINT
+> - In normal use, occasionally encountered the key is obviously stuck, you can try to restart the keyboard with <kbd>LShift+RShift+R</kbd> to reconnect the Bluetooth to restore normal.
 > - In case of an error, first try to turn off the switch or pull out the battery, and then power on to see if it returns to normal.
 > - Please follow the steps below to find the problem. Sometimes Bluetooth pairing or connection problems are not caused by the keyboard, but the OS or OS driver.
 
