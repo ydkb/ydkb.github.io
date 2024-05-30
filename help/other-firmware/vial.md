@@ -30,17 +30,17 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 
 下载JSON文件请右键点击对应的JSON链接，选择 另存为。
 
-| Eevee系列??25% | VIA / Vial 固件下载 | VIA JSON | 补充说明 |
-| ---- | ---- | ---- | ---- |
-| Eevee \#EE60 | [2024-05-15_DO5F](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |  |
-| Eevee \#HFKB | [2024-05-15_DO5F](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |  |
-| Eevee \#40A | [2024-05-15_DO5F](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore') |  |
-| Eevee \#40B | [2024-05-15_DO5F](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore') |  |
+| Eevee系列??25% | VIA / Vial 固件下载                                                           | VIA JSON                                                       | 补充说明 |
+| ------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- | ---- |
+| Eevee \#EE60 | [2024-05-30_DO5U](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
+| Eevee \#HFKB | [2024-05-30_DO5U](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
+| Eevee \#40A  | [2024-05-30_DO5U](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
+| Eevee \#40B  | [2024-05-30_DO5U](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
 
 | 键盘??25%            | VIA / Vial 固件下载                                                               | VIA JSON                                                           | 补充说明                |
 | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------- |
 | BLE660C/BLE980C    | [2024-05-11_DO5B](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore')   | LAYOUTS里选择660c或980c |
-| HHKB BLE           | [2024-05-15_DO5F](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore')       | LAYOUTS里选择US/JP布局   |
+| HHKB BLE           | [2024-05-30_DO5U](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore')       | LAYOUTS里选择US/JP布局   |
 | Chicory            | [2024-02-24_DO2O](other-firmware/vial/ydkb_chicory_vial.zip ':ignore')        | [JSON](other-firmware/vial/ydkb_chicory_via.json ':ignore')        |                     |
 | Duang60 v1         | [2024-02-24_DO2O](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore')      |                     |
 | Duang60 v2         | [2024-02-24_DO2O](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore')      |                     |
