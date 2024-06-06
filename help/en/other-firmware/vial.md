@@ -44,7 +44,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | HHKB BLE | [2024-05-30_DO5U](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | Select US / JP in LAYOUTS |
 | Chicory            | [2024-05-30_DO5U](other-firmware/vial/ydkb_chicory_vial.zip ':ignore')        | [JSON](other-firmware/vial/ydkb_chicory_via.json ':ignore')        |                     |
 | Duang60 v1 | [2024-02-24_DO2O](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
-| Duang60 v2 | [2024-02-24_DO2O](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore') | |
+| Duang60 v2         | [2024-06-06_DO66](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore')      |                     |
 | Just68 v2 | [2024-02-24_DO2O](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore') | |
 | Louise             | [2024-03-26_DO3Q ](other-firmware/vial/ydkb_louise_vial.zip ':ignore')                            | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore')         |                     |
 | Minira v2 | [2024-02-24_DO2O](other-firmware/vial/ydkb_minira_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_minira_v2_via.json ':ignore') | |
