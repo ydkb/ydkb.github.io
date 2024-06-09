@@ -3,6 +3,11 @@
 
 此处仅为更新日志记录，方便参考。下载固件请至ydkb.io，选择对应的键盘。
 
+##### 2024-06-09 (DO69)
+- 「+」正常使用时，偶尔遇到按键卡顿明显，尝试自动重启键盘让蓝牙重连(代替需要手动<kbd>LShift+RShift+B</kbd>)，以恢复正常。
+- 「+」增加支持 <kbd>Cmd </kbd> + <kbd>~\` Esc</kbd>  触发为  <kbd>Cmd </kbd> + <kbd>\`</kbd> 
+- 「#」改善在较新的macOS系统下，电脑睡眠后，10多秒后可能会再次被键盘唤醒的问题。
+
 ##### 2023-12-24 (DNCO)
 - 「+」[修饰键组合键](app://obsidian.md/edit-keymap/mods-key.md) 或 [修饰键 | 按键](app://obsidian.md/edit-keymap/mods-tap-key.md)，其中的按键，可以设置为 音量键 或 鼠标键。即可将单个按键设置为例如: Ctrl + 滚轮上，Shift + 音量加。
 - 「+」基于上一条，增加两个mac使用的按键，功能为音量增加或减少4分之1格。
