@@ -39,22 +39,22 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Eevee \#40B  | [2024-05-30_DO5U](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
 
 | Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
-| ---- | ---- | ---- | ---- |
-| BLE660C/BLE980C | [2024-05-30_DO5U](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore') | in LAYOUTS to choose 660c or 980c |
-| HHKB BLE | [2024-05-30_DO5U](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | Select US / JP in LAYOUTS |
+| ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------- |
+| BLE660C/BLE980C    | [2024-05-30_DO5U](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore') | in LAYOUTS to choose 660c or 980c |
+| HHKB BLE           | [2024-05-30_DO5U](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | Select US / JP in LAYOUTS |
 | Chicory            | [2024-05-30_DO5U](other-firmware/vial/ydkb_chicory_vial.zip ':ignore')        | [JSON](other-firmware/vial/ydkb_chicory_via.json ':ignore')        |                     |
-| Duang60 v1 | [2024-02-24_DO2O](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore') | |
+| Duang60 v1         | [2024-02-24_DO2O](other-firmware/vial/ydkb_duang60v1_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_duang60v1_via.json ':ignore')      |                     |
 | Duang60 v2         | [2024-06-06_DO66](other-firmware/vial/ydkb_duang60v2_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_duang60v2_via.json ':ignore')      |                     |
-| Just68 v2 | [2024-02-24_DO2O](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore') | |
-| Louise             | [2024-03-26_DO3Q ](other-firmware/vial/ydkb_louise_vial.zip ':ignore')                            | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore')         |                     |
-| Minira v2 | [2024-02-24_DO2O](other-firmware/vial/ydkb_minira_v2_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_minira_v2_via.json ':ignore') | |
+| Just68 v2          | [2024-02-24_DO2O](other-firmware/vial/ydkb_just68v2_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_just68v2_via.json ':ignore')       |                     |
+| Louise             | [2024-03-26_DO3Q ](other-firmware/vial/ydkb_louise_vial.zip ':ignore')        | [JSON](other-firmware/vial/ydkb_louise_via.json ':ignore')         |                     |
+| Minira v2          | [2024-02-24_DO2O](other-firmware/vial/ydkb_minira_v2_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_minira_v2_via.json ':ignore')      |                     |
 | Pearly v1          | [2024-06-09_DO69](other-firmware/vial/ydkb_pearly_v1_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_pearly_v1_via.json ':ignore')      |                     |
 | Pearly v2          | [2024-06-09_DO69](other-firmware/vial/ydkb_pearly_v2_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_pearly_v2_via.json ':ignore')      |                     |
-| Xikii i6x | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i6x_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_i6x_via.json ':ignore') | |
-| Xikii i8x | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i8x_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_i8x_via.json ':ignore') | |
-| Xikii i104 | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i104_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_i104_via.json ':ignore') | |
-| Xikii Sasuke No.01 | [2022-12-22_DMCM](other-firmware/vial/ydkb_xikii_sasuke01_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_sasuke01_via.json ':ignore') | |
-| YDPM40BLE | [2024-02-24_DO2O](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore') | |
+| Xikii i6x          | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i6x_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_xikii_i6x_via.json ':ignore')      |                     |
+| Xikii i8x          | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i8x_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_xikii_i8x_via.json ':ignore')      |                     |
+| Xikii i104         | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i104_vial.zip ':ignore')     | [JSON](other-firmware/vial/ydkb_xikii_i104_via.json ':ignore')     |                     |
+| Xikii Sasuke No.01 | [2022-12-22_DMCM](other-firmware/vial/ydkb_xikii_sasuke01_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_sasuke01_via.json ':ignore') |                     |
+| YDPM40BLE          | [2024-06-10_DO6A](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore')      |                     |
 
 | KBDFans Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
 | -------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---- |

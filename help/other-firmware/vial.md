@@ -53,7 +53,7 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 | Xikii i8x          | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i8x_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_xikii_i8x_via.json ':ignore')      |                     |
 | Xikii i104         | [2023-09-01_DN91](other-firmware/vial/ydkb_xikii_i104_vial.zip ':ignore')     | [JSON](other-firmware/vial/ydkb_xikii_i104_via.json ':ignore')     |                     |
 | Xikii Sasuke No.01 | [2022-12-22_DMCM](other-firmware/vial/ydkb_xikii_sasuke01_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_sasuke01_via.json ':ignore') |                     |
-| YDPM40BLE          | [2024-02-24_DO2O](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore')      |                     |
+| YDPM40BLE          | [2024-06-10_DO6A](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore')      |                     |
 
 | KBDFans 键盘??25%      | VIA / Vial 固件下载                                                                 | VIA JSON                                                             | 补充说明 |
 | -------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---- |
