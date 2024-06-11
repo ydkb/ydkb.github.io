@@ -31,10 +31,6 @@ The methods for different keyboards are basically the same. Generally, three ste
 
 For macOS, please follow the steps below to flash the firmware using the command line.
 
-> [!yddh] Reminder:
-> - As of 2022.12.16, macOS 13.1 supports command-line way to correctly reflash the firmware.
-> - If there is a new system update, this part of description will be updated.
-
 For example, the downloaded file is HHKB_BLE.BIN, which is placed in the Downloads directory.
 
 After connecting to the display flash disk, first execute the following command in the terminal, where HHKB_BLE is the name of the flash disk. Some disk names may have spaces after them. After entering the name, you can try pressing Tab to autocomplete to get the complete name.
@@ -43,15 +39,18 @@ After connecting to the display flash disk, first execute the following command 
 diskutil umount /Volumes/HHKB_BLE
 ```
 
-The result obtained after execution is `Volume HHKB_BLE on disk4 unmounted`, remember that this is `disk4`, and then execute the following command, note that the disk4 in this article corresponds to the result obtained by the previous command. Don't change `seek=4`.
-
+The result obtained after execution is <code>Volume HHKB_BLE on <span style='color:red'><b>disk2</b></span> unmounted</code>, remember the `disk2` and it could be other `diskX` in your OS. Then execute the following command, note that the disk2 in this article corresponds to the result obtained by the previous command.
 ```macOS
-sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
+sudo dd if=./HHKB_BLE.BIN of=/dev/disk2 seek=4
 ```
+
+> [!ydda] ATTENTION
+> - Don't change `seek=4`.
+
 The `./HHKB_BLE.BIN` above is the relative path used because I run the command in the Download directory. You can also use the absolute path as follows, instead of typing it manually, after the command reaches `if=`, directly drag the BIN file to the terminal command window, and it will automatically obtain the absolute path of the BIN file.
 
 ```macOS
-sudo dd if=/Users/yang/Downloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
+sudo dd if=/Users/yang/Downloads/HHKB_BLE.BIN of=/dev/disk2 seek=4
 ```
 
 After waiting for the command to complete, the reflash is successful. The newer Bootloader will automatically exit the flashing mode, and some need to exit manually. The whole operation process is shown in the figure below.

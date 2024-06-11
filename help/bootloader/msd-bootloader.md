@@ -23,10 +23,6 @@ ydkb.io支持的较多键盘使用了这种方式。这种方式的好处即是�
 
 macOS，请按照下面步骤，使用命令行方式刷新固件。
 
-> [!yddh] 提醒：
-> - 截止2022.12.16，macOS 13.1 支持命令行方式测试能正确刷新固件。
-> - 如果有新的系统更新会再追加说明。
-
 这里举例，下载的文件是 HHKB_BLE.BIN，放在了 Downloads 目录里。
 
 macOS上提示的连接到设备的信息这里就不多讲，连上显示磁盘后，先在终端里执行如下命令，其中HHKB_BLE是磁盘的名称。有的磁盘名称可能后面有空格，输入名称后可尝试按Tab自动完成来获取完整的名称。
@@ -35,16 +31,19 @@ macOS上提示的连接到设备的信息这里就不多讲，连上显示磁盘
 diskutil umount /Volumes/HHKB_BLE
 ```
 
-执行后得到的结果是 `Volume HHKB_BLE on disk4 unmounted`，记住这里是`disk4`，然后接下来执行如下命令，注意这条里的disk4与上一条命令的得到的结果对应。不要改动`seek=4`。
+执行后得到的结果是 <code>Volume HHKB_BLE on <span style='color:red'><b>disk2</b></span> unmounted</code>，记住这里的`disk2`，你的系统里可能是其他数字。然后接下来执行如下命令，注意这条里的disk2与上一条命令的得到的结果对应。
 
 ```macOS
-sudo dd if=./HHKB_BLE.BIN of=/dev/disk4 seek=4
+sudo dd if=./HHKB_BLE.BIN of=/dev/disk2 seek=4
 ```
+
+> [!ydda] 特别注意
+> - 一定不要改动`seek=4`。
 
 上面的`./HHKB_BLE.BIN`是 因为我在Download目录里运行的命令，所以使用的相对路径。也可以如下使用绝对路径，不用完全手打，在命令打到`if=`后，直接把BIN文件拖到终端命令窗口，它会自动获取该BIN文件的绝对路径。
 
 ```macOS
-sudo dd if=/Users/yang/Downloads/HHKB_BLE.BIN of=/dev/disk4 seek=4
+sudo dd if=/Users/yang/Downloads/HHKB_BLE.BIN of=/dev/disk2 seek=4
 ```
 
 等待命令完成后就刷新成功。比较新的Bootloader会自动退出刷机模式，有的则需要手动退出。整个操作过程如下图。
