@@ -9,8 +9,7 @@ I am not familiar with all the firmware and I am only responsible for providing 
 To make it easier to distinguish the firmware version, the USB device name is different when plugging in the USB.
 
 - The firmware for YDKB is KBD_NAME (USB_Dxxx)
-- The firmware that supports VIA is KBD_NAME (VIA_Dxxx)
-- The firmware supporting Vial is KBD_NAME (VIAL_Dxxx)
+- The firmware supporting VIA / Vial is KBD_NAME (VIAL_Dxxx)
 
 where Dxxx represents the firmware date.
 
@@ -36,7 +35,7 @@ The way to view this name may differ on different systems.
 
 In <u>Start Menu - Settings - Devices</u> (not Device Manager), check its USB keyboard name (not the Bluetooth connection name).
 
-![win10](assets/firmware_for_via_01.jpg)
+![win10](../assets/firmware_01.jpg)
 ```
 
 ```ad-yddcol1

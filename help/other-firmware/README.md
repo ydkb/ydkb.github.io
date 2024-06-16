@@ -9,8 +9,7 @@
 为了方便区分固件版本，在插上USB的时候，USB设备名称有所区别。
 
 - YDKB的固件是 KBD_NAME (USB_Dxxx)
-- 支持VIA的固件是 KBD_NAME (VIA_Dxxx)
-- 支持Vial的固件是 KBD_NAME (VIAL_Dxxx)
+- 支持VIA /Vial的固件是 KBD_NAME (VIAL_Dxxx)
 
 其中Dxxx代表了固件日期。
 
@@ -36,7 +35,7 @@
 
 在 <u>开始菜单 - 设置 - 设备</u> 里(不是设备管理器)，查看它的USB键盘名称(不是蓝牙连接名称)。
 
-![win10](assets/firmware_for_via_01.jpg)
+![win10](../assets/firmware_01.jpg)
 ```
 
 ```ad-yddcol1
