@@ -5,6 +5,12 @@
 
 关于YD67BLE的更多说明，可参看：[yd67ble](keyboards/yd67ble.md)
 
+##### 2024-06-22 (DO6M)
+- 『# 』USB连接下默认从NKRO(全键无冲)改为6KRO(任意6键无冲突)。原因是，macOS的`使用大写锁定键切换"ABC"输入法模式` 在NKRO下工作不正常，有兼容问题。蓝牙模式下始终为6KRO，所以不受影响。如果需要在连接有线时，游戏或特定模式下使用NKRO，依然可以使用<kbd>LShift+RShift+N</kbd>手动切换。
+- 「+」正常使用时，偶尔遇到按键卡顿明显，尝试自动重启键盘让蓝牙重连(代替需要手动<kbd>LShift+RShift+B</kbd>)，以恢复正常。
+- 「+」增加支持 <kbd>Cmd </kbd> + <kbd>~\` Esc</kbd>  触发为  <kbd>Cmd </kbd> + <kbd>\`</kbd> 
+- 「#」改善在较新的macOS系统下，电脑睡眠后，10多秒后会再次被键盘唤醒的问题。
+
 ##### 2023-12-24 (DNCO)
 
 - 「+」[修饰键组合键](app://obsidian.md/edit-keymap/mods-key.md) 或 [修饰键 | 按键](app://obsidian.md/edit-keymap/mods-tap-key.md)，其中的按键，可以设置为 音量键 或 鼠标键。即可将单个按键设置为例如: Ctrl + 滚轮上，Shift + 音量加。

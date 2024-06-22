@@ -70,7 +70,7 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 | Taco Pad             | [2024-04-30_DO4U](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore')         |      |
 | Tofu-fa              | [2024-04-30_DO4U](other-firmware/vial/ydkb_kbdfans_tofufa_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofufa_via.json ':ignore')          |      |
 | Uni88                | [2024-06-20_DO6K](other-firmware/vial/ydkb_kbdfans_uni88_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_uni88_via.json ':ignore')          |      |
-| YD67BLE (KBD67 lite) | [2023-07-15_DN7F](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
+| YD67BLE (KBD67 lite) | [2024-06-22_DO6M](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
 
 
 ### 2 连接Vial
