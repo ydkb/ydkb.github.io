@@ -32,11 +32,11 @@ The firmware update method in the table below is consistent with ydkb.io. Most u
 To download the JSON file, right-click the corresponding JSON link and select Save As.
 
 | Eevee series??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
-| ---- | ---- | ---- | ---- |
-| Eevee \#EE60 | [2024-06-19_DO6J](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
-| Eevee \#HFKB | [2024-06-19_DO6J](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
-| Eevee \#40A  | [2024-06-19_DO6J](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
-| Eevee \#40B  | [2024-06-19_DO6J](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
+| ------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- | ---- |
+| Eevee \#EE60 | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
+| Eevee \#HFKB | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
+| Eevee \#40A  | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
+| Eevee \#40B  | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
 
 | Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
 | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------- |
