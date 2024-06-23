@@ -37,7 +37,7 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 | Eevee \#40A  | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
 | Eevee \#40B  | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
 
-| 键盘??25%            | VIA / Vial 固件下载                                                               | VIA JSON                                                           | 补充说明                |
+| 键盘??25%            | VIA / Vial 固件下载                                                            | VIA JSON                                                           | 补充说明                |
 | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------- |
 | BLE660C/BLE980C    | [2024-05-30_DO5U](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore')   | LAYOUTS里选择660c或980c |
 | HHKB BLE           | [2024-06-14_DO6E](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore')       | LAYOUTS里选择US/JP布局   |
@@ -64,7 +64,7 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 | KBD8x Mk3 OG         | [2024-06-23_DO6N](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_og_vial.zip ':ignore')     | [JSON](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_og_via.json ':ignore')     |      |
 | Kunlun               | [2023-07-15_DN7F](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore')                  | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore')                  |      |
 | Mountain             | [2023-07-15_DN7F](other-firmware/vial/ydkb_mountain_vial.zip ':ignore')                | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore')                |      |
-| PAVLOV               | [2024-03-17_DO3H](other-firmware/vial/ydkb_jolteon_pavlov_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_jolteon_pavlov_via.json ':ignore')          |      |
+| PAVLOV               | [2024-06-23_DO6N](other-firmware/vial/ydkb_jolteon_pavlov_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_jolteon_pavlov_via.json ':ignore')          |      |
 | Redux60RGB ANSI      | [2024-06-19_DO6J](other-firmware/vial/ydkb_kbdfans_redux60rgb_ansi_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_redux60rgb_ansi_via.json ':ignore') |      |
 | Taco(75%)            | [2024-06-23_DO6N](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore')          |      |
 | Taco Pad             | [2024-06-23_DO6N](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore')         |      |

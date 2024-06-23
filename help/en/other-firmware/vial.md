@@ -65,7 +65,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | KBD8x Mk3 OG         | [2024-06-23_DO6N](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_og_vial.zip ':ignore')     | [JSON](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_og_via.json ':ignore')     |      |
 | Kunlun               | [2023-07-15_DN7F](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore')                  | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore')                  |      |
 | Mountain             | [2023-07-15_DN7F](other-firmware/vial/ydkb_mountain_vial.zip ':ignore')                | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore')                |      |
-| PAVLOV               | [2024-03-17_DO3H](other-firmware/vial/ydkb_jolteon_pavlov_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_jolteon_pavlov_via.json ':ignore')          |      |
+| PAVLOV               | [2024-06-23_DO6N](other-firmware/vial/ydkb_jolteon_pavlov_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_jolteon_pavlov_via.json ':ignore')          |      |
 | Redux60RGB ANSI      | [2024-06-19_DO6J](other-firmware/vial/ydkb_kbdfans_redux60rgb_ansi_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_redux60rgb_ansi_via.json ':ignore') |      |
 | Taco(75%)            | [2024-06-23_DO6N](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore')          |      |
 | Taco Pad             | [2024-06-23_DO6N](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore')         |      |
