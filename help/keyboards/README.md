@@ -8,8 +8,7 @@
   * [Taichi Pad](keyboards/taichi-pad)
   * [Sairo64](keyboards/sairo64)
   * [X-8086K](keyboards/x-8086k)
-  * [瀚文75 (HW75)](keyboards/hw75)
-  
+
  --- YDKB (BLE 系列) ---
   * [BLUP / BLE40](keyboards/blup)
   * [Chicory](keyboards/chicory)
