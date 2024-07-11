@@ -8,8 +8,7 @@ Here are some specific instructions for some keyboards supported by YDKB.
   * [Taichi Pad](en/keyboards/taichi-pad)
   * [Sairo64](en/keyboards/sairo64)
   * [X-8086K](en/keyboards/x-8086k)
-  * [瀚文75 (HW75)](en/keyboards/hw75)
-  
+
 --- YDKB(BLE Series) ---
   * [BLUP / BLE40](en/keyboards/blup)
   * [Chicory](en/keyboards/chicory)
