@@ -11,6 +11,8 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 
 如果遇到bug可加 YDKB QQ ②群“767441859”联系我，我尽量解决。
 
+需要源代码的，可访问: https://github.com/yangdigi/vial-qmk/tree/vial/keyboards/ydkb/
+
 
 ## 当前支持键盘的固件下载
 
