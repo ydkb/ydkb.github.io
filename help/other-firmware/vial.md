@@ -74,6 +74,10 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 | Uni88                | [2024-07-27_DO7R](other-firmware/vial/ydkb_kbdfans_uni88_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_uni88_via.json ':ignore')          |      |
 | YD67BLE (KBD67 lite) | [2024-06-22_DO6M](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
 
+> [!ydda] 使用Linux的用户注意
+> - Linux下受限于一些权限问题，通用浏览器使用在线版，无法直接连接到键盘。
+> - 个人建议Linux用户下载本地版的 VIA 或 Vial 运行使用。
+
 
 ### 2 连接Vial
 

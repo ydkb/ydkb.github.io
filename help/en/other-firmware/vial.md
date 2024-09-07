@@ -74,6 +74,9 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Uni88                | [2024-07-27_DO7R](other-firmware/vial/ydkb_kbdfans_uni88_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_uni88_via.json ':ignore')          |      |
 | YD67BLE (KBD67 lite) | [2024-06-22_DO6M](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
 
+> [!ydda] Note for Linux users
+> - Due to some permission issues, the online version of the general browser cannot be directly connected to the keyboard.
+> - I personally recommend that Linux users download the local version of VIA or Vial and run it.
 
 ### 2 Connect Vial
 
