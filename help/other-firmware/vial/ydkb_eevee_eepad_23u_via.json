@@ -1,0 +1,35 @@
+{
+  "name": "YDKB Eevee #EEPad_23U",
+  "vendorId": "0x5944",
+  "productId": "0x24C0",
+  "lighting": "none",
+  "matrix": {"rows": 6, "cols": 4},
+  "customKeycodes": [
+    {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},
+    {"name": "RESET", "title": "Enter FLASH Mode when pressed with LCtrl.", "shortName": "RESET"},
+    {"name": "BAT LEVEL", "title": "Outputs battery level in text (Shortcut: LShift+RShift+V)", "shortName": "BAT%"},
+    {"name": "LOCK MODE", "title": "Make the keyboard enter lock mode and can be only waked up by pressing F and J.", "shortName": "Lk.M"}, 
+    {"name": "RGB Toogle", "title": "RGB Toogle", "shortName": "R.TG"},
+    {"name": "RGB Mode-", "title": "RGB Mode-", "shortName": "R.M-"},
+    {"name": "RGB Mode+", "title": "RGB Mode+", "shortName": "R.M+"},
+    {"name": "RGB HUE-", "title": "RGB HUE-", "shortName": "HUE-"},
+    {"name": "RGB HUE+", "title": "RGB HUE+", "shortName": "HUE+"},
+    {"name": "RGB SAT-", "title": "RGB SAT-", "shortName": "SAT-"},
+    {"name": "RGB SAT+", "title": "RGB SAT+", "shortName": "SAT+"},
+    {"name": "RGB LUM-", "title": "RGB LUM-", "shortName": "LUM-"},
+    {"name": "RGB LUM+", "title": "RGB LUM+", "shortName": "LUM+"},
+    {"name": "00", "title": "Keypad 00", "shortName": "00"}
+  ], 
+  "layouts": {
+    "labels":["2u P+", "1u PEnter", "2u P0"], 
+        "keymap": [
+                [{"c":"#777777"},"0,0",{"c":"#aaaaaa"},"0,3","0,2","0,1"],
+                [{"y":0.25},"1,0","1,3","1,2","1,1"],
+                [{"c":"#cccccc"},"2,0","2,3","2,2",{"c":"#aaaaaa"},"2,1\n\n\n0,0",{"x":0.25,"h":2},"2,1\n\n\n0,1"],
+                [{"c":"#cccccc"},"3,0","3,3","3,2",{"c":"#aaaaaa"},"3,1\n\n\n0,0"],
+                [{"c":"#cccccc"},"4,0","4,3","4,2",{"c":"#777777","h":2},"4,1\n\n\n1,0",{"x":0.25,"c":"#aaaaaa"},"4,1\n\n\n1,1"],
+                [{"c":"#cccccc"},"5,0\n\n\n2,0","5,3\n\n\n2,0","5,2",{"x":1.25,"c":"#aaaaaa"},"5,1\n\n\n1,1"],
+                [{"y":0.25,"c":"#cccccc","w":2},"5,0\n\n\n2,1"]
+        ]
+    }
+}

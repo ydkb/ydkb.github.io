@@ -38,6 +38,7 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 | Eevee \#HFKB | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
 | Eevee \#40A  | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
 | Eevee \#40B  | [2024-06-22_DO6M](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
+| Eevee \#EEPad_23U  | [2024-09-04_DO94](other-firmware/vial/ydkb_eevee_eepad_23u_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_eepad_23u_via.json ':ignore')  |      |
 
 | 键盘??25%            | VIA / Vial 固件下载                                                            | VIA JSON                                                           | 补充说明                |
 | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------- |
