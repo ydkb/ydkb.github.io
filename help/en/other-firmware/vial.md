@@ -150,7 +150,9 @@ Among them, the keys to control Mode (mode) / HUE (hue) / SAT (saturation) / LUM
 ![|700](assets/vial-ydkb-rgb.jpg)
 ![|700](assets/via-ydkb-rgb.jpg)
 
-If RGB is supported but there is no above button in User / CUSTOM. Then use the corresponding key control of VIA / Vial.
+If RGB is supported but there is no above button in User / CUSTOM, you can use the corresponding button of Vial to control it, as shown below.
+
+![|700](assets/vial-ydkb-rgb2.png)
 
 ### 3 monochrome backlight
 Use the VIA / Vial's backlit control buttons. However, due to the large size of the compiled firmware, many keyboards do not support the breathing mode of the backlight, but only support brightness adjustment.

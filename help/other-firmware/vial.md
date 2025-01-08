@@ -151,7 +151,9 @@ RGB的控制与qmk有所区别，本页的部分固件，RGB的控制说明参�
 ![|700](assets/vial-ydkb-rgb.jpg)
 ![|700](assets/via-ydkb-rgb.jpg)
 
-如果支持 RGB 但是在 User / CUSTOM 中没有以上按键的。那么可使用 VIA / Vial 的对应按键控制。
+如果支持 RGB 但是在 User / CUSTOM 中没有以上按键的。那么可使用 Vial 的对应按键控制，如下图。
+
+![|700](assets/vial-ydkb-rgb2.png)
 
 ### 3 单色轴灯背光
 使用 VIA / Vial 的背光控制按键即可。但是，不少键盘因为编译的固件尺寸偏大，未支持背光的呼吸模式，仅支持亮度调整。
