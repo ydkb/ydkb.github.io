@@ -63,7 +63,7 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 
 | KBDFans 键盘??25%      | VIA / Vial 固件下载                                                                        | VIA JSON                                                                    | 补充说明 |
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
-| Agar                 | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_agar_vial.zip ':ignore')            | [JSON](other-firmware/vial/ydkb_kbdfans_agar_via.json ':ignore')            |      |
+| Agar                 | [2025-01-17_DP1H](other-firmware/vial/ydkb_kbdfans_agar_vial.zip ':ignore')            | [JSON](other-firmware/vial/ydkb_kbdfans_agar_via.json ':ignore')            |      |
 | Boomerang            | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_boomerang_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_boomerang_via.json ':ignore')       |      |
 | Boop65               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')          |      |
 | Dusk67               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_dusk67_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_dusk67_via.json ':ignore')          |      |
