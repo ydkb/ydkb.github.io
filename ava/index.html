@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AVA Editor. Not for everyone, Just for somebody.</title>
+    <meta charset="utf-8">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="./common/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./common/css/kbd-webfont.css" rel="stylesheet">
+    <link href="./common/css/materialize.min.css" rel="stylesheet">
+    <link href="./common/css/augmented.css" rel="stylesheet">
+    <link href="./common/fonts/material-icons.css" rel="stylesheet">
+    <link href="./common/onlinewebfonts/onlinewebfonts.css" rel="stylesheet">
+    <link href="keymap_editor.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="uicolor">
+            <div class="nav-wrapper page-wd row">
+                <div class="brand-logo left full" style="width: 25%;"><span>AVA Editor (beta)</span></div>
+                <ul id="top-tabs" class="tabs" style="background-color: inherit;display: flex;justify-content: center;width: 50%;">
+                    <li class="tab"><a id="top-tabs-keymaps">Keymaps</a></li>
+                    <li class="tab"><a>Vial</a></li>
+                    <li class="tab"><a>Tester</a></li>
+                    <li class="tab"><a>Settings</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right" style="margin-top: -64px; width: 25%;display: flex;">
+                    <li style="margin-left: auto; "><a class="dropdown-trigger" data-target="lang-theme"><i class="material-icons mr5">language</i>Language</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main onselectstart="return false" class="device-connected">
+        <button id="fly-button">fb</button>
+        <div id="user-keyboard-panel" class="bg1 z-depth-1 hoverable">
+            <div class="row uicolor jsdef ht-42">
+                <div class="col s2 left">
+                     <div class="fl">
+                        <span id="btnDevice" class='mykeycap2 btn select tooltipped' style="height:32px; line-height:32px; border-radius: 0 0 10px 10px;max-width: 200px; white-space: nowrap;" data-tooltip="已连接键盘的信息">连接键盘</span>
+                    </div>
+                </div>
+                <div class="col s8">
+                    <ul id="user-layer-tabs" class="tabs" style="background-color: inherit;display: flex;justify-content: center">
+                        <li class="tab"><a id="layer-0">0</a></li>
+                        <li class="tab"><a id="layer-1">1</a></li>
+                        <li class="tab"><a id="layer-2">2</a></li>
+                        <li class="tab"><a id="layer-3">3</a></li>
+                        <li class="tab"><a id="layer-4">4</a></li>
+                        <li class="tab"><a id="layer-5">5</a></li>
+                        <li class="tab"><a id="layer-6">6</a></li>
+                        <li class="tab"><a id="layer-7">7</a></li>
+                    </ul>
+                </div>
+                <div class="col right">
+                    <a id='display-layout-info' class="mykeycap2 btn waves-effect jsdef wd-148"
+                        lang="zh_sc" style="display: none;">显示当前配列信息</a>
+                </div>
+            </div>
+
+            <!--    loading    -->
+            <div class="page-wd" style="position: absolute;">
+                <div id="loading" class="loader-wobble page-wd" style="z-index: 99; display: none">Loading</div>
+            </div>
+            <!--    Keyboard keys    -->
+            <div id="user-keyboard"></div>
+            <!--    layout info   -->
+            <div id="layout-info-pane" class="row" style="display: none">
+                <div class="col s2"></div>
+                <div class="col s8">
+                    <span lang="zh_sc">当前配列总按键数:&nbsp;</span><span id="this_layout_keys">0</span><span
+                        lang="zh_sc">，&nbsp;&nbsp;&nbsp;&nbsp;各按键的长度如上图所示，长度在2u以上的，还有标注需要的卫星轴(或平衡杆)尺寸。</span><br>
+                    <span style="font-size: 15px"
+                        lang="zh_sc">注：是否支持平衡杆或钢板卫星轴，由定位板决定，不由PCB决定，只要定位板支持就能用。&nbsp;是否支持PCB卫星轴由PCB决定，常说的螺丝卫星轴也属PCB卫星轴，且如有同时使用定位板还需要定位板开孔也支持。</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customize keycap color -->
+        <div id="keycap_color-userset-border" class="row" style="width: 500px; top:300px; left: 400px">
+            <div class="card">
+                <div class="card-content">
+                    <div id="keycap_color-user">
+                        <span class="card-title" lang="zh_sc">自定义键帽颜色</span><br>
+                        <div id="keycap_color-user-setting"></div>
+                    </div>
+                    <div class="row">
+                        <a style="line-height: 36px" lang="zh_sc">导入 & 导出 (注意格式正确，暂只支持键帽颜色)</a> <a
+                            id="import-user-keycap-colors" class="btn waves-effect uicolor"
+                            style="position: absolute; left: 380px" title="导入" lang="zh_sc">导入</a>
+                        <textarea id="user-keycap-colors" class="materialize-textarea not_drag"
+                            style="font-size: 15px"></textarea>
+                    </div>
+                    <div class="card-action">
+                        <a id="keycap_color-userset-off" href="#" lang="zh_sc">完成</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div id="setting-panel" class="page-wd bg1 z-depth-1 hoverable"
+            style="margin-top: 10px; margin-bottom:20px; display: none">
+            <div id="keycode_tabs" style="min-height: 360px">
+                <div class="row uicolor" style="margin-bottom: 10px; height: 42px">
+                    <ul id="setting-tabs" class="tabs" style="background-color:inherit;display: flex; justify-content: center;">
+                        <li class="tab"><a href="#tabs-keys-basic" lang="zh_sc"><i class="material-icons">keyboard</i>Basic</a></li>
+                        <li class="tab"><a href="#tabs-keys-media-mouse" lang="zh_sc"><i class="material-icons">keyboard</i>Media & Mouse</a></li>
+                        <li class="tab"><a href="#tabs-keys-layer" lang="zh_sc"><i class="material-icons">keyboard</i>Layers</a></li>
+                        <li class="tab"><a href="#tabs-keys-mods" lang="zh_sc"><i class="material-icons">keyboard</i>Mods</a></li>
+                        <li class="tab"><a href="#tabs-keys-light" lang="zh_sc"><i class="material-icons">keyboard</i>Light</a></li>
+                        <li class="tab"><a href="#tabs-setting-layout" lang="zh_sc"><i class="material-icons">settings</i>Layout</a></li>
+                        <li class="tab"><a href="#tabs-keycap" lang="zh_sc"><i class="material-icons">palette</i>Keycap</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Main -->
+                <div id="tabs-keys-basic" class="row jsdef ml-70 wt-1142">
+                    <ul class="keyboard-set ">
+                        <ks>KC_ESC [rowstart low], KC_TRNS [bluek low],KC_F1 [low],KC_F2, KC_F3, KC_F4, KC_F5,KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_NO [low s1 redk],
+                        KC_PSCR [low spc25], KC_SLCK [low], KC_PAUS [low]</ks>
+                        <ks>KC_CALC [spc25 low s1], KC_MUTE [low s1], KC_VOLD, KC_VOLU</ks>
+
+                        <ks>KC_GRV [rowstart], KC_1 [ ], KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC [t1 w200],
+                        KC_INS [t1 spc25], KC_HOME [t1], KC_PGUP</ks>
+                        <ks>KC_NLCK [spc25], KC_PSLS [ ], KC_PAST [t1" style="padding-top: 4px"], KC_PMNS</ks>
+
+                        <ks>KC_TAB [t1 rowstart w150], KC_Q [t1a], KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC [ ], KC_RBRC, KC_BSLS [w150], KC_DEL [t1 spc25], KC_END [t1], KC_PGDN</ks>
+                        <ks>KC_P7 [spc25], KC_P8 [ ], KC_P9, KC_PPLS [h200]</ks>
+
+                        <ks>KC_CAPS [t1 rowstart w175], KC_A [t1a], KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN [ ], KC_QUOT [ " style="padding-top: 5px"], KC_ENT [t1 w225],
+                        KC_NUBS [low spc25], KC_NUHS [low], KC_APP</ks>
+                        <ks>KC_P4 [spc25], KC_P5 [ ], KC_P6</ks>
+
+                        <ks>KC_LSFT [t1 rowstart w225], KC_Z [t1a], KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM [ ], KC_DOT, KC_SLSH, KC_RSFT [t1 w275], KC_UP [t1 spc125]</ks>
+                        <ks>KC_P1 [spc125], KC_P2 [ ], KC_P3, KC_PENT [h200]</ks>
+
+                        <ks>KC_LCTL [t1 rowstart w125], KC_LGUI [t1 w125], KC_LALT, KC_SPC [t1 w625], KC_RALT [t1 w125], KC_RGUI, Fn1, KC_RCTL, KC_LEFT [t1 spc25], KC_DOWN [t1], KC_RGHT</ks>
+                        <ks>KC_P0 [spc25 w200], KC_DOT [ ]</ks>
+                    </ul>
+                </div>
+                <div id="tabs-keys-media-mouse" class="row jsdef ml-40">
+                    <ul class="keyboard-set icon col">
+                        <div class="keys-category">屏幕亮度 &amp; 多媒体键</div>
+                        <ks>KC_BRID [s1 rowstart], KC_BRIU [s1], KC_MUTE, KC_VOLD, KC_VOLU, KC_MAIL, KC_MYCM</ks>
+                        <ks>KC_CALC [s1 rowstart], KC_EJCT [s1], KC_MSEL, KC_MSTP, KC_MPLY, KC_MPRV, KC_MNXT</ks>
+                        <div class="keys-category">网络 &amp; 系统</div>
+                        <ks>KC_WWW_SEARCH [rowstart], KC_WWW_HOME [ ], KC_WWW_BACK, KC_WWW_FORWARD, KC_WWW_STOP, KC_WWW_REFRESH, KC_WWW_FAVORITES</ks>
+                        <ks>KC_PWR [rowstart], KC_SLEP [ ], KC_WAKE</ks>
+                    </ul>
+                    <ul class="keyboard-set col icon jsdef ml-20">
+                        <div class="keys-category">鼠标按键</div>
+                        <ks>KC_MS_UP [rowstart], KC_MS_DOWN [ ], KC_MS_LEFT, KC_MS_RIGHT,
+                            KC_MS_BTN1 [rowstart], KC_MS_BTN3 [ ], KC_MS_BTN2, KC_MS_BTN4, KC_MS_BTN5,
+                            KC_MS_WH_UP [rowstart], KC_MS_WH_DOWN [ ], KC_MS_WH_LEFT, KC_MS_WH_RIGHT,
+                            KC_MS_ACCEL0 [rowstart], KC_MS_ACCEL1 [ ], KC_MS_ACCEL2</ks>
+                    </ul>
+                    <ul class="keyboard-set col icon jsdef ml-20 wd-500">
+                        <div class="keys-category">Other</div>
+                        <ks>KC_F13 [rowstart], KC_F14 [ ], KC_F15, KC_F16, KC_F17, KC_F18, KC_F19, KC_F20, KC_F21, KC_F22, KC_F23, KC_F24, KC_POWER, KC_PEQL</ks>
+                        <div class="keys-category">LANG</div>
+                        <ks>KC_RO [rowstart], KC_KANA [ ], KC_JYEN, KC_HENK, KC_MHEN, KC_HAEN, KC_HANJ</ks>
+                        <div class="keys-category">Mechanical Locking Key</div>
+                        <ks>KC_LNUM [rowstart], KC_LCAP [ ], KC_LSCR</ks>
+                    </ul>
+                </div>
+                <!-- Layer -->
+                <div id="tabs-keys-layer" class="row jsdef ml-70">
+                    <div class="keyboard-set col">
+                        <div class="keys-category">瞬时开启层(按下时开启，松开时关闭)</div>
+                        <ks>Fn0 [t1 rowstart], Fn1 [t1], Fn2, Fn3, Fn4, Fn5, Fn6, Fn7</ks>
+                        <div class="keys-category">跳转到层(按下时直接跳转到某层)</div>
+                        <ks>T->0 [t1 rowstart], T->1 [t1], T->2, T->3, T->4, T->5, T->6, T->7</ks>
+                        <div class="keys-category">层开关(切换层开启或关闭)</div>
+                        <ks>T0 [t1 rowstart], T1 [t1], T2, T3, T4, T5, T6, T7</ks>
+                    </div>
+                    <div class="keyboard-set col jsdef ml-20">
+                        <div class="keys-category">瞬时开启层 | 层开关(连续点击三次时开关层)</div>
+                        <ks>TT0 [t1 rowstart], TT1 [t1], TT2, TT3, TT4, TT5, TT6, TT7</ks>
+                        <div class="keys-category">瞬时开启层 | 瞬时开启层</div>
+                        <ks>LT0_(kc) [rowstart], LT1_(kc) [], LT2_(kc), LT3_(kc), LT4_(kc), LT5_(kc), LT6_(kc), LT7_(kc)</ks>
+                        <ks>LTi0_(kc) [rowstart], LTi1_(kc) [], LTi2_(kc), LTi3_(kc), LTi4_(kc), LTi5_(kc), LTi6_(kc), LTi7_(kc)</ks>
+                    </div>
+                </div>
+                <!-- Tap -->
+                <div id="tabs-keys-mods" class="row jsdef ml-45">
+                    <div id="tabs-keys-mods-card" class="card col">
+                        <div class="card-content" style="padding: 0 12px 12px 12px;">
+                            <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Select Mods and Action (此页待进一步优化显示和操作)</span>
+                            <li class="optgroup-option"><span style="width: 100px;">L or R: </span> <span>
+                                <label><input type="radio" name="lrmods" value="0" class="with-gap"><span>Left</span></label>
+                                <label><input type="radio" name="lrmods" value="0x10" class="with-gap"><span>Right</span></label>
+                            </span></li>
+                            <li class="optgroup-option"><span style="width: 100px;">Mods: </span> <span style="margin-left: 3px;">
+                                <label><input type="checkbox" name="mods" value="1"><span kc=0x100></span></label>
+                                <label><input type="checkbox" name="mods" value="2"><span kc=0x200></span></label>
+                                <label><input type="checkbox" name="mods" value="4"><span kc=0x400></span></label>
+                                <label><input type="checkbox" name="mods" value="8"><span kc=0x800></span></label>
+                            </span></li>
+                            <li class="optgroup-option"><span style="width: 100px;">Action: </span> <span>
+                                <label><input type="radio" name="action" value="modskey" class="with-gap"><span>ModsKey</span></label>
+                                <label><input type="radio" name="action" value="modstap" class="with-gap"><span>Mods_Tap</span></label>
+                                <label><input type="radio" name="action" value="layermods" class="with-gap"><span>LayerMods</span></label>
+                            </span></li>
+                            <li class="optgroup-option layermods" style="display: none;"><span style="width: 100px;">Layer: </span> <span>
+                                <label><input type="radio" name="layer" value="1"><span>0</span></label>
+                                <label><input type="radio" name="layer" value="2"><span>1</span></label>
+                                <label><input type="radio" name="layer" value="3"><span>2</span></label>
+                                <label><input type="radio" name="layer" value="4"><span>3</span></label>
+                                <label><input type="radio" name="layer" value="1"><span>4</span></label>
+                                <label><input type="radio" name="layer" value="2"><span>5</span></label>
+                                <label><input type="radio" name="layer" value="3"><span>6</span></label>
+                                <label><input type="radio" name="layer" value="4"><span>7</span></label>
+                            </span></li>
+                            <div id="card-mods-result" class="row" style="margin-top: 20px;margin-left: 10px;">
+                                    <span style="width: 100px; float: left; margin-top: 20px;">Result: </span>
+                                    <li class="result key-set tooltipped" style="zoom:1.5" kc="0x300"></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- other keys -->
+                <div id="tabs-keys-light" class="row jsdef ml-45">
+                    <div class="keyboard-set col jsdef ml-20">
+                        <div class="keys-category" lang="zh_sc">单色灯光控制</div>
+                        <ks>BL_TOGG [rowstart], BL_ON [ ], BL_OFF, BL_DEC, BL_INC, BL_STEP, BL_BRTG</ks>
+                        <div class="keys-category" lang="zh_sc">RGB 灯光控制</div>
+                        <ks>RGB_TOG [rowstart], RGB_RMOD [ ], RGB_MOD, RGB_HUD, RGB_HUI, RGB_SAD, RGB_SAI, RGB_VAD, RGB_VAI</ks> 
+                        <div class="keys-category" lang="zh_sc">RGB 灯光(额外按键)</div>
+                        <ks>RGB_SPD [rowstart], RGB_SPI [ ], RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, RGB_M_K, RGB_M_X, RGB_M_G</ks>
+                        <div id="macrofn" style="clear: both"></div>
+                    </div>
+                </div>
+
+                <div id="tabs-setting-layout" class="row jsdef wd-600">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Layouts(待完善，暂未与vial设置同步)</span>
+                            <div id="layouts-set"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- keycap test -->
+                <div id="tabs-keycap" class="row jsdef ml-30 wd-1220">
+                    <div class="col" id="mykeycap_change" style="width: 54px">
+                        <li style="text-align: center;">Style</li>
+                        <li><a class="btn waves-effect uicolor" value="dsa">D S A</a></li>
+                        <li><a class="btn waves-effect uicolor" value="gmk">G M K</a></li>
+                        <li><a class="btn waves-effect uicolor" style="height: 90px;" value="flat">F L A T</a></li>
+                    </div>
+
+                    <div class="col" id="keycap-color-list" style="width: 1166px">
+                        <div id="keycap_color-userset-on" class="keycap-color-block">
+                            <li class="key-color key-main">key</li>
+                            <li class="key-color key-enter">enter</li>
+                            <li class="key-color key-mod">Customize</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="temp-row" class="page-wd row">
+            <div class="col s9" style="font-size: 20px;">当前还未完善初始界面和演示模式。请点击左上角连接键盘，连接后可再次点击断开。</div>
+            <div id="system-style" class="col">
+                <a id="mykeycap_system_change" class="col btn waves-effect tooltipped uicolor"
+                    data-tooltip="手动切换按键值显示为 Win 或 Mac 风格. (临时放这里)" lang="zh_sc"> 
+                    <button id="system_win" class="col btn disabled">Win</button>
+                    <button id="system_mac" class="col btn disabled">Mac</button>
+                </a>
+            </div>
+        </div>
+
+    </main>
+    <footer class="page-footer uicolor">
+         <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2016 - <span id="tyear">2016</span> YANG. Some rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <ul id="lang-theme" class="dropdown-content">
+        <li><a onclick="LangChange('zh_cn');">简体中文</a></li>
+        <li><a onclick="LangChange('en');">English</a></li>
+        <li class="divider"></li>
+        <div id="ui-theme"></div>
+    </ul>
+
+    <script src="./common/FileSaver.min.js"></script>
+    <script src="./common/jquery.slim.min.js"></script>
+    <script src="./common/qndjquery-ui.min.js"></script>
+    <script src="./common/materialize.min.js"></script>
+    <script src="./common/jscolor.min.js"></script>
+    <script src="./common/pako.min.js"></script>
+    <script src="./common/jquery-lang.min.js"></script>
+    <script src="./common/text-autospace.min.js"></script>
+    <script src="./editor.min.js"></script>
+</body>
+
+</html>

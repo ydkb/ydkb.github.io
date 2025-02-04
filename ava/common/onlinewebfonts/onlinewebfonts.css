@@ -1,0 +1,112 @@
+@charset "utf-8";
+/*
+      www.OnlineWebFonts.Com 
+      You must credit the author Copy this link on your web 
+      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+      OR
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+*/
+@font-face {
+	font-family: "onlinewebfonts";
+	src:url("onlinewebfonts.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="i_"]:before, [class*=" i_"]:before{
+	font-family: "onlinewebfonts";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.i_mouse_right:before {
+	content: "\e010";
+}
+.i_mouse_middle:before {
+	content: "\e012";
+}
+.i_mouse_left:before {
+	content: "\e013";
+}.i_mouse_wheel_up:before {
+	content: "\e011";
+}
+.i_mouse_wheel_down:before {
+	content: "\e014";
+}
+.i_mouse_wheel_left:before {
+	content: "\e015";
+}
+.i_mouse_wheel_right:before {
+	content: "\e016";
+}
+.i_mouse_back:before {
+	content: "\e017";
+}
+.i_mouse_forward:before {
+	content: "\e018";
+}
+.i_mouse_move_up:before {
+	content: "\e019";
+}
+.i_mouse_move_down:before {
+	content: "\e020";
+}
+.i_mouse_move_left:before {
+	content: "\e021";
+}
+.i_mouse_move_right:before {
+	content: "\e022";
+}
+.i_mouse_speed_slow:before {
+	content: "\e023";
+}
+.i_mouse_speed_medium:before {
+	content: "\e024";
+}
+.i_mouse_speed_fast:before {
+	content: "\e025";
+}
+.i_system_power:before {
+	content: "\e026";
+}
+.i_system_sleep:before {
+	content: "\e027";
+}
+.i_system_wake:before {
+	content: "\e028";
+}
+
+.i_mac_powermenu:before {
+	content: "\e030";
+}
+.i_mac_powersleep:before {
+	content: "\e031";
+}
+.i_mac_display_off:before {
+	content: "\e032";
+}
+
+.i_www_search:before {
+	content: "\e040";
+}
+.i_www_home:before {
+	content: "\e041";
+}
+.i_www_back:before {
+	content: "\e042";
+}
+.i_www_forward:before {
+	content: "\e043";
+}
+.i_www_stop:before {
+	content: "\e044";
+}
+.i_www_refresh:before {
+	content: "\e045";
+}
+.i_www_favorites:before {
+	content: "\e046";
+}
