@@ -19,10 +19,10 @@
             <div class="nav-wrapper page-wd row">
                 <div class="brand-logo left full" style="width: 25%;"><span>AVA Editor (beta)</span></div>
                 <ul id="top-tabs" class="tabs" style="background-color: inherit;display: flex;justify-content: center;width: 50%;">
-                    <li class="tab"><a id="top-tabs-keymaps">Keymaps</a></li>
-                    <li class="tab"><a>Vial</a></li>
-                    <li class="tab"><a>Tester</a></li>
-                    <li class="tab"><a>Settings</a></li>
+                    <li class="tab"><a value="layer">Keymaps</a></li>
+                    <li class="tab"><a value="vial">Vial</a></li>
+                    <li class="tab"><a value="tester">Tester</a></li>
+                    <li class="tab"><a value="settings">Settings</a></li>
                 </ul>
                 <ul id="nav-mobile" class="right" style="margin-top: -64px; width: 25%;display: flex;">
                     <li style="margin-left: auto; "><a class="dropdown-trigger" data-target="lang-theme"><i class="material-icons mr5">language</i>Language</a></li>
@@ -40,8 +40,8 @@
                         <span id="btnDevice" class='mykeycap2 btn select tooltipped' style="height:32px; line-height:32px; border-radius: 0 0 10px 10px;max-width: 200px; white-space: nowrap;" data-tooltip="已连接键盘的信息">连接键盘</span>
                     </div>
                 </div>
-                <div class="col s8">
-                    <ul id="user-layer-tabs" class="tabs" style="background-color: inherit;display: flex;justify-content: center">
+                <div id="user-tabs" class="col s8">
+                    <ul id="user-layer-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
                         <li class="tab"><a id="layer-0">0</a></li>
                         <li class="tab"><a id="layer-1">1</a></li>
                         <li class="tab"><a id="layer-2">2</a></li>
@@ -50,6 +50,19 @@
                         <li class="tab"><a id="layer-5">5</a></li>
                         <li class="tab"><a id="layer-6">6</a></li>
                         <li class="tab"><a id="layer-7">7</a></li>
+                    </ul>
+                    <ul id="user-vial-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
+                        <li class="tab"><a id="vial-macro-tab"><i class="material-icons"></i>Macro</a></li>
+                        <li class="tab"><a id="vial-tapdance-tab"><i class="material-icons"></i>Tap Dance</a></li>
+                        <li class="tab"><a id="vial-combo-tab"><i class="material-icons"></i>Combos</a></li>
+                        <li class="tab"><a id="vial-keyoverride-tab"><i class="material-icons"></i>Key Overrides</a></li>
+                        <li class="tab"><a id="vial-qmksetting-tab"><i class="material-icons"></i>QMK Settings</a></li>
+                    </ul>
+                    <ul id="user-tester-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
+                        <li class="tab"><a><i class="material-icons">grid_on</i>Matrix Test</a></li>
+                    </ul>
+                    <ul id="user-settings-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
+                        <li class="tab"><a><i class="material-icons">settings</i>Not Ready</a></li>
                     </ul>
                 </div>
                 <div class="col right">
@@ -63,7 +76,11 @@
                 <div id="loading" class="loader-wobble page-wd" style="z-index: 99; display: none">Loading</div>
             </div>
             <!--    Keyboard keys    -->
-            <div id="user-keyboard" class="gmk"></div>
+            <div id="user-content">
+                <div id="user-keyboard" class="layer tester gmk"></div>
+                <div id="vial-config" class="vial"> Not Ready </div>
+                <div id="editor-settings" class="settings"> Not Ready </div>
+            </div>
             <!--    layout info   -->
             <div id="layout-info-pane" class="row" style="display: none">
                 <div class="col s2"></div>
@@ -104,7 +121,7 @@
             style="margin-top: 10px; margin-bottom:20px; display: none">
             <div id="keycode_tabs" style="min-height: 360px">
                 <div class="row uicolor" style="margin-bottom: 10px; height: 42px">
-                    <ul id="setting-tabs" class="tabs" style="background-color:inherit;display: flex; justify-content: center;">
+                    <ul id="setting-tabs" class="tabs chrome" style="background-color:inherit;display: flex; justify-content: center;">
                         <li class="tab"><a href="#tabs-keys-basic" lang="zh_sc"><i class="material-icons">keyboard</i>Basic</a></li>
                         <li class="tab"><a href="#tabs-keys-media-mouse" lang="zh_sc"><i class="material-icons">keyboard</i>Media & Mouse</a></li>
                         <li class="tab"><a href="#tabs-keys-layer" lang="zh_sc"><i class="material-icons">keyboard</i>Layers</a></li>
