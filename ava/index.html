@@ -19,10 +19,10 @@
             <div class="nav-wrapper page-wd row">
                 <div class="brand-logo left full" style="width: 25%;"><span>AVA Editor (beta)</span></div>
                 <ul id="top-tabs" class="tabs" style="background-color: inherit;display: flex;justify-content: center;width: 50%;">
-                    <li class="tab"><a value="layer">Keymaps</a></li>
-                    <li class="tab"><a value="vial">Vial</a></li>
-                    <li class="tab"><a value="tester">Tester</a></li>
-                    <li class="tab"><a value="settings">Settings</a></li>
+                    <li class="tab"><a value="top-keymaps">Keymaps</a></li>
+                    <li class="tab"><a value="top-vial">Vial</a></li>
+                    <li class="tab"><a value="top-tester">Tester</a></li>
+                    <li class="tab"><a value="top-settings">Settings</a></li>
                 </ul>
                 <ul id="nav-mobile" class="right" style="margin-top: -64px; width: 25%;display: flex;">
                     <li style="margin-left: auto; "><a class="dropdown-trigger" data-target="lang-theme"><i class="material-icons mr5">language</i>Language</a></li>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div id="user-tabs" class="col s8">
-                    <ul id="user-layer-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
+                    <ul id="user-keymaps-tabs" class="tabs chrome top-keymaps" style="background-color: inherit;display: flex;justify-content: center">
                         <li class="tab"><a id="layer-0">0</a></li>
                         <li class="tab"><a id="layer-1">1</a></li>
                         <li class="tab"><a id="layer-2">2</a></li>
@@ -51,18 +51,15 @@
                         <li class="tab"><a id="layer-6">6</a></li>
                         <li class="tab"><a id="layer-7">7</a></li>
                     </ul>
-                    <ul id="user-vial-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
+                    <ul id="user-vial-tabs" class="tabs chrome top-vial" style="background-color: inherit;display: flex;justify-content: center">
                         <li class="tab"><a id="vial-macro-tab"><i class="material-icons"></i>Macro</a></li>
                         <li class="tab"><a id="vial-tapdance-tab"><i class="material-icons"></i>Tap Dance</a></li>
                         <li class="tab"><a id="vial-combo-tab"><i class="material-icons"></i>Combos</a></li>
                         <li class="tab"><a id="vial-keyoverride-tab"><i class="material-icons"></i>Key Overrides</a></li>
                         <li class="tab"><a id="vial-qmksetting-tab"><i class="material-icons"></i>QMK Settings</a></li>
                     </ul>
-                    <ul id="user-tester-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
+                    <ul id="user-tester-tabs" class="tabs chrome top-tester" style="background-color: inherit;display: flex;justify-content: center">
                         <li class="tab"><a><i class="material-icons">grid_on</i>Matrix Test</a></li>
-                    </ul>
-                    <ul id="user-settings-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
-                        <li class="tab"><a><i class="material-icons">settings</i>Not Ready</a></li>
                     </ul>
                 </div>
                 <div class="col right">
@@ -77,9 +74,8 @@
             </div>
             <!--    Keyboard keys    -->
             <div id="user-content">
-                <div id="user-keyboard" class="layer tester gmk"></div>
-                <div id="vial-config" class="vial"> Not Ready </div>
-                <div id="editor-settings" class="settings"> Not Ready </div>
+                <div id="user-keyboard" class="top-keymaps top-tester top-settings gmk"></div>
+                <div id="vial-config" class="top-vial"> Not Ready </div>
             </div>
             <!--    layout info   -->
             <div id="layout-info-pane" class="row" style="display: none">
@@ -117,9 +113,34 @@
 
         </div>
 
-        <div id="setting-panel" class="page-wd bg1 z-depth-1 hoverable"
-            style="margin-top: 10px; margin-bottom:20px; display: none">
-            <div id="keycode_tabs" style="min-height: 360px">
+        <div id="setting-panel" class="page-wd bg1 z-depth-1 hoverable" style="margin-top: 10px; margin-bottom:20px; display: none">
+            <div class="top-settings">
+                <div class="row uicolor" style="margin-bottom: 10px; height: 42px">
+                    <ul id="user-settings-tabs" class="tabs chrome" style="background-color: inherit;display: flex;justify-content: center">
+                        <li class="tab"><a href="#tabs-keycap" lang="zh_sc"><i class="material-icons">palette</i>Keycap</a></li>
+                        <li class="tab"><a href="#tabs-settings"><i class="material-icons">settings</i>新选项</a></li>
+                    </ul>
+                </div>
+                <div id="tabs-settings" class="settings"> Not Ready </div>
+                <!-- keycap test -->
+                <div id="tabs-keycap" class="row jsdef ml-30 wd-1220">
+                    <div class="col" id="mykeycap_change" style="width: 54px">
+                        <li style="text-align: center;">Style</li>
+                        <li><a class="btn waves-effect uicolor" value="dsa">D S A</a></li>
+                        <li><a class="btn waves-effect uicolor" value="gmk">G M K</a></li>
+                        <li><a class="btn waves-effect uicolor" style="height: 90px;" value="flat">F L A T</a></li>
+                    </div>
+
+                    <div class="col" id="keycap-color-list" style="width: 1166px">
+                        <div id="keycap_color-userset-on" class="keycap-color-block">
+                            <li class="key-color key-main">key</li>
+                            <li class="key-color key-enter">enter</li>
+                            <li class="key-color key-mod">Customize</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="keycode_tabs" class="top-keymaps top-vial" style="min-height: 360px">
                 <div class="row uicolor" style="margin-bottom: 10px; height: 42px">
                     <ul id="setting-tabs" class="tabs chrome" style="background-color:inherit;display: flex; justify-content: center;">
                         <li class="tab"><a href="#tabs-keys-basic" lang="zh_sc"><i class="material-icons">keyboard</i>Basic</a></li>
@@ -128,8 +149,6 @@
                         <li class="tab"><a href="#tabs-keys-mods" lang="zh_sc"><i class="material-icons">keyboard</i>Mods</a></li>
                         <li class="tab"><a href="#tabs-keys-light" lang="zh_sc"><i class="material-icons">keyboard</i>Light</a></li>
                         <li class="tab"><a href="#tabs-setting-layout" lang="zh_sc"><i class="material-icons">settings</i>Layout</a></li>
-                        <li class="tab"><a href="#tabs-keycap" lang="zh_sc"><i class="material-icons">palette</i>Keycap</a>
-                        </li>
                     </ul>
                 </div>
 
@@ -257,23 +276,6 @@
                         <div class="card-content">
                             <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Layouts(待完善，暂未与vial设置同步)</span>
                             <div id="layouts-set"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- keycap test -->
-                <div id="tabs-keycap" class="row jsdef ml-30 wd-1220">
-                    <div class="col" id="mykeycap_change" style="width: 54px">
-                        <li style="text-align: center;">Style</li>
-                        <li><a class="btn waves-effect uicolor" value="dsa">D S A</a></li>
-                        <li><a class="btn waves-effect uicolor" value="gmk">G M K</a></li>
-                        <li><a class="btn waves-effect uicolor" style="height: 90px;" value="flat">F L A T</a></li>
-                    </div>
-
-                    <div class="col" id="keycap-color-list" style="width: 1166px">
-                        <div id="keycap_color-userset-on" class="keycap-color-block">
-                            <li class="key-color key-main">key</li>
-                            <li class="key-color key-enter">enter</li>
-                            <li class="key-color key-mod">Customize</li>
                         </div>
                     </div>
                 </div>
