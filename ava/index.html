@@ -227,31 +227,43 @@
                     <div id="tabs-keys-mods-card" class="card col">
                         <div class="card-content" style="padding: 0 12px 12px 12px;">
                             <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Select Mods and Action (此页待进一步优化显示和操作)</span>
-                            <li class="optgroup-option"><span style="width: 100px;">L or R: </span> <span>
-                                <label><input type="radio" name="lrmods" value="0" class="with-gap"><span>Left</span></label>
-                                <label><input type="radio" name="lrmods" value="0x10" class="with-gap"><span>Right</span></label>
-                            </span></li>
-                            <li class="optgroup-option"><span style="width: 100px;">Mods: </span> <span style="margin-left: 3px;">
-                                <label><input type="checkbox" name="mods" value="1"><span kc=0x100></span></label>
-                                <label><input type="checkbox" name="mods" value="2"><span kc=0x200></span></label>
-                                <label><input type="checkbox" name="mods" value="4"><span kc=0x400></span></label>
-                                <label><input type="checkbox" name="mods" value="8"><span kc=0x800></span></label>
-                            </span></li>
-                            <li class="optgroup-option"><span style="width: 100px;">Action: </span> <span>
-                                <label><input type="radio" name="action" value="modskey" class="with-gap"><span>ModsKey</span></label>
-                                <label><input type="radio" name="action" value="modstap" class="with-gap"><span>Mods_Tap</span></label>
-                                <label><input type="radio" name="action" value="layermods" class="with-gap"><span>LayerMods</span></label>
-                            </span></li>
-                            <li class="optgroup-option layermods" style="display: none;"><span style="width: 100px;">Layer: </span> <span>
-                                <label><input type="radio" name="layer" value="0"><span>0</span></label>
-                                <label><input type="radio" name="layer" value="1"><span>1</span></label>
-                                <label><input type="radio" name="layer" value="2"><span>2</span></label>
-                                <label><input type="radio" name="layer" value="3"><span>3</span></label>
-                                <label><input type="radio" name="layer" value="4"><span>4</span></label>
-                                <label><input type="radio" name="layer" value="5"><span>5</span></label>
-                                <label><input type="radio" name="layer" value="6"><span>6</span></label>
-                                <label><input type="radio" name="layer" value="7"><span>7</span></label>
-                            </span></li>
+                            <div class="optgroup-option row">
+                                <div class="label-title col">L or R: </div>
+                                <div class="col">
+                                    <label><input type="radio" name="lrmods" value="0"><span>Left</span></label>
+                                    <label><input type="radio" name="lrmods" value="0x10"><span>Right</span></label>
+                                </div>
+                            </div>
+                            <div class="optgroup-option row">
+                                <div class="label-title col">Mods: </div>
+                                <div class="col">
+                                    <label><input type="checkbox" name="mods" value="1"><span kc=0x100></span></label>
+                                    <label><input type="checkbox" name="mods" value="2"><span kc=0x200></span></label>
+                                    <label><input type="checkbox" name="mods" value="4"><span kc=0x400></span></label>
+                                    <label><input type="checkbox" name="mods" value="8"><span kc=0x800></span></label>
+                                </div>
+                            </div>
+                            <div class="optgroup-option row">
+                                <div class="label-title col">Action: </div>
+                                <div class="col">
+                                    <label><input type="radio" name="action" value="modskey"><span>ModsKey</span></label>
+                                    <label><input type="radio" name="action" value="modstap"><span>Mods_Tap</span></label>
+                                    <label><input type="radio" name="action" value="layermods"><span>LayerMods</span></label>
+                                </div>
+                            </div>
+                            <div class="optgroup-option row layermods" style="display: none;">
+                                <div class="label-title col">Layer: </div>
+                                <div class="col">
+                                    <label><input type="radio" name="layer" value="0"><span>0</span></label>
+                                    <label><input type="radio" name="layer" value="1"><span>1</span></label>
+                                    <label><input type="radio" name="layer" value="2"><span>2</span></label>
+                                    <label><input type="radio" name="layer" value="3"><span>3</span></label>
+                                    <label><input type="radio" name="layer" value="4"><span>4</span></label>
+                                    <label><input type="radio" name="layer" value="5"><span>5</span></label>
+                                    <label><input type="radio" name="layer" value="6"><span>6</span></label>
+                                    <label><input type="radio" name="layer" value="7"><span>7</span></label>
+                                </div>
+                            </div>
                             <div id="card-mods-result" class="row" style="margin-top: 20px;margin-left: 10px;">
                                     <span style="width: 100px; float: left; margin-top: 20px;">Result: </span>
                                     <li class="result key-set tooltipped" style="zoom:1.5" kc="0x300"></li>
@@ -279,7 +291,7 @@
                     </div>
                 </div>
 
-                <div id="tabs-setting-layout" class="row jsdef wd-600">
+                <div id="tabs-setting-layout" class="row jsdef wd-1000">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Layouts(待完善，暂未与vial设置同步)</span>
