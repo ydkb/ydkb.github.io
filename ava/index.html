@@ -37,7 +37,7 @@
             <div class="row uicolor jsdef ht-42">
                 <div class="col s2 left">
                      <div class="fl">
-                        <span id="btnDevice" class='mykeycap2 btn select tooltipped' style="height:32px; line-height:32px; border-radius: 0 0 10px 10px;max-width: 200px; white-space: nowrap;" data-tooltip="已连接键盘的信息">连接键盘</span>
+                        <span id="btnDevice" class='mykeycap2 btn select tooltipped' style="height:32px; line-height:32px; border-radius: 0 0 10px 10px;max-width: 230px; white-space: nowrap;" data-tooltip="info">Connect</span>
                         <span id="btnDemo" class='mykeycap2 btn select tooltipped' style="height:32px; line-height:32px; border-radius: 0 0 10px 10px;margin-left:10px; white-space: nowrap;" data-tooltip="Show Demo">Demo</span>
                     </div>
                 </div>
@@ -151,6 +151,7 @@
                         <li class="tab"><a href="#tabs-keys-light" lang="zh_sc"><i class="material-icons">keyboard</i>Light</a></li>
                         <li class="tab"><a href="#tabs-keys-user" lang="zh_sc"><i class="material-icons">keyboard</i>User</a></li>
                         <li class="tab"><a href="#tabs-setting-layout" lang="zh_sc"><i class="material-icons">settings</i>Layout</a></li>
+                        <li class="tab"><a href="#tabs-nowkbd-info" lang="zh_sc"><i class="material-icons">info_outline</i>Info</a></li>
                     </ul>
                 </div>
 
@@ -227,7 +228,7 @@
                     <div id="tabs-keys-mods-card" class="card col">
                         <div class="card-content" style="padding: 0 12px 12px 12px;">
                             <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Select Mods and Action (此页待进一步优化显示和操作)</span>
-                            <div class="optgroup-option row">
+                            <div class="optgroup-option lrmods row">
                                 <div class="label-title col">L or R: </div>
                                 <div class="col">
                                     <label><input type="radio" name="lrmods" value="0"><span>Left</span></label>
@@ -266,7 +267,7 @@
                             </div>
                             <div id="card-mods-result" class="row" style="margin-top: 20px;margin-left: 10px;">
                                     <span style="width: 100px; float: left; margin-top: 20px;">Result: </span>
-                                    <li class="result key-set tooltipped" style="zoom:1.5" kc="0x300"></li>
+                                    <li class="result key-set tooltipped" style="zoom:1.5" kc="0x302"></li>
                             </div>
                         </div>
                     </div>
@@ -297,6 +298,13 @@
                             <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Layouts(待完善，暂未与vial设置同步)</span>
                             <div id="layouts-set"></div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- info -->
+                <div id="tabs-nowkbd-info" class="row jsdef ml-70">
+                    <div class="keyboard-set col">
+                        <div id="nowkbd-info" class="rowstart"></div>
                     </div>
                 </div>
             </div>

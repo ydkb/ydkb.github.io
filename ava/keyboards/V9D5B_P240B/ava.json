@@ -1,0 +1,22 @@
+{
+  "name": "KBDFans Agar",
+  "vendorId": "0x9D5B",
+  "productId": "0x240B",
+  "lighting": "qmk_rgblight",
+  "matrix": {"rows": 14, "cols": 8},
+  "customKeycodes": [
+    {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
+    {"name": "ST(A)", "title": "", "shortName": "ST(A)"},
+    {"name": "ST(S)", "title": "", "shortName": "ST(S)"},
+    {"name": "ST(D)", "title": "", "shortName": "ST(D)"}
+  ], 
+  "layouts": {
+    "labels":[
+        "2U Backspace",
+        ["RGB Underglow", "Enable", "Disable"],
+        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
+    ], 
+    "html": "ava-kbdfans_agar.html", 
+    "case": { "X": 15, "Y": 5, "MU": -24 }
+  }
+}
