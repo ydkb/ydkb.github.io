@@ -2,37 +2,37 @@
     <div id="mycase" class="mycase">
         <div name="caps" class="kbdbg-inner kbd-led led0" lang="zh_sc"  style="z-index:1; margin-left: -3px; top: 107px; background-color: #ffff00"></div>
     </div>
-    <div id="kblayouts-00" value-name="13列" value-desc="整体布局" >
+    <div class="layout-00">
         <kp>k00 [mc3 bl-key], k01, k02, k03, k04, k05, k06, k07, k08, k09, k37, k0A, k0B [mc2]</kp>
-        <div Y=1> <kp>k10 [mc2 w125], k11, k12, k13, k14 [homing], k15, k16, k17 [homing], k18, k19, k1A, k1B [mc3 w175]</kp> </div>
+        <div Y=1> <kp>k10 [mc2 w125], k11, k12, k13, k14 [homing], k15, k16, k17 [homing], k18, k19, k1A, k1B [mc3 w175 layout-10]</kp> </div>
         <div Y=2> <kp>k20 [mc2 w175], k21, k22, k23, k24, k25, k26, k27, k28, k29, k2A, k2B [mc2 w125]</kp> </div>
     </div>
-    <div id="kblayouts-01" value-name="12列">
-        <kp>k00 [mc3 w150 bl-key], k01, k02, k03, k04, k05, k06, k07, k08, k09, k37, k0A</kp>
-        <kp X=11.5 layout="10">k0B [mc2 w150]</kp>
-        <kp X=11.5 layout="11">k1B [mc3 w150 h200]</kp>
+    <div class="layout-01">
+        <kp>k00 [mc3 w150 bl-key], k01, k02, k03, k04, k05, k06, k07, k08, k09, k37</kp>
+        <kp X=11.5>k0B [mc2 w150 layout-11]</kp>
+        <kp X=11.5>k1B [mc3 w150 h200 layout-12]</kp>
 
         <div Y=1>
             <kp>k20 [mc2 w175], k11, k12, k13, k14 [homing], k15, k16, k17 [homing], k18, k19</kp>
             <div X=10.75>
-                <div id="kblayouts-10" value-name="ANSI Enter" value-desc="Enter (for 12列)"> <kp>k1B [mc3 w225]</kp> </div>
-                <div id="kblayouts-11" value-name="ISO Enter"> <kp>;</kp> </div>
+                <div> <kp>k1B [mc3 w225 layout-11]</kp> </div>
+                <div> <kp>K0B [layout-12]</kp> </div>
             </div>
         </div>
 
         <div Y=2>
-            <div id="kblayouts-20" value-name="2.25u" value-desc="Left Shift (for 12列)"> <kp>k20 [mc2 w225]</kp> </div>
-            <div id="kblayouts-21" value-name="1.25u+1u"> <kp>k20 [mc2 w125], k30</kp> </div>
-            <kp X=2.25>k21, k22, k23, k24, k25, k26, k27, k28, k29, k2B [mc2 w175]</kp>
+            <div class="layout-21"> <kp>k20 [mc2 w225]</kp> </div>
+            <div class="layout-22"> <kp>k20 [mc2 w125], k30</kp> </div>
+            <kp X=2.25>k21 [layout-20], k22, k23, k24, k25, k26, k27, k28, k29, k2B [mc2 w175]</kp>
         </div>
     </div>
     <div X=1.125 Y=3>
         <kp>k31 [mc2], k32 [mc2 w125]</kp>
         <div X=2.25>
-            <div id="kblayouts-30" value-name="单空格" value-desc="空格行"> <kp>k35 [space w625]</kp> </div>
-            <div id="kblayouts-31" value-name="双空格"> <kp>k33 [mc2 w125], k34 [space w175], k35 [space w200], k38 [mc2 w125]</kp> </div>
+            <div class="layout-30"> <kp>k35 [space w625]</kp> </div>
+            <div class="layout-31"> <kp>k33 [mc2 w125], k34 [space w175], k35 [space w200], k38 [mc2 w125]</kp> </div>
         </div>
-        <kp X=8.5 class="">k39 [mc2 w125], k3A [mc2]</kp>
+        <kp X=8.5>k39 [mc2 w125], k3A [mc2]</kp>
     </div>
 </div>
 

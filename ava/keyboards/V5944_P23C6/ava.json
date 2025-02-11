@@ -13,10 +13,10 @@
   "layouts": {
     "labels":[
         "2u Backspace",
-        ["Bottom Row", "HHKB 7u", "WKL1", "WKL2"],
+        ["Bottom Row", "HHKB 7u", "7U", "WKL"],
         ["EC Actuation Point", "Default(5)", "1(Light)", "2", "3", "4", "5", "6", "7(Heavy)"]
     ], 
-    "layout": "ava-ee60.html",
+    "html": "ava-ee60.html",
     "case": { "X": 15, "Y": 5, "MU": -24 }
   }
 }

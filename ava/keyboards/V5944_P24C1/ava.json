@@ -19,7 +19,7 @@
         ["Space", "7U", "HHKB(7U)", "WKL", "6.25U", "6U", "HHKB(6U)"],
         ["EC Actuation Point", "Default(5)", "1(Light)", "2", "3", "4", "5", "6", "7(Heavy)"]
     ], 
-    "layout": "ava-h60ec.html",
+    "html": "ava-h60ec.html",
     "case": { "X": 15, "Y": 5, "MU": -24 }
   }
 }

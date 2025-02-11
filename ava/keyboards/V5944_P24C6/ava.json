@@ -19,7 +19,7 @@
         "Space 6.25",
         ["EC Actuation Point", "Default(4)", "1(Light)", "2", "3", "4", "5", "6", "7(Heavy)"]
     ], 
-    "layout": "ava-ee660.html",
-    "case": { "X": 16.5, "Y": 5, "M": -18, "BR": 6 },
+    "html": "ava-ee660.html",
+    "case": { "X": 16.5, "Y": 5, "M": -18, "BR": 6 }
   }
 }

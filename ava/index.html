@@ -141,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div id="keycode_tabs" class="top-keymaps top-vial" style="min-height: 360px">
+            <div id="keycode_tabs" class="top-keymaps top-vial top-tester" style="min-height: 360px">
                 <div class="row uicolor" style="margin-bottom: 10px; height: 42px">
                     <ul id="setting-tabs" class="tabs chrome" style="background-color:inherit;display: flex; justify-content: center;">
                         <li class="tab"><a href="#tabs-keys-basic" lang="zh_sc"><i class="material-icons">keyboard</i>Basic</a></li>
@@ -157,28 +157,35 @@
 
                 <!-- Main -->
                 <div id="tabs-keys-basic" class="row jsdef ml-70 wt-1142">
-                    <ul class="keyboard-set ">
-                        <ks>KC_ESC [rowstart low], KC_TRNS [bluek low],KC_F1 [low],KC_F2, KC_F3, KC_F4, KC_F5,KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_NO [low s1 redk],
-                        KC_PSCR [low spc25], KC_SLCK [low], KC_PAUS [low]</ks>
-                        <ks>KC_CALC [spc25 low s1], KC_MUTE [low s1], KC_VOLD, KC_VOLU</ks>
+                    <div>
+                        <ul class="keyboard-set">
+                            <ks>KC_ESC [rowstart low], KC_TRNS [bluek low],KC_F1 [low],KC_F2, KC_F3, KC_F4, KC_F5,KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_NO [low s1 redk],
+                            KC_PSCR [low spc25], KC_SLCK [low], KC_PAUS [low]</ks>
+                            <ks>KC_CALC [spc25 low s1], KC_MUTE [low s1], KC_VOLD, KC_VOLU</ks>
 
-                        <ks>KC_GRV [rowstart], KC_1 [ ], KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC [t1 w200],
-                        KC_INS [t1 spc25], KC_HOME [t1], KC_PGUP</ks>
-                        <ks>KC_NLCK [spc25], KC_PSLS [ ], KC_PAST [t1" style="padding-top: 4px"], KC_PMNS</ks>
+                            <ks>KC_GRV [rowstart], KC_1 [ ], KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC [t1 w200],
+                            KC_INS [t1 spc25], KC_HOME [t1], KC_PGUP</ks>
+                            <ks>KC_NLCK [spc25], KC_PSLS [ ], KC_PAST [t1" style="padding-top: 4px"], KC_PMNS</ks>
 
-                        <ks>KC_TAB [t1 rowstart w150], KC_Q [t1a], KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC [ ], KC_RBRC, KC_BSLS [w150], KC_DEL [t1 spc25], KC_END [t1], KC_PGDN</ks>
-                        <ks>KC_P7 [spc25], KC_P8 [ ], KC_P9, KC_PPLS [h200]</ks>
+                            <ks>KC_TAB [t1 rowstart w150], KC_Q [t1a], KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC [ ], KC_RBRC, KC_BSLS [w150], KC_DEL [t1 spc25], KC_END [t1], KC_PGDN</ks>
+                            <ks>KC_P7 [spc25], KC_P8 [ ], KC_P9, KC_PPLS [h200]</ks>
 
-                        <ks>KC_CAPS [t1 rowstart w175], KC_A [t1a], KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN [ ], KC_QUOT [ " style="padding-top: 5px"], KC_ENT [t1 w225],
-                        KC_NUBS [low spc25], KC_NUHS [low], KC_APP</ks>
-                        <ks>KC_P4 [spc25], KC_P5 [ ], KC_P6</ks>
+                            <ks>KC_CAPS [t1 rowstart w175], KC_A [t1a], KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN [ ], KC_QUOT [ " style="padding-top: 5px"], KC_ENT [t1 w225],
+                            KC_NUBS [low spc25], KC_NUHS [low], KC_APP</ks>
+                            <ks>KC_P4 [spc25], KC_P5 [ ], KC_P6</ks>
 
-                        <ks>KC_LSFT [t1 rowstart w225], KC_Z [t1a], KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM [ ], KC_DOT, KC_SLSH, KC_RSFT [t1 w275], KC_UP [t1 spc125]</ks>
-                        <ks>KC_P1 [spc125], KC_P2 [ ], KC_P3, KC_PENT [h200]</ks>
+                            <ks>KC_LSFT [t1 rowstart w225], KC_Z [t1a], KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM [ ], KC_DOT, KC_SLSH, KC_RSFT [t1 w275], KC_UP [t1 spc125]</ks>
+                            <ks>KC_P1 [spc125], KC_P2 [ ], KC_P3, KC_PENT [h200]</ks>
 
-                        <ks>KC_LCTL [t1 rowstart w125], KC_LGUI [t1 w125], KC_LALT, KC_SPC [t1 w625], KC_RALT [t1 w125], KC_RGUI, Fn1, KC_RCTL, KC_LEFT [t1 spc25], KC_DOWN [t1], KC_RGHT</ks>
-                        <ks>KC_P0 [spc25 w200], KC_DOT [ ]</ks>
-                    </ul>
+                            <ks>KC_LCTL [t1 rowstart w125], KC_LGUI [t1 w125], KC_LALT, KC_SPC [t1 w625], KC_RALT [t1 w125], KC_RGUI, Fn1, KC_RCTL, KC_LEFT [t1 spc25], KC_DOWN [t1], KC_RGHT</ks>
+                            <ks>KC_P0 [spc25 w200], KC_DOT [ ]</ks>
+                        </ul>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <ul class="keyboard-set extended">
+                            <ks> KC_GESC [rowstart], 0x235 [t1], 0x21E, 0x21F, 0x220, 0x221, 0x222, 0x223, 0x224, 0x225, 0x226, 0x227, 0x22D, 0x22E, 0x22F, 0x230, 0x236, 0x237, 0x233, 0x231, 0x238, 0x234</ks>
+                        </ul>
+                    </div>
                 </div>
                 <div id="tabs-keys-media-mouse" class="row jsdef ml-40">
                     <ul class="keyboard-set icon col">
@@ -295,7 +302,7 @@
                 <div id="tabs-setting-layout" class="row jsdef wd-1000">
                     <div class="card">
                         <div class="card-content">
-                            <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Layouts(待完善，暂未与vial设置同步)</span>
+                            <span class="card-title btn-flat mykeycap2" style="font-size: 18px; height: 36px; padding: 3px 20px;">Layouts(界面待进一步优化显示，功能OK)</span>
                             <div id="layouts-set"></div>
                         </div>
                     </div>
