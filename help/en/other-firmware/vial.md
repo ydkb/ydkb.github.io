@@ -14,6 +14,13 @@ If you encounter a bug, you can contact me in the YDKB QQ group ② "767441859",
 
 If you need source code, you can visit: https://github.com/yangdigi/vial-qmk/tree/vial/keyboards/ydkb/
 
+## A Quick Note for 2025
+
+The Vial firmware provided on this page will gradually begin to support connecting to and configuring keys using https://ydkb.io/ava.
+
+AVA, short for the codename Avalon, is a new online driver for setting up YDKB keyboards. It's based on qmk-vial and also incorporates some of the distinctive features from the previous ydkb.io firmware.
+
+
 ## Currently supported keyboards
 
 

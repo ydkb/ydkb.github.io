@@ -13,6 +13,12 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 
 需要源代码的，可访问: https://github.com/yangdigi/vial-qmk/tree/vial/keyboards/ydkb/
 
+## 2025的一点新说明
+
+本页提供的vial固件，会陆续开始支持使用 https://ydkb.io/ava 连接和设置按键。
+
+AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线驱动，基于qmk-vial，同时添加部分之前ydkb.io 固件的特色功能。
+
 
 ## 当前支持键盘的固件下载
 
