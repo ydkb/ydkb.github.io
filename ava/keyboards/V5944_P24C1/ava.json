@@ -3,7 +3,7 @@
   "vendorId": "0x5944",
   "productId": "0x24C1",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {"rows": 5, "cols": 14, "adc": 8},
   "customKeycodes": [
     {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},
     {"name": "RESET", "title": "Enter FLASH Mode when pressed with LCtrl.", "shortName": "RESET"},

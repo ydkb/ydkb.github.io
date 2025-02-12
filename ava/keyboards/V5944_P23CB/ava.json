@@ -3,7 +3,7 @@
   "vendorId": "0x5944",
   "productId": "0x23CB",
   "lighting": "none",
-  "matrix": {"rows": 5, "cols": 14},
+  "matrix": {"rows": 5, "cols": 14, "adc": 8},
   "customKeycodes": [
     {"name": "BT/USB", "title": "", "shortName": "BT/USB"},
     {"name": "BLERST", "title": "", "shortName": "BLERST"},
