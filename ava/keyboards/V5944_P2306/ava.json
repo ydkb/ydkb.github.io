@@ -1,0 +1,11 @@
+{
+  "name": "PAVLOV MX",
+  "vendorId": "0x5944",
+  "productId": "0x2306",
+  "lighting": "none",
+  "matrix": {"rows": 5, "cols": 15},
+  "layouts": {
+    "html": "ava-kbdfans_pavlov_mx.html", 
+    "case": { "X": 16, "Y": 5, "M": -16 }
+  }
+}
