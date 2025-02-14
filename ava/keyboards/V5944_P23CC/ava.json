@@ -1,0 +1,23 @@
+{
+  "name": "HFKB JP",
+  "vendorId": "0x5944",
+  "productId": "0x23CC",
+  "lighting": "none",
+  "matrix": {"rows": 5, "cols": 14, "adc": 8},
+  "customKeycodes": [
+    {"name": "BT/USB", "title": "", "shortName": "BT/USB"},
+    {"name": "BLERST", "title": "", "shortName": "BLERST"},
+    {"name": "BAT%", "title": "", "shortName": "BAT%"},
+    {"name": "LkMode", "title": "", "shortName": "LkMode"}
+  ], 
+  "layouts": {
+    "labels":[
+        "2u BS", 
+        "ANSI Enter",
+        ["Space Row", "JP 2.5u", "JP 3u"],
+        ["EC Actuation Point", "Default(5)", "1(Light)", "2", "3", "4", "5", "6", "7(Heavy)"]
+    ],
+    "html":"ava-hfkb_jp.html", 
+    "case":{ "X": 15, "Y": 5, "MU": -24 }
+  }
+}
