@@ -1,0 +1,23 @@
+{
+  "name": "EEPad 23U",
+  "vendorId": "0x5944",
+  "productId": "0x24C0",
+  "lighting": "none",
+  "matrix": {"rows": 6, "cols": 4, "adc": 8},
+  "customKeycodes": [
+    {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},
+    {"name": "RESET", "title": "Enter FLASH Mode when pressed with LCtrl.", "shortName": "RESET"},
+    {"name": "BAT LEVEL", "title": "Outputs battery level in text (Shortcut: LShift+RShift+V)", "shortName": "BAT%"},
+    {"name": "LOCK MODE", "title": "Make the keyboard enter lock mode and can be only waked up by pressing F and J.", "shortName": "Lk.M"}
+  ], 
+  "layouts": {
+    "labels":[
+        "2u P+",
+        "1u PEnter",
+        "2u P0",
+        ["EC Actuation Point", "Default(5)", "1(Light)", "2", "3", "4", "5", "6", "7(Heavy)"]
+    ], 
+    "html": "ava-eepad_23u.html",
+    "case": { "X": 4, "Y": 6.25, "M": -24, "BR":12 }
+  }
+}
