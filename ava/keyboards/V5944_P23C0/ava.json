@@ -15,7 +15,7 @@
         "ISO Enter",
         "Split LShift",
         ["Space", "6.25u", "2u+2.25u", "1.75u+2u"],
-        ["EC Actuation Point", "Default(5)", "1(Light)", "2", "3", "4", "5", "6", "7(Heavy)"]
+        ["EC Actuation Point", "1(Light)", "2", "3", "4", "5(Default)", "6", "7", "8(Heavy)"]
     ], 
     "html": "ava-eevee_40a.html",
     "case": { "X": 13, "Y": 4, "M": -18 }

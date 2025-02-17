@@ -17,7 +17,7 @@
         "Split LShift",
         "2.75U RShift",
         ["Space", "7U", "HHKB(7U)", "WKL", "6.25U", "6U", "HHKB(6U)"],
-        ["EC Actuation Point", "Default(5)", "1(Light)", "2", "3", "4", "5", "6", "7(Heavy)"]
+        ["EC Actuation Point", "1(Light)", "2", "3", "4", "5(Default)", "6", "7", "8(Heavy)"]
     ], 
     "html": "ava-h60ec.html",
     "case": { "X": 15, "Y": 5, "MU": -24 }
