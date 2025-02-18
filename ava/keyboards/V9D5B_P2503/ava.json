@@ -1,0 +1,25 @@
+{
+    "name": "Minira EC",
+    "vendorId": "0x9D5B",
+    "productId": "0x2503",
+    "lighting": "qmk_rgblight",
+    "matrix": {"rows": 5, "cols": 14, "adc": 8},
+    "customKeycodes": [
+        {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
+        {"name": "ST(A)", "title": "", "shortName": "ST(A)"},
+        {"name": "ST(S)", "title": "", "shortName": "ST(S)"},
+        {"name": "ST(D)", "title": "", "shortName": "ST(D)"}
+    ], 
+    "layouts": {
+        "labels":[
+            "2U Backspace", 
+            "ISO Enter", 
+            "ISO LShift", 
+            ["Space Row",  "US", "JIS"], 
+            ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"],
+            ["EC Actuation Point", "1(Light)", "2", "3", "4", "5(Default)", "6", "7", "8(Heavy)"]
+        ],
+        "html": "ava-evoli_minira_ec.html", 
+        "case": { "X": 15, "Y": 5, "MU": -24 }
+    }
+}
