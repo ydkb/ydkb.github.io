@@ -11,7 +11,7 @@ Vial的固件功能请参考Vial和qmk的相关文档，有些细节功能与ydk
 
 如果遇到bug可加 YDKB QQ ②群“767441859”联系我，我尽量解决。
 
-需要源代码的，可访问: https://github.com/yangdigi/vial-qmk/tree/vial/keyboards/ydkb/
+需要源代码的，可访问: https://github.com/yangdigi/vial-qmk-v5/tree/ava/keyboards/ydkb
 
 ## 2025的一点新说明
 
@@ -40,14 +40,14 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 
 | Eevee系列??25% | VIA / Vial 固件下载                                                           | VIA JSON                                                       | 补充说明 |
 | ------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- | ---- |
-| Eevee \#EE60 | [2025-02-17_DP2H](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
-| Eevee \#HFKB | [2025-02-17_DP2H](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
-| Eevee \#HFKB_JP | [2025-02-17_DP2H](other-firmware/vial/ydkb_eevee_hfkb_jp_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_jp_via.json ':ignore') |      |
-| Eevee \#EE660C | [2025-02-17_DP2H](other-firmware/vial/ydkb_eevee_ee660c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee660c_via.json ':ignore') |      |
-| Eevee \#H60EC | [2025-02-17_DP2H](other-firmware/vial/ydkb_eevee_h60ec_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_h60ec_via.json ':ignore') |      |
-| Eevee \#40A  | [2025-02-17_DP2H](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
-| Eevee \#40B  | [2025-02-17_DP2H](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
-| Eevee \#EEPad_23U  | [2025-02-17_DP2H](other-firmware/vial/ydkb_eevee_eepad_23u_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_eepad_23u_via.json ':ignore')  |      |
+| Eevee \#EE60 | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
+| Eevee \#HFKB | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
+| Eevee \#HFKB_JP | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_hfkb_jp_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_jp_via.json ':ignore') |      |
+| Eevee \#EE660C | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_ee660c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee660c_via.json ':ignore') |      |
+| Eevee \#H60EC | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_h60ec_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_h60ec_via.json ':ignore') |      |
+| Eevee \#40A  | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
+| Eevee \#40B  | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
+| Eevee \#EEPad_23U  | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_eepad_23u_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_eepad_23u_via.json ':ignore')  |      |
 
 | 键盘??25%            | VIA / Vial 固件下载                                                            | VIA JSON                                                           | 补充说明                |
 | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------- |
