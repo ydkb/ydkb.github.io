@@ -31,14 +31,19 @@
         </nav>
 
     </header>
-    <main onselectstart="return false" class="device-connected">
+    <main onselectstart="return false" class="device-unconnected">
         <button id="fly-button">fb</button>
+        <div id="start-page">
+                <div id="btnDeviceOpenText" class="text">点击"Connect"按钮，连接键盘</div>
+                <div id="btnDeviceOpen" class="mykeycap2 btn select tooltipped" data-tooltip="info">Connect</div>
+                <div id="btnDemoText" class="text">未连接键盘时，也可以点击"Demo"，预览功能。</div>
+                <div id="btnDemo" class='mykeycap2 btn select tooltipped' data-tooltip="Show Demo">Demo</div>
+        </div>
         <div id="user-keyboard-panel" class="bg1 z-depth-1 hoverable">
             <div class="row uicolor jsdef ht-42">
                 <div class="col s2 left">
                      <div class="fl">
                         <span id="btnDevice" class='mykeycap2 btn select tooltipped' style="height:32px; line-height:32px; border-radius: 0 0 10px 10px;max-width: 230px; white-space: nowrap;" data-tooltip="info">Connect</span>
-                        <span id="btnDemo" class='mykeycap2 btn select tooltipped' style="height:32px; line-height:32px; border-radius: 0 0 10px 10px;margin-left:10px; white-space: nowrap;" data-tooltip="Show Demo">Demo</span>
                     </div>
                 </div>
                 <div id="user-tabs" class="col s8">
@@ -318,7 +323,6 @@
         </div>
 
         <div id="temp-row" class="page-wd row">
-            <div class="col s9" style="font-size: 20px;">当前还未完善初始界面。请点击左上角连接键盘或查看Demo，再次点击可断开。</div>
             <div id="system-style" class="col">
                 <a id="mykeycap_system_change" class="col btn waves-effect tooltipped uicolor"
                     data-tooltip="手动切换按键值显示为 Win 或 Mac 风格. (临时放这里)" lang="zh_sc"> 
