@@ -1,0 +1,23 @@
+{
+  "name": "EE80U R1",
+  "vendorId": "0x5944",
+  "productId": "0x25C1",
+  "lighting": "none",
+  "matrix": {"rows": 6, "cols": 16, "adc": 8},
+  "customKeycodes": [
+    {"name": "BT/USB", "title": "Switch between Bluetooth and USB (Shortcut: LShift+RShift+U)", "shortName": "BT/U"},
+    {"name": "RESET", "title": "Enter FLASH Mode when pressed with LCtrl.", "shortName": "RESET"},
+    {"name": "BAT LEVEL", "title": "Outputs battery level in text (Shortcut: LShift+RShift+V)", "shortName": "BAT%"},
+    {"name": "LOCK MODE", "title": "Make the keyboard enter lock mode and can be only waked up by pressing F and J.", "shortName": "Lk.M"}
+  ], 
+  "layouts": {
+    "labels":[
+        "Split BS",
+        "Split RShift",
+        ["Space", "7U", "6U", "6.25U"], 
+        ["EC Actuation Point", "1(Light)", "2", "3", "4", "5(Default)", "6", "7", "8(Heavy)"]
+    ], 
+    "html": "ava-ee80u_r1.html",
+    "case": { "X": 18.5, "Y": 6.5, "M": -24, "BR": 12 }
+  }
+}
