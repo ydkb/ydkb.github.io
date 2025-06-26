@@ -39,10 +39,10 @@ In addition to the ones in the above picture, there are also those added with th
 
 ## Bluetooth name modification
 
-The name of YDKB BLE series can be modified by yourself. Use YDKB Control (for the time only win64 versions are supported), which is included in reflash tool downloaded from ydkb.io. The main points are three:
-  -Choose your own keyboard on the first page
-  -Plug in the USB data cable. Renaming is only supported in USB mode
-  -Do not open any key test software
+The name of YDKB BLE series can be modified by yourself. Use YDKB Tool (You can [click here to download](https://ydkb.io/YDKBs-reflash.zip), currently only supports Windows and ydkb.io firmware). The main points are three:
+  - Choose your own keyboard on the first page
+  - Plug in the USB data cable. Renaming is only supported in USB mode
+  - Do not open any key test software
 
 In the Bluetooth settings on the last page, input the name you want, and then click the **Change BLE Name** button. Don't disdain this interface being ugly. It is for temporarily use. Something that can work is better than nothing.
 

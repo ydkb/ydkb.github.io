@@ -40,7 +40,7 @@
 
 ## 蓝牙名称修改
 
-YDKB的大部分BLE键盘蓝牙名称都是可以自己修改的。用YDKB Tool（可以[点此下载](http://ydkb.io/YDKBs-reflash.zip)，暂仅支持windows）。然后要点是三个：
+YDKB的大部分BLE键盘蓝牙名称都是可以自己修改的。用YDKB Tool（可以[点此下载](https://ydkb.io/YDKBs-reflash.zip)，暂仅支持windows及ydkb.io的固件）。然后要点是三个：
   1. 在第一页选择好自己的键盘
   2. 插上USB数据线，只有USB模式下支持修改名称
   3. 尽量不要开启按键测试软件
