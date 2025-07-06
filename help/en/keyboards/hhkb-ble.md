@@ -148,10 +148,15 @@ In addition to the two USB ports on the HHKB case, there is an extra USB Port on
 
 Karabiner-Elements regards the same keyboard Bluetooth mode and wired mode as different keyboards.
 
-Refer to the instructions provided by the user. To use Karabiner-Elements in Bluetooth mode, please use the latest version of the software, as shown in the figure below, and check **[ HHKB BLE(Adafruit Industries)]**.
+To use Karabiner-Elements in Bluetooth mode, please use the latest version of the software.
 
-![](assets/hhkb_karabiner-elements.jpg)
+As of 2025.07.06, the version used is 15.4.0.
 
+![](assets/hhkb_karabiner-elements-01.jpg)
+
+his version of Karabiner-Elements already supports selecting the keyboard via Device Address.
+
+![](assets/hhkb_karabiner-elements-02.jpg)
 
 ## Exception Handling
 
