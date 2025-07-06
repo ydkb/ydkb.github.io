@@ -152,14 +152,15 @@ Mac在某次更新后，启动时识别USB键盘需要更长的时间，而HHKB 
 
 Karabiner-Elements把同一个键盘蓝牙模式和有线模式，是当成不同键盘的。
 
-参考用户提供的说明，要在蓝牙模式下使用Karabiner-Elements，请使用最新版的软件，如下图，勾选上 `[ HHKB BLE(Adafruit Industries) ]` 这一项。然后目前它只支持设置按键时，选择 `For all devices` 了。具体可以参看如下链接的内容，这个问题只有等官方修复。
+要在蓝牙模式下使用Karabiner-Elements，请使用最新版的软件。
 
-```yddcode
-0068 0074 0074 0070 0073 003A 002F 002F 0067 0069 0074 0068 0075 0062 002E 0063 006F 006D 002F 0070 0071 0072 0073 002D 006F 0072 0067 002F 004B 0061 0072 0061 0062 0069 006E 0065 0072 002D 0045 006C 0065 006D 0065 006E 0074 0073 002F 0069 0073 0073 0075 0065 0073 002F 0031 0038 0036 0032 
-```
+在2025.07.06时，使用的版本为15.4.0。
 
+![](assets/hhkb_karabiner-elements-01.jpg)
 
-![](assets/hhkb_karabiner-elements.jpg)
+此版本的Karabiner-Elements已经支持通过Device Address来选定键盘了。
+
+![](assets/hhkb_karabiner-elements-02.jpg)
 
 
 ## 异常处理
