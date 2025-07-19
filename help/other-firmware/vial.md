@@ -67,7 +67,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Xikii i104         | [2024-06-22_DO6M](other-firmware/vial/ydkb_xikii_i104_vial.zip ':ignore')     | [JSON](other-firmware/vial/ydkb_xikii_i104_via.json ':ignore')     |                     |
 | Xikii Sasuke No.01 | [2022-12-22_DMCM](other-firmware/vial/ydkb_xikii_sasuke01_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_sasuke01_via.json ':ignore') |                     |
 | YDPM40BLE          | [2024-06-10_DO6A](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore')      |                     |
-| Y80-11900          | [2024-08-28_DO8S](other-firmware/vial/ydkb_y80_11900_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_y80_11900_via.json ':ignore')      |                     |
+| Y80-11900          | [2025-07-17_DP7H](other-firmware/vial/ydkb_y80_11900_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_y80_11900_via.json ':ignore')      |                     |
 
 | KBDFans 键盘??25%      | VIA / Vial 固件下载                                                                        | VIA JSON                                                                    | 补充说明 |
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
