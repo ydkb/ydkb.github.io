@@ -12,7 +12,7 @@ For the firmware functions of Vial, please refer to the relevant documents of Vi
 
 If you encounter a bug, you can contact me in the YDKB QQ group ② "767441859", and I will try to solve it.
 
-If you need source code, you can visit: https://github.com/yangdigi/vial-qmk/tree/vial/keyboards/ydkb/
+If you need source code, you can visit: https://github.com/yangdigi/vial-qmk-v5/tree/ava/keyboards/ydkb/
 
 ## A Quick Note for 2025
 
