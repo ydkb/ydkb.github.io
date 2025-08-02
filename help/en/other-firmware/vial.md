@@ -39,7 +39,7 @@ The firmware update method in the table below is consistent with ydkb.io. Most u
 
 To download the JSON file, right-click the corresponding JSON link and select Save As.
 
-| Eevee series??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
+| Eevee series??25% | VIA / Vial Firmware | VIA V2 JSON | Supplementary Notes |
 | ------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- | ---- |
 | Eevee \#EE60 | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
 | Eevee \#HFKB | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
@@ -51,7 +51,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Eevee \#EEPad_23U  | [2025-05-16_DP5G](other-firmware/vial/ydkb_eevee_eepad_23u_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_eepad_23u_via.json ':ignore')  |      |
 | Eevee \#EE80U R1  | [2025-04-15_DP4F](other-firmware/vial/ydkb_ee80u_r1_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_ee80u_r1_via.json ':ignore')  |      |
 
-| Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
+| Keyboard??25% | VIA / Vial Firmware | VIA V2 JSON | Supplementary Notes |
 | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------- |
 | BLE660C/BLE980C    | [2024-05-30_DO5U](other-firmware/vial/ydkb_ble660c_980c_vial.zip ':ignore')   | [JSON](other-firmware/vial/ydkb_ble660c_980c_via.json ':ignore') | in LAYOUTS to choose 660c or 980c |
 | HHKB BLE           | [2025-02-19_DP2J](other-firmware/vial/ydkb_hhkb_ble_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_hhkb_ble_via.json ':ignore') | Select US / JP in LAYOUTS |
@@ -70,7 +70,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | YDPM40BLE          | [2024-06-10_DO6A](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore')      |                     |
 | Y80-11900          | [2025-07-17_DP7H](other-firmware/vial/ydkb_y80_11900_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_y80_11900_via.json ':ignore')      |                     |
 
-| KBDFans Keyboard??25% | VIA / Vial Firmware | VIA JSON | Supplementary Notes |
+| KBDFans Keyboard??25% | VIA / Vial Firmware | VIA V2 JSON | Supplementary Notes |
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
 | Agar                 | [2025-01-17_DP1H](other-firmware/vial/ydkb_kbdfans_agar_vial.zip ':ignore')            | [JSON](other-firmware/vial/ydkb_kbdfans_agar_via.json ':ignore')            |      |
 | Agar EC              | [2025-02-17_DP2H](other-firmware/vial/ydkb_kbdfans_agar_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_ec_via.json ':ignore')         |      |
