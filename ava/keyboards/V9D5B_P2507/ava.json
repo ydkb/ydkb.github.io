@@ -1,0 +1,21 @@
+{
+    "name": "Agar Mini",
+    "vendorId": "0x9D5B",
+    "productId": "0x2507",
+    "lighting": "none",
+    "matrix": {"rows": 14, "cols": 8},
+    "customKeycodes": [
+        {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
+        {"name": "ST(A)", "title": "", "shortName": "ST(A)"},
+        {"name": "ST(S)", "title": "", "shortName": "ST(S)"},
+        {"name": "ST(D)", "title": "", "shortName": "ST(D)"}
+    ], 
+    "layouts": {
+        "labels":[
+            ["Space", "3U*2", "6U"],
+            ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
+        ], 
+        "html":"ava-agar_mini.html", 
+        "case": { "X": 13, "Y": 4, "M": -20, "BR": 10 }
+    }
+}
