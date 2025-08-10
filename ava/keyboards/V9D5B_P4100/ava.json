@@ -16,6 +16,7 @@
         "Split Backspace",
         "ISO Enter",
         "Split LShift",
+        ["Key Debounce","Fast", "Normal", "Slow"],
         ["NumLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"],
         ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
     ], 
