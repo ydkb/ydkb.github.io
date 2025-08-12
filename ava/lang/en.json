@@ -176,6 +176,9 @@
 
 		"查看 RGB 控制说明":"RGB Control Help",
 		"查看 单色灯 控制说明":"Backlit Control Help",
+		"单色灯光控制":"Backlit Control",
+		"RGB 灯光控制":"RGBLight Control",
+		"RGB 灯光(额外按键)":"RGBLight (Extra keys)",
 
 		"Keypad 00, 极少数键盘未支持此功能":"Keypad 00 (Very few keyboards do not support this.)",
 
