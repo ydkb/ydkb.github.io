@@ -5,11 +5,12 @@
   "lighting": "qmk_rgblight",
   "matrix": {"rows": 14, "cols": 8},
   "customKeycodes": [
-    {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
-    {"name": "ST(A)", "title": "", "shortName": "ST(A)"},
-    {"name": "ST(S)", "title": "", "shortName": "ST(S)"},
-    {"name": "ST(D)", "title": "", "shortName": "ST(D)"},
-    {"name": "GIF M+", "title": "Gif Mode +", "shortName": "GIF M+"}
+    {"name": "ST(W)", "title": "SnapTap(SOCD) key W", "shortName": "ST(W)"},
+    {"name": "ST(A)", "title": "SnapTap(SOCD) key A", "shortName": "ST(A)"},
+    {"name": "ST(S)", "title": "SnapTap(SOCD) key S", "shortName": "ST(S)"},
+    {"name": "ST(D)", "title": "SnapTap(SOCD) key D", "shortName": "ST(D)"},
+    {"name": "GIF M+", "title": "Gif Mode +", "shortName": "GIF M+"},
+    {"name": "LCD On/Off", "title": "LCD On or Off", "shortName": "LCD O/X"}
   ], 
   "layouts": {
     "labels":[
