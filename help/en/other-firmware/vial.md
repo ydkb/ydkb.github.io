@@ -75,7 +75,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Agar                 | [2025-01-17_DP1H](other-firmware/vial/ydkb_kbdfans_agar_vial.zip ':ignore')            | [JSON](other-firmware/vial/ydkb_kbdfans_agar_via.json ':ignore')            |      |
 | Agar EC              | [2025-02-17_DP2H](other-firmware/vial/ydkb_kbdfans_agar_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_ec_via.json ':ignore')         |      |
 | Agar Mini            | [2025-06-22_DP6M](other-firmware/vial/ydkb_kbdfans_agar_mini_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_mini_via.json ':ignore')         |      |
-| Boomerang            | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_boomerang_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_boomerang_via.json ':ignore')       |      |
+| Boomerang            | [2025-08-31_DP8V](other-firmware/vial/ydkb_kbdfans_boomerang_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_boomerang_via.json ':ignore')       |      |
 | Boop65               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')          |      |
 | Dusk67               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_dusk67_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_dusk67_via.json ':ignore')          |      |
 | Eden v2              | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_eden_v2_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_eden_v2_via.json ':ignore')         |      |
@@ -93,6 +93,10 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Uni88                | [2024-07-27_DO7R](other-firmware/vial/ydkb_kbdfans_uni88_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kbdfans_uni88_via.json ':ignore')           |      |
 | YD67BLE (KBD67 lite) | [2024-06-22_DO6M](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
 
+| KBDFans Keyboard??25% | VIA / Vial Firmware | VIA V3 JSON | Supplementary Notes |
+| -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
+| Athena1800           | [2025-08-22_DP8M](other-firmware/vial/kbdfans_athena1800_vial.zip ':ignore')            | [JSON](other-firmware/vial/kbdfans_athena1800_via_v3.json ':ignore')            |      |
+
 > [!ydda] Note for Linux users
 > - Due to some permission issues, you cannot directly connect to the keyboard when using the online version through a browser.
 > - I personally recommend that Linux users download the local version of VIA or Vial and run it.
@@ -105,6 +109,8 @@ Vial's local software download can be found at: https://get.vial.today/download/
 
 You can also use the online version https://vial.rocks/ .
 
+Keyboards like Athena1800 that use the RP2040 controller cannot be compatible with the online version of Vial for AVA / VIA / Vial in a single firmware. To use it, you need to download the desktop version from https://github.com/yangdigi/vial-gui/releases/. This version merely adds support for VIA PROTOCOL 12.
+
 ### 3 Connect VIA
 
 For local software downloads of VIA, see: https://github.com/the-via/releases/releases
@@ -115,7 +121,9 @@ If you use a version higher than VIA 2.0.4, or the online version [https://usevi
 
 ![|700](assets/via-ydkb-21.jpg)
 
-Then in `DESIGN`, according to the display on the page, select `Use V2 definitios(deprecated)` to ensure that it supports V2 json files. Then use `Load` to load the json file to be recognized and loaded normally.
+Then in `DESIGN`, based on the display on the page, select `Use V2 definitions (deprecated)` to ensure it supports V2 JSON files. If the downloaded JSON file name contains the word "v3", then this option does not need to be selected. 
+
+Then use `Load` to load the json file to be recognized and loaded normally.
 
 ![|700](assets/via-ydkb-22.jpg)
 

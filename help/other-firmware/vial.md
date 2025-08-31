@@ -74,7 +74,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Agar                 | [2025-01-17_DP1H](other-firmware/vial/ydkb_kbdfans_agar_vial.zip ':ignore')            | [JSON](other-firmware/vial/ydkb_kbdfans_agar_via.json ':ignore')            |      |
 | Agar EC              | [2025-02-17_DP2H](other-firmware/vial/ydkb_kbdfans_agar_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_ec_via.json ':ignore')         |      |
 | Agar Mini            | [2025-06-22_DP6M](other-firmware/vial/ydkb_kbdfans_agar_mini_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_mini_via.json ':ignore')         |      |
-| Boomerang            | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_boomerang_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_boomerang_via.json ':ignore')       |      |
+| Boomerang            | [2025-08-31_DP8V](other-firmware/vial/ydkb_kbdfans_boomerang_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_boomerang_via.json ':ignore')       |      |
 | Boop65               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')          |      |
 | Dusk67               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_dusk67_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_dusk67_via.json ':ignore')          |      |
 | Eden v2              | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_eden_v2_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_eden_v2_via.json ':ignore')         |      |
@@ -92,6 +92,10 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Uni88                | [2024-07-27_DO7R](other-firmware/vial/ydkb_kbdfans_uni88_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kbdfans_uni88_via.json ':ignore')           |      |
 | YD67BLE (KBD67 lite) | [2024-06-22_DO6M](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
 
+| KBDFans 键盘??25%     | VIA / Vial 固件下载                                                                        | VIA V3 JSON                                                                    | 补充说明 |
+| -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
+| Athena1800           | [2025-08-22_DP8M](other-firmware/vial/kbdfans_athena1800_vial.zip ':ignore')            | [JSON](other-firmware/vial/kbdfans_athena1800_via_v3.json ':ignore')            |      |
+
 > [!ydda] 使用Linux的用户注意
 > - Linux下受限于一些权限问题，通过浏览器使用在线版，无法直接连接到键盘。
 > - 个人建议Linux用户下载本地版的 VIA 或 Vial 运行使用。
@@ -105,6 +109,8 @@ Vial的本地软件下载见: https://get.vial.today/download/ ，它的使用�
 
 也可以使用在线版 https://vial.rocks/ ，如果没有科学上网载入速度可能较慢。
 
+使用RP2040主控的键盘如Athena1800，单个固件为了同时兼容 AVA  / VIA / Vial，无法在线版本的Vial的，需要下载 https://github.com/yangdigi/vial-gui/releases/ 这里的桌面版本使用。该版本仅仅是增加了对 VIA PROTOCOL 12 的支持。
+
 ### 3 连接VIA
 
 VIA的本地软件下载见: https://github.com/the-via/releases/releases
@@ -115,7 +121,9 @@ VIA的本地软件下载见: https://github.com/the-via/releases/releases
 
 ![|700](assets/via-ydkb-21.jpg)
 
-然后在 `DESIGN` 里，根据页面上的显示，选择`Use V2 definitios(deprecated)`，以确保它支持V2的json文件。这时再用 `Load` 载入json文件才能正常识别并载入。
+然后在 `DESIGN` 里，根据页面上的显示，选择`Use V2 definitios(deprecated)`，以确保它支持V2的json文件。如果下载的JSON文件名里包含了v3字样，那就不需要选中此选项。
+
+再用 `Load` 载入json文件才能正常识别并载入。
 
 ![|700](assets/via-ydkb-22.jpg)
 
