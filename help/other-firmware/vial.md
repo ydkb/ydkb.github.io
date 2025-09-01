@@ -41,7 +41,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Eevee系列??25% | VIA / Vial 固件下载                                                           | VIA V2 JSON                                                       | 补充说明 |
 | ------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- | ---- |
 | Eevee \#EE60 | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
-| Eevee \#HFKB | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
+| Eevee \#HFKB | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
 | Eevee \#HFKB_JP | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_hfkb_jp_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_jp_via.json ':ignore') |      |
 | Eevee \#EE660C | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_ee660c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee660c_via.json ':ignore') |      |
 | Eevee \#H60EC | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_h60ec_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_h60ec_via.json ':ignore') |      |
