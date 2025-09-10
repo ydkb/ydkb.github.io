@@ -41,14 +41,14 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 
 | Eevee series??25% | VIA / Vial Firmware | VIA V2 JSON | Supplementary Notes |
 | ------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- | ---- |
-| Eevee \#EE60 | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
+| Eevee \#EE60 | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_ee60_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee60_via.json ':ignore') |      |
 | Eevee \#HFKB | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_hfkb_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_via.json ':ignore') |      |
 | Eevee \#HFKB_JP | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_hfkb_jp_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_hfkb_jp_via.json ':ignore') |      |
 | Eevee \#EE660C | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_ee660c_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_ee660c_via.json ':ignore') |      |
 | Eevee \#H60EC | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_h60ec_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_eevee_h60ec_via.json ':ignore') |      |
-| Eevee \#40A  | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
-| Eevee \#40B  | [2025-02-19_DP2J](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
-| Eevee \#EEPad_23U  | [2025-05-16_DP5G](other-firmware/vial/ydkb_eevee_eepad_23u_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_eepad_23u_via.json ':ignore')  |      |
+| Eevee \#40A  | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
+| Eevee \#40B  | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
+| Eevee \#EEPad_23U  | [2025-09-01_DP91](other-firmware/vial/ydkb_eevee_eepad_23u_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_eepad_23u_via.json ':ignore')  |      |
 | Eevee \#EE80U R1  | [2025-04-15_DP4F](other-firmware/vial/ydkb_ee80u_r1_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_ee80u_r1_via.json ':ignore')  |      |
 
 | Keyboard??25% | VIA / Vial Firmware | VIA V2 JSON | Supplementary Notes |
