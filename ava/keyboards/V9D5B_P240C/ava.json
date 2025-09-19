@@ -1,0 +1,27 @@
+{
+  "name": "KBDFans Onibi",
+  "vendorId": "0x9D5B",
+  "productId": "0x240C",
+  "lighting": "qmk_rgblight",
+  "matrix": {"rows": 14, "cols": 8},
+  "customKeycodes": [
+    {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
+    {"name": "ST(A)", "title": "", "shortName": "ST(A)"},
+    {"name": "ST(S)", "title": "", "shortName": "ST(S)"},
+    {"name": "ST(D)", "title": "", "shortName": "ST(D)"}
+  ], 
+  "layouts": {
+    "labels":[
+        "Split Backspace",
+        "ISO Enter",
+        "Split LShift",
+        "Split RShift",
+        ["Space Row", "6.25u", "7u", "7u wkl"],
+        "Light bar indicates CapsLock",
+        ["Scroll Lock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"],
+        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
+    ],
+    "html": "ava-kbdfans_onibi.html",
+    "case": { "X": 18.25, "Y": 6.25, "M": -12, "BR": 6 }
+  }
+}
