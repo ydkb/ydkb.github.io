@@ -3,7 +3,7 @@
     "vendorId": "0x9D5B",
     "productId": "0x2509",
     "lighting": "none",
-    "matrix": {"rows": 6, "cols": 8},
+    "matrix": {"rows": 6, "cols": 8, "adc": 8},
     "customKeycodes": [
         {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
         {"name": "ST(A)", "title": "", "shortName": "ST(A)"},
