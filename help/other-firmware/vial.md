@@ -48,7 +48,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Eevee \#40A  | [2025-10-03_DPA3](other-firmware/vial/ydkb_eevee_40a_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40a_via.json ':ignore')  |      |
 | Eevee \#40B  | [2025-10-03_DPA3](other-firmware/vial/ydkb_eevee_40b_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_40b_via.json ':ignore')  |      |
 | Eevee \#EEPad_23U  | [2025-10-03_DPA3](other-firmware/vial/ydkb_eevee_eepad_23u_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_eevee_eepad_23u_via.json ':ignore')  |      |
-| Eevee \#EE80U R1  | [2025-04-15_DP4F](other-firmware/vial/ydkb_ee80u_r1_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_ee80u_r1_via.json ':ignore')  |      |
+| Eevee \#EE80U R1  | [2025-10-03_DPA3](other-firmware/vial/ydkb_ee80u_r1_vial.zip ':ignore')  | [JSON](other-firmware/vial/ydkb_ee80u_r1_via.json ':ignore')  |      |
 
 | 键盘??25%            | VIA / Vial 固件下载                                                            | VIA V2 JSON                                                           | 补充说明                |
 | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------- |
