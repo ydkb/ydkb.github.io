@@ -73,7 +73,8 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
 | Agar                 | [2025-01-17_DP1H](other-firmware/vial/ydkb_kbdfans_agar_vial.zip ':ignore')            | [JSON](other-firmware/vial/ydkb_kbdfans_agar_via.json ':ignore')            |      |
 | Agar EC              | [2025-02-17_DP2H](other-firmware/vial/ydkb_kbdfans_agar_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_ec_via.json ':ignore')         |      |
-| Agar Mini            | [2025-06-22_DP6M](other-firmware/vial/ydkb_kbdfans_agar_mini_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_mini_via.json ':ignore')         |      |
+| Agar Mini            | [2025-10-14_DPAE](other-firmware/vial/ydkb_kbdfans_agar_mini_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_mini_via.json ':ignore')         |      |
+| Agar Mini EC         | [2025-09-28_DP9S](other-firmware/vial/ydkb_kbdfans_agar_mini_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_mini_via.json ':ignore')         |      |
 | Boomerang            | [2025-08-31_DP8V](other-firmware/vial/ydkb_kbdfans_boomerang_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_boomerang_via.json ':ignore')       |      |
 | Boop65               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')          |      |
 | Dusk67               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_dusk67_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_dusk67_via.json ':ignore')          |      |

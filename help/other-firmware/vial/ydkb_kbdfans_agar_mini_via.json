@@ -2,7 +2,7 @@
   "name": "KBDFans Agar Mini",
   "vendorId": "0x9D5B",
   "productId": "0x2507",
-  "lighting": "qmk_rgblight",
+  "lighting": "none",
   "matrix": {"rows": 14, "cols": 8},
   "customKeycodes": [
     {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
