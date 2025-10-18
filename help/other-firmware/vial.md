@@ -89,7 +89,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Taco(75%)            | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore')          |      |
 | Taco Pad             | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore')         |      |
 | Tofu-fa              | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_tofufa_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofufa_via.json ':ignore')          |      |
-| Tofu TKL 3.0         | [2025-10-14_DPAE](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_via.json ':ignore')          |      |
+| Tofu TKL 3.0         | [2025-10-18_DPAI](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_via.json ':ignore')          |      |
 | Uni88                | [2024-07-27_DO7R](other-firmware/vial/ydkb_kbdfans_uni88_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kbdfans_uni88_via.json ':ignore')           |      |
 | YD67BLE (KBD67 lite) | [2024-06-22_DO6M](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
 
