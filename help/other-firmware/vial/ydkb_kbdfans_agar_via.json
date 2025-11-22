@@ -14,7 +14,7 @@
     "labels":[
         "2U Backspace",
         ["RGB Underglow", "Enable", "Disable"],
-        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
+        ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
     ], 
     "keymap": [
         [{"x":2.5,"c":"#777777"},"0,0",{"x":-1,"c":"#cccccc","h":0.75,"d":true},"0,0\n\n\n1,0",{"d":true},"0,4\n\n\n2,0",{"x":-1},"0,4","0,5","0,6","2,0","2,2","2,4","2,5","4,0","4,2","4,3","4,4","6,0","6,1\n\n\n0,0",{"c":"#aaaaaa"},"6,2\n\n\n0,0",{"x":0.25,"w":2},"6,1\n\n\n0,1"],

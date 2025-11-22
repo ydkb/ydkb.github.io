@@ -14,7 +14,7 @@
     "labels":[
         "2U Backspace",
         ["RGB Underglow", "Enable", "Disable"],
-        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
+        ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
     ], 
     "html": "ava-kbdfans_agar.html", 
     "case": { "X": 15, "Y": 5, "MU": -24 }
