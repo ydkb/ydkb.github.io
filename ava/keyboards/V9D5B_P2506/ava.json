@@ -17,8 +17,8 @@
         "Split LShift",
         "Split RShift",
         ["Space Row", "6.25u", "7u", "7u WKL"],
-        ["Scroll Lock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"],
-        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
+        ["Scroll Lock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"],
+        ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
     ],
     "html": "ava-kbdfans_tofu_tkl_v3.html",
     "case": { "X": 18.25, "Y": 6.25, "M": -12, "BR": 6 }

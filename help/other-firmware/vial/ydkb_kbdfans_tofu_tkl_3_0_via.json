@@ -17,8 +17,8 @@
         "Split LShift",
         "Split RShift",
         ["Space Row", "6.25u", "7u", "7u WKL"],
-        ["Scroll Lock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"],
-        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
+        ["Scroll Lock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"],
+        ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
     ],
     "keymap": [
         [{"x":2.5,"c":"#777777"},"0,0",{"x":1,"c":"#cccccc"},"0,5","0,6","2,2","2,3",{"x":0.5,"c":"#aaaaaa"},"2,6","4,0","4,3","4,5",{"x":0.5,"c":"#cccccc"},"6,2","6,5","8,1","8,3",{"x":0.25,"c":"#aaaaaa"},"10,2","10,3","10,6"],
