@@ -13,7 +13,7 @@
   "layouts": {
     "labels":[
         ["Space Row", "3u*2", "6u"],
-        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
+        ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
     ], 
     "keymap": [
         [{"c":"#777777"},"0,0",{"c":"#cccccc"},"0,2","0,4","0,6","2,1","2,2","2,4","2,5","4,1","4,2","4,4","4,6",{"c":"#aaaaaa"},"4,7"],

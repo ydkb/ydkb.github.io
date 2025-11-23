@@ -13,7 +13,7 @@
     "layouts": {
         "labels":[
             ["Space", "3U*2", "6U"],
-            ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"]
+            ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
         ], 
         "html":"ava-agar_mini.html", 
         "case": { "X": 13, "Y": 4, "M": -20, "BR": 10 }

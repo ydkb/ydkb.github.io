@@ -16,7 +16,7 @@
         "ISO Enter",
         "Split LShift",
         "2.75u RShift",
-        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
+        ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
     ], 
     "keymap": [
         [{"r":8,"y":0.25,"x":0.75,"h":0.75,"d":true},"0,0\n\n\n4,0",{"x":-1,"c":"#aaaaaa"},"0,0",{"x":0.25,"c":"#777777"},"0,2",{"c":"#cccccc"},"0,4","0,6","2,0","2,2","2,4","2,5"],
