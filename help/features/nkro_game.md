@@ -13,10 +13,10 @@
 
 再补充一点知识，所谓的6键无冲，是指除左右Ctrl、Shift、Alt、Win这8个修饰键外，其他的还有6个键可以同时按下。这8个修饰键，同时再和其他6个按键按下，是没有问题的。也就是非要较真的话，任意6键无冲的模式下，最多是可以同时按下8+6共计14个按键的。
 
-> [!ydda] 2023年起的重要更新
-> - YDKB支持的大部分键盘，从2023年开始的固件，默认是NKRO。
+> [!ydda] 注意
 > - USB连接下可以用 <kbd>LShift+RShift+N</kbd> 切换NKRO与6KRO模式。
 > - 蓝牙模式下始终是6KRO。
+> - macOS下，<u>短按<kbd>Capslock</kbd>切换中英文，长按<kbd>Capslock</kbd>才切换大小写</u> 与NKRO有兼容问题。若有此设置习惯，请使用6KRO。
 
 > [!yddh] 小知识
 > - USB下支持默认全键无冲不会影响BIOS的操作。因为正常BIOS请求的是 boot protocol，而系统请求的是 report protocol。固件里已经作了处理，在BIOS(boot protocol)下，发送报文的形式为为标准的6KRO的方式，兼容无问题。
