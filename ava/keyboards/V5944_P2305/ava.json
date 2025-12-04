@@ -7,7 +7,7 @@
   "layouts": {
     "labels":[
       ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"],
-      ["EC Actuation Point", "Default(4)", "1(Light)", "2", "3", "4", "5", "6", "7(Heavy)"]
+      ["EC Sensitivity", "Default(4)", "1(High)", "2", "3", "4", "5", "6", "7(Heavy)"]
     ],
     "html": "ava-kbdfans_pavlov_ec.html", 
     "case": { "X": 16, "Y": 5, "M": -16 }

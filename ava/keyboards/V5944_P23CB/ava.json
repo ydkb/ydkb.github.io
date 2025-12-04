@@ -16,7 +16,7 @@
         "ISO Enter",
         "LShift ISO",
         ["Space Row", "US 6u", "US 3u+3u", "US 6.25u"],
-        ["EC Actuation Point", "1(Light)", "2", "3", "4", "5", "6", "7", "8(Heavy)"]
+        ["EC Sensitivity", "1(High)", "2", "3", "4", "5", "6", "7", "8(Low)"]
     ],
     "html":"ava-hfkb_us.html", 
     "case":{ "X": 15, "Y": 5, "MU": -24 }

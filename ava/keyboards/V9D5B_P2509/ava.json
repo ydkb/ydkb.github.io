@@ -14,7 +14,7 @@
         "labels":[
             ["Space", "3U*2", "6U"],
             ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"],
-            ["EC Actuation Point", "1(Light)", "2", "3", "4", "5(Default)", "6", "7", "8(Heavy)"]
+            ["EC Sensitivity", "1(High)", "2", "3", "4", "5", "6", "7", "8(Low)"]
         ], 
         "html":"ava-agar_mini_ec.html", 
         "case": { "X": 13, "Y": 4, "M": -20, "BR": 10 }
