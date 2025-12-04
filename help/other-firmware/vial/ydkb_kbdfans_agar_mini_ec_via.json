@@ -14,7 +14,7 @@
         "labels":[
             ["Space Row", "3u*2", "6u"],
             ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"],
-            ["EC Actuation Point", "1(Light)", "2", "3", "4", "5", "6", "7", "8(Heavy)"]
+            ["EC Sensitivity", "1(High)", "2", "3", "4", "5", "6", "7", "8(Low)"]
         ], 
         "keymap": [
             [{"h":0.75,"d":true},"0,0\n\n\n1,0",{"x":-1,"c":"#777777"},"0,0",{"c":"#cccccc"},"1,0","2,0","3,0","4,0","5,0","5,4","4,4","3,4","2,4","1,4","0,4",{"c":"#aaaaaa"},"0,5"],
