@@ -84,7 +84,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Kunlun               | [2023-07-15_DN7F](other-firmware/vial/ydkb_kunlun_vial.zip ':ignore')                  | [JSON](other-firmware/vial/ydkb_kunlun_via.json ':ignore')                  |      |
 | Margo OG             | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_margo_og_vial.zip ':ignore')                | [JSON](other-firmware/vial/ydkb_kbdfans_margo_og_via.json ':ignore')                |      |
 | Mountain             | [2023-07-15_DN7F](other-firmware/vial/ydkb_mountain_vial.zip ':ignore')                | [JSON](other-firmware/vial/ydkb_mountain_via.json ':ignore')                |      |
-| Onibi                | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_onibi_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kbdfans_onibi_via.json ':ignore')            |      |
+| Onibi                | [2026-02-24_DQ2O](other-firmware/vial/ydkb_kbdfans_onibi_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kbdfans_onibi_via.json ':ignore')            |      |
 | PAVLOV               | [2024-06-23_DO6N](other-firmware/vial/ydkb_jolteon_pavlov_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_jolteon_pavlov_via.json ':ignore')          |      |
 | Redux60RGB ANSI      | [2025-03-15_DP3F](other-firmware/vial/ydkb_kbdfans_redux60rgb_ansi_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_kbdfans_redux60rgb_ansi_via.json ':ignore') |      |
 | Taco(75%)            | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore')          |      |
