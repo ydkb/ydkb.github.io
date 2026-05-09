@@ -1,5 +1,5 @@
 {
-    "name": "Agar Micro",
+    "name": "KBDFans Agar Micro",
     "vendorId": "0x9D5B",
     "productId": "0x2510",
     "lighting": "none",
@@ -12,6 +12,7 @@
     ], 
     "layouts": {
         "labels":[
+            ["RShift", "1.25U+1U", "1U+1.25U"],
             ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
         ], 
         "html":"ava-agar_micro.html", 
