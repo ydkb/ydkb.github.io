@@ -72,8 +72,7 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 
 | KBDFans Keyboard??25% | VIA / Vial Firmware | VIA V2 JSON | Supplementary Notes |
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
-| Aepex                | [2026-05-09_DQ59](other-firmware/vial/ydkb_kbdfans_aepex_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_aepex_ec_via.json ':ignore')         |      |
-| Aepex EC             | [2026-01-25_DQ1P](other-firmware/vial/ydkb_kbdfans_aepex_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_aepex_ec_via.json ':ignore')         |      |
+| Aepex                | [2026-05-09_DQ59](other-firmware/vial/ydkb_kbdfans_aepex_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_aepex_via.json ':ignore')         |      |
 | Agar                 | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_agar_vial.zip ':ignore')            | [JSON](other-firmware/vial/ydkb_kbdfans_agar_via.json ':ignore')            |      |
 | Agar EC              | [2025-02-17_DP2H](other-firmware/vial/ydkb_kbdfans_agar_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_ec_via.json ':ignore')         |      |
 | Agar Micro           | [2026-05-09_DQ59](other-firmware/vial/ydkb_kbdfans_agar_micro_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_micro_via.json ':ignore')         |      |
