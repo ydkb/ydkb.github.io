@@ -1,0 +1,25 @@
+{
+  "name": "KBDFans Athena75 RGB",
+  "vendorId": "0x9D5B",
+  "productId": "0x2514",
+  "matrix": {"rows": 11, "cols": 8},
+  "keycodes": ["qmk_lighting"],
+  "customKeycodes": [
+    {"name": "ST(W)", "title": "SnapTap(SOCD) key W", "shortName": "ST(W)"},
+    {"name": "ST(A)", "title": "SnapTap(SOCD) key A", "shortName": "ST(A)"},
+    {"name": "ST(S)", "title": "SnapTap(SOCD) key S", "shortName": "ST(S)"},
+    {"name": "ST(D)", "title": "SnapTap(SOCD) key D", "shortName": "ST(D)"},
+    {"name": "GIF M+", "title": "Gif Mode +", "shortName": "GIF M+"},
+    {"name": "LCD On/Off", "title": "LCD On or Off", "shortName": "LCD O/X"}
+  ], 
+  "menus": [],
+  "layouts": {
+    "labels":[
+        ["Key Debounce","Fast", "Normal", "Slow"],
+        ["Enable RGB for", "Both", "Switches Only", "Glow Only"," "," "],
+        ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
+    ], 
+    "html": "ava-kbdfans_athena75_rgb.html", 
+    "case": { "X": 16.25, "Y": 6.25, "MU": -24, "MD":-24 }
+  }
+}
