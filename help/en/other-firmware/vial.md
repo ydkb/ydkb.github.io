@@ -37,7 +37,6 @@ The firmware update method in the table below is consistent with ydkb.io. Most u
 
 <br>
 
-To download the JSON file, right-click the corresponding JSON link and select Save As.
 
 | Eevee series??25% | VIA / Vial Firmware | VIA V2 JSON | Supplementary Notes |
 | ------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- | ---- |
@@ -100,9 +99,14 @@ To download the JSON file, right-click the corresponding JSON link and select Sa
 | Uni88                | [2024-07-27_DO7R](other-firmware/vial/ydkb_kbdfans_uni88_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kbdfans_uni88_via.json ':ignore')           |      |
 | YD67BLE (KBD67 lite) | [2024-06-22_DO6M](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
 
+
+The following keyboard uses VIA V3 JSON. Also, please use the version provided at https://github.com/yangdigi/vial-gui/releases/ for Vial.
+
 | KBDFans Keyboard??25% | VIA / Vial Firmware | VIA V3 JSON | Supplementary Notes |
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
-| Athena1800           | [2025-08-22_DP8M](other-firmware/vial/kbdfans_athena1800_vial.zip ':ignore')            | [JSON](other-firmware/vial/kbdfans_athena1800_via_v3.json ':ignore')            |      |
+| Athena1800      | [2026-06-09_DQ69](other-firmware/vial/kbdfans_athena1800_vial.zip ':ignore')     | [JSON](other-firmware/vial/kbdfans_athena1800_via_v3.json ':ignore')     |      |
+| Athena75             | [2026-05-18_DQ5I](other-firmware/vial/kbdfans_athena75_vial.zip ':ignore')            | [JSON](other-firmware/vial/kbdfans_athena75_via_v3.json ':ignore')            |      |
+| Athena75 RGB         | [2026-05-18_DQ5I](other-firmware/vial/kbdfans_athena75_rgb_vial.zip ':ignore')            | [JSON](other-firmware/vial/kbdfans_athena75_rgb_via_v3.json ':ignore')            |      |
 
 > [!ydda] Note for Linux users
 > - Due to some permission issues, you cannot directly connect to the keyboard when using the online version through a browser.
