@@ -1,0 +1,22 @@
+{
+    "name": "KBDFans Agar Micro EC",
+    "vendorId": "0x9D5B",
+    "productId": "0x2605",
+    "lighting": "none",
+    "matrix": {"rows": 4, "cols": 12, "adc": 8},
+    "customKeycodes": [
+        {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
+        {"name": "ST(A)", "title": "", "shortName": "ST(A)"},
+        {"name": "ST(S)", "title": "", "shortName": "ST(S)"},
+        {"name": "ST(D)", "title": "", "shortName": "ST(D)"}
+    ], 
+    "layouts": {
+        "labels":[
+            ["RShift", "1.25U+1U", "1U+1.25U"],
+            ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"],
+            ["EC Sensitivity", "1(High)", "2", "3", "4", "5", "6", "7", "8(Low)"]
+        ], 
+        "html":"ava-agar_micro_ec.html", 
+        "case": { "X": 14.1, "Y": 4.75, "M": -20, "BR": 10 }
+    }
+}

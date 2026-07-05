@@ -18,8 +18,8 @@
         "ISO Enter",
         "Split LShift",
         ["Key Debounce","Fast", "Normal", "Slow"],
-        ["NumLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"],
-        ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
+        ["NumLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"],
+        ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
     ], 
     "html": "ava-kbdfans_athena1800.html", 
     "case": { "X": 20.5, "Y": 6.25, "MU": -24, "MD":-24 }
