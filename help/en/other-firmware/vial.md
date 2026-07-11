@@ -67,7 +67,7 @@ The firmware update method in the table below is consistent with ydkb.io. Most u
 | Xikii i104         | [2024-06-22_DO6M](other-firmware/vial/ydkb_xikii_i104_vial.zip ':ignore')     | [JSON](other-firmware/vial/ydkb_xikii_i104_via.json ':ignore')     |                     |
 | Xikii Sasuke No.01 | [2022-12-22_DMCM](other-firmware/vial/ydkb_xikii_sasuke01_vial.zip ':ignore') | [JSON](other-firmware/vial/ydkb_xikii_sasuke01_via.json ':ignore') |                     |
 | YDPM40BLE          | [2025-10-03_DPA3](other-firmware/vial/ydkb_ydpm40ble_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_ydpm40ble_via.json ':ignore')      |                     |
-| Y80-11900          | [2025-07-17_DP7H](other-firmware/vial/ydkb_y80_11900_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_y80_11900_via.json ':ignore')      |                     |
+| Y80-11900          | [2026-06-16_DQ6G](other-firmware/vial/ydkb_y80_11900_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_y80_11900_via.json ':ignore')      |                     |
 
 | KBDFans Keyboard??25% | VIA / Vial Firmware | VIA V2 JSON | Supplementary Notes |
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
@@ -112,6 +112,7 @@ The following keyboard uses VIA V3 JSON. Also, please use the version provided a
 > - Due to some permission issues, you cannot directly connect to the keyboard when using the online version through a browser.
 > - I personally recommend that Linux users download the local version of VIA or Vial and run it.
 
+
 ### 2 Connect Vial
 
 Vial does not require a separate json file, it can be used by connecting to its software.
@@ -120,7 +121,7 @@ Vial's local software download can be found at: https://get.vial.today/download/
 
 You can also use the online version https://vial.rocks/ .
 
-Keyboards like Athena1800 that use the RP2040 controller cannot be compatible with the online version of Vial for AVA / VIA / Vial in a single firmware. To use it, you need to download the desktop version from https://github.com/yangdigi/vial-gui/releases/. This version merely adds support for VIA PROTOCOL 12.
+Keyboards like Athena that use the RP2040 controller cannot be compatible with the online version of Vial for AVA / VIA / Vial in a single firmware. To use it, you need to download the desktop version from https://github.com/yangdigi/vial-gui/releases/. This version merely adds support for VIA PROTOCOL 12.
 
 ### 3 Connect VIA
 
