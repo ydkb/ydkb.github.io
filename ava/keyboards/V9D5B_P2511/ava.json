@@ -1,0 +1,19 @@
+{
+  "name": "KBDFans Tofu Pad",
+  "vendorId": "0x9D5B",
+  "productId": "0x2511",
+  "lighting": "none",
+  "matrix": {"rows": 14, "cols": 8},
+  "customKeycodes": [
+  ], 
+  "layouts": {
+    "labels":[
+        "Split P+",
+        "Split P0",
+        "Split PEnter",
+        ["NumLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"]
+    ],
+    "html":"ava-kbdfans_tofu_pad.html", 
+    "case": { "X": 4, "Y": 6.25, "M": -16 }
+  }
+}
