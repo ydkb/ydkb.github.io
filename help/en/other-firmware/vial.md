@@ -191,3 +191,20 @@ Use the VIA / Vial's backlit control buttons. However, due to the large size of 
 
 ### 4 Macro Macro
 It is currently not supported to directly set macros such as {KC_XXX} in VIA. If you want to use complex consecutive keystroke macros, use the Vial setting. After setting, you can also choose to use it in VIA, but some garbled characters are displayed in VIA.
+
+
+
+## Attachment: three-digit date display method
+| Year | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | ... |
+| --- ||||||||||||||
+| Display | J | K | L | M | N | O | P | Q | R | S | T | U | ... |
+
+| Month | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+| --- |||||||||||||
+| Display | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C |
+
+| Day | 1...9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+| ---- |||||||||||||
+| Display | 1...9 | A  | B  | C  | D  | E  |  F | G  | H  | I  | J  | K |
+| Day |  21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 ||
+| Display |  L | M | N | O | P | Q | R | S | T | U | V ||
