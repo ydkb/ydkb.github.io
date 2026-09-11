@@ -11,6 +11,7 @@
     {"name": "ST(D)", "title": "SnapTap(SOCD) key D", "shortName": "ST(D)"},
     {"name": "GIF M+", "title": "Gif Mode +", "shortName": "GIF M+"},
     {"name": "LCD On/Off", "title": "LCD On or Off", "shortName": "LCD O/X"}
+    {"name": "LCD 1|2", "title": "LCD Type 1 or Type 2", "shortName": "LCD 1/2"}
   ], 
   "menus": [],
   "layouts": {
