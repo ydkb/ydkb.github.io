@@ -93,6 +93,7 @@ The firmware update method in the table below is consistent with ydkb.io. Most u
 | Taco(75%)            | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore')          |      |
 | Taco Pad             | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore')         |      |
 | Tofu-fa              | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_tofufa_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofufa_via.json ':ignore')          |      |
+| Tofu Pad             | [2026-09-16_DQ9G](other-firmware/vial/ydkb_kbdfans_tofu_pad_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_kbdfans_tofu_pad_via.json ':ignore')      |      |
 | Tofu60 3.0           | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_tofu60_3_0_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofu60_3_0_via.json ':ignore')          |      |
 | Tofu65 3.0           | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_tofu65_3_0_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofu65_3_0_via.json ':ignore')          |      |
 | Tofu TKL 3.0         | [2025-12-17_DPCH](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_via.json ':ignore')          |      |
@@ -105,6 +106,7 @@ The following keyboard uses VIA V3 JSON. Also, please use the version provided a
 | KBDFans Keyboard??25% | VIA / Vial Firmware | VIA V3 JSON | Supplementary Notes |
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
 | Athena1800      | [2026-06-09_DQ69](other-firmware/vial/kbdfans_athena1800_vial.zip ':ignore')     | [JSON](other-firmware/vial/kbdfans_athena1800_via_v3.json ':ignore')     |      |
+| Athena1800 RGB  | [2026-05-18_DQ5I](other-firmware/vial/kbdfans_athena1800_rgb_vial.zip ':ignore') | [JSON](other-firmware/vial/kbdfans_athena1800_rgb_via_v3.json ':ignore') |      |
 | Athena75             | [2026-05-18_DQ5I](other-firmware/vial/kbdfans_athena75_vial.zip ':ignore')            | [JSON](other-firmware/vial/kbdfans_athena75_via_v3.json ':ignore')            |      |
 | Athena75 RGB         | [2026-05-18_DQ5I](other-firmware/vial/kbdfans_athena75_rgb_vial.zip ':ignore')            | [JSON](other-firmware/vial/kbdfans_athena75_rgb_via_v3.json ':ignore')            |      |
 

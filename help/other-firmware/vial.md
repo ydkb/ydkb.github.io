@@ -92,6 +92,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Taco(75%)            | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_taco75_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_taco75_via.json ':ignore')          |      |
 | Taco Pad             | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_tacopad_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_tacopad_via.json ':ignore')         |      |
 | Tofu-fa              | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_tofufa_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_tofufa_via.json ':ignore')          |      |
+| Tofu Pad             | [2026-09-16_DQ9G](other-firmware/vial/ydkb_kbdfans_tofu_pad_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_kbdfans_tofu_pad_via.json ':ignore')      |      |
 | Tofu60 3.0           | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_tofu60_3_0_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_kbdfans_tofu60_3_0_via.json ':ignore')      |      |
 | Tofu65 3.0           | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_tofu65_3_0_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_kbdfans_tofu65_3_0_via.json ':ignore')      |      |
 | Tofu TKL 3.0         | [2025-12-17_DPCH](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_vial.zip ':ignore')    | [JSON](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_via.json ':ignore')    |      |
