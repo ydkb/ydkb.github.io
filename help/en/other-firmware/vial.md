@@ -80,6 +80,7 @@ The firmware update method in the table below is consistent with ydkb.io. Most u
 | Agar Mini EC         | [2025-09-28_DP9S](other-firmware/vial/ydkb_kbdfans_agar_mini_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_mini_ec_via.json ':ignore')         |      |
 | Boomerang            | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_boomerang_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_boomerang_via.json ':ignore')       |      |
 | Boop65               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_boop65_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_boop65_via.json ':ignore')          |      |
+| Chamber              | [2026-09-16_DQ9G](other-firmware/vial/ydkb_kbdfans_chamber_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_chamber_via.json ':ignore')         |      |
 | Dusk67               | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_dusk67_vial.zip ':ignore')          | [JSON](other-firmware/vial/ydkb_kbdfans_dusk67_via.json ':ignore')          |      |
 | Eden v2              | [2026-08-23_DQ8N](other-firmware/vial/ydkb_kbdfans_eden_v2_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_eden_v2_via.json ':ignore')         |      |
 | KBD8x Mk3            | [2024-11-25_DOBP](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_vial.zip ':ignore')        | [JSON](other-firmware/vial/ydkb_kbdfans_kbd8xmk3_via.json ':ignore')        |      |
