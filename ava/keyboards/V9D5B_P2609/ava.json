@@ -1,0 +1,25 @@
+{
+    "name": "KBDFans Tofu65 3.0 EC",
+    "vendorId": "0x9D5B",
+    "productId": "0x2609",
+    "lighting": "none",
+    "matrix": {"rows": 5, "cols": 15, "adc": 8},
+    "customKeycodes": [
+        {"name": "ST(W)", "title": "", "shortName": "ST(W)"},
+        {"name": "ST(A)", "title": "", "shortName": "ST(A)"},
+        {"name": "ST(S)", "title": "", "shortName": "ST(S)"},
+        {"name": "ST(D)", "title": "", "shortName": "ST(D)"}
+    ], 
+    "layouts": {
+        "labels":[
+            "Split Backspace",
+            "ISO Enter",
+            "Split LShift",
+            ["Space Row", "6.25u", "7u"],
+            ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"],
+            ["EC Sensitivity", "1(High)", "2", "3", "4", "5", "6", "7", "8(Low)"]
+        ],
+        "html": "ava-kbdfans_tofu65_v3_ec.html", 
+        "case": { "X": 16, "Y": 5, "MU": -24 }
+    }
+}
