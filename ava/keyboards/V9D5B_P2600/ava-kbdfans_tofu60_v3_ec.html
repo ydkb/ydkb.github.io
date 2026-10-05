@@ -2,20 +2,49 @@
     <div id="mycase" class="mycase"> </div>
     <div Y=0>
         <kp>k00 [mc3 bl-key], k01, k02, k03, k04, k05, k06, k07, k08, k09, k0a, k0b, k0c</kp>
-        <kp X=13>k0d [layout-00], k2d [mc2 layout-00]</kp>
-        <kp X=13>k2d [mc2 w200 layout-01]</kp>
+        <kp X=13>k0d [layout-01], k2d [mc2 layout-01]</kp>
+        <kp X=13>k2d [mc2 w200 layout-00]</kp>
     </div>
     <div Y=1>
-        <kp>k10 [mc2 w150], k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c, k1d [mc2 w150]</kp>
+        <kp>k10 [mc2 w150], k11, k12, k13, k14, k15, k16, k17, k18, k19, k1a, k1b, k1c</kp>
+        <div X=13.5>
+            <div><kp>k1d [w150 layout-10]</kp> </div>
+            <div><kp>k1d [mc3 w150 h200 layout-11]</kp></div>
+        </div>
     </div>
     <div Y=2>
-        <kp>k20 [mc2 w175 led0 suden], k21, k22, k23, k24 [homing], k25, k26, k27 [homing], k28, k29, k2a, k2b, k2c [mc3 w225]</kp>
+        <kp>k20 [mc2 w175 led0 suden], k21, k22, k23, k24 [homing], k25, k26, k27 [homing], k28, k29, k2a, k2b</kp>
+        <div X=12.75>
+            <div><kp>k2c [mc3 w225 layout-10]</kp></div>
+            <div><kp>k2c [layout-11]</kp> </div>
+        </div>
     </div>
     <div Y=3>
-        <kp>k30 [mc2 w225], k32, k33, k34, k35, k36, k37, k38, k39, k3a, k3b, k3c [mc2 w175], k3d [mc2]</kp>
+        <div class="layout-20"> <kp>k30 [mc2 w225]</kp> </div>
+        <div class="layout-21"> <kp>k30 [mc2 w125], k31</kp> </div>
+        <kp x=2.25>k32, k33, k34, k35, k36, k37, k38, k39, k3a, k3b</kp>
+        <div X=12.25>
+            <div class="layout-30" value-name="2.75u" value-desc="RShift">
+                <kp>k3c [mc2 w275]</kp>
+            </div>
+            <div class="layout-31" value-name="1.75u+1u">
+                <kp>k3c [mc2 w175], k3d [mc2]</kp>
+            </div>
+        </div>
     </div>
     <div Y=4>
-        <kp>k40 [mc2 w150], k41 [mc2], k42 [mc2 w150], k47 [mc3 w700 space], k4b [mc2 w150], k4c [mc2], k4d [mc2 w150]</kp>
+        <div class="layout-40" value-name="6.25U" value-desc="Space">
+            <kp>k40 [mc2 w125], k41 [mc2 w125], k42 [mc2 w125], k47 [w625 space], k4a [mc2 w125], k4b [mc2 w125], k4c [mc2 w125], k4d [mc2 w125]</kp>
+        </div>
+        <div class="layout-41" value-name="7U">
+            <kp>k40 [mc2 w150], k41 [mc2], k42 [mc2 w150], k47 [w700 space], k4b [mc2 w150], k4c [mc2], k4d [mc2 w150]</kp>
+        </div>
+        <div class="layout-42" value-name="7U WKL">
+            <kp>k40 [mc2 w150]</kp> <kp X=2.5>k42 [mc2 w150], k47 [w700 space], k4b [mc2 w150]</kp><kp X=13.5>k4d [mc2 w150]</kp>
+        </div>
+        <div class="layout-43" value-name="7U HHKB">
+            <kp X=1.5>k41 [mc2], k42 [mc2 w150], k47 [w700 space], k4b [mc2 w150], k4c [mc2]</kp>
+        </div>
     </div>
 </div>
 <div id="kbd-user-keys" style="clear: both; display: none">
