@@ -106,10 +106,10 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 
 | KBDFans 键盘??25% | VIA / Vial 固件下载                                                                  | VIA V3 JSON                                                              | 补充说明 |
 | --------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ---- |
-| Athena1800      | [2026-06-09_DQ69](other-firmware/vial/kbdfans_athena1800_vial.zip ':ignore')     | [JSON](other-firmware/vial/kbdfans_athena1800_via_v3.json ':ignore')     |      |
-| Athena1800 RGB  | [2026-05-18_DQ5I](other-firmware/vial/kbdfans_athena1800_rgb_vial.zip ':ignore') | [JSON](other-firmware/vial/kbdfans_athena1800_rgb_via_v3.json ':ignore') |      |
-| Athena75        | [2026-05-18_DQ5I](other-firmware/vial/kbdfans_athena75_vial.zip ':ignore')       | [JSON](other-firmware/vial/kbdfans_athena75_via_v3.json ':ignore')       |      |
-| Athena75 RGB    | [2026-05-18_DQ5I](other-firmware/vial/kbdfans_athena75_rgb_vial.zip ':ignore')   | [JSON](other-firmware/vial/kbdfans_athena75_rgb_via_v3.json ':ignore')   |      |
+| Athena1800      | [2026-09-24_DQ9O](other-firmware/vial/kbdfans_athena1800_vial.zip ':ignore')     | [JSON](other-firmware/vial/kbdfans_athena1800_via_v3.json ':ignore')     |      |
+| Athena1800 RGB  | [2026-09-24_DQ9O](other-firmware/vial/kbdfans_athena1800_rgb_vial.zip ':ignore') | [JSON](other-firmware/vial/kbdfans_athena1800_rgb_via_v3.json ':ignore') |      |
+| Athena75        | [2026-09-24_DQ9O](other-firmware/vial/kbdfans_athena75_vial.zip ':ignore')       | [JSON](other-firmware/vial/kbdfans_athena75_via_v3.json ':ignore')       |      |
+| Athena75 RGB    | [2026-09-24_DQ9O](other-firmware/vial/kbdfans_athena75_rgb_vial.zip ':ignore')   | [JSON](other-firmware/vial/kbdfans_athena75_rgb_via_v3.json ':ignore')   |      |
 
 > [!ydda] 使用Linux的用户注意
 > - Linux下受限于一些权限问题，通过浏览器使用在线版，无法直接连接到键盘。
