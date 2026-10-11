@@ -14,7 +14,7 @@
         "labels":[
             "2U Backspace", 
             ["RGB Underglow", "Enable", "Disable"],
-            ["CapsLock Color", "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet", "White"],
+            ["CapsLock Color", "White", "Red", "Yellow", "Green", "Cyan", "Blue", "Violet", "Disable"],
             ["EC Sensitivity", "1(High)", "2", "3", "4", "5", "6", "7", "8(Low)"]
         ],
         "keymap": [
