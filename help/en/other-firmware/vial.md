@@ -108,7 +108,7 @@ The following keyboard uses VIA V3 JSON. Also, please use the version provided a
 | KBDFans Keyboard??25% | VIA / Vial Firmware | VIA V3 JSON | Supplementary Notes |
 | -------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---- |
 | Athena1800      | [2026-09-24_DQ9O](other-firmware/vial/kbdfans_athena1800_vial.zip ':ignore')     | [JSON](other-firmware/vial/kbdfans_athena1800_via_v3.json ':ignore')     |      |
-| Athena1800 RGB  | [2026-09-24_DQ9O](other-firmware/vial/kbdfans_athena1800_rgb_vial.zip ':ignore') | [JSON](other-firmware/vial/kbdfans_athena1800_rgb_via_v3.json ':ignore') |      |
+| Athena1800 RGB  | [2026-10-14_DQAE](other-firmware/vial/kbdfans_athena1800_rgb_vial.zip ':ignore') | [JSON](other-firmware/vial/kbdfans_athena1800_rgb_via_v3.json ':ignore') |      |
 | Athena75        | [2026-09-24_DQ9O](other-firmware/vial/kbdfans_athena75_vial.zip ':ignore')       | [JSON](other-firmware/vial/kbdfans_athena75_via_v3.json ':ignore')       |      |
 | Athena75 RGB    | [2026-09-24_DQ9O](other-firmware/vial/kbdfans_athena75_rgb_vial.zip ':ignore')   | [JSON](other-firmware/vial/kbdfans_athena75_rgb_via_v3.json ':ignore')   |      |
 
