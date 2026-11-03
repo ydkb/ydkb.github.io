@@ -98,6 +98,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Tofu60 3.0           | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_tofu60_3_0_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_kbdfans_tofu60_3_0_via.json ':ignore')      |      |
 | Tofu65 3.0           | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_tofu65_3_0_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_kbdfans_tofu65_3_0_via.json ':ignore')      |      |
 | Tofu TKL 3.0         | [2025-12-17_DPCH](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_vial.zip ':ignore')    | [JSON](other-firmware/vial/ydkb_kbdfans_tofu_tkl_3_0_via.json ':ignore')    |      |
+| Tofu TKL x Lucy      | [2026-10-07_DPCH](other-firmware/vial/ydkb_kbdfans_tofu_tkl_lucy_vial.zip ':ignore')    | [JSON](other-firmware/vial/ydkb_kbdfans_tofu_tkl_lucy_via.json ':ignore')    |      |
 | Uni88                | [2024-07-27_DO7R](other-firmware/vial/ydkb_kbdfans_uni88_vial.zip ':ignore')           | [JSON](other-firmware/vial/ydkb_kbdfans_uni88_via.json ':ignore')           |      |
 | YD67BLE (KBD67 lite) | [2024-06-22_DO6M](other-firmware/vial/ydkb_yd67ble_vial.zip ':ignore')                 | [JSON](other-firmware/vial/ydkb_yd67ble_via.json ':ignore')                 |      |
 
