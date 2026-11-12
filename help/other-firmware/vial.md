@@ -75,6 +75,7 @@ AVA为代号Avalon的缩写，是一个新的用于设置 YDKB 键盘的在线�
 | Agar                 | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_agar_vial.zip ':ignore')            | [JSON](other-firmware/vial/ydkb_kbdfans_agar_via.json ':ignore')            |      |
 | Agar EC              | [2026-10-12_DQAB](other-firmware/vial/ydkb_kbdfans_agar_ec_vial.zip ':ignore')         | [JSON](other-firmware/vial/ydkb_kbdfans_agar_ec_via.json ':ignore')         |      |
 | Agar Micro           | [2026-05-09_DQ59](other-firmware/vial/ydkb_kbdfans_agar_micro_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_kbdfans_agar_micro_via.json ':ignore')      |      |
+| Agar Micro EC        | [2026-10-11_DQAB](other-firmware/vial/ydkb_kbdfans_agar_micro_ec_vial.zip ':ignore')      | [JSON](other-firmware/vial/ydkb_kbdfans_agar_micro_ec_via.json ':ignore')      |      |
 | Agar Mini            | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_agar_mini_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_agar_mini_via.json ':ignore')       |      |
 | Agar Mini EC         | [2025-09-28_DP9S](other-firmware/vial/ydkb_kbdfans_agar_mini_ec_vial.zip ':ignore')    | [JSON](other-firmware/vial/ydkb_kbdfans_agar_mini_ec_via.json ':ignore')    |      |
 | Boomerang            | [2025-11-19_DPBJ](other-firmware/vial/ydkb_kbdfans_boomerang_vial.zip ':ignore')       | [JSON](other-firmware/vial/ydkb_kbdfans_boomerang_via.json ':ignore')       |      |
